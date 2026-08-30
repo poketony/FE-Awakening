@@ -11,7 +11,7 @@ MID_001_OP1_2_PCM3: $t1$Wmusername|3$w0|$b注目,プレイヤー女,フレデリ
 MID_001_OP1_2_PCF1: $t1$Wmusername|3$w0|$b注目,プレイヤー女,フレデリク|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_11|$E通常,|그, 그러고 보니 저녁은 어떡할 거야?\n아무래도 배고파서 쓰러질 것 같아…$k\n$Wsusername|$Wd$w0|
 MID_001_OP1_2_PCF2: $t1$Wmusername|3$w0|$b注目,プレイヤー女,フレデリク|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_11|$E通常,|그, 그러고 보니 저녁은 어떡하죠?\n아무래도 배고파서 쓰러지겠어요…$k\n$Wsusername|$Wd$w0|
 MID_001_OP1_2_PCF3: $t1$Wmusername|3$w0|$b注目,プレイヤー女,フレデリク|$Wsusername|$Wa$E通常,|……$k
-MID_001_OP1_3: $t1$Wmフレデリク|3$w0|$b注目,クロム,フレデリク|$b向き,リズ,A|$b動作,リズ,WalkTurn|$b動作,リズ,RizRe|$Wsフレデリク|$Wa$b動作,フレデリク,FreGe3|$b動作,フレデリク,FreRe|$SvpSE_VOICE_FREDERIK_EVT_18|$E通常,|그럼, 흩어져서\n식량 조달과 아영 준비를 하죠.$k
+MID_001_OP1_3: $t1$Wmフレデリク|3$w0|$b注目,クロム,フレデリク|$b向き,リズ,A|$b動作,リズ,WalkTurn|$b動作,リズ,RizRe|$Wsフレデリク|$Wa$b動作,フレデリク,FreGe3|$b動作,フレデリク,FreRe|$SvpSE_VOICE_FREDERIK_EVT_18|$E通常,|그럼, 흩어져서\n식량 조달과 야영 준비를 하죠.$k
 MID_001_OP2: $t1$Wmクロム|3$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_11|$E通常,|후우…\n$E笑,|곰은 오랜만이지만, 맛있군.$k$p$b注目,クロム,リズ|$E通常,|왜 그래, 리사.\n걱정 말고 많이 먹어도 돼.$k\n$Wsクロム|$Wd$w0|$Wmリズ|3$w0|$Wsリズ|$Wa$b注目,リズ,クロム|$b動作,リズ,SitDownNo|$b動作,リズ,SitDown|$SvpSE_VOICE_LIZ_EVT_11|$E怒,|왜 그런 걸 잡아 오는 거야?\n곰 같은 걸 어떻게 그냥 먹어.$k$p$b注目,リズ,プレイヤー女|$E怒,|그치, $Nu씨?$k\n$Wsリズ|$Wd$w0|
 MID_001_OP2_2_PCM1: $t1$Wmusername|3$w0|$Wsusername|$Wa$E通常,|우걱우걱, 쩝쩝!$k\n$Wsusername|$Wd$w0|
 MID_001_OP2_2_PCM2: $t1$Wmusername|3$w0|$Wsusername|$Wa$E通常,|우걱, 쩝쩝… 꿀꺽.$k\n$Wsusername|$Wd$w0|
