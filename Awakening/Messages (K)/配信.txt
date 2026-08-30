@@ -304,7 +304,7 @@ MID_BOSS_戦闘会話_フィン: I accept your challenge!
 MID_BOSS_戦闘会話_サイアス: You have no hope against me.
 MID_BOSS_戦闘会話_マリータ: I won't lose to the likes of you!
 MID_BOSS_戦闘会話_レイドリック: You won't leave here alive!
-MID_BOSS_戦闘会話_リーフ: 맹세컨데 당신을 쓰러뜨리겠어!
+MID_BOSS_戦闘会話_リーフ: 맹세컨대 당신을 쓰러뜨리겠어!
 MID_BOSS_戦闘会話_ウォルト: Heh. Just try me!
 MID_BOSS_戦闘会話_シャニー: All right. You asked for it!
 MID_BOSS_戦闘会話_ルゥ: I won't let you hurt the others!

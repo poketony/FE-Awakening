@@ -26,7 +26,7 @@ MID_X022_BT2_PCM1: $t0$Wmusername|6$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_M#_EVT
 MID_X022_BT2_PCM2: $t0$Wmusername|6$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_M#_EVT_31|$E通常,|자신이 누군가…\n그에 대한 답이 있다면, 알려줘.$k$p$E怒,|나는, 크롬과\n같이 갈 자격이 있는 사람이야?$k
 MID_X022_BT2_PCM3: $t0$Wmusername|6$w0|$Wsusername|$Wa$E通常,|…………$k\n$Wsusername|$Wd$w0|$Wmusername|0$w0|$Wsusername|$Wa$E通常,|…………$k
 MID_X022_BT2_PCF1: $t0$Wmusername|6$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_31|$E通常,|자신이 누구인지…\n그 답이 있다면, 알려 줘.$k$p$E怒,|나는 크롬과\n같이 갈 자격이 있는 사람이야?$k
-MID_X022_BT2_PCF2: $t0$Wmusername|6$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_31|$E通常,|자신이 누군가…\n그에 대한 답이 있다면, 알려주세요.$k$p$E怒,|저는, 크롬과\n같이 갈 자격이 있는 사람인가요?$k
+MID_X022_BT2_PCF2: $t0$Wmusername|6$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_31|$E通常,|자신이 누군가…\n그에 대한 답이 있다면, 알려 주세요.$k$p$E怒,|저는, 크롬과\n같이 갈 자격이 있는 사람인가요?$k
 MID_X022_BT2_PCF3: $t0$Wmusername|6$w0|$Wsusername|$Wa$E通常,|…………$k\n$Wsusername|$Wd$w0|$Wmusername|0$w0|$Wsusername|$Wa$E通常,|…………$k
 MID_X022_BT3: $t1$Wmインバース|3$w0|$Wsインバース|$Wa$SvpSE_VOICE_INVERSE_EVT_22|$E通常,|자, 알려 줘. 내가 누구인지.$k
 MID_X022_BT: $t0$Wmクロム|0$w0|$Wsクロム|$Wa나는 크롬……\n진실된 크롬……$k

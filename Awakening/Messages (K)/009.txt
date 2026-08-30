@@ -83,7 +83,7 @@ MID_009_ED1_05Y_PCM1: $t1$Wmクロム|3$Wmusername|7$w0|$Wsusername|$Wa$SvpSE_VO
 MID_009_ED1_05Y_PCM2: $t1$Wmクロム|3$Wmusername|7$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_M#_EVT_15|$E苦,汗|……그래.\n어쩔 수 없지만, 그럴 수밖에 없어.$k$p괴로운 건 알아.\n하지만……$k$p한 명의 목숨을 구하는 것보다,\n많은 목숨을 구해야 돼.$k\n$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_35|$E苦,汗|크……윽!$k
 MID_009_ED1_05Y_PCM3: $t1$Wmクロム|3$Wmusername|7$w0|$Wsusername|$Wa$E苦,汗|…………$k\n$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_35|$E苦,汗|크……윽!$k
 MID_009_ED1_05Y_PCF1: $t1$Wmクロム|3$Wmusername|7$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_15|$E苦,汗|그래.\n어쩔 수 없지만, 그럴 수밖에 없어.$k$p괴로운 건 알아.\n하지만……$k$p한 명의 목숨을 구하는 것보다,\n많은 목숨을 구해야 돼.$k\n$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_35|$E苦,汗|크……윽!$k
-MID_009_ED1_05Y_PCF2: $t1$Wmクロム|3$Wmusername|7$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_15|$E苦,汗|……네.\n어쩔 수 없지만, 그럴 수 밖에 없어요.$k$p괴로운 건 알아요.\n하지만……$k$p한 명의 목숨을 구하는 것보다,\n많은 목숨을 구해야 돼요.$k\n$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_35|$E苦,汗|크……윽!$k
+MID_009_ED1_05Y_PCF2: $t1$Wmクロム|3$Wmusername|7$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_15|$E苦,汗|……네.\n어쩔 수 없지만, 그럴 수밖에 없어요.$k$p괴로운 건 알아요.\n하지만……$k$p한 명의 목숨을 구하는 것보다,\n많은 목숨을 구해야 돼요.$k\n$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_35|$E苦,汗|크……윽!$k
 MID_009_ED1_05Y_PCF3: $t1$Wmクロム|3$Wmusername|7$w0|$Wsusername|$Wa$E苦,汗|…………$k\n$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_35|$E苦,汗|크……윽!$k
 MID_009_ED1_05Y_2: $t1$Wmギャンレル|7$w0|$Wsギャンレル|$Wa$SvpSE_VOICE_GANGREL_EVT_9|$E通常,|뭐야?\n거스를 거냐? 재밌군!$k$p『왕자는 성왕을 죽게 내버려 두었다!』는\n소문을 온 나라에 퍼트리겠어!$k$p$E笑,|백성들의 마음은 순식간에 멀어져 버리겠지.\n너희들의 나라는 어떻게든 끝난다!$k\n$Wmクロム|3$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_20|$E苦,汗|갱렐…!$k
 MID_009_ED1_05N_PCM1: $t1$Wmクロム|3$Wmusername|7$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_M#_EVT_32|$E苦,汗|아니. 포기하지 마.\n뭔가 방법이 있을 터…$k\n$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_35|$E苦,汗|나도 믿고 싶어… 하지만…$k$p대체 어떻게 하면 이 상황을\n타개할 수 있는 거야!?$k
