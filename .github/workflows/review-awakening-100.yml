@@ -25,6 +25,12 @@ jobs:
               try: txt=kp.read_text(encoding='utf-8')
               except UnicodeDecodeError: continue
               if 'MID_支援_' not in txt: continue
+              # Known non-live aliases: when the same support exists under Marth,
+              # the Lucina-named file is not the live file and must not be reviewed/tracked.
+              if kp.name.endswith('_ルキナ.txt'):
+                  marth=kroot/(kp.name[:-len('_ルキナ.txt')]+'_マルス.txt')
+                  if marth.exists():
+                      continue
               jp=jroot/kp.name
               if not jp.exists(): continue
               cand.append(kp)
@@ -32,7 +38,6 @@ jobs:
           if len(batch)!=100: raise SystemExit(f'need 100 files, got {len(batch)}')
           out=Path('review-batch'); (out/'K').mkdir(parents=True); (out/'J').mkdir(parents=True)
           mids=re.compile(r'^(MID_[^:]+): (.*)$',re.M)
-          code=re.compile(r'\$[A-Za-z][A-Za-z0-9]*')
           manifest=[]; audit=[]
           for i,kp in enumerate(batch,1):
               jp=jroot/kp.name
@@ -43,7 +48,6 @@ jobs:
               if km!=jm: audit.append(f'MID_DIFF\t{kp.name}\tJP={len(jm)}\tKR={len(km)}')
               if '\ufffd' in kt: audit.append(f'UFFFD\t{kp.name}')
               if any(ord(c)<32 and c not in '\n\r\t' for c in kt): audit.append(f'C0\t{kp.name}')
-              # Broad Korean typo/spacing flags; these are only review hints, never auto-fixes.
               pats=[r'실태를',r'있었던거',r'곤란해 하',r'계속 하',r'생각한대로',r'정도 뿐',r'말씀 하',r'되어 보이겠',r'않겠습니다',r'할 수 있을거',r'할 수 없을거',r'수 밖에',r'뿐 만',r'것 같다만']
               for pat in pats:
                   for m in re.finditer(pat,kt):
