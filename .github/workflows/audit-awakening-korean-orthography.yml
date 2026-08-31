@@ -1,0 +1,119 @@
+name: Audit Awakening Korean orthography
+on:
+  push:
+    paths: ['.github/workflows/audit-awakening-korean-orthography.yml']
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan Korean dialogue for orthography candidates
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          roots=[Path('Awakening/Messages (K)'),Path('Awakening/DLC Message (K)')]
+          midre=re.compile(r'^(MID_[^:]+): (.*)$',re.M)
+          dead=re.compile(r'_(?:PCM[23]|PCF[23])(?:$|_)')
+
+          # High-value prescriptive spelling/spacing candidates. Honorific spacing intentionally excluded.
+          rules=[
+            ('익숙치→익숙지', re.compile(r'익숙치')),
+            ('깨끗치→깨끗지', re.compile(r'깨끗치')),
+            ('넉넉치→넉넉지', re.compile(r'넉넉치')),
+            ('못지않다 spacing', re.compile(r'못지\s+않')),
+            ('할수/될수/갈수/볼수 spacing', re.compile(r'(?<![가-힣])(할수|될수|갈수|볼수|알수|올수|쓸수|살수|둘수|줄수|낼수|될뿐|할뿐)(?![가-힣])')),
+            ('것같 spacing', re.compile(r'것같(?:다|아|은|이|아서|으|네|군|지|고|지만|으면)?')),
+            ('수밖에 spacing', re.compile(r'수\s+밖에')),
+            ('밖에없 spacing', re.compile(r'밖에없')),
+            ('뿐이다 spacing', re.compile(r'뿐\s+이다|뿐\s+이야|뿐\s+입니다|뿐\s+이었다|뿐\s+였')),
+            ('대로하다 spacing', re.compile(r'대로\s+하다|대로\s+해|대로\s+했')),
+            ('만큼하다 spacing', re.compile(r'만큼\s+하다|만큼\s+해|만큼\s+했')),
+            ('들어있 spacing', re.compile(r'들어있(?:다|어|어요|었|는|던|고|지|으|네|군|겠|을|습니다)?')),
+            ('담겨있 spacing', re.compile(r'담겨있(?:다|어|어요|었|는|던|고|지|으|네|군|겠|을|습니다)?')),
+            ('놓여있 spacing', re.compile(r'놓여있(?:다|어|어요|었|는|던|고|지|으|네|군|겠|을|습니다)?')),
+            ('남아있 spacing', re.compile(r'남아있(?:다|어|어요|었|는|던|고|지|으|네|군|겠|을|습니다)?')),
+            ('살아있 spacing', re.compile(r'살아있(?:다|어|어요|었|는|던|고|지|으|네|군|겠|을|습니다)?')),
+            ('붙어있 spacing', re.compile(r'붙어있(?:다|어|어요|었|는|던|고|지|으|네|군|겠|을|습니다)?')),
+            ('숨어있 spacing', re.compile(r'숨어있(?:다|어|어요|었|는|던|고|지|으|네|군|겠|을|습니다)?')),
+            ('서있 spacing', re.compile(r'(?<![가-힣])서있(?:다|어|어요|었|는|던|고|지|으|네|군|겠|을|습니다)?')),
+            ('앉아있 spacing', re.compile(r'앉아있(?:다|어|어요|었|는|던|고|지|으|네|군|겠|을|습니다)?')),
+            ('되어있 spacing', re.compile(r'되어있(?:다|어|어요|었|는|던|고|지|으|네|군|겠|을|습니다)?')),
+            ('돼있 spacing', re.compile(r'돼있(?:다|어|어요|었|는|던|고|지|으|네|군|겠|을|습니다)?')),
+            ('되어있는 spacing', re.compile(r'되어있는')),
+            ('돼있는 spacing', re.compile(r'돼있는')),
+            ('되어있던 spacing', re.compile(r'되어있던')),
+            ('돼있던 spacing', re.compile(r'돼있던')),
+            ('몇일→며칠', re.compile(r'몇일')),
+            ('왠지/웬지', re.compile(r'웬지')),
+            ('왠일→웬일', re.compile(r'왠일')),
+            ('어떻해→어떻게', re.compile(r'어떻해')),
+            ('어떻게하다 spacing', re.compile(r'어떻게\s+하다')),
+            ('금새→금세', re.compile(r'금새')),
+            ('요세→요새', re.compile(r'(?<![가-힣])요세(?![가-힣])')),
+            ('희안→희한', re.compile(r'희안')),
+            ('설레임→설렘', re.compile(r'설레임')),
+            ('바램→바람', re.compile(r'바램')),
+            ('오랫만→오랜만', re.compile(r'오랫만')),
+            ('웬만하면 variants', re.compile(r'왠만')),
+            ('어의없→어이없', re.compile(r'어의없')),
+            ('역활→역할', re.compile(r'역활')),
+            ('연애인→연예인', re.compile(r'연애인')),
+            ('문안하다→무난하다 candidate', re.compile(r'문안(?:하|한|해|했)')),
+            ('않되/안돼 confusion', re.compile(r'않되|않돼')),
+            ('됬→됐', re.compile(r'됬')),
+            ('됌/됬음', re.compile(r'됌|됬음')),
+            ('되요→돼요', re.compile(r'(?<!안 )되요')),
+            ('안되 spacing', re.compile(r'안되(?:다|어|지|는|면|고|겠다|겠|네|니|나요|죠|요|나|니까)')),
+            ('안돼 spacing', re.compile(r'안돼(?:요|서|도|지|는|면|겠|죠|!|\?|…|$)')),
+            ('할께→할게', re.compile(r'[가-힣]+할께')),
+            ('갈께→갈게', re.compile(r'[가-힣]+갈께')),
+            ('될께→될게', re.compile(r'[가-힣]+될께')),
+            ('할려고→하려고', re.compile(r'할려고')),
+            ('갈려고→가려고', re.compile(r'갈려고')),
+            ('볼려고→보려고', re.compile(r'볼려고')),
+            ('먹을려고→먹으려고', re.compile(r'먹을려고')),
+            ('할려면→하려면', re.compile(r'할려면')),
+            ('할래야→하려야 candidate', re.compile(r'할래야')),
+            ('할런지→할는지/하려는지 candidate', re.compile(r'할런지')),
+            ('어떻든→어쨌든 candidate', re.compile(r'어떻든')),
+            ('갯수→개수', re.compile(r'갯수')),
+            ('댓가→대가', re.compile(r'댓가')),
+            ('뒷풀이→뒤풀이', re.compile(r'뒷풀이')),
+            ('윗쪽→위쪽', re.compile(r'윗쪽')),
+            ('뒷쪽→뒤쪽', re.compile(r'뒷쪽')),
+            ('짜집기→짜깁기', re.compile(r'짜집기')),
+            ('통채로→통째로', re.compile(r'통채로')),
+            ('곰곰히→곰곰이', re.compile(r'곰곰히')),
+            ('깨끗히→깨끗이', re.compile(r'깨끗히')),
+            ('틈틈히→틈틈이', re.compile(r'틈틈히')),
+            ('일일히→일일이', re.compile(r'일일히')),
+            ('번번히→번번이', re.compile(r'번번히')),
+            ('가까히→가까이', re.compile(r'가까히')),
+            ('간간히→간간이 candidate', re.compile(r'간간히')),
+            ('도저히 misspelling', re.compile(r'도저이')),
+            ('왠만큼→웬만큼', re.compile(r'왠만큼')),
+            ('어떡게→어떻게', re.compile(r'어떡게')),
+            ('어떻케→어떻게', re.compile(r'어떻케')),
+          ]
+
+          rows=[]
+          for root in roots:
+            for p in sorted(root.glob('*.txt')):
+              text=p.read_text(encoding='utf-8')
+              for m in midre.finditer(text):
+                name,body=m.group(1),m.group(2)
+                if dead.search(name): continue
+                for label,pat in rules:
+                  for x in pat.finditer(body):
+                    # Ignore obvious name/honorific area rules; none above target 씨/님 spacing.
+                    a=max(0,x.start()-100); b=min(len(body),x.end()+100)
+                    rows.append((str(p),name,label,x.group(0),body[a:b]))
+          print('CANDIDATES',len(rows))
+          for i,row in enumerate(rows,1):
+            p,n,l,h,c=row
+            print(f'@@CANDIDATE {i}@@\nFILE {p}\nMID {n}\nRULE {l}\nHIT {h}\nCONTEXT {c}')
+          PY
