@@ -1,0 +1,52 @@
+name: Refine Awakening line-break grammar
+on:
+  push:
+    paths: ['.github/workflows/refine-awakening-linebreak-grammar.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare suspicious breaks with Japanese context
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          kroots=[Path('Awakening/Messages (K)'),Path('Awakening/DLC Message (K)')]
+          pairs={Path('Awakening/Messages (K)'):Path('Awakening/Messages (J)'),Path('Awakening/DLC Message (K)'):Path('Awakening/DLC Message (J)')}
+          midre=re.compile(r'^(MID_[^:]+): (.*)$',re.M); dead=re.compile(r'_(?:PCM[23]|PCF[23])(?:$|_)')
+          # High-confidence: a Korean adnominal/modifier is separated from a dependent noun by a visual \\n.
+          dep='수|것|줄|리|바|뿐|듯|만큼|대로'
+          strict=re.compile(r'((?:[가-힣]+(?:ㄹ|을|할|될|갈|볼|할|있는|없는|하는|되는|같은|했던|하던|던|은|는)|있을|없을|않을|못할|해야|하고|되고|라고|이라고))\\n('+dep+r')(?=[^가-힣]|[이가은는을를도만밖같뿐대처]|$)')
+          # Also catch exact common constructions regardless of preceding token length.
+          common=re.compile(r'([가-힣]+(?:할|할 수|될|갈|볼|알|있을|없을|않을|못할|하는|되는|같은|했던|하던|던|은|는|을|ㄹ))\\n(수|것|줄|리|바|뿐|듯|만큼|대로)')
+          out=[]
+          for kr in kroots:
+            jr=pairs[kr]
+            for p in sorted(kr.glob('*.txt')):
+              kt=p.read_text(encoding='utf-8'); jp=jr/p.name
+              jmap={m.group(1):m.group(2) for m in midre.finditer(jp.read_text(encoding='utf-8'))} if jp.exists() else {}
+              for m in midre.finditer(kt):
+                name,body=m.group(1),m.group(2)
+                if dead.search(name): continue
+                seen=set()
+                for pat in (strict,common):
+                  for x in pat.finditer(body):
+                    key=(x.start(),x.end())
+                    if key in seen: continue
+                    seen.add(key)
+                    a=max(0,x.start()-140); b=min(len(body),x.end()+140)
+                    out.append((str(p),name,x.group(0),body[a:b],jmap.get(name,'<JP MID/file missing>')))
+          print('STRICT_CANDIDATES',len(out))
+          for i,(p,n,h,c,j) in enumerate(out,1):
+            print(f'@@STRICT {i}@@\nFILE {p}\nMID {n}\nHIT {h}\nKR_CONTEXT {c}\nJP {j}')
+          PY
+      - name: Remove temporary audits
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git rm .github/workflows/audit-awakening-linebreak-grammar.yml .github/workflows/refine-awakening-linebreak-grammar.yml
+          git commit -m 'Remove temporary Awakening line-break audits'
+          git push
