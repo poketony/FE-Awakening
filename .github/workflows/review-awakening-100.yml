@@ -1,64 +1,40 @@
-name: Finalize Awakening 50-file review batch
+name: Prepare fresh Awakening 50-file review batch
 on:
   push:
     paths: ['.github/workflows/review-awakening-100.yml']
 permissions:
-  contents: write
+  contents: read
 jobs:
-  finalize:
+  prepare:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Apply reviewed corrections and finalize first 50
+      - name: Select 50 fresh files and pair Japanese originals
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import re, shutil
-          root=Path("Awakening/Messages (K)")
-          dead=re.compile(r"_(?:PCM[23]|PCF[23])(?:$|_)")
-          batch=['アズール_ウード.txt', 'アズール_オリヴィエ_親子.txt', 'アズール_カラム_親子.txt', 'アズール_ガイア_親子.txt', 'アズール_クロム_親子.txt', 'アズール_グレゴ_親子.txt', 'アズール_シンシア.txt', 'アズール_ジェローム.txt', 'アズール_セレナ.txt', 'アズール_ソール_親子.txt', 'アズール_デジェル.txt', 'アズール_ドニ_親子.txt', 'アズール_ノワール.txt', 'アズール_フレデリク_親子.txt', 'アズール_ブレディ.txt', 'アズール_プレイヤー女.txt', 'アズール_プレイヤー男.txt', 'アズール_プレイヤー男_親子.txt', 'アズール_ヘンリー_親子.txt', 'アズール_マルス.txt', 'アズール_マーク女.txt', 'アズール_リヒト_親子.txt', 'アズール_リベラ_親子.txt', 'アズール_ロンクー_親子.txt', 'アズール_ンン.txt', 'アズール_ヴィオール_親子.txt', 'アズール_ヴェイク_親子.txt', 'アンナ_チキ.txt', 'アンナ_プレイヤー女.txt', 'アンナ_プレイヤー男.txt', 'インバース_プレイヤー女.txt', 'インバース_プレイヤー男.txt', 'ウード_カラム_親子.txt', 'ウード_ガイア_親子.txt', 'ウード_グレゴ_親子.txt', 'ウード_シンシア.txt', 'ウード_セレナ.txt', 'ウード_ソール_親子.txt', 'ウード_デジェル.txt', 'ウード_ドニ_親子.txt', 'ウード_ノワール.txt', 'ウード_フレデリク_親子.txt', 'ウード_ブレディ.txt', 'ウード_プレイヤー女.txt', 'ウード_プレイヤー男.txt', 'ウード_プレイヤー男_親子.txt', 'ウード_ヘンリー_親子.txt', 'ウード_マルス.txt', 'ウード_マーク女.txt', 'ウード_マーク男.txt']
-          base={n:(root/n).read_text(encoding="utf-8") for n in batch}
-          def edit(name,reps):
-              p=root/name; text=p.read_text(encoding="utf-8"); out=[]
-              for line in text.splitlines(keepends=True):
-                  if line.startswith("MID_") and ": " in line:
-                      mid=line.split(": ",1)[0]
-                      if not dead.search(mid):
-                          for a,b in reps: line=line.replace(a,b)
-                  out.append(line)
-              p.write_text("".join(out),encoding="utf-8")
-          generic=[("기대 받았어","기대받았어"),("고민이 없어보인다고","고민이 없어 보인다고"),("걱정해줘서","걱정해 줘서"),("부끄러워 하는","부끄러워하는"),("사명인거야","사명인 거야"),("다행인건가","다행인 건가"),("미래에서 있었을 때부터","미래에 있었을 때부터"),("한 마디도","한마디도")]
-          for n in batch: edit(n,generic)
-          for n in batch:
-              if n.startswith("アズール_") and "_親子" in n:
-                  edit(n,[("꽤 소극적이여서, 금방 울기도 하고.","꽤 귀찮은 성격이고, 금방 울기도 하고."),("꽤 소극적이어서, 금방 울기도 하고.","꽤 귀찮은 성격이고, 금방 울기도 하고."),("꽤 부정적이고, 금방 울기도 하고.","꽤 귀찮은 성격이고, 금방 울기도 하고."),("꽤 소극적이어서, 금방 울기도 하거든.","꽤 귀찮은 성격이고, 금방 울기도 하거든.")])
-          edit("アズール_カラム_親子.txt",[("상 웃으며, 아무것도 아니라는 얼굴로","항상 웃으며, 아무것도 아니라는 얼굴로")])
-          edit("アズール_ンン.txt",[("애시당초 여성 분께 실례라고","애당초 여성분께 실례라고"),("당분간은 안하려고.","당분간은 안 하려고."),("이미 실격인 거 같습니다만…","여러모로 잘못됐습니다…"),("…어쨌든 그래서, 포기하지 않고\\n계속 작업을 거는 중인 겁니까?","…그나저나, 질리지도 않고\\n계속 작업만 거는군요?"),("저는 아직 어리니까 다른 사람의\\n연애는 신경 쓰지 말라고 했잖습니까.","저는 아직 어리니까\\n연애 같은 건 생각하지 말라고 했잖습니까."),("할 수 있습니다.\\n안 될 것도 없는 겁니다.","할 수 있습니다.\\n잘 생각해 보니, 저는 커질 수 있었습니다!"),("저는 커질 수도 있으니까,\\n문제없지 않습니까?","저는 커질 수도 있으니까,\\n이니고의 상대로도 합격이지 않습니까?"),("아, 아니, 난 결혼은\\n생각치도 못했다고!!!","아, 아니, 상대라고 해서 딱히\\n결혼 상대라는 뜻은 아니었어!!!")])
-          tracker=Path("Awakening/AUTOMATION_REVIEWED_FILES.txt")
-          old=tracker.read_text(encoding="utf-8")
-          entries=[f"Awakening/Messages (K)/{n}" for n in batch]
-          existing={x.strip() for x in old.splitlines()}
-          coll=[x for x in entries if x in existing]
-          if coll: raise SystemExit(f"already tracked: {coll}")
-          tracker.write_text(old+"".join(x+"\n" for x in entries),encoding="utf-8")
-          midre=re.compile(r"^(MID_[^:]+):",re.M)
-          ctrl=re.compile(r"\$[A-Za-z]+(?:[^$|\\n]*\|)?")
-          for n in batch:
-              a=base[n]; b=(root/n).read_text(encoding="utf-8")
-              if "\ufffd" in b or any(ord(c)<32 and c not in "\n\r\t" for c in b): raise SystemExit(f"encoding/control char: {n}")
-              if midre.findall(a)!=midre.findall(b): raise SystemExit(f"MID order: {n}")
-              if ctrl.findall(a)!=ctrl.findall(b): raise SystemExit(f"control sequence: {n}")
-              if [x.count("\\n") for x in a.splitlines()] != [x.count("\\n") for x in b.splitlines()]: raise SystemExit(f"literal n: {n}")
-              da={m.group(1):m.group(0) for m in re.finditer(r"^(MID_[^:]+):.*$",a,re.M) if dead.search(m.group(1))}
-              db={m.group(1):m.group(0) for m in re.finditer(r"^(MID_[^:]+):.*$",b,re.M) if dead.search(m.group(1))}
-              if da!=db: raise SystemExit(f"dead avatar branch: {n}")
-          if len(batch)!=50 or len(set(batch))!=50: raise SystemExit("not 50 unique")
-          print("validated 50 files")
+          import random, shutil
+          tracker=Path('Awakening/AUTOMATION_REVIEWED_FILES.txt').read_text(encoding='utf-8')
+          done={x.strip() for x in tracker.splitlines() if x.startswith('Awakening/')}
+          candidates=[]
+          for kd,jd,prefix in [(Path('Awakening/Messages (K)'),Path('Awakening/Messages (J)'),'Awakening/Messages (K)/'),(Path('Awakening/DLC Message (K)'),Path('Awakening/DLC Message (J)'),'Awakening/DLC Message (K)/')]:
+            for k in kd.glob('*.txt'):
+              rel=prefix+k.name
+              if rel in done or not (jd/k.name).exists(): continue
+              if k.name.endswith('_ルキナ.txt') and (kd/(k.name[:-7]+'_マルス.txt')).exists(): continue
+              candidates.append((k,jd/k.name,rel))
+          random.SystemRandom().shuffle(candidates)
+          batch=candidates[:50]
+          if len(batch)<50: raise SystemExit(f'only {len(batch)} fresh files remain')
+          out=Path('review50'); (out/'K').mkdir(parents=True); (out/'J').mkdir()
+          for k,j,rel in batch:
+            shutil.copy2(k,out/'K'/k.name); shutil.copy2(j,out/'J'/j.name)
+          (out/'manifest.txt').write_text('\n'.join(rel for _,_,rel in batch)+'\n',encoding='utf-8')
+          print('SELECTED_FRESH_50')
+          print((out/'manifest.txt').read_text(encoding='utf-8'))
           PY
-          git diff --check
-          test "$(tail -n 50 Awakening/AUTOMATION_REVIEWED_FILES.txt | wc -l)" -eq 50
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Awakening/AUTOMATION_REVIEWED_FILES.txt 'Awakening/Messages (K)'
-          git commit -m "Review 50 Awakening support dialogue files"
-          git push
+      - uses: actions/upload-artifact@v4
+        with:
+          name: awakening-review-fresh-50
+          path: review50
+          retention-days: 1
