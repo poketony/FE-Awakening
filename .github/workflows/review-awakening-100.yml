@@ -1,4 +1,4 @@
-name: Finalize Awakening 100-file review batch
+name: Finalize Awakening 50-file review batch
 on:
   push:
     paths: ['.github/workflows/review-awakening-100.yml']
@@ -9,103 +9,56 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Apply reviewed corrections and finalize batch
+      - name: Apply reviewed corrections and finalize first 50
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import re
-
-          root=Path('Awakening/Messages (K)')
-          dead=re.compile(r'_(?:PCM[23]|PCF[23])(?:$|_)')
-
-          def edit(name, reps):
-              p=root/name
-              text=p.read_text(encoding='utf-8')
-              out=[]
+          import re, shutil
+          root=Path("Awakening/Messages (K)")
+          dead=re.compile(r"_(?:PCM[23]|PCF[23])(?:$|_)")
+          batch=['アズール_ウード.txt', 'アズール_オリヴィエ_親子.txt', 'アズール_カラム_親子.txt', 'アズール_ガイア_親子.txt', 'アズール_クロム_親子.txt', 'アズール_グレゴ_親子.txt', 'アズール_シンシア.txt', 'アズール_ジェローム.txt', 'アズール_セレナ.txt', 'アズール_ソール_親子.txt', 'アズール_デジェル.txt', 'アズール_ドニ_親子.txt', 'アズール_ノワール.txt', 'アズール_フレデリク_親子.txt', 'アズール_ブレディ.txt', 'アズール_プレイヤー女.txt', 'アズール_プレイヤー男.txt', 'アズール_プレイヤー男_親子.txt', 'アズール_ヘンリー_親子.txt', 'アズール_マルス.txt', 'アズール_マーク女.txt', 'アズール_リヒト_親子.txt', 'アズール_リベラ_親子.txt', 'アズール_ロンクー_親子.txt', 'アズール_ンン.txt', 'アズール_ヴィオール_親子.txt', 'アズール_ヴェイク_親子.txt', 'アンナ_チキ.txt', 'アンナ_プレイヤー女.txt', 'アンナ_プレイヤー男.txt', 'インバース_プレイヤー女.txt', 'インバース_プレイヤー男.txt', 'ウード_カラム_親子.txt', 'ウード_ガイア_親子.txt', 'ウード_グレゴ_親子.txt', 'ウード_シンシア.txt', 'ウード_セレナ.txt', 'ウード_ソール_親子.txt', 'ウード_デジェル.txt', 'ウード_ドニ_親子.txt', 'ウード_ノワール.txt', 'ウード_フレデリク_親子.txt', 'ウード_ブレディ.txt', 'ウード_プレイヤー女.txt', 'ウード_プレイヤー男.txt', 'ウード_プレイヤー男_親子.txt', 'ウード_ヘンリー_親子.txt', 'ウード_マルス.txt', 'ウード_マーク女.txt', 'ウード_マーク男.txt']
+          base={n:(root/n).read_text(encoding="utf-8") for n in batch}
+          def edit(name,reps):
+              p=root/name; text=p.read_text(encoding="utf-8"); out=[]
               for line in text.splitlines(keepends=True):
-                  if line.startswith('MID_') and ': ' in line:
-                      mid=line.split(': ',1)[0]
+                  if line.startswith("MID_") and ": " in line:
+                      mid=line.split(": ",1)[0]
                       if not dead.search(mid):
-                          for a,b in reps:
-                              line=line.replace(a,b)
+                          for a,b in reps: line=line.replace(a,b)
                   out.append(line)
-              p.write_text(''.join(out),encoding='utf-8')
-
-          batch=['アズール_ウード.txt', 'アズール_オリヴィエ_親子.txt', 'アズール_カラム_親子.txt', 'アズール_ガイア_親子.txt', 'アズール_クロム_親子.txt', 'アズール_グレゴ_親子.txt', 'アズール_シンシア.txt', 'アズール_ジェローム.txt', 'アズール_セレナ.txt', 'アズール_ソール_親子.txt', 'アズール_デジェル.txt', 'アズール_ドニ_親子.txt', 'アズール_ノワール.txt', 'アズール_フレデリク_親子.txt', 'アズール_ブレディ.txt', 'アズール_プレイヤー女.txt', 'アズール_プレイヤー男.txt', 'アズール_プレイヤー男_親子.txt', 'アズール_ヘンリー_親子.txt', 'アズール_マルス.txt', 'アズール_マーク女.txt', 'アズール_リヒト_親子.txt', 'アズール_リベラ_親子.txt', 'アズール_ロンクー_親子.txt', 'アズール_ンン.txt', 'アズール_ヴィオール_親子.txt', 'アズール_ヴェイク_親子.txt', 'アンナ_チキ.txt', 'アンナ_プレイヤー女.txt', 'アンナ_プレイヤー男.txt', 'インバース_プレイヤー女.txt', 'インバース_プレイヤー男.txt', 'ウード_カラム_親子.txt', 'ウード_ガイア_親子.txt', 'ウード_グレゴ_親子.txt', 'ウード_シンシア.txt', 'ウード_セレナ.txt', 'ウード_ソール_親子.txt', 'ウード_デジェル.txt', 'ウード_ドニ_親子.txt', 'ウード_ノワール.txt', 'ウード_フレデリク_親子.txt', 'ウード_ブレディ.txt', 'ウード_プレイヤー女.txt', 'ウード_プレイヤー男.txt', 'ウード_プレイヤー男_親子.txt', 'ウード_ヘンリー_親子.txt', 'ウード_マルス.txt', 'ウード_マーク女.txt', 'ウード_マーク男.txt', 'ウード_リズ_親子.txt', 'ウード_リヒト_親子.txt', 'ウード_リベラ_親子.txt', 'ウード_ロンクー_親子.txt', 'ウード_ンン.txt', 'ウード_ヴィオール_親子.txt', 'ウード_ヴェイク_親子.txt', 'エメリナ_プレイヤー女.txt', 'エメリナ_プレイヤー男.txt', 'オリヴィエ_カラム.txt', 'オリヴィエ_ガイア.txt', 'オリヴィエ_グレゴ.txt', 'オリヴィエ_ソール.txt', 'オリヴィエ_ドニ.txt', 'オリヴィエ_フレデリク.txt', 'オリヴィエ_プレイヤー女.txt', 'オリヴィエ_プレイヤー男.txt', 'オリヴィエ_ヘンリー.txt', 'オリヴィエ_ベルベット.txt', 'オリヴィエ_マリアベル.txt', 'オリヴィエ_リヒト.txt', 'オリヴィエ_リベラ.txt', 'オリヴィエ_ロンクー.txt', 'カラム_サーリャ.txt', 'カラム_セルジュ.txt', 'カラム_ソワレ.txt', 'カラム_ソール.txt', 'カラム_ティアモ.txt', 'カラム_ドニ.txt', 'カラム_ノノ.txt', 'カラム_プレイヤー女.txt', 'カラム_プレイヤー男.txt', 'カラム_ベルベット.txt', 'カラム_マリアベル.txt', 'カラム_ミリエル.txt', 'カラム_リズ.txt', 'ガイア_クロム.txt', 'ガイア_サーリャ.txt', 'ガイア_スミア.txt', 'ガイア_セルジュ.txt', 'ガイア_ソワレ.txt', 'ガイア_ティアモ.txt', 'ガイア_ノノ.txt', 'ガイア_プレイヤー女.txt', 'ガイア_プレイヤー男.txt', 'ガイア_ベルベット.txt', 'ガイア_マリアベル.txt', 'ガイア_ミリエル.txt', 'ガイア_リズ.txt', 'ガイア_リベラ.txt']
-
-          generic=[
-              ('기대 받았어','기대받았어'),
-              ('고민이 없어보인다고','고민이 없어 보인다고'),
-              ('걱정해줘서','걱정해 줘서'),
-              ('부끄러워 하는','부끄러워하는'),
-              ('부끄러워 하지','부끄러워하지'),
-              ('사명인거야','사명인 거야'),
-              ('다행인건가','다행인 건가'),
-              ('미래에서 있었을 때부터','미래에 있었을 때부터'),
-              ('소극적이여서','비관적이고'),
-              ('소극적이어서','비관적이고'),
-          ]
-          for name in batch:
-              edit(name,generic)
-
-          for name in batch:
-              if name.startswith('アズール_') and '_親子' in name:
-                  edit(name,[('내가 본심을 털어놓으면\\n우울해질지도',
-                              '내가 본심을 다 털어놓으면\\n꽤 귀찮을지도')])
-
-          edit('アズール_カラム_親子.txt',[('상 웃으며','항상 웃으며')])
-          edit('アズール_ンン.txt',[
-              ('$SvjSE_VOICE_NN_EVT_12|$SveSE_VOICE_NN_EVT_2|','$SvpSE_VOICE_NN_EVT_12|'),
-              ('$SvjSE_VOICE_NN_EVT_1|$SveSE_VOICE_NN_EVT_12|','$SvpSE_VOICE_NN_EVT_1|'),
-              ('기다리는 겁니다!$k\\n$Sbs1000|','기다리는 겁니다!$k$p이니고~!!$k\\n$Sbs1000|'),
-              ('이미 실격인 거 같습니다만…$k$p$E通常,|…어쨌든 그래서, 포기하지 않고\\n계속 작업을 거는 중인 겁니까?',
-               '여러모로 잘못됐습니다…$k$p$E通常,|…그나저나, 질리지도 않고\\n계속 작업만 거는군요?'),
-              ('애시당초 여성 분께 실례라고','애당초 여성분께 실례라고'),
-              ('당분간은 안하려고.','당분간은 안 하려고.'),
-              ('저는 아직 어리니까 다른 사람의\\n연애는 신경 쓰지 말라고 했잖습니까.',
-               '저는 아직 어리니까\\n연애 같은 건 생각하지 말라고 했잖습니까.'),
-              ('할 수 있습니다.\\n안 될 것도 없는 겁니다.',
-               '할 수 있습니다.\\n잘 생각해 보니, 저는 커질 수 있었습니다!'),
-              ('저는 커질 수도 있으니까,\\n문제없지 않습니까?',
-               '저는 커질 수도 있으니까,\\n이니고의 상대로도 합격이지 않습니까?'),
-              ('아, 아니, 난 결혼은\\n생각치도 못했다고!!!',
-               '아, 아니, 상대라고 해서 딱히\\n결혼 상대라는 뜻은 아니었어!!!'),
-          ])
-          edit('アンナ_チキ.txt',[('치키의 접객 능력 대단했어~','치키의 모객 능력은 대단했어~')])
-          edit('オリヴィエ_ロンクー.txt',[('힘들어 하셨죠.','힘들어하셨죠.')])
-          edit('オリヴィエ_カラム.txt',[('부끄러워 하지 않도록','부끄러워하지 않도록')])
-          edit('ガイア_スミア.txt',[
-              ('끈적한 대사지만','뻔한 대사지만'),
-              ('$k$p9번 실패하고','$k$p아홉 번 실패하고'),
-          ])
-          edit('ガイア_ソワレ.txt',[
-              ('결혼 해 줘','결혼해 줘'),
-              ('훈련을 더욱, 계속 하자!','훈련을 더욱 계속하자!'),
-          ])
-
-          tracker=Path('Awakening/AUTOMATION_REVIEWED_FILES.txt')
-          old=tracker.read_text(encoding='utf-8')
-          entries=[f'Awakening/Messages (K)/{name}' for name in batch]
+              p.write_text("".join(out),encoding="utf-8")
+          generic=[("기대 받았어","기대받았어"),("고민이 없어보인다고","고민이 없어 보인다고"),("걱정해줘서","걱정해 줘서"),("부끄러워 하는","부끄러워하는"),("사명인거야","사명인 거야"),("다행인건가","다행인 건가"),("미래에서 있었을 때부터","미래에 있었을 때부터"),("한 마디도","한마디도")]
+          for n in batch: edit(n,generic)
+          for n in batch:
+              if n.startswith("アズール_") and "_親子" in n:
+                  edit(n,[("꽤 소극적이여서, 금방 울기도 하고.","꽤 귀찮은 성격이고, 금방 울기도 하고."),("꽤 소극적이어서, 금방 울기도 하고.","꽤 귀찮은 성격이고, 금방 울기도 하고."),("꽤 부정적이고, 금방 울기도 하고.","꽤 귀찮은 성격이고, 금방 울기도 하고."),("꽤 소극적이어서, 금방 울기도 하거든.","꽤 귀찮은 성격이고, 금방 울기도 하거든.")])
+          edit("アズール_カラム_親子.txt",[("상 웃으며, 아무것도 아니라는 얼굴로","항상 웃으며, 아무것도 아니라는 얼굴로")])
+          edit("アズール_ンン.txt",[("애시당초 여성 분께 실례라고","애당초 여성분께 실례라고"),("당분간은 안하려고.","당분간은 안 하려고."),("이미 실격인 거 같습니다만…","여러모로 잘못됐습니다…"),("…어쨌든 그래서, 포기하지 않고\\n계속 작업을 거는 중인 겁니까?","…그나저나, 질리지도 않고\\n계속 작업만 거는군요?"),("저는 아직 어리니까 다른 사람의\\n연애는 신경 쓰지 말라고 했잖습니까.","저는 아직 어리니까\\n연애 같은 건 생각하지 말라고 했잖습니까."),("할 수 있습니다.\\n안 될 것도 없는 겁니다.","할 수 있습니다.\\n잘 생각해 보니, 저는 커질 수 있었습니다!"),("저는 커질 수도 있으니까,\\n문제없지 않습니까?","저는 커질 수도 있으니까,\\n이니고의 상대로도 합격이지 않습니까?"),("아, 아니, 난 결혼은\\n생각치도 못했다고!!!","아, 아니, 상대라고 해서 딱히\\n결혼 상대라는 뜻은 아니었어!!!")])
+          tracker=Path("Awakening/AUTOMATION_REVIEWED_FILES.txt")
+          old=tracker.read_text(encoding="utf-8")
+          entries=[f"Awakening/Messages (K)/{n}" for n in batch]
           existing={x.strip() for x in old.splitlines()}
-          if any(x in existing for x in entries):
-              raise SystemExit('batch contains already tracked file')
-          tracker.write_text(old+''.join(x+'\\n' for x in entries),encoding='utf-8')
-
-          if len(batch)!=100 or len(set(batch))!=100:
-              raise SystemExit('batch is not exactly 100 unique files')
-          for name in batch:
-              text=(root/name).read_text(encoding='utf-8')
-              if '\ufffd' in text:
-                  raise SystemExit(f'U+FFFD in {name}')
-              if any(ord(c)<32 and c not in '\\n\\r\\t' for c in text):
-                  raise SystemExit(f'C0 control in {name}')
+          coll=[x for x in entries if x in existing]
+          if coll: raise SystemExit(f"already tracked: {coll}")
+          tracker.write_text(old+"".join(x+"\n" for x in entries),encoding="utf-8")
+          midre=re.compile(r"^(MID_[^:]+):",re.M)
+          ctrl=re.compile(r"\$[A-Za-z]+(?:[^$|\\n]*\|)?")
+          for n in batch:
+              a=base[n]; b=(root/n).read_text(encoding="utf-8")
+              if "\ufffd" in b or any(ord(c)<32 and c not in "\n\r\t" for c in b): raise SystemExit(f"encoding/control char: {n}")
+              if midre.findall(a)!=midre.findall(b): raise SystemExit(f"MID order: {n}")
+              if ctrl.findall(a)!=ctrl.findall(b): raise SystemExit(f"control sequence: {n}")
+              if [x.count("\\n") for x in a.splitlines()] != [x.count("\\n") for x in b.splitlines()]: raise SystemExit(f"literal n: {n}")
+              da={m.group(1):m.group(0) for m in re.finditer(r"^(MID_[^:]+):.*$",a,re.M) if dead.search(m.group(1))}
+              db={m.group(1):m.group(0) for m in re.finditer(r"^(MID_[^:]+):.*$",b,re.M) if dead.search(m.group(1))}
+              if da!=db: raise SystemExit(f"dead avatar branch: {n}")
+          if len(batch)!=50 or len(set(batch))!=50: raise SystemExit("not 50 unique")
+          print("validated 50 files")
           PY
           git diff --check
-          test "$(git diff --name-only 'Awakening/Messages (K)' | wc -l)" -eq 20
-          test "$(tail -n 100 Awakening/AUTOMATION_REVIEWED_FILES.txt | wc -l)" -eq 100
-          git rm .github/workflows/review-awakening-100.yml
+          test "$(tail -n 50 Awakening/AUTOMATION_REVIEWED_FILES.txt | wc -l)" -eq 50
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add Awakening/AUTOMATION_REVIEWED_FILES.txt 'Awakening/Messages (K)'
-          git commit -m "Review 100 Awakening support dialogue files"
+          git commit -m "Review 50 Awakening support dialogue files"
           git push
