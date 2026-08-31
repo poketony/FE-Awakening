@@ -1,0 +1,60 @@
+name: Prepare Awakening 100-file review batch
+on:
+  push:
+    paths: ['.github/workflows/review-awakening-100.yml']
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build next 100 unreviewed support-dialogue pairs
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, shutil
+          kroot=Path('Awakening/Messages (K)')
+          jroot=Path('Awakening/Messages (J)')
+          tracker=Path('Awakening/AUTOMATION_REVIEWED_FILES.txt')
+          reviewed={x.strip() for x in tracker.read_text(encoding='utf-8').splitlines() if x.startswith('Awakening/Messages (K)/')}
+          cand=[]
+          for kp in sorted(kroot.glob('*.txt'), key=lambda p:p.name):
+              full=str(kp)
+              if full in reviewed: continue
+              try: txt=kp.read_text(encoding='utf-8')
+              except UnicodeDecodeError: continue
+              if 'MID_支援_' not in txt: continue
+              jp=jroot/kp.name
+              if not jp.exists(): continue
+              cand.append(kp)
+          batch=cand[:100]
+          if len(batch)!=100: raise SystemExit(f'need 100 files, got {len(batch)}')
+          out=Path('review-batch'); (out/'K').mkdir(parents=True); (out/'J').mkdir(parents=True)
+          mids=re.compile(r'^(MID_[^:]+): (.*)$',re.M)
+          code=re.compile(r'\$[A-Za-z][A-Za-z0-9]*')
+          manifest=[]; audit=[]
+          for i,kp in enumerate(batch,1):
+              jp=jroot/kp.name
+              kt=kp.read_text(encoding='utf-8'); jt=jp.read_text(encoding='utf-8')
+              shutil.copy2(kp,out/'K'/kp.name); shutil.copy2(jp,out/'J'/jp.name)
+              manifest.append(f'{i:03d}\t{kp.name}')
+              km=[m.group(1) for m in mids.finditer(kt)]; jm=[m.group(1) for m in mids.finditer(jt)]
+              if km!=jm: audit.append(f'MID_DIFF\t{kp.name}\tJP={len(jm)}\tKR={len(km)}')
+              if '\ufffd' in kt: audit.append(f'UFFFD\t{kp.name}')
+              if any(ord(c)<32 and c not in '\n\r\t' for c in kt): audit.append(f'C0\t{kp.name}')
+              # Broad Korean typo/spacing flags; these are only review hints, never auto-fixes.
+              pats=[r'실태를',r'있었던거',r'곤란해 하',r'계속 하',r'생각한대로',r'정도 뿐',r'말씀 하',r'되어 보이겠',r'않겠습니다',r'할 수 있을거',r'할 수 없을거',r'수 밖에',r'뿐 만',r'것 같다만']
+              for pat in pats:
+                  for m in re.finditer(pat,kt):
+                      a=max(0,m.start()-100); b=min(len(kt),m.end()+140)
+                      audit.append(f'FLAG\t{kp.name}\t{pat}\t'+kt[a:b].replace('\n',' '))
+          (out/'manifest.txt').write_text('\n'.join(manifest)+'\n',encoding='utf-8')
+          (out/'audit.txt').write_text('\n'.join(audit)+'\n',encoding='utf-8')
+          print('\n'.join(manifest))
+          print(f'BATCH_COUNT={len(batch)} FLAGS={len(audit)}')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: awakening-review-100
+          path: review-batch
