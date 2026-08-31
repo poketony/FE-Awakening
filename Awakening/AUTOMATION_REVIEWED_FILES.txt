@@ -1,0 +1,4 @@
+# Awakening 자동 검수 완료 파일
+# 다음 자동 회차는 아래 파일을 새 파일 묶음에서 제외한다.
+Awakening/Messages (K)/クロム_リズ.txt
+Awakening/Messages (K)/クロム_スミア.txt
