@@ -1,0 +1,83 @@
+name: Apply reviewed Awakening orthography pass 2 fixes
+on:
+  push:
+    paths: ['.github/workflows/orthography-pass2-fix.yml']
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch and validate
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-nanum python3-pil >/dev/null
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          from PIL import ImageFont
+          targets={
+            Path('Awakening/Messages (K)/カラム_プレイヤー女.txt'):[
+              ('고민하는 것 같아서… 걱정 돼서.','고민하는 것 같아서… 걱정돼서.',1),
+              ('생각하면 생각할 수록 수수께끼 같아서,','생각하면 생각할수록 수수께끼 같아서,',1),
+              ('말을 걸면 거는대로 아무도 없는데','말을 걸면 거는 대로 아무도 없는데',1),
+            ],
+            Path('Awakening/Messages (K)/リズ_リベラ.txt'):[
+              ('부럽기만 할뿐입니다.','부럽기만 할 뿐입니다.',1),
+              ('그래서, 사라질까봐','그래서, 사라질까 봐',1),
+              ('제가 사라질까봐','제가 사라질까 봐',1),
+              ('아주 생기있게 보입니다.','아주 생기 있게 보입니다.',1),
+              ('생기있게 잘 살아 있다고!','생기 있게 잘 살아 있다고!',1),
+            ],
+          }
+          before={p:p.read_text('utf-8') for p in targets}
+          for p,repls in targets.items():
+            s=before[p]
+            for a,b,n in repls:
+              assert s.count(a)==n,(p,a,s.count(a),n)
+              s=s.replace(a,b,n)
+            p.write_text(s,encoding='utf-8',newline='')
+
+          # Integrity checks.
+          mid=re.compile(r'^MID_[^:]+:',re.M)
+          ctrl=re.compile(r'\$[A-Za-z][^$\\\n\r가-힣!?…。、！？ ]*\|?')
+          for p in targets:
+            ns=p.read_bytes().decode('utf-8')
+            assert '\ufffd' not in ns
+            assert not any(ord(c)<32 and c not in '\n\r\t' for c in ns)
+            assert mid.findall(before[p])==mid.findall(ns)
+            assert before[p].count('\\n')==ns.count('\\n')
+            assert ctrl.findall(before[p])==ctrl.findall(ns)
+
+          # Modified visual-line width check. Both files use $t1; measure every visual line containing a changed phrase.
+          font=ImageFont.truetype('/usr/share/fonts/truetype/nanum/NanumGothic.ttf',14)
+          limit=298.734375
+          needles=['걱정돼서.','생각할수록 수수께끼 같아서,','거는 대로 아무도 없는데','부럽기만 할 뿐입니다.','사라질까 봐','생기 있게 보입니다.','생기 있게 잘 살아 있다고!']
+          checked=0
+          for p in targets:
+            s=p.read_text('utf-8')
+            for m in re.finditer(r'^(MID_[^:]+): (.*?)(?=^MID_|\Z)',s,re.M|re.S):
+              body=m.group(2)
+              if not any(n in body for n in needles): continue
+              assert '$t1' in body[:120],(p,m.group(1),'expected t1')
+              for page in re.split(r'\$[pk]',body):
+                for seg in page.split('\\n'):
+                  if not any(n in seg for n in needles): continue
+                  txt=re.sub(r'\$[A-Za-z][^$\\]*?\|','',seg)
+                  txt=re.sub(r'\$[A-Za-z][A-Za-z0-9_]*','',txt)
+                  w=font.getlength(txt); checked+=1
+                  assert w<=limit,(p,m.group(1),w,txt)
+          assert checked>=8,checked
+          print('PASS modified visual lines:',checked)
+          print('PASS UTF-8/C0/MID/control/literal-line-break integrity')
+          PY
+          git diff --check
+      - name: Commit and clean temporary audit files
+        run: |
+          rm -f .github/ORTHOGRAPHY_PASS2_REPORT.txt .github/ORTHOGRAPHY_PASS2_NARROW.txt .github/workflows/orthography-pass2-audit.yml .github/workflows/orthography-pass2-fix.yml
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add -A
+          git diff --cached --check
+          git commit -m 'Fix additional Awakening Korean spacing'
+          git push
