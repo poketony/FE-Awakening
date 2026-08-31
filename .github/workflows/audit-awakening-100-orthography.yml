@@ -1,0 +1,184 @@
+name: Audit 100 Awakening files for orthography
+
+on:
+  push:
+    paths:
+      - ".github/workflows/audit-awakening-100-orthography.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Korean dictionary
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y hunspell hunspell-ko
+
+      - name: Select and audit 100 files
+        shell: bash
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          import hashlib, re, subprocess, glob
+          from collections import defaultdict, Counter
+
+          reviewed = {
+            "Awakening/Messages (K)/005.txt",
+            "Awakening/Messages (K)/マリアベル_リベラ.txt",
+            "Awakening/Messages (K)/サーリャ_ソール.txt",
+            "Awakening/Messages (K)/ティアモ_ロンクー.txt",
+            "Awakening/Messages (K)/ヴィオール_オリヴィエ.txt",
+            "Awakening/Messages (K)/ジェローム_カラム_親子.txt",
+            "Awakening/Messages (K)/ンン_フレデリク_親子.txt",
+            "Awakening/Messages (K)/様子_セレナ2.txt",
+            "Awakening/Messages (K)/様子_ロラン4.txt",
+            "Awakening/DLC Message (K)/19. 가장 강한 자의 이름.txt",
+          }
+          roots=[Path("Awakening/Messages (K)"), Path("Awakening/DLC Message (K)")]
+          all_files=[p for r in roots for p in r.rglob("*.txt") if str(p) not in reviewed]
+
+          def key(p):
+            return hashlib.sha256(str(p).encode()).digest()
+          def pick(arr,n):
+            return sorted(arr,key=key)[:n]
+
+          msg=[p for p in all_files if str(p).startswith("Awakening/Messages (K)/")]
+          dlc=[p for p in all_files if str(p).startswith("Awakening/DLC Message (K)/") and p.stat().st_size <= 50000]
+          story=[p for p in msg if re.search(r"/(?:P00[12]|0\d\d|1\d\d|2[0-6])\.txt$",str(p))]
+          parent=[p for p in msg if "_親子.txt" in str(p)]
+          misc=[p for p in msg if re.search(r"/(?:様子_|マイルーム|店番_|みんなの部屋|イベント|誕生日|告白|支援S_)",str(p)) and p not in parent]
+          regular=[p for p in msg if p not in story and p not in parent and p not in misc and 2000 <= p.stat().st_size <= 18000]
+
+          selected=pick(story,5)+pick(regular,65)+pick(parent,15)+pick(misc,10)+pick(dlc,5)
+          if len(selected)!=100:
+            raise SystemExit(f"selected {len(selected)} files, expected 100")
+
+          print("=== SELECTED 100 ===")
+          for i,p in enumerate(selected,1):
+            print(f"{i:03d}\t{p}\t{p.stat().st_size}")
+          print("=== END SELECTED ===")
+
+          # Parse Korean dictionary words from installed hunspell dictionary.
+          dic_candidates=glob.glob("/usr/share/hunspell/*ko*.dic")+glob.glob("/usr/share/myspell/dicts/*ko*.dic")
+          if not dic_candidates:
+            raise SystemExit("Korean hunspell dictionary not found")
+          dic_path=dic_candidates[0]
+          words=set()
+          with open(dic_path,encoding="utf-8",errors="ignore") as f:
+            first=True
+            for line in f:
+              line=line.strip()
+              if first and line.isdigit():
+                first=False; continue
+              first=False
+              w=line.split("/",1)[0]
+              if re.fullmatch(r"[가-힣]{2,10}",w):
+                words.add(w)
+          print("DICT", dic_path, "WORDS", len(words))
+
+          # Build one-character substitution index for same-length dictionary words.
+          subst=defaultdict(list)
+          for w in words:
+            if 2 <= len(w) <= 8:
+              for i in range(len(w)):
+                subst[(len(w), w[:i], w[i+1:])].append(w)
+
+          contexts=defaultdict(list)
+          counts=Counter()
+          spacing_hits=[]
+          dead_markers=("_PCM2","_PCM3","_PCF2","_PCF3")
+
+          # Patterns are only candidate generators, never automatic corrections.
+          spacing_patterns=[
+            ("한번", re.compile(r"한번(?:도|은|을|만| 더|씩)?")),
+            ("거 잖", re.compile(r"거\s+잖")),
+            ("수 업", re.compile(r"수\s+업(?:습니다|어요|어|다)")),
+            ("못 하지", re.compile(r"못\s+하지(?:\b|[.?!])")),
+            ("버림 받은", re.compile(r"버림\s+받")),
+            ("바람 피", re.compile(r"바람\s+피(?:면|고|는|다|었다|워)")),
+            ("걸맞는", re.compile(r"걸맞는")),
+            ("연전를", re.compile(r"연전를")),
+            ("풀려있", re.compile(r"풀려있")),
+            ("되어있", re.compile(r"되어있")),
+            ("하고있", re.compile(r"하고있")),
+            ("살아있", re.compile(r"살아있")),
+            ("남아있", re.compile(r"남아있")),
+            ("들어있", re.compile(r"들어있")),
+            ("붙어있", re.compile(r"붙어있")),
+            ("숨어있", re.compile(r"숨어있")),
+            ("앉아있", re.compile(r"앉아있")),
+          ]
+
+          for p in selected:
+            raw=p.read_bytes()
+            text=raw.decode("utf-8",errors="strict")
+            for physical_line in text.splitlines():
+              if not physical_line.startswith("MID_"):
+                continue
+              mid=physical_line.split(":",1)[0]
+              if any(m in mid for m in dead_markers):
+                continue
+              payload=physical_line.split(":",1)[1] if ":" in physical_line else physical_line
+              # strip codes for token/context inspection but keep Korean dialogue
+              clean=re.sub(r"\$[^|\s]*(?:\|[^$\n\r]*)?", " ", payload)
+              clean=clean.replace("\\n"," ").replace("\\r"," ")
+              for tok in re.findall(r"[가-힣]{2,10}",clean):
+                counts[tok]+=1
+                if len(contexts[tok])<3:
+                  contexts[tok].append((str(p),mid,clean[:500]))
+              for label,pat in spacing_patterns:
+                if pat.search(clean):
+                  spacing_hits.append((label,str(p),mid,clean[:700]))
+
+          # Rank unknown-looking words that are one Hangul character away from a dictionary word.
+          candidates=[]
+          skip_substrings=("라구","라구요","씨","님")
+          for tok,cnt in counts.items():
+            if tok in words or any(s in tok for s in skip_substrings):
+              continue
+            near=set()
+            if 2 <= len(tok) <= 8:
+              for i in range(len(tok)):
+                for w in subst.get((len(tok),tok[:i],tok[i+1:]),()):
+                  if w!=tok:
+                    near.add(w)
+            if near:
+              # prioritize rare tokens and plausible close matches
+              candidates.append((cnt,tok,sorted(near)[:12]))
+
+          candidates.sort(key=lambda x:(x[0],x[1]))
+          print("=== ONE-CHAR SPELLING CANDIDATES ===")
+          shown=0
+          for cnt,tok,near in candidates:
+            # Skip obvious grammatical inflections where dictionary coverage is weak only when very frequent.
+            if cnt>20:
+              continue
+            print(f"CAND\t{tok}\tcount={cnt}\tnear={','.join(near)}")
+            for p,mid,ctx in contexts[tok][:2]:
+              print(f"CTX\t{p}\t{mid}\t{ctx}")
+            shown+=1
+            if shown>=350:
+              break
+          print("=== END SPELLING CANDIDATES ===")
+
+          print("=== SPACING/PATTERN CANDIDATES ===")
+          for hit in spacing_hits[:500]:
+            print("SPC\t" + "\t".join(hit))
+          print("=== END SPACING CANDIDATES ===")
+          PY
+
+      - name: Remove temporary workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/audit-awakening-100-orthography.yml
+          git commit -m "Remove temporary Awakening orthography audit"
+          git push origin HEAD:main
