@@ -1,0 +1,211 @@
+name: Scan Awakening orthography batch 3
+on:
+  push:
+    paths:
+      - ".github/workflows/scan-awakening-orthography-batch3.yml"
+permissions:
+  contents: write
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Scan selected 100
+        shell: bash
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          from collections import Counter, defaultdict
+          import re
+          selected=[
+            "Awakening/Messages (K)/023.txt",
+            "Awakening/Messages (K)/007.txt",
+            "Awakening/Messages (K)/014.txt",
+            "Awakening/Messages (K)/021.txt",
+            "Awakening/Messages (K)/003.txt",
+            "Awakening/Messages (K)/パリス_プレイヤー男.txt",
+            "Awakening/Messages (K)/ソール_プレイヤー女.txt",
+            "Awakening/Messages (K)/プレイヤー女_ロンクー.txt",
+            "Awakening/Messages (K)/フラヴィア_プレイヤー女.txt",
+            "Awakening/Messages (K)/エメリナ_プレイヤー男.txt",
+            "Awakening/Messages (K)/E002.txt",
+            "Awakening/Messages (K)/ギャンレル_プレイヤー男.txt",
+            "Awakening/Messages (K)/プレイヤー女_リベラ.txt",
+            "Awakening/Messages (K)/ガイア_リベラ.txt",
+            "Awakening/Messages (K)/ジェローム_マルス.txt",
+            "Awakening/Messages (K)/アンナ_プレイヤー女.txt",
+            "Awakening/Messages (K)/ノワール_マーク男.txt",
+            "Awakening/Messages (K)/マーク男_マルス.txt",
+            "Awakening/Messages (K)/ティアモ_ドニ.txt",
+            "Awakening/Messages (K)/サーリャ_プレイヤー女.txt",
+            "Awakening/Messages (K)/ウード_マルス.txt",
+            "Awakening/Messages (K)/セレナ_ロラン.txt",
+            "Awakening/Messages (K)/デジェル_ブレディ.txt",
+            "Awakening/Messages (K)/プレイヤー男_マルス.txt",
+            "Awakening/Messages (K)/ベルベット_リベラ.txt",
+            "Awakening/Messages (K)/ヴィオール_リベラ.txt",
+            "Awakening/Messages (K)/クロム_マリアベル.txt",
+            "Awakening/Messages (K)/プレイヤー男_レンハ.txt",
+            "Awakening/Messages (K)/カラム_マリアベル.txt",
+            "Awakening/Messages (K)/グレゴ_サーリャ.txt",
+            "Awakening/Messages (K)/グレゴ_ソワレ.txt",
+            "Awakening/Messages (K)/セレナ_ノワール.txt",
+            "Awakening/Messages (K)/アズール_ブレディ.txt",
+            "Awakening/Messages (K)/Trial.txt",
+            "Awakening/Messages (K)/プレイヤー女_ンン.txt",
+            "Awakening/Messages (K)/ソワレ_ロンクー.txt",
+            "Awakening/Messages (K)/ソワレ_ドニ.txt",
+            "Awakening/Messages (K)/ヴィオール_マリアベル.txt",
+            "Awakening/Messages (K)/ソワレ_リヒト.txt",
+            "Awakening/Messages (K)/ジェローム_デジェル.txt",
+            "Awakening/Messages (K)/リズ_ロンクー.txt",
+            "Awakening/Messages (K)/ガイア_ベルベット.txt",
+            "Awakening/Messages (K)/ガイア_サーリャ.txt",
+            "Awakening/Messages (K)/X005.txt",
+            "Awakening/Messages (K)/シンシア_ンン.txt",
+            "Awakening/Messages (K)/マルス_シンシア_兄弟.txt",
+            "Awakening/Messages (K)/ヘンリー_ミリエル.txt",
+            "Awakening/Messages (K)/X003.bin.txt",
+            "Awakening/Messages (K)/セルジュ_リベラ.txt",
+            "Awakening/Messages (K)/ノワール_マーク女.txt",
+            "Awakening/Messages (K)/ジェローム_プレイヤー男.txt",
+            "Awakening/Messages (K)/マーク女_ンン.txt",
+            "Awakening/Messages (K)/ティアモ_フレデリク.txt",
+            "Awakening/Messages (K)/フレデリク_マリアベル.txt",
+            "Awakening/Messages (K)/X016.txt",
+            "Awakening/Messages (K)/グレゴ_ベルベット.txt",
+            "Awakening/Messages (K)/サーリャ_リヒト.txt",
+            "Awakening/Messages (K)/ソール_ベルベット.txt",
+            "Awakening/Messages (K)/ソール_マリアベル.txt",
+            "Awakening/Messages (K)/ガイア_セルジュ.txt",
+            "Awakening/Messages (K)/マリアベル_リヒト.txt",
+            "Awakening/Messages (K)/オリヴィエ_カラム.txt",
+            "Awakening/Messages (K)/マーク女_ウード_兄弟.txt",
+            "Awakening/Messages (K)/グレゴ_リヒト.txt",
+            "Awakening/Messages (K)/シャンブレー_デジェル.txt",
+            "Awakening/Messages (K)/ヴィオール_ティアモ.txt",
+            "Awakening/Messages (K)/T001.txt",
+            "Awakening/Messages (K)/ヴェイク_ベルベット.txt",
+            "Awakening/Messages (K)/アンナ_チキ.txt",
+            "Awakening/Messages (K)/カラム_ノノ.txt",
+            "Awakening/Messages (K)/マーク女_デジェル_親子.txt",
+            "Awakening/Messages (K)/マーク男_ヘンリー_親子.txt",
+            "Awakening/Messages (K)/ロラン_ソール_親子.txt",
+            "Awakening/Messages (K)/ウード_フレデリク_親子.txt",
+            "Awakening/Messages (K)/マーク女_スミア_親子.txt",
+            "Awakening/Messages (K)/ノワール_リヒト_親子.txt",
+            "Awakening/Messages (K)/ロラン_ヘンリー_親子.txt",
+            "Awakening/Messages (K)/デジェル_ヴェイク_親子.txt",
+            "Awakening/Messages (K)/ブレディ_リヒト_親子.txt",
+            "Awakening/Messages (K)/セレナ_父親_親子.txt",
+            "Awakening/Messages (K)/ウード_リズ_親子.txt",
+            "Awakening/Messages (K)/アズール_ガイア_親子.txt",
+            "Awakening/Messages (K)/ブレディ_ヴィオール_親子.txt",
+            "Awakening/Messages (K)/デジェル_カラム_親子.txt",
+            "Awakening/Messages (K)/マーク男_ヴェイク_親子.txt",
+            "Awakening/Messages (K)/様子_マルス4.txt",
+            "Awakening/Messages (K)/様子_プレイヤー男3.txt",
+            "Awakening/Messages (K)/様子_チキ3.txt",
+            "Awakening/Messages (K)/様子_ヴァルハルト4.txt",
+            "Awakening/Messages (K)/様子_マーク男1.txt",
+            "Awakening/Messages (K)/様子_デジェル1.txt",
+            "Awakening/Messages (K)/様子_ガイア3.txt",
+            "Awakening/Messages (K)/様子_マーク男2.txt",
+            "Awakening/Messages (K)/様子_ヴィオール3.txt",
+            "Awakening/Messages (K)/様子_クロム2.txt",
+            "Awakening/DLC Message (K)/7. 왕 대 왕 문장 편.txt",
+            "Awakening/DLC Message (K)/9. 왕 대 왕 결전 편.txt",
+            "Awakening/DLC Message (K)/10. 홍 대 청 봉인 편.txt",
+            "Awakening/DLC Message (K)/12. 홍 대 청 결전 편.txt",
+            "Awakening/DLC Message (K)/11. 홍 대 청 창염 편.txt",
+          ]
+          assert len(selected)==100 and len(set(selected))==100
+          dead=("_PCM2","_PCM3","_PCF2","_PCF3")
+          def clean(line):
+              s=line.split(":",1)[1] if ":" in line else line
+              s=re.sub(r"\$S(?:bp|sp|vp|bs|bv)[^|]*\|(?:\d+\|)?"," ",s)
+              s=re.sub(r"\$W[ms][^|]*\|\d*"," ",s)
+              s=re.sub(r"\$E[^|]*\|"," ",s)
+              s=re.sub(r"\$b[^|]*\|"," ",s)
+              s=re.sub(r"\$[A-Za-z][A-Za-z0-9]*\|?"," ",s)
+              return re.sub(r"\s+"," ",s.replace("\\n"," / ")).strip()
+
+          # project-wide token frequency for rare typo neighbors
+          gf=Counter()
+          for root in (Path("Awakening/Messages (K)"),Path("Awakening/DLC Message (K)")):
+              for p in root.rglob("*.txt"):
+                  try: t=p.read_text(encoding="utf-8")
+                  except: continue
+                  for ln in t.splitlines():
+                      if not ln.startswith("MID_"): continue
+                      mid=ln.split(":",1)[0]
+                      if any(x in mid for x in dead): continue
+                      gf.update(re.findall(r"[가-힣]{2,10}",clean(ln)))
+          common=defaultdict(list)
+          for w,c in gf.items():
+              if c>=15 and 2<=len(w)<=9: common[len(w)].append((w,c))
+
+          patterns=[
+            ("TYPO", r"(?:됬|안됬|되였|왠만|웬지|몇일|금새|어떻해|어떻하지|말슴|먹엇|맨일|틀키|그럴려|게속|마은|거낸|벌것|죄르르|분분해|훔쳐다는|휴식입나까|종복|끝냈셨|나쁜 듯|쟈[,!?]|갔읍|했읍|있읍|없읍)"),
+            ("BOUND", r"(?:한지|된지|온지|간지|본지|만난지|지난지|치료한지|할때|했을때|왔을때|갈때|볼때|있을때|없을때|때 만큼|만큼은|뿐 만|수 밖에)"),
+            ("SPACING1", r"(?:마음 먹|잊어 버|알아 듣|알아 보|지켜 보|쳐다 보|들여다 보|내려다 보|바라 보|돌아 보|살펴 보|따라 하|흉내 내|단정짓|시치미떼|입다물|놀러가|그만 두|상처입|마중나|다가 가|다가 오|들어 가|나가 보|가져 오|갖다 주|데려 가|데려 오)"),
+            ("SPACING2", r"(?:자신있|어처구니 없는|기억상실|인기만점|가슴 속|오래 전에|우리집|한 켠|아무때나|한동안은|잘 생긴|말 안했|말 했|뭐하는|뭘하는|안해|못해|하지마|하지말|안 할|못 할|잘 할)"),
+            ("PASSIVE", r"(?:사랑|인정|선택|존경|찬미|동경|도움|상처|방해|배신|조종|습격|이용|지배|세뇌|공격|칭찬|매도|취급|부탁|고백|압수|격려|용서|보호|치료|신뢰|저주|감동|위협|벌)\s+(?:받|당)"),
+            ("PARTICLE", r"[가-힣]+\s+(?:은|는|이|가|을|를|도|만|부터|까지|처럼|보다|에게|한테|의)(?=[\s,.!?…])"),
+            ("PUNCT", r"[가-힣]\s+[,!?]"),
+            ("HALSU", r"(?:할수|될수|갈수|볼수|알수|쓸수|살수|올수|줄수|둘수|낼수|이길수|막을수|도울수|만날수|싸울수|구할수)"),
+            ("DAERO", r"(?:하고 싶은대로|원하는대로|말한대로|시키는대로|생각한대로|예상한대로|보이는대로|되는대로|있는대로|없던대로)"),
+            ("MANHAN", r"[가-힣]+(?:할만|받을만|볼만|먹을만|쓸만|읽을만|믿을만|참을만|견딜만|부를만|들을만|살만|갈만)(?:한|하다|해|큼|도|은|이|하지|하네|하군|하다면)?"),
+          ]
+
+          ctx=defaultdict(list)
+          hits=[]
+          outscope=[]
+          for pstr in selected:
+              p=Path(pstr); t=p.read_text(encoding="utf-8")
+              for ln in t.splitlines():
+                  if not ln.startswith("MID_"): continue
+                  mid=ln.split(":",1)[0]
+                  if any(x in mid for x in dead): continue
+                  c=clean(ln)
+                  for tok in re.findall(r"[가-힣]{2,10}",c):
+                      if len(ctx[tok])<2: ctx[tok].append((pstr,mid,c[:1100]))
+                  for lab,pat in patterns:
+                      if re.search(pat,c): hits.append((lab,pstr,mid,c[:1400]))
+                  kana=len(re.findall(r"[ぁ-んァ-ヶ]",c)); kor=len(re.findall(r"[가-힣]",c))
+                  if kana>=10 and kor<8:
+                      outscope.append(("VISIBLE_JAPANESE",pstr,mid,c[:1400]))
+
+          rare=[]
+          for tok,ct in ctx.items():
+              if gf[tok]>3 or not (2<=len(tok)<=9): continue
+              near=[]
+              for w,f in common[len(tok)]:
+                  if sum(a!=b for a,b in zip(tok,w))==1:
+                      near.append((f,w))
+              near.sort(reverse=True)
+              if near and near[0][0]>=30:
+                  rare.append((gf[tok],tok,near[:8],ct))
+          rare.sort(key=lambda x:(x[0],-x[2][0][0],x[1]))
+
+          print("=== SELECTED ===")
+          for i,p in enumerate(selected,1): print(f"SEL\t{i:03d}\t{p}")
+          print("=== HITS ===")
+          for x in hits: print("HIT\t"+"\t".join(x))
+          print("=== RARE ===")
+          for f,tok,near,ct in rare[:600]:
+              print(f"RARE\t{tok}\tfreq={f}\tnear="+",".join(f"{w}:{n}" for n,w in near))
+              for p,mid,c in ct: print(f"CTX\t{p}\t{mid}\t{c}")
+          print("=== OUTSCOPE ===")
+          for x in outscope[:300]: print("OUT\t"+"\t".join(x))
+          PY
+      - name: Remove temporary workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/scan-awakening-orthography-batch3.yml
+          git commit -m "Remove temporary Awakening batch 3 scan"
+          git push origin HEAD:main
