@@ -1,0 +1,51 @@
+name: Repair Awakening 010
+
+on:
+  push:
+    paths:
+      - '.github/workflows/chatgpt-repair-010.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore 010 from clean baseline and reapply intended edit
+        shell: bash
+        run: |
+          git checkout b747d39 -- 'Awakening/Messages (K)/010.txt'
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('Awakening/Messages (K)/010.txt')
+          t = p.read_text(encoding='utf-8')
+          old = '당신은 날 믿어 주었어… 그러니 나도 당신을 믿겠어.'
+          new = '당신은 날 믿어 줬어… 그러니 나도 믿겠어.'
+          if t.count(old) != 1:
+              raise SystemExit(f'expected exactly 1 target, found {t.count(old)}')
+          t = t.replace(old, new, 1)
+          p.write_text(t, encoding='utf-8', newline='\n')
+          PY
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('Awakening/Messages (K)/010.txt')
+          data=p.read_bytes()
+          text=data.decode('utf-8')
+          bad=[ch for ch in text if ord(ch)<32 and ch not in '\t\n\r']
+          if '\ufffd' in text or bad:
+              raise SystemExit('010 integrity validation failed')
+          print('010 integrity validation OK')
+          PY
+      - name: Commit repair and remove temporary workflows
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'Awakening/Messages (K)/010.txt'
+          git rm '.github/workflows/chatgpt-repair-010.yml' '.github/workflows/chatgpt-audit-awakening-texts.yml'
+          git commit -m '각성 010.txt 깨짐 복구'
+          git push
