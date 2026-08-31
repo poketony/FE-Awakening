@@ -1,12 +1,21 @@
 name: Run Awakening text check
 on:
   push:
-    paths: ['.github/workflows/run-awaken-text-check.yml']
+    paths:
+      - '.github/workflows/run-awaken-text-check.yml'
+      - '.github/scripts/check_awaken_text.py'
 permissions:
-  contents: read
+  contents: write
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: python3 .github/scripts/check_awaken_text.py
+      - name: Commit compact audit report
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .github/AWAKEN_CONTROL_AUDIT.txt
+          git commit -m 'Add temporary Awakening control audit report' || exit 0
+          git push
