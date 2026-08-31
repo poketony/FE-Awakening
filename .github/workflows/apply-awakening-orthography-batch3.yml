@@ -1,0 +1,244 @@
+name: Apply Awakening orthography batch 3
+
+on:
+  push:
+    paths:
+      - ".github/workflows/apply-awakening-orthography-batch3.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install width dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-nanum
+          python -m pip install --quiet pillow
+
+      - name: Apply context-reviewed fixes and validate
+        shell: bash
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          from collections import defaultdict, Counter
+          import re, subprocess
+          from PIL import ImageFont
+
+          # (file, MID, old, new)
+          rules = [
+            ("Awakening/Messages (K)/023.txt","MID_023_ED4","휩싼 악마가","휩쓴 악마가"),
+            ("Awakening/Messages (K)/パリス_プレイヤー男.txt","MID_支援_パリス_プレイヤー男_Ａ_PCM1","계속 하지.","계속하지."),
+            ("Awakening/Messages (K)/ソール_プレイヤー女.txt","MID_支援_ソール_プレイヤー女_Ｃ_PCF1","우리집이 약국을","우리 집이 약국을"),
+            ("Awakening/Messages (K)/ギャンレル_プレイヤー男.txt","MID_支援_ギャンレル_プレイヤー男_Ｃ_PCM1","말 안해도 알거든","말 안 해도 알거든"),
+            ("Awakening/Messages (K)/ギャンレル_プレイヤー男.txt","MID_支援_ギャンレル_プレイヤー男_Ｃ_PCM1","냉큼 잊어 버려","냉큼 잊어버려"),
+            ("Awakening/Messages (K)/ガイア_リベラ.txt","MID_支援_ガイア_リベラ_Ｃ","부탁 받아서요","부탁받아서요"),
+            ("Awakening/Messages (K)/ガイア_リベラ.txt","MID_支援_ガイア_リベラ_Ｃ","부탁 받았기 때문에","부탁받았기 때문에"),
+            ("Awakening/Messages (K)/ガイア_リベラ.txt","MID_支援_ガイア_リベラ_Ａ","이해 됩니다","이해됩니다"),
+            ("Awakening/Messages (K)/ウード_マルス.txt","MID_支援_ウード_マルス_Ｂ","그 말투로 이야기 해주겠어요?","그 말투로 이야기해 주겠어요?"),
+            ("Awakening/Messages (K)/デジェル_ブレディ.txt","MID_支援_デジェル_ブレディ_Ｂ","하기로 마음 먹은 이상","하기로 마음먹은 이상"),
+            ("Awakening/Messages (K)/デジェル_ブレディ.txt","MID_支援_デジェル_ブレディ_Ａ","달려 갔다 와","달려갔다 와"),
+            ("Awakening/Messages (K)/デジェル_ブレディ.txt","MID_支援_デジェル_ブレディ_Ａ","그만 두지 뭐","그만두지 뭐"),
+            ("Awakening/Messages (K)/デジェル_ブレディ.txt","MID_支援_デジェル_ブレディ_Ｓ","쉬게해 줘","쉬게 해 줘"),
+            ("Awakening/Messages (K)/デジェル_ブレディ.txt","MID_支援_デジェル_ブレディ_Ｓ","기초 체력을 다치는 단계","기초 체력을 다지는 단계"),
+            ("Awakening/Messages (K)/デジェル_ブレディ.txt","MID_支援_デジェル_ブレディ_Ｓ","생각 밖에는 안 들었지","생각밖에는 안 들었지"),
+            ("Awakening/Messages (K)/デジェル_ブレディ.txt","MID_支援_デジェル_ブレディ_Ｓ","네가 말한대로","네가 말한 대로"),
+            ("Awakening/Messages (K)/グレゴ_サーリャ.txt","MID_支援_グレゴ_サーリャ_Ｃ","생각치 못한 곳","생각지 못한 곳"),
+            ("Awakening/Messages (K)/グレゴ_ソワレ.txt","MID_支援_グレゴ_ソワレ_Ａ","나를 원하는대로 처리","나를 원하는 대로 처리"),
+            ("Awakening/Messages (K)/セレナ_ノワール.txt","MID_支援_セレナ_ノワール_Ａ","왜, 왜 사과 해!","왜, 왜 사과해!"),
+            ("Awakening/Messages (K)/ジェローム_デジェル.txt","MID_支援_ジェローム_デジェル_Ｂ","시치미떼기는","시치미 떼기는"),
+            ("Awakening/Messages (K)/ジェローム_デジェル.txt","MID_支援_ジェローム_デジェル_Ｂ","말 안해도 열심히","말 안 해도 열심히"),
+            ("Awakening/Messages (K)/ジェローム_デジェル.txt","MID_支援_ジェローム_デジェル_Ｂ","이번에야 말로","이번에야말로"),
+            ("Awakening/Messages (K)/ガイア_ベルベット.txt","MID_支援_ガイア_ベルベット_Ｃ","벼랑에서 뭐하는 거야","벼랑에서 뭐 하는 거야"),
+            ("Awakening/Messages (K)/ガイア_ベルベット.txt","MID_支援_ガイア_ベルベット_Ｂ","탈것 취급 하지 마","탈것 취급하지 마"),
+            ("Awakening/Messages (K)/グレゴ_リヒト.txt","MID_支援_グレゴ_リヒト_Ｂ","어린애 취급 하지 마","어린애 취급하지 마"),
+            ("Awakening/Messages (K)/シャンブレー_デジェル.txt","MID_支援_シャンブレー_デジェル_Ｃ","시치미떼기는","시치미 떼기는"),
+            ("Awakening/Messages (K)/シャンブレー_デジェル.txt","MID_支援_シャンブレー_デジェル_Ｃ","시치미떼는 게","시치미 떼는 게"),
+            ("Awakening/Messages (K)/シャンブレー_デジェル.txt","MID_支援_シャンブレー_デジェル_Ｃ","혼란스러워 해서야","혼란스러워해서야"),
+            ("Awakening/Messages (K)/ヴィオール_ティアモ.txt","MID_支援_ヴィオール_ティアモ_Ｂ","언뜻보면","언뜻 보면"),
+            ("Awakening/Messages (K)/ヴェイク_ベルベット.txt","MID_支援_ヴェイク_ベルベット_Ｂ","힘들테니까","힘들 테니까"),
+            ("Awakening/Messages (K)/ヴェイク_ベルベット.txt","MID_支援_ヴェイク_ベルベット_Ｂ","한 마디도 안 해","한마디도 안 해"),
+            ("Awakening/Messages (K)/アンナ_チキ.txt","MID_支援_アンナ_チキ_Ｃ","어슬렁 거리는","어슬렁거리는"),
+            ("Awakening/Messages (K)/アンナ_チキ.txt","MID_支援_アンナ_チキ_Ｃ","상인과 만난듯한","상인과 만난 듯한"),
+            ("Awakening/Messages (K)/アンナ_チキ.txt","MID_支援_アンナ_チキ_Ａ","거짓말 하지 않았다고","거짓말하지 않았다고"),
+            ("Awakening/Messages (K)/カラム_ノノ.txt","MID_支援_カラム_ノノ_Ａ","우리집, 다섯 형제라","우리 집, 다섯 형제라"),
+            ("Awakening/Messages (K)/カラム_ノノ.txt","MID_支援_カラム_ノノ_Ａ","어느순간 잊혔어","어느 순간 잊혔어"),
+            ("Awakening/Messages (K)/カラム_ノノ.txt","MID_支援_カラム_ノノ_Ａ","없는 사람 취급 받는 동안","없는 사람 취급받는 동안"),
+            ("Awakening/Messages (K)/マーク女_デジェル_親子.txt","MID_支援_マーク女_デジェル_親子_Ｃ","깨끗이 잊어 버린 걸까","깨끗이 잊어버린 걸까"),
+            ("Awakening/Messages (K)/マーク男_ヘンリー_親子.txt","MID_支援_マーク男_ヘンリー_親子_Ｃ","깨끗이 잊어 버린 걸까","깨끗이 잊어버린 걸까"),
+            ("Awakening/Messages (K)/マーク女_スミア_親子.txt","MID_支援_マーク女_スミア_親子_Ｃ","깨끗이 잊어 버린 걸까","깨끗이 잊어버린 걸까"),
+            ("Awakening/Messages (K)/マーク男_ヴェイク_親子.txt","MID_支援_マーク男_ヴェイク_親子_Ｃ","깨끗이 잊어 버린 걸까","깨끗이 잊어버린 걸까"),
+            ("Awakening/Messages (K)/ノワール_リヒト_親子.txt","MID_支援_ノワール_リヒト_親子_Ａ","압수 당해서","압수당해서"),
+            ("Awakening/Messages (K)/ウード_リズ_親子.txt","MID_支援_ウード_リズ_親子_Ｂ","부탁 받은 일이","부탁받은 일이"),
+            ("Awakening/Messages (K)/ブレディ_ヴィオール_親子.txt","MID_支援_ブレディ_ヴィオール_親子_Ｃ","우이하게 다과회","우아하게 다과회"),
+            ("Awakening/Messages (K)/ブレディ_ヴィオール_親子.txt","MID_支援_ブレディ_ヴィオール_親子_Ｂ","아빠랑 이야기 하는 건","아빠랑 이야기하는 건"),
+            ("Awakening/DLC Message (K)/12. 홍 대 청 결전 편.txt","MID_E000_BT_配信ネフェニー_ドニ","지금 무슨 말 했나요","지금 무슨 말했나요"),
+            ("Awakening/Messages (K)/ノワール_マーク男.txt","MID_支援_ノワール_マーク男_Ａ","한손으로 벌레를","한 손으로 벌레를"),
+            ("Awakening/Messages (K)/アンナ_プレイヤー女.txt","MID_支援_アンナ_プレイヤー女_Ｃ_PCF1","큰일났다!","큰일 났다!"),
+            ("Awakening/Messages (K)/ソール_マリアベル.txt","MID_支援_ソール_マリアベル_Ｃ","부탁 받았던 거","부탁받았던 거"),
+            ("Awakening/Messages (K)/ソール_マリアベル.txt","MID_支援_ソール_マリアベル_Ａ","부탁 받은 자료","부탁받은 자료"),
+            ("Awakening/Messages (K)/グレゴ_ベルベット.txt","MID_支援_グレゴ_ベルベット_Ｂ","딸을 지켜 보는","딸을 지켜보는"),
+            ("Awakening/Messages (K)/グレゴ_ベルベット.txt","MID_支援_グレゴ_ベルベット_Ａ","가슴 속에 칼을","가슴속에 칼을"),
+            ("Awakening/Messages (K)/グレゴ_ベルベット.txt","MID_支援_グレゴ_ベルベット_Ａ","품을 채로는","품은 채로는"),
+            ("Awakening/Messages (K)/グレゴ_ベルベット.txt","MID_支援_グレゴ_ベルベット_Ｓ","가슴 속에 품고","가슴속에 품고"),
+            ("Awakening/Messages (K)/オリヴィエ_カラム.txt","MID_支援_オリヴィエ_カラム_Ｓ","꽤 자신있으니까","꽤 자신 있으니까"),
+            ("Awakening/Messages (K)/マルス_シンシア_兄弟.txt","MID_支援_マルス_シンシア_兄弟_Ｂ","팔시온을 쓰러면","팔시온을 쓰려면"),
+          ]
+
+          dead=("_PCM2","_PCM3","_PCF2","_PCF3")
+          byfile=defaultdict(list)
+          for p,mid,a,b in rules:
+              byfile[p].append((mid,a,b))
+
+          before={}
+          changed_files=[]
+          records=[]
+          counts=Counter()
+
+          for pstr, rs in byfile.items():
+              p=Path(pstr)
+              old=p.read_bytes().decode("utf-8","strict")
+              before[p]=old
+              out=[]
+              changed=False
+              seen_mids=set()
+
+              for no,line in enumerate(old.splitlines(keepends=True),1):
+                  nl=line
+                  if line.startswith("MID_"):
+                      mid=line.split(":",1)[0]
+                      if not any(x in mid for x in dead):
+                          for target,a,b in rs:
+                              if mid != target: continue
+                              seen_mids.add(target)
+                              n=nl.count(a)
+                              if n:
+                                  counts[(pstr,target,a,b)] += n
+                                  records.append((p,no,mid,a,b,n))
+                                  nl=nl.replace(a,b)
+                  if nl != line: changed=True
+                  out.append(nl)
+
+              if changed:
+                  p.write_bytes("".join(out).encode("utf-8"))
+                  changed_files.append(p)
+
+          missing=[r for r in rules if counts[r] != 1]
+          if missing:
+              print("BAD_EXPECTED_COUNTS")
+              for r in missing:
+                  print(r, "count=", counts[r])
+              raise SystemExit(f"{len(missing)} rules did not match exactly once")
+
+          # Integrity checks.
+          control_re=re.compile(r"\$[A-Za-z][A-Za-z0-9]*")
+          for p in changed_files:
+              old=before[p]
+              new=p.read_bytes().decode("utf-8","strict")
+              if "\ufffd" in new: raise SystemExit(f"U+FFFD: {p}")
+              if any(ord(ch)<32 and ch not in "\n\r\t" for ch in new):
+                  raise SystemExit(f"invalid C0: {p}")
+
+              om=[x.split(":",1)[0] for x in old.splitlines() if x.startswith("MID_")]
+              nm=[x.split(":",1)[0] for x in new.splitlines() if x.startswith("MID_")]
+              if om != nm: raise SystemExit(f"MID count/order changed: {p}")
+              if control_re.findall(old) != control_re.findall(new):
+                  raise SystemExit(f"control sequence changed: {p}")
+              if old.count("\\n") != new.count("\\n"):
+                  raise SystemExit(f"literal \\n structure changed: {p}")
+
+              expected=[]
+              for line in old.splitlines(keepends=True):
+                  e=line
+                  if line.startswith("MID_"):
+                      mid=line.split(":",1)[0]
+                      if not any(x in mid for x in dead):
+                          for target,a,b in byfile[str(p)]:
+                              if mid==target:
+                                  e=e.replace(a,b)
+                  expected.append(e)
+              if "".join(expected) != new:
+                  raise SystemExit(f"unexpected diff: {p}")
+
+              ol=old.splitlines()
+              nl=new.splitlines()
+              if len(ol)!=len(nl): raise SystemExit(f"physical line count changed: {p}")
+              for a,b in zip(ol,nl):
+                  if a.startswith("MID_"):
+                      mid=a.split(":",1)[0]
+                      if any(x in mid for x in dead) and a!=b:
+                          raise SystemExit(f"dead branch changed: {p} {mid}")
+
+          # Width checks for every changed visual segment.
+          font=ImageFont.truetype("/usr/share/fonts/truetype/nanum/NanumGothic.ttf",14)
+          limits={"t0":278.8125,"t1":298.734375}
+          touched={(str(p),no) for p,no,*_ in records}
+          checked=0
+          failures=[]
+
+          def strip_codes(s):
+              s=re.sub(r"\$S(?:bp|sp|vp|bs|bv|ls|lp)[^|]*\|(?:\d+\|)?","",s)
+              s=re.sub(r"\$W[ms][^|]*\|\d*","",s)
+              s=re.sub(r"\$E[^|]*\|","",s)
+              s=re.sub(r"\$b[^|]*\|","",s)
+              s=re.sub(r"\$[A-Za-z][A-Za-z0-9]*\|?","",s)
+              return s
+
+          for p in changed_files:
+              oldlines=before[p].splitlines()
+              newlines=p.read_text(encoding="utf-8").splitlines()
+              for no,(o,n) in enumerate(zip(oldlines,newlines),1):
+                  if (str(p),no) not in touched: continue
+                  style="t0" if "$t0" in n else ("t1" if "$t1" in n else None)
+                  if not style: continue
+                  op=o.split(":",1)[1] if ":" in o else o
+                  np=n.split(":",1)[1] if ":" in n else n
+                  os=re.split(r"\\n|\$k|\$p",op)
+                  ns=re.split(r"\\n|\$k|\$p",np)
+                  if len(os)!=len(ns):
+                      raise SystemExit(f"visual segment structure changed: {p}:{no}")
+                  for a,b in zip(os,ns):
+                      if a==b: continue
+                      vis=strip_codes(b).strip()
+                      if not vis: continue
+                      w=font.getlength(vis)
+                      checked += 1
+                      print(f"WIDTH\t{p}\t{no}\t{style}\t{w:.3f}/{limits[style]:.3f}\t{vis}")
+                      if w > limits[style]:
+                          failures.append((str(p),no,style,w,limits[style],vis))
+
+          if failures:
+              print("WIDTH_FAILURES")
+              for f in failures: print(f)
+              raise SystemExit(f"{len(failures)} modified visual segments exceed proxy width")
+
+          subprocess.run(["git","diff","--check"],check=True)
+
+          mids={(str(p),mid) for p,_,mid,*_ in records}
+          print(f"RULES={len(rules)}")
+          print(f"CHANGED_FILES={len(changed_files)}")
+          print(f"OCCURRENCES={sum(counts.values())}")
+          print(f"CHANGED_MIDS={len(mids)}")
+          print(f"WIDTH_SEGMENTS={checked}")
+          print("=== APPLIED ===")
+          for (p,mid,a,b),c in sorted(counts.items()):
+              print(f"{c}\t{p}\t{mid}\t{a} => {b}")
+          PY
+
+      - name: Commit changes and remove workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/apply-awakening-orthography-batch3.yml
+          git add "Awakening/Messages (K)" "Awakening/DLC Message (K)"
+          git diff --cached --check
+          git commit -m "Fix Awakening Korean orthography batch 3"
+          git push origin HEAD:main
+          echo "FINAL_SHA=$(git rev-parse HEAD)"
