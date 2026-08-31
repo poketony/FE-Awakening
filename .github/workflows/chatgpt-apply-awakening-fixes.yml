@@ -1,0 +1,95 @@
+name: Apply Awakening dialogue fixes
+
+on:
+  push:
+    paths:
+      - '.github/workflows/chatgpt-apply-awakening-fixes.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply verified dialogue fixes
+        shell: python
+        run: |
+          from pathlib import Path
+          import hashlib
+
+          ROOT = Path('Awakening/Messages (K)')
+          expected = {
+              '011.txt': '7a7642592e2c557a2445a8d7a4ec6845408dc9e8',
+              '021.txt': 'db416ddf6cc36dba064bdac284abe2be2d02558c',
+              '023.txt': '422a41dd91ae56a2615dbca92f8f619bf1175263',
+              '026.txt': 'a9cd99739b9b3f0e254d589465159d6c387ad3ba',
+          }
+
+          def git_blob_sha(text: str) -> str:
+              data = text.encode('utf-8')
+              return hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()
+
+          def load(name):
+              p = ROOT / name
+              text = p.read_text(encoding='utf-8')
+              sha = git_blob_sha(text)
+              if sha != expected[name]:
+                  raise RuntimeError(f'{name}: unexpected current blob {sha}, expected {expected[name]}')
+              return p, text
+
+          def replace_exact(text, old, new, count, label):
+              got = text.count(old)
+              if got != count:
+                  raise RuntimeError(f'{label}: expected {count} occurrence(s), found {got}')
+              return text.replace(old, new)
+
+          p, t = load('011.txt')
+          t = replace_exact(t,
+              '우리들이 미워하는 적에게 이상 따윈 통하지 않는다고…',
+              '우릴 미워하는 적에게 이상 따윈 통하지 않는다고…',
+              1, '011 context')
+          p.write_text(t, encoding='utf-8', newline='\n')
+
+          p, t = load('021.txt')
+          t = replace_exact(t,
+              r'제가 얼마나 용서를 구해도…\n용서받지 못하는 건 알고 있습니다.',
+              r'저는 아무리 용서를 구해도…\n용서받지 못할 일을 하려 하고 있습니다.',
+              6, '021 Lucina apology')
+          p.write_text(t, encoding='utf-8', newline='\n')
+
+          p, t = load('023.txt')
+          t = replace_exact(t,
+              '만약 내가 녀석에게 조종당한다면…',
+              '만약 제가 녀석에게 조종당한다면…',
+              1, '023 PCF2 pronoun')
+          t = replace_exact(t,
+              '몰랐네요.$k$p뭐 좋아.',
+              '몰랐네.$k$p뭐 좋아.',
+              1, '023 Grima register')
+          p.write_text(t, encoding='utf-8', newline='\n')
+
+          p, t = load('026.txt')
+          t = replace_exact(t,
+              r'어쩔…… 수가, 없어요……$k$p……아무것도 안 보여.\n……아무것도 못해.$k$p……아무것도, 느껴……지지 않아요',
+              r'어쩔…… 수가, 없어요……$k$p……아무것도 안 보여요.\n……아무것도 안 들려요.$k$p……아무것도, 느껴……지지 않아요',
+              1, '026 PCF2 hearing/polite')
+          t = replace_exact(t,
+              r'……아무것도 안 보여.\n……아무것도 못해.',
+              r'……아무것도 안 보여.\n……아무것도 안 들려.',
+              3, '026 hearing')
+          p.write_text(t, encoding='utf-8', newline='\n')
+
+      - name: Commit fixes and remove temporary workflow
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'Awakening/Messages (K)/011.txt' 'Awakening/Messages (K)/021.txt' 'Awakening/Messages (K)/023.txt' 'Awakening/Messages (K)/026.txt'
+          git rm '.github/workflows/chatgpt-apply-awakening-fixes.yml'
+          git commit -m '각성 본편 대사 재검수 반영'
+          git push
