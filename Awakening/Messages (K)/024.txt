@@ -7,10 +7,10 @@ Message Name: Message
 MID_024_OP1: $t1$Wmリズ|3$w0|$Wsリズ|$Wa$b動作,リズ,RizAc13|$b動作,リズ,RizRe|$SvpSE_VOICE_LIZ_EVT_22|와아, 예쁘다…$k\n$Wsリズ|$Wd$w0|$Wmルキナ|3$w0|$Wsルキナ|$Wa$b動作,マルス,MarGe6|$b動作,マルス,MarRe|$SvpSE_VOICE_MARTH_EVT_34|$E笑,|이 산에는 신룡 나가의 힘이\n가득 차 있다고 전해집니다.$k$p그래서 이렇게\n아름다운 걸지도 모르겠네요.$k\n$Wsルキナ|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$b動作,クロム,Ge2|$SvpSE_VOICE_CHROM_EVT_12|…하지만 안쪽에서는\n다른 기운이 느껴지는군. 이건…$k
 MID_024_OP1_2_PCM1: $t1$Wmusername|3$w0|$b注目,プレイヤー,クロム|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_M#_EVT_31|$E怒,|…모두들, 전투 준비를 해 줘.$k$p녀석이… 그리마가 불러낸 부하가\n곧 여기에 올 거야……!$k
 MID_024_OP1_2_PCM2: $t1$Wmusername|3$w0|$b注目,プレイヤー,クロム|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_M#_EVT_31|$E怒,|모두, 전투 준비를.$k$p녀석… 그리마가 부른 부하가\n곧 여기에 옵니다……$k
-MID_024_OP1_2_PCM3: $t1$Wmusername|3$w0|$b注目,プレイヤー,クロム|$Wsusername|$Wa$E怒,|…………$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_34|녀석… 그리마가 부른 부하가\n곧 여기에 오는 건가.\n전원, 전투 준비를!$k
+MID_024_OP1_2_PCM3: $t1$Wmusername|3$w0|$b注目,プレイヤー,クロム|$Wsusername|$Wa$E怒,|…………$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_34|녀석의… 그리마의 부하들이 올 거다.\n전원, 전투 준비를!$k
 MID_024_OP1_2_PCF1: $t1$Wmusername|3$w0|$b注目,プレイヤー,クロム|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_31|$E怒,|…모두들, 전투 준비를 해 줘.$k$p녀석이… 그리마가 불러낸 부하가\n곧 여기에 올 거야……!$k
 MID_024_OP1_2_PCF2: $t1$Wmusername|3$w0|$b注目,プレイヤー,クロム|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_31|$E怒,|모두, 전투 준비를.$k$p…그리마가 부른 부하가\n곧 여기에 옵니다……$k
-MID_024_OP1_2_PCF3: $t1$Wmusername|3$w0|$b注目,プレイヤー,クロム|$Wsusername|$Wa$E怒,|…………$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_34|녀석… 그리마가 부른 부하가\n곧 여기에 오는 건가.\n전원, 전투 준비를!$k
+MID_024_OP1_2_PCF3: $t1$Wmusername|3$w0|$b注目,プレイヤー,クロム|$Wsusername|$Wa$E怒,|…………$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_34|녀석의… 그리마의 부하들이 올 거다.\n전원, 전투 준비를!$k
 MID_024_OP2: $t1$Wmルキナ|3$w0|$Wsルキナ|$Wa$SvpSE_VOICE_MARTH_EVT_31|$E苦,汗|시체 병사가 이런 곳까지…!$k\n$Wmクロム|3$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_35|$E苦,汗|부활한 그리마의 힘인가…$k$p$E怒,|돌파하자!$k
 MID_024_ED1: $t1$Wmクロム|3$w0|$Wsクロム|$Wa$b動作,クロム,Ge2|$SvpSE_VOICE_CHROM_EVT_39|여기가 제단인 모양이야.$k$p그럼, 갔다 올게.\n다들 여기서 기다려 줘.$k\n$Wsクロム|$Wd$w0|$Wmリズ|3$w0|$Wsリズ|$Wa$b注目,リズ,プレイヤー|$SvpSE_VOICE_LIZ_EVT_26|$E苦,汗|위험…해서 그런 거지?$k\n$Wsリズ|$Wd$w0|$Wmルキナ|3$w0|$Wsルキナ|$Wa$b動作,マルス,MarGe1|$b動作,マルス,MarRe|$SvpSE_VOICE_MARTH_EVT_31|$E怒,|믿어 봐요, 아버님을.$k
 MID_024_ED1_2: $t0$Wmクロム|0$w0|$Wsクロム|$Wa신룡 나가여……\n나는, 자격을 나타내는 자.$k$p그 불꽃에 타,\n당신의 자식이 되길 원하는 자.$k$p나의 목소리에 귀 기울여,\n나의 기도에 응답하소서…$k
