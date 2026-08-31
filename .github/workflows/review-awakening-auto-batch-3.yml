@@ -1,0 +1,116 @@
+name: Review Awakening auto batch 3
+
+on:
+  push:
+    paths:
+      - ".github/workflows/review-awakening-auto-batch-3.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install width dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-nanum
+          python -m pip install --quiet pillow
+      - name: Apply reviewed fixes and validate
+        shell: bash
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          from PIL import ImageFont
+          import re, subprocess
+
+          p = Path('Awakening/Messages (K)/クロム_プレイヤー男.txt')
+          tracker = Path('Awakening/AUTOMATION_REVIEWED_FILES.txt')
+          old = p.read_text(encoding='utf-8')
+          new = old
+
+          mid = 'MID_支援_クロム_プレイヤー男_Ａ_PCM1:'
+          lines = new.splitlines(keepends=True)
+          changed = []
+          out = []
+          for i,line in enumerate(lines,1):
+              nl=line
+              if line.startswith(mid):
+                  reps = [
+                    ('"신변을 신경 써라.\\n 자중해라." 아닌가?', '"신변을 신경 써라.\\n자중해라." 아닌가?'),
+                    ('나를 기습으로부터 지키기 위해서인가?', '내 뒤를 지켜 주기 위해서인가?'),
+                  ]
+                  for a,b in reps:
+                      if nl.count(a)!=1:
+                          raise SystemExit(f'expected exactly one match in target MID: {a!r}, found {nl.count(a)}')
+                      nl=nl.replace(a,b)
+                      changed.append((i,a,b))
+              out.append(nl)
+          new=''.join(out)
+          if len(changed)!=2:
+              raise SystemExit(f'expected 2 changes, got {len(changed)}')
+
+          # Structural integrity
+          if '\ufffd' in new: raise SystemExit('U+FFFD found')
+          if any(ord(ch)<32 and ch not in '\n\r\t' for ch in new): raise SystemExit('invalid C0')
+          old_mids=[x.split(':',1)[0] for x in old.splitlines() if x.startswith('MID_')]
+          new_mids=[x.split(':',1)[0] for x in new.splitlines() if x.startswith('MID_')]
+          if old_mids != new_mids: raise SystemExit('MID count/order changed')
+          control_re=re.compile(r'\$[A-Za-z][A-Za-z0-9]*')
+          if control_re.findall(old) != control_re.findall(new): raise SystemExit('control-code sequence changed')
+          if old.count('\\n') != new.count('\\n'): raise SystemExit('literal \\n structure changed')
+
+          # Dead Avatar branches must be byte-identical at MID-line level
+          for o,n in zip(old.splitlines(),new.splitlines()):
+              if any(tag in o.split(':',1)[0] for tag in ('PCM2','PCM3','PCF2','PCF3')):
+                  if o != n: raise SystemExit('dead Avatar branch changed')
+
+          # Exact-diff reconstruction check
+          expected=old
+          target_old=[x for x in old.splitlines(keepends=True) if x.startswith(mid)][0]
+          target_new=target_old.replace('"신변을 신경 써라.\\n 자중해라." 아닌가?', '"신변을 신경 써라.\\n자중해라." 아닌가?').replace('나를 기습으로부터 지키기 위해서인가?', '내 뒤를 지켜 주기 위해서인가?')
+          expected=expected.replace(target_old,target_new)
+          if expected != new: raise SystemExit('unexpected diff')
+
+          # Width check only changed visual segments
+          font=ImageFont.truetype('/usr/share/fonts/truetype/nanum/NanumGothic.ttf',14)
+          limit=298.734375
+          def strip_codes(s):
+              s=re.sub(r'\$S(?:bp|sp|vp|bs|bv|ls|lp)[^|]*\|(?:\d+\|)?','',s)
+              s=re.sub(r'\$W[ms][^|]*\|\d*','',s)
+              s=re.sub(r'\$E[^|]*\|','',s)
+              s=re.sub(r'\$b[^|]*\|','',s)
+              s=re.sub(r'\$[A-Za-z][A-Za-z0-9]*\|?','',s)
+              return s
+          for vis in ['자중해라." 아닌가?', '내 뒤를 지켜 주기 위해서인가?']:
+              w=font.getlength(strip_codes(vis))
+              print(f'WIDTH\t{w:.3f}/{limit:.3f}\t{vis}')
+              if w>limit: raise SystemExit(f'width overflow: {vis}')
+
+          p.write_text(new,encoding='utf-8')
+
+          t=tracker.read_text(encoding='utf-8')
+          entry='Awakening/Messages (K)/クロム_プレイヤー男.txt\n'
+          if entry not in t:
+              if not t.endswith('\n'): t+='\n'
+              t+=entry
+              tracker.write_text(t,encoding='utf-8')
+
+          subprocess.run(['git','diff','--check'],check=True)
+          print('CHANGES=2')
+          PY
+      - name: Commit and clean workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/review-awakening-auto-batch-3.yml
+          git add "Awakening/Messages (K)/クロム_プレイヤー男.txt" Awakening/AUTOMATION_REVIEWED_FILES.txt
+          git diff --cached --check
+          git commit -m "Review fresh Awakening dialogue batch 3"
+          git push origin HEAD:main
+          echo "FINAL_SHA=$(git rev-parse HEAD)"
