@@ -14,22 +14,26 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import re
-          fixes={
-            Path('Awakening/Messages (K)/ドニ_ベルベット.txt'):[('아뇨… 이렇게 둘이 있는\\n것만으로도 좋아요.','아뇨… 이렇게 둘이 있는 것만으로도\\n좋아요.')],
-            Path('Awakening/Messages (K)/ヴィオール_プレイヤー女.txt'):[('나는 전장에서 실제로 사용할 수 없는\\n수를 써서 이기고 있을 뿐이야.','나는 실제 전장에서는 쓸 수 없는 수를\\n써서 이기고 있을 뿐이야.')],
-            Path('Awakening/Messages (K)/ヴィオール_プレイヤー男.txt'):[('나는 전장에서 실제로 사용할 수 없는\\n수를 써서 이기고 있을 뿐이야.','나는 실제 전장에서는 쓸 수 없는 수를\\n써서 이기고 있을 뿐이야.')],
-          }
-          mid=re.compile(r'^MID_[^:]+:',re.M)
+          targets=[
+            (Path('Awakening/Messages (K)/ドニ_ベルベット.txt'),'MID_支援_ドニ_ベルベット_Ｓ','아뇨… 이렇게 둘이 있는\\n것만으로도 좋아요.','아뇨… 이렇게 둘이 있는 것만으로도\\n좋아요.'),
+            (Path('Awakening/Messages (K)/ヴィオール_プレイヤー女.txt'),'MID_支援_ヴィオール_プレイヤー女_Ｂ_PCF1','나는 전장에서 실제로 사용할 수 없는\\n수를 써서 이기고 있을 뿐이야.','나는 실제 전장에서는 쓸 수 없는 수를\\n써서 이기고 있을 뿐이야.'),
+            (Path('Awakening/Messages (K)/ヴィオール_プレイヤー男.txt'),'MID_支援_ヴィオール_プレイヤー男_Ｂ_PCM1','나는 전장에서 실제로 사용할 수 없는\\n수를 써서 이기고 있을 뿐이야.','나는 실제 전장에서는 쓸 수 없는 수를\\n써서 이기고 있을 뿐이야.'),
+          ]
           ctrl=re.compile(r'\$[A-Za-z][A-Za-z0-9_]*(?:[^|$\\\r\n]*\|)?')
-          for p,repls in fixes.items():
+          byfile={}
+          for p,name,old,new in targets: byfile.setdefault(p,[]).append((name,old,new))
+          for p,items in byfile.items():
             before=p.read_text(encoding='utf-8'); after=before
-            for old,new in repls:
-              if after.count(old)!=1: raise SystemExit(f'{p}: expected exactly one occurrence of {old!r}, got {after.count(old)}')
-              after=after.replace(old,new)
-            if len(mid.findall(before))!=len(mid.findall(after)): raise SystemExit(f'MID count changed: {p}')
+            for name,old,new in items:
+              pat=re.compile(r'(^'+re.escape(name)+r': .*?)(?=^MID_|\Z)',re.M|re.S)
+              ms=list(pat.finditer(after))
+              if len(ms)!=1: raise SystemExit(f'{p}:{name}: MID match count {len(ms)}')
+              block=ms[0].group(1)
+              if block.count(old)!=1: raise SystemExit(f'{p}:{name}: target count {block.count(old)}')
+              nb=block.replace(old,new)
+              after=after[:ms[0].start(1)]+nb+after[ms[0].end(1):]
             if ctrl.findall(before)!=ctrl.findall(after): raise SystemExit(f'control sequence changed: {p}')
             if before.count('\\n')!=after.count('\\n'): raise SystemExit(f'visual break count changed: {p}')
-            after.encode('utf-8').decode('utf-8')
             if '\ufffd' in after: raise SystemExit(f'U+FFFD: {p}')
             p.write_text(after,encoding='utf-8',newline='')
           PY
