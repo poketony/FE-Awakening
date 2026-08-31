@@ -4,7 +4,7 @@ MESS_ARCHIVE_X014
 Message Name: Message
 
 
-MID_X014_OP1: $t1$Wmクロム|3$Wm村長|7$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_3|$E通常,|…환상의 마을?$k\n$Ws村長|$Wa$SvpSE_VOICE_VIRREGER4_EVT_7|예, 어디까지나 소문이지만 말입니다.$k$p마을 밖의 사막에서, 때때로\n모래 폭풍 속의 마을이 보인다더군요.$k$p마을에 도착한 자는\n전설 속의 【여신의 지팡이】를 얻을 수 있다는 말도…$k\n$Ws村長|$Wd$w0|$Wmusername|7$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_12|$E通常,|환상의 마을이라…$k$p정말로 존재하는지는 모르겠지만,\n조사해 볼 가치는 있을 거 같군.$k\n$Wsusername|$Wd$w0|$Wm村長|7$w0|$Ws村長|$Wa$SvpSE_VOICE_VIRREGER4_EVT_5|$E苦,汗|다만… 그 근처엔\n위험한 야만족들이 서성거리고 있습니다.$k$p환상의 마을을 조사하러 간 자들은\n모두 놈들에게 당해서 돌아오지 못했지요…$k$p무슨 일이 있어도 가고 싶으시다면,\n싸울 준비는 해 두는 게 좋을 겁니다.$k
+MID_X014_OP1: $t1$Wmクロム|3$Wm村長|7$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_3|$E通常,|…환상의 마을?$k\n$Ws村長|$Wa$SvpSE_VOICE_VIRREGER4_EVT_7|예, 어디까지나 소문이지만 말입니다.$k$p마을 밖의 사막에서, 때때로\n모래 폭풍 속의 마을이 보인다더군요.$k$p마을에 도착한 자는 전설 속의\n【여신의 지팡이】를 얻을 수 있다는 말도…$k\n$Ws村長|$Wd$w0|$Wmusername|7$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_12|$E通常,|환상의 마을이라…$k$p정말로 존재하는지는 모르겠지만,\n조사해 볼 가치는 있을 거 같군.$k\n$Wsusername|$Wd$w0|$Wm村長|7$w0|$Ws村長|$Wa$SvpSE_VOICE_VIRREGER4_EVT_5|$E苦,汗|다만… 그 근처엔\n위험한 야만족들이 서성거리고 있습니다.$k$p환상의 마을을 조사하러 간 자들은\n모두 놈들에게 당해서 돌아오지 못했지요…$k$p무슨 일이 있어도 가고 싶으시다면,\n싸울 준비는 해 두는 게 좋을 겁니다.$k
 MID_X014_OP2: $t1$WmX014_ボス|3$w0|$WsX014_ボス|$Wa$SvpSE_VOICE_BOSS3_EVT_1|$E笑,|게헤헤헤헤! 이쪽 마을엔\n엄청난 보물이 잠들어 있다는 소문이 있던데!$k$p$E怒,|$Wv닥치는 대로 덮치고!\n송두리째 빼앗아라!$k
 MID_X014_VIL1: $t1$Wm自分|3$Wm村長|7$w0|$Ws村長|$Wa$SvpSE_VOICE_VIRREGER4_EVT_1|호오… 이 땅에 오는 인간이\n존재할 줄이야…$k$p몽환과 현실의 틈새에서 흔들리는\n불확실한 것을 잘도 믿었군.$k$p이걸 찾고 있던 거겠지?\n가져가거라.$k$p그대들이라면 잘 쓸 수 있겠지.$k
 MID_X014_VIL2: $t1$Wm自分|3$Wmロラン|7$w0|$Wsロラン|$Wa$SvpSE_VOICE_LAURENT_EVT_3|$E通常,|환상의 마을의 소문이요?\n네, 물론 알고 있습니다.$k$p저도 이런저런 정보를 찾아보고 있지만,\n어떻게 해도 갈 수가 없더군요.$k$p$E苦,汗|어머님이었다면 이럴 때\n간단히 답을 이끌어 내셨을 텐데…$k
