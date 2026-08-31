@@ -1,0 +1,44 @@
+name: Fix Awakening dependent-noun line breaks
+on:
+  push:
+    paths: ['.github/workflows/fix-awakening-dependent-noun-breaks.yml']
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply reviewed fixes and validate
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          fixes={
+            Path('Awakening/Messages (K)/ドニ_ベルベット.txt'):[('아뇨… 이렇게 둘이 있는\\n것만으로도 좋아요.','아뇨… 이렇게 둘이 있는 것만으로도\\n좋아요.')],
+            Path('Awakening/Messages (K)/ヴィオール_プレイヤー女.txt'):[('나는 전장에서 실제로 사용할 수 없는\\n수를 써서 이기고 있을 뿐이야.','나는 실제 전장에서는 쓸 수 없는 수를\\n써서 이기고 있을 뿐이야.')],
+            Path('Awakening/Messages (K)/ヴィオール_プレイヤー男.txt'):[('나는 전장에서 실제로 사용할 수 없는\\n수를 써서 이기고 있을 뿐이야.','나는 실제 전장에서는 쓸 수 없는 수를\\n써서 이기고 있을 뿐이야.')],
+          }
+          mid=re.compile(r'^MID_[^:]+:',re.M)
+          ctrl=re.compile(r'\$[A-Za-z][A-Za-z0-9_]*(?:[^|$\\\r\n]*\|)?')
+          for p,repls in fixes.items():
+            before=p.read_text(encoding='utf-8'); after=before
+            for old,new in repls:
+              if after.count(old)!=1: raise SystemExit(f'{p}: expected exactly one occurrence of {old!r}, got {after.count(old)}')
+              after=after.replace(old,new)
+            if len(mid.findall(before))!=len(mid.findall(after)): raise SystemExit(f'MID count changed: {p}')
+            if ctrl.findall(before)!=ctrl.findall(after): raise SystemExit(f'control sequence changed: {p}')
+            if before.count('\\n')!=after.count('\\n'): raise SystemExit(f'visual break count changed: {p}')
+            after.encode('utf-8').decode('utf-8')
+            if '\ufffd' in after: raise SystemExit(f'U+FFFD: {p}')
+            p.write_text(after,encoding='utf-8',newline='')
+          PY
+          git diff --check
+      - name: Commit and clean up
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git rm .github/workflows/fix-awakening-dependent-noun-breaks.yml
+          git add 'Awakening/Messages (K)'
+          git commit -m 'Fix Awakening dependent-noun line breaks'
+          git push
