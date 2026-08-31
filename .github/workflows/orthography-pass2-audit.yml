@@ -1,0 +1,98 @@
+name: Awakening orthography pass 2 audit
+on:
+  push:
+    paths: ['.github/workflows/orthography-pass2-audit.yml']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Audit
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-nanum >/dev/null
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, subprocess
+          from PIL import ImageFont
+
+          # 0) Revalidate visible lines touched by prior orthography commit 78322a5.
+          font_path='/usr/share/fonts/truetype/nanum/NanumGothic.ttf'
+          font=ImageFont.truetype(font_path,14)
+          limits={'$t0':278.8125,'$t1':298.734375}
+          def width(s): return font.getlength(s)
+          def strip_codes(s):
+              s=re.sub(r'\$[^$\\\n\r가-힣A-Za-z0-9!?….,~"「」『』 ]*\|?', '', s)
+              s=re.sub(r'\$[A-Za-z][^$\\\n\r가-힣!?…。、！？ ]*\|?', '', s)
+              return s
+          try:
+              parent=subprocess.check_output(['git','rev-parse','78322a5^']).decode().strip()
+              diff=subprocess.check_output(['git','diff','--unified=0',parent,'78322a5','--','Awakening/Messages (K)','Awakening/DLC Message (K)']).decode('utf-8')
+              changed=[]; cur=None
+              for ln in diff.splitlines():
+                  if ln.startswith('+++ b/'): cur=ln[6:]
+                  elif ln.startswith('+') and not ln.startswith('+++') and cur:
+                      changed.append((cur,ln[1:]))
+              over=[]
+              for fp,line in changed:
+                  # Only dialogue content lines; determine style from MID line itself where possible.
+                  if not line.startswith('MID_'): continue
+                  body=line.split(': ',1)[1] if ': ' in line else ''
+                  style='$t0' if body.startswith('$t0') else ('$t1' if body.startswith('$t1') else None)
+                  if not style: continue
+                  # visual lines are literal \\n separated segments; remove controls approximately, same proxy family as prior audit.
+                  for seg in body.split('\\n'):
+                      txt=re.sub(r'\$[A-Za-z][^$\\]*?\|','',seg)
+                      txt=re.sub(r'\$[A-Za-z][A-Za-z0-9_]*','',txt)
+                      txt=txt.replace('$k','').replace('$p','')
+                      w=width(txt)
+                      if w>limits[style]: over.append((fp,style,w,txt))
+              width_report=f'PRIOR_78322a5_CHANGED_MID_LINES={len(changed)}\nPRIOR_WIDTH_OVERFLOW={len(over)}\n'+''.join(f'OVER\t{a}\t{b}\t{c:.2f}\t{d}\n' for a,b,c,d in over)
+          except Exception as e:
+              width_report='PRIOR_WIDTH_AUDIT_ERROR='+repr(e)+'\n'
+
+          # 1) Contextual second-pass candidate collection.
+          # Keep broad enough to catch likely orthographic/spacing errors, but report only; no edits.
+          pats=[
+            ('aux_spacing', re.compile(r'(?:해|되어|돼|가|와|나|보|먹|읽|알|찾|돌|들|붙|남|살|숨어|앉아|서)[가-힣]{0,5}(?:있|없)(?:다|어|어요|습니다|는|던|을|을까|겠|었)')),
+            ('dependent_spacing', re.compile(r'[가-힣]+(?:할|한|하는|될|된|되는|갈|간|가는|볼|본|보는|먹을|먹는|알|아는|없는|있는)(?:수|것|줄|뿐|듯|만큼|대로|바|리)(?:[가-힣]*)')),
+            ('common_spacing', re.compile(r'(?:그동안|그 동안|한동안|한 동안|오랜만|오랫만|웬일|왠일|웬만|왠만|금세|금새|며칠|몇일|어쨌든|어쨋든|어떻게든|어떻든|하마터면|하마트면|제대로|제 대로|따라서|따라 서|뿐만아니라|뿐만 아니라|할수록|할 수록|갈수록|갈 수록|볼수록|볼 수록|할지도|할 지도|것같|것 같|수밖에|수 밖에|할텐데|할 텐데|할테니|할 테니|할걸|할 걸|할게|할 게|할께|할 께|안돼|안 돼|안되|안 되|못해|못 해|못하|못 하|익숙치|익숙지|깨끗히|깨끗이|곰곰히|곰곰이|일일히|일일이|틈틈히|틈틈이|번번히|번번이|솔직히|솔직이|가만히|가만이|도저히|도저이|역활|역할|희안|희한|어의없|어이없|됬|됐|됀|된|왠지|웬지)')),
+            ('bound_noun', re.compile(r'(?:데|바|줄|수|것|뿐|듯|리|만큼|대로)(?:이다|이다만|이야|이지만|에는|에도|에서|까지|밖에|조차|마저|은|는|을|를|이|가)')),
+          ]
+          dead=('PCM2','PCM3','PCF2','PCF3')
+          rows=[]
+          for root in [Path('Awakening/Messages (K)'),Path('Awakening/DLC Message (K)')]:
+            for p in sorted(root.glob('*.txt')):
+              try: text=p.read_text('utf-8')
+              except: continue
+              for m in re.finditer(r'^(MID_[^:]+): (.*?)(?=^MID_|\Z)',text,re.M|re.S):
+                mid,body=m.group(1),m.group(2)
+                if any(x in mid for x in dead): continue
+                # remove controls but retain literal dialogue/newline markers for context
+                plain=re.sub(r'\$[A-Za-z][^$\\\n\r가-힣!?…。、！？ ]*\|?','',body)
+                for label,pat in pats:
+                  for hit in pat.finditer(plain):
+                    s=max(0,hit.start()-45); e=min(len(plain),hit.end()+55)
+                    ctx=plain[s:e].replace('\n',' ').replace('\\n',' / ')
+                    rows.append((str(p),mid,label,hit.group(0),ctx))
+          # de-dupe exact candidate tuples
+          seen=set(); out=[]
+          for r in rows:
+            key=r[:4]
+            if key in seen: continue
+            seen.add(key); out.append(r)
+          report=[width_report, f'PASS2_CANDIDATES={len(out)}\n']
+          for r in out:
+            report.append('\t'.join(r)+'\n')
+          Path('.github/ORTHOGRAPHY_PASS2_REPORT.txt').write_text(''.join(report),encoding='utf-8')
+          PY
+      - name: Commit report
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .github/ORTHOGRAPHY_PASS2_REPORT.txt
+          git commit -m 'Add temporary Awakening orthography pass 2 report'
+          git push
