@@ -1,0 +1,326 @@
+name: Apply 100-file Awakening orthography review
+
+on:
+  push:
+    paths:
+      - ".github/workflows/apply-awakening-100-orthography.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install width-check dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-nanum
+          python -m pip install --quiet pillow
+
+      - name: Apply context-reviewed fixes and validate
+        shell: bash
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          from collections import defaultdict, Counter
+          import re, subprocess
+          from PIL import ImageFont
+
+          rules = [
+            ("Awakening/Messages (K)/ジェローム_セレナ.txt","틀키지","들키지"),
+            ("Awakening/Messages (K)/ジェローム_セレナ.txt","잃어 버리면","잃어버리면"),
+            ("Awakening/Messages (K)/サーリャ_フレデリク.txt","뭘하시는","뭘 하시는"),
+            ("Awakening/Messages (K)/サーリャ_フレデリク.txt","의미로써","의미로서"),
+            ("Awakening/Messages (K)/ヴィオール_ベルベット.txt","자신있어서","자신 있어서"),
+            ("Awakening/Messages (K)/ヴィオール_ベルベット.txt","자신있다면","자신 있다면"),
+            ("Awakening/Messages (K)/ヴィオール_ベルベット.txt","용서 받지","용서받지"),
+            ("Awakening/Messages (K)/シンシア_マーク男.txt","힘들 일 있니","힘든 일 있니"),
+            ("Awakening/Messages (K)/シンシア_マーク男.txt","좋아하다는 뜻이지","좋아한다는 뜻이지"),
+            ("Awakening/Messages (K)/シンシア_マーク男.txt","거짓말 해!?","거짓말해!?"),
+            ("Awakening/Messages (K)/シンシア_マーク男.txt","고백 받아서","고백받아서"),
+            ("Awakening/Messages (K)/ソール_ノノ.txt","기운을 차졌네","기운을 차렸네"),
+            ("Awakening/Messages (K)/ソール_ノノ.txt","마중나온","마중 나온"),
+            ("Awakening/Messages (K)/ガイア_マリアベル.txt","같은 죄르르","같은 죄를"),
+            ("Awakening/Messages (K)/ガイア_マリアベル.txt","용서 받을","용서받을"),
+            ("Awakening/Messages (K)/ガイア_マリアベル.txt","싸움동안","싸움 동안"),
+            ("Awakening/Messages (K)/デジェル_マーク男.txt","말슴하세요","말씀하세요"),
+            ("Awakening/Messages (K)/デジェル_マーク男.txt","편한대로만","편한 대로만"),
+            ("Awakening/Messages (K)/デジェル_マーク男.txt","따라하고 싶어요","따라 하고 싶어요"),
+            ("Awakening/Messages (K)/デジェル_マーク男.txt","계속 할 거야","계속할 거야"),
+            ("Awakening/Messages (K)/デジェル_マーク男.txt","하고 싶은대로","하고 싶은 대로"),
+            ("Awakening/Messages (K)/デジェル_マーク男.txt","어디있을까요","어디 있을까요"),
+            ("Awakening/Messages (K)/ジェローム_ロラン.txt","가까워 지는","가까워지는"),
+            ("Awakening/Messages (K)/グレゴ_セルジュ.txt","그 중에는","그중에는"),
+            ("Awakening/Messages (K)/アズール_シンシア.txt","인기만점","인기 만점"),
+            ("Awakening/Messages (K)/シャンブレー_ロラン.txt","마음 먹으면","마음먹으면"),
+            ("Awakening/Messages (K)/シャンブレー_ロラン.txt","잘 하는군요","잘하는군요"),
+            ("Awakening/Messages (K)/カラム_ベルベット.txt","궁금해 하고","궁금해하고"),
+            ("Awakening/Messages (K)/カラム_ベルベット.txt","격려 받아","격려받아"),
+            ("Awakening/Messages (K)/X019.txt","가슴 속에","가슴속에"),
+            ("Awakening/Messages (K)/シャンブレー_マーク女.txt","안해요","안 해요"),
+            ("Awakening/Messages (K)/シャンブレー_マーク女.txt","정신차린","정신 차린"),
+            ("Awakening/Messages (K)/ソワレ_ヘンリー.txt","없다는걸","없다는 걸"),
+            ("Awakening/Messages (K)/ソール_ティアモ.txt","잊어 버렸거든","잊어버렸거든"),
+            ("Awakening/Messages (K)/ソール_ティアモ.txt","이곡은","이 곡은"),
+            ("Awakening/Messages (K)/メッセージカード.txt","잘 생긴","잘생긴"),
+            ("Awakening/Messages (K)/プレイヤー女_ベルベット.txt","맛 봐도","맛봐도"),
+            ("Awakening/Messages (K)/グレゴ_ロンクー.txt","일만하고","일만 하고"),
+            ("Awakening/Messages (K)/ウード_マーク男.txt","줘야 겠어","줘야겠어"),
+            ("Awakening/Messages (K)/ウード_マーク男.txt","그럴려나","그러려나"),
+            ("Awakening/Messages (K)/X008.txt","네 라고 해야지","네라고 해야지"),
+            ("Awakening/Messages (K)/シンシア_ロラン.txt","그런서야","그런 건"),
+            ("Awakening/Messages (K)/シンシア_ロラン.txt","못 할 거예요","못할 거예요"),
+            ("Awakening/Messages (K)/ヴェイク_ティアモ.txt","어디있냐","어디 있냐"),
+            ("Awakening/Messages (K)/ヴェイク_ティアモ.txt","그만 두는","그만두는"),
+            ("Awakening/Messages (K)/ヴェイク_ティアモ.txt","계속 할까","계속할까"),
+            ("Awakening/Messages (K)/ヴェイク_ティアモ.txt","당신하기 나름이야","당신이 하기 나름이야"),
+            ("Awakening/Messages (K)/ロラン_ンン.txt","시치미떼지","시치미 떼지"),
+            ("Awakening/Messages (K)/ジェローム_マーク女.txt","걱정 안해도","걱정 안 해도"),
+            ("Awakening/Messages (K)/ジェローム_マーク女.txt","말 안할 거예요","말 안 할 거예요"),
+            ("Awakening/Messages (K)/オリヴィエ_リベラ.txt","자신있지","자신 있지"),
+            ("Awakening/Messages (K)/オリヴィエ_リベラ.txt","리베리 씨","리베라 씨"),
+            ("Awakening/Messages (K)/オリヴィエ_リベラ.txt","잘 할 수 있었다고","잘할 수 있었다고"),
+            ("Awakening/Messages (K)/ヴェイク_サーリャ.txt","인기만점이군","인기 만점이군"),
+            ("Awakening/Messages (K)/ヴェイク_サーリャ.txt","쉬울거야","쉬울 거야"),
+            ("Awakening/Messages (K)/ヴェイク_サーリャ.txt","소릴하는","소릴 하는"),
+            ("Awakening/Messages (K)/ヴェイク_サーリャ.txt","들어 가겠지","들어가겠지"),
+            ("Awakening/Messages (K)/ヴェイク_サーリャ.txt","것 보다","것보다"),
+            ("Awakening/Messages (K)/オリヴィエ_ソール.txt","부끄러워 하는","부끄러워하는"),
+            ("Awakening/Messages (K)/オリヴィエ_ソール.txt","입다물고","입 다물고"),
+            ("Awakening/Messages (K)/オリヴィエ_ソール.txt","흉내낸","흉내 낸"),
+            ("Awakening/Messages (K)/セレナ_マーク男.txt","좋은 재료 서서","좋은 재료 써서"),
+            ("Awakening/Messages (K)/セレナ_マーク男.txt","맨일 먹는","매일 먹는"),
+            ("Awakening/Messages (K)/ノノ_リベラ.txt","달라 붙자","달라붙자"),
+            ("Awakening/Messages (K)/ノノ_リベラ.txt","돌아 봤군요","돌아봤군요"),
+            ("Awakening/Messages (K)/スミア_プレイヤー女.txt","읽을 때 만큼은","읽을 때만큼은"),
+            ("Awakening/Messages (K)/シャンブレー_シンシア.txt","히어로다워 질","히어로다워질"),
+            ("Awakening/Messages (K)/シャンブレー_シンシア.txt","찬미 받는","찬미받는"),
+            ("Awakening/Messages (K)/シャンブレー_シンシア.txt","동경 받는","동경받는"),
+            ("Awakening/Messages (K)/シャンブレー_シンシア.txt","부를만한","부를 만한"),
+            ("Awakening/Messages (K)/シャンブレー_シンシア.txt","알아 들은","알아들은"),
+            ("Awakening/Messages (K)/マリアベル_ロンクー.txt","뻔 했잖습니까","뻔했잖습니까"),
+            ("Awakening/Messages (K)/マリアベル_ロンクー.txt","힘 내세요","힘내세요"),
+            ("Awakening/Messages (K)/マリアベル_ロンクー.txt","잘 하셨습니다","잘하셨습니다"),
+            ("Awakening/Messages (K)/マリアベル_ロンクー.txt","말 했으니","말했으니"),
+            ("Awakening/Messages (K)/カラム_ティアモ.txt","지지않을","지지 않을"),
+            ("Awakening/Messages (K)/カラム_ティアモ.txt","따라할 수","따라 할 수"),
+            ("Awakening/Messages (K)/ヴェイク_クロム.txt","어처구니 없는","어처구니없는"),
+            ("Awakening/Messages (K)/アズール_ノワール.txt","부탁 받았다고","부탁받았다고"),
+            ("Awakening/Messages (K)/マーク女_シャンブレー_兄弟.txt","뭐해?","뭐 해?"),
+            ("Awakening/Messages (K)/マーク女_シャンブレー_兄弟.txt","되어봐","되어 봐"),
+            ("Awakening/Messages (K)/マーク女_シャンブレー_兄弟.txt","쟈,","자,"),
+            ("Awakening/Messages (K)/マーク女_シャンブレー_兄弟.txt","안된다는","안 된다는"),
+            ("Awakening/Messages (K)/マーク女_シャンブレー_兄弟.txt","기억상실","기억 상실"),
+            ("Awakening/Messages (K)/ヴィオール_フレデリク.txt","변함 없습니다","변함없습니다"),
+            ("Awakening/Messages (K)/ヴィオール_サーリャ.txt","하지말고","하지 말고"),
+            ("Awakening/Messages (K)/ヴィオール_サーリャ.txt","분분해 주십시오","분부해 주십시오"),
+            ("Awakening/Messages (K)/ヴィオール_サーリャ.txt","취급 하는 거야","취급하는 거야"),
+            ("Awakening/Messages (K)/ヴィオール_サーリャ.txt","멋 없는 일","멋없는 일"),
+            ("Awakening/Messages (K)/カラム_サーリャ.txt","우리집은","우리 집은"),
+            ("Awakening/Messages (K)/カラム_サーリャ.txt","미 , 미안해","미, 미안해"),
+            ("Awakening/Messages (K)/ヴェイク_プレイヤー男.txt","뭐하는 거야","뭐 하는 거야"),
+            ("Awakening/Messages (K)/ヴェイク_プレイヤー男.txt","낮잠자고 있어","낮잠 자고 있어"),
+            ("Awakening/Messages (K)/ヴィオール_ソワレ.txt","고민해 볼만한","고민해 볼 만한"),
+            ("Awakening/Messages (K)/ヴィオール_ソワレ.txt","뻔 했다","뻔했다"),
+            ("Awakening/Messages (K)/ソール_リズ.txt","부탁 받았거든","부탁받았거든"),
+            ("Awakening/Messages (K)/ソール_リズ.txt","가까운만큼","가까운 만큼"),
+            ("Awakening/Messages (K)/ソール_リズ.txt","약재료","약 재료"),
+            ("Awakening/Messages (K)/ブレディ_マルス.txt","안 좋아보이는데요","안 좋아 보이는데요"),
+            ("Awakening/Messages (K)/スミア_ティアモ.txt","단정짓지","단정 짓지"),
+            ("Awakening/Messages (K)/スミア_ティアモ.txt","법인걸","법인 걸"),
+            ("Awakening/Messages (K)/シャンブレー_マルス.txt","지지않도록","지지 않도록"),
+            ("Awakening/Messages (K)/ヴィオール_リズ.txt","뭐하고 있었어","뭐 하고 있었어"),
+            ("Awakening/Messages (K)/ヴィオール_リズ.txt","취급 하는 거지","취급하는 거지"),
+            ("Awakening/Messages (K)/カラム_セルジュ.txt","가시인걸","가시인 걸"),
+            ("Awakening/Messages (K)/シンシア_ヘンリー_親子.txt","잘못 됐어","잘못됐어"),
+            ("Awakening/Messages (K)/シンシア_ヘンリー_親子.txt","놀러가는 곳","놀러 가는 곳"),
+            ("Awakening/Messages (K)/シンシア_ヘンリー_親子.txt","화제같은 거","화제 같은 거"),
+            ("Awakening/Messages (K)/デジェル_ソール_親子.txt","먹엇으니까","먹었으니까"),
+            ("Awakening/Messages (K)/デジェル_ソール_親子.txt","잘 했어","잘했어"),
+            ("Awakening/Messages (K)/デジェル_ソール_親子.txt","요리를 잘 하는 줄","요리를 잘하는 줄"),
+            ("Awakening/Messages (K)/セレナ_リヒト_親子.txt","질릴만큼","질릴 만큼"),
+            ("Awakening/Messages (K)/セレナ_リヒト_親子.txt","잘 하면","잘하면"),
+            ("Awakening/Messages (K)/デジェル_リベラ_親子.txt","안하시는","안 하시는"),
+            ("Awakening/Messages (K)/デジェル_リベラ_親子.txt","요리를 잘 하는 줄","요리를 잘하는 줄"),
+            ("Awakening/Messages (K)/デジェル_リベラ_親子.txt","함께 할 테니까요","함께할 테니까요"),
+            ("Awakening/Messages (K)/シャンブレー_ソール_親子.txt","바람피지 말라고","바람피우지 말라고"),
+            ("Awakening/Messages (K)/ウード_グレゴ_親子.txt","뭐하는 거냐","뭐 하는 거냐"),
+            ("Awakening/Messages (K)/ウード_グレゴ_親子.txt","뻔 했군","뻔했군"),
+            ("Awakening/Messages (K)/ブレディ_カラム_親子.txt","귀족같은","귀족 같은"),
+            ("Awakening/Messages (K)/ブレディ_カラム_親子.txt","이야기 하는 건","이야기하는 건"),
+            ("Awakening/Messages (K)/ンン_ヴェイク_親子.txt","할만한 말","할 만한 말"),
+            ("Awakening/Messages (K)/ンン_ヴェイク_親子.txt","것 까지야","것까지야"),
+            ("Awakening/Messages (K)/ブレディ_グレゴ_親子.txt","이야기 하는 건","이야기하는 건"),
+            ("Awakening/Messages (K)/マーク女_セレナ_親子.txt","잊어 버린","잊어버린"),
+            ("Awakening/Messages (K)/マーク女_セレナ_親子.txt","뭐하고 있어","뭐 하고 있어"),
+            ("Awakening/Messages (K)/マーク女_セレナ_親子.txt","협조 받도록","협조받도록"),
+            ("Awakening/Messages (K)/マーク女_サーリャ_親子.txt","막지마","막지 마"),
+            ("Awakening/Messages (K)/マーク女_サーリャ_親子.txt","협조 받도록","협조받도록"),
+            ("Awakening/Messages (K)/ノワール_ヘンリー_親子.txt","압수 당해서","압수당해서"),
+            ("Awakening/Messages (K)/マーク男_ソール_親子.txt","잊어 버린","잊어버린"),
+            ("Awakening/Messages (K)/マーク男_ソール_親子.txt","협조 받도록","협조받도록"),
+            ("Awakening/Messages (K)/ロラン_ガイア_親子.txt","어른 스럽게","어른스럽게"),
+            ("Awakening/Messages (K)/マーク女_アンナ_親子.txt","뭐하고 있어","뭐 하고 있어"),
+            ("Awakening/Messages (K)/マーク女_アンナ_親子.txt","협조 받도록","협조받도록"),
+            ("Awakening/Messages (K)/マイルーム挨拶.txt","휴식입나까","휴식입니까"),
+            ("Awakening/Messages (K)/018.txt","오래 전에","오래전에"),
+            ("Awakening/Messages (K)/018.txt","내려다 봤죠","내려다봤죠"),
+            ("Awakening/Messages (K)/001.txt","흘러 들어온","흘러들어 온"),
+            ("Awakening/DLC Message (K)/2. 영령의 마법 부적2.txt","오해를 받아 버린","오해받아 버린"),
+            ("Awakening/DLC Message (K)/2. 영령의 마법 부적2.txt","마법 부적를","마법 부적을"),
+            ("Awakening/DLC Message (K)/6. 무한의 신기.txt","대화라 수 있는","대화할 수 있는"),
+            ("Awakening/DLC Message (K)/4. 금과 은.txt","훔쳐다는 게","훔쳤다는 게"),
+            ("Awakening/DLC Message (K)/4. 금과 은.txt","라기 보단","라기보단"),
+            ("Awakening/DLC Message (K)/18. 생사의 기로에서.txt","마음에 들어하는","마음에 들어 하는"),
+          ]
+
+          dead_markers = ("_PCM2","_PCM3","_PCF2","_PCF3")
+          control_re = re.compile(r"\$[A-Za-z][A-Za-z0-9]*")
+          by_file = defaultdict(list)
+          for p,o,n in rules: by_file[p].append((o,n))
+
+          before={}
+          changed_records=[]
+          rule_counts=Counter()
+          changed_files=[]
+
+          for pstr, file_rules in by_file.items():
+            path=Path(pstr)
+            raw=path.read_bytes()
+            old=raw.decode("utf-8",errors="strict")
+            before[path]=old
+            lines=old.splitlines(keepends=True)
+            out=[]
+            changed=False
+            for lineno,line in enumerate(lines,1):
+              new_line=line
+              if line.startswith("MID_"):
+                mid=line.split(":",1)[0]
+                if not any(m in mid for m in dead_markers):
+                  for old_s,new_s in file_rules:
+                    n=new_line.count(old_s)
+                    if n:
+                      rule_counts[(pstr,old_s,new_s)] += n
+                      changed_records.append((path,lineno,mid,old_s,new_s,n))
+                      new_line=new_line.replace(old_s,new_s)
+              if new_line!=line: changed=True
+              out.append(new_line)
+            if changed:
+              path.write_bytes("".join(out).encode("utf-8"))
+              changed_files.append(path)
+
+          missing=[(p,o,n) for p,o,n in rules if rule_counts[(p,o,n)]==0]
+          if missing:
+            print("MISSING RULES:")
+            for x in missing: print(x)
+            raise SystemExit(f"{len(missing)} context-reviewed rules did not match latest main")
+
+          # Integrity + exact-diff reconstruction.
+          for path in changed_files:
+            old=before[path]
+            new=path.read_bytes().decode("utf-8",errors="strict")
+            if "\ufffd" in new: raise SystemExit(f"U+FFFD: {path}")
+            bad=[ord(ch) for ch in new if ord(ch)<32 and ch not in "\n\r\t"]
+            if bad: raise SystemExit(f"Bad C0: {path} {bad[:5]}")
+            old_mids=[x.split(":",1)[0] for x in old.splitlines() if x.startswith("MID_")]
+            new_mids=[x.split(":",1)[0] for x in new.splitlines() if x.startswith("MID_")]
+            if old_mids != new_mids: raise SystemExit(f"MID count/order changed: {path}")
+            if control_re.findall(old) != control_re.findall(new):
+              raise SystemExit(f"Control sequence changed: {path}")
+            if old.count("\\n") != new.count("\\n"):
+              raise SystemExit(f"Literal \\n changed: {path}")
+
+            expected=[]
+            file_rules=by_file[str(path)]
+            for line in old.splitlines(keepends=True):
+              exp=line
+              if line.startswith("MID_"):
+                mid=line.split(":",1)[0]
+                if not any(m in mid for m in dead_markers):
+                  for a,b in file_rules:
+                    exp=exp.replace(a,b)
+              expected.append(exp)
+            if "".join(expected) != new:
+              raise SystemExit(f"Unexpected diff: {path}")
+
+            # Explicit dead-branch protection.
+            old_lines=old.splitlines()
+            new_lines=new.splitlines()
+            if len(old_lines)!=len(new_lines): raise SystemExit(f"Physical line count changed: {path}")
+            for a,b in zip(old_lines,new_lines):
+              if a.startswith("MID_"):
+                mid=a.split(":",1)[0]
+                if any(m in mid for m in dead_markers) and a!=b:
+                  raise SystemExit(f"Dead Avatar branch changed: {path} {mid}")
+
+          # Width check for every changed visual segment in $t0/$t1 dialogue.
+          font=ImageFont.truetype("/usr/share/fonts/truetype/nanum/NanumGothic.ttf",14)
+          thresholds={"t0":278.8125,"t1":298.734375}
+
+          def strip_codes(s):
+            s=re.sub(r"\$S(?:bp|sp|vp|bs|bv)[^|]*\|(?:\d+\|)?","",s)
+            s=re.sub(r"\$W[ms][^|]*\|\d*","",s)
+            s=re.sub(r"\$E[^|]*\|","",s)
+            s=re.sub(r"\$b[^|]*\|","",s)
+            s=re.sub(r"\$[A-Za-z][A-Za-z0-9]*\|?","",s)
+            return s
+
+          touched={(str(p),ln) for p,ln,*_ in changed_records}
+          width_checked=0
+          failures=[]
+          for path in changed_files:
+            old_lines=before[path].splitlines()
+            new_lines=path.read_text(encoding="utf-8").splitlines()
+            for lineno,(old_line,new_line) in enumerate(zip(old_lines,new_lines),1):
+              if (str(path),lineno) not in touched: continue
+              style="t0" if "$t0" in new_line else ("t1" if "$t1" in new_line else None)
+              if not style: continue
+              old_payload=old_line.split(":",1)[1] if ":" in old_line else old_line
+              new_payload=new_line.split(":",1)[1] if ":" in new_line else new_line
+              old_segs=re.split(r"\\n|\$k|\$p",old_payload)
+              new_segs=re.split(r"\\n|\$k|\$p",new_payload)
+              if len(old_segs)!=len(new_segs): raise SystemExit(f"Visual segment structure changed: {path}:{lineno}")
+              for os,ns in zip(old_segs,new_segs):
+                if os==ns: continue
+                visible=strip_codes(ns).strip()
+                if not visible: continue
+                width=font.getlength(visible)
+                width_checked += 1
+                if width > thresholds[style]:
+                  failures.append((str(path),lineno,style,width,thresholds[style],visible))
+          if failures:
+            for x in failures[:30]: print("WIDTH_FAIL",x)
+            raise SystemExit(f"{len(failures)} changed visual segments exceed proxy width")
+
+          subprocess.run(["git","diff","--check"],check=True)
+
+          unique_mids={(str(p),mid) for p,_,mid,*_ in changed_records}
+          print(f"RULES={len(rules)}")
+          print(f"CHANGED_FILES={len(changed_files)}")
+          print(f"LIVE_OCCURRENCES={sum(rule_counts.values())}")
+          print(f"CHANGED_MIDS={len(unique_mids)}")
+          print(f"WIDTH_CHECKED_SEGMENTS={width_checked}")
+          print("=== APPLIED ===")
+          for (p,o,n),c in sorted(rule_counts.items()):
+            print(f"{c}\t{p}\t{o} => {n}")
+          print("=== MIDS ===")
+          for p,mid in sorted(unique_mids):
+            print(f"{p}\t{mid}")
+          PY
+
+      - name: Commit changes and remove temporary workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/apply-awakening-100-orthography.yml
+          git add "Awakening/Messages (K)" "Awakening/DLC Message (K)"
+          git diff --cached --check
+          git commit -m "Fix Awakening Korean orthography from 100-file review"
+          git push origin HEAD:main
+          echo "FINAL_SHA=$(git rev-parse HEAD)"
