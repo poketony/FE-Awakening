@@ -1,64 +1,124 @@
-name: Prepare Awakening 100-file review batch
+name: Apply Awakening 100-file review batch
 on:
   push:
     paths: ['.github/workflows/review-awakening-100.yml']
 permissions:
-  contents: read
+  contents: write
 jobs:
-  prepare:
+  review:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build next 100 unreviewed support-dialogue pairs
+        with:
+          fetch-depth: 0
+      - name: Install width dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-nanum
+          python -m pip install --quiet pillow
+      - name: Apply reviewed fixes and validate
+        shell: bash
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import re, shutil
-          kroot=Path('Awakening/Messages (K)')
-          jroot=Path('Awakening/Messages (J)')
+          from PIL import ImageFont
+          import re, subprocess
+          root=Path('Awakening/Messages (K)'); jroot=Path('Awakening/Messages (J)')
           tracker=Path('Awakening/AUTOMATION_REVIEWED_FILES.txt')
+          changes={
+          'アズール_ヘンリー_親子.txt':[('MID_支援_アズール_ヘンリー_親子_Ａ','소극적이여서','소극적이어서')],
+          'アズール_プレイヤー男_親子.txt':[('MID_支援_アズール_プレイヤー男_親子_Ａ_PCM1','소극적이여서','소극적이어서')],
+          'アズール_ドニ_親子.txt':[('MID_支援_アズール_ドニ_親子_Ａ','소극적이여서','소극적이어서')],
+          'アズール_グレゴ_親子.txt':[('MID_支援_アズール_グレゴ_親子_Ａ','소극적이여서','소극적이어서')],
+          'アズール_カラム_親子.txt':[('MID_支援_アズール_カラム_親子_Ａ','소극적이여서','소극적이어서')],
+          'アズール_ロンクー_親子.txt':[('MID_支援_アズール_ロンクー_親子_Ａ','소극적이여서','소극적이어서')],
+          'アズール_ガイア_親子.txt':[('MID_支援_アズール_ガイア_親子_Ａ','소극적이여서','소극적이어서'),('MID_支援_アズール_ガイア_親子_Ａ','다행인건가','다행인 건가')],
+          'アズール_リベラ_親子.txt':[('MID_支援_アズール_リベラ_親子_Ａ','소극적이여서','소극적이어서')],
+          'アズール_フレデリク_親子.txt':[('MID_支援_アズール_フレデリク_親子_Ａ','소극적이여서','소극적이어서')],
+          'アズール_クロム_親子.txt':[('MID_支援_アズール_クロム_親子_Ａ','소극적이여서','소극적이어서')],
+          'ガイア_ベルベット.txt':[('MID_支援_ガイア_ベルベット_Ｓ','들을 수록','들을수록')],
+          'ガイア_ソワレ.txt':[('MID_支援_ガイア_ソワレ_Ｓ','계속 하자','계속하자'),('MID_支援_ガイア_ソワレ_Ｓ','계속 할 거야','계속할 거야')],
+          'ウード_プレイヤー男.txt':[('MID_支援_ウード_プレイヤー男_Ａ_PCM1','한번에 베어 낸다','한 번에 베어 낸다')],
+          'ウード_プレイヤー男_親子.txt':[('MID_支援_ウード_プレイヤー男_親子_Ｂ_PCM1','위험할 뻔 했군','위험할 뻔했군')],
+          'ウード_カラム_親子.txt':[('MID_支援_ウード_カラム_親子_Ｂ','위험할 뻔 했어','위험할 뻔했어')],
+          'ウード_フレデリク_親子.txt':[('MID_支援_ウード_フレデリク_親子_Ｂ','위험할 뻔 했습니다','위험할 뻔했습니다')],
+          'ウード_リヒト_親子.txt':[('MID_支援_ウード_リヒト_親子_Ｂ','위험할 뻔 했네','위험할 뻔했네')],
+          'ウード_ソール_親子.txt':[('MID_支援_ウード_ソール_親子_Ｂ','위험할 뻔 했다','위험할 뻔했다')],
+          'ウード_ガイア_親子.txt':[('MID_支援_ウード_ガイア_親子_Ｂ','위험할 뻔 했다','위험할 뻔했다')],
+          'ウード_セレナ.txt':[('MID_支援_ウード_セレナ_Ａ','달려 가겠어','달려가겠어')],
+          'インバース_プレイヤー男.txt':[('MID_支援_インバース_プレイヤー男_Ｓ_PCM1','알아 차려','알아차려')],
+          'カラム_マリアベル.txt':[('MID_支援_カラム_マリアベル_Ｂ','불안 하고 외로워서','불안하고 외로워서')],
+          }
           reviewed={x.strip() for x in tracker.read_text(encoding='utf-8').splitlines() if x.startswith('Awakening/Messages (K)/')}
-          cand=[]
-          for kp in sorted(kroot.glob('*.txt'), key=lambda p:p.name):
-              full=str(kp)
-              if full in reviewed: continue
-              try: txt=kp.read_text(encoding='utf-8')
-              except UnicodeDecodeError: continue
-              if 'MID_支援_' not in txt: continue
-              # Known non-live aliases: when the same support exists under Marth,
-              # the Lucina-named file is not the live file and must not be reviewed/tracked.
-              if kp.name.endswith('_ルキナ.txt'):
-                  marth=kroot/(kp.name[:-len('_ルキナ.txt')]+'_マルス.txt')
-                  if marth.exists():
-                      continue
-              jp=jroot/kp.name
-              if not jp.exists(): continue
-              cand.append(kp)
-          batch=cand[:100]
-          if len(batch)!=100: raise SystemExit(f'need 100 files, got {len(batch)}')
-          out=Path('review-batch'); (out/'K').mkdir(parents=True); (out/'J').mkdir(parents=True)
-          mids=re.compile(r'^(MID_[^:]+): (.*)$',re.M)
-          manifest=[]; audit=[]
-          for i,kp in enumerate(batch,1):
-              jp=jroot/kp.name
-              kt=kp.read_text(encoding='utf-8'); jt=jp.read_text(encoding='utf-8')
-              shutil.copy2(kp,out/'K'/kp.name); shutil.copy2(jp,out/'J'/jp.name)
-              manifest.append(f'{i:03d}\t{kp.name}')
-              km=[m.group(1) for m in mids.finditer(kt)]; jm=[m.group(1) for m in mids.finditer(jt)]
-              if km!=jm: audit.append(f'MID_DIFF\t{kp.name}\tJP={len(jm)}\tKR={len(km)}')
-              if '\ufffd' in kt: audit.append(f'UFFFD\t{kp.name}')
-              if any(ord(c)<32 and c not in '\n\r\t' for c in kt): audit.append(f'C0\t{kp.name}')
-              pats=[r'실태를',r'있었던거',r'곤란해 하',r'계속 하',r'생각한대로',r'정도 뿐',r'말씀 하',r'되어 보이겠',r'않겠습니다',r'할 수 있을거',r'할 수 없을거',r'수 밖에',r'뿐 만',r'것 같다만']
-              for pat in pats:
-                  for m in re.finditer(pat,kt):
-                      a=max(0,m.start()-100); b=min(len(kt),m.end()+140)
-                      audit.append(f'FLAG\t{kp.name}\t{pat}\t'+kt[a:b].replace('\n',' '))
-          (out/'manifest.txt').write_text('\n'.join(manifest)+'\n',encoding='utf-8')
-          (out/'audit.txt').write_text('\n'.join(audit)+'\n',encoding='utf-8')
-          print('\n'.join(manifest))
-          print(f'BATCH_COUNT={len(batch)} FLAGS={len(audit)}')
+          batch=[]
+          for p in sorted(root.glob('*.txt'),key=lambda p:p.name):
+              if str(p) in reviewed: continue
+              t=p.read_text(encoding='utf-8')
+              if 'MID_支援_' not in t or not (jroot/p.name).exists(): continue
+              if p.name.endswith('_ルキナ.txt') and (root/(p.name[:-len('_ルキナ.txt')]+'_マルス.txt')).exists(): continue
+              batch.append(p)
+              if len(batch)==100: break
+          if len(batch)!=100: raise SystemExit(f'expected 100 batch files, got {len(batch)}')
+          if not set(changes).issubset({p.name for p in batch}): raise SystemExit('change file outside selected batch')
+          midre=re.compile(r'^(MID_[^:]+): (.*)$',re.M); codere=re.compile(r'\$[A-Za-z][A-Za-z0-9]*'); dead=re.compile(r'_(?:PCM[23]|PCF[23])(?:$|_)')
+          font=ImageFont.truetype('/usr/share/fonts/truetype/nanum/NanumGothic.ttf',14)
+          def mids(t):
+              ms=list(midre.finditer(t)); d={}
+              for i,m in enumerate(ms):
+                  e=ms[i+1].start() if i+1<len(ms) else len(t); d[m.group(1)]=t[m.start(2):e].rstrip('\r\n')
+              return d,[m.group(1) for m in ms]
+          def strip(s):
+              s=re.sub(r'\$S(?:bp|sp|vp|bs|bv|ls|lp)[^|]*\|(?:\d+\|)?','',s); s=re.sub(r'\$W[ms][^|]*\|\d*','',s)
+              s=re.sub(r'\$E[^|]*\|','',s); s=re.sub(r'\$b[^|]*\|','',s); return re.sub(r'\$[A-Za-z][A-Za-z0-9]*\|?','',s)
+          total=0
+          for fn,reps in changes.items():
+              p=root/fn; old=p.read_text(encoding='utf-8'); new=old; om,oo=mids(old)
+              for mid,a,b in reps:
+                  if om.get(mid,'').count(a)!=1: raise SystemExit(f'{fn} {mid}: expected one {a!r}')
+                  s=new.find(mid+': '); e=new.find('\nMID_',s+1); e=len(new) if e<0 else e; seg=new[s:e]
+                  if seg.count(a)!=1: raise SystemExit(f'{fn}: evolving replacement mismatch')
+                  new=new[:s]+seg.replace(a,b,1)+new[e:]; total+=1
+              nm,no=mids(new)
+              if '\ufffd' in new or any(ord(c)<32 and c not in '\n\r\t' for c in new): raise SystemExit(fn+' encoding/control corruption')
+              if oo!=no: raise SystemExit(fn+' MID count/order changed')
+              if codere.findall(old)!=codere.findall(new): raise SystemExit(fn+' control-code sequence changed')
+              if old.count('\\n')!=new.count('\\n'): raise SystemExit(fn+' literal newline structure changed')
+              for m,b in om.items():
+                  if dead.search(m) and nm[m]!=b: raise SystemExit(fn+' dead Avatar branch changed '+m)
+              exp=old
+              for mid,a,b in reps:
+                  s=exp.find(mid+': '); e=exp.find('\nMID_',s+1); e=len(exp) if e<0 else e; seg=exp[s:e]; exp=exp[:s]+seg.replace(a,b,1)+exp[e:]
+              if exp!=new: raise SystemExit(fn+' unintended diff')
+              for mid,a,b in reps:
+                  body=nm[mid]; limit=278.8125 if '$t0' in body else 298.734375
+                  lines=[strip(x) for x in re.split(r'\\n|\$k|\$p',body)]; lines=[x for x in lines if b in x]
+                  if not lines: raise SystemExit(fn+' changed visual line not found')
+                  w=font.getlength(lines[0]); print(f'WIDTH {w:.3f}/{limit:.3f} {fn} {lines[0]}')
+                  if w>limit: raise SystemExit(fn+' width overflow')
+              p.write_text(new,encoding='utf-8')
+          for p in batch:
+              t=p.read_bytes().decode('utf-8','strict')
+              if '\ufffd' in t or any(ord(c)<32 and c not in '\n\r\t' for c in t): raise SystemExit(p.name+' invalid UTF-8/C0')
+          tt=tracker.read_text(encoding='utf-8'); existing=set(tt.splitlines()); added=0
+          if not tt.endswith('\n'): tt+='\n'
+          for p in batch:
+              ent=str(p)
+              if ent not in existing: tt+=ent+'\n'; existing.add(ent); added+=1
+          tracker.write_text(tt,encoding='utf-8')
+          expected={str(root/fn) for fn in changes}|{str(tracker)}
+          actual=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())
+          if actual!=expected: raise SystemExit(f'unexpected changed file set: {actual ^ expected}')
+          subprocess.run(['git','diff','--check'],check=True)
+          print(f'REVIEWED=100 CHANGED_FILES={len(changes)} CHANGES={total} TRACKED={added}')
           PY
-      - uses: actions/upload-artifact@v4
-        with:
-          name: awakening-review-100
-          path: review-batch
+      - name: Commit and remove temporary workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/review-awakening-100.yml
+          git add "Awakening/Messages (K)" Awakening/AUTOMATION_REVIEWED_FILES.txt
+          git diff --cached --check
+          git commit -m "Review 100 Awakening support dialogue files"
+          git push origin HEAD:main
+          echo "FINAL_SHA=$(git rev-parse HEAD)"
