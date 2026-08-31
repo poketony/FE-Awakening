@@ -21,7 +21,7 @@ jobs:
             for k in kd.glob('*.txt'):
               rel=prefix+k.name
               if rel in done or not (jd/k.name).exists(): continue
-              if k.name.endswith('_ルキナ.txt') and (kd/(k.name[:-7]+'_マルス.txt')).exists(): continue
+              if k.name.endswith('_ルキナ.txt') and (kd/k.name.replace('_ルキナ.txt','_マルス.txt')).exists(): continue
               candidates.append((k,jd/k.name,rel))
           random.SystemRandom().shuffle(candidates)
           batch=candidates[:50]
