@@ -1,0 +1,185 @@
+name: Fix reviewed Awakening context issues
+
+on:
+  push:
+    paths:
+      - ".github/workflows/fix-reviewed-awakening-context.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install width dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-nanum
+          python -m pip install --quiet pillow
+
+      - name: Apply exact MID fixes and validate
+        shell: bash
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          from collections import defaultdict, Counter
+          import re, subprocess
+          from PIL import ImageFont
+
+          rules = [
+            (
+              "Awakening/Messages (K)/フラヴィア_プレイヤー女.txt",
+              "MID_支援_フラヴィア_プレイヤー女_Ａ_PCF1",
+              "하지만 안심 해.",
+              "하지만 안심해."
+            ),
+            (
+              "Awakening/Messages (K)/フラヴィア_プレイヤー女.txt",
+              "MID_支援_フラヴィア_プレイヤー女_Ａ_PCF1",
+              "전쟁이 끝내는 일만을",
+              "전쟁을 끝내는 일만을"
+            ),
+            (
+              "Awakening/Messages (K)/ノワール_マーク男.txt",
+              "MID_支援_ノワール_マーク男_Ｃ",
+              "적습은… 아니죠?",
+              "적의 습격은… 아니죠?"
+            ),
+            (
+              "Awakening/Messages (K)/パリス_プレイヤー男.txt",
+              "MID_支援_パリス_プレイヤー男_Ａ_PCM1",
+              "음식에 있어\\n먹이 사슬이자,$k$p혼이 윤회전생을\\n반복하는 것이기도 하지.",
+              "먹는다는 건 생명이\\n서로 이어지는 일이자,$k$p혼이 윤회전생하며\\n순환하는 일이기도 하지."
+            ),
+          ]
+
+          byfile=defaultdict(list)
+          for r in rules: byfile[r[0]].append(r[1:])
+
+          before={}
+          changed=[]
+          counts=Counter()
+          touched=[]
+
+          for pstr, rs in byfile.items():
+              p=Path(pstr)
+              old=p.read_bytes().decode("utf-8","strict")
+              before[pstr]=old
+              out=[]
+              for no,line in enumerate(old.splitlines(keepends=True),1):
+                  nl=line
+                  if line.startswith("MID_"):
+                      mid=line.split(":",1)[0]
+                      for target,a,b in rs:
+                          if mid != target: continue
+                          n=nl.count(a)
+                          if n:
+                              counts[(pstr,target,a,b)] += n
+                              touched.append((pstr,no,target,a,b))
+                              nl=nl.replace(a,b)
+                  out.append(nl)
+              new="".join(out)
+              if new != old:
+                  p.write_bytes(new.encode("utf-8"))
+                  changed.append(pstr)
+
+          bad=[r for r in rules if counts[r] != 1]
+          if bad:
+              print("BAD_EXPECTED_COUNTS")
+              for r in bad: print(r, counts[r])
+              raise SystemExit("Each rule must match exactly once")
+
+          control_re=re.compile(r"\$[A-Za-z][A-Za-z0-9]*")
+          for pstr in changed:
+              old=before[pstr]
+              new=Path(pstr).read_bytes().decode("utf-8","strict")
+              if "\ufffd" in new: raise SystemExit(f"U+FFFD: {pstr}")
+              if any(ord(ch)<32 and ch not in "\n\r\t" for ch in new):
+                  raise SystemExit(f"invalid C0: {pstr}")
+              om=[x.split(":",1)[0] for x in old.splitlines() if x.startswith("MID_")]
+              nm=[x.split(":",1)[0] for x in new.splitlines() if x.startswith("MID_")]
+              if om != nm: raise SystemExit(f"MID order changed: {pstr}")
+              if control_re.findall(old) != control_re.findall(new):
+                  raise SystemExit(f"control-code sequence changed: {pstr}")
+              if old.count("\\n") != new.count("\\n"):
+                  raise SystemExit(f"literal newline structure changed: {pstr}")
+
+              expected=[]
+              for line in old.splitlines(keepends=True):
+                  e=line
+                  if line.startswith("MID_"):
+                      mid=line.split(":",1)[0]
+                      for target,a,b in byfile[pstr]:
+                          if mid==target:
+                              e=e.replace(a,b)
+                  expected.append(e)
+              if "".join(expected) != new:
+                  raise SystemExit(f"unexpected diff: {pstr}")
+
+          font=ImageFont.truetype("/usr/share/fonts/truetype/nanum/NanumGothic.ttf",14)
+          limits={"t0":278.8125,"t1":298.734375}
+          checked=0
+          failures=[]
+
+          def strip_codes(s):
+              s=re.sub(r"\$S(?:bp|sp|vp|bs|bv|ls|lp)[^|]*\|(?:\d+\|)?","",s)
+              s=re.sub(r"\$W[ms][^|]*\|\d*","",s)
+              s=re.sub(r"\$E[^|]*\|","",s)
+              s=re.sub(r"\$b[^|]*\|","",s)
+              s=re.sub(r"\$[A-Za-z][A-Za-z0-9]*\|?","",s)
+              return s
+
+          touched_lines={(p,no) for p,no,*_ in touched}
+          for pstr in changed:
+              oldlines=before[pstr].splitlines()
+              newlines=Path(pstr).read_text(encoding="utf-8").splitlines()
+              for no,(o,n) in enumerate(zip(oldlines,newlines),1):
+                  if (pstr,no) not in touched_lines: continue
+                  style="t0" if "$t0" in n else ("t1" if "$t1" in n else None)
+                  if not style: continue
+                  op=o.split(":",1)[1] if ":" in o else o
+                  np=n.split(":",1)[1] if ":" in n else n
+                  os=re.split(r"\\n|\$k|\$p",op)
+                  ns=re.split(r"\\n|\$k|\$p",np)
+                  if len(os)!=len(ns):
+                      raise SystemExit(f"visual segment structure changed: {pstr}:{no}")
+                  for a,b in zip(os,ns):
+                      if a==b: continue
+                      vis=strip_codes(b).strip()
+                      if not vis: continue
+                      w=font.getlength(vis)
+                      checked += 1
+                      print(f"WIDTH\t{pstr}\t{no}\t{style}\t{w:.3f}/{limits[style]:.3f}\t{vis}")
+                      if w > limits[style]:
+                          failures.append((pstr,no,style,w,limits[style],vis))
+
+          if failures:
+              print("WIDTH_FAILURES")
+              for f in failures: print(f)
+              raise SystemExit(f"{len(failures)} modified segments exceed width")
+
+          subprocess.run(["git","diff","--check"],check=True)
+          print(f"RULES={len(rules)}")
+          print(f"CHANGED_FILES={len(changed)}")
+          print(f"WIDTH_SEGMENTS={checked}")
+          print("=== APPLIED ===")
+          for r,c in counts.items():
+              print(c, "\t", r[0], "\t", r[1], "\t", r[2], "=>", r[3])
+          PY
+
+      - name: Commit fixes and remove workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/fix-reviewed-awakening-context.yml
+          git add "Awakening/Messages (K)"
+          git diff --cached --check
+          git commit -m "Fix reviewed Awakening context issues"
+          git push origin HEAD:main
+          echo "FINAL_SHA=$(git rev-parse HEAD)"
