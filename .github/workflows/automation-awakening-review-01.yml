@@ -1,0 +1,110 @@
+name: Automation Awakening review 01
+
+on:
+  push:
+    paths:
+      - ".github/workflows/automation-awakening-review-01.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install width dependency
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-nanum
+          python -m pip install --quiet pillow
+
+      - name: Apply reviewed fixes and validate
+        shell: bash
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          from PIL import ImageFont
+          import re, subprocess
+
+          path = Path('Awakening/Messages (K)/クロム_リズ.txt')
+          old = path.read_text(encoding='utf-8')
+          rules = [
+              ('MID_支援_クロム_リズ_Ａ', '전에 이야기 한 건 어떻게 됐지?', '전에 이야기한 건 어떻게 됐지?'),
+              ('MID_支援_クロム_リズ_Ａ', '『지금 그대로가 좋다』라고 말한거다.', '『지금 그대로가 좋다』라고 말한 거다.'),
+          ]
+          new = old
+          counts = []
+          for mid, a, b in rules:
+              lines = new.splitlines(keepends=True)
+              hit = 0
+              out = []
+              for line in lines:
+                  if line.startswith(mid + ':'):
+                      n = line.count(a)
+                      if n:
+                          line = line.replace(a,b)
+                          hit += n
+                  out.append(line)
+              new = ''.join(out)
+              counts.append(hit)
+          if counts != [1,1]:
+              raise SystemExit(f'unexpected replacement counts: {counts}')
+          path.write_text(new, encoding='utf-8', newline='')
+
+          tracker = Path('Awakening/AUTOMATION_REVIEWED_FILES.txt')
+          tracker.write_text(
+              '# Awakening 자동 검수 완료 파일\n'
+              '# 다음 자동 회차는 아래 파일을 새 파일 묶음에서 제외한다.\n'
+              'Awakening/Messages (K)/クロム_リズ.txt\n'
+              'Awakening/Messages (K)/クロム_スミア.txt\n',
+              encoding='utf-8', newline=''
+          )
+
+          revised = path.read_text(encoding='utf-8')
+          if '\ufffd' in revised:
+              raise SystemExit('U+FFFD found')
+          if any(ord(ch) < 32 and ch not in '\n\r\t' for ch in revised):
+              raise SystemExit('invalid C0 found')
+          old_mids=[x.split(':',1)[0] for x in old.splitlines() if x.startswith('MID_')]
+          new_mids=[x.split(':',1)[0] for x in revised.splitlines() if x.startswith('MID_')]
+          if old_mids != new_mids:
+              raise SystemExit('MID order/count changed')
+          control_re=re.compile(r'\$[A-Za-z][A-Za-z0-9]*')
+          if control_re.findall(old) != control_re.findall(revised):
+              raise SystemExit('control-code sequence changed')
+          if old.count('\\n') != revised.count('\\n'):
+              raise SystemExit('literal \\n structure changed')
+          for suffix in ('PCM2','PCM3','PCF2','PCF3'):
+              old_dead='\n'.join(x for x in old.splitlines() if suffix in x)
+              new_dead='\n'.join(x for x in revised.splitlines() if suffix in x)
+              if old_dead != new_dead:
+                  raise SystemExit(f'dead branch touched: {suffix}')
+
+          font=ImageFont.truetype('/usr/share/fonts/truetype/nanum/NanumGothic.ttf',14)
+          limit=298.734375
+          checks=['전에 이야기한 건 어떻게 됐지?','『지금 그대로가 좋다』라고 말한 거다.']
+          for s in checks:
+              w=font.getlength(s)
+              print(f'WIDTH {w:.3f}/{limit:.3f} {s}')
+              if w > limit:
+                  raise SystemExit(f'width overflow: {s}')
+
+          subprocess.run(['git','diff','--check'],check=True)
+          print('VALIDATION_OK')
+          PY
+
+      - name: Commit reviewed batch
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/automation-awakening-review-01.yml
+          git add "Awakening/Messages (K)/クロム_リズ.txt" Awakening/AUTOMATION_REVIEWED_FILES.txt
+          git diff --cached --check
+          git commit -m "Review fresh Awakening dialogue batch 1"
+          git push origin HEAD:main
+          echo "FINAL_SHA=$(git rev-parse HEAD)"
