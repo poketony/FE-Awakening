@@ -1,0 +1,83 @@
+name: Audit Awakening quote spacing
+
+on:
+  push:
+    paths:
+      - '.github/workflows/audit-quote-spacing.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Audit quote spacing with context
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          ROOTS = [
+              (Path('Awakening/Messages (K)'), Path('Awakening/Messages (J)')),
+              (Path('Awakening/DLC Message (K)'), Path('Awakening/DLC Message (J)')),
+          ]
+          mid_re = re.compile(r'^(MID_[^:]+): (.*)$', re.M)
+          cand_re = re.compile(r'([」』"\'])(하고|\s+라고)')
+
+          def strip_ctrl(s):
+              s = re.sub(r'\$[A-Za-z][A-Za-z0-9_]*[^|$\\]*\|', '', s)
+              s = re.sub(r'\$[A-Za-z][A-Za-z0-9_]*', '', s)
+              return s
+
+          total = 0
+          files = 0
+          for kroot, jroot in ROOTS:
+              for kp in sorted(kroot.glob('*.txt')):
+                  text = kp.read_text(encoding='utf-8')
+                  matches = list(mid_re.finditer(text))
+                  if not matches:
+                      continue
+                  jp = jroot / kp.name
+                  jmap = {}
+                  if jp.exists():
+                      jt = jp.read_text(encoding='utf-8')
+                      jmap = {m.group(1): m.group(2) for m in mid_re.finditer(jt)}
+                  hit_file = False
+                  for m in matches:
+                      name, body = m.group(1), m.group(2)
+                      for c in cand_re.finditer(body):
+                          if not hit_file:
+                              print(f'\n===== FILE {kp} =====')
+                              files += 1
+                              hit_file = True
+                          total += 1
+                          start = max(0, c.start()-180)
+                          end = min(len(body), c.end()+180)
+                          ctx = body[start:end]
+                          print(f'\n[{total}] {name}')
+                          print('K:', strip_ctrl(ctx).replace('\\n',' / ').replace('$p',' || ').replace('$k',' || '))
+                          jb = jmap.get(name)
+                          if jb:
+                              # Print whole JP MID only if short; otherwise a compact beginning/end aid.
+                              jplain = strip_ctrl(jb).replace('\\n',' / ').replace('$p',' || ').replace('$k',' || ')
+                              if len(jplain) <= 700:
+                                  print('J:', jplain)
+                              else:
+                                  print('J:', jplain[:350] + ' ... ' + jplain[-350:])
+                          else:
+                              print('J: [no matching Japanese MID/file]')
+          print(f'\nTOTAL_CANDIDATES={total}')
+          print(f'TOTAL_FILES={files}')
+          PY
+      - name: Remove temporary workflow
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git rm .github/workflows/audit-quote-spacing.yml
+          git commit -m 'Remove temporary quote spacing audit workflow'
+          git push
