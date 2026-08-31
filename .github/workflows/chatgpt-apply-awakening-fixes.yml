@@ -48,6 +48,20 @@ jobs:
                   raise RuntimeError(f'{label}: expected {count} occurrence(s), found {got}')
               return text.replace(old, new)
 
+          def replace_in_mid(text, mid, old, new, label):
+              lines = text.splitlines(keepends=True)
+              hits = 0
+              for i, line in enumerate(lines):
+                  if line.startswith(mid + ': '):
+                      got = line.count(old)
+                      if got != 1:
+                          raise RuntimeError(f'{label}: expected 1 occurrence in {mid}, found {got}')
+                      lines[i] = line.replace(old, new, 1)
+                      hits += 1
+              if hits != 1:
+                  raise RuntimeError(f'{label}: MID {mid} found {hits} times')
+              return ''.join(lines)
+
           p, t = load('011.txt')
           t = replace_exact(t,
               '우리들이 미워하는 적에게 이상 따윈 통하지 않는다고…',
@@ -63,10 +77,11 @@ jobs:
           p.write_text(t, encoding='utf-8', newline='\n')
 
           p, t = load('023.txt')
-          t = replace_exact(t,
+          t = replace_in_mid(t,
+              'MID_023_OP1_PCF2',
               '만약 내가 녀석에게 조종당한다면…',
               '만약 제가 녀석에게 조종당한다면…',
-              1, '023 PCF2 pronoun')
+              '023 PCF2 pronoun')
           t = replace_exact(t,
               '몰랐네요.$k$p뭐 좋아.',
               '몰랐네.$k$p뭐 좋아.',
@@ -74,14 +89,16 @@ jobs:
           p.write_text(t, encoding='utf-8', newline='\n')
 
           p, t = load('026.txt')
-          t = replace_exact(t,
-              r'어쩔…… 수가, 없어요……$k$p……아무것도 안 보여.\n……아무것도 못해.$k$p……아무것도, 느껴……지지 않아요',
-              r'어쩔…… 수가, 없어요……$k$p……아무것도 안 보여요.\n……아무것도 안 들려요.$k$p……아무것도, 느껴……지지 않아요',
-              1, '026 PCF2 hearing/polite')
-          t = replace_exact(t,
+          t = replace_in_mid(t,
+              'MID_026_OP5_02_PCF2',
               r'……아무것도 안 보여.\n……아무것도 못해.',
-              r'……아무것도 안 보여.\n……아무것도 안 들려.',
-              3, '026 hearing')
+              r'……아무것도 안 보여요.\n……아무것도 안 들려요.',
+              '026 PCF2 hearing/polite')
+          for mid in ('MID_026_OP5_02_PCM1', 'MID_026_OP5_02_PCM2', 'MID_026_OP5_02_PCF1'):
+              t = replace_in_mid(t, mid,
+                  r'……아무것도 안 보여.\n……아무것도 못해.',
+                  r'……아무것도 안 보여.\n……아무것도 안 들려.',
+                  f'026 hearing {mid}')
           p.write_text(t, encoding='utf-8', newline='\n')
 
       - name: Commit fixes and remove temporary workflow
