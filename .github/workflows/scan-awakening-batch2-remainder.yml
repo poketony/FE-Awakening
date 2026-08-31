@@ -1,0 +1,102 @@
+name: Scan Awakening batch 2 remainder
+
+on:
+  push:
+    paths:
+      - ".github/workflows/scan-awakening-batch2-remainder.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Inspect remainder
+        shell: bash
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          from collections import Counter, defaultdict
+          import re
+
+          files = [
+            "Awakening/Messages (K)/X011.txt","Awakening/Messages (K)/紹介文.txt","Awakening/Messages (K)/ミリエル_リヒト.txt","Awakening/Messages (K)/アズール_ジェローム.txt","Awakening/Messages (K)/ユニット作成.txt",
+            "Awakening/Messages (K)/セルジュ_ドニ.txt","Awakening/Messages (K)/セレナ_デジェル.txt","Awakening/Messages (K)/マーク女_ンン_兄弟.txt","Awakening/Messages (K)/マーク女_ロラン_兄弟.txt","Awakening/Messages (K)/グレゴ_プレイヤー男.txt",
+            "Awakening/Messages (K)/ブレディ_プレイヤー男_親子.txt","Awakening/Messages (K)/ウード_リベラ_親子.txt","Awakening/Messages (K)/ジェローム_ロンクー_親子.txt","Awakening/Messages (K)/マーク女_ベルベット_親子.txt","Awakening/Messages (K)/マルス_オリヴィエ_親子.txt",
+            "Awakening/Messages (K)/ウード_ソール_親子.txt","Awakening/Messages (K)/ブレディ_ロンクー_親子.txt","Awakening/Messages (K)/マーク女_インバース_親子.txt","Awakening/Messages (K)/マーク男_バジーリオ_親子.txt","Awakening/Messages (K)/マーク男_レンハ_親子.txt",
+            "Awakening/Messages (K)/ノワール_グレゴ_親子.txt","Awakening/Messages (K)/ロラン_リヒト_親子.txt","Awakening/Messages (K)/ロラン_ヴィオール_親子.txt","Awakening/Messages (K)/ノワール_ソール_親子.txt","Awakening/Messages (K)/シャンブレー_グレゴ_親子.txt",
+            "Awakening/Messages (K)/様子_能力.txt","Awakening/Messages (K)/様子_ベルベット1.txt","Awakening/Messages (K)/様子_ブレディ2.txt","Awakening/Messages (K)/様子_ティアモ2.txt","Awakening/Messages (K)/様子_ノノ1.txt",
+            "Awakening/Messages (K)/様子_ウード1.txt","Awakening/Messages (K)/様子_武器経験.txt","Awakening/Messages (K)/様子_ベルベット4.txt","Awakening/Messages (K)/様子_ロンクー2.txt","Awakening/Messages (K)/様子_ノノ2.txt",
+            "Awakening/DLC Message (K)/3. 영령의 마법 부적3.txt","Awakening/DLC Message (K)/15. 빛 대 어둠 결전 편.txt","Awakening/DLC Message (K)/13. 빛 대 어둠 빛 편.txt","Awakening/DLC Message (K)/5. 미이라의 낙원.txt","Awakening/DLC Message (K)/16. 미궁의 추격전.txt"
+          ]
+          dead=("_PCM2","_PCM3","_PCF2","_PCF3")
+
+          def clean(line):
+            s=line.split(":",1)[1] if ":" in line else line
+            s=re.sub(r"\$S(?:bp|sp|vp|bs|bv)[^|]*\|(?:\d+\|)?"," ",s)
+            s=re.sub(r"\$W[ms][^|]*\|\d*"," ",s)
+            s=re.sub(r"\$E[^|]*\|"," ",s)
+            s=re.sub(r"\$b[^|]*\|"," ",s)
+            s=re.sub(r"\$[A-Za-z][A-Za-z0-9]*\|?"," ",s)
+            return re.sub(r"\s+"," ",s.replace("\\n"," / ")).strip()
+
+          pats=[
+            ("TYPO",r"(?:게속|마은|벌것|거낸|그럴려|말슴|먹엇|맨일|죄르르|틀키|종복|분분해|훔쳐다는|휴식입나까|잘못 됐|안된|너가|나쁜 듯|한 켠|왔다갔다|시치미떼|단정짓|기억상실)"),
+            ("SPACING",r"(?:뭐하는|뭘하는|말 했|이야기 할|잘 할|못 할|안 할|안해|못해|하지마|하지말|마음 먹|상처입|놀러가|그만 두|입다물|가슴 속|오래 전에|어처구니 없는|자신있|것 보다|거 보다|것 만큼|때 만큼|할만|받을만|부를만|읽을 때 만큼|아무때나|격식차리|말 안했|말 안했습니다|같이 할|함께 할|계속 할|따라할|흉내낼)"),
+            ("PASSIVE",r"(?:사랑|인정|선택|존경|찬미|동경|도움|상처|방해|배신|조종|습격|이용|지배|세뇌|공격|칭찬|매도|취급|부탁|고백)\s+(?:받|당)"),
+            ("PUNCT",r"[가-힣]\s+[,!?]"),
+            ("BOUND_N",r"(?:치료한지|만난지|지난지|본지|된지|온지|간지|한지|할때|했을때|왔을때|갈때|볼때|있을때|없을때)"),
+          ]
+
+          global_freq=Counter()
+          for root in (Path("Awakening/Messages (K)"),Path("Awakening/DLC Message (K)")):
+            for p in root.rglob("*.txt"):
+              try: t=p.read_text(encoding="utf-8")
+              except: continue
+              for ln in t.splitlines():
+                if ln.startswith("MID_"):
+                  m=ln.split(":",1)[0]
+                  if any(x in m for x in dead): continue
+                  global_freq.update(re.findall(r"[가-힣]{2,10}",clean(ln)))
+
+          common=defaultdict(list)
+          for w,c in global_freq.items():
+            if c>=20 and 2<=len(w)<=8: common[len(w)].append((w,c))
+
+          for pstr in files:
+            txt=Path(pstr).read_text(encoding="utf-8")
+            for ln in txt.splitlines():
+              if not ln.startswith("MID_"): continue
+              mid=ln.split(":",1)[0]
+              if any(x in mid for x in dead): continue
+              c=clean(ln)
+              for label,pat in pats:
+                if re.search(pat,c):
+                  print(f"HIT\t{label}\t{pstr}\t{mid}\t{c}")
+              # Rare one-sub candidates only when a very common neighbor exists.
+              for tok in set(re.findall(r"[가-힣]{2,8}",c)):
+                if global_freq[tok]>2: continue
+                best=[]
+                for w,f in common[len(tok)]:
+                  if sum(a!=b for a,b in zip(tok,w))==1:
+                    best.append((f,w))
+                best.sort(reverse=True)
+                if best and best[0][0]>=80:
+                  # filter ordinary short inflections by requiring an unusually plausible typo signal
+                  if tok in {"너가","게속","마은은","거낸","벌것"} or any(ch in tok for ch in ()):
+                    pass
+                  if tok in {"게속","마은은","거낸","벌것","너가"}:
+                    print(f"RARE\t{pstr}\t{mid}\t{tok}\t{best[:5]}\t{c}")
+          PY
+      - name: Remove temporary workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/scan-awakening-batch2-remainder.yml
+          git commit -m "Remove temporary Awakening remainder scan"
+          git push origin HEAD:main
