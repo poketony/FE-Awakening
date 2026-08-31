@@ -1,0 +1,104 @@
+name: Audit Awakening control codes
+on:
+  push:
+    paths: ['.github/workflows/audit-awakening-control-codes.yml']
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare Japanese and Korean control codes
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, collections
+
+          pairs=[(Path('Awakening/Messages (J)'),Path('Awakening/Messages (K)')),
+                 (Path('Awakening/DLC Message (J)'),Path('Awakening/DLC Message (K)'))]
+          midre=re.compile(r'^(MID_[^:]+): (.*)$',re.M)
+          dead=re.compile(r'_(?:PCM[23]|PCF[23])(?:$|_)')
+
+          # Known parameterized codes. Others are read as bare code names.
+          param_codes={'Wm','Ws','E','Svp','b','Sbs','w','t'}
+          bare_codes={'Wa','Wd','Wv','k','p','Nu','Np'}
+
+          def parse_codes(s):
+            out=[]; i=0
+            while i < len(s):
+              if s[i]!='$': i+=1; continue
+              j=i+1
+              # code name: letters then digits for t/w/Sbs variants
+              while j<len(s) and (s[j].isalpha() or s[j].isdigit() or s[j]=='_'): j+=1
+              name=s[i+1:j]
+              if not name:
+                i+=1; continue
+              # normalize leading family for names with digits (t1,w500,Sbs1000)
+              fam=re.match(r'[A-Za-z]+',name)
+              family=fam.group(0) if fam else name
+              token='$'+name
+              if family in {'Wm','Ws','E','Svp','b'}:
+                k=s.find('|',j)
+                if k!=-1 and k-j<80 and '$' not in s[j:k] and '\\n' not in s[j:k]:
+                  token=s[i:k+1]; j=k+1
+              elif family in {'Sbs','w'}:
+                if j<len(s) and s[j]=='|': token=s[i:j+1]; j+=1
+              # $t0/$t1 have no pipe
+              out.append((family,token))
+              i=max(j,i+1)
+            return out
+
+          def mids(text):
+            ms=list(midre.finditer(text)); d={}
+            for idx,m in enumerate(ms):
+              name=m.group(1); start=m.start(2); end=ms[idx+1].start() if idx+1<len(ms) else len(text)
+              d[name]=text[start:end].rstrip('\r\n')
+            return d
+
+          strict=[]; family=[]; missing_mid=[]; files_missing=[]; checked=0
+          for jroot,kroot in pairs:
+            for kp in sorted(kroot.glob('*.txt')):
+              jp=jroot/kp.name
+              if not jp.exists():
+                files_missing.append((str(kp),str(jp))); continue
+              km=mids(kp.read_text(encoding='utf-8')); jm=mids(jp.read_text(encoding='utf-8'))
+              for name,kbody in km.items():
+                if dead.search(name): continue
+                # If an Avatar branch has any PCM/PCF suffix, only live 1 variants survive above.
+                if ('PCM' in name or 'PCF' in name) and not ('PCM1' in name or 'PCF1' in name):
+                  continue
+                if name not in jm:
+                  missing_mid.append((str(kp),name)); continue
+                checked+=1
+                kc=parse_codes(kbody); jc=parse_codes(jm[name])
+                kfam=[x[0] for x in kc]; jfam=[x[0] for x in jc]
+                # Nu/Np are localization-sensitive: do not let them alone define structural mismatch.
+                kcore=[x for x in kfam if x not in {'Nu','Np'}]; jcore=[x for x in jfam if x not in {'Nu','Np'}]
+                if kcore!=jcore:
+                  family.append((str(kp),name,jcore,kcore,jm[name][:220],kbody[:220]))
+                  continue
+                # Full-token differences only for codes whose payload should normally be preserved.
+                # Ignore Nu/Np and $E parameter differences only if family structure identical? No: retain E/Svp/Wm/Ws/b payloads as candidates.
+                jfull=[x[1] for x in jc if x[0] not in {'Nu','Np'}]
+                kfull=[x[1] for x in kc if x[0] not in {'Nu','Np'}]
+                if jfull!=kfull:
+                  strict.append((str(kp),name,jfull,kfull,jm[name][:220],kbody[:220]))
+
+          print('CHECKED_MIDS',checked)
+          print('STRUCTURAL_MISMATCHES',len(family))
+          print('PARAMETER_MISMATCHES',len(strict))
+          print('MISSING_JP_MIDS',len(missing_mid))
+          print('MISSING_JP_FILES',len(files_missing))
+
+          print('\n=== STRUCTURAL MISMATCHES ===')
+          for i,(p,n,jc,kc,jtxt,ktxt) in enumerate(family,1):
+            print(f'@@STRUCT {i}@@\nFILE {p}\nMID {n}\nJP_CODES {jc}\nKR_CODES {kc}\nJP {jtxt}\nKR {ktxt}')
+          print('\n=== PARAMETER MISMATCHES ===')
+          for i,(p,n,jc,kc,jtxt,ktxt) in enumerate(strict,1):
+            print(f'@@PARAM {i}@@\nFILE {p}\nMID {n}\nJP_CODES {jc}\nKR_CODES {kc}\nJP {jtxt}\nKR {ktxt}')
+          print('\n=== MISSING JP MID (first 100) ===')
+          for x in missing_mid[:100]: print(x)
+          print('\n=== MISSING JP FILES ===')
+          for x in files_missing: print(x)
+          PY
