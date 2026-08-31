@@ -1,0 +1,123 @@
+name: Hunspell audit selected Awakening files
+
+on:
+  push:
+    paths:
+      - ".github/workflows/hunspell-awakening-100.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Korean hunspell
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y hunspell hunspell-ko
+          hunspell -D 2>&1 | tail -50
+
+      - name: Audit same selected 100
+        shell: bash
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          import hashlib, re, subprocess
+          from collections import defaultdict, Counter
+
+          reviewed = {
+            "Awakening/Messages (K)/005.txt",
+            "Awakening/Messages (K)/マリアベル_リベラ.txt",
+            "Awakening/Messages (K)/サーリャ_ソール.txt",
+            "Awakening/Messages (K)/ティアモ_ロンクー.txt",
+            "Awakening/Messages (K)/ヴィオール_オリヴィエ.txt",
+            "Awakening/Messages (K)/ジェローム_カラム_親子.txt",
+            "Awakening/Messages (K)/ンン_フレデリク_親子.txt",
+            "Awakening/Messages (K)/様子_セレナ2.txt",
+            "Awakening/Messages (K)/様子_ロラン4.txt",
+            "Awakening/DLC Message (K)/19. 가장 강한 자의 이름.txt",
+          }
+          roots=[Path("Awakening/Messages (K)"), Path("Awakening/DLC Message (K)")]
+          all_files=[p for r in roots for p in r.rglob("*.txt") if str(p) not in reviewed]
+          def key(p): return hashlib.sha256(str(p).encode()).digest()
+          def pick(arr,n): return sorted(arr,key=key)[:n]
+          msg=[p for p in all_files if str(p).startswith("Awakening/Messages (K)/")]
+          dlc=[p for p in all_files if str(p).startswith("Awakening/DLC Message (K)/") and p.stat().st_size<=50000]
+          story=[p for p in msg if re.search(r"/(?:P00[12]|0\d\d|1\d\d|2[0-6])\.txt$",str(p))]
+          parent=[p for p in msg if "_親子.txt" in str(p)]
+          misc=[p for p in msg if re.search(r"/(?:様子_|マイルーム|店番_|みんなの部屋|イベント|誕生日|告白|支援S_)",str(p)) and p not in parent]
+          regular=[p for p in msg if p not in story and p not in parent and p not in misc and 2000<=p.stat().st_size<=18000]
+          selected=pick(story,5)+pick(regular,65)+pick(parent,15)+pick(misc,10)+pick(dlc,5)
+          if len(selected)!=100: raise SystemExit(len(selected))
+
+          contexts=defaultdict(list); counts=Counter()
+          dead=("_PCM2","_PCM3","_PCF2","_PCF3")
+          for p in selected:
+            text=p.read_text(encoding="utf-8")
+            for line in text.splitlines():
+              if not line.startswith("MID_"): continue
+              mid=line.split(":",1)[0]
+              if any(x in mid for x in dead): continue
+              payload=line.split(":",1)[1] if ":" in line else line
+              # Remove control tokens but preserve dialogue around them.
+              clean=re.sub(r"\$S(?:bp|sp|vp|bs|bv)[^|]*\|(?:\d+\|)?", " ", payload)
+              clean=re.sub(r"\$W[ms][^|]*\|\d*", " ", clean)
+              clean=re.sub(r"\$E[^|]*\|", " ", clean)
+              clean=re.sub(r"\$[A-Za-z][A-Za-z0-9]*\|?", " ", clean)
+              clean=clean.replace("\\n"," ").replace("\\r"," ")
+              for tok in re.findall(r"[가-힣]{2,12}",clean):
+                counts[tok]+=1
+                if len(contexts[tok])<2:
+                  contexts[tok].append((str(p),mid,clean[:850]))
+
+          tokens=sorted(counts)
+          inp="\n".join(tokens)+"\n"
+          proc=subprocess.run(["hunspell","-d","ko","-a"],input=inp,text=True,capture_output=True,check=True)
+          out=proc.stdout.splitlines()
+          # First line is Hunspell banner. Thereafter one result line and possibly blanks per token.
+          idx=1
+          results={}
+          for tok in tokens:
+            while idx < len(out) and out[idx]=="":
+              idx+=1
+            if idx>=len(out): break
+            line=out[idx]; idx+=1
+            if line.startswith("*") or line.startswith("+") or line.startswith("-"):
+              results[tok]=("OK",[])
+            elif line.startswith("&"):
+              sugg=line.split(":",1)[1].strip().split(", ") if ":" in line else []
+              results[tok]=("MISS",sugg[:15])
+            elif line.startswith("#"):
+              results[tok]=("MISS",[])
+            else:
+              results[tok]=("OTHER",[line])
+
+          print("=== HUNSPELL SUSPICIOUS ===")
+          shown=0
+          # Rare misspellings with at least one suggestion are most useful.
+          for tok in sorted(tokens,key=lambda t:(counts[t],t)):
+            status,sugg=results.get(tok,("?",[]))
+            if status!="MISS" or not sugg: continue
+            if counts[tok]>12: continue
+            if "라구" in tok or "라구요" in tok: continue
+            print(f"HUN\t{tok}\tcount={counts[tok]}\tsuggest={','.join(sugg)}")
+            for p,mid,ctx in contexts[tok]:
+              print(f"CTX\t{p}\t{mid}\t{ctx}")
+            shown+=1
+            if shown>=450: break
+          print("=== END HUNSPELL SUSPICIOUS ===")
+          PY
+
+      - name: Remove temporary workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/hunspell-awakening-100.yml
+          git commit -m "Remove temporary Hunspell audit"
+          git push origin HEAD:main
