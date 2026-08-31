@@ -4,3 +4,6 @@ Awakening/Messages (K)/クロム_リズ.txt
 Awakening/Messages (K)/クロム_スミア.txt
 Awakening/Messages (K)/クロム_ソワレ.txt
 Awakening/Messages (K)/クロム_プレイヤー男.txt
+Awakening/Messages (K)/クロム_マリアベル.txt
+Awakening/Messages (K)/クロム_フレデリク.txt
+Awakening/Messages (K)/オリヴィエ_クロム.txt
