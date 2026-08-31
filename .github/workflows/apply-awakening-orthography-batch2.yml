@@ -67,8 +67,6 @@ jobs:
             ("Awakening/Messages (K)/グレゴ_リズ.txt","나쁜 듯은 없었어","나쁜 뜻은 없었어"),
             ("Awakening/Messages (K)/セルジュ_プレイヤー女.txt","뭐가 잘못 됐어?","뭐가 잘못됐어?"),
             ("Awakening/Messages (K)/シンシア_マルス.txt","하고 잘 할 수 있어?","하고 잘할 수 있어?"),
-            ("Awakening/Messages (K)/マルス_アズール_兄弟.txt","뭐하는 건가요","뭐 하는 건가요"),
-            ("Awakening/Messages (K)/マルス_アズール_兄弟.txt","그런 말 안했습니다","그런 말 안 했습니다"),
             ("Awakening/Messages (K)/紹介文.txt","상처입은 동물","상처 입은 동물"),
             ("Awakening/Messages (K)/紹介文.txt","수송대 마차 한 켠에서","수송대 마차 한편에서"),
             ("Awakening/Messages (K)/アズール_ジェローム.txt","너, 너! 뭐하는 거냐!?","너, 너! 뭐 하는 거냐!?"),
@@ -79,7 +77,6 @@ jobs:
             ("Awakening/Messages (K)/マルス_オリヴィエ_親子.txt","고맙습니다! 기대 되네요","고맙습니다! 기대되네요"),
             ("Awakening/Messages (K)/ノワール_ソール_親子.txt","저주 도구를 압수 당해서","저주 도구를 압수당해서"),
             ("Awakening/Messages (K)/シャンブレー_グレゴ_親子.txt","바람피지 말라고","바람피우지 말라고"),
-            ("Awakening/Messages (K)/様子_ノノ1.txt","있지 , 뭔가 원하는 거 없어?","있지, 뭔가 원하는 거 없어?"),
             ("Awakening/DLC Message (K)/3. 영령의 마법 부적3.txt","참모… 저기 ,\n","참모… 저기,\n"),
             ("Awakening/DLC Message (K)/13. 빛 대 어둠 빛 편.txt","신기한 녀석이야. 그럼 ,\n","신기한 녀석이야. 그럼,\n"),
           ]
