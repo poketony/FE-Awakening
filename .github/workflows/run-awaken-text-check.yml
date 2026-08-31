@@ -1,0 +1,12 @@
+name: Run Awakening text check
+on:
+  push:
+    paths: ['.github/workflows/run-awaken-text-check.yml']
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 .github/scripts/check_awaken_text.py
