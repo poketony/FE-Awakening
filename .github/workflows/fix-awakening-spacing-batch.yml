@@ -62,12 +62,12 @@ jobs:
               "사랑 받": 1,
               "인정 받": 2,
               "선택 받": 13,
-              "도움 받": 1,
-              "오해 받": 1,
-              "보호 받": 1,
-              "치료 받": 12,
-              "신뢰 받": 1,
-              "칭찬 받": 4,
+              "도움 받": 2,
+              "오해 받": 2,
+              "보호 받": 2,
+              "치료 받": 13,
+              "신뢰 받": 2,
+              "칭찬 받": 11,
               "저주 받": 13,
               "감동 받": 1,
               "위협 받": 1,
@@ -124,7 +124,7 @@ jobs:
           if counts != expected:
               raise SystemExit(f"Unexpected replacement counts. expected={dict(expected)} actual={dict(counts)}")
 
-          if sum(counts.values()) != 54:
+          if sum(counts.values()) != 67:
               raise SystemExit(f"Unexpected total replacement count: {sum(counts.values())}")
 
           # Integrity checks for every changed file.
@@ -150,11 +150,18 @@ jobs:
               if old.count("\\n") != new.count("\\n"):
                   raise SystemExit(f"Literal \\n count changed: {path}")
 
-              # Make sure the only textual edits are approved replacements.
-              normalized_old = old
-              for a, b in replacements:
-                  normalized_old = normalized_old.replace(a, b)
-              if normalized_old != new:
+              # Make sure the only textual edits are approved live-branch replacements.
+              expected_lines = []
+              for old_line in old.splitlines(keepends=True):
+                  expected_line = old_line
+                  if old_line.startswith("MID_"):
+                      mid = old_line.split(":", 1)[0]
+                      if not any(marker in mid for marker in dead_markers):
+                          for a, b in replacements:
+                              expected_line = expected_line.replace(a, b)
+                  expected_lines.append(expected_line)
+              expected_new = "".join(expected_lines)
+              if expected_new != new:
                   raise SystemExit(f"Unexpected textual diff in {path}")
 
           # Proxy width check on every visual line touched by a replacement.
@@ -181,7 +188,8 @@ jobs:
                   if style is None:
                       continue
                   threshold = thresholds[style]
-                  parts = re.split(r"\\n|\$k|\$p", line)
+                  payload = line.split(":", 1)[1] if line.startswith("MID_") and ":" in line else line
+                  parts = re.split(r"\\n|\$k|\$p", payload)
                   for part in parts:
                       if not any(new in part for _, new in replacements):
                           continue
