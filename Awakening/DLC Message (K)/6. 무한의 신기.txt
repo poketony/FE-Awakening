@@ -12,7 +12,7 @@ MID_E000_ED3: $t1$Wmusername|7$Wmクロム|3$w0|$Wsクロム|$Wa$E怒,汗|$SvpSE
 MID_E000_BT_プレイヤー男_PCM1: $t0$Wmusername|6$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_M#_EVT_23|이곳에 있는 마장도, 우리가 가지고 있는\n특수한 기능을 사용할 수 있는 것 같아.$k$p꽤나 만만치 않은 상대인 것 같으니까,\n다들 무리하지 않도록 해야겠어…$k$p$E怒,|비보를 위해 동료를 희생시키는 바보 같은 짓은\n절대로 하지 않아…!$k
 MID_E000_BT_プレイヤー男_PCM2: $t0$Wmusername|6$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_M#_EVT_23|ここにいる魔将も、僕たちの持つような\n特殊な技能が使えるみたいだね。$k$pかなり手強い相手みたいだから、\n皆に無理をさせないようにしないと…$k$p$E怒,|秘宝のために仲間を失うようなヘマは\n絶対にするもんか…！$k
 MID_E000_BT_プレイヤー男_PCM3: $t0$Wmusername|6$w0|$Wsusername|$Wa$E怒,|…………$k
-MID_E000_BT_プレイヤー女_PCF1: $t0$Wmusername|6$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_23|이곳에 있는 마장도, 우리가 가지고 있는\n특수한 기능을 사용할 수 모양이네.$k$p꽤나 만만치 않은 상대인 것 같으니까,\n다들 무리하지 않도록 해야겠어…$k$p$E怒,|비보를 위해 동료를 희생시키는 바보 같은 짓은\n절대로 하지 않아…!$k
+MID_E000_BT_プレイヤー女_PCF1: $t0$Wmusername|6$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_23|이곳에 있는 마장도, 우리가 가지고 있는\n특수한 기능을 사용할 수 있는 모양이네.$k$p꽤나 만만치 않은 상대인 것 같으니까,\n다들 무리하지 않도록 해야겠어…$k$p$E怒,|비보를 위해 동료를 희생시키는 바보 같은 짓은\n절대로 하지 않아…!$k
 MID_E000_BT_プレイヤー女_PCF2: $t0$Wmusername|6$w0|$Wsusername|$Wa$SvpSE_VOICE_PLAYER_F#_EVT_23|ここにいる魔将も、私たちの持つような\n特殊な技能が使えるみたいですね。$k$pかなり手強い相手のようですから、\n皆さんに無理をさせないようにしないと…$k$p$E怒,|秘宝のために仲間を失うようなヘマは\n絶対にしたくありません…！$k
 MID_E000_BT_プレイヤー女_PCF3: $t0$Wmusername|6$w0|$Wsusername|$Wa$E怒,|…………$k
 MID_E000_BT_クロム: $t0$Wmクロム|6$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_25|너희들은 세계의 운명을 건\n싸움에서 졌다고 했지?$k$p우리들도 지금 원래 세계에서 싸우고 있다.\n너희와 같은, 질 수 없는 싸움이지.$k$p$E怒,|그러니까 여기서 쓰러질 수는 없어.\n미안하지만 길을 열어 줘야겠다…!!$k
