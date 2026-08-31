@@ -9,70 +9,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Audit
+      - name: Narrow high-confidence candidates
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-nanum python3-pil >/dev/null
           python3 - <<'PY'
           from pathlib import Path
-          import re, subprocess
-          from PIL import ImageFont
-          font=ImageFont.truetype('/usr/share/fonts/truetype/nanum/NanumGothic.ttf',14)
-          limits={'$t0':278.8125,'$t1':298.734375}
-          parent=subprocess.check_output(['git','rev-parse','78322a5^']).decode().strip()
-          diff=subprocess.check_output(['git','diff','--unified=0',parent,'78322a5','--','Awakening/Messages (K)','Awakening/DLC Message (K)']).decode('utf-8')
-          changed=[]; cur=None
-          for ln in diff.splitlines():
-              if ln.startswith('+++ b/'): cur=ln[6:]
-              elif ln.startswith('+') and not ln.startswith('+++') and cur: changed.append((cur,ln[1:]))
-          over=[]; checked=0
-          for fp,line in changed:
-              if not line.startswith('MID_') or ': ' not in line: continue
-              body=line.split(': ',1)[1]
-              style='$t0' if body.startswith('$t0') else ('$t1' if body.startswith('$t1') else None)
-              if not style: continue
-              checked+=1
-              # Split pages and visible lines, then remove control codes conservatively.
-              for page in re.split(r'\$[pk]',body):
-                for seg in page.split('\\n'):
-                  txt=re.sub(r'\$[A-Za-z][^$\\]*?\|','',seg)
-                  txt=re.sub(r'\$[A-Za-z][A-Za-z0-9_]*','',txt)
-                  w=font.getlength(txt)
-                  if w>limits[style]: over.append((fp,style,w,txt))
-          width_report=f'PRIOR_78322a5_CHANGED_ROWS={len(changed)}\nPRIOR_WIDTH_CHECKED_MIDS={checked}\nPRIOR_WIDTH_OVERFLOW={len(over)}\n'+''.join(f'OVER\t{a}\t{b}\t{c:.2f}\t{d}\n' for a,b,c,d in over)
-
-          pats=[
-            ('dependent_attached', re.compile(r'[가-힣]+(?:할|한|하는|될|된|되는|갈|간|가는|볼|본|보는|먹을|먹는|아는|없는|있는)(?:수|것|줄|뿐|듯|만큼|바|리)(?:[가-힣]*)')),
-            ('common', re.compile(r'(?:오랫만|왠일|왠만|금새|몇일|어쨋든|하마트면|제 대로|뿐만아니라|할 수록|갈 수록|볼 수록|것같|수 밖에|할텐데|할테니|할께|할 께|익숙치|깨끗히|곰곰히|일일히|틈틈히|번번히|솔직이|가만이|도저이|역활|희안|어의없|됬|됀|웬지)')),
-            ('possible_spacing', re.compile(r'(?:그 동안|한 동안|할 지도|할 걸|할 게|안돼|안되|못해|못하|것 같|할 텐데|할 테니|수밖에|뿐만 아니라|할수록|갈수록|볼수록)')),
-          ]
+          import re
           dead=('PCM2','PCM3','PCF2','PCF3')
+          bad=re.compile(r'(?:오랫만|왠일|왠만|금새|몇일|어쨋든|하마트면|제 대로|뿐만아니라|할 수록|갈 수록|볼 수록|것같|수 밖에|할텐데|할테니|할께|할 께|익숙치|깨끗히|곰곰히|일일히|틈틈히|번번히|솔직이|가만이|도저이|역활|희안|어의없|됬|됀|웬지|어떻해|되요|돼여|바램|설레임|가까와|반듯이|문안하다|건들이다|치루다|뒤치닥거리|댓가|댓가지|통채로|통째로|곱배기|곱빼기|안밖|안팎|희안하|희한하)')
+          attached=re.compile(r'(?:할수|한것|하는것|될것|된것|되는것|갈수|볼수|먹을수|알수|없는것|있는것|할뿐|할듯|할만큼|할바|할리)(?=[가-힣])')
           rows=[]
           for root in [Path('Awakening/Messages (K)'),Path('Awakening/DLC Message (K)')]:
             for p in sorted(root.glob('*.txt')):
-              try: text=p.read_text('utf-8')
-              except: continue
+              text=p.read_text('utf-8')
               for m in re.finditer(r'^(MID_[^:]+): (.*?)(?=^MID_|\Z)',text,re.M|re.S):
                 mid,body=m.group(1),m.group(2)
                 if any(x in mid for x in dead): continue
                 plain=re.sub(r'\$[A-Za-z][^$\\\n\r가-힣!?…。、！？ ]*\|?','',body)
-                for label,pat in pats:
-                  for hit in pat.finditer(plain):
-                    s=max(0,hit.start()-50); e=min(len(plain),hit.end()+60)
-                    ctx=plain[s:e].replace('\n',' ').replace('\\n',' / ')
-                    rows.append((str(p),mid,label,hit.group(0),ctx))
-          seen=set(); out=[]
-          for r in rows:
-            key=r[:4]
-            if key not in seen: seen.add(key); out.append(r)
-          report=[width_report,f'PASS2_CANDIDATES={len(out)}\n']+[ '\t'.join(r)+'\n' for r in out]
-          Path('.github/ORTHOGRAPHY_PASS2_REPORT.txt').write_text(''.join(report),encoding='utf-8')
+                for label,pat in [('bad',bad),('attached',attached)]:
+                  for h in pat.finditer(plain):
+                    ctx=plain[max(0,h.start()-60):min(len(plain),h.end()+70)].replace('\n',' ').replace('\\n',' / ')
+                    rows.append((str(p),mid,label,h.group(0),ctx))
+          Path('.github/ORTHOGRAPHY_PASS2_NARROW.txt').write_text('COUNT='+str(len(rows))+'\n'+''.join('\t'.join(r)+'\n' for r in rows),encoding='utf-8')
           PY
       - name: Commit report
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add .github/ORTHOGRAPHY_PASS2_REPORT.txt
-          git commit -m 'Add temporary Awakening orthography pass 2 report'
+          git add .github/ORTHOGRAPHY_PASS2_NARROW.txt
+          git commit -m 'Add narrowed Awakening orthography report'
           git push
