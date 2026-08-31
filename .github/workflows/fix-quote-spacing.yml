@@ -1,0 +1,126 @@
+name: Fix Awakening quote spacing
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-quote-spacing.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install validation font
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-nanum python3-pil
+      - name: Fix reviewed quote spacing and validate
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, subprocess
+          from PIL import ImageFont
+
+          ROOTS = [Path('Awakening/Messages (K)'), Path('Awakening/DLC Message (K)')]
+          MID_RE = re.compile(r'^(MID_[^:]+): (.*)$', re.M)
+          CTRL_RE = re.compile(r'\$[A-Za-z][A-Za-z0-9_]*(?:[^|$\\\r\n]*\|)?')
+          DEAD = re.compile(r'_(?:PCM[23]|PCF[23])(?:$|_)')
+          FIX_RE = re.compile(r'([」』"\'])하고')
+
+          font_paths = [
+              '/usr/share/fonts/truetype/nanum/NanumGothic.ttf',
+              '/usr/share/fonts/truetype/nanum/NanumGothicCoding.ttf',
+          ]
+          fp = next(p for p in font_paths if Path(p).exists())
+          font = ImageFont.truetype(fp, 14)
+          t1_limit = font.getlength('것이다. 내 패도와 네 녀석들의 길은 결코 만나지 않')
+          t0_limit = 278.8125
+
+          def visible_rows(body):
+              m = re.search(r'\$t([01])', body)
+              style = 't'+m.group(1) if m else 't1'
+              s = body.replace('$p','\\n').replace('$k','\\n')
+              s = re.sub(r'\$[A-Za-z][A-Za-z0-9_]*[^|$\\]*\|','',s)
+              s = re.sub(r'\$[A-Za-z][A-Za-z0-9_]*','',s)
+              return style, [x for x in s.split('\\n') if x]
+
+          changed_files=[]
+          changed_occ=0
+          width_errors=[]
+          for root in ROOTS:
+              for p in sorted(root.glob('*.txt')):
+                  raw = p.read_bytes()
+                  before = raw.decode('utf-8')
+                  old_mids = [(m.group(1),m.group(2)) for m in MID_RE.finditer(before)]
+                  if not old_mids:
+                      continue
+                  out=[]; pos=0; changed_names=set()
+                  for m in MID_RE.finditer(before):
+                      out.append(before[pos:m.start()])
+                      name, body = m.group(1), m.group(2)
+                      nb = body
+                      if not DEAD.search(name):
+                          nb, n = FIX_RE.subn(r'\1 하고', nb)
+                          if n:
+                              changed_occ += n
+                              changed_names.add(name)
+                      out.append(f'{name}: {nb}')
+                      pos=m.end()
+                  out.append(before[pos:])
+                  after=''.join(out)
+                  if after == before:
+                      continue
+
+                  # Integrity checks before write.
+                  if '\ufffd' in after:
+                      raise SystemExit(f'U+FFFD found: {p}')
+                  bad_c0=[ch for ch in after if ord(ch)<32 and ch not in '\n\r\t']
+                  if bad_c0:
+                      raise SystemExit(f'Invalid C0 control: {p}')
+                  new_mids=[(m.group(1),m.group(2)) for m in MID_RE.finditer(after)]
+                  if [n for n,_ in old_mids] != [n for n,_ in new_mids]:
+                      raise SystemExit(f'MID order/count changed: {p}')
+                  if CTRL_RE.findall(before) != CTRL_RE.findall(after):
+                      raise SystemExit(f'Control-code sequence changed: {p}')
+                  if before.count('\n') != after.count('\n'):
+                      raise SystemExit(f'Physical line count changed: {p}')
+
+                  nmap=dict(new_mids)
+                  for name in changed_names:
+                      style, rows = visible_rows(nmap[name])
+                      limit = t0_limit if style == 't0' else t1_limit
+                      for row in rows:
+                          w=font.getlength(row)
+                          if w > limit + 0.01:
+                              width_errors.append(f'{p}:{name}:{style}:{w:.2f}>{limit:.2f}: {row}')
+
+                  p.write_text(after, encoding='utf-8', newline='')
+                  p.read_bytes().decode('utf-8')
+                  changed_files.append(str(p))
+
+          if changed_occ != 51:
+              raise SystemExit(f'Expected 51 reviewed live-branch fixes, got {changed_occ}')
+          if width_errors:
+              print('WIDTH ERRORS')
+              print('\n'.join(width_errors))
+              raise SystemExit(f'{len(width_errors)} modified rows exceed limits')
+          subprocess.run(['git','diff','--check'], check=True)
+          print('CHANGED_OCCURRENCES=', changed_occ)
+          print('CHANGED_FILES=', len(changed_files))
+          print('\n'.join(changed_files))
+          PY
+      - name: Commit fixes and remove temporary workflow
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git rm .github/workflows/fix-quote-spacing.yml
+          git add 'Awakening/Messages (K)' 'Awakening/DLC Message (K)'
+          git diff --cached --quiet && { echo 'No changes'; exit 1; }
+          git commit -m 'Fix Awakening quote spacing after context review'
+          git push
