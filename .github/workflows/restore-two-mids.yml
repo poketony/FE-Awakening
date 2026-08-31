@@ -1,0 +1,66 @@
+name: Restore two Awakening MID controls
+on:
+  push:
+    paths: ['.github/workflows/restore-two-mids.yml']
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch exact control-code defects and validate
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          files=[Path('Awakening/Messages (K)/011.txt'),Path('Awakening/Messages (K)/P002.txt')]
+          before={p:p.read_bytes() for p in files}
+          old={p:before[p].decode('utf-8') for p in files}
+          # exact, MID-local structural restorations; Korean dialogue text remains untouched
+          p=files[0]; s=old[p]
+          a='$Wsリズ|$Wd$w0|$Wmクロム|6$w0|$SvpSE_VOICE_CHROM_EVT_11|$p정말이지… $Nu,'
+          b='$Wsリズ|$Wd$w0|$Wmクロム|6$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_11|$p정말이지… $Nu,'
+          assert s.count(a)==1, ('011 exact target count',s.count(a)); s=s.replace(a,b,1); p.write_text(s,encoding='utf-8',newline='')
+          p=files[1]; s=old[p]
+          a='$k$p$b向き,リズ,B|$E通常,|그런데 말이야……\\n$Nu씨는 굉장하다!'
+          b='$k$p$E通常,|그런데 말이야……\\n$Nu씨는 굉장하다!'
+          assert s.count(a)==1, ('P002 exact target count',s.count(a)); s=s.replace(a,b,1); p.write_text(s,encoding='utf-8',newline='')
+          # integrity: strict UTF-8, no replacement chars/C0, same MID order/count, same physical line count
+          mid=re.compile(r'^MID_[^:]+:',re.M)
+          ctrl=re.compile(r'\$[A-Za-z][^$\\\n\r가-힣ぁ-んァ-ヶ一-龯!?…。、！？ ]*')
+          def visible(x):
+            # For this repair, verify Korean/text payload and explicit line breaks are byte-for-byte unchanged after removing only the two intended controls.
+            x=x.replace('$Wsクロム|$Wa','',1) if '$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_11|$p정말이지' in x else x
+            x=x.replace('$b向き,リズ,B|','')
+            return x
+          for p in files:
+            nb=p.read_bytes(); ns=nb.decode('utf-8')
+            assert '\ufffd' not in ns
+            assert not any(ord(c)<32 and c not in '\n\r\t' for c in ns)
+            assert mid.findall(old[p])==mid.findall(ns)
+            assert old[p].count('\n')==ns.count('\n')
+          # visible dialogue + line breaks unchanged: normalize only intended controls on both sides
+          assert old[files[0]].replace('$Wsリズ|$Wd$w0|$Wmクロム|6$w0|','$Wsリズ|$Wd$w0|$Wmクロム|6$w0|$Wsクロム|$Wa',1)==files[0].read_text('utf-8')
+          assert old[files[1]].replace('$b向き,リズ,B|','',1)==files[1].read_text('utf-8')
+          # target structural counts now match Japanese for high-risk controls
+          def body(text, name):
+            m=re.search(r'^'+re.escape(name)+r': (.*?)(?=^MID_|\Z)',text,re.M|re.S); assert m; return m.group(1)
+          targets=[(files[0],'011.txt','MID_012_OP2_プレイヤー女_02_PCF1'),(files[1],'P002.txt','MID_P002_ED1_PCF1')]
+          for kp,fn,name in targets:
+            jp=Path('Awakening/Messages (J)')/fn
+            jb=body(jp.read_text('utf-8'),name); kb=body(kp.read_text('utf-8'),name)
+            for code in ['$Ws','$Wa','$b']:
+              assert jb.count(code)==kb.count(code),(fn,name,code,jb.count(code),kb.count(code))
+          print('PASS: visible text/line breaks unchanged, therefore prior rendered line widths unchanged.')
+          print('PASS: strict UTF-8, MID order/count, physical lines, and target structural controls validated.')
+          PY
+      - name: Commit repair and remove temporary audit files
+        run: |
+          rm -f .github/TWO_MIDS.txt .github/workflows/extract-two-mids.yml .github/workflows/restore-two-mids.yml
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add -A
+          git diff --cached --check
+          git commit -m 'Restore original control structure in two Awakening MIDs'
+          git push
