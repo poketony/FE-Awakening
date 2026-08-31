@@ -16,57 +16,52 @@ jobs:
           from pathlib import Path
           import re
           from PIL import ImageFont
-          targets={
-            Path('Awakening/Messages (K)/カラム_プレイヤー女.txt'):[
-              ('고민하는 것 같아서… 걱정 돼서.','고민하는 것 같아서… 걱정돼서.',1),
-              ('생각하면 생각할 수록 수수께끼 같아서,','생각하면 생각할수록 수수께끼 같아서,',1),
-              ('말을 걸면 거는대로 아무도 없는데','말을 걸면 거는 대로 아무도 없는데',1),
-            ],
-            Path('Awakening/Messages (K)/リズ_リベラ.txt'):[
-              ('부럽기만 할뿐입니다.','부럽기만 할 뿐입니다.',1),
-              ('그래서, 사라질까봐','그래서, 사라질까 봐',1),
-              ('제가 사라질까봐','제가 사라질까 봐',1),
-              ('아주 생기있게 보입니다.','아주 생기 있게 보입니다.',1),
-              ('생기있게 잘 살아 있다고!','생기 있게 잘 살아 있다고!',1),
-            ],
+          specs={
+            Path('Awakening/Messages (K)/カラム_プレイヤー女.txt'):{
+              'MID_支援_カラム_プレイヤー女_Ｃ_PCF1':[
+                ('고민하는 것 같아서… 걱정 돼서.','고민하는 것 같아서… 걱정돼서.'),
+                ('생각하면 생각할 수록 수수께끼 같아서,','생각하면 생각할수록 수수께끼 같아서,')],
+              'MID_支援_カラム_プレイヤー女_Ｂ_PCF1':[
+                ('말을 걸면 거는대로 아무도 없는데','말을 걸면 거는 대로 아무도 없는데')],
+            },
+            Path('Awakening/Messages (K)/リズ_リベラ.txt'):{
+              'MID_支援_リズ_リベラ_Ｂ': [('부럽기만 할뿐입니다.','부럽기만 할 뿐입니다.')],
+              'MID_支援_リズ_リベラ_Ａ': [
+                ('그래서, 사라질까봐','그래서, 사라질까 봐'),('제가 사라질까봐','제가 사라질까 봐'),
+                ('아주 생기있게 보입니다.','아주 생기 있게 보입니다.'),('생기있게 잘 살아 있다고!','생기 있게 잘 살아 있다고!')],
+            },
           }
-          before={p:p.read_text('utf-8') for p in targets}
-          for p,repls in targets.items():
+          before={p:p.read_text('utf-8') for p in specs}
+          def patch_mid(text,mid,repls):
+            pat=re.compile(r'^('+re.escape(mid)+r': )(.*?)(?=^MID_|\Z)',re.M|re.S)
+            m=pat.search(text); assert m,mid
+            body=m.group(2)
+            for a,b in repls:
+              assert body.count(a)==1,(mid,a,body.count(a)); body=body.replace(a,b,1)
+            return text[:m.start(2)]+body+text[m.end(2):]
+          for p,mids in specs.items():
             s=before[p]
-            for a,b,n in repls:
-              assert s.count(a)==n,(p,a,s.count(a),n)
-              s=s.replace(a,b,n)
+            for mid,repls in mids.items(): s=patch_mid(s,mid,repls)
             p.write_text(s,encoding='utf-8',newline='')
-
-          # Integrity checks.
-          mid=re.compile(r'^MID_[^:]+:',re.M)
-          ctrl=re.compile(r'\$[A-Za-z][^$\\\n\r가-힣!?…。、！？ ]*\|?')
-          for p in targets:
-            ns=p.read_bytes().decode('utf-8')
-            assert '\ufffd' not in ns
+          midpat=re.compile(r'^MID_[^:]+:',re.M); ctrl=re.compile(r'\$[A-Za-z][^$\\\n\r가-힣!?…。、！？ ]*\|?')
+          for p in specs:
+            ns=p.read_bytes().decode('utf-8'); assert '\ufffd' not in ns
             assert not any(ord(c)<32 and c not in '\n\r\t' for c in ns)
-            assert mid.findall(before[p])==mid.findall(ns)
+            assert midpat.findall(before[p])==midpat.findall(ns)
             assert before[p].count('\\n')==ns.count('\\n')
             assert ctrl.findall(before[p])==ctrl.findall(ns)
-
-          # Modified visual-line width check. Both files use $t1; measure every visual line containing a changed phrase.
-          font=ImageFont.truetype('/usr/share/fonts/truetype/nanum/NanumGothic.ttf',14)
-          limit=298.734375
+          font=ImageFont.truetype('/usr/share/fonts/truetype/nanum/NanumGothic.ttf',14); limit=298.734375
           needles=['걱정돼서.','생각할수록 수수께끼 같아서,','거는 대로 아무도 없는데','부럽기만 할 뿐입니다.','사라질까 봐','생기 있게 보입니다.','생기 있게 잘 살아 있다고!']
           checked=0
-          for p in targets:
+          for p,mids in specs.items():
             s=p.read_text('utf-8')
-            for m in re.finditer(r'^(MID_[^:]+): (.*?)(?=^MID_|\Z)',s,re.M|re.S):
-              body=m.group(2)
-              if not any(n in body for n in needles): continue
-              assert '$t1' in body[:120],(p,m.group(1),'expected t1')
+            for mid in mids:
+              m=re.search(r'^'+re.escape(mid)+r': (.*?)(?=^MID_|\Z)',s,re.M|re.S); body=m.group(1); assert '$t1' in body[:120]
               for page in re.split(r'\$[pk]',body):
                 for seg in page.split('\\n'):
                   if not any(n in seg for n in needles): continue
-                  txt=re.sub(r'\$[A-Za-z][^$\\]*?\|','',seg)
-                  txt=re.sub(r'\$[A-Za-z][A-Za-z0-9_]*','',txt)
-                  w=font.getlength(txt); checked+=1
-                  assert w<=limit,(p,m.group(1),w,txt)
+                  txt=re.sub(r'\$[A-Za-z][^$\\]*?\|','',seg); txt=re.sub(r'\$[A-Za-z][A-Za-z0-9_]*','',txt)
+                  w=font.getlength(txt); checked+=1; assert w<=limit,(p,mid,w,txt)
           assert checked>=8,checked
           print('PASS modified visual lines:',checked)
           print('PASS UTF-8/C0/MID/control/literal-line-break integrity')
