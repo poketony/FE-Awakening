@@ -1,0 +1,43 @@
+name: Prepare manual fresh Awakening 50-file review batch
+on:
+  push:
+    paths: ['.github/workflows/manual-awakening-review-50.yml']
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select 50 fresh files and pair Japanese originals
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import random, shutil
+          tracker=Path('Awakening/AUTOMATION_REVIEWED_FILES.txt').read_text(encoding='utf-8')
+          done={x.strip() for x in tracker.splitlines() if x.startswith('Awakening/')}
+          candidates=[]
+          for kd,jd,prefix in [(Path('Awakening/Messages (K)'),Path('Awakening/Messages (J)'),'Awakening/Messages (K)/'),(Path('Awakening/DLC Message (K)'),Path('Awakening/DLC Message (J)'),'Awakening/DLC Message (K)/')]:
+            for k in kd.glob('*.txt'):
+              rel=prefix+k.name
+              if rel in done or not (jd/k.name).exists():
+                continue
+              if k.name.endswith('_ルキナ.txt') and (kd/k.name.replace('_ルキナ.txt','_マルス.txt')).exists():
+                continue
+              candidates.append((k,jd/k.name,rel))
+          random.SystemRandom().shuffle(candidates)
+          batch=candidates[:50]
+          if len(batch)<50:
+            raise SystemExit(f'only {len(batch)} fresh files remain')
+          out=Path('review50'); (out/'K').mkdir(parents=True); (out/'J').mkdir()
+          for k,j,rel in batch:
+            shutil.copy2(k,out/'K'/k.name); shutil.copy2(j,out/'J'/j.name)
+          (out/'manifest.txt').write_text('\n'.join(rel for _,_,rel in batch)+'\n',encoding='utf-8')
+          print('SELECTED_FRESH_50')
+          print((out/'manifest.txt').read_text(encoding='utf-8'))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: manual-awakening-review-fresh-50
+          path: review50
+          retention-days: 1
