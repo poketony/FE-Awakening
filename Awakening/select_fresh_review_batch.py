@@ -19,10 +19,8 @@ def tracked_files() -> set[str]:
 
 
 def is_nonlive_lucina_alias(kdir: Path, name: str) -> bool:
-    if not name.endswith("_ルキナ.txt"):
-        return False
-    marth_name = name.replace("_ルキナ.txt", "_マルス.txt")
-    return (kdir / marth_name).exists()
+    # Live Lucina support archives use her internal name, Marth.
+    return kdir.name == "Messages (K)" and "ルキナ" in name
 
 
 def fresh_candidates(done: set[str]) -> list[str]:

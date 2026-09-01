@@ -48,7 +48,7 @@ MID_曲名_STRM_BGM_EVT_BOURYAKU1: 이건,\n전쟁할 의사가 있다고 본다
 MID_曲名_STRM_BGM_EVT_BRAVE1: 정치나 외교는 서툴지만…
 MID_曲名_STRM_BGM_EVT_BUKIMI1: 뭔가… 이상해
 MID_曲名_STRM_BGM_EVT_CHANCE1: 운명 따윈, 죽은 사람의 변명이다
-MID_曲名_STRM_BGM_EVT_HEIWA1: 멈추도록 하겠어? 응?
+MID_曲名_STRM_BGM_EVT_HEIWA1: 묵게 해 달라고 하자? 응?
 MID_曲名_STRM_BGM_EVT_HEION1: 싸움은 끝났어, 이걸로…
 MID_曲名_STRM_BGM_EVT_HOUSHIN1: ………
 MID_曲名_STRM_BGM_EVT_HUON1: …이런 방법이,\n정말로 잘 될까?
@@ -58,18 +58,18 @@ MID_曲名_STRM_BGM_EVT_KIKI1: 괜찮으니까, 달려!!
 MID_曲名_STRM_BGM_EVT_KYOAKU1: 여기서 나는 소생한다…
 MID_曲名_STRM_BGM_EVT_KYOUDAN1: 어차피 운명은 바뀌지 않는다…
 MID_曲名_STRM_BGM_EVT_LEGEND1: 힘을 느껴… 우리와 같은 힘…
-MID_曲名_STRM_BGM_EVT_LOVE1: …조금, 어렵네
+MID_曲名_STRM_BGM_EVT_LOVE1: …조금, 쑥스럽군
 MID_曲名_STRM_BGM_EVT_NAKAMA1: 반~짝 하고 와서,\n부~왕 하는 느낌?
 MID_曲名_STRM_BGM_EVT_SAD1: 나한테 그런 힘이…\n자격이… 있다고 생각해?
 MID_曲名_STRM_BGM_EVT_SERIOUS1: 큰 혼란은 없는 것 같네요
 MID_曲名_STRM_BGM_EVT_SERIOUS2: 「인연」이 우리들의\n싸움을 이어주고 있어
 MID_曲名_STRM_BGM_EVT_TAIJI1: 인간이란 건\n싸움을 할 수밖에 없다고!
 MID_曲名_STRM_BGM_EVT_TAIJI2: 이런 곳에도 시체 병사가…!
-MID_曲名_STRM_BGM_EVT_TENNEN1: 이 몸이 그걸 잊어 버리다니
+MID_曲名_STRM_BGM_EVT_TENNEN1: 이 몸이 그걸 잊어버리다니
 MID_曲名_STRM_BGM_EVT_YASASHISA1: 자아, 무서워하지 마
 MID_曲名_STRM_BGM_EVT_MARTH1: 내 이름은 마르스다
 MID_曲名_STRM_BGM_EVT_MYUNIT1: 「I」~안정
-MID_曲名_STRM_BGM_EVT_MYUNIT2: 「I」~사랑
+MID_曲名_STRM_BGM_EVT_MYUNIT2: 「I」~비애
 MID_曲名_STRM_BGM_EVT_MYUNIT3: 「I」~고뇌
 MID_曲名_STRM_BGM_EVT_MYUNIT4: 「I」~어둠
 MID_曲名_STRM_BGM_SYS_BASE1: 여기서 출격의\n준비를 하자
@@ -123,7 +123,7 @@ MID_背景名_ドーマの臓物1: 도마의 내장
 MID_背景名_万里1: 장성
 MID_背景名_船上1: 군함
 MID_背景名_森夜2: 밤의 숲
-MID_背景名_森夜1: 닫힌 마을
+MID_背景名_森夜1: 폐촌
 MID_背景名_山火事夜1: 천변지이
 MID_背景名_山道1: 산길
 MID_背景名_サンセット1: 황혼의 평지
