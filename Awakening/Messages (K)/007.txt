@@ -4,7 +4,7 @@ MESS_ARCHIVE_007
 Message Name: Message
 
 
-MID_007_OP1: $t1$Wmリズ|3$w0|$Wsリズ|$Wa$SvpSE_VOICE_LIZ_EVT_17|$E苦,汗|피곤해! 오빠~아!!\n걷기만 해서 다리가 아파~!!$k\n$Wsリズ|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$b注目,クロム,プレイヤー|$b注目,プレイヤー,クロム|$SvpSE_VOICE_CHROM_EVT_11|$E通常,|이 산을 넘으면 곧 도착이야.\n$Nu도 괜찮나?$k
+MID_007_OP1: $t1$Wmリズ|3$w0|$Wsリズ|$Wa$SvpSE_VOICE_LIZ_EVT_17|$E苦,汗|피곤해! 오빠~!!\n걷기만 해서 다리가 아파~!!$k\n$Wsリズ|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$b注目,クロム,プレイヤー|$b注目,プレイヤー,クロム|$SvpSE_VOICE_CHROM_EVT_11|$E通常,|이 산을 넘으면 곧 도착이야.\n$Nu도 괜찮나?$k
 MID_007_OP1_2_PCM1: $t1$Wmusername|3$w0|$Wsusername|$Wa$b動作,プレイヤー,Ge2|$SvpSE_VOICE_PLAYER_M#_EVT_9|$E苦,汗|어, 어떻게든…\n크롬의 체력이 부러워.$k
 MID_007_OP1_2_PCM2: $t1$Wmusername|3$w0|$Wsusername|$Wa$b動作,プレイヤー,Ge2|$SvpSE_VOICE_PLAYER_M#_EVT_9|$E苦,汗|어, 어떻게 될 거 같아…\n크롬의 체력이 부러워.$k
 MID_007_OP1_2_PCM3: $t1$Wmusername|3$w0|$Wsusername|$Wa$b動作,プレイヤー,Ge2|$E苦,汗|……$k
