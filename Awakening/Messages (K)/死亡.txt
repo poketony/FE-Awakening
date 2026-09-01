@@ -4,11 +4,11 @@ MESS_ARCHIVE_死亡
 Message Name: Message
 
 
-MID_DIE_プレイヤー男_PCM1: $t1$Wmusername|3$w0|$Wsusername|$Wa$E苦,汗|…크롬 …모두…\n미안해……$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|$Nu!? 어이 정신 차려!\n눈을 떠! $Nu…!!$k
-MID_DIE_プレイヤー男_PCM2: $t1$Wmusername|3$w0|$Wsusername|$Wa$E苦,汗|…크롬 …모두…\n미안해……$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|$Nu!? 어이 정신 차려!\n눈을 떠! $Nu…!!$k
+MID_DIE_プレイヤー男_PCM1: $t1$Wmusername|3$w0|$Wsusername|$Wa$E苦,汗|…크롬 …모두들…\n미안해……$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|$Nu!? 어이 정신 차려!\n눈을 떠! $Nu…!!$k
+MID_DIE_プレイヤー男_PCM2: $t1$Wmusername|3$w0|$Wsusername|$Wa$E苦,汗|…크롬 …모두들…\n미안해……$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|$Nu!? 어이 정신 차려!\n눈을 떠! $Nu…!!$k
 MID_DIE_プレイヤー男_PCM3: $t1$Wmusername|3$w0|$Wsusername|$Wa$E苦,汗|…………$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|$Nu!? 어이 정신 차려!\n눈을 떠! $Nu…!!$k
-MID_DIE_プレイヤー女_PCF1: $t1$Wmusername|3$w0|$Wsusername|$Wa$E苦,汗|…크롬 …모두…\n미안해……$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|$Nu!? 어이 정신 차려!\n눈을 떠! $Nu…!!$k
-MID_DIE_プレイヤー女_PCF2: $t1$Wmusername|3$w0|$Wsusername|$Wa$E苦,汗|…크롬 …모두…\n미안…해요……$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|$Nu!? 어이 정신 차려!\n눈을 떠! $Nu…!!$k
+MID_DIE_プレイヤー女_PCF1: $t1$Wmusername|3$w0|$Wsusername|$Wa$E苦,汗|…크롬 …모두들…\n미안해……$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|$Nu!? 어이 정신 차려!\n눈을 떠! $Nu…!!$k
+MID_DIE_プレイヤー女_PCF2: $t1$Wmusername|3$w0|$Wsusername|$Wa$E苦,汗|…크롬 …모두들…\n미안…해요……$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|$Nu!? 어이 정신 차려!\n눈을 떠! $Nu…!!$k
 MID_DIE_プレイヤー女_PCF3: $t1$Wmusername|3$w0|$Wsusername|$Wa$E苦,汗|………$k\n$Wsusername|$Wd$w0|$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|$Nu!? 어이 정신 차려!\n눈을 떠! $Nu…!!$k
 MID_DIE_プレイヤー援軍: $t1$Wm自分|3$w0|$Ws自分|$Wa$E苦,汗|…………$k
 MID_DIE_旧マルス: $t1$Wm自分|3$w0|$Ws自分|$Wa…………$k
