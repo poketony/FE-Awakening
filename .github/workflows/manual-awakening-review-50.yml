@@ -1,43 +1,76 @@
-name: Prepare manual fresh Awakening 50-file review batch
+name: Finalize manual fresh Awakening 50-file review batch
 on:
   push:
     paths: ['.github/workflows/manual-awakening-review-50.yml']
 permissions:
-  contents: read
+  contents: write
 jobs:
-  prepare:
+  finalize:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Select 50 fresh files and pair Japanese originals
+      - name: Apply validate and commit reviewed 50 files
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import random, shutil
-          tracker=Path('Awakening/AUTOMATION_REVIEWED_FILES.txt').read_text(encoding='utf-8')
-          done={x.strip() for x in tracker.splitlines() if x.startswith('Awakening/')}
-          candidates=[]
-          for kd,jd,prefix in [(Path('Awakening/Messages (K)'),Path('Awakening/Messages (J)'),'Awakening/Messages (K)/'),(Path('Awakening/DLC Message (K)'),Path('Awakening/DLC Message (J)'),'Awakening/DLC Message (K)/')]:
-            for k in kd.glob('*.txt'):
-              rel=prefix+k.name
-              if rel in done or not (jd/k.name).exists():
-                continue
-              if k.name.endswith('_ルキナ.txt') and (kd/k.name.replace('_ルキナ.txt','_マルス.txt')).exists():
-                continue
-              candidates.append((k,jd/k.name,rel))
-          random.SystemRandom().shuffle(candidates)
-          batch=candidates[:50]
-          if len(batch)<50:
-            raise SystemExit(f'only {len(batch)} fresh files remain')
-          out=Path('review50'); (out/'K').mkdir(parents=True); (out/'J').mkdir()
-          for k,j,rel in batch:
-            shutil.copy2(k,out/'K'/k.name); shutil.copy2(j,out/'J'/j.name)
-          (out/'manifest.txt').write_text('\n'.join(rel for _,_,rel in batch)+'\n',encoding='utf-8')
-          print('SELECTED_FRESH_50')
-          print((out/'manifest.txt').read_text(encoding='utf-8'))
+          import re
+          manifest=['Awakening/Messages (K)/セルジュ_リベラ.txt', 'Awakening/Messages (K)/様子_ギャンレル1.txt', 'Awakening/Messages (K)/ロラン_プレイヤー男_親子.txt', 'Awakening/Messages (K)/グレゴ_プレイヤー男.txt', 'Awakening/Messages (K)/005.txt', 'Awakening/Messages (K)/プレイヤー男_レンハ.txt', 'Awakening/Messages (K)/マーク男_グレゴ_親子.txt', 'Awakening/Messages (K)/ンン_ヘンリー_親子.txt', 'Awakening/Messages (K)/P002.txt', 'Awakening/Messages (K)/シャンブレー_ヴィオール_親子.txt', 'Awakening/Messages (K)/様子_マリアベル3.txt', 'Awakening/Messages (K)/様子_マーク女4.txt', 'Awakening/Messages (K)/チキ_プレイヤー男.txt', 'Awakening/Messages (K)/様子_ヴェイク1.txt', 'Awakening/Messages (K)/X011.txt', 'Awakening/Messages (K)/様子_エメリナ4.txt', 'Awakening/Messages (K)/様子_ヴィオール2.txt', 'Awakening/Messages (K)/X017.txt', 'Awakening/Messages (K)/ギャンレル_プレイヤー男.txt', 'Awakening/Messages (K)/様子_セレナ1.txt', 'Awakening/Messages (K)/様子_ベルベット4.txt', 'Awakening/Messages (K)/マーク男_ウード_親子.txt', 'Awakening/Messages (K)/ンン_ヴェイク_親子.txt', 'Awakening/Messages (K)/ブレディ_ヘンリー_親子.txt', 'Awakening/Messages (K)/ec.txt', 'Awakening/Messages (K)/X016.txt', 'Awakening/Messages (K)/パリス_プレイヤー女.txt', 'Awakening/Messages (K)/ブレディ_マーク女.txt', 'Awakening/Messages (K)/ソワレ_リベラ.txt', 'Awakening/Messages (K)/様子_フレデリク2.txt', 'Awakening/Messages (K)/ヴェイク_セルジュ.txt', 'Awakening/DLC Message (K)/9. 왕 대 왕 결전 편.txt', 'Awakening/Messages (K)/様子_フラヴィア4.txt', 'Awakening/Messages (K)/ノワール_ドニ_親子.txt', 'Awakening/Messages (K)/ヴィオール_マリアベル.txt', 'Awakening/Messages (K)/シャンブレー_ドニ_親子.txt', 'Awakening/Messages (K)/グレゴ_ベルベット.txt', 'Awakening/Messages (K)/ジェローム_ロラン.txt', 'Awakening/Messages (K)/様子_エメリナ1.txt', 'Awakening/Messages (K)/マーク男_プレイヤー女_親子.txt', 'Awakening/Messages (K)/X020.txt', 'Awakening/Messages (K)/ヴェイク_ロンクー.txt', 'Awakening/Messages (K)/様子_ソール2.txt', 'Awakening/Messages (K)/ノノ_ヘンリー.txt', 'Awakening/Messages (K)/マルス_ブレディ_兄弟.txt', 'Awakening/Messages (K)/様子_ジェローム2.txt', 'Awakening/Messages (K)/様子_オリヴィエ2.txt', 'Awakening/Messages (K)/ヘンリー_ミリエル.txt', 'Awakening/Messages (K)/マリアベル_リベラ.txt', 'Awakening/Messages (K)/ソワレ_ドニ.txt']
+          reps={'Awakening/Messages (K)/セルジュ_リベラ.txt': [('비룡에게 주종 관계를 기르치기', '비룡에게 주종 관계를 가르치기'), ('다른 종족이라는 핑계를\\n생각해서는 안 됩니다.', '다른 종족이니 어쩌니\\n생각해서는 안 됩니다.'), ('그렇게 생각하고 나서\\n미네르바 씨와 마음이 통한 것 같습니다.', '그렇게 생각하기 시작한 뒤로\\n미네르바 씨와 더욱 마음이 통한 것 같습니다.')], 'Awakening/Messages (K)/様子_ギャンレル1.txt': [('좋은 속임수라도 생각해 낸 거야?', '남을 함정에 빠뜨릴 수법이라도 떠올랐어?'), ('난 원래 선물 따윈 안 사지만… 받아.', '선물 같은 건 내 성미에 안 맞지만… 받아.')], 'Awakening/Messages (K)/グレゴ_プレイヤー男.txt': [('양치질, 손 씻기, 몸 녹이기.', '가글, 손 씻기, 몸 따뜻하게 하기.'), ('등줄기에 식은땀이 나는 것 같아.', '등이 오싹해지는 것 같아.')], 'Awakening/Messages (K)/005.txt': [('설렁설렁 넘어갈 거면 이 여자,\\n지금 당장 처형해 버린다?', '계속 말이 많으면 이 여자,\\n지금 당장 처형해 버린다?'), ('그 과오를 씻기 위해, 이리스는\\n평화의 나라가 되겠다고 다짐했어요.', '그 잘못을 되풀이하지 않기 위해, 이리스는\\n평화의 나라가 되겠다고 다짐했어요.')], 'Awakening/Messages (K)/プレイヤー男_レンハ.txt': [('당신은 지금이고, 옛날이고 변함없이\\n사람들을 지키기 위해 계속 싸우고 있음을.', '당신은 지금도 예전도 변함없이\\n사람들을 지키기 위해 계속 싸우고 있다고.')], 'Awakening/Messages (K)/マーク男_グレゴ_親子.txt': [('깨끗이 잊어 버린', '깨끗이 잊어버린')], 'Awakening/Messages (K)/ンン_ヘンリー_親子.txt': [('죄… 죄송합니, 다.', '죄… 죄송합니다.')], 'Awakening/Messages (K)/X011.txt': [('바룸 대륙에서 유일한 비룡의 출생지입니다.', '바룸 대륙 제일의 비룡 산지입니다.'), ('운명이라는 핑계로… 살릴 수 있을지도\\n모르는 사람들을 전부 죽게 만들 셈이냐?', '운명이라고 해서… 살릴 수 있을지도\\n모르는 사람들을 보고만 있을 셈이냐?'), ('변하지 않는 운명을\\n나는 지금까지 몇 번이나 봐 왔다.', '바꿀 수 없는 운명을\\n나는 지금까지 몇 번이나 봐 왔다.'), ('운명이였군', '운명이었군')], 'Awakening/Messages (K)/様子_エメリナ4.txt': [('그치만… 오히려… 기…뻐.', '그래도… 만나…서… 기…뻐.')], 'Awakening/Messages (K)/X017.txt': [('여긴… 바람이 불고 있군.', '여긴… 공기가 맑군.'), ('당신 덕분이야.', '당신들 덕분이야.')], 'Awakening/Messages (K)/ギャンレル_プレイヤー男.txt': [('바룸 대륙으로부터 지키기 위해서였다고.', '바룸 제국으로부터 지키기 위해서였다고.'), ('세 나라를 합병해, 강한 대국을 만드는 것.', '세 나라끼리 잡아먹고, 강한 대국을 만드는 것.'), ('자신을 비하하거나 자조하는 시간도\\n아깝다고 생각해라.', '자신을 비하하거나 자조할 여유조차\\n네게는 허락되지 않았다고 생각해라.'), ('이용한건', '이용한 건')], 'Awakening/Messages (K)/様子_セレナ1.txt': [('옷이랑, 신발이랑, 화장품이랑… 그리고…', '옷이랑, 신발이랑, 장신구랑… 그리고…')], 'Awakening/Messages (K)/様子_ヴェイク1.txt': [('역시 이 몸은 배려심 좋은 아버지구만~!', '역시 이 몸은 통 큰 아버지구만~!')], 'Awakening/Messages (K)/ソワレ_リベラ.txt': [('수아레 씨의 말이었군요.', '수아레 씨 말의 것이었군요.'), ('너는 네 여성처럼 아름다운\\n외모를 어떻게 생각해?', '너는 그, 여성처럼 아름다운\\n자신의 외모를 어떻게 생각해?'), ('잊어 버리세요', '잊어버리세요'), ('받아들일만큼', '받아들일 만큼')], 'Awakening/Messages (K)/パリス_プレイヤー女.txt': [('구명이 날 듯한 옷', '구멍이 날 듯한 옷')], 'Awakening/Messages (K)/マーク男_ウード_親子.txt': [('깨끗이 잊어 버린', '깨끗이 잊어버린')], 'Awakening/Messages (K)/チキ_プレイヤー男.txt': [('크롬의 까마득한 선조라고 돌었어.', '크롬의 까마득한 선조라고 들었어.')], 'Awakening/Messages (K)/ンン_ヴェイク_親子.txt': [('죄… 죄송합니, 다.', '죄… 죄송합니다.')], 'Awakening/Messages (K)/ブレディ_ヘンリー_親子.txt': [('자식이 생기면 돌변한다니…', '아들이 태어나면 널 버리는 짓은…'), ('내가 믿는 첫째 아들이니까~', '내가 정한 첫 번째 아들이니까~')], 'Awakening/Messages (K)/マーク男_プレイヤー女_親子.txt': [('적을 여기까지 끌어 들이고….', '적을 여기까지 끌어들이고….')], 'Awakening/Messages (K)/グレゴ_ベルベット.txt': [('이런 은밀한 내통도\\n신선한 경험이잖아?', '이렇게 친하게 어울리는 것도\\n신선한 경험이잖아?'), ('어이, 어디있는 거야.', '어이, 어디 있는 거야.')], 'Awakening/Messages (K)/ジェローム_ロラン.txt': [('내가 생각해서 한심하다고… 말이야.', '스스로 생각해도 한심하다고… 말이야.')], 'Awakening/Messages (K)/ノワール_ドニ_親子.txt': [('희귀한 저주 찾기를\\n정말 좋아하니까, 어쩔 수 없어…', '희귀한 저주를 시험하는 걸\\n정말 좋아하니까, 어쩔 수 없어…')], 'Awakening/Messages (K)/ヴィオール_マリアベル.txt': [('뭘하고 계시나요,', '뭘 하고 계시나요,')], 'Awakening/Messages (K)/ヴェイク_セルジュ.txt': [('친해진건가?', '친해진 건가?')], 'Awakening/Messages (K)/様子_マーク女4.txt': [('두 분 사이가 좋으면 저도 행복해서…', '두 분은 사이가 좋고 저도 행복하고…')], 'Awakening/Messages (K)/様子_ジェローム2.txt': [('아들로서 얼마나 강한지 보여다오.', '내 아들이 얼마나 강한지 보고 싶다.')]}
+          expected_counts={'Awakening/Messages (K)/セルジュ_リベラ.txt': [1, 1, 1], 'Awakening/Messages (K)/様子_ギャンレル1.txt': [1, 1], 'Awakening/Messages (K)/グレゴ_プレイヤー男.txt': [1, 1], 'Awakening/Messages (K)/005.txt': [1, 1], 'Awakening/Messages (K)/プレイヤー男_レンハ.txt': [1], 'Awakening/Messages (K)/マーク男_グレゴ_親子.txt': [1], 'Awakening/Messages (K)/ンン_ヘンリー_親子.txt': [1], 'Awakening/Messages (K)/X011.txt': [1, 1, 2, 1], 'Awakening/Messages (K)/様子_エメリナ4.txt': [1], 'Awakening/Messages (K)/X017.txt': [1, 1], 'Awakening/Messages (K)/ギャンレル_プレイヤー男.txt': [1, 1, 1, 1], 'Awakening/Messages (K)/様子_セレナ1.txt': [1], 'Awakening/Messages (K)/様子_ヴェイク1.txt': [1], 'Awakening/Messages (K)/ソワレ_リベラ.txt': [1, 1, 1, 1], 'Awakening/Messages (K)/パリス_プレイヤー女.txt': [1], 'Awakening/Messages (K)/マーク男_ウード_親子.txt': [1], 'Awakening/Messages (K)/チキ_プレイヤー男.txt': [1], 'Awakening/Messages (K)/ンン_ヴェイク_親子.txt': [1], 'Awakening/Messages (K)/ブレディ_ヘンリー_親子.txt': [1, 1], 'Awakening/Messages (K)/マーク男_プレイヤー女_親子.txt': [1], 'Awakening/Messages (K)/グレゴ_ベルベット.txt': [1, 1], 'Awakening/Messages (K)/ジェローム_ロラン.txt': [1], 'Awakening/Messages (K)/ノワール_ドニ_親子.txt': [1], 'Awakening/Messages (K)/ヴィオール_マリアベル.txt': [1], 'Awakening/Messages (K)/ヴェイク_セルジュ.txt': [1], 'Awakening/Messages (K)/様子_マーク女4.txt': [1], 'Awakening/Messages (K)/様子_ジェローム2.txt': [1]}
+          dead=re.compile(r'_(?:PCM[23]|PCF[23])(?:$|_)')
+          midre=re.compile(r'^(MID_[^:]+):',re.M)
+          ctrl=re.compile(r'\$[A-Za-z]+(?:[^$|\\n]*\|)?')
+          tracker=Path('Awakening/AUTOMATION_REVIEWED_FILES.txt')
+          old_tracker=tracker.read_text(encoding='utf-8')
+          existing={x.strip() for x in old_tracker.splitlines() if x.startswith('Awakening/')}
+          overlap=[p for p in manifest if p in existing]
+          if overlap:
+              raise SystemExit(f'already tracked: {overlap}')
+          if len(manifest)!=50 or len(set(manifest))!=50:
+              raise SystemExit('manifest is not exactly 50 unique files')
+          base={rel:Path(rel).read_text(encoding='utf-8') for rel in manifest}
+          for rel,pairs in reps.items():
+              p=Path(rel); text=p.read_text(encoding='utf-8'); out=[]; cs=[0]*len(pairs)
+              for line in text.splitlines(keepends=True):
+                  if line.startswith('MID_') and ': ' in line:
+                      mid=line.split(': ',1)[0]
+                      if not dead.search(mid):
+                          for i,(a,b) in enumerate(pairs):
+                              cs[i]+=line.count(a)
+                              line=line.replace(a,b)
+                  out.append(line)
+              if cs != expected_counts[rel]:
+                  raise SystemExit(f'replacement drift: {rel} {cs} != {expected_counts[rel]}')
+              p.write_text(''.join(out),encoding='utf-8',newline='')
+          changed=[]
+          for rel in manifest:
+              p=Path(rel); a=base[rel]; b=p.read_text(encoding='utf-8')
+              if a != b:
+                  changed.append(rel)
+              if '\ufffd' in b or any(ord(c)<32 and c not in '\n\r\t' for c in b):
+                  raise SystemExit(f'encoding/C0: {rel}')
+              if midre.findall(a)!=midre.findall(b):
+                  raise SystemExit(f'MID order: {rel}')
+              if ctrl.findall(a)!=ctrl.findall(b):
+                  raise SystemExit(f'control sequence: {rel}')
+              if [x.count('\\n') for x in a.splitlines()] != [x.count('\\n') for x in b.splitlines()]:
+                  raise SystemExit(f'literal n: {rel}')
+              da={m.group(1):m.group(0) for m in re.finditer(r'^(MID_[^:]+):.*$',a,re.M) if dead.search(m.group(1))}
+              db={m.group(1):m.group(0) for m in re.finditer(r'^(MID_[^:]+):.*$',b,re.M) if dead.search(m.group(1))}
+              if da!=db:
+                  raise SystemExit(f'dead avatar branch: {rel}')
+          if len(changed)!=27:
+              raise SystemExit(f'expected 27 changed dialogue files, got {len(changed)}: {changed}')
+          tracker.write_text(old_tracker+''.join(p+'\n' for p in manifest),encoding='utf-8',newline='')
+          print('VALIDATED_50')
+          print('CHANGED_27')
+          for p in changed: print(p)
           PY
-      - uses: actions/upload-artifact@v4
-        with:
-          name: manual-awakening-review-fresh-50
-          path: review50
-          retention-days: 1
+          git diff --check
+          git rm .github/workflows/manual-awakening-review-50.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Awakening/AUTOMATION_REVIEWED_FILES.txt 'Awakening/Messages (K)' 'Awakening/DLC Message (K)'
+          git diff --cached --check
+          git commit -m "Review 50 fresh Awakening dialogue files"
+          git push
