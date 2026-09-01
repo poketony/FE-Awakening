@@ -557,3 +557,13 @@ Awakening/Messages (K)/セレナ_フレデリク_親子.txt
 Awakening/Messages (K)/T001.txt
 Awakening/Messages (K)/013.txt
 Awakening/Messages (K)/シャンブレー_ブレディ.txt
+Awakening/Messages (K)/マーク男_マルス.txt
+Awakening/DLC Message (K)/25. 절망적인 미래1.txt
+Awakening/Messages (K)/プレイヤー女_リズ.txt
+Awakening/Messages (K)/フレデリク_マリアベル.txt
+Awakening/Messages (K)/ソワレ_フレデリク.txt
+Awakening/Messages (K)/ジェローム_マルス.txt
+Awakening/Messages (K)/独り言.txt
+Awakening/Messages (K)/デジェル_ロラン.txt
+Awakening/Messages (K)/ジェローム_デジェル.txt
+Awakening/Messages (K)/様子_経験.txt
