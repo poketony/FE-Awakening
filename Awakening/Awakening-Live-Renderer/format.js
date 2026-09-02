@@ -62,6 +62,18 @@ export function splitConversationFrames(value) {
   return frames.length ? frames : [value];
 }
 
+export function formatEntryForEditing(value) {
+  return value.replace(/\$k(?=\\n|\$p)/g, "$k\n");
+}
+
+export function unformatEntryFromEditing(value) {
+  return value.replace(/[\r\n]/g, "");
+}
+
+export function isReviewProgressEntry(entryKey) {
+  return entryKey !== "Message Name" && !/(?:^|_)(?:PCM[23]|PCF[23])$/.test(entryKey);
+}
+
 export function buildNameMap(document) {
   const names = new Map();
   if (!document) return names;
@@ -73,8 +85,14 @@ export function buildNameMap(document) {
 
 export function summarizeEntry(entry) {
   return entry.value
-    .replace(/\$[A-Za-z0-9]+[^|$]*\|?/g, "")
+    .replace(/\$(?:k|p)/g, " ")
+    .replace(/\$(?:Sbv|Sbp|Sls|Slp)[^|$]*\|[^|$]*\|/g, "")
+    .replace(/\$(?:VNMPID|Sbs|Sve|Svj|Svp|Sre|Ssp|Fw|Ws|VF|Fo|Fi|E|b|w|l)[^|$]*\|/g, "")
+    .replace(/\$Wm[^|$]*\|./g, "")
+    .replace(/\$(?:G|c)[^|$]*\|/g, "")
+    .replace(/\$(?:Wa|Wc|Nu|N0|N1|t0|t1|Wv|Wd|a)/g, "")
     .replace(/\\n/g, " ")
+    .replace(/\s+/g, " ")
     .trim();
 }
 

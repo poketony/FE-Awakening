@@ -2,9 +2,13 @@ import assert from "node:assert/strict";
 import {
   decodeMessageFile,
   encodeMessageFile,
+  formatEntryForEditing,
+  isReviewProgressEntry,
   parseMessageDocument,
   replaceEntryValue,
   splitConversationFrames,
+  summarizeEntry,
+  unformatEntryFromEditing,
 } from "./format.js";
 import { AwakeningRenderer, createState } from "./renderer.js";
 
@@ -13,6 +17,19 @@ const document = parseMessageDocument(original, { fileName: "test.txt", hasBom: 
 assert.equal(document.archive, "MESS_ARCHIVE_TEST");
 assert.equal(document.byKey.get("MID_A").value, "$t1$Wmクロム|3$Wsクロム|$Wa첫째\\n둘째$k$p셋째$k");
 assert.deepEqual(splitConversationFrames(document.byKey.get("MID_A").value), ["$t1$Wmクロム|3$Wsクロム|$Wa첫째\\n둘째", "셋째$k"]);
+
+const displayValue = formatEntryForEditing("첫째$k\\n$Ws리사|$Wa둘째$k$p셋째$k");
+assert.equal(displayValue, "첫째$k\n\\n$Ws리사|$Wa둘째$k\n$p셋째$k");
+assert.equal(unformatEntryFromEditing(displayValue), "첫째$k\\n$Ws리사|$Wa둘째$k$p셋째$k");
+assert.equal(isReviewProgressEntry("MID_001_PCM1"), true);
+assert.equal(isReviewProgressEntry("MID_001_PCM2"), false);
+assert.equal(isReviewProgressEntry("MID_001_PCM3"), false);
+assert.equal(isReviewProgressEntry("MID_001_PCF2"), false);
+assert.equal(isReviewProgressEntry("MID_001_PCF3"), false);
+assert.equal(
+  summarizeEntry({ value: "$t1$Wsアズール|$Wa첫째 대사\\n둘째 줄$k\\n$Wsウード|$Wa두 번째 대사$k$p다음 화면$k" }),
+  "첫째 대사 둘째 줄 두 번째 대사 다음 화면",
+);
 
 const changed = replaceEntryValue(document, "MID_A", "$t1수정$k");
 assert.equal(changed.text, original.replace("$t1$Wmクロム|3$Wsクロム|$Wa첫째\\n둘째$k$p셋째$k", "$t1수정$k"));

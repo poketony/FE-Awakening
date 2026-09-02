@@ -133,6 +133,19 @@ kbd { margin-left: 5px; color: var(--muted); font-size: 10px; }
 .files.collapsed .panel-head::after { content: "FILES"; }
 .messages.collapsed .panel-head::after { content: "MESSAGES"; }
 
+.review-progress { margin: 0 10px 10px; padding: 10px; border: 1px solid #3a3e47; border-radius: 8px; background: linear-gradient(145deg, #15181e, #1d2027); }
+.progress-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.progress-heading strong { color: var(--accent-2); font-size: 17px; }
+.progress-heading span { color: var(--muted); font-size: 9px; }
+.progress-track { height: 7px; margin-top: 7px; overflow: hidden; border-radius: 999px; background: #0e1014; box-shadow: inset 0 1px 2px rgb(0 0 0 / 55%); }
+.progress-track span { display: block; width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #9c6c2e, #f0bd61); box-shadow: 0 0 10px rgb(221 157 67 / 50%); transition: width .35s ease; }
+.progress-detail { margin-top: 7px; color: #c3c6cd; font-size: 9px; }
+.progress-cheer { margin-top: 3px; color: #858a95; font-size: 9px; }
+.review-progress.complete { border-color: #3f8455; background: linear-gradient(145deg, #14251b, #193022); box-shadow: 0 0 16px rgb(75 170 103 / 18%); animation: completion-glow 1.8s ease-in-out infinite alternate; }
+.review-progress.complete .progress-heading strong, .review-progress.complete .progress-cheer { color: #9ce2af; }
+.review-progress.complete .progress-track span { background: linear-gradient(90deg, #3e9658, #8ee2a8); box-shadow: 0 0 12px rgb(92 206 125 / 60%); }
+@keyframes completion-glow { from { box-shadow: 0 0 8px rgb(75 170 103 / 12%); } to { box-shadow: 0 0 20px rgb(75 170 103 / 30%); } }
+
 .search { margin: 0 10px 9px; height: 34px; padding: 0 10px; border: 1px solid var(--line); border-radius: 7px; background: #13151a; display: flex; align-items: center; gap: 7px; color: var(--muted); }
 .search input { width: 100%; border: 0; outline: 0; background: transparent; color: var(--text); font-size: 12px; }
 .review-filter { margin: 0 10px 8px; display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 10px; }
@@ -153,8 +166,13 @@ kbd { margin-left: 5px; color: var(--muted); font-size: 10px; }
 .review-needs_fix .review-badge { background: #482623; color: #f2a09a; }
 .review-deferred .review-badge { background: #3b3423; color: #e3c57a; }
 .review-unreviewed .review-badge { color: #858a95; }
+.review-excluded .review-badge { background: #252830; color: #6f7480; font-weight: 500; }
 .file-review-summary { flex: 0 0 auto; color: var(--muted); font-size: 9px; white-space: nowrap; }
 .file-review-summary.has-fix { color: #f2a09a; }
+.list-item.file-reviewed { background: rgb(46 107 64 / 22%); box-shadow: inset 3px 0 #55b873; }
+.list-item.file-reviewed:hover { background: rgb(46 107 64 / 32%); }
+.list-item.file-reviewed.active { background: rgb(54 119 73 / 40%); color: #baf0c8; }
+.list-item.file-reviewed .file-review-summary { color: #8ed6a2; font-weight: 700; }
 .shortcut-strip { flex: 0 0 auto; padding: 7px 10px 8px; border-top: 1px solid var(--line); color: #7f8490; font-size: 9px; line-height: 1.65; }
 .shortcut-strip span { display: block; white-space: nowrap; }
 .shortcut-strip kbd { margin: 0; color: #b9bdc7; font-size: 9px; }
@@ -180,6 +198,8 @@ kbd { margin-left: 5px; color: var(--muted); font-size: 10px; }
   padding: 0 9px;
   font-size: 12px;
 }
+.edit-focus-toggle { height: 32px; padding: 0 9px; border-color: #574a39; color: #e9c17e; white-space: nowrap; font-size: 10px; }
+.edit-focus-toggle[aria-pressed="true"] { border-color: #b17b35; background: #513c20; color: #ffe2a9; }
 .myunit-controls input { width: 132px; }
 .myunit-controls select { width: 72px; }
 .myunit-controls .review-status-control select { width: 94px; }
@@ -227,7 +247,12 @@ canvas { width: min(100%, 400px); height: auto; aspect-ratio: 5 / 3; image-rende
 
 .text-grid { min-height: 210px; flex: 1 0 210px; }
 .text-card { display: flex; flex-direction: column; min-width: 0; }
+.script-guide { min-height: 30px; padding: 5px 12px; border-bottom: 1px solid #292d35; background: #15171c; display: flex; align-items: center; gap: 12px; color: #989da7; font-size: 9px; white-space: nowrap; }
+.script-guide code { color: #f0bd61; font: 700 10px Consolas, monospace; }
+.script-guide .display-only-note { margin-left: auto; color: #79a7cc; }
 textarea { width: 100%; min-height: 160px; flex: 1; resize: none; border: 0; outline: 0; padding: 13px; background: #111318; color: #f3eadb; font: 13px/1.6 "D2Coding", Consolas, monospace; tab-size: 2; }
+#sourceEditor { padding: 15px 17px; background-color: #101217; background-image: repeating-linear-gradient(to bottom, transparent 0, transparent calc(1.75em - 1px), rgb(255 255 255 / 2.5%) calc(1.75em - 1px), rgb(255 255 255 / 2.5%) 1.75em); color: #fff3df; font-size: 14px; line-height: 1.75; letter-spacing: .01em; caret-color: #ffd077; }
+#sourceEditor::selection { background: #6c4d25; color: #fff7e8; }
 textarea:disabled { color: #777b84; }
 .reference textarea { background: #10151b; color: #cad9e6; }
 
@@ -239,6 +264,22 @@ textarea:disabled { color: #777b84; }
 .statusbar { height: 28px; padding: 0 13px; border-top: 1px solid var(--line); background: #15171b; color: var(--muted); display: flex; align-items: center; justify-content: space-between; font-size: 10px; }
 .toast { position: fixed; right: 18px; bottom: 44px; z-index: 20; max-width: 420px; padding: 10px 14px; border: 1px solid #805f31; border-radius: 8px; background: #2e251a; color: #ffe0a6; box-shadow: var(--shadow); font-size: 12px; opacity: 0; transform: translateY(8px); pointer-events: none; transition: .18s ease; }
 .toast.show { opacity: 1; transform: translateY(0); }
+
+body.edit-focus { min-width: 720px; }
+body.edit-focus .topbar, body.edit-focus .statusbar,
+body.edit-focus .files, body.edit-focus .messages,
+body.edit-focus .preview-grid, body.edit-focus .conversation-nav,
+body.edit-focus .diagnostics, body.edit-focus .text-card.reference { display: none; }
+body.edit-focus .workspace,
+body.edit-focus .workspace.files-collapsed,
+body.edit-focus .workspace.messages-collapsed,
+body.edit-focus .workspace.files-collapsed.messages-collapsed { height: 100vh; grid-template-columns: minmax(0, 1fr); }
+body.edit-focus .editor-area { overflow: hidden; padding: 10px; }
+body.edit-focus .editor-head { min-height: 48px; }
+body.edit-focus .text-grid { min-height: 0; flex: 1 1 auto; grid-template-columns: minmax(0, 1fr); }
+body.edit-focus .text-card { min-height: 0; }
+body.edit-focus #sourceEditor { min-height: 0; padding: 20px 24px; font-size: 16px; line-height: 1.85; }
+body.edit-focus .script-guide { min-height: 34px; padding-inline: 18px; font-size: 10px; }
 
 @media (max-height: 790px) {
   .canvas-wrap { min-height: 220px; padding: 10px; }

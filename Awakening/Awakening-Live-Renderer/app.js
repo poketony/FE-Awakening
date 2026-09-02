@@ -2,21 +2,26 @@ import {
   buildNameMap,
   decodeMessageFile,
   encodeMessageFile,
+  formatEntryForEditing,
+  isReviewProgressEntry,
   normalizePath,
   parseMessageDocument,
   replaceEntryValue,
   summarizeEntry,
+  unformatEntryFromEditing,
 } from "./format.js";
 import { AwakeningRenderer } from "./renderer.js";
 
 const $ = (selector) => document.querySelector(selector);
 const elements = {
   workspace: $(".workspace"), filesPanel: $(".files"), messagesPanel: $(".messages"),
-  toggleFiles: $("#toggleFiles"), toggleMessages: $("#toggleMessages"),
+  toggleFiles: $("#toggleFiles"), toggleMessages: $("#toggleMessages"), toggleEditFocus: $("#toggleEditFocus"),
   profileMain: $("#profileMain"), profileDlc: $("#profileDlc"), profileLabel: $("#profileLabel"),
   pickKoDir: $("#pickKoDir"), pickJaDir: $("#pickJaDir"), pickKoFile: $("#pickKoFile"), pickJaFile: $("#pickJaFile"), saveFile: $("#saveFile"),
   fileSearch: $("#fileSearch"), entrySearch: $("#entrySearch"), reviewFilter: $("#reviewFilter"), fileList: $("#fileList"), entryList: $("#entryList"),
   koDirName: $("#koDirName"), jaDirName: $("#jaDirName"), jaDirDot: $("#jaDirDot"), fileCount: $("#fileCount"), entryCount: $("#entryCount"),
+  reviewProgress: $("#reviewProgress"), progressPercent: $("#progressPercent"), progressFill: $("#progressFill"),
+  progressDetail: $("#progressDetail"), progressFiles: $("#progressFiles"), progressCheer: $("#progressCheer"),
   currentFileName: $("#currentFileName"), entryKey: $("#entryKey"), dirtyMark: $("#dirtyMark"),
   playerName: $("#playerName"), playerGender: $("#playerGender"), reviewStatus: $("#reviewStatus"),
   sourceEditor: $("#sourceEditor"), jaEditor: $("#jaEditor"), charCount: $("#charCount"), jaEntryKey: $("#jaEntryKey"),
@@ -55,6 +60,8 @@ const state = {
   },
   reviewStatuses: { main: loadReviewStatuses("main"), dlc: loadReviewStatuses("dlc") },
   reviewFilter: savedReviewFilter && (savedReviewFilter === "all" || REVIEW_STATUSES[savedReviewFilter]) ? savedReviewFilter : "all",
+  reviewInventory: new Map(), reviewInventoryRevision: 0, reviewInventoryReady: false,
+  editFocus: localStorage.getItem("fe13-live:editFocus") === "true",
   playerName: localStorage.getItem("fe13-live:playerName") || "Robin",
   playerGender: localStorage.getItem("fe13-live:playerGender") === "male" ? "male" : "female",
 };
@@ -162,7 +169,9 @@ function setEntryReviewStatus(status, nextKey = "") {
   elements.reviewStatus.value = status;
   renderFileList();
   renderEntryList();
-  toast(`${state.selectedKey} · ${REVIEW_STATUSES[status].label}`);
+  updateReviewProgress();
+  const progressNote = isReviewProgressEntry(state.selectedKey) ? "" : " · 진행도 제외 항목";
+  toast(`${state.selectedKey} · ${REVIEW_STATUSES[status].label}${progressNote}`);
   if (nextKey) {
     selectEntry(nextKey, true);
   } else {
@@ -172,11 +181,113 @@ function setEntryReviewStatus(status, nextKey = "") {
 
 function fileReviewSummary(relativePath) {
   const prefix = `${normalizePath(relativePath)}\u0000`;
-  const counts = { approved: 0, needs_fix: 0, deferred: 0 };
+  const eligibleKeys = state.reviewInventory.get(normalizePath(relativePath));
+  const counts = { approved: 0, needs_fix: 0, deferred: 0, total: eligibleKeys?.length ?? null, complete: false };
+  if (eligibleKeys) {
+    for (const entryKey of eligibleKeys) {
+      const status = reviewStatusMap().get(`${prefix}${entryKey}`) ?? "unreviewed";
+      if (counts[status] !== undefined) counts[status] += 1;
+    }
+    counts.complete = counts.total > 0 && counts.approved === counts.total;
+    return counts;
+  }
   for (const [itemId, status] of reviewStatusMap()) {
     if (itemId.startsWith(prefix) && counts[status] !== undefined) counts[status] += 1;
   }
   return counts;
+}
+
+function updateReviewProgress() {
+  if (!state.koFiles.length) {
+    elements.progressPercent.textContent = "0%";
+    elements.progressFill.style.width = "0%";
+    elements.progressDetail.textContent = "번역 폴더를 열면 계산합니다.";
+    elements.progressFiles.textContent = "0 / 0 파일";
+    elements.progressCheer.textContent = "검수 여정을 시작해 보세요.";
+    elements.reviewProgress.classList.remove("complete");
+    return;
+  }
+  if (!state.reviewInventoryReady) {
+    elements.progressPercent.textContent = "…";
+    elements.progressFill.style.width = "0%";
+    elements.progressDetail.textContent = "전체 검수 대상을 계산하는 중…";
+    elements.progressFiles.textContent = `${state.koFiles.length}개 파일`;
+    elements.progressCheer.textContent = "파일은 바로 편집할 수 있습니다.";
+    elements.reviewProgress.classList.remove("complete");
+    return;
+  }
+  let totalEntries = 0;
+  let approvedEntries = 0;
+  let totalFiles = 0;
+  let approvedFiles = 0;
+  for (const [relativePath, eligibleKeys] of state.reviewInventory) {
+    if (!eligibleKeys.length) continue;
+    totalFiles += 1;
+    totalEntries += eligibleKeys.length;
+    const approved = eligibleKeys.reduce(
+      (count, entryKey) => count + (getReviewStatus(relativePath, entryKey) === "approved" ? 1 : 0),
+      0,
+    );
+    approvedEntries += approved;
+    if (approved === eligibleKeys.length) approvedFiles += 1;
+  }
+  const percentage = totalEntries ? Math.round((approvedEntries / totalEntries) * 100) : 0;
+  const complete = totalEntries > 0 && approvedEntries === totalEntries;
+  elements.progressPercent.textContent = `${percentage}%`;
+  elements.progressFill.style.width = `${percentage}%`;
+  elements.progressDetail.textContent = `${approvedEntries.toLocaleString()} / ${totalEntries.toLocaleString()}개 대사 확인 완료`;
+  elements.progressFiles.textContent = `${approvedFiles} / ${totalFiles} 파일`;
+  elements.progressCheer.textContent = complete ? `${currentProfile().label} 검수 완료! 훌륭합니다.`
+    : percentage >= 75 ? "완주가 눈앞입니다. 마지막까지!"
+      : percentage >= 50 ? "절반을 넘었습니다. 좋은 흐름입니다."
+        : percentage >= 25 ? "검수 리듬이 제대로 붙었습니다."
+          : approvedEntries ? "차근차근 진행 중입니다." : "첫 항목부터 가볍게 시작해 보세요.";
+  elements.reviewProgress.classList.toggle("complete", complete);
+}
+
+async function buildReviewInventory(files) {
+  const revision = ++state.reviewInventoryRevision;
+  const profile = state.profile;
+  state.reviewInventory = new Map();
+  state.reviewInventoryReady = false;
+  updateReviewProgress();
+  const inventory = await Promise.all(files.map(async (descriptor) => {
+    try {
+      const document = await readDocument(descriptor);
+      const eligibleKeys = [...new Set(document.entries.map((entry) => entry.key).filter(isReviewProgressEntry))];
+      return [normalizePath(descriptor.relativePath), eligibleKeys];
+    } catch {
+      return [normalizePath(descriptor.relativePath), []];
+    }
+  }));
+  if (revision !== state.reviewInventoryRevision || profile !== state.profile) return;
+  state.reviewInventory = new Map(inventory);
+  state.reviewInventoryReady = true;
+  updateReviewProgress();
+  renderFileList();
+}
+
+function updateEditFocusUi() {
+  document.body.classList.toggle("edit-focus", state.editFocus);
+  elements.toggleEditFocus.setAttribute("aria-pressed", String(state.editFocus));
+  elements.toggleEditFocus.innerHTML = `${state.editFocus ? "일반 화면" : "수정 편의"} <kbd>F8</kbd>`;
+}
+
+function toggleEditFocus() {
+  const shouldRestoreEditor = !elements.sourceEditor.disabled;
+  const selectionStart = elements.sourceEditor.selectionStart;
+  const selectionEnd = elements.sourceEditor.selectionEnd;
+  const editorScrollTop = elements.sourceEditor.scrollTop;
+  state.editFocus = !state.editFocus;
+  localStorage.setItem("fe13-live:editFocus", String(state.editFocus));
+  updateEditFocusUi();
+  if (shouldRestoreEditor) {
+    requestAnimationFrame(() => {
+      elements.sourceEditor.focus({ preventScroll: true });
+      elements.sourceEditor.setSelectionRange(selectionStart, selectionEnd);
+      elements.sourceEditor.scrollTop = editorScrollTop;
+    });
+  }
 }
 
 function lastKoreanFileKey(handle) {
@@ -261,6 +372,7 @@ async function loadDirectory(kind, handle) {
     if (kind === "ko") {
       state.koFiles = files;
       state.koFileMap = new Map(files.map((file) => [normalizePath(file.relativePath), file]));
+      void buildReviewInventory(files);
       elements.koDirName.textContent = handle.name;
       elements.pickKoDir.textContent = "번역 폴더 변경";
       elements.fileCount.textContent = String(files.length);
@@ -311,6 +423,9 @@ function resetProfileWorkspace() {
   state.jaFileMap = new Map();
   state.jaNameMap = new Map();
   state.jaArchiveMap = new Map();
+  state.reviewInventoryRevision += 1;
+  state.reviewInventory = new Map();
+  state.reviewInventoryReady = false;
   state.currentDocument = null;
   state.japaneseDocument = null;
   state.originalText = "";
@@ -330,6 +445,7 @@ function resetProfileWorkspace() {
   elements.koRenderState.textContent = "준비 완료";
   elements.diagnosticCount.textContent = "0";
   elements.diagnosticList.textContent = "누락 에셋이나 알 수 없는 제어코드가 없습니다.";
+  updateReviewProgress();
   renderFileList();
   renderEntryList();
   clearSelection();
@@ -412,6 +528,7 @@ async function chooseSingleFile(kind) {
     const descriptor = { name: handle.name, relativePath: handle.name, handle };
     if (kind === "ko") {
       state.koFiles = [descriptor];
+      void buildReviewInventory([descriptor]);
       elements.koDirName.textContent = "단일 파일";
       elements.fileCount.textContent = "1";
       renderFileList();
@@ -527,12 +644,15 @@ function renderFileList() {
     const button = document.createElement("button");
     const reviewSummary = fileReviewSummary(file.relativePath);
     button.className = `list-item${state.currentDocument?.relativePath === file.relativePath ? " active" : ""}`;
+    button.classList.toggle("file-reviewed", reviewSummary.complete);
     button.innerHTML = `<span class="title-row"><span class="title"></span><span class="file-review-summary"></span></span><span class="sub"></span>`;
     button.querySelector(".title").textContent = file.name;
     button.querySelector(".sub").textContent = file.relativePath;
     const summary = button.querySelector(".file-review-summary");
     const labels = [];
-    if (reviewSummary.approved) labels.push(`✓ ${reviewSummary.approved}`);
+    if (reviewSummary.complete) labels.push("✓ 검수 완료");
+    else if (reviewSummary.total !== null) labels.push(reviewSummary.total ? `${reviewSummary.approved}/${reviewSummary.total}` : "진행도 제외");
+    else if (reviewSummary.approved) labels.push(`✓ ${reviewSummary.approved}`);
     if (reviewSummary.needs_fix) labels.push(`! ${reviewSummary.needs_fix}`);
     if (reviewSummary.deferred) labels.push(`… ${reviewSummary.deferred}`);
     summary.textContent = labels.join(" · ");
@@ -549,7 +669,10 @@ function filteredEntries() {
   const filter = elements.reviewFilter.value;
   return displayEntries().filter((entry) => {
     const matchesQuery = `${entry.key}\n${entry.value}`.toLocaleLowerCase().includes(query);
-    return matchesQuery && (filter === "all" || currentEntryReviewStatus(entry.key) === filter);
+    const matchesReview = filter === "all"
+      || (filter === "unreviewed" && isReviewProgressEntry(entry.key) && currentEntryReviewStatus(entry.key) === filter)
+      || (filter !== "unreviewed" && currentEntryReviewStatus(entry.key) === filter);
+    return matchesQuery && matchesReview;
   });
 }
 
@@ -567,10 +690,11 @@ function renderEntryList() {
   for (const entry of entries) {
     const button = document.createElement("button");
     const reviewStatus = currentEntryReviewStatus(entry.key);
-    button.className = `list-item review-${reviewStatus}${state.selectedKey === entry.key ? " active" : ""}`;
+    const progressEligible = isReviewProgressEntry(entry.key);
+    button.className = `list-item review-${progressEligible ? reviewStatus : "excluded"}${state.selectedKey === entry.key ? " active" : ""}`;
     button.innerHTML = `<span class="title-row"><span class="title"></span><span class="review-badge"></span></span><span class="sub"></span>`;
     button.querySelector(".title").textContent = entry.key;
-    button.querySelector(".review-badge").textContent = REVIEW_STATUSES[reviewStatus].badge;
+    button.querySelector(".review-badge").textContent = progressEligible ? REVIEW_STATUSES[reviewStatus].badge : "진행도 제외";
     button.querySelector(".sub").textContent = summarizeEntry(entry) || "(빈 값)";
     button.addEventListener("click", () => selectEntry(entry.key, true));
     fragment.append(button);
@@ -600,7 +724,7 @@ function selectEntry(key, focusEditor = false) {
   state.frameIndex = 0;
   elements.entryKey.textContent = key;
   elements.sourceEditor.disabled = false;
-  elements.sourceEditor.value = entry.value;
+  elements.sourceEditor.value = formatEntryForEditing(entry.value);
   elements.reviewStatus.disabled = false;
   elements.reviewStatus.value = currentEntryReviewStatus(key);
   elements.charCount.textContent = `${entry.value.length.toLocaleString()}자`;
@@ -612,7 +736,7 @@ function selectEntry(key, focusEditor = false) {
 
 function updateJapaneseEntry() {
   const entry = state.japaneseDocument?.byKey.get(state.selectedKey);
-  elements.jaEditor.value = entry?.value ?? "";
+  elements.jaEditor.value = entry ? formatEntryForEditing(entry.value) : "";
   elements.jaEntryKey.textContent = entry ? entry.key : "대응 항목 없음";
   if (state.japaneseDocument && !entry) elements.jaMatchState.textContent = `${state.japaneseDocument.fileName} · 키 없음`;
 }
@@ -620,8 +744,9 @@ function updateJapaneseEntry() {
 function onEditorInput() {
   if (!state.currentDocument || !state.selectedKey) return;
   try {
-    state.currentDocument = replaceEntryValue(state.currentDocument, state.selectedKey, elements.sourceEditor.value);
-    elements.charCount.textContent = `${elements.sourceEditor.value.length.toLocaleString()}자`;
+    const rawValue = unformatEntryFromEditing(elements.sourceEditor.value);
+    state.currentDocument = replaceEntryValue(state.currentDocument, state.selectedKey, rawValue);
+    elements.charCount.textContent = `${rawValue.length.toLocaleString()}자`;
     setDirty(state.currentDocument.text !== state.originalText);
     scheduleRender();
   } catch (error) {
@@ -735,7 +860,14 @@ function moveFrame(direction) {
 
 function approveAndAdvance() {
   if (!state.currentDocument || !state.selectedKey) return;
-  const nextKey = adjacentEntryKey(1);
+  const entries = filteredEntries();
+  const index = entries.findIndex((entry) => entry.key === state.selectedKey);
+  const nextKey = entries.slice(Math.max(index + 1, 0)).find((entry) => isReviewProgressEntry(entry.key))?.key ?? "";
+  if (!isReviewProgressEntry(state.selectedKey)) {
+    if (nextKey) selectEntry(nextKey, true);
+    else toast("진행도 제외 항목입니다.");
+    return;
+  }
   setEntryReviewStatus("approved", nextKey);
 }
 
@@ -743,6 +875,7 @@ elements.profileMain.addEventListener("click", () => switchProfile("main"));
 elements.profileDlc.addEventListener("click", () => switchProfile("dlc"));
 elements.toggleFiles.addEventListener("click", () => toggleSidebar("files"));
 elements.toggleMessages.addEventListener("click", () => toggleSidebar("messages"));
+elements.toggleEditFocus.addEventListener("click", toggleEditFocus);
 elements.pickKoDir.addEventListener("click", () => chooseDirectory("ko"));
 elements.pickJaDir.addEventListener("click", () => chooseDirectory("ja"));
 elements.pickKoFile.addEventListener("click", () => chooseSingleFile("ko"));
@@ -770,6 +903,11 @@ elements.playerGender.addEventListener("change", () => {
 elements.prevFrame.addEventListener("click", () => { state.frameIndex -= 1; scheduleRender(); });
 elements.nextFrame.addEventListener("click", () => { state.frameIndex += 1; scheduleRender(); });
 window.addEventListener("keydown", (event) => {
+  if (!event.ctrlKey && !event.metaKey && !event.altKey && !event.shiftKey && event.key === "F8") {
+    event.preventDefault();
+    toggleEditFocus();
+    return;
+  }
   if ((event.ctrlKey || event.metaKey) && event.key.toLocaleLowerCase() === "s") {
     event.preventDefault();
     saveCurrentFile();
@@ -783,6 +921,11 @@ window.addEventListener("keydown", (event) => {
   if (event.ctrlKey && !event.metaKey && !event.altKey && !event.shiftKey && (event.key === "ArrowLeft" || event.key === "ArrowRight")) {
     event.preventDefault();
     moveFrame(event.key === "ArrowLeft" ? -1 : 1);
+    return;
+  }
+  if (!event.ctrlKey && !event.metaKey && !event.altKey && !event.shiftKey && event.key === "F3") {
+    event.preventDefault();
+    approveAndAdvance();
     return;
   }
   if (!event.ctrlKey && !event.metaKey && !event.altKey && event.key === "F2") {
@@ -808,6 +951,7 @@ window.addEventListener("beforeunload", (event) => {
 });
 
 updateSidebarLayout();
+updateEditFocusUi();
 updateProfileUi();
 resetProfileWorkspace();
 

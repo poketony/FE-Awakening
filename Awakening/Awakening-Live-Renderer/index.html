@@ -38,6 +38,12 @@
         <span id="fileCount" class="count">0</span>
         <button id="toggleFiles" class="sidebar-toggle" type="button" title="FILES 닫기" aria-label="FILES 닫기" aria-expanded="true">‹</button>
       </div>
+      <div id="reviewProgress" class="review-progress" aria-label="전체 검수 진행도">
+        <div class="progress-heading"><strong id="progressPercent">0%</strong><span id="progressFiles">0 / 0 파일</span></div>
+        <div class="progress-track" aria-hidden="true"><span id="progressFill"></span></div>
+        <div id="progressDetail" class="progress-detail">번역 폴더를 열면 계산합니다.</div>
+        <div id="progressCheer" class="progress-cheer">검수 여정을 시작해 보세요.</div>
+      </div>
       <label class="search"><span>⌕</span><input id="fileSearch" placeholder="파일명 검색"></label>
       <div id="fileList" class="list empty-state">번역 폴더나 파일을 여세요.</div>
       <div class="dir-status"><span id="jaDirDot" class="dot"></span><span id="jaDirName">일본어 폴더 미지정</span></div>
@@ -66,7 +72,8 @@
       <div id="entryList" class="list empty-state">파일을 선택하면 항목이 표시됩니다.</div>
       <div class="shortcut-strip">
         <span><kbd>Alt+↑↓</kbd> 항목 · <kbd>Alt+←→</kbd> 파일</span>
-        <span><kbd>Ctrl+Enter</kbd> 완료+다음 · <kbd>F2</kbd> 수정 필요 · <kbd>Ctrl+←→</kbd> 회화</span>
+        <span><kbd>F3</kbd> 완료+다음 · <kbd>F2</kbd> 수정 필요 · <kbd>Ctrl+←→</kbd> 회화</span>
+        <span><kbd>F8</kbd> 수정 편의 모드</span>
       </div>
     </aside>
 
@@ -80,6 +87,7 @@
           </div>
         </div>
         <div class="myunit-controls">
+          <button id="toggleEditFocus" class="edit-focus-toggle" type="button" title="수정 편의 모드 전환 (F8)" aria-pressed="false">수정 편의 <kbd>F8</kbd></button>
           <label class="review-status-control">검수
             <select id="reviewStatus" disabled>
               <option value="unreviewed">미검수</option>
@@ -118,6 +126,12 @@
       <div class="text-grid">
         <article class="text-card panel">
           <div class="card-head"><h3>번역 텍스트</h3><span id="charCount">0자</span></div>
+          <div class="script-guide">
+            <span><code>$k</code> 대사 끝</span>
+            <span><code>$p</code> 다음 화면</span>
+            <span><code>\n</code> 게임 내 줄바꿈</span>
+            <span class="display-only-note">대사별 표시 개행은 저장되지 않음</span>
+          </div>
           <textarea id="sourceEditor" spellcheck="false" disabled placeholder="메시지 항목의 콜론 오른쪽 값만 편집합니다."></textarea>
         </article>
         <article class="text-card panel reference">
