@@ -617,3 +617,53 @@ Awakening/Messages (K)/X021.txt
 Awakening/Messages (K)/ヴェイク_ベルベット.txt
 Awakening/Messages (K)/プレイヤー男_リベラ.txt
 Awakening/DLC Message (K)/1. 영령의 마법 부적1.txt
+Awakening/DLC Message (K)/10. 홍 대 청 봉인 편.txt
+Awakening/DLC Message (K)/12. 홍 대 청 결전 편.txt
+Awakening/DLC Message (K)/13. 빛 대 어둠 빛 편.txt
+Awakening/DLC Message (K)/14. 빛 대 어둠 어둠 편.txt
+Awakening/DLC Message (K)/15. 빛 대 어둠 결전 편.txt
+Awakening/DLC Message (K)/17. 다섯 명의 안나.txt
+Awakening/DLC Message (K)/18. 생사의 기로에서.txt
+Awakening/DLC Message (K)/2. 영령의 마법 부적2.txt
+Awakening/DLC Message (K)/22. 인연의 여름.txt
+Awakening/DLC Message (K)/24. 인연의 수확제.txt
+Awakening/DLC Message (K)/27. 절망적인 미래3.txt
+Awakening/DLC Message (K)/3. 영령의 마법 부적3.txt
+Awakening/DLC Message (K)/4. 금과 은.txt
+Awakening/DLC Message (K)/6. 무한의 신기.txt
+Awakening/DLC Message (K)/7. 왕 대 왕 문장 편.txt
+Awakening/Messages (K)/000.txt
+Awakening/Messages (K)/001.txt
+Awakening/Messages (K)/002.txt
+Awakening/Messages (K)/006.txt
+Awakening/Messages (K)/007.txt
+Awakening/Messages (K)/008.txt
+Awakening/Messages (K)/010.txt
+Awakening/Messages (K)/011.txt
+Awakening/Messages (K)/012.txt
+Awakening/Messages (K)/015.txt
+Awakening/Messages (K)/017.txt
+Awakening/Messages (K)/019.txt
+Awakening/Messages (K)/020.txt
+Awakening/Messages (K)/022.txt
+Awakening/Messages (K)/023.txt
+Awakening/Messages (K)/025.txt
+Awakening/Messages (K)/026.txt
+Awakening/Messages (K)/Backup.txt
+Awakening/Messages (K)/GMAP.txt
+Awakening/Messages (K)/GameData.txt
+Awakening/Messages (K)/Menu.txt
+Awakening/Messages (K)/P001.txt
+Awakening/Messages (K)/System.txt
+Awakening/Messages (K)/T002.txt
+Awakening/Messages (K)/X001.txt
+Awakening/Messages (K)/X002.txt
+Awakening/Messages (K)/X003.txt
+Awakening/Messages (K)/X004.txt
+Awakening/Messages (K)/X005.txt
+Awakening/Messages (K)/X007.txt
+Awakening/Messages (K)/X008.txt
+Awakening/Messages (K)/X009.txt
+Awakening/Messages (K)/X012.txt
+Awakening/Messages (K)/X013.txt
+Awakening/Messages (K)/X015.txt
