@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text>
+  <!-- Max Length Name: do not touch -->
+  <translation name="Max_Length_Name">%%%%%%</translation>
+  <!-- My Unit -->
+  <translation name="Default_My_Unit_Name">Robin</translation>
+  <!-- Emotions -->
+  <emotion name="Emotion_Arara" japanese="あらら">Arara</emotion>
+  <emotion name="Emotion_Bashful" japanese="照れ">Bashful</emotion>
+  <emotion name="Emotion_Eyes_Shut" japanese="目閉じ">Eyes Shut</emotion>
+  <emotion name="Emotion_Fainted" japanese="気絶">Fainted</emotion>
+  <emotion name="Emotion_Grimleal" japanese="ギムレー">Grimleal</emotion>
+  <!-- This should be the prefix for all of the "Mirror" emotions -->
+  <translation name="Emotion_Mirror">Mirror</translation>
+  <emotion name="Emotion_Mirror_Angry" japanese="反怒">Mirror Angry</emotion>
+  <emotion name="Emotion_Mirror_Pain" japanese="反苦">Mirror Pain</emotion>
+  <emotion name="Emotion_Mirror_Posed" japanese="反キメ">Mirror Posed</emotion>
+  <emotion name="Emotion_Mirror_Sad" japanese="反悲しみ">Mirror Sad</emotion>
+  <emotion name="Emotion_Mirror_Smiling" japanese="反笑">Mirror Smiling</emotion>
+  <emotion name="Emotion_Mirror_Standard" japanese="反通常">Mirror Standard</emotion>
+  <emotion name="Emotion_Risen" japanese="屍">Risen</emotion>
+  <emotion name="Emotion_Sad" japanese="悲しみ">Sad</emotion>
+  <emotion name="Emotion_Satisfied" japanese="どや">Satisfied</emotion>
+  <emotion name="Emotion_Scheming" japanese="企み">Scheming</emotion>
+  <emotion name="Emotion_Screaming" japanese="キーッ">Screaming</emotion>
+  <emotion name="Emotion_Shocked" japanese="衝撃">Shocked</emotion>
+  <emotion name="Emotion_Shy" japanese="恥じらい">Shy</emotion>
+  <emotion name="Emotion_Smiling_Camera" japanese="笑カメラ目線">Smiling Camera</emotion>
+  <emotion name="Emotion_Standard_Camera" japanese="通常カメラ目線">Standard Camera</emotion>
+  <emotion name="Emotion_Sulky" japanese="拗ね">Sulky</emotion>
+  <emotion name="Emotion_Surprised" japanese="びっくり">Surprised</emotion>
+  <emotion name="Emotion_Troubled" japanese="困る">Troubled</emotion>
+  <emotion name="Emotion_Worried" japanese="心配">Worried</emotion>
+</text>

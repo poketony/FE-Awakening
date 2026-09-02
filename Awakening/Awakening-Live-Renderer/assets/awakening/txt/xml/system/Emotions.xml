@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emotions>
+  <!-- Emotions -->
+  <unique_emotion name="Emotion_Arara">
+    <character>アズール</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Bashful">
+    <character>ジェローム</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Eyes_Shut">
+    <character>チキ</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Fainted">
+    <character>オリヴィエ</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Risen">
+    <character>ペガサスナイト女</character>
+    <character>ダークペガサス女</character>
+    <character>バトルシスター女</character>
+    <character>ヴァルキュリア女</character>
+    <character>ファルコンナイト女</character>
+    <character>パラディン男</character>
+    <character>ソーサラー男</character>
+    <character>バーサーカー男</character>
+    <character>ジェネラル男</character>
+    <character>ダークナイト女</character>
+    <character>ダークマージ男</character>
+    <character>トリックスター男</character>
+    <character>アーマーナイト男</character>
+    <character>グレートナイト男</character>
+    <character>ボウナイト男</character>
+    <character>ドラゴンナイト男</character>
+    <character>ドラゴンマスター男</character>
+    <character>ダークナイト男</character>
+    <character>ソシアルナイト男</character>
+    <character>ウォーリアー男</character>
+    <character>勇者男</character>
+    <character>賢者男</character>
+    <character>蛮族男</character>
+    <character>アーチャー男</character>
+    <character>スナイパー男</character>
+    <character>傭兵男</character>
+    <character>戦士男</character>
+    <character>バトルモンク男</character>
+    <character>ソードマスター女</character>
+    <character>ソードマスター男</character>
+    <character>グリフォンナイト男</character>
+    <character>剣士男</character>
+    <character>盗賊男</character>
+    <character>アサシン男</character>
+    <character>僧侶男</character>
+    <character>魔道士男</character>
+    <character>山賊</character>
+    <character>山賊Ａ</character>
+    <character>001_ボス</character>
+    <character>002_ボス</character>
+    <character>013_ボス</character>
+    <character>024_ボス</character>
+    <character>X003_ボス</character>
+    <character>X012_ボス</character>
+    <character>X016_ボス</character>
+    <character>X017_ボス</character>
+    <character>X021_ボス</character>
+    <character>ならず者Ａ</character>
+    <character>兵士</character>
+    <character>兵士Ａ</character>
+    <character>兵士Ｂ</character>
+    <character>マミー男</character>
+    <character>赤軍兵士</character>
+    <character>ソルジャー男</character>
+    <character>ペレジア兵</character>
+    <character>ゾンビ男</character>
+    <character>ヴァルム兵</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Sad">
+    <character>リズ</character>
+    <character>クロム</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Satisfied">
+    <character>リズ</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Scheming">
+    <character>セレナ</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Screaming">
+    <character>マリアベル</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Shocked">
+    <character>ドニ</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Shy">
+    <character>オリヴィエ</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Smiling_Camera">
+    <character>サイリ</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Standard_Camera">
+    <character>オリヴィエ</character>
+   </unique_emotion>
+  <unique_emotion name="Emotion_Sulky">
+    <character>セレナ</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Surprised">
+    <character>リズ</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Troubled">
+    <character>リズ</character>
+  </unique_emotion>
+  <unique_emotion name="Emotion_Worried">
+    <character>リズ</character>
+  </unique_emotion>
+</emotions>

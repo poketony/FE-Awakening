@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FE 각성 메시지 실시간 검수기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="crest">FE</span>
+      <div>
+        <h1>각성 메시지 실시간 검수기</h1>
+        <p>원문 형식은 그대로, 화면은 입력 즉시</p>
+      </div>
+    </div>
+    <div class="toolbar">
+      <div class="profile-switch" role="group" aria-label="검수 경로 모드">
+        <button id="profileMain" class="active" type="button">본편</button>
+        <button id="profileDlc" type="button">DLC</button>
+      </div>
+      <button id="pickKoDir" class="primary">번역 폴더 열기</button>
+      <button id="pickJaDir">일본어 폴더 열기</button>
+      <button id="pickKoFile">파일 하나 열기</button>
+      <button id="pickJaFile">일본어 파일 지정</button>
+      <button id="saveFile" class="save" disabled>저장 <kbd>Ctrl+S</kbd></button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <aside class="files panel">
+      <div class="panel-head">
+        <div>
+          <span class="eyebrow">FILES</span>
+          <h2 id="koDirName">번역 파일</h2>
+        </div>
+        <span id="fileCount" class="count">0</span>
+        <button id="toggleFiles" class="sidebar-toggle" type="button" title="FILES 닫기" aria-label="FILES 닫기" aria-expanded="true">‹</button>
+      </div>
+      <label class="search"><span>⌕</span><input id="fileSearch" placeholder="파일명 검색"></label>
+      <div id="fileList" class="list empty-state">번역 폴더나 파일을 여세요.</div>
+      <div class="dir-status"><span id="jaDirDot" class="dot"></span><span id="jaDirName">일본어 폴더 미지정</span></div>
+    </aside>
+
+    <aside class="messages panel">
+      <div class="panel-head">
+        <div>
+          <span class="eyebrow">MESSAGES</span>
+          <h2 id="currentFileName">메시지 항목</h2>
+        </div>
+        <span id="entryCount" class="count">0</span>
+        <button id="toggleMessages" class="sidebar-toggle" type="button" title="MESSAGES 닫기" aria-label="MESSAGES 닫기" aria-expanded="true">‹</button>
+      </div>
+      <label class="search"><span>⌕</span><input id="entrySearch" placeholder="키 또는 내용 검색"></label>
+      <label class="review-filter">
+        <span>검수 상태</span>
+        <select id="reviewFilter">
+          <option value="all">전체</option>
+          <option value="unreviewed">미검수</option>
+          <option value="approved">확인 완료</option>
+          <option value="needs_fix">수정 필요</option>
+          <option value="deferred">보류</option>
+        </select>
+      </label>
+      <div id="entryList" class="list empty-state">파일을 선택하면 항목이 표시됩니다.</div>
+      <div class="shortcut-strip">
+        <span><kbd>Alt+↑↓</kbd> 항목 · <kbd>Alt+←→</kbd> 파일</span>
+        <span><kbd>Ctrl+Enter</kbd> 완료+다음 · <kbd>F2</kbd> 수정 필요 · <kbd>Ctrl+←→</kbd> 회화</span>
+      </div>
+    </aside>
+
+    <section class="editor-area">
+      <div class="editor-head panel">
+        <div class="entry-title">
+          <span id="dirtyMark" class="dirty" aria-hidden="true"></span>
+          <div>
+            <span class="eyebrow">SELECTED ENTRY</span>
+            <h2 id="entryKey">항목을 선택하세요</h2>
+          </div>
+        </div>
+        <div class="myunit-controls">
+          <label class="review-status-control">검수
+            <select id="reviewStatus" disabled>
+              <option value="unreviewed">미검수</option>
+              <option value="approved">확인 완료</option>
+              <option value="needs_fix">수정 필요</option>
+              <option value="deferred">보류</option>
+            </select>
+          </label>
+          <label>주인공 이름 <input id="playerName" type="text" maxlength="16" value="Robin"></label>
+          <label>성별
+            <select id="playerGender">
+              <option value="female">여성</option>
+              <option value="male">남성</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="preview-grid">
+        <article class="preview-card panel">
+          <div class="card-head"><h3>번역 미리보기</h3><span id="koRenderState">대기</span></div>
+          <div class="canvas-wrap"><canvas id="koCanvas" width="400" height="240"></canvas></div>
+        </article>
+        <article class="preview-card panel reference">
+          <div class="card-head"><h3>일본어 원문</h3><span id="jaMatchState">미지정</span></div>
+          <div class="canvas-wrap"><canvas id="jaCanvas" width="400" height="240"></canvas></div>
+        </article>
+      </div>
+
+      <nav class="conversation-nav panel" aria-label="회화 화면 이동">
+        <button id="prevFrame" title="이전 회화" disabled><span aria-hidden="true">←</span> 이전 회화</button>
+        <span id="frameLabel">0 / 0</span>
+        <button id="nextFrame" title="다음 회화" disabled>다음 회화 <span aria-hidden="true">→</span></button>
+      </nav>
+
+      <div class="text-grid">
+        <article class="text-card panel">
+          <div class="card-head"><h3>번역 텍스트</h3><span id="charCount">0자</span></div>
+          <textarea id="sourceEditor" spellcheck="false" disabled placeholder="메시지 항목의 콜론 오른쪽 값만 편집합니다."></textarea>
+        </article>
+        <article class="text-card panel reference">
+          <div class="card-head"><h3>일본어 텍스트</h3><span id="jaEntryKey">—</span></div>
+          <textarea id="jaEditor" spellcheck="false" readonly placeholder="대응하는 일본어 항목이 여기에 표시됩니다."></textarea>
+        </article>
+      </div>
+
+      <details id="diagnostics" class="diagnostics panel">
+        <summary><span>렌더 진단</span><span id="diagnosticCount" class="count">0</span></summary>
+        <div id="diagnosticList" class="diagnostic-list">누락 에셋이나 알 수 없는 제어코드가 없습니다.</div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="statusbar">
+    <span id="statusText">에셋을 불러오는 중…</span>
+    <span>400×240 · Awakening · <strong id="profileLabel">본편</strong></span>
+  </footer>
+  <div id="toast" class="toast" role="status"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
