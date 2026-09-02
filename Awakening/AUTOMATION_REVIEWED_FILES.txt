@@ -567,3 +567,53 @@ Awakening/Messages (K)/独り言.txt
 Awakening/Messages (K)/デジェル_ロラン.txt
 Awakening/Messages (K)/ジェローム_デジェル.txt
 Awakening/Messages (K)/様子_経験.txt
+Awakening/Messages (K)/初期設定.txt
+Awakening/Messages (K)/ミリエル_ロンクー.txt
+Awakening/Messages (K)/ヴェイク_オリヴィエ.txt
+Awakening/Messages (K)/レベルアップ.txt
+Awakening/Messages (K)/シンシア_ロラン.txt
+Awakening/Messages (K)/セルジュ_ソール.txt
+Awakening/Messages (K)/サーリャ_ヘンリー.txt
+Awakening/Messages (K)/024.txt
+Awakening/Messages (K)/003.txt
+Awakening/Messages (K)/マーク男_リベラ_親子.txt
+Awakening/DLC Message (K)/26. 절망적인 미래2.txt
+Awakening/Messages (K)/X010.txt
+Awakening/Messages (K)/サイリ_チキ.txt
+Awakening/Messages (K)/様子_武器経験.txt
+Awakening/Messages (K)/相性占い.txt
+Awakening/Messages (K)/フレデリク_リズ.txt
+Awakening/Messages (K)/マーク女_デジェル_兄弟.txt
+Awakening/Messages (K)/様子_ヴァルハルト4.txt
+Awakening/Messages (K)/フラヴィア_プレイヤー男.txt
+Awakening/DLC Message (K)/19. 가장 강한 자의 이름.txt
+Awakening/Messages (K)/セレナ_プレイヤー男.txt
+Awakening/Messages (K)/様子_プレイヤー男3.txt
+Awakening/Messages (K)/セルジュ_ドニ.txt
+Awakening/Messages (K)/デジェル_プレイヤー男.txt
+Awakening/Messages (K)/X006.txt
+Awakening/Messages (K)/ジェローム_プレイヤー男.txt
+Awakening/Messages (K)/マルス_デジェル_兄弟.txt
+Awakening/DLC Message (K)/16. 미궁의 추격전.txt
+Awakening/DLC Message (K)/8. 왕 대 왕 성전 편.txt
+Awakening/Messages (K)/ジェローム_ノワール.txt
+Awakening/Messages (K)/様子_サイリ2.txt
+Awakening/Messages (K)/様子_グレゴ4.txt
+Awakening/Messages (K)/マーク女_セレナ_兄弟.txt
+Awakening/Messages (K)/様子_プレイヤー女1.txt
+Awakening/Messages (K)/009.txt
+Awakening/Messages (K)/014.txt
+Awakening/Messages (K)/シンシア_プレイヤー男.txt
+Awakening/Messages (K)/ヴィオール_ノノ.txt
+Awakening/Messages (K)/ベルベット_リベラ.txt
+Awakening/Messages (K)/プレイヤー男_マルス.txt
+Awakening/Messages (K)/X014.txt
+Awakening/Messages (K)/マイルーム挨拶.txt
+Awakening/Messages (K)/ティアモ_ロンクー.txt
+Awakening/Messages (K)/通信.txt
+Awakening/Messages (K)/ヴィオール_プレイヤー女.txt
+Awakening/Messages (K)/様子_サイリ4.txt
+Awakening/Messages (K)/X021.txt
+Awakening/Messages (K)/ヴェイク_ベルベット.txt
+Awakening/Messages (K)/プレイヤー男_リベラ.txt
+Awakening/DLC Message (K)/1. 영령의 마법 부적1.txt
