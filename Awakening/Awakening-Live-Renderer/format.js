@@ -99,3 +99,13 @@ export function summarizeEntry(entry) {
 export function normalizePath(path) {
   return path.replaceAll("\\", "/").replace(/^\.\//, "").toLocaleLowerCase();
 }
+
+export function sortFileDescriptors(files, mode = "name") {
+  return [...files].sort((a, b) => {
+    if (mode === "recent") {
+      const modifiedDifference = (b.lastModified || 0) - (a.lastModified || 0);
+      if (modifiedDifference) return modifiedDifference;
+    }
+    return a.relativePath.localeCompare(b.relativePath, "ko", { numeric: true });
+  });
+}

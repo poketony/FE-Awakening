@@ -7,6 +7,7 @@ import {
   normalizePath,
   parseMessageDocument,
   replaceEntryValue,
+  sortFileDescriptors,
   summarizeEntry,
   unformatEntryFromEditing,
 } from "./format.js";
@@ -18,7 +19,7 @@ const elements = {
   toggleFiles: $("#toggleFiles"), toggleMessages: $("#toggleMessages"), toggleEditFocus: $("#toggleEditFocus"),
   profileMain: $("#profileMain"), profileDlc: $("#profileDlc"), profileLabel: $("#profileLabel"),
   pickKoDir: $("#pickKoDir"), pickJaDir: $("#pickJaDir"), pickKoFile: $("#pickKoFile"), pickJaFile: $("#pickJaFile"), saveFile: $("#saveFile"),
-  fileSearch: $("#fileSearch"), entrySearch: $("#entrySearch"), reviewFilter: $("#reviewFilter"), fileList: $("#fileList"), entryList: $("#entryList"),
+  fileSearch: $("#fileSearch"), fileSort: $("#fileSort"), entrySearch: $("#entrySearch"), reviewFilter: $("#reviewFilter"), fileList: $("#fileList"), entryList: $("#entryList"),
   koDirName: $("#koDirName"), jaDirName: $("#jaDirName"), jaDirDot: $("#jaDirDot"), fileCount: $("#fileCount"), entryCount: $("#entryCount"),
   reviewProgress: $("#reviewProgress"), progressPercent: $("#progressPercent"), progressFill: $("#progressFill"),
   progressDetail: $("#progressDetail"), progressFiles: $("#progressFiles"), progressCheer: $("#progressCheer"),
@@ -46,6 +47,7 @@ const REVIEW_STATUSES = {
 };
 const savedProfile = localStorage.getItem("fe13-live:profile");
 const savedReviewFilter = localStorage.getItem("fe13-live:reviewFilter");
+const savedFileSort = localStorage.getItem("fe13-live:fileSort");
 const state = {
   koFiles: [], jaFiles: [], koFileMap: new Map(), jaFileMap: new Map(), jaNameMap: new Map(), jaArchiveMap: new Map(),
   currentDocument: null, japaneseDocument: null, originalText: "", selectedKey: "", dirty: false,
@@ -60,6 +62,7 @@ const state = {
   },
   reviewStatuses: { main: loadReviewStatuses("main"), dlc: loadReviewStatuses("dlc") },
   reviewFilter: savedReviewFilter && (savedReviewFilter === "all" || REVIEW_STATUSES[savedReviewFilter]) ? savedReviewFilter : "all",
+  fileSort: savedFileSort === "recent" ? "recent" : "name",
   reviewInventory: new Map(), reviewInventoryRevision: 0, reviewInventoryReady: false,
   editFocus: localStorage.getItem("fe13-live:editFocus") === "true",
   playerName: localStorage.getItem("fe13-live:playerName") || "Robin",
@@ -69,6 +72,7 @@ const state = {
 elements.playerName.value = state.playerName;
 elements.playerGender.value = state.playerGender;
 elements.reviewFilter.value = state.reviewFilter;
+elements.fileSort.value = state.fileSort;
 
 function loadReviewStatuses(profile) {
   try {
@@ -546,12 +550,14 @@ async function chooseSingleFile(kind) {
 
 async function readDocument(descriptor) {
   const file = await descriptor.handle.getFile();
+  descriptor.lastModified = file.lastModified || 0;
   const decoded = decodeMessageFile(await file.arrayBuffer());
   return parseMessageDocument(decoded.text, {
     fileHandle: descriptor.handle,
     fileName: descriptor.name,
     relativePath: descriptor.relativePath,
     hasBom: decoded.hasBom,
+    lastModified: descriptor.lastModified,
   });
 }
 
@@ -630,9 +636,21 @@ async function findByArchive(archive) {
   return null;
 }
 
-function renderFileList() {
+function visibleKoreanFiles() {
   const query = elements.fileSearch.value.trim().toLocaleLowerCase();
   const files = state.koFiles.filter((file) => file.relativePath.toLocaleLowerCase().includes(query));
+  return sortFileDescriptors(files, state.fileSort);
+}
+
+function formatModifiedTime(timestamp) {
+  if (!timestamp) return "";
+  return new Intl.DateTimeFormat("ko-KR", {
+    month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false,
+  }).format(timestamp);
+}
+
+function renderFileList() {
+  const files = visibleKoreanFiles();
   elements.fileList.className = files.length ? "list" : "list empty-state";
   elements.fileList.replaceChildren();
   if (!files.length) {
@@ -647,7 +665,10 @@ function renderFileList() {
     button.classList.toggle("file-reviewed", reviewSummary.complete);
     button.innerHTML = `<span class="title-row"><span class="title"></span><span class="file-review-summary"></span></span><span class="sub"></span>`;
     button.querySelector(".title").textContent = file.name;
-    button.querySelector(".sub").textContent = file.relativePath;
+    const modifiedTime = formatModifiedTime(file.lastModified);
+    button.querySelector(".sub").textContent = state.fileSort === "recent" && modifiedTime
+      ? `${modifiedTime} · ${file.relativePath}` : file.relativePath;
+    if (modifiedTime) button.title = `최근 수정: ${modifiedTime}`;
     const summary = button.querySelector(".file-review-summary");
     const labels = [];
     if (reviewSummary.complete) labels.push("✓ 검수 완료");
@@ -836,8 +857,7 @@ function moveEntry(direction) {
 }
 
 async function moveFile(direction) {
-  const query = elements.fileSearch.value.trim().toLocaleLowerCase();
-  const files = state.koFiles.filter((file) => file.relativePath.toLocaleLowerCase().includes(query));
+  const files = visibleKoreanFiles();
   if (!files.length) return;
   const index = files.findIndex((file) => file.relativePath === state.currentDocument?.relativePath);
   const target = files[index < 0 ? (direction > 0 ? 0 : files.length - 1) : index + direction];
@@ -882,6 +902,11 @@ elements.pickKoFile.addEventListener("click", () => chooseSingleFile("ko"));
 elements.pickJaFile.addEventListener("click", () => chooseSingleFile("ja"));
 elements.saveFile.addEventListener("click", saveCurrentFile);
 elements.fileSearch.addEventListener("input", renderFileList);
+elements.fileSort.addEventListener("change", () => {
+  state.fileSort = elements.fileSort.value === "recent" ? "recent" : "name";
+  localStorage.setItem("fe13-live:fileSort", state.fileSort);
+  renderFileList();
+});
 elements.entrySearch.addEventListener("input", renderEntryList);
 elements.reviewFilter.addEventListener("change", () => {
   state.reviewFilter = elements.reviewFilter.value;

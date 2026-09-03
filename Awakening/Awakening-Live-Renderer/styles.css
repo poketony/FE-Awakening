@@ -148,9 +148,9 @@ kbd { margin-left: 5px; color: var(--muted); font-size: 10px; }
 
 .search { margin: 0 10px 9px; height: 34px; padding: 0 10px; border: 1px solid var(--line); border-radius: 7px; background: #13151a; display: flex; align-items: center; gap: 7px; color: var(--muted); }
 .search input { width: 100%; border: 0; outline: 0; background: transparent; color: var(--text); font-size: 12px; }
-.review-filter { margin: 0 10px 8px; display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 10px; }
-.review-filter select { min-width: 112px; height: 28px; border: 1px solid var(--line); border-radius: 6px; outline: 0; background: #13151a; color: var(--text); padding: 0 7px; font-size: 11px; }
-.review-filter select:focus { border-color: #a87a38; }
+.file-sort, .review-filter { margin: 0 10px 8px; display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 10px; }
+.file-sort select, .review-filter select { min-width: 112px; height: 28px; border: 1px solid var(--line); border-radius: 6px; outline: 0; background: #13151a; color: var(--text); padding: 0 7px; font-size: 11px; }
+.file-sort select:focus, .review-filter select:focus { border-color: #a87a38; }
 .list { min-height: 0; overflow: auto; padding: 2px 7px 10px; }
 .empty-state { padding: 20px 14px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .list-item { width: 100%; border: 0; background: transparent; padding: 8px 9px; text-align: left; border-radius: 6px; display: block; }

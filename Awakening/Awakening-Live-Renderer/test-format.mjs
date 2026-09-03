@@ -7,6 +7,7 @@ import {
   parseMessageDocument,
   replaceEntryValue,
   splitConversationFrames,
+  sortFileDescriptors,
   summarizeEntry,
   unformatEntryFromEditing,
 } from "./format.js";
@@ -30,6 +31,13 @@ assert.equal(
   summarizeEntry({ value: "$t1$Wsアズール|$Wa첫째 대사\\n둘째 줄$k\\n$Wsウード|$Wa두 번째 대사$k$p다음 화면$k" }),
   "첫째 대사 둘째 줄 두 번째 대사 다음 화면",
 );
+const fileDescriptors = [
+  { relativePath: "010.txt", lastModified: 100 },
+  { relativePath: "002.txt", lastModified: 300 },
+  { relativePath: "001.txt", lastModified: 200 },
+];
+assert.deepEqual(sortFileDescriptors(fileDescriptors, "name").map((file) => file.relativePath), ["001.txt", "002.txt", "010.txt"]);
+assert.deepEqual(sortFileDescriptors(fileDescriptors, "recent").map((file) => file.relativePath), ["002.txt", "001.txt", "010.txt"]);
 
 const changed = replaceEntryValue(document, "MID_A", "$t1수정$k");
 assert.equal(changed.text, original.replace("$t1$Wmクロム|3$Wsクロム|$Wa첫째\\n둘째$k$p셋째$k", "$t1수정$k"));
