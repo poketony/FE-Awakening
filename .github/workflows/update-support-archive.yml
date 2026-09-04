@@ -1,0 +1,43 @@
+name: Update support archive
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Awakening/Messages (K)/**'
+      - 'Awakening/DLC Message (K)/22. 인연의 여름.txt'
+      - 'Awakening/DLC Message (K)/23. 인연의 비밀 온천.txt'
+      - 'Awakening/DLC Message (K)/24. 인연의 수확제.txt'
+      - 'Awakening/Awakening-Live-Renderer/assets/awakening/**'
+      - 'if/파이어 엠블렘 if 대사집 (K)/**'
+      - 'if/인연의 백야제.txt'
+      - 'if/인연의 암야제.txt'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: support-archive-dispatch
+  cancel-in-progress: true
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Trigger FE-Support-Archive Pages build
+        env:
+          ARCHIVE_DISPATCH_TOKEN: ${{ secrets.ARCHIVE_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$ARCHIVE_DISPATCH_TOKEN" ]; then
+            echo "::error::Repository secret ARCHIVE_DISPATCH_TOKEN is not configured."
+            exit 1
+          fi
+
+          curl --fail-with-body --silent --show-error \
+            --request POST \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer $ARCHIVE_DISPATCH_TOKEN" \
+            --header "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/poketony/FE-Support-Archive/actions/workflows/pages.yml/dispatches \
+            --data '{"ref":"main"}'
