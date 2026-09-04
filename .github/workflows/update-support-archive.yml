@@ -12,6 +12,7 @@ on:
       - 'if/파이어 엠블렘 if 대사집 (K)/**'
       - 'if/인연의 백야제.txt'
       - 'if/인연의 암야제.txt'
+  workflow_dispatch:
 
 permissions:
   contents: read
