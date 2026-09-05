@@ -7,6 +7,10 @@ const HAIR_COLOR = [0x5b, 0x58, 0x55];
 const NO_PARAM = ["$Wa", "$Wc", "$Nu", "$N0", "$N1", "$t0", "$t1", "$Wv", "$Wd", "$k", "$p", "$a"];
 const ONE_PARAM = ["$VNMPID", "$Sbs", "$Sve", "$Svj", "$Svp", "$Sre", "$Ssp", "$Fw", "$Ws", "$VF", "$Fo", "$Fi", "$E", "$b", "$w", "$l"];
 const TWO_PARAM = ["$Sbv", "$Sbp", "$Sls", "$Slp"];
+const JAPANESE_FONT_ASSETS = {
+  characters: "ja/bin/chars.bin",
+  atlases: ["ja/img/Awakening_0.png", "ja/img/Awakening_1.png"],
+};
 
 function uint16(view, offset) {
   return offset + 1 < view.byteLength ? view.getUint16(offset, true) : 0;
@@ -43,6 +47,7 @@ export class AwakeningRenderer {
     this.glyphs = new Map();
     this.recolored = new Map();
     this.fontCharacters = new Map();
+    this.fontProfiles = new Map();
     this.faceData = new Map();
     this.pidNames = new Map();
     this.ready = false;
@@ -58,7 +63,14 @@ export class AwakeningRenderer {
       this.loadImage("img/Awakening_1.png"),
     ]);
     this.atlases = [atlas0, atlas1];
-    this.loadFontCharacters(charsBuffer);
+    this.loadFontCharacters(charsBuffer, this.fontCharacters);
+    this.fontProfiles.set("ko", {
+      id: "ko",
+      characters: this.fontCharacters,
+      atlases: this.atlases,
+      glyphs: this.glyphs,
+    });
+    await this.loadOptionalJapaneseFont();
     this.loadFaceData(facesBuffer, fidText);
     this.loadPidNames(pidText);
     this.ready = true;
@@ -68,6 +80,16 @@ export class AwakeningRenderer {
     const response = await fetch(new URL(relativePath, new URL(ASSET_ROOT, location.href)));
     if (!response.ok) throw new Error(`에셋을 불러오지 못했습니다: ${relativePath}`);
     return response.arrayBuffer();
+  }
+
+  async fetchOptionalBinary(relativePath) {
+    try {
+      const response = await fetch(new URL(relativePath, new URL(ASSET_ROOT, location.href)));
+      if (!response.ok) return null;
+      return response.arrayBuffer();
+    } catch {
+      return null;
+    }
   }
 
   async fetchText(relativePath) {
@@ -88,11 +110,29 @@ export class AwakeningRenderer {
     return promise;
   }
 
-  loadFontCharacters(buffer) {
+  async loadOptionalJapaneseFont() {
+    const [charsBuffer, ...atlases] = await Promise.all([
+      this.fetchOptionalBinary(JAPANESE_FONT_ASSETS.characters),
+      ...JAPANESE_FONT_ASSETS.atlases.map((path) => this.loadImage(path)),
+    ]);
+    if (!charsBuffer || atlases.some((image) => !image)) return false;
+
+    const characters = new Map();
+    this.loadFontCharacters(charsBuffer, characters);
+    this.fontProfiles.set("ja", {
+      id: "ja",
+      characters,
+      atlases,
+      glyphs: new Map(),
+    });
+    return true;
+  }
+
+  loadFontCharacters(buffer, target = this.fontCharacters) {
     const view = new DataView(buffer);
     for (let offset = 0; offset + 15 < view.byteLength; offset += 0x10) {
       const value = uint16(view, offset);
-      this.fontCharacters.set(value, {
+      target.set(value, {
         value,
         atlas: uint16(view, offset + 2),
         x: uint16(view, offset + 4),
@@ -103,8 +143,8 @@ export class AwakeningRenderer {
         cropWidth: signedByte(view.getUint8(offset + 0x0c)),
       });
     }
-    const longDash = this.fontCharacters.get(8213);
-    if (longDash) this.fontCharacters.set(8212, { ...longDash, value: 8212, cropHeight: longDash.cropHeight - 2 });
+    const longDash = target.get(8213);
+    if (longDash) target.set(8212, { ...longDash, value: 8212, cropHeight: longDash.cropHeight - 2 });
   }
 
   loadFaceData(buffer, fidText) {
@@ -123,6 +163,18 @@ export class AwakeningRenderer {
     }
   }
 
+  resolveFontProfile(canvas, options, missing) {
+    const requested = options.fontProfile || options.language || (canvas?.id === "jaCanvas" ? "ja" : "ko");
+    const normalized = requested === "ja" ? "ja" : "ko";
+    const profile = this.fontProfiles.get(normalized);
+    if (profile) return profile;
+    if (normalized === "ja") {
+      missing.add(`font-ja:${JAPANESE_FONT_ASSETS.characters}`);
+      for (const path of JAPANESE_FONT_ASSETS.atlases) missing.add(`font-ja:${path}`);
+    }
+    return this.fontProfiles.get("ko");
+  }
+
   async render(value, canvas, options = {}) {
     const context = canvas.getContext("2d");
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -132,6 +184,7 @@ export class AwakeningRenderer {
     const frameIndex = Math.max(0, Math.min(options.frameIndex ?? 0, frames.length - 1));
     const state = createState(options.playerName || "Robin", options.playerGender === "male" ? "male" : "female");
     const missing = new Set();
+    const fontProfile = this.resolveFontProfile(canvas, options, missing);
     let visibleMessage = "";
     for (let index = 0; index <= frameIndex; index += 1) {
       visibleMessage = this.parseFrame(frames[index], state);
@@ -143,14 +196,14 @@ export class AwakeningRenderer {
 
     const nameMap = options.nameMap ?? new Map();
     await this.drawBackground(context);
-    if (state.type === 0) await this.drawTypeZero(context, state, nameMap, missing);
-    else await this.drawTypeOne(context, state, visibleMessage, nameMap, missing, frameIndex < frames.length - 1);
+    if (state.type === 0) await this.drawTypeZero(context, state, nameMap, missing, fontProfile);
+    else await this.drawTypeOne(context, state, visibleMessage, nameMap, missing, frameIndex < frames.length - 1, fontProfile);
 
     const diagnostics = [
       ...[...missing].map((item) => ({ type: "asset", message: `누락 에셋(투명 처리): ${item}` })),
       ...[...state.unknownCodes].map((item) => ({ type: "code", message: `알 수 없는 제어코드(무시): ${item}` })),
     ];
-    return { frameCount: frames.length, frameIndex, diagnostics, type: state.type };
+    return { frameCount: frames.length, frameIndex, diagnostics, type: state.type, fontProfile: fontProfile?.id ?? "ko" };
   }
 
   parseFrame(source, state) {
@@ -259,7 +312,7 @@ export class AwakeningRenderer {
     if (image) context.drawImage(image, 0, 0);
   }
 
-  async drawTypeOne(context, state, message, nameMap, missing, hasNext) {
+  async drawTypeOne(context, state, message, nameMap, missing, hasNext, fontProfile) {
     if (state.activeName) {
       if (state.active === "A") {
         await this.drawStage(context, state.charB, false, missing, state.playerGender);
@@ -276,7 +329,7 @@ export class AwakeningRenderer {
     const textBox = await this.loadImage("img/TextBox.png");
     const y = textBox ? 242 - textBox.height : 158;
     if (textBox) context.drawImage(textBox, 10, y);
-    this.drawString(context, message, 39, y + 26, state.textColor, missing);
+    this.drawString(context, message, 39, y + 26, state.textColor, missing, fontProfile);
     if (hasNext) {
       const keyPress = await this.loadImage("img/KeyPress.png");
       if (keyPress) context.drawImage(keyPress, 367, 272 - (textBox?.height ?? 84));
@@ -290,36 +343,36 @@ export class AwakeningRenderer {
         const nameY = 226 - (textBox?.height ?? 84);
         context.drawImage(nameBox, x, nameY);
         const name = this.displayName(active.name || state.activeName, nameMap, state.playerName);
-        this.drawString(context, name, x + nameBox.width / 2 - this.textLength(name) / 2, nameY + 16, NAME_COLOR, missing);
+        this.drawString(context, name, x + nameBox.width / 2 - this.textLength(name, fontProfile) / 2, nameY + 16, NAME_COLOR, missing, fontProfile);
       }
     }
   }
 
-  async drawTypeZero(context, state, nameMap, missing) {
+  async drawTypeZero(context, state, nameMap, missing, fontProfile) {
     const [textBox, nameBox] = await Promise.all([this.loadImage("img/TextBox.png"), this.loadImage("img/NameBox.png")]);
     if (!textBox) return;
     if (state.topMessage) {
       const y = 20;
       context.drawImage(textBox, 10, y);
       await this.drawBust(context, state.charA, y, missing, state.playerGender);
-      this.drawString(context, state.topMessage, 86, y + 26, state.textColor, missing);
+      this.drawString(context, state.topMessage, 86, y + 26, state.textColor, missing, fontProfile);
       if (nameBox && state.charA.name) {
         const nameY = y - nameBox.height + 10;
         context.drawImage(nameBox, 76, nameY);
         const name = this.displayName(state.charA.name, nameMap, state.playerName);
-        this.drawString(context, name, 76 + nameBox.width / 2 - this.textLength(name) / 2, nameY + 16, NAME_COLOR, missing);
+        this.drawString(context, name, 76 + nameBox.width / 2 - this.textLength(name, fontProfile) / 2, nameY + 16, NAME_COLOR, missing, fontProfile);
       }
     }
     if (state.bottomMessage) {
       const y = 242 - textBox.height;
       context.drawImage(textBox, 10, y);
       await this.drawBust(context, state.charB, y, missing, state.playerGender);
-      this.drawString(context, state.bottomMessage, 86, y + 26, state.textColor, missing);
+      this.drawString(context, state.bottomMessage, 86, y + 26, state.textColor, missing, fontProfile);
       if (nameBox && state.charB.name) {
         const nameY = y - nameBox.height + 10;
         context.drawImage(nameBox, 76, nameY);
         const name = this.displayName(state.charB.name, nameMap, state.playerName);
-        this.drawString(context, name, 76 + nameBox.width / 2 - this.textLength(name) / 2, nameY + 16, NAME_COLOR, missing);
+        this.drawString(context, name, 76 + nameBox.width / 2 - this.textLength(name, fontProfile) / 2, nameY + 16, NAME_COLOR, missing, fontProfile);
       }
     }
   }
@@ -425,45 +478,50 @@ export class AwakeningRenderer {
     return canvas;
   }
 
-  textLength(text) {
+  textLength(text, fontProfile = this.fontProfiles.get("ko")) {
+    const characters = fontProfile?.characters ?? this.fontCharacters;
     let width = 0;
     for (const character of text) {
-      const glyph = this.fontCharacters.get(character.codePointAt(0));
+      const glyph = characters.get(character.codePointAt(0));
       width += glyph ? Math.max(glyph.width, glyph.cropWidth) : 8;
     }
     return width;
   }
 
-  drawString(context, text, startX, startY, color, missing) {
+  drawString(context, text, startX, startY, color, missing, fontProfile = this.fontProfiles.get("ko")) {
+    const characters = fontProfile?.characters ?? this.fontCharacters;
+    const atlases = fontProfile?.atlases ?? this.atlases;
     let x = startX;
     let y = startY;
     for (const character of text) {
       if (character === "\n") { y += 20; x = startX; continue; }
       const codePoint = character.codePointAt(0);
-      const glyph = this.fontCharacters.get(codePoint);
-      if (!glyph || !this.atlases[glyph.atlas]) {
-        missing.add(`font:U+${codePoint.toString(16).toUpperCase().padStart(4, "0")} ${character}`);
+      const glyph = characters.get(codePoint);
+      if (!glyph || !atlases[glyph.atlas]) {
+        missing.add(`font:${fontProfile?.id ?? "ko"}:U+${codePoint.toString(16).toUpperCase().padStart(4, "0")} ${character}`);
         x += 8;
         continue;
       }
-      const colored = this.coloredGlyph(glyph, color);
+      const colored = this.coloredGlyph(glyph, color, fontProfile);
       context.drawImage(colored, Math.round(x), Math.round(y - glyph.cropHeight));
       x += glyph.cropWidth;
     }
   }
 
-  coloredGlyph(glyph, color) {
+  coloredGlyph(glyph, color, fontProfile = this.fontProfiles.get("ko")) {
+    const cache = fontProfile?.glyphs ?? this.glyphs;
+    const atlases = fontProfile?.atlases ?? this.atlases;
     const key = `${glyph.value}:${color}`;
-    if (this.glyphs.has(key)) return this.glyphs.get(key);
+    if (cache.has(key)) return cache.get(key);
     const canvas = document.createElement("canvas");
     canvas.width = glyph.width;
     canvas.height = glyph.height;
     const context = canvas.getContext("2d");
-    context.drawImage(this.atlases[glyph.atlas], glyph.x, glyph.y, glyph.width, glyph.height, 0, 0, glyph.width, glyph.height);
+    context.drawImage(atlases[glyph.atlas], glyph.x, glyph.y, glyph.width, glyph.height, 0, 0, glyph.width, glyph.height);
     context.globalCompositeOperation = "source-in";
     context.fillStyle = color;
     context.fillRect(0, 0, glyph.width, glyph.height);
-    this.glyphs.set(key, canvas);
+    cache.set(key, canvas);
     return canvas;
   }
 }
