@@ -1,0 +1,131 @@
+MESS_ARCHIVE_MovieSubtitle
+
+
+Message Name: Message
+
+
+MID_S01_SUBTITLE_00: 하늘거리는 물거품♪\n정처없는 마음의 저울
+MID_S01_SUBTITLE_01: 이어지는 물줄기♪\n그 손이 개척하는 미래
+MID_S01_SUBTITLE_02: 나는 백야 왕국 제1왕자 료마!\n암야 장군이여, 일대일 대결을 제안한다!
+MID_S01_SUBTITLE_03: 암야 왕국 제1왕자 젠더
+MID_S01_SUBTITLE_04: 그 제안을 받아들이지\n내 검의 이슬로 사라지도록 해라!
+MID_S02_SUBTITLE_00: 쏴라
+MID_S02_SUBTITLE_01: 이런 함정에 빠질 줄이야\n실망이군, 백야왕 스메라기
+MID_S02_SUBTITLE_03: 얘야
+MID_S02_SUBTITLE_04: 너는 죽이지 않겠다\n살아가게 해 주마
+MID_S02_SUBTITLE_05: 내 아이로서 말이다!
+MID_S03_SUBTITLE_00: 이어지는 물줄기♪\n그 손이 개척하는 미래
+MID_S04_SUBTITLE_02: 무사한가요? 다친 곳은… 없지요?
+MID_S04_SUBTITLE_03: 네…
+MID_S04_SUBTITLE_04: 다행이다…
+MID_S04_SUBTITLE_05: 어머니!
+MID_S04_SUBTITLE_06: 어머님… 어머님!
+MID_S04_SUBTITLE_07: 웬 놈이냐!
+MID_S04_SUBTITLE_08: 말도 안 돼!
+MID_S05_SUBTITLE_01: 하늘거리는 물거품♪
+MID_S05_SUBTITLE_02: 멈춰, 위험해!
+MID_S05_SUBTITLE_03: 하늘거리는 물거품♪\n정처없는 마음의 저울
+MID_S05_SUBTITLE_04: 이어지는 물줄기♪
+MID_S05_SUBTITLE_07: 그 손이 개척하는 미래♪
+MID_S05_SUBTITLE_08: 죽여도 좋아, 그러니까…\n원래대로 돌아와 줘
+MID_S06_SUBTITLE_00: 이쪽이다!
+MID_S06_SUBTITLE_01: 오라버니?
+MID_S06_SUBTITLE_01F: 언니?
+MID_S06_SUBTITLE_02: 오빠!
+MID_S06_SUBTITLE_02F: 언니!
+MID_S06_SUBTITLE_03: 돌아와라
+MID_S07_SUBTITLE_00: 빛으로 손을 뻗는♪\n순결한 은의 검
+MID_S07_SUBTITLE_01: 꿈 같은 생각을 베고♪
+MID_S07_SUBTITLE_02: 노래하는 평온♪\n수정은 부드러운 빛을 뿌리고
+MID_S07_SUBTITLE_03: 어둠이 물러나는 새벽♪\n홀로 생각하네
+MID_S08_SUBTITLE_03: 보지 마, 부탁이야…
+MID_S09_SUBTITLE_00: 그렇다면… 네가 믿는 그 정의를 위해,\n목숨을 바치도록 해라!
+MID_S09_SUBTITLE_01: 엘리스!
+MID_S09_SUBTITLE_02: 엘리스, 정신 차려! 엘리스!
+MID_S09_SUBTITLE_04: 젠더… 오빠… 그게… 정의야…?
+MID_S09_SUBTITLE_06: 사랑하는 사람을 지키기 위해\n필요…한 건…
+MID_S09_SUBTITLE_08: 사실은 검이 아니라\n따뜻한 손길과… 눈물이잖아…
+MID_S09_SUBTITLE_09: 부탁이야, 싸움을 멈춰 줘…
+MID_S10_SUBTITLE_00: 당신은 부디… 웃는 얼굴로 있어 줘…
+MID_S10_SUBTITLE_01: 내 몫까지…
+MID_S10_SUBTITLE_02: 행복하게… 살아야 해…
+MID_S11_SUBTITLE_00: 함께, 이 하늘을 나는 게 꿈이었어
+MID_S11_SUBTITLE_01: 저기, 저기!\n하늘에서 보는 전망은 어떠세요?!
+MID_S11_SUBTITLE_02: 떨어지지 않게 조심해!
+MID_S11_SUBTITLE_03: 어머니께… 전해 드리고 있었다
+MID_S11_SUBTITLE_04: 어머니께서 바라셨던 영원한 평화\n그 마음, 우리 형제가 잇겠습니다
+MID_S11_SUBTITLE_05: 응
+MID_S11_SUBTITLE_06: 그래
+MID_S11_SUBTITLE_07: 네
+MID_S11_SUBTITLE_08: 결코 쉬운 길이 아니라는 것은 안다\n하지만 그것이 얼마나 힘든 길이든…
+MID_S11_SUBTITLE_09: 우린 걸어갈 수 있다
+MID_S11_SUBTITLE_10: 너와 함께라면
+MID_S12_SUBTITLE_00: 어둠으로 나아가는♪\n공허한 백악의 옥좌
+MID_S12_SUBTITLE_01: 자신을 모든 것을 속이고♪
+MID_S12_SUBTITLE_02: 자아내는 이치♪\n흑요는 서서히 무너지고
+MID_S12_SUBTITLE_03: 빛이 사라지는 황혼♪\n홀로 생각하네
+MID_S13_SUBTITLE_00: 어째서…
+MID_S13_SUBTITLE_01: 네가 여기에?
+MID_S14_SUBTITLE_00: 적의 손에 목숨을 잃는 것은\n사무라이의 수치!
+MID_S14_SUBTITLE_01: 내 최후의 검…
+MID_S14_SUBTITLE_02: 똑똑히 보아라…!
+MID_S14_SUBTITLE_03: 뒷일을… 부탁한다
+MID_S15_SUBTITLE_01: 아버님…?
+MID_S15_SUBTITLE_02: 이게 무슨…
+MID_S15_SUBTITLE_03: 보았구나… 내 진짜 모습을…
+MID_S16_SUBTITLE_00: 이리 와, 얼른!
+MID_S16_SUBTITLE_01: 어머, 얘도 참…
+MID_S16_SUBTITLE_02: 또 늦잠 잔 거야?
+MID_S16_SUBTITLE_03: 자, 얼른 가자
+MID_S16_SUBTITLE_04: 여전히 소란스럽구나…\n너희들은
+MID_S16_SUBTITLE_05: 옛날 그대로야…\n분명 앞으로도 그렇겠지
+MID_S16_SUBTITLE_09: 이번 전쟁에 정의는 없었다\n아니, 전쟁에 정의란 없을지도 모르지
+MID_S16_SUBTITLE_10: 정의란, 입장에 곧잘 좌우되곤 하는\n나약한 것이다 
+MID_S16_SUBTITLE_11: 하지만, 적어도…
+MID_S16_SUBTITLE_12: 나는 지금부터 왕으로서\n자신이 믿는 정의를 관철하겠다
+MID_S16_SUBTITLE_13: 그 소중함을 가르쳐 준 너와 함께
+MID_S18_SUBTITLE_00: 나는 잊혀진 신,\n배신당한 왕, 파묻힌 용
+MID_S18_SUBTITLE_01: 투마왕의 이름으로\n너에게 죽음을 선고하노라!
+MID_S21_SUBTITLE_00: 선조룡과 왕의 이름을 걸고…\n여기서 암야 왕국과
+MID_S21_SUBTITLE_01: 백야 왕국은, 영원한 평화를 맹세한다
+MID_S21_SUBTITLE_02: 
+MID_S21_SUBTITLE_03: 이 맹세가 깨질 일은 없어
+MID_S21_SUBTITLE_04: 응, 설령 무슨 일이 있더라도…
+MID_S21_SUBTITLE_05: 맹세할게
+MID_S21_SUBTITLE_06: 
+MID_S21_SUBTITLE_07: 그럼 이제 친구네!
+MID_S21_SUBTITLE_08: 네… 기뻐요…!
+MID_S21_SUBTITLE_09: 그렇게 간단한 일은 아닌데 말이지…\n그래도
+MID_S21_SUBTITLE_10: 그래도… 최소한 우리 마음에\n거짓은 없잖아
+MID_S21_SUBTITLE_11: 맞아
+MID_S21_SUBTITLE_12: 우리는 맹세한다\n백성에게, 나라에게,
+MID_S21_SUBTITLE_13: 그리고 두 나라를 이어 준\n용사이자…
+MID_S21_SUBTITLE_14: 백야와 암야,\n서로에게 있어서 둘도 없는 형제인…
+MID_S21_SUBTITLE_15: 너에게, 맹세하마
+MID_S22_SUBTITLE_00: 
+MID_S22_SUBTITLE_01: 왔구나…
+MID_S22_SUBTITLE_02: 결착을 짓자!
+MID_S23_SUBTITLE_01: 환영하마, 내 아이야!
+MID_S24_SUBTITLE_00: 배신자는
+MID_S24_SUBTITLE_01: 암야 왕국의 수치다
+MID_S24_SUBTITLE_02: 죽음으로 속죄해라
+MID_S25_SUBTITLE_00: 아아, 나를 만나러 와 줬구나…
+MID_S25_SUBTITLE_01: 귀여운 아이…
+MID_S26_SUBTITLE_00: 용케 이곳까지 왔군
+MID_S26_SUBTITLE_01: 하지만
+MID_S26_SUBTITLE_02: 여기는 지나갈 수 없다!
+MID_S27_SUBTITLE_00: 내가…
+MID_S27_SUBTITLE_01: 죽인다…
+MID_S27_SUBTITLE_02: 내가!
+MID_S28_SUBTITLE_00: 용서 못 해…\n백야를 배신한 당신만큼은!
+MID_S28_SUBTITLE_01: 내가, 이 손으로, 죽이겠어!
+MID_S29_SUBTITLE_00: 백야 왕국 제1왕녀
+MID_S29_SUBTITLE_01: 히노카, 간다!
+MID_S30_SUBTITLE_00: 이렇게 다시 당신들과 만날 수 있다니…
+MID_S30_SUBTITLE_01: 정말로 기쁘군요…
+MID_S37_SUBTITLE_00: 함께하게 돼서 기뻐요
+MID_S37_SUBTITLE_01: 
+MID_S37_SUBTITLE_02: 잘 부탁드려요!
+MID_S38_SUBTITLE_00: 이제부터 쭉 함께네!
+MID_S38_SUBTITLE_01: 야호!
+MID_S38_SUBTITLE_02: 정말 기뻐!
