@@ -21,6 +21,17 @@
       ],
       "updatedAt": "2026-09-06T03:25:35.182Z"
     },
+    "awakening/messages (k)/サーリャ_ロンクー.txt": {
+      "path": "Awakening/Messages (K)/サーリャ_ロンクー.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_サーリャ_ロンクー_Ｃ",
+        "MID_支援_サーリャ_ロンクー_Ｂ",
+        "MID_支援_サーリャ_ロンクー_Ａ",
+        "MID_支援_サーリャ_ロンクー_Ｓ"
+      ],
+      "updatedAt": "2026-09-06T03:56:57.671Z"
+    },
     "awakening/messages (k)/ンン_ノノ_親子.txt": {
       "path": "Awakening/Messages (K)/ンン_ノノ_親子.txt",
       "mode": "main",
@@ -1532,6 +1543,12 @@
       "entryKey": "MID_支援_グレゴ_リヒト_Ｃ",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/サーリャ_ロンクー.txt\u0000MID_支援_サーリャ_ロンクー_Ｃ": {
+      "path": "Awakening/Messages (K)/サーリャ_ロンクー.txt",
+      "entryKey": "MID_支援_サーリャ_ロンクー_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T04:00:47.543Z"
     },
     "awakening/messages (k)/デジェル_ソワレ_親子.txt\u0000MID_支援_デジェル_ソワレ_親子_Ｃ": {
       "path": "Awakening/Messages (K)/デジェル_ソワレ_親子.txt",
