@@ -14,7 +14,7 @@ export function encodeMessageFile(text, hasBom = false) {
   const encoded = new TextEncoder().encode(text);
   if (!hasBom) return encoded;
   const bytes = new Uint8Array(encoded.length + 3);
-  bytes.set([0xef, 0xbb, 0xbf]);
+  bytes.set([0xef, 0xbb, 0xbf], 0);
   bytes.set(encoded, 3);
   return bytes;
 }
@@ -108,4 +108,12 @@ export function sortFileDescriptors(files, mode = "name") {
     }
     return a.relativePath.localeCompare(b.relativePath, "ko", { numeric: true });
   });
+}
+
+// 브라우저에서 라이브 렌더러를 실행할 때만 공용 검수 기록을 먼저 주입한다.
+// Node 기반 format 테스트에서는 window가 없으므로 기존 순수 모듈 동작을 그대로 유지한다.
+if (typeof window !== "undefined" && typeof document !== "undefined") {
+  const { preloadReviewSync } = await import("./review-sync-preload.js");
+  await preloadReviewSync();
+  setTimeout(() => { void import("./review-sync.js"); }, 0);
 }
