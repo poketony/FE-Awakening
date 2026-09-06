@@ -11,6 +11,16 @@
       ],
       "updatedAt": "2026-09-06T08:09:26.021Z"
     },
+    "awakening/messages (k)/アズール_オリヴィエ_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_オリヴィエ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_オリヴィエ_親子_Ｃ",
+        "MID_支援_アズール_オリヴィエ_親子_Ｂ",
+        "MID_支援_アズール_オリヴィエ_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-06T08:58:18.933Z"
+    },
     "awakening/messages (k)/アズール_カラム_親子.txt": {
       "path": "Awakening/Messages (K)/アズール_カラム_親子.txt",
       "mode": "main",
@@ -1697,6 +1707,24 @@
       "entryKey": "MID_支援_アズール_ウード_Ｃ",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/アズール_オリヴィエ_親子.txt\u0000MID_支援_アズール_オリヴィエ_親子_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_オリヴィエ_親子.txt",
+      "entryKey": "MID_支援_アズール_オリヴィエ_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:05:35.908Z"
+    },
+    "awakening/messages (k)/アズール_オリヴィエ_親子.txt\u0000MID_支援_アズール_オリヴィエ_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_オリヴィエ_親子.txt",
+      "entryKey": "MID_支援_アズール_オリヴィエ_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:04:36.038Z"
+    },
+    "awakening/messages (k)/アズール_オリヴィエ_親子.txt\u0000MID_支援_アズール_オリヴィエ_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_オリヴィエ_親子.txt",
+      "entryKey": "MID_支援_アズール_オリヴィエ_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:00:19.911Z"
     },
     "awakening/messages (k)/アズール_ガイア_親子.txt\u0000MID_支援_アズール_ガイア_親子_Ａ": {
       "path": "Awakening/Messages (K)/アズール_ガイア_親子.txt",
