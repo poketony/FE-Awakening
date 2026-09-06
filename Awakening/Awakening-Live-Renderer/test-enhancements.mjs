@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { DEFAULT_HAIR_COLOR, hairColorForAssetPath, hairColorForCharacter } from "./hair-colors.js";
-import { cleanCharacterId, koreanCharacterName } from "./names-ko.js";
+import { cleanCharacterId, japaneseCharacterName, koreanCharacterName } from "./names-ko.js";
 
 assert.deepEqual(hairColorForCharacter("ルキナ"), [0x50, 0x5c, 0x81]);
 assert.deepEqual(hairColorForCharacter("アズール"), [0x99, 0x91, 0x91]);
@@ -14,5 +14,10 @@ assert.equal(koreanCharacterName("アズール"), "이니고");
 assert.equal(koreanCharacterName("ルキナ"), "루키나");
 assert.equal(koreanCharacterName("プレイヤー画像なし", "러플레"), "러플레");
 assert.equal(cleanCharacterId("クロム画像なし"), "クロム");
+
+assert.equal(japaneseCharacterName("クロム"), "クロム");
+assert.equal(japaneseCharacterName("アズール"), "アズール");
+assert.equal(japaneseCharacterName("ルキナ透"), "ルキナ");
+assert.equal(japaneseCharacterName("プレイヤー画像なし", "ルフレ"), "ルフレ");
 
 console.log("live enhancement data tests passed");
