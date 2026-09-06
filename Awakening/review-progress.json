@@ -251,6 +251,17 @@
       ],
       "updatedAt": "2026-09-06T04:54:52.510Z"
     },
+    "awakening/messages (k)/アズール_シンシア.txt": {
+      "path": "Awakening/Messages (K)/アズール_シンシア.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_シンシア_Ｃ",
+        "MID_支援_アズール_シンシア_Ｂ",
+        "MID_支援_アズール_シンシア_Ａ",
+        "MID_支援_アズール_シンシア_Ｓ"
+      ],
+      "updatedAt": "2026-09-06T22:49:33.528Z"
+    },
     "awakening/messages (k)/アズール_ジェローム.txt": {
       "path": "Awakening/Messages (K)/アズール_ジェローム.txt",
       "mode": "main",
@@ -260,6 +271,38 @@
         "MID_支援_アズール_ジェローム_Ａ"
       ],
       "updatedAt": "2026-09-06T07:15:03.819Z"
+    },
+    "awakening/messages (k)/アズール_セレナ.txt": {
+      "path": "Awakening/Messages (K)/アズール_セレナ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_セレナ_Ｃ",
+        "MID_支援_アズール_セレナ_Ｂ",
+        "MID_支援_アズール_セレナ_Ａ",
+        "MID_支援_アズール_セレナ_Ｓ"
+      ],
+      "updatedAt": "2026-09-06T23:07:33.749Z"
+    },
+    "awakening/messages (k)/アズール_ソール_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_ソール_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_ソール_親子_Ｃ",
+        "MID_支援_アズール_ソール_親子_Ｂ",
+        "MID_支援_アズール_ソール_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-06T23:25:56.372Z"
+    },
+    "awakening/messages (k)/アズール_デジェル.txt": {
+      "path": "Awakening/Messages (K)/アズール_デジェル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_デジェル_Ｃ",
+        "MID_支援_アズール_デジェル_Ｂ",
+        "MID_支援_アズール_デジェル_Ａ",
+        "MID_支援_アズール_デジェル_Ｓ"
+      ],
+      "updatedAt": "2026-09-06T23:32:21.098Z"
     },
     "awakening/messages (k)/アズール_ルキナ.txt": {
       "path": "Awakening/Messages (K)/アズール_ルキナ.txt",
@@ -3103,6 +3146,30 @@
       "status": "approved",
       "updatedAt": "2026-09-06T09:15:58.747Z"
     },
+    "awakening/messages (k)/アズール_シンシア.txt\u0000MID_支援_アズール_シンシア_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_シンシア.txt",
+      "entryKey": "MID_支援_アズール_シンシア_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T22:59:53.703Z"
+    },
+    "awakening/messages (k)/アズール_シンシア.txt\u0000MID_支援_アズール_シンシア_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_シンシア.txt",
+      "entryKey": "MID_支援_アズール_シンシア_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T22:57:47.694Z"
+    },
+    "awakening/messages (k)/アズール_シンシア.txt\u0000MID_支援_アズール_シンシア_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_シンシア.txt",
+      "entryKey": "MID_支援_アズール_シンシア_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T22:53:08.246Z"
+    },
+    "awakening/messages (k)/アズール_シンシア.txt\u0000MID_支援_アズール_シンシア_Ｓ": {
+      "path": "Awakening/Messages (K)/アズール_シンシア.txt",
+      "entryKey": "MID_支援_アズール_シンシア_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T23:07:14.194Z"
+    },
     "awakening/messages (k)/アズール_ジェローム.txt\u0000MID_支援_アズール_ジェローム_Ａ": {
       "path": "Awakening/Messages (K)/アズール_ジェローム.txt",
       "entryKey": "MID_支援_アズール_ジェローム_Ａ",
@@ -3120,6 +3187,72 @@
       "entryKey": "MID_支援_アズール_ジェローム_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T09:29:40.832Z"
+    },
+    "awakening/messages (k)/アズール_セレナ.txt\u0000MID_支援_アズール_セレナ_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_セレナ.txt",
+      "entryKey": "MID_支援_アズール_セレナ_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T23:14:07.730Z"
+    },
+    "awakening/messages (k)/アズール_セレナ.txt\u0000MID_支援_アズール_セレナ_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_セレナ.txt",
+      "entryKey": "MID_支援_アズール_セレナ_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T23:12:34.874Z"
+    },
+    "awakening/messages (k)/アズール_セレナ.txt\u0000MID_支援_アズール_セレナ_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_セレナ.txt",
+      "entryKey": "MID_支援_アズール_セレナ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T23:08:27.097Z"
+    },
+    "awakening/messages (k)/アズール_セレナ.txt\u0000MID_支援_アズール_セレナ_Ｓ": {
+      "path": "Awakening/Messages (K)/アズール_セレナ.txt",
+      "entryKey": "MID_支援_アズール_セレナ_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T23:24:51.580Z"
+    },
+    "awakening/messages (k)/アズール_ソール_親子.txt\u0000MID_支援_アズール_ソール_親子_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_ソール_親子.txt",
+      "entryKey": "MID_支援_アズール_ソール_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T23:31:50.539Z"
+    },
+    "awakening/messages (k)/アズール_ソール_親子.txt\u0000MID_支援_アズール_ソール_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_ソール_親子.txt",
+      "entryKey": "MID_支援_アズール_ソール_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T23:29:55.260Z"
+    },
+    "awakening/messages (k)/アズール_ソール_親子.txt\u0000MID_支援_アズール_ソール_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_ソール_親子.txt",
+      "entryKey": "MID_支援_アズール_ソール_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T23:27:45.196Z"
+    },
+    "awakening/messages (k)/アズール_デジェル.txt\u0000MID_支援_アズール_デジェル_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_デジェル.txt",
+      "entryKey": "MID_支援_アズール_デジェル_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T23:54:59.697Z"
+    },
+    "awakening/messages (k)/アズール_デジェル.txt\u0000MID_支援_アズール_デジェル_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_デジェル.txt",
+      "entryKey": "MID_支援_アズール_デジェル_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T23:38:14.310Z"
+    },
+    "awakening/messages (k)/アズール_デジェル.txt\u0000MID_支援_アズール_デジェル_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_デジェル.txt",
+      "entryKey": "MID_支援_アズール_デジェル_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T23:34:34.443Z"
+    },
+    "awakening/messages (k)/アズール_デジェル.txt\u0000MID_支援_アズール_デジェル_Ｓ": {
+      "path": "Awakening/Messages (K)/アズール_デジェル.txt",
+      "entryKey": "MID_支援_アズール_デジェル_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T23:56:50.755Z"
     },
     "awakening/messages (k)/アズール_ヴィオール_親子.txt\u0000MID_支援_アズール_ヴィオール_親子_Ａ": {
       "path": "Awakening/Messages (K)/アズール_ヴィオール_親子.txt",
