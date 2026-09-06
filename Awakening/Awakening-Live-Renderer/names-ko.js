@@ -1,5 +1,5 @@
-// Korean in-game display names mirrored from Awakening/Messages (K)/GameData.txt.
-// This lets both Korean and Japanese preview canvases show the same Korean name labels.
+// In-game display names mirrored from Awakening/Messages (K)/GameData.txt.
+// Korean preview uses the translated values; Japanese preview can fall back to the original Japanese IDs.
 
 const JAPANESE = /[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u;
 
@@ -178,6 +178,10 @@ export const KOREAN_NAME_MAP = new Map(
   RAW_NAMES.trim().split("\n").map((line) => line.split("\t", 2)),
 );
 
+export const JAPANESE_ORIGINAL_NAME_MAP = new Map(
+  [...KOREAN_NAME_MAP.keys()].map((id) => [id, id]),
+);
+
 export function containsJapanese(value) {
   return JAPANESE.test(String(value || ""));
 }
@@ -191,4 +195,11 @@ export function koreanCharacterName(characterId, playerName = "러플레") {
   if (id.startsWith("username") || id.startsWith("プレイヤー")) return playerName || "러플레";
   const clean = cleanCharacterId(id);
   return KOREAN_NAME_MAP.get(id) || KOREAN_NAME_MAP.get(clean) || "";
+}
+
+export function japaneseCharacterName(characterId, playerName = "ルフレ") {
+  const id = String(characterId || "");
+  if (id.startsWith("username") || id.startsWith("プレイヤー")) return playerName || "ルフレ";
+  const clean = cleanCharacterId(id);
+  return JAPANESE_ORIGINAL_NAME_MAP.get(id) || JAPANESE_ORIGINAL_NAME_MAP.get(clean) || clean || id;
 }
