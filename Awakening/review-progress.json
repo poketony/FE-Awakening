@@ -10,6 +10,16 @@
         "MID_支援_アズール_ガイア_親子_Ａ"
       ],
       "updatedAt": "2026-09-06T03:23:56.760Z"
+    },
+    "awakening/messages (k)/アズール_ヴィオール_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_ヴィオール_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_ヴィオール_親子_Ｃ",
+        "MID_支援_アズール_ヴィオール_親子_Ｂ",
+        "MID_支援_アズール_ヴィオール_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-06T03:25:35.182Z"
     }
   },
   "entries": {
