@@ -1,6 +1,16 @@
 {
   "version": 2,
   "files": {
+    "awakening/messages (k)/アズール_カラム_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_カラム_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_カラム_親子_Ｃ",
+        "MID_支援_アズール_カラム_親子_Ｂ",
+        "MID_支援_アズール_カラム_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-06T04:31:52.316Z"
+    },
     "awakening/messages (k)/アズール_ガイア_親子.txt": {
       "path": "Awakening/Messages (K)/アズール_ガイア_親子.txt",
       "mode": "main",
@@ -10,6 +20,16 @@
         "MID_支援_アズール_ガイア_親子_Ａ"
       ],
       "updatedAt": "2026-09-06T03:23:56.760Z"
+    },
+    "awakening/messages (k)/アズール_グレゴ_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_グレゴ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_グレゴ_親子_Ｃ",
+        "MID_支援_アズール_グレゴ_親子_Ｂ",
+        "MID_支援_アズール_グレゴ_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-06T04:54:52.510Z"
     },
     "awakening/messages (k)/アズール_ルキナ.txt": {
       "path": "Awakening/Messages (K)/アズール_ルキナ.txt",
@@ -32,6 +52,16 @@
       ],
       "updatedAt": "2026-09-06T03:25:35.182Z"
     },
+    "awakening/messages (k)/アズール_ヴェイク_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_ヴェイク_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_ヴェイク_親子_Ｃ",
+        "MID_支援_アズール_ヴェイク_親子_Ｂ",
+        "MID_支援_アズール_ヴェイク_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-06T04:32:15.586Z"
+    },
     "awakening/messages (k)/ウード_ルキナ.txt": {
       "path": "Awakening/Messages (K)/ウード_ルキナ.txt",
       "mode": "main",
@@ -42,6 +72,16 @@
         "MID_支援_ウード_マルス_Ｓ"
       ],
       "updatedAt": "2026-09-06T04:33:20.760Z"
+    },
+    "awakening/messages (k)/オリヴィエ_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/オリヴィエ_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_オリヴィエ_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_オリヴィエ_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_オリヴィエ_プレイヤー女_Ａ_PCF1"
+      ],
+      "updatedAt": "2026-09-06T06:12:37.952Z"
     },
     "awakening/messages (k)/クロム_ルキナ.txt": {
       "path": "Awakening/Messages (K)/クロム_ルキナ.txt",
@@ -63,6 +103,17 @@
         "MID_支援_サーリャ_ロンクー_Ｓ"
       ],
       "updatedAt": "2026-09-06T03:56:57.671Z"
+    },
+    "awakening/messages (k)/セルジュ_ヘンリー.txt": {
+      "path": "Awakening/Messages (K)/セルジュ_ヘンリー.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_セルジュ_ヘンリー_Ｃ",
+        "MID_支援_セルジュ_ヘンリー_Ｂ",
+        "MID_支援_セルジュ_ヘンリー_Ａ",
+        "MID_支援_セルジュ_ヘンリー_Ｓ"
+      ],
+      "updatedAt": "2026-09-06T06:02:37.374Z"
     },
     "awakening/messages (k)/マーク女_ルキナ_親子.txt": {
       "path": "Awakening/Messages (K)/マーク女_ルキナ_親子.txt",
@@ -1642,6 +1693,12 @@
       "entryKey": "MID_支援_アズール_ヴィオール_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T03:41:09.896Z"
+    },
+    "awakening/messages (k)/オリヴィエ_プレイヤー女.txt\u0000MID_支援_オリヴィエ_プレイヤー女_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/オリヴィエ_プレイヤー女.txt",
+      "entryKey": "MID_支援_オリヴィエ_プレイヤー女_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T06:16:03.982Z"
     },
     "awakening/messages (k)/グレゴ_リヒト.txt\u0000MID_支援_グレゴ_リヒト_Ａ": {
       "path": "Awakening/Messages (K)/グレゴ_リヒト.txt",
