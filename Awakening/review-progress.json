@@ -1,6 +1,16 @@
 {
   "version": 2,
   "files": {
+    "awakening/messages (k)/アズール_ウード.txt": {
+      "path": "Awakening/Messages (K)/アズール_ウード.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_ウード_Ｃ",
+        "MID_支援_アズール_ウード_Ｂ",
+        "MID_支援_アズール_ウード_Ａ"
+      ],
+      "updatedAt": "2026-09-06T08:09:26.021Z"
+    },
     "awakening/messages (k)/アズール_カラム_親子.txt": {
       "path": "Awakening/Messages (K)/アズール_カラム_親子.txt",
       "mode": "main",
@@ -1723,6 +1733,24 @@
       "entryKey": "MID_支援_アズール_ヴィオール_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T03:41:09.896Z"
+    },
+    "awakening/messages (k)/アズール_ヴェイク_親子.txt\u0000MID_支援_アズール_ヴェイク_親子_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_ヴェイク_親子.txt",
+      "entryKey": "MID_支援_アズール_ヴェイク_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T08:19:48.005Z"
+    },
+    "awakening/messages (k)/アズール_ヴェイク_親子.txt\u0000MID_支援_アズール_ヴェイク_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_ヴェイク_親子.txt",
+      "entryKey": "MID_支援_アズール_ヴェイク_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T08:13:38.250Z"
+    },
+    "awakening/messages (k)/アズール_ヴェイク_親子.txt\u0000MID_支援_アズール_ヴェイク_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_ヴェイク_親子.txt",
+      "entryKey": "MID_支援_アズール_ヴェイク_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T08:10:44.231Z"
     },
     "awakening/messages (k)/オリヴィエ_プレイヤー女.txt\u0000MID_支援_オリヴィエ_プレイヤー女_Ｃ_PCF1": {
       "path": "Awakening/Messages (K)/オリヴィエ_プレイヤー女.txt",
