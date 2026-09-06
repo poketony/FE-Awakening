@@ -4,10 +4,10 @@ MESS_ARCHIVE_遭遇戦
 Message Name: Message
 
 
-MID_緑商人生存: $t1$Wmクロム|3$Wmフレデリク|7$w0|$Wsフレデリク|$Wa$SvpSE_VOICE_FREDERIK_EVT_8|크롬님, 전에 구해준 상인에게서\n감사의 선물이 도착했습니다.$k$p앞으로의 싸움에\n쓰도록 합시다.$k
-MID_緑商人死亡: $t1$Wmクロム|3$Wmフレデリク|7$w0|$Wsフレデリク|$Wa$SvpSE_VOICE_FREDERIK_EVT_8|크롬님… 전의 상인은\n구하지 못했습니다…$k$p안 됐지만…\n서두릅시다.$k
-MID_緑リーダー生存: $t1$Wmクロム|3$Wmフレデリク|7$w0|$Wsフレデリク|$Wa$SvpSE_VOICE_FREDERIK_EVT_8|크롬님, 전에 같이 싸웠던 자들은\n무사합니다.$k$p모처럼 교섭해보는 것도\n좋을 것 같습니다.$k
-MID_緑リーダー死亡: $t1$Wmクロム|3$Wmフレデリク|7$w0|$Wsフレデリク|$Wa$SvpSE_VOICE_FREDERIK_EVT_8|크롬님… 전에 같이 싸웠던 자들은\n어딘가로 가버렸습니다…$k$p안됐지만…\n서두릅시다.$k
+MID_緑商人生存: $t1$Wmクロム|3$Wmフレデリク|7$w0|$Wsフレデリク|$Wa$SvpSE_VOICE_FREDERIK_EVT_8|크롬님, 방금 전에 구해 준 상인으로부터\n감사의 선물이 도착했습니다.$k$p앞으로의 싸움에\n쓰도록 합시다.$k
+MID_緑商人死亡: $t1$Wmクロム|3$Wmフレデリク|7$w0|$Wsフレデリク|$Wa$SvpSE_VOICE_FREDERIK_EVT_8|크롬님… 방금 전의 상인은\n구하지 못했습니다…$k$p안됐지만…\n서두릅시다.$k
+MID_緑リーダー生存: $t1$Wmクロム|3$Wmフレデリク|7$w0|$Wsフレデリク|$Wa$SvpSE_VOICE_FREDERIK_EVT_8|크롬님, 방금 전에 같이 싸웠던 자들은\n무사합니다.$k$p모처럼 교섭해 보는 것도\n좋을 것 같습니다.$k
+MID_緑リーダー死亡: $t1$Wmクロム|3$Wmフレデリク|7$w0|$Wsフレデリク|$Wa$SvpSE_VOICE_FREDERIK_EVT_8|크롬님… 방금 전에 같이 싸웠던 자들은\n어딘가로 가 버렸습니다…$k$p유감이지만…\n서두릅시다.$k
 MID_緑リーダー撃破: $t1$Wmクロム|3$Wmフレデリク|7$w0|$Wsフレデリク|$Wa$SvpSE_VOICE_FREDERIK_EVT_8|크롬님, 훌륭합니다.\n적군을 격파했습니다.$k$p그들의 리더가 크롬님의 힘을 보고,\n동료가 되길 희망하고 있습니다.$k
 MID_両赤軍全滅: $t1$Wmクロム|3$Wmフレデリク|7$w0|$Wsフレデリク|$Wa$SvpSE_VOICE_FREDERIK_EVT_8|크롬님, 이 땅의 마을 사람으로부터\n시체 병사를 토벌한 사례를 받았습니다.$k$p앞으로의 싸움에\n쓰도록 합시다.$k
 MID_赤軍全滅: $t1$Wmクロム|3$Wmフレデリク|7$w0|$Wsフレデリク|$Wa$SvpSE_VOICE_FREDERIK_EVT_8|크롬님, 시체 병사를 토벌했습니다.\n이걸로 당분간 안전할 겁니다.$k

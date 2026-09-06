@@ -4,5 +4,5 @@ MESS_ARCHIVE_様子_旧マルス2
 Message Name: Message
 
 
-MID_様子_旧マルス_前: …! …?
-MID_様子_旧マルス_後: …! ~♪
+MID_様子_旧マルス_前: …!! …?
+MID_様子_旧マルス_後: …!! …♪

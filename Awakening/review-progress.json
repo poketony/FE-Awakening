@@ -1,6 +1,23 @@
 {
   "version": 2,
   "files": {
+    "awakening/messages (k)/022.txt": {
+      "path": "Awakening/Messages (K)/022.txt",
+      "mode": "main",
+      "expected": [
+        "MID_022_OP1",
+        "MID_022_OP2",
+        "MID_022_OP2_02",
+        "MID_022_OP3",
+        "MID_022_BT1",
+        "MID_022_BT2_PCM1",
+        "MID_022_BT2_PCF1",
+        "MID_022_BT3",
+        "MID_022_BOSS_DIE1",
+        "MID_022_ED1"
+      ],
+      "updatedAt": "2026-09-06T10:09:16.285Z"
+    },
     "awakening/messages (k)/アズール_ウード.txt": {
       "path": "Awakening/Messages (K)/アズール_ウード.txt",
       "mode": "main",
@@ -102,6 +119,16 @@
       ],
       "updatedAt": "2026-09-06T04:32:15.586Z"
     },
+    "awakening/messages (k)/ウード_ブレディ.txt": {
+      "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_ブレディ_Ｃ",
+        "MID_支援_ウード_ブレディ_Ｂ",
+        "MID_支援_ウード_ブレディ_Ａ"
+      ],
+      "updatedAt": "2026-09-06T11:03:12.260Z"
+    },
     "awakening/messages (k)/ウード_ルキナ.txt": {
       "path": "Awakening/Messages (K)/ウード_ルキナ.txt",
       "mode": "main",
@@ -185,6 +212,547 @@
       ],
       "updatedAt": "2026-09-06T03:13:49.921Z"
     },
+    "awakening/messages (k)/ヴェイク_ロンクー.txt": {
+      "path": "Awakening/Messages (K)/ヴェイク_ロンクー.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴェイク_ロンクー_Ｃ",
+        "MID_支援_ヴェイク_ロンクー_Ｂ",
+        "MID_支援_ヴェイク_ロンクー_Ａ"
+      ],
+      "updatedAt": "2026-09-06T09:40:01.827Z"
+    },
+    "awakening/messages (k)/様子_旧マルス1.txt": {
+      "path": "Awakening/Messages (K)/様子_旧マルス1.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_旧マルス_前",
+        "MID_様子_旧マルス_後"
+      ],
+      "updatedAt": "2026-09-06T09:52:30.373Z"
+    },
+    "awakening/messages (k)/様子_旧マルス2.txt": {
+      "path": "Awakening/Messages (K)/様子_旧マルス2.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_旧マルス_前",
+        "MID_様子_旧マルス_後"
+      ],
+      "updatedAt": "2026-09-06T09:52:34.504Z"
+    },
+    "awakening/messages (k)/様子_旧マルス3.txt": {
+      "path": "Awakening/Messages (K)/様子_旧マルス3.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_旧マルス_前",
+        "MID_様子_旧マルス_後"
+      ],
+      "updatedAt": "2026-09-06T09:53:24.570Z"
+    },
+    "awakening/messages (k)/様子_旧マルス4.txt": {
+      "path": "Awakening/Messages (K)/様子_旧マルス4.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_旧マルス_前",
+        "MID_様子_旧マルス_後"
+      ],
+      "updatedAt": "2026-09-06T09:53:46.540Z"
+    },
+    "awakening/messages (k)/様子_武器経験.txt": {
+      "path": "Awakening/Messages (K)/様子_武器経験.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_単独_プレイヤー男_PCM1",
+        "MID_様子_単独_プレイヤー女_PCF1",
+        "MID_様子_単独_プレイヤー援軍",
+        "MID_様子_単独_旧マルス",
+        "MID_様子_単独_クロム",
+        "MID_様子_単独_フレデリク",
+        "MID_様子_単独_ソール",
+        "MID_様子_単独_カラム",
+        "MID_様子_単独_リヒト",
+        "MID_様子_単独_ヴェイク",
+        "MID_様子_単独_リベラ",
+        "MID_様子_単独_ロンクー",
+        "MID_様子_単独_グレゴ",
+        "MID_様子_単独_ガイア",
+        "MID_様子_単独_ヴィオール",
+        "MID_様子_単独_ヘンリー",
+        "MID_様子_単独_ドニ",
+        "MID_様子_単独_スミア",
+        "MID_様子_単独_リズ",
+        "MID_様子_単独_ソワレ",
+        "MID_様子_単独_マリアベル",
+        "MID_様子_単独_ティアモ",
+        "MID_様子_単独_ベルベット",
+        "MID_様子_単独_ノノ",
+        "MID_様子_単独_オリヴィエ",
+        "MID_様子_単独_セルジュ",
+        "MID_様子_単独_ミリエル",
+        "MID_様子_単独_サーリャ",
+        "MID_様子_単独_ジェローム",
+        "MID_様子_単独_ウード",
+        "MID_様子_単独_アズール",
+        "MID_様子_単独_ブレディ",
+        "MID_様子_単独_シャンブレー",
+        "MID_様子_単独_ロラン",
+        "MID_様子_単独_マーク男",
+        "MID_様子_単独_マルス",
+        "MID_様子_単独_デジェル",
+        "MID_様子_単独_シンシア",
+        "MID_様子_単独_セレナ",
+        "MID_様子_単独_ノワール",
+        "MID_様子_単独_ンン",
+        "MID_様子_単独_マーク女",
+        "MID_様子_単独_パリス",
+        "MID_様子_単独_バジーリオ",
+        "MID_様子_単独_レンハ",
+        "MID_様子_単独_ヴァルハルト",
+        "MID_様子_単独_ギャンレル",
+        "MID_様子_単独_サイリ",
+        "MID_様子_単独_アンナ",
+        "MID_様子_単独_チキ",
+        "MID_様子_単独_インバース",
+        "MID_様子_単独_フラヴィア",
+        "MID_様子_単独_エメリナ"
+      ],
+      "updatedAt": "2026-09-06T10:09:09.739Z"
+    },
+    "awakening/messages (k)/様子_経験.txt": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_単独_プレイヤー男_PCM1",
+        "MID_様子_単独_プレイヤー女_PCF1",
+        "MID_様子_単独_プレイヤー援軍",
+        "MID_様子_単独_旧マルス",
+        "MID_様子_単独_クロム",
+        "MID_様子_単独_フレデリク",
+        "MID_様子_単独_ソール",
+        "MID_様子_単独_カラム",
+        "MID_様子_単独_リヒト",
+        "MID_様子_単独_ヴェイク",
+        "MID_様子_単独_リベラ",
+        "MID_様子_単独_ロンクー",
+        "MID_様子_単独_グレゴ",
+        "MID_様子_単独_ガイア",
+        "MID_様子_単独_ヴィオール",
+        "MID_様子_単独_ヘンリー",
+        "MID_様子_単独_ドニ",
+        "MID_様子_単独_スミア",
+        "MID_様子_単独_リズ",
+        "MID_様子_単独_ソワレ",
+        "MID_様子_単独_マリアベル",
+        "MID_様子_単独_ティアモ",
+        "MID_様子_単独_ベルベット",
+        "MID_様子_単独_ノノ",
+        "MID_様子_単独_オリヴィエ",
+        "MID_様子_単独_セルジュ",
+        "MID_様子_単独_ミリエル",
+        "MID_様子_単独_サーリャ",
+        "MID_様子_単独_ジェローム",
+        "MID_様子_単独_ウード",
+        "MID_様子_単独_アズール",
+        "MID_様子_単独_ブレディ",
+        "MID_様子_単独_シャンブレー",
+        "MID_様子_単独_ロラン",
+        "MID_様子_単独_マーク男",
+        "MID_様子_単独_マルス",
+        "MID_様子_単独_デジェル",
+        "MID_様子_単独_シンシア",
+        "MID_様子_単独_セレナ",
+        "MID_様子_単独_ノワール",
+        "MID_様子_単独_ンン",
+        "MID_様子_単独_マーク女",
+        "MID_様子_単独_パリス",
+        "MID_様子_単独_バジーリオ",
+        "MID_様子_単独_レンハ",
+        "MID_様子_単独_ヴァルハルト",
+        "MID_様子_単独_ギャンレル",
+        "MID_様子_単独_サイリ",
+        "MID_様子_単独_アンナ",
+        "MID_様子_単独_チキ",
+        "MID_様子_単独_インバース",
+        "MID_様子_単独_フラヴィア",
+        "MID_様子_単独_エメリナ"
+      ],
+      "updatedAt": "2026-09-06T09:54:06.500Z"
+    },
+    "awakening/messages (k)/様子_能力.txt": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_単独_プレイヤー男_PCM1",
+        "MID_様子_単独_プレイヤー女_PCF1",
+        "MID_様子_単独_プレイヤー援軍",
+        "MID_様子_単独_旧マルス",
+        "MID_様子_単独_クロム",
+        "MID_様子_単独_フレデリク",
+        "MID_様子_単独_ソール",
+        "MID_様子_単独_カラム",
+        "MID_様子_単独_リヒト",
+        "MID_様子_単独_ヴェイク",
+        "MID_様子_単独_リベラ",
+        "MID_様子_単独_ロンクー",
+        "MID_様子_単独_グレゴ",
+        "MID_様子_単独_ガイア",
+        "MID_様子_単独_ヴィオール",
+        "MID_様子_単独_ヘンリー",
+        "MID_様子_単独_ドニ",
+        "MID_様子_単独_スミア",
+        "MID_様子_単独_リズ",
+        "MID_様子_単独_ソワレ",
+        "MID_様子_単独_マリアベル",
+        "MID_様子_単独_ティアモ",
+        "MID_様子_単独_ベルベット",
+        "MID_様子_単独_ノノ",
+        "MID_様子_単独_オリヴィエ",
+        "MID_様子_単独_セルジュ",
+        "MID_様子_単独_ミリエル",
+        "MID_様子_単独_サーリャ",
+        "MID_様子_単独_ジェローム",
+        "MID_様子_単独_ウード",
+        "MID_様子_単独_アズール",
+        "MID_様子_単独_ブレディ",
+        "MID_様子_単独_シャンブレー",
+        "MID_様子_単独_ロラン",
+        "MID_様子_単独_マーク男",
+        "MID_様子_単独_マルス",
+        "MID_様子_単独_デジェル",
+        "MID_様子_単独_シンシア",
+        "MID_様子_単独_セレナ",
+        "MID_様子_単独_ノワール",
+        "MID_様子_単独_ンン",
+        "MID_様子_単独_マーク女",
+        "MID_様子_単独_パリス",
+        "MID_様子_単独_バジーリオ",
+        "MID_様子_単独_レンハ",
+        "MID_様子_単独_ヴァルハルト",
+        "MID_様子_単独_ギャンレル",
+        "MID_様子_単独_サイリ",
+        "MID_様子_単独_アンナ",
+        "MID_様子_単独_チキ",
+        "MID_様子_単独_インバース",
+        "MID_様子_単独_フラヴィア",
+        "MID_様子_単独_エメリナ"
+      ],
+      "updatedAt": "2026-09-06T09:49:58.260Z"
+    },
+    "awakening/messages (k)/死亡.txt": {
+      "path": "Awakening/Messages (K)/死亡.txt",
+      "mode": "main",
+      "expected": [
+        "MID_DIE_プレイヤー男_PCM1",
+        "MID_DIE_プレイヤー女_PCF1",
+        "MID_DIE_プレイヤー援軍",
+        "MID_DIE_旧マルス",
+        "MID_DIE_クロム_PCM1",
+        "MID_DIE_クロム_PCF1",
+        "MID_DIE_フレデリク",
+        "MID_DIE_ソール",
+        "MID_DIE_カラム",
+        "MID_DIE_リヒト",
+        "MID_DIE_ヴェイク",
+        "MID_DIE_リベラ",
+        "MID_DIE_ロンクー",
+        "MID_DIE_グレゴ",
+        "MID_DIE_ガイア",
+        "MID_DIE_ヴィオール",
+        "MID_DIE_ヘンリー",
+        "MID_DIE_ドニ",
+        "MID_DIE_スミア",
+        "MID_DIE_リズ",
+        "MID_DIE_ソワレ",
+        "MID_DIE_マリアベル",
+        "MID_DIE_ティアモ",
+        "MID_DIE_ベルベット",
+        "MID_DIE_ノノ",
+        "MID_DIE_オリヴィエ",
+        "MID_DIE_セルジュ",
+        "MID_DIE_ミリエル",
+        "MID_DIE_サーリャ",
+        "MID_DIE_ジェローム",
+        "MID_DIE_ウード",
+        "MID_DIE_アズール",
+        "MID_DIE_ブレディ",
+        "MID_DIE_シャンブレー",
+        "MID_DIE_ロラン",
+        "MID_DIE_マーク男",
+        "MID_DIE_マルス",
+        "MID_DIE_デジェル",
+        "MID_DIE_シンシア",
+        "MID_DIE_セレナ",
+        "MID_DIE_ノワール",
+        "MID_DIE_ンン",
+        "MID_DIE_マーク女",
+        "MID_DIE_パリス",
+        "MID_DIE_バジーリオ",
+        "MID_DIE_レンハ",
+        "MID_DIE_ヴァルハルト",
+        "MID_DIE_ギャンレル",
+        "MID_DIE_サイリ",
+        "MID_DIE_アンナ",
+        "MID_DIE_チキ",
+        "MID_DIE_インバース",
+        "MID_DIE_フラヴィア",
+        "MID_DIE_エメリナ"
+      ],
+      "updatedAt": "2026-09-06T09:52:22.524Z"
+    },
+    "awakening/messages (k)/相性占い.txt": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "mode": "main",
+      "expected": [
+        "MID_占_爺_人数不足",
+        "MID_占_爺_イントロ",
+        "MID_占_爺_選択中",
+        "MID_占_爺_選択確認",
+        "MID_占_爺_再度",
+        "MID_占_爺_さらば",
+        "MID_占_愛_01",
+        "MID_占_愛_02",
+        "MID_占_愛_03",
+        "MID_占_愛_04",
+        "MID_占_愛_05",
+        "MID_占_愛_06",
+        "MID_占_愛_07",
+        "MID_占_愛_08",
+        "MID_占_愛_09",
+        "MID_占_愛_10",
+        "MID_占_愛_11",
+        "MID_占_愛_12",
+        "MID_占_愛_13",
+        "MID_占_愛_14",
+        "MID_占_愛_15",
+        "MID_占_愛_16",
+        "MID_占_愛_17",
+        "MID_占_愛_18",
+        "MID_占_愛_19",
+        "MID_占_愛_20",
+        "MID_占_愛_21",
+        "MID_占_愛_22",
+        "MID_占_愛_23",
+        "MID_占_愛_24",
+        "MID_占_愛_25",
+        "MID_占_愛_26",
+        "MID_占_愛_27",
+        "MID_占_愛_28",
+        "MID_占_愛_29",
+        "MID_占_愛_30",
+        "MID_占_好_01",
+        "MID_占_好_02",
+        "MID_占_好_03",
+        "MID_占_好_04",
+        "MID_占_好_05",
+        "MID_占_好_06",
+        "MID_占_好_07",
+        "MID_占_好_08",
+        "MID_占_好_09",
+        "MID_占_好_10",
+        "MID_占_好_11",
+        "MID_占_好_12",
+        "MID_占_好_13",
+        "MID_占_好_14",
+        "MID_占_好_15",
+        "MID_占_好_16",
+        "MID_占_好_17",
+        "MID_占_好_18",
+        "MID_占_好_19",
+        "MID_占_好_20",
+        "MID_占_好_21",
+        "MID_占_好_22",
+        "MID_占_好_23",
+        "MID_占_好_24",
+        "MID_占_好_25",
+        "MID_占_好_26",
+        "MID_占_好_27",
+        "MID_占_好_28",
+        "MID_占_好_29",
+        "MID_占_好_30",
+        "MID_占_嫌_01",
+        "MID_占_嫌_02",
+        "MID_占_嫌_03",
+        "MID_占_嫌_04",
+        "MID_占_嫌_05",
+        "MID_占_嫌_06",
+        "MID_占_嫌_07",
+        "MID_占_嫌_08",
+        "MID_占_嫌_09",
+        "MID_占_嫌_10",
+        "MID_占_嫌_11",
+        "MID_占_嫌_12",
+        "MID_占_嫌_13",
+        "MID_占_嫌_14",
+        "MID_占_嫌_15",
+        "MID_占_嫌_16",
+        "MID_占_嫌_17",
+        "MID_占_嫌_18",
+        "MID_占_嫌_19",
+        "MID_占_嫌_20",
+        "MID_占_嫌_21",
+        "MID_占_嫌_22",
+        "MID_占_嫌_23",
+        "MID_占_嫌_24",
+        "MID_占_嫌_25",
+        "MID_占_嫌_26",
+        "MID_占_嫌_27",
+        "MID_占_嫌_28",
+        "MID_占_嫌_29",
+        "MID_占_嫌_30",
+        "MID_占_愛愛_女女",
+        "MID_占_愛愛_男男",
+        "MID_占_愛愛_男女A",
+        "MID_占_愛愛_男女B",
+        "MID_占_愛愛_男女C",
+        "MID_占_愛愛_夫婦",
+        "MID_占_愛愛_親子",
+        "MID_占_愛愛_兄弟",
+        "MID_占_愛好_女女",
+        "MID_占_愛好_男男",
+        "MID_占_愛好_男女A",
+        "MID_占_愛好_男女B",
+        "MID_占_愛好_男女C",
+        "MID_占_愛好_夫婦",
+        "MID_占_愛好_親子",
+        "MID_占_愛好_兄弟",
+        "MID_占_愛嫌_女女",
+        "MID_占_愛嫌_男男",
+        "MID_占_愛嫌_男女A",
+        "MID_占_愛嫌_男女B",
+        "MID_占_愛嫌_男女C",
+        "MID_占_愛嫌_夫婦",
+        "MID_占_愛嫌_親子",
+        "MID_占_愛嫌_兄弟",
+        "MID_占_好好_女女",
+        "MID_占_好好_男男",
+        "MID_占_好好_男女A",
+        "MID_占_好好_男女B",
+        "MID_占_好好_男女C",
+        "MID_占_好好_夫婦",
+        "MID_占_好好_親子",
+        "MID_占_好好_兄弟",
+        "MID_占_好嫌_女女",
+        "MID_占_好嫌_男男",
+        "MID_占_好嫌_男女A",
+        "MID_占_好嫌_男女B",
+        "MID_占_好嫌_男女C",
+        "MID_占_好嫌_夫婦",
+        "MID_占_好嫌_親子",
+        "MID_占_好嫌_兄弟",
+        "MID_占_嫌嫌_女女",
+        "MID_占_嫌嫌_男男",
+        "MID_占_嫌嫌_男女A",
+        "MID_占_嫌嫌_男女B",
+        "MID_占_嫌嫌_男女C",
+        "MID_占_嫌嫌_夫婦",
+        "MID_占_嫌嫌_親子",
+        "MID_占_嫌嫌_兄弟"
+      ],
+      "updatedAt": "2026-09-06T09:52:14.903Z"
+    },
+    "awakening/messages (k)/紹介文.txt": {
+      "path": "Awakening/Messages (K)/紹介文.txt",
+      "mode": "main",
+      "expected": [
+        "MID_名鑑_プレイヤー男",
+        "MID_名鑑_プレイヤー女",
+        "MID_名鑑_クロム",
+        "MID_名鑑_フレデリク",
+        "MID_名鑑_ソール",
+        "MID_名鑑_カラム",
+        "MID_名鑑_リヒト",
+        "MID_名鑑_ヴェイク",
+        "MID_名鑑_リベラ",
+        "MID_名鑑_ロンクー",
+        "MID_名鑑_グレゴ",
+        "MID_名鑑_ガイア",
+        "MID_名鑑_ヴィオール",
+        "MID_名鑑_ヘンリー",
+        "MID_名鑑_ドニ",
+        "MID_名鑑_スミア",
+        "MID_名鑑_リズ",
+        "MID_名鑑_ソワレ",
+        "MID_名鑑_マリアベル",
+        "MID_名鑑_ティアモ",
+        "MID_名鑑_ベルベット",
+        "MID_名鑑_ノノ",
+        "MID_名鑑_オリヴィエ",
+        "MID_名鑑_セルジュ",
+        "MID_名鑑_ミリエル",
+        "MID_名鑑_サーリャ",
+        "MID_名鑑_ジェローム",
+        "MID_名鑑_ウード",
+        "MID_名鑑_アズール",
+        "MID_名鑑_ブレディ",
+        "MID_名鑑_シャンブレー",
+        "MID_名鑑_ロラン",
+        "MID_名鑑_マルス",
+        "MID_名鑑_デジェル",
+        "MID_名鑑_シンシア",
+        "MID_名鑑_セレナ",
+        "MID_名鑑_ノワール",
+        "MID_名鑑_ンン",
+        "MID_名鑑_マーク男",
+        "MID_名鑑_マーク女",
+        "MID_名鑑_パリス",
+        "MID_名鑑_バジーリオ",
+        "MID_名鑑_レンハ",
+        "MID_名鑑_ヴァルハルト",
+        "MID_名鑑_ギャンレル",
+        "MID_名鑑_サイリ",
+        "MID_名鑑_アンナ",
+        "MID_名鑑_チキ",
+        "MID_名鑑_インバース",
+        "MID_名鑑_フラヴィア",
+        "MID_名鑑_エメリナ",
+        "MID_名鑑_おじいさん",
+        "MID_誕生_文字列",
+        "MID_誕生月_01",
+        "MID_誕生月_02",
+        "MID_誕生月_03",
+        "MID_誕生月_04",
+        "MID_誕生月_05",
+        "MID_誕生月_06",
+        "MID_誕生月_07",
+        "MID_誕生月_08",
+        "MID_誕生月_09",
+        "MID_誕生月_10",
+        "MID_誕生月_11",
+        "MID_誕生月_12",
+        "MID_誕生日_01",
+        "MID_誕生日_02",
+        "MID_誕生日_03",
+        "MID_誕生日_04",
+        "MID_誕生日_05",
+        "MID_誕生日_06",
+        "MID_誕生日_07",
+        "MID_誕生日_08",
+        "MID_誕生日_09",
+        "MID_誕生日_10",
+        "MID_誕生日_11",
+        "MID_誕生日_12",
+        "MID_誕生日_13",
+        "MID_誕生日_14",
+        "MID_誕生日_15",
+        "MID_誕生日_16",
+        "MID_誕生日_17",
+        "MID_誕生日_18",
+        "MID_誕生日_19",
+        "MID_誕生日_20",
+        "MID_誕生日_21",
+        "MID_誕生日_22",
+        "MID_誕生日_23",
+        "MID_誕生日_24",
+        "MID_誕生日_25",
+        "MID_誕生日_26",
+        "MID_誕生日_27",
+        "MID_誕生日_28",
+        "MID_誕生日_29",
+        "MID_誕生日_30",
+        "MID_誕生日_31"
+      ],
+      "updatedAt": "2026-09-06T09:50:02.426Z"
+    },
     "awakening/messages (k)/通信.txt": {
       "path": "Awakening/Messages (K)/通信.txt",
       "mode": "main",
@@ -259,6 +827,20 @@
         "MID_CEC_BOX_INFO"
       ],
       "updatedAt": "2026-09-06T04:02:07.096Z"
+    },
+    "awakening/messages (k)/遭遇戦.txt": {
+      "path": "Awakening/Messages (K)/遭遇戦.txt",
+      "mode": "main",
+      "expected": [
+        "MID_緑商人生存",
+        "MID_緑商人死亡",
+        "MID_緑リーダー生存",
+        "MID_緑リーダー死亡",
+        "MID_緑リーダー撃破",
+        "MID_両赤軍全滅",
+        "MID_赤軍全滅"
+      ],
+      "updatedAt": "2026-09-06T09:50:03.490Z"
     }
   },
   "entries": {
@@ -843,6 +1425,66 @@
       "entryKey": "MID_006_OP2",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/022.txt\u0000MID_022_BOSS_DIE1": {
+      "path": "Awakening/Messages (K)/022.txt",
+      "entryKey": "MID_022_BOSS_DIE1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:46:31.027Z"
+    },
+    "awakening/messages (k)/022.txt\u0000MID_022_BT1": {
+      "path": "Awakening/Messages (K)/022.txt",
+      "entryKey": "MID_022_BT1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:26:42.270Z"
+    },
+    "awakening/messages (k)/022.txt\u0000MID_022_BT2_PCF1": {
+      "path": "Awakening/Messages (K)/022.txt",
+      "entryKey": "MID_022_BT2_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:28:21.567Z"
+    },
+    "awakening/messages (k)/022.txt\u0000MID_022_BT2_PCM1": {
+      "path": "Awakening/Messages (K)/022.txt",
+      "entryKey": "MID_022_BT2_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:27:50.460Z"
+    },
+    "awakening/messages (k)/022.txt\u0000MID_022_BT3": {
+      "path": "Awakening/Messages (K)/022.txt",
+      "entryKey": "MID_022_BT3",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:28:53.744Z"
+    },
+    "awakening/messages (k)/022.txt\u0000MID_022_ED1": {
+      "path": "Awakening/Messages (K)/022.txt",
+      "entryKey": "MID_022_ED1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:46:44.739Z"
+    },
+    "awakening/messages (k)/022.txt\u0000MID_022_OP1": {
+      "path": "Awakening/Messages (K)/022.txt",
+      "entryKey": "MID_022_OP1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:10:09.403Z"
+    },
+    "awakening/messages (k)/022.txt\u0000MID_022_OP2": {
+      "path": "Awakening/Messages (K)/022.txt",
+      "entryKey": "MID_022_OP2",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:13:36.139Z"
+    },
+    "awakening/messages (k)/022.txt\u0000MID_022_OP2_02": {
+      "path": "Awakening/Messages (K)/022.txt",
+      "entryKey": "MID_022_OP2_02",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:25:13.250Z"
+    },
+    "awakening/messages (k)/022.txt\u0000MID_022_OP3": {
+      "path": "Awakening/Messages (K)/022.txt",
+      "entryKey": "MID_022_OP3",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:25:51.729Z"
     },
     "awakening/messages (k)/024.txt\u0000MID_024_BOSS_DIE1": {
       "path": "Awakening/Messages (K)/024.txt",
@@ -1852,6 +2494,24 @@
       "status": "approved",
       "updatedAt": "2026-09-06T08:10:44.231Z"
     },
+    "awakening/messages (k)/ウード_ブレディ.txt\u0000MID_支援_ウード_ブレディ_Ａ": {
+      "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
+      "entryKey": "MID_支援_ウード_ブレディ_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T11:31:48.559Z"
+    },
+    "awakening/messages (k)/ウード_ブレディ.txt\u0000MID_支援_ウード_ブレディ_Ｂ": {
+      "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
+      "entryKey": "MID_支援_ウード_ブレディ_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T11:08:12.644Z"
+    },
+    "awakening/messages (k)/ウード_ブレディ.txt\u0000MID_支援_ウード_ブレディ_Ｃ": {
+      "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
+      "entryKey": "MID_支援_ウード_ブレディ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T11:06:05.428Z"
+    },
     "awakening/messages (k)/オリヴィエ_プレイヤー女.txt\u0000MID_支援_オリヴィエ_プレイヤー女_Ｃ_PCF1": {
       "path": "Awakening/Messages (K)/オリヴィエ_プレイヤー女.txt",
       "entryKey": "MID_支援_オリヴィエ_プレイヤー女_Ｃ_PCF1",
@@ -2572,6 +3232,690 @@
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
     },
+    "awakening/messages (k)/様子_旧マルス1.txt\u0000MID_様子_旧マルス_前": {
+      "path": "Awakening/Messages (K)/様子_旧マルス1.txt",
+      "entryKey": "MID_様子_旧マルス_前",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:52:33.049Z"
+    },
+    "awakening/messages (k)/様子_旧マルス1.txt\u0000MID_様子_旧マルス_後": {
+      "path": "Awakening/Messages (K)/様子_旧マルス1.txt",
+      "entryKey": "MID_様子_旧マルス_後",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:52:33.347Z"
+    },
+    "awakening/messages (k)/様子_旧マルス2.txt\u0000MID_様子_旧マルス_前": {
+      "path": "Awakening/Messages (K)/様子_旧マルス2.txt",
+      "entryKey": "MID_様子_旧マルス_前",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:52:35.566Z"
+    },
+    "awakening/messages (k)/様子_旧マルス2.txt\u0000MID_様子_旧マルス_後": {
+      "path": "Awakening/Messages (K)/様子_旧マルス2.txt",
+      "entryKey": "MID_様子_旧マルス_後",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:52:36.192Z"
+    },
+    "awakening/messages (k)/様子_旧マルス3.txt\u0000MID_様子_旧マルス_前": {
+      "path": "Awakening/Messages (K)/様子_旧マルス3.txt",
+      "entryKey": "MID_様子_旧マルス_前",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:53:43.750Z"
+    },
+    "awakening/messages (k)/様子_旧マルス3.txt\u0000MID_様子_旧マルス_後": {
+      "path": "Awakening/Messages (K)/様子_旧マルス3.txt",
+      "entryKey": "MID_様子_旧マルス_後",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:53:45.395Z"
+    },
+    "awakening/messages (k)/様子_旧マルス4.txt\u0000MID_様子_旧マルス_前": {
+      "path": "Awakening/Messages (K)/様子_旧マルス4.txt",
+      "entryKey": "MID_様子_旧マルス_前",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:53:50.637Z"
+    },
+    "awakening/messages (k)/様子_旧マルス4.txt\u0000MID_様子_旧マルス_後": {
+      "path": "Awakening/Messages (K)/様子_旧マルス4.txt",
+      "entryKey": "MID_様子_旧マルス_後",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:54:00.184Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_アズール": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_アズール",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:24.158Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_アンナ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_アンナ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:01:07.462Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_インバース": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_インバース",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:01.605Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ウード": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ウード",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:21.020Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_エメリナ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_エメリナ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:09.940Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_オリヴィエ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_オリヴィエ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:04.386Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_カラム": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_カラム",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:54:50.438Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ガイア": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ガイア",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:55:24.730Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ギャンレル": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ギャンレル",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:01:03.184Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_クロム": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_クロム",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:54:40.181Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_グレゴ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_グレゴ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:55:22.860Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_サイリ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_サイリ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:01:05.502Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_サーリャ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_サーリャ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:15.234Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_シャンブレー": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_シャンブレー",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:44.797Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_シンシア": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_シンシア",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:00:09.945Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ジェローム": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ジェローム",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:17.291Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_スミア": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_スミア",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:55:54.018Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_セルジュ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_セルジュ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:06.860Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_セレナ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_セレナ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:00:17.315Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ソワレ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ソワレ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:56:12.321Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ソール": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ソール",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:54:48.178Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_チキ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_チキ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:01:58.232Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ティアモ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ティアモ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:56:29.966Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_デジェル": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_デジェル",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:00:07.083Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ドニ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ドニ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:55:48.969Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ノノ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ノノ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:02.154Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ノワール": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ノワール",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:00:23.793Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_バジーリオ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_バジーリオ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:00:47.347Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_パリス": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_パリス",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:00:34.009Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_フラヴィア": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_フラヴィア",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:04.541Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_フレデリク": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_フレデリク",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:54:46.308Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ブレディ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ブレディ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:39.765Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_プレイヤー女_PCF1": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_プレイヤー女_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:54:18.554Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_プレイヤー援軍": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_プレイヤー援軍",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:54:20.316Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_プレイヤー男_PCM1": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_プレイヤー男_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:54:17.820Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ヘンリー": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ヘンリー",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:55:32.371Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ベルベット": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ベルベット",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:56:33.351Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_マリアベル": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_マリアベル",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:56:18.824Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_マルス": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_マルス",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:55.463Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_マーク女": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_マーク女",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:00:30.737Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_マーク男": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_マーク男",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:53.132Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ミリエル": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ミリエル",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:12.684Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_リズ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_リズ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:55:58.134Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_リヒト": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_リヒト",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:54:53.615Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_リベラ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_リベラ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:54:58.228Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_レンハ": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_レンハ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:00:50.985Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ロラン": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ロラン",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:59:51.560Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ロンクー": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ロンクー",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:55:07.930Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ンン": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ンン",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:00:29.062Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ヴァルハルト": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ヴァルハルト",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:00:58.565Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ヴィオール": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ヴィオール",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:55:27.628Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_ヴェイク": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_ヴェイク",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:54:55.651Z"
+    },
+    "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_旧マルス": {
+      "path": "Awakening/Messages (K)/様子_経験.txt",
+      "entryKey": "MID_様子_単独_旧マルス",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:54:22.856Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_アズール": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_アズール",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:04:50.672Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_アンナ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_アンナ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:08:54.528Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_インバース": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_インバース",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:08:57.135Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ウード": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ウード",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:04:30.378Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_エメリナ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_エメリナ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:09:01.873Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_オリヴィエ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_オリヴィエ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:04:05.179Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_カラム": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_カラム",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:38.236Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ガイア": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ガイア",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:48.919Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ギャンレル": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ギャンレル",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:08:50.277Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_クロム": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_クロム",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:25.446Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_グレゴ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_グレゴ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:46.299Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_サイリ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_サイリ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:08:52.225Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_サーリャ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_サーリャ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:04:10.750Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_シャンブレー": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_シャンブレー",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:05:15.588Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_シンシア": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_シンシア",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:05:32.430Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ジェローム": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ジェローム",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:04:15.199Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_スミア": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_スミア",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:03:20.678Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_セルジュ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_セルジュ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:04:06.810Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_セレナ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_セレナ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:06:21.016Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ソワレ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ソワレ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:03:26.846Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ソール": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ソール",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:35.386Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_チキ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_チキ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:08:55.539Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ティアモ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ティアモ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:03:43.425Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_デジェル": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_デジェル",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:05:27.282Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ドニ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ドニ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:03:17.836Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ノノ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ノノ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:04:02.457Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ノワール": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ノワール",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:06:22.952Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_バジーリオ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_バジーリオ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:08:38.642Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_パリス": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_パリス",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:06:29.465Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_フラヴィア": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_フラヴィア",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:08:59.061Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_フレデリク": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_フレデリク",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:29.302Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ブレディ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ブレディ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:05:04.003Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_プレイヤー女_PCF1": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_プレイヤー女_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:22.211Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_プレイヤー援軍": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_プレイヤー援軍",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:22.900Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_プレイヤー男_PCM1": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_プレイヤー男_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:19.390Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ヘンリー": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ヘンリー",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:53.103Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ベルベット": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ベルベット",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:03:59.724Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_マリアベル": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_マリアベル",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:03:42.028Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_マルス": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_マルス",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:05:21.978Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_マーク女": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_マーク女",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:06:26.000Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_マーク男": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_マーク男",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:05:19.550Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ミリエル": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ミリエル",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:04:09.059Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_リズ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_リズ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:03:25.341Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_リヒト": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_リヒト",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:39.887Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_リベラ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_リベラ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:43.517Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_レンハ": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_レンハ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:08:40.443Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ロラン": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ロラン",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:05:17.609Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ロンクー": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ロンクー",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:44.755Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ンン": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ンン",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:06:24.273Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ヴァルハルト": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ヴァルハルト",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:08:44.893Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ヴィオール": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ヴィオール",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:50.419Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_ヴェイク": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_ヴェイク",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:41.731Z"
+    },
+    "awakening/messages (k)/様子_能力.txt\u0000MID_様子_単独_旧マルス": {
+      "path": "Awakening/Messages (K)/様子_能力.txt",
+      "entryKey": "MID_様子_単独_旧マルス",
+      "status": "approved",
+      "updatedAt": "2026-09-06T10:02:23.587Z"
+    },
     "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_アズール": {
       "path": "Awakening/Messages (K)/独り言.txt",
       "entryKey": "MID_様子_単独_アズール",
@@ -2890,11 +4234,389 @@
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
     },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_CONFIRM_STOP": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_CONFIRM_STOP",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:07.578Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_CONFIRM_TASK": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_CONFIRM_TASK",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:07.587Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_CREATE_EXT": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_CREATE_EXT",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:08.451Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_CREATE_TASK": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_CREATE_TASK",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:07.880Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_ENTRY_EXT": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_ENTRY_EXT",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:06.757Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_ENTRY_TASK": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_ENTRY_TASK",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:44:48.644Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_ERROR_ENTRY": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_ERROR_ENTRY",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:34.544Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_ERROR_STOP": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_ERROR_STOP",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:38.107Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_EXEC_TASK": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_EXEC_TASK",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:07.596Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_EXTSAVE": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_EXTSAVE",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:06.988Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_INIT_NOT_EXT": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_INIT_NOT_EXT",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:19.428Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_INIT_NOT_MEDIA": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_INIT_NOT_MEDIA",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:16.001Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_INIT_NOT_WRITE": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_INIT_NOT_WRITE",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:16.889Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_MOUNT_TASK": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_MOUNT_TASK",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:09.850Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_NOT_DELETE": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_NOT_DELETE",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:46.514Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_NOT_EULA": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_NOT_EULA",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:09.923Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_NOT_EXT": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_NOT_EXT",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:42.905Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_NOT_MEDIA": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_NOT_MEDIA",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:39.534Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_NOT_RECV": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_NOT_RECV",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:22.676Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_NOT_STORAGE": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_NOT_STORAGE",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:44.270Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_NOT_TASK": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_NOT_TASK",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:21.661Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_NOT_WRITE": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_NOT_WRITE",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:41.965Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_NSD_DELETE": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_NSD_DELETE",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:09.930Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_RESULT_ENTRY": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_RESULT_ENTRY",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:09.866Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_RESULT_STOP": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_RESULT_STOP",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:09.888Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_BOSS_STOP_TASK": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_BOSS_STOP_TASK",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:08.855Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_CEC_BOX_INFO": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_CEC_BOX_INFO",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:49.379Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_CEC_BOX_NAME": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_CEC_BOX_NAME",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:49:48.121Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_CEC_オーバー": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_CEC_オーバー",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:45.828Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_CEC_ビジー": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_CEC_ビジー",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:47.953Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_CEC_上書確認": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_CEC_上書確認",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:44:37.440Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_CEC_保護者制限": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_CEC_保護者制限",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:57.351Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_CEC_更新中": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_CEC_更新中",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:44:46.076Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_CEC_登録中": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_CEC_登録中",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:44:39.589Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_CEC_登録失敗": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_CEC_登録失敗",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:58.529Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_CEC_登録完了": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_CEC_登録完了",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:44:45.258Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_CEC_登録確認": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_CEC_登録確認",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:44:22.094Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_CEC_規約確認": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_CEC_規約確認",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:56.078Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_BAD_FORMAT": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_BAD_FORMAT",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:04.564Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_CHECK": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_CHECK",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:20.029Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_ERROR": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_ERROR",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:16.442Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_EXTSAVE": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_EXTSAVE",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:53.223Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_MOUNT": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_MOUNT",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:52.160Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_NOT_ACCESS": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_NOT_ACCESS",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:03.516Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_NOT_ARCHIVE": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_NOT_ARCHIVE",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:04.086Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_NOT_CONTENT": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_NOT_CONTENT",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:17.853Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_NOT_MEDIA": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_NOT_MEDIA",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:02.368Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_NOT_TITLE": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_NOT_TITLE",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:19.370Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_NOT_VERIFY": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_NOT_VERIFY",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:14.768Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_READ": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_READ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:49.586Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_RESTORE": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_RESTORE",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:56.753Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_DLC_RESTORE_FAILED": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_DLC_RESTORE_FAILED",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:43:00.362Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_EXT_BAD_FORMAT": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_EXT_BAD_FORMAT",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:39.593Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_EXT_ERROR": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_EXT_ERROR",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:44.990Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_EXT_NOT_ACCESS": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_EXT_NOT_ACCESS",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:38.575Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_EXT_NOT_EXT": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_EXT_NOT_EXT",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:40.294Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_EXT_NOT_FOUND": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_EXT_NOT_FOUND",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:22.548Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_EXT_NOT_MEDIA": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_EXT_NOT_MEDIA",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:23.228Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_EXT_NOT_SPACE": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_EXT_NOT_SPACE",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:31.495Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_EXT_NOT_WRITE": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_EXT_NOT_WRITE",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:37.709Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_EXT_READ_ONLY": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_EXT_READ_ONLY",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:44.097Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_EXT_RESET": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_EXT_RESET",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:47.902Z"
+    },
     "awakening/messages (k)/通信.txt\u0000MID_LINK_DLC_CONFIRM": {
       "path": "Awakening/Messages (K)/通信.txt",
       "entryKey": "MID_LINK_DLC_CONFIRM",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_LINK_DLC_RESULT": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_LINK_DLC_RESULT",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:21.574Z"
     },
     "awakening/messages (k)/通信.txt\u0000MID_LINK_EXT_CONFIRM": {
       "path": "Awakening/Messages (K)/通信.txt",
@@ -2902,11 +4624,65 @@
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
     },
+    "awakening/messages (k)/通信.txt\u0000MID_LINK_EXT_RESULT": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_LINK_EXT_RESULT",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:19.651Z"
+    },
     "awakening/messages (k)/通信.txt\u0000MID_LINK_NSD_CONFIRM": {
       "path": "Awakening/Messages (K)/通信.txt",
       "entryKey": "MID_LINK_NSD_CONFIRM",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_LINK_NSD_RESULT": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_LINK_NSD_RESULT",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:42:14.689Z"
+    },
+    "awakening/messages (k)/遭遇戦.txt\u0000MID_両赤軍全滅": {
+      "path": "Awakening/Messages (K)/遭遇戦.txt",
+      "entryKey": "MID_両赤軍全滅",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:52:05.736Z"
+    },
+    "awakening/messages (k)/遭遇戦.txt\u0000MID_緑リーダー撃破": {
+      "path": "Awakening/Messages (K)/遭遇戦.txt",
+      "entryKey": "MID_緑リーダー撃破",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:51:54.639Z"
+    },
+    "awakening/messages (k)/遭遇戦.txt\u0000MID_緑リーダー死亡": {
+      "path": "Awakening/Messages (K)/遭遇戦.txt",
+      "entryKey": "MID_緑リーダー死亡",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:51:46.791Z"
+    },
+    "awakening/messages (k)/遭遇戦.txt\u0000MID_緑リーダー生存": {
+      "path": "Awakening/Messages (K)/遭遇戦.txt",
+      "entryKey": "MID_緑リーダー生存",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:51:24.420Z"
+    },
+    "awakening/messages (k)/遭遇戦.txt\u0000MID_緑商人死亡": {
+      "path": "Awakening/Messages (K)/遭遇戦.txt",
+      "entryKey": "MID_緑商人死亡",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:51:04.795Z"
+    },
+    "awakening/messages (k)/遭遇戦.txt\u0000MID_緑商人生存": {
+      "path": "Awakening/Messages (K)/遭遇戦.txt",
+      "entryKey": "MID_緑商人生存",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:50:24.045Z"
+    },
+    "awakening/messages (k)/遭遇戦.txt\u0000MID_赤軍全滅": {
+      "path": "Awakening/Messages (K)/遭遇戦.txt",
+      "entryKey": "MID_赤軍全滅",
+      "status": "approved",
+      "updatedAt": "2026-09-06T09:52:09.302Z"
     }
   }
 }
