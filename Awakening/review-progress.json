@@ -20,9 +20,1477 @@
         "MID_支援_アズール_ヴィオール_親子_Ａ"
       ],
       "updatedAt": "2026-09-06T03:25:35.182Z"
+    },
+    "awakening/messages (k)/ンン_ノノ_親子.txt": {
+      "path": "Awakening/Messages (K)/ンン_ノノ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ンン_ノノ_親子_Ｃ",
+        "MID_支援_ンン_ノノ_親子_Ｂ",
+        "MID_支援_ンン_ノノ_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-06T03:13:49.921Z"
     }
   },
   "entries": {
+    "awakening/messages (k)/000.txt\u0000MCID_E000": {
+      "path": "Awakening/Messages (K)/000.txt",
+      "entryKey": "MCID_E000",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/000.txt\u0000MID_000_BATTLE": {
+      "path": "Awakening/Messages (K)/000.txt",
+      "entryKey": "MID_000_BATTLE",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/000.txt\u0000MID_000_DIE": {
+      "path": "Awakening/Messages (K)/000.txt",
+      "entryKey": "MID_000_DIE",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_BOSS_DIE1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_BOSS_DIE1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_BT1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_BT1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED1_02": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED1_02",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED1_03_2": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED1_03_2",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED1_03_PCF1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED1_03_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED1_03_PCM1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED1_03_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED2_01": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED2_01",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED2_02_PCF1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED2_02_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED2_02_PCM1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED2_02_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED2_03_PCF1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED2_03_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED2_03_PCM1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED2_03_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED2_PCF1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED2_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED2_PCM1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED2_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED3": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED3",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED3_2_PCF1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED3_2_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED3_2_PCM1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED3_2_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED3_3_PCF1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED3_3_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_ED3_3_PCM1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_ED3_3_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_EV1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_EV1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_EV1_02": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_EV1_02",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_MOVIE1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_MOVIE1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP1_2_PCF1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP1_2_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP1_2_PCM1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP1_2_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP1_3": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP1_3",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP2": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP2",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP2_2_PCF1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP2_2_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP2_2_PCM1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP2_2_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP2_3": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP2_3",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP3": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP3",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP3_02": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP3_02",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP4": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP4",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP4_02": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP4_02",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP5": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP5",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP5_01_PCF1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP5_01_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP5_01_PCM1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP5_01_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_OP5_02": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_OP5_02",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_TUT_地形_PCF1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_TUT_地形_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_TUT_地形_PCM1": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_TUT_地形_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/001.txt\u0000MID_001_TUT_戦闘（間接）": {
+      "path": "Awakening/Messages (K)/001.txt",
+      "entryKey": "MID_001_TUT_戦闘（間接）",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_BOSS_DIE1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_BOSS_DIE1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_BT1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_BT1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_ED1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_ED1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_ED2_2": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_ED2_2",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_ED2_3": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_ED2_3",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_ED2_6": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_ED2_6",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_ED2_7": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_ED2_7",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_ED2_8": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_ED2_8",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_ED2_8_2_PCF1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_ED2_8_2_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_ED2_8_2_PCM1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_ED2_8_2_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_ED2_8_3": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_ED2_8_3",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_ED2_9": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_ED2_9",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_ED2_PCF1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_ED2_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_ED2_PCM1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_ED2_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_EV1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_EV1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_EV2": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_EV2",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_EV3": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_EV3",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_01": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_01",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_02": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_02",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_02_2_PCF1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_02_2_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_02_2_PCM1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_02_2_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_02_3": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_02_3",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_03": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_03",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_04": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_04",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_04_2_PCF1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_04_2_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_04_2_PCM1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_04_2_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_04_3": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_04_3",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_05": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_05",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_スミア": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_スミア",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP2_スミア_00": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP2_スミア_00",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP3": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP3",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP3_02": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP3_02",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP3_03_PCF1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP3_03_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP3_03_PCM1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP3_03_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP3_04": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP3_04",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP4": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP4",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP4_2_PCF1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP4_2_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP4_2_PCM1": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP4_2_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_OP4_3": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_OP4_3",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_TUT_おまかせボタン": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_TUT_おまかせボタン",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_TUT_持ち物の落下": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_TUT_持ち物の落下",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/002.txt\u0000MID_002_TUT_武器の相性": {
+      "path": "Awakening/Messages (K)/002.txt",
+      "entryKey": "MID_002_TUT_武器の相性",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/006.txt\u0000MID_006_OP1_01_PCF1": {
+      "path": "Awakening/Messages (K)/006.txt",
+      "entryKey": "MID_006_OP1_01_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/006.txt\u0000MID_006_OP1_01_PCM1": {
+      "path": "Awakening/Messages (K)/006.txt",
+      "entryKey": "MID_006_OP1_01_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/006.txt\u0000MID_006_OP1_02": {
+      "path": "Awakening/Messages (K)/006.txt",
+      "entryKey": "MID_006_OP1_02",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/006.txt\u0000MID_006_OP1_03": {
+      "path": "Awakening/Messages (K)/006.txt",
+      "entryKey": "MID_006_OP1_03",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/006.txt\u0000MID_006_OP1_04_PCF1": {
+      "path": "Awakening/Messages (K)/006.txt",
+      "entryKey": "MID_006_OP1_04_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/006.txt\u0000MID_006_OP1_04_PCM1": {
+      "path": "Awakening/Messages (K)/006.txt",
+      "entryKey": "MID_006_OP1_04_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/006.txt\u0000MID_006_OP1_05": {
+      "path": "Awakening/Messages (K)/006.txt",
+      "entryKey": "MID_006_OP1_05",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/006.txt\u0000MID_006_OP1_PCF1": {
+      "path": "Awakening/Messages (K)/006.txt",
+      "entryKey": "MID_006_OP1_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/006.txt\u0000MID_006_OP1_PCM1": {
+      "path": "Awakening/Messages (K)/006.txt",
+      "entryKey": "MID_006_OP1_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/006.txt\u0000MID_006_OP2": {
+      "path": "Awakening/Messages (K)/006.txt",
+      "entryKey": "MID_006_OP2",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/024.txt\u0000MID_024_BOSS_DIE1": {
+      "path": "Awakening/Messages (K)/024.txt",
+      "entryKey": "MID_024_BOSS_DIE1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/024.txt\u0000MID_024_BT1": {
+      "path": "Awakening/Messages (K)/024.txt",
+      "entryKey": "MID_024_BT1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/024.txt\u0000MID_024_ED1": {
+      "path": "Awakening/Messages (K)/024.txt",
+      "entryKey": "MID_024_ED1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/024.txt\u0000MID_024_ED1_2": {
+      "path": "Awakening/Messages (K)/024.txt",
+      "entryKey": "MID_024_ED1_2",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/024.txt\u0000MID_024_ED2": {
+      "path": "Awakening/Messages (K)/024.txt",
+      "entryKey": "MID_024_ED2",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/024.txt\u0000MID_024_OP1": {
+      "path": "Awakening/Messages (K)/024.txt",
+      "entryKey": "MID_024_OP1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/024.txt\u0000MID_024_OP1_2_PCF1": {
+      "path": "Awakening/Messages (K)/024.txt",
+      "entryKey": "MID_024_OP1_2_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/024.txt\u0000MID_024_OP1_2_PCM1": {
+      "path": "Awakening/Messages (K)/024.txt",
+      "entryKey": "MID_024_OP1_2_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/024.txt\u0000MID_024_OP2": {
+      "path": "Awakening/Messages (K)/024.txt",
+      "entryKey": "MID_024_OP2",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_なし": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_お任せAI_なし",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_個別": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_お任せAI_個別",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_実行": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_お任せAI_実行",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_実行_簡単": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_お任せAI_実行_簡単",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_突撃": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_お任せAI_突撃",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_設定": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_お任せAI_設定",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_護衛": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_お任せAI_護衛",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_追従": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_お任せAI_追従",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_セーブ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_セーブ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_中断": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_中断",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_指南": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_指南",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_環境": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_環境",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_終了": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_終了",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MENU_部隊表": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_MENU_部隊表",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_無し": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_無し",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_現在値": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_H_現在値",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_JOBINTRO_使用可能武器": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_JOBINTRO_使用可能武器",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_どこでもセーブから始める": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_どこでもセーブから始める",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_どこでもセーブをコピーする": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_どこでもセーブをコピーする",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_どこでもセーブを消す": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_どこでもセーブを消す",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_エクストラ_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_エクストラ_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_コピー_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_コピー_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_コピー_内部ヘルプ元": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_コピー_内部ヘルプ元",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_コピー_内部ヘルプ先": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_コピー_内部ヘルプ先",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_セーブ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_セーブ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_ターン": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_ターン",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_メインメニュー": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_メインメニュー",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_中断から再開する": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_中断から再開する",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_中断から再開する_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_中断から再開する_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_中断から再開する_内部ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_中断から再開する_内部ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_削除_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_削除_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_削除_内部ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_削除_内部ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_最初から始める": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_最初から始める",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_最初から始める_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_最初から始める_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_章セーブから始める": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_章セーブから始める",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_章セーブをコピーする": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_章セーブをコピーする",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_章セーブを消す": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_章セーブを消す",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_続きから始める": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_続きから始める",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_続きから始める_どこでも内部ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_続きから始める_どこでも内部ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_続きから始める_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_続きから始める_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MAINMENU_続きから始める_内部ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MAINMENU_続きから始める_内部ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_お任せAI_なし": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_お任せAI_なし",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_お任せAI_個別": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_お任せAI_個別",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_お任せAI_個別タイトル": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_お任せAI_個別タイトル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_お任せAI_実行": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_お任せAI_実行",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_お任せAI_実行確認": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_お任せAI_実行確認",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_お任せAI_実行確認_簡単": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_お任せAI_実行確認_簡単",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_お任せAI_突撃": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_お任せAI_突撃",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_お任せAI_設定": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_お任せAI_設定",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_お任せAI_護衛": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_お任せAI_護衛",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_お任せAI_追従": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_お任せAI_追従",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_やめる": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_やめる",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_セーブ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_セーブ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_ターン終了確認": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_ターン終了確認",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_中断": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_中断",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_中断確認": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_中断確認",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_切り替え": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_切り替え",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_初期化": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_初期化",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_制圧": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_制圧",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_前の画面": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_前の画面",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_外す": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_外す",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_戻る": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_戻る",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_指南": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_指南",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_未行動": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_未行動",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_決定": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_決定",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_環境": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_環境",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_確認": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_確認",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_終了": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_終了",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_選ぶ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_選ぶ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MENU_部隊表": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_MENU_部隊表",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_UV_アイコンボタン区切り": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_UV_アイコンボタン区切り",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_UV_アクションボタン名称": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_UV_アクションボタン名称",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_UV_カメラ操作名称": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_UV_カメラ操作名称",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_UV_キャラクター変更": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_UV_キャラクター変更",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_UV_サウンド変更": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_UV_サウンド変更",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_UV_下キャラクタ題名": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_UV_下キャラクタ題名",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_UV_下サウンド題名": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_UV_下サウンド題名",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_UV_下バー": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_UV_下バー",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_UV_下メニュー題名": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_UV_下メニュー題名",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_UV_下背景題名": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_UV_下背景題名",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_UV_変身ボタン名称": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_UV_変身ボタン名称",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_UV_背景変更": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_UV_背景変更",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_データ初期化": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_データ初期化",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_データ初期化_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_データ初期化_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_データ初期化_再確認": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_データ初期化_再確認",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_データ初期化_確認": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_データ初期化_確認",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_データ初期化_終了": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_データ初期化_終了",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_ムービー回想": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_ムービー回想",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_ムービー回想_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_ムービー回想_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_ムービー回想_内部ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_ムービー回想_内部ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_ユニットビューアー": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_ユニットビューアー",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_ユニットビューアー_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_ユニットビューアー_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_支援会話": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_支援会話",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_支援会話_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_支援会話_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_支援会話_内部ヘルプ元": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_支援会話_内部ヘルプ元",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_支援会話_内部ヘルプ先": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_支援会話_内部ヘルプ先",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_支援関係タイトル": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_支援関係タイトル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_相性占い": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_相性占い",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_相性占い_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_相性占い_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_相性占い_ロードヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_相性占い_ロードヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_表示名_マーク女": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_表示名_マーク女",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_エクストラ_表示名_マーク男": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_エクストラ_表示名_マーク男",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_ゲームオーバー_続き確認_1行目": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_ゲームオーバー_続き確認_1行目",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_ゲームオーバー_続き確認_2行目": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_ゲームオーバー_続き確認_2行目",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_ゲームレベルH_モード選択": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_ゲームレベルH_モード選択",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_ゲームレベル_カジュアル": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_ゲームレベル_カジュアル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_ゲームレベル_クラシック": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_ゲームレベル_クラシック",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_ゲームレベル_ノーマル": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_ゲームレベル_ノーマル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_ゲームレベル_ハード": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_ゲームレベル_ハード",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_ゲームレベル_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_ゲームレベル_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_ゲームレベル_ルナティック": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_ゲームレベル_ルナティック",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_ゲームレベル_ルナティックプラス": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_ゲームレベル_ルナティックプラス",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_セーブデータ_データ無し": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_セーブデータ_データ無し",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_セーブデータ_名前不明": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_セーブデータ_名前不明",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_モード選択_タイトル": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_モード選択_タイトル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_モード選択_ヘルプ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_モード選択_ヘルプ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_最初から_タイトル": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_最初から_タイトル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_次章セーブ_休憩メッセージ": {
+      "path": "Awakening/Messages (K)/menu.txt",
+      "entryKey": "MID_次章セーブ_休憩メッセージ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_MOVIE1": {
+      "path": "Awakening/Messages (K)/p001.txt",
+      "entryKey": "MID_P001_MOVIE1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_MOVIE2": {
+      "path": "Awakening/Messages (K)/p001.txt",
+      "entryKey": "MID_P001_MOVIE2",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_OP1": {
+      "path": "Awakening/Messages (K)/p001.txt",
+      "entryKey": "MID_P001_OP1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_TUT_システムメニュー": {
+      "path": "Awakening/Messages (K)/p001.txt",
+      "entryKey": "MID_P001_TUT_システムメニュー",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/x015.txt\u0000MID_X015_BOSS_DIE1": {
+      "path": "Awakening/Messages (K)/x015.txt",
+      "entryKey": "MID_X015_BOSS_DIE1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/x015.txt\u0000MID_X015_BT1": {
+      "path": "Awakening/Messages (K)/x015.txt",
+      "entryKey": "MID_X015_BT1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/x015.txt\u0000MID_X015_DIE_ノワール": {
+      "path": "Awakening/Messages (K)/x015.txt",
+      "entryKey": "MID_X015_DIE_ノワール",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/x015.txt\u0000MID_X015_ED1A": {
+      "path": "Awakening/Messages (K)/x015.txt",
+      "entryKey": "MID_X015_ED1A",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/x015.txt\u0000MID_X015_ED1B": {
+      "path": "Awakening/Messages (K)/x015.txt",
+      "entryKey": "MID_X015_ED1B",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/x015.txt\u0000MID_X015_ED2": {
+      "path": "Awakening/Messages (K)/x015.txt",
+      "entryKey": "MID_X015_ED2",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/x015.txt\u0000MID_X015_EV1": {
+      "path": "Awakening/Messages (K)/x015.txt",
+      "entryKey": "MID_X015_EV1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/x015.txt\u0000MID_X015_OP1": {
+      "path": "Awakening/Messages (K)/x015.txt",
+      "entryKey": "MID_X015_OP1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/x015.txt\u0000MID_X015_OP2": {
+      "path": "Awakening/Messages (K)/x015.txt",
+      "entryKey": "MID_X015_OP2",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/アズール_ウード.txt\u0000MID_支援_アズール_ウード_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_ウード.txt",
+      "entryKey": "MID_支援_アズール_ウード_Ａ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/アズール_ウード.txt\u0000MID_支援_アズール_ウード_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_ウード.txt",
+      "entryKey": "MID_支援_アズール_ウード_Ｂ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/アズール_ウード.txt\u0000MID_支援_アズール_ウード_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_ウード.txt",
+      "entryKey": "MID_支援_アズール_ウード_Ｃ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/アズール_ガイア_親子.txt\u0000MID_支援_アズール_ガイア_親子_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_ガイア_親子.txt",
+      "entryKey": "MID_支援_アズール_ガイア_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T03:55:14.015Z"
+    },
+    "awakening/messages (k)/アズール_ガイア_親子.txt\u0000MID_支援_アズール_ガイア_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_ガイア_親子.txt",
+      "entryKey": "MID_支援_アズール_ガイア_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T03:51:22.186Z"
+    },
     "awakening/messages (k)/アズール_ガイア_親子.txt\u0000MID_支援_アズール_ガイア_親子_Ｃ": {
       "path": "Awakening/Messages (K)/アズール_ガイア_親子.txt",
       "entryKey": "MID_支援_アズール_ガイア_親子_Ｃ",
@@ -46,6 +1514,1032 @@
       "entryKey": "MID_支援_アズール_ヴィオール_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T03:41:09.896Z"
+    },
+    "awakening/messages (k)/グレゴ_リヒト.txt\u0000MID_支援_グレゴ_リヒト_Ａ": {
+      "path": "Awakening/Messages (K)/グレゴ_リヒト.txt",
+      "entryKey": "MID_支援_グレゴ_リヒト_Ａ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/グレゴ_リヒト.txt\u0000MID_支援_グレゴ_リヒト_Ｂ": {
+      "path": "Awakening/Messages (K)/グレゴ_リヒト.txt",
+      "entryKey": "MID_支援_グレゴ_リヒト_Ｂ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/グレゴ_リヒト.txt\u0000MID_支援_グレゴ_リヒト_Ｃ": {
+      "path": "Awakening/Messages (K)/グレゴ_リヒト.txt",
+      "entryKey": "MID_支援_グレゴ_リヒト_Ｃ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/デジェル_ソワレ_親子.txt\u0000MID_支援_デジェル_ソワレ_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/デジェル_ソワレ_親子.txt",
+      "entryKey": "MID_支援_デジェル_ソワレ_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/プレイヤー男_ヘンリー.txt\u0000MID_支援_プレイヤー男_ヘンリー_Ａ_PCM1": {
+      "path": "Awakening/Messages (K)/プレイヤー男_ヘンリー.txt",
+      "entryKey": "MID_支援_プレイヤー男_ヘンリー_Ａ_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/プレイヤー男_ヘンリー.txt\u0000MID_支援_プレイヤー男_ヘンリー_Ｂ_PCM1": {
+      "path": "Awakening/Messages (K)/プレイヤー男_ヘンリー.txt",
+      "entryKey": "MID_支援_プレイヤー男_ヘンリー_Ｂ_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/プレイヤー男_ヘンリー.txt\u0000MID_支援_プレイヤー男_ヘンリー_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/プレイヤー男_ヘンリー.txt",
+      "entryKey": "MID_支援_プレイヤー男_ヘンリー_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/プレイヤー男_ロラン.txt\u0000MID_支援_プレイヤー男_ロラン_Ａ_PCM1": {
+      "path": "Awakening/Messages (K)/プレイヤー男_ロラン.txt",
+      "entryKey": "MID_支援_プレイヤー男_ロラン_Ａ_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/プレイヤー男_ロラン.txt\u0000MID_支援_プレイヤー男_ロラン_Ｂ_PCM1": {
+      "path": "Awakening/Messages (K)/プレイヤー男_ロラン.txt",
+      "entryKey": "MID_支援_プレイヤー男_ロラン_Ｂ_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/プレイヤー男_ロラン.txt\u0000MID_支援_プレイヤー男_ロラン_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/プレイヤー男_ロラン.txt",
+      "entryKey": "MID_支援_プレイヤー男_ロラン_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/ヴェイク_ノノ.txt\u0000MID_支援_ヴェイク_ノノ_Ａ": {
+      "path": "Awakening/Messages (K)/ヴェイク_ノノ.txt",
+      "entryKey": "MID_支援_ヴェイク_ノノ_Ａ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/ヴェイク_ノノ.txt\u0000MID_支援_ヴェイク_ノノ_Ｂ": {
+      "path": "Awakening/Messages (K)/ヴェイク_ノノ.txt",
+      "entryKey": "MID_支援_ヴェイク_ノノ_Ｂ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/ヴェイク_ノノ.txt\u0000MID_支援_ヴェイク_ノノ_Ｃ": {
+      "path": "Awakening/Messages (K)/ヴェイク_ノノ.txt",
+      "entryKey": "MID_支援_ヴェイク_ノノ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/ヴェイク_ノノ.txt\u0000MID_支援_ヴェイク_ノノ_Ｓ": {
+      "path": "Awakening/Messages (K)/ヴェイク_ノノ.txt",
+      "entryKey": "MID_支援_ヴェイク_ノノ_Ｓ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/ヴェイク_マリアベル.txt\u0000MID_支援_ヴェイク_マリアベル_Ａ": {
+      "path": "Awakening/Messages (K)/ヴェイク_マリアベル.txt",
+      "entryKey": "MID_支援_ヴェイク_マリアベル_Ａ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/ヴェイク_マリアベル.txt\u0000MID_支援_ヴェイク_マリアベル_Ｂ": {
+      "path": "Awakening/Messages (K)/ヴェイク_マリアベル.txt",
+      "entryKey": "MID_支援_ヴェイク_マリアベル_Ｂ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/ヴェイク_マリアベル.txt\u0000MID_支援_ヴェイク_マリアベル_Ｃ": {
+      "path": "Awakening/Messages (K)/ヴェイク_マリアベル.txt",
+      "entryKey": "MID_支援_ヴェイク_マリアベル_Ｃ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/ヴェイク_マリアベル.txt\u0000MID_支援_ヴェイク_マリアベル_Ｓ": {
+      "path": "Awakening/Messages (K)/ヴェイク_マリアベル.txt",
+      "entryKey": "MID_支援_ヴェイク_マリアベル_Ｓ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/初期設定.txt\u0000MID_MENU_いいえ": {
+      "path": "Awakening/Messages (K)/初期設定.txt",
+      "entryKey": "MID_MENU_いいえ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/初期設定.txt\u0000MID_MENU_はい": {
+      "path": "Awakening/Messages (K)/初期設定.txt",
+      "entryKey": "MID_MENU_はい",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/初期設定.txt\u0000MID_データチェック中": {
+      "path": "Awakening/Messages (K)/初期設定.txt",
+      "entryKey": "MID_データチェック中",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_アズール": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_アズール",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_アンナ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_アンナ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_インバース": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_インバース",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ウード": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ウード",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_エメリナ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_エメリナ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_オリヴィエ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_オリヴィエ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_カラム": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_カラム",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ガイア": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ガイア",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ギャンレル": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ギャンレル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_クロム_PCF1": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_クロム_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_クロム_PCM1": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_クロム_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_グレゴ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_グレゴ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_サイリ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_サイリ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_サーリャ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_サーリャ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_シャンブレー": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_シャンブレー",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_シンシア": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_シンシア",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ジェローム": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ジェローム",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_スミア": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_スミア",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_セルジュ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_セルジュ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_セレナ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_セレナ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ソワレ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ソワレ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ソール": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ソール",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_チキ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_チキ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ティアモ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ティアモ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_デジェル": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_デジェル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ドニ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ドニ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ノノ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ノノ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ノワール": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ノワール",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_バジーリオ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_バジーリオ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_パリス": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_パリス",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_フラヴィア": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_フラヴィア",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_フレデリク": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_フレデリク",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ブレディ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ブレディ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_プレイヤー女_PCF1": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_プレイヤー女_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_プレイヤー援軍": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_プレイヤー援軍",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_プレイヤー男_PCM1": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_プレイヤー男_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ヘンリー": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ヘンリー",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ベルベット": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ベルベット",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_マリアベル": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_マリアベル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_マルス": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_マルス",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_マーク女": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_マーク女",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_マーク男": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_マーク男",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ミリエル": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ミリエル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_リズ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_リズ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_リヒト": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_リヒト",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_リベラ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_リベラ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_レンハ": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_レンハ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ロラン": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ロラン",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ロンクー": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ロンクー",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ンン": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ンン",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ヴァルハルト": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ヴァルハルト",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ヴィオール": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ヴィオール",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_ヴェイク": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_ヴェイク",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/撤退.txt\u0000MID_DIE_旧マルス": {
+      "path": "Awakening/Messages (K)/撤退.txt",
+      "entryKey": "MID_DIE_旧マルス",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_インバース3.txt\u0000MID_様子_インバース_前": {
+      "path": "Awakening/Messages (K)/様子_インバース3.txt",
+      "entryKey": "MID_様子_インバース_前",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_インバース3.txt\u0000MID_様子_インバース_前_恋人": {
+      "path": "Awakening/Messages (K)/様子_インバース3.txt",
+      "entryKey": "MID_様子_インバース_前_恋人",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_インバース3.txt\u0000MID_様子_インバース_前_親子_子": {
+      "path": "Awakening/Messages (K)/様子_インバース3.txt",
+      "entryKey": "MID_様子_インバース_前_親子_子",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_インバース3.txt\u0000MID_様子_インバース_後": {
+      "path": "Awakening/Messages (K)/様子_インバース3.txt",
+      "entryKey": "MID_様子_インバース_後",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_インバース3.txt\u0000MID_様子_インバース_後_恋人": {
+      "path": "Awakening/Messages (K)/様子_インバース3.txt",
+      "entryKey": "MID_様子_インバース_後_恋人",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_インバース3.txt\u0000MID_様子_インバース_後_無言": {
+      "path": "Awakening/Messages (K)/様子_インバース3.txt",
+      "entryKey": "MID_様子_インバース_後_無言",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_インバース3.txt\u0000MID_様子_インバース_後_親子_子": {
+      "path": "Awakening/Messages (K)/様子_インバース3.txt",
+      "entryKey": "MID_様子_インバース_後_親子_子",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_サイリ4.txt\u0000MID_様子_サイリ_前": {
+      "path": "Awakening/Messages (K)/様子_サイリ4.txt",
+      "entryKey": "MID_様子_サイリ_前",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_サイリ4.txt\u0000MID_様子_サイリ_前_恋人": {
+      "path": "Awakening/Messages (K)/様子_サイリ4.txt",
+      "entryKey": "MID_様子_サイリ_前_恋人",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_サイリ4.txt\u0000MID_様子_サイリ_前_特殊": {
+      "path": "Awakening/Messages (K)/様子_サイリ4.txt",
+      "entryKey": "MID_様子_サイリ_前_特殊",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_サイリ4.txt\u0000MID_様子_サイリ_前_親子_子": {
+      "path": "Awakening/Messages (K)/様子_サイリ4.txt",
+      "entryKey": "MID_様子_サイリ_前_親子_子",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_サイリ4.txt\u0000MID_様子_サイリ_前_通殿": {
+      "path": "Awakening/Messages (K)/様子_サイリ4.txt",
+      "entryKey": "MID_様子_サイリ_前_通殿",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_サイリ4.txt\u0000MID_様子_サイリ_後_恋人": {
+      "path": "Awakening/Messages (K)/様子_サイリ4.txt",
+      "entryKey": "MID_様子_サイリ_後_恋人",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_サイリ4.txt\u0000MID_様子_サイリ_後_無言": {
+      "path": "Awakening/Messages (K)/様子_サイリ4.txt",
+      "entryKey": "MID_様子_サイリ_後_無言",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_サイリ4.txt\u0000MID_様子_サイリ_後_特殊": {
+      "path": "Awakening/Messages (K)/様子_サイリ4.txt",
+      "entryKey": "MID_様子_サイリ_後_特殊",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_サイリ4.txt\u0000MID_様子_サイリ_後_親子_子": {
+      "path": "Awakening/Messages (K)/様子_サイリ4.txt",
+      "entryKey": "MID_様子_サイリ_後_親子_子",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_サイリ4.txt\u0000MID_様子_サイリ_後_通殿": {
+      "path": "Awakening/Messages (K)/様子_サイリ4.txt",
+      "entryKey": "MID_様子_サイリ_後_通殿",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_フラヴィア3.txt\u0000MID_様子_フラヴィア_前": {
+      "path": "Awakening/Messages (K)/様子_フラヴィア3.txt",
+      "entryKey": "MID_様子_フラヴィア_前",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_フラヴィア3.txt\u0000MID_様子_フラヴィア_前_恋人": {
+      "path": "Awakening/Messages (K)/様子_フラヴィア3.txt",
+      "entryKey": "MID_様子_フラヴィア_前_恋人",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_フラヴィア3.txt\u0000MID_様子_フラヴィア_前_特殊": {
+      "path": "Awakening/Messages (K)/様子_フラヴィア3.txt",
+      "entryKey": "MID_様子_フラヴィア_前_特殊",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_フラヴィア3.txt\u0000MID_様子_フラヴィア_前_親子_子": {
+      "path": "Awakening/Messages (K)/様子_フラヴィア3.txt",
+      "entryKey": "MID_様子_フラヴィア_前_親子_子",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_フラヴィア3.txt\u0000MID_様子_フラヴィア_後": {
+      "path": "Awakening/Messages (K)/様子_フラヴィア3.txt",
+      "entryKey": "MID_様子_フラヴィア_後",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_フラヴィア3.txt\u0000MID_様子_フラヴィア_後_恋人": {
+      "path": "Awakening/Messages (K)/様子_フラヴィア3.txt",
+      "entryKey": "MID_様子_フラヴィア_後_恋人",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_フラヴィア3.txt\u0000MID_様子_フラヴィア_後_無言": {
+      "path": "Awakening/Messages (K)/様子_フラヴィア3.txt",
+      "entryKey": "MID_様子_フラヴィア_後_無言",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_フラヴィア3.txt\u0000MID_様子_フラヴィア_後_特殊": {
+      "path": "Awakening/Messages (K)/様子_フラヴィア3.txt",
+      "entryKey": "MID_様子_フラヴィア_後_特殊",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_フラヴィア3.txt\u0000MID_様子_フラヴィア_後_親子_子": {
+      "path": "Awakening/Messages (K)/様子_フラヴィア3.txt",
+      "entryKey": "MID_様子_フラヴィア_後_親子_子",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト1.txt\u0000MID_様子_ヴァルハルト_前": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト1.txt",
+      "entryKey": "MID_様子_ヴァルハルト_前",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト1.txt\u0000MID_様子_ヴァルハルト_前_恋人": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト1.txt",
+      "entryKey": "MID_様子_ヴァルハルト_前_恋人",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト1.txt\u0000MID_様子_ヴァルハルト_前_親子_子": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト1.txt",
+      "entryKey": "MID_様子_ヴァルハルト_前_親子_子",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト1.txt\u0000MID_様子_ヴァルハルト_後": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト1.txt",
+      "entryKey": "MID_様子_ヴァルハルト_後",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト1.txt\u0000MID_様子_ヴァルハルト_後_恋人": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト1.txt",
+      "entryKey": "MID_様子_ヴァルハルト_後_恋人",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト1.txt\u0000MID_様子_ヴァルハルト_後_無言": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト1.txt",
+      "entryKey": "MID_様子_ヴァルハルト_後_無言",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト1.txt\u0000MID_様子_ヴァルハルト_後_親子_子": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト1.txt",
+      "entryKey": "MID_様子_ヴァルハルト_後_親子_子",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト3.txt\u0000MID_様子_ヴァルハルト_前": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト3.txt",
+      "entryKey": "MID_様子_ヴァルハルト_前",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト3.txt\u0000MID_様子_ヴァルハルト_前_恋人": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト3.txt",
+      "entryKey": "MID_様子_ヴァルハルト_前_恋人",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト3.txt\u0000MID_様子_ヴァルハルト_前_親子_子": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト3.txt",
+      "entryKey": "MID_様子_ヴァルハルト_前_親子_子",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト3.txt\u0000MID_様子_ヴァルハルト_後": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト3.txt",
+      "entryKey": "MID_様子_ヴァルハルト_後",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト3.txt\u0000MID_様子_ヴァルハルト_後_恋人": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト3.txt",
+      "entryKey": "MID_様子_ヴァルハルト_後_恋人",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト3.txt\u0000MID_様子_ヴァルハルト_後_無言": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト3.txt",
+      "entryKey": "MID_様子_ヴァルハルト_後_無言",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ヴァルハルト3.txt\u0000MID_様子_ヴァルハルト_後_親子_子": {
+      "path": "Awakening/Messages (K)/様子_ヴァルハルト3.txt",
+      "entryKey": "MID_様子_ヴァルハルト_後_親子_子",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_アズール": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_アズール",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_アンナ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_アンナ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_インバース": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_インバース",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ウード": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ウード",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_エメリナ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_エメリナ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_オリヴィエ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_オリヴィエ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_カラム": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_カラム",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ガイア": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ガイア",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ギャンレル": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ギャンレル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_クロム": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_クロム",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_グレゴ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_グレゴ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_サイリ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_サイリ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_サーリャ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_サーリャ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_シャンブレー": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_シャンブレー",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_シンシア": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_シンシア",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ジェローム": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ジェローム",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_スミア": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_スミア",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_セルジュ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_セルジュ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_セレナ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_セレナ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ソワレ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ソワレ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ソール": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ソール",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_チキ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_チキ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ティアモ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ティアモ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_デジェル": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_デジェル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ドニ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ドニ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ノノ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ノノ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ノワール": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ノワール",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_バジーリオ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_バジーリオ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_パリス": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_パリス",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_フラヴィア": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_フラヴィア",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_フレデリク": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_フレデリク",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ブレディ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ブレディ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_プレイヤー女_PCF1": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_プレイヤー女_PCF1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_プレイヤー援軍": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_プレイヤー援軍",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_プレイヤー男_PCM1": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_プレイヤー男_PCM1",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ヘンリー": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ヘンリー",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ベルベット": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ベルベット",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_マリアベル": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_マリアベル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_マルス": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_マルス",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_マーク女": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_マーク女",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_マーク男": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_マーク男",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ミリエル": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ミリエル",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_リズ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_リズ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_リヒト": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_リヒト",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_リベラ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_リベラ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_レンハ": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_レンハ",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ロラン": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ロラン",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ロンクー": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ロンクー",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ンン": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ンン",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ヴァルハルト": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ヴァルハルト",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ヴィオール": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ヴィオール",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_ヴェイク": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_ヴェイク",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/独り言.txt\u0000MID_様子_単独_旧マルス": {
+      "path": "Awakening/Messages (K)/独り言.txt",
+      "entryKey": "MID_様子_単独_旧マルス",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_LINK_DLC_CONFIRM": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_LINK_DLC_CONFIRM",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_LINK_EXT_CONFIRM": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_LINK_EXT_CONFIRM",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/通信.txt\u0000MID_LINK_NSD_CONFIRM": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "entryKey": "MID_LINK_NSD_CONFIRM",
+      "status": "approved",
+      "updatedAt": "2000-01-01T00:00:00.000Z"
     }
   }
 }
