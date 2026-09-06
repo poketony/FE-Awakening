@@ -1,24 +1,42 @@
 import { AwakeningRenderer } from "./renderer.js";
 import { hairColorForAssetPath } from "./hair-colors.js";
-import { KOREAN_NAME_MAP, cleanCharacterId, containsJapanese } from "./names-ko.js";
+import {
+  JAPANESE_ORIGINAL_NAME_MAP,
+  KOREAN_NAME_MAP,
+  cleanCharacterId,
+  containsJapanese,
+} from "./names-ko.js";
 
 const ORIGINAL_RENDER = AwakeningRenderer.prototype.render;
 const ORIGINAL_DISPLAY_NAME = AwakeningRenderer.prototype.displayName;
 
-AwakeningRenderer.prototype.render = function renderWithKoreanNames(value, canvas, options = {}) {
-  if (canvas?.id !== "koCanvas") return ORIGINAL_RENDER.call(this, value, canvas, options);
-
-  const names = new Map(KOREAN_NAME_MAP);
-  for (const [id, name] of options.nameMap ?? []) {
-    if (name && !containsJapanese(name)) names.set(id, name);
+AwakeningRenderer.prototype.render = function renderWithLocalizedNames(value, canvas, options = {}) {
+  if (canvas?.id === "koCanvas") {
+    const names = new Map(KOREAN_NAME_MAP);
+    for (const [id, name] of options.nameMap ?? []) {
+      if (name && !containsJapanese(name)) names.set(id, name);
+    }
+    return ORIGINAL_RENDER.call(this, value, canvas, {
+      ...options,
+      nameMap: names,
+    });
   }
-  return ORIGINAL_RENDER.call(this, value, canvas, {
-    ...options,
-    nameMap: names,
-  });
+
+  if (canvas?.id === "jaCanvas") {
+    const names = new Map(JAPANESE_ORIGINAL_NAME_MAP);
+    for (const [id, name] of options.nameMap ?? []) {
+      if (name) names.set(id, name);
+    }
+    return ORIGINAL_RENDER.call(this, value, canvas, {
+      ...options,
+      nameMap: names,
+    });
+  }
+
+  return ORIGINAL_RENDER.call(this, value, canvas, options);
 };
 
-AwakeningRenderer.prototype.displayName = function displayKoreanNameAliases(name, nameMap, playerName) {
+AwakeningRenderer.prototype.displayName = function displayLocalizedNameAliases(name, nameMap, playerName) {
   const id = String(name || "");
   if (id.startsWith("username") || id.startsWith("プレイヤー")) return playerName || "Robin";
   const clean = cleanCharacterId(id);
