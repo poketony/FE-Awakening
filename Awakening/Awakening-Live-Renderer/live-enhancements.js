@@ -53,21 +53,9 @@ AwakeningRenderer.prototype.recolorHair = function recolorCanonicalHair(image, c
 await import("./app.js");
 
 const toolbarSave = document.querySelector("#saveFile");
-const controls = document.querySelector(".myunit-controls");
-if (toolbarSave && controls && !document.querySelector("#quickSaveFile")) {
-  const quickSave = document.createElement("button");
-  quickSave.id = "quickSaveFile";
-  quickSave.type = "button";
-  quickSave.className = "save";
-  quickSave.textContent = "저장";
-  quickSave.title = "현재 번역 파일 저장";
-  quickSave.addEventListener("click", () => toolbarSave.click());
-
-  const syncDisabled = () => { quickSave.disabled = toolbarSave.disabled; };
-  const syncVisibility = () => { quickSave.hidden = !document.body.classList.contains("edit-focus"); };
-  syncDisabled();
-  syncVisibility();
-  new MutationObserver(syncDisabled).observe(toolbarSave, { attributes: true, attributeFilter: ["disabled"] });
-  new MutationObserver(syncVisibility).observe(document.body, { attributes: true, attributeFilter: ["class"] });
-  controls.prepend(quickSave);
-}
+window.addEventListener("keydown", (event) => {
+  if (!event.ctrlKey && !event.metaKey && !event.altKey && !event.shiftKey && event.key === "F9") {
+    event.preventDefault();
+    toolbarSave?.click();
+  }
+});
