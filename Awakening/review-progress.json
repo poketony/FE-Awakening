@@ -11,6 +11,17 @@
       ],
       "updatedAt": "2026-09-06T03:23:56.760Z"
     },
+    "awakening/messages (k)/アズール_ルキナ.txt": {
+      "path": "Awakening/Messages (K)/アズール_ルキナ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_マルス_Ｃ",
+        "MID_支援_アズール_マルス_Ｂ",
+        "MID_支援_アズール_マルス_Ａ",
+        "MID_支援_アズール_マルス_Ｓ"
+      ],
+      "updatedAt": "2026-09-06T04:02:31.536Z"
+    },
     "awakening/messages (k)/アズール_ヴィオール_親子.txt": {
       "path": "Awakening/Messages (K)/アズール_ヴィオール_親子.txt",
       "mode": "main",
@@ -20,6 +31,27 @@
         "MID_支援_アズール_ヴィオール_親子_Ａ"
       ],
       "updatedAt": "2026-09-06T03:25:35.182Z"
+    },
+    "awakening/messages (k)/ウード_ルキナ.txt": {
+      "path": "Awakening/Messages (K)/ウード_ルキナ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_マルス_Ｃ",
+        "MID_支援_ウード_マルス_Ｂ",
+        "MID_支援_ウード_マルス_Ａ",
+        "MID_支援_ウード_マルス_Ｓ"
+      ],
+      "updatedAt": "2026-09-06T04:33:20.760Z"
+    },
+    "awakening/messages (k)/クロム_ルキナ.txt": {
+      "path": "Awakening/Messages (K)/クロム_ルキナ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_クロム_マルス_Ｃ",
+        "MID_支援_クロム_マルス_Ｂ",
+        "MID_支援_クロム_マルス_Ａ"
+      ],
+      "updatedAt": "2026-09-06T04:33:32.153Z"
     },
     "awakening/messages (k)/サーリャ_ロンクー.txt": {
       "path": "Awakening/Messages (K)/サーリャ_ロンクー.txt",
@@ -32,6 +64,16 @@
       ],
       "updatedAt": "2026-09-06T03:56:57.671Z"
     },
+    "awakening/messages (k)/マーク女_ルキナ_親子.txt": {
+      "path": "Awakening/Messages (K)/マーク女_ルキナ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マーク女_ルキナ_親子_Ｃ",
+        "MID_支援_マーク女_ルキナ_親子_Ｂ",
+        "MID_支援_マーク女_ルキナ_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-06T04:33:11.826Z"
+    },
     "awakening/messages (k)/ンン_ノノ_親子.txt": {
       "path": "Awakening/Messages (K)/ンン_ノノ_親子.txt",
       "mode": "main",
@@ -41,6 +83,81 @@
         "MID_支援_ンン_ノノ_親子_Ａ"
       ],
       "updatedAt": "2026-09-06T03:13:49.921Z"
+    },
+    "awakening/messages (k)/通信.txt": {
+      "path": "Awakening/Messages (K)/通信.txt",
+      "mode": "main",
+      "expected": [
+        "MID_LINK_NSD_CONFIRM",
+        "MID_LINK_EXT_CONFIRM",
+        "MID_LINK_DLC_CONFIRM",
+        "MID_LINK_NSD_RESULT",
+        "MID_LINK_EXT_RESULT",
+        "MID_LINK_DLC_RESULT",
+        "MID_EXT_NOT_FOUND",
+        "MID_EXT_NOT_MEDIA",
+        "MID_EXT_NOT_SPACE",
+        "MID_EXT_NOT_WRITE",
+        "MID_EXT_NOT_ACCESS",
+        "MID_EXT_BAD_FORMAT",
+        "MID_EXT_NOT_EXT",
+        "MID_EXT_READ_ONLY",
+        "MID_EXT_ERROR",
+        "MID_EXT_RESET",
+        "MID_DLC_READ",
+        "MID_DLC_MOUNT",
+        "MID_DLC_EXTSAVE",
+        "MID_DLC_RESTORE",
+        "MID_DLC_RESTORE_FAILED",
+        "MID_DLC_NOT_MEDIA",
+        "MID_DLC_NOT_ACCESS",
+        "MID_DLC_NOT_ARCHIVE",
+        "MID_DLC_BAD_FORMAT",
+        "MID_DLC_NOT_VERIFY",
+        "MID_DLC_ERROR",
+        "MID_DLC_NOT_CONTENT",
+        "MID_DLC_NOT_TITLE",
+        "MID_DLC_CHECK",
+        "MID_CEC_オーバー",
+        "MID_CEC_ビジー",
+        "MID_CEC_規約確認",
+        "MID_CEC_保護者制限",
+        "MID_CEC_登録失敗",
+        "MID_CEC_登録確認",
+        "MID_CEC_上書確認",
+        "MID_CEC_登録中",
+        "MID_CEC_登録完了",
+        "MID_CEC_更新中",
+        "MID_BOSS_ENTRY_TASK",
+        "MID_BOSS_ENTRY_EXT",
+        "MID_BOSS_EXTSAVE",
+        "MID_BOSS_CONFIRM_STOP",
+        "MID_BOSS_CONFIRM_TASK",
+        "MID_BOSS_EXEC_TASK",
+        "MID_BOSS_CREATE_TASK",
+        "MID_BOSS_CREATE_EXT",
+        "MID_BOSS_STOP_TASK",
+        "MID_BOSS_MOUNT_TASK",
+        "MID_BOSS_RESULT_ENTRY",
+        "MID_BOSS_RESULT_STOP",
+        "MID_BOSS_NOT_EULA",
+        "MID_BOSS_NSD_DELETE",
+        "MID_BOSS_INIT_NOT_MEDIA",
+        "MID_BOSS_INIT_NOT_WRITE",
+        "MID_BOSS_INIT_NOT_EXT",
+        "MID_BOSS_NOT_TASK",
+        "MID_BOSS_NOT_RECV",
+        "MID_BOSS_ERROR_ENTRY",
+        "MID_BOSS_ERROR_STOP",
+        "MID_BOSS_NOT_MEDIA",
+        "MID_BOSS_NOT_WRITE",
+        "MID_BOSS_NOT_EXT",
+        "MID_BOSS_NOT_STORAGE",
+        "MID_BOSS_NOT_DELETE",
+        "MID_CEC_BOX_NAME",
+        "MID_CEC_BOX_INFO"
+      ],
+      "updatedAt": "2026-09-06T04:02:07.096Z"
     }
   },
   "entries": {
