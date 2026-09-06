@@ -64,7 +64,10 @@ if (toolbarSave && controls && !document.querySelector("#quickSaveFile")) {
   quickSave.addEventListener("click", () => toolbarSave.click());
 
   const syncDisabled = () => { quickSave.disabled = toolbarSave.disabled; };
+  const syncVisibility = () => { quickSave.hidden = !document.body.classList.contains("edit-focus"); };
   syncDisabled();
+  syncVisibility();
   new MutationObserver(syncDisabled).observe(toolbarSave, { attributes: true, attributeFilter: ["disabled"] });
+  new MutationObserver(syncVisibility).observe(document.body, { attributes: true, attributeFilter: ["class"] });
   controls.prepend(quickSave);
 }
