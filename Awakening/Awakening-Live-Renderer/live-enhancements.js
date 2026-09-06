@@ -15,13 +15,12 @@ AwakeningRenderer.prototype.render = function renderWithKoreanNames(value, canva
   return ORIGINAL_RENDER.call(this, value, canvas, {
     ...options,
     nameMap: names,
-    playerName: options.playerName || "러플레",
   });
 };
 
 AwakeningRenderer.prototype.displayName = function displayKoreanNameAliases(name, nameMap, playerName) {
   const id = String(name || "");
-  if (id.startsWith("username") || id.startsWith("プレイヤー")) return playerName || "러플레";
+  if (id.startsWith("username") || id.startsWith("プレイヤー")) return playerName || "Robin";
   const clean = cleanCharacterId(id);
   return nameMap?.get(id) ?? nameMap?.get(clean) ?? ORIGINAL_DISPLAY_NAME.call(this, clean || id, nameMap, playerName);
 };
@@ -68,10 +67,4 @@ if (toolbarSave && controls && !document.querySelector("#quickSaveFile")) {
   syncDisabled();
   new MutationObserver(syncDisabled).observe(toolbarSave, { attributes: true, attributeFilter: ["disabled"] });
   controls.prepend(quickSave);
-}
-
-const playerName = document.querySelector("#playerName");
-if (playerName && !localStorage.getItem("fe13-live:playerName") && playerName.value === "Robin") {
-  playerName.value = "러플레";
-  playerName.dispatchEvent(new Event("input", { bubbles: true }));
 }
