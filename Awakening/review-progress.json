@@ -21,6 +21,16 @@
       ],
       "updatedAt": "2026-09-06T03:23:56.760Z"
     },
+    "awakening/messages (k)/アズール_クロム_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_クロム_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_クロム_親子_Ｃ",
+        "MID_支援_アズール_クロム_親子_Ｂ",
+        "MID_支援_アズール_クロム_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-06T06:28:32.975Z"
+    },
     "awakening/messages (k)/アズール_グレゴ_親子.txt": {
       "path": "Awakening/Messages (K)/アズール_グレゴ_親子.txt",
       "mode": "main",
@@ -30,6 +40,16 @@
         "MID_支援_アズール_グレゴ_親子_Ａ"
       ],
       "updatedAt": "2026-09-06T04:54:52.510Z"
+    },
+    "awakening/messages (k)/アズール_ジェローム.txt": {
+      "path": "Awakening/Messages (K)/アズール_ジェローム.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_ジェローム_Ｃ",
+        "MID_支援_アズール_ジェローム_Ｂ",
+        "MID_支援_アズール_ジェローム_Ａ"
+      ],
+      "updatedAt": "2026-09-06T07:15:03.819Z"
     },
     "awakening/messages (k)/アズール_ルキナ.txt": {
       "path": "Awakening/Messages (K)/アズール_ルキナ.txt",
@@ -82,6 +102,16 @@
         "MID_支援_オリヴィエ_プレイヤー女_Ａ_PCF1"
       ],
       "updatedAt": "2026-09-06T06:12:37.952Z"
+    },
+    "awakening/messages (k)/カラム_ソール.txt": {
+      "path": "Awakening/Messages (K)/カラム_ソール.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_カラム_ソール_Ｃ",
+        "MID_支援_カラム_ソール_Ｂ",
+        "MID_支援_カラム_ソール_Ａ"
+      ],
+      "updatedAt": "2026-09-06T07:15:10.166Z"
     },
     "awakening/messages (k)/クロム_ルキナ.txt": {
       "path": "Awakening/Messages (K)/クロム_ルキナ.txt",
@@ -1699,6 +1729,24 @@
       "entryKey": "MID_支援_オリヴィエ_プレイヤー女_Ｃ_PCF1",
       "status": "approved",
       "updatedAt": "2026-09-06T06:16:03.982Z"
+    },
+    "awakening/messages (k)/カラム_ソール.txt\u0000MID_支援_カラム_ソール_Ａ": {
+      "path": "Awakening/Messages (K)/カラム_ソール.txt",
+      "entryKey": "MID_支援_カラム_ソール_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T07:38:01.619Z"
+    },
+    "awakening/messages (k)/カラム_ソール.txt\u0000MID_支援_カラム_ソール_Ｂ": {
+      "path": "Awakening/Messages (K)/カラム_ソール.txt",
+      "entryKey": "MID_支援_カラム_ソール_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T07:35:55.808Z"
+    },
+    "awakening/messages (k)/カラム_ソール.txt\u0000MID_支援_カラム_ソール_Ｃ": {
+      "path": "Awakening/Messages (K)/カラム_ソール.txt",
+      "entryKey": "MID_支援_カラム_ソール_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T07:22:48.363Z"
     },
     "awakening/messages (k)/グレゴ_リヒト.txt\u0000MID_支援_グレゴ_リヒト_Ａ": {
       "path": "Awakening/Messages (K)/グレゴ_リヒト.txt",
