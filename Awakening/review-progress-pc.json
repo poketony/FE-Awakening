@@ -567,6 +567,17 @@
       ],
       "updatedAt": "2026-09-06T12:39:27.642Z"
     },
+    "awakening/messages (k)/ティアモ_リヒト.txt": {
+      "path": "Awakening/Messages (K)/ティアモ_リヒト.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ティアモ_リヒト_Ｃ",
+        "MID_支援_ティアモ_リヒト_Ｂ",
+        "MID_支援_ティアモ_リヒト_Ａ",
+        "MID_支援_ティアモ_リヒト_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T04:01:30.411Z"
+    },
     "awakening/messages (k)/マーク女_ルキナ_親子.txt": {
       "path": "Awakening/Messages (K)/マーク女_ルキナ_親子.txt",
       "mode": "main",
@@ -3908,6 +3919,12 @@
       "entryKey": "MID_支援_ソワレ_ロンクー_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-06T12:51:05.752Z"
+    },
+    "awakening/messages (k)/ティアモ_リヒト.txt\u0000MID_支援_ティアモ_リヒト_Ｃ": {
+      "path": "Awakening/Messages (K)/ティアモ_リヒト.txt",
+      "entryKey": "MID_支援_ティアモ_リヒト_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-07T04:07:19.469Z"
     },
     "awakening/messages (k)/デジェル_ソワレ_親子.txt\u0000MID_支援_デジェル_ソワレ_親子_Ｃ": {
       "path": "Awakening/Messages (K)/デジェル_ソワレ_親子.txt",
