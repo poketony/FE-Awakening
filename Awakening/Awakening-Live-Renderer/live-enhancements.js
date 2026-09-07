@@ -68,6 +68,13 @@ AwakeningRenderer.prototype.recolorHair = function recolorCanonicalHair(image, c
   return canvas;
 };
 
+const toolbarStyle = document.createElement("style");
+toolbarStyle.textContent = `
+  .toolbar { flex-wrap: nowrap; }
+  .toolbar > button { flex: 0 0 auto; white-space: nowrap; }
+`;
+document.head.append(toolbarStyle);
+
 await import("./app.js");
 
 const toolbarSave = document.querySelector("#saveFile");
