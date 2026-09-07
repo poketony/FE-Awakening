@@ -4,7 +4,8 @@ import {
 } from "./review-progress-core.js";
 import { isReviewProgressEntry, normalizePath } from "./format.js";
 import {
-  LOCAL_SHARED_KEY, TOKEN_KEY, MAIN_PREFIX, DLC_PREFIX, REVIEW_STATE_BRANCH, REVIEW_PROGRESS_PATH,
+  LOCAL_SHARED_KEY, TOKEN_KEY, MAIN_PREFIX, DLC_PREFIX, REVIEW_STATE_BRANCH,
+  REVIEW_LEGACY_PATH, REVIEW_PC_PATH, REVIEW_MOBILE_PATH,
   canonicalPath, mirrorSharedToLegacyLocalStorage,
 } from "./review-sync-preload.js";
 
@@ -107,12 +108,25 @@ async function apiRequest(path, options = {}, { allowConflict = false } = {}) {
   return response.status === 204 ? null : response.json();
 }
 
-async function fetchRemoteProgress() {
-  const encodedPath = REVIEW_PROGRESS_PATH.split("/").map(encodeURIComponent).join("/");
-  const path = `/repos/${OWNER}/${REPO}/contents/${encodedPath}?ref=${encodeURIComponent(REVIEW_STATE_BRANCH)}&t=${Date.now()}`;
-  const data = await apiRequest(path);
+function encodedPath(path) {
+  return path.split("/").map(encodeURIComponent).join("/");
+}
+
+async function fetchProgressFile(path) {
+  const endpoint = `/repos/${OWNER}/${REPO}/contents/${encodedPath(path)}?ref=${encodeURIComponent(REVIEW_STATE_BRANCH)}&t=${Date.now()}`;
+  const data = await apiRequest(endpoint);
   const text = data?.content ? decodeBase64Utf8(data.content) : serializeProgress(emptyProgress());
   return { progress: parseProgress(text), sha: data?.sha || null, text };
+}
+
+async function fetchRemoteProgress() {
+  const [legacy, pc, mobile] = await Promise.all([
+    fetchProgressFile(REVIEW_LEGACY_PATH),
+    fetchProgressFile(REVIEW_PC_PATH),
+    fetchProgressFile(REVIEW_MOBILE_PATH),
+  ]);
+  const progress = mergeProgress(mergeProgress(legacy.progress, pc.progress), mobile.progress);
+  return { progress, pcProgress: pc.progress, pcSha: pc.sha };
 }
 
 async function pushMergedProgress({ quiet = false } = {}) {
@@ -126,34 +140,36 @@ async function pushMergedProgress({ quiet = false } = {}) {
       const remote = await fetchRemoteProgress();
       const merged = mergeProgress(remote.progress, sharedProgress);
       const mergedText = serializeProgress(merged);
+      const pcSnapshot = mergeProgress(remote.pcProgress, merged);
+      const pcText = serializeProgress(pcSnapshot);
       sharedProgress = merged;
       persistShared();
       mirrorSharedToLegacyLocalStorage(sharedProgress);
-      if (serializeProgress(remote.progress) === mergedText) {
+
+      if (serializeProgress(remote.pcProgress) === pcText) {
         remoteSignature = mergedText;
         if (!quiet) showToast("공용 검수 기록이 최신입니다.");
         updateSyncUi();
         return false;
       }
 
-      const encodedPath = REVIEW_PROGRESS_PATH.split("/").map(encodeURIComponent).join("/");
-      const path = `/repos/${OWNER}/${REPO}/contents/${encodedPath}`;
-      const result = await apiRequest(path, {
+      const endpoint = `/repos/${OWNER}/${REPO}/contents/${encodedPath(REVIEW_PC_PATH)}`;
+      const result = await apiRequest(endpoint, {
         method: "PUT",
         body: JSON.stringify({
           message: `PC 검수 기록 동기화 ${new Date().toISOString().slice(0, 10)}`,
-          content: utf8Base64(mergedText),
-          sha: remote.sha,
+          content: utf8Base64(pcText),
+          sha: remote.pcSha,
           branch: REVIEW_STATE_BRANCH,
         }),
       }, { allowConflict: true });
       if (result?.conflict) continue;
       remoteSignature = mergedText;
-      if (!quiet) showToast("공용 검수 기록을 GitHub에 동기화했습니다.");
+      if (!quiet) showToast("PC 검수 기록을 동기화했습니다.");
       updateSyncUi();
       return true;
     }
-    throw new Error("다른 기기에서 검수 기록을 계속 갱신 중입니다. 잠시 뒤 다시 시도하세요.");
+    throw new Error("PC 검수 파일이 다른 탭에서 계속 갱신 중입니다. 잠시 뒤 다시 시도하세요.");
   } catch (error) {
     if (!quiet) showToast(`검수 기록 동기화 실패: ${error.message}`);
     updateSyncUi(true);
@@ -180,7 +196,7 @@ async function pullRemoteProgress({ userInitiated = false } = {}) {
 
     if (incomingChanged) {
       if (els.dirtyMark?.classList.contains("on")) {
-        showToast("외부 검수 기록 변경을 받았습니다. 번역 저장 후 새로고침하세요.");
+        showToast("폰/PC 검수 기록 변경을 받았습니다. 번역 저장 후 새로고침하세요.");
       } else {
         showToast("공용 검수 기록을 갱신했습니다.");
         setTimeout(() => location.reload(), 450);
@@ -254,7 +270,7 @@ function updateSyncUi(error = false) {
   button.disabled = syncBusy;
   if (syncBusy) state.textContent = "GitHub 동기화 중…";
   else if (error) state.textContent = "동기화 오류 · 로컬 기록 보존됨";
-  else if (token()) state.textContent = "review-state · 자동 동기화";
+  else if (token()) state.textContent = "PC 파일 쓰기 · PC+폰 합산";
   else state.textContent = "로컬 기록 · PAT 입력 필요";
 }
 
