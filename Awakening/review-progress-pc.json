@@ -504,6 +504,17 @@
       ],
       "updatedAt": "2026-09-07T05:11:19.391Z"
     },
+    "awakening/messages (k)/ガイア_リズ.txt": {
+      "path": "Awakening/Messages (K)/ガイア_リズ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ガイア_リズ_Ｃ",
+        "MID_支援_ガイア_リズ_Ｂ",
+        "MID_支援_ガイア_リズ_Ａ",
+        "MID_支援_ガイア_リズ_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T06:00:57.480Z"
+    },
     "awakening/messages (k)/クロム_ルキナ.txt": {
       "path": "Awakening/Messages (K)/クロム_ルキナ.txt",
       "mode": "main",
@@ -4083,6 +4094,12 @@
       "entryKey": "MID_支援_カラム_ノノ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-07T05:24:02.175Z"
+    },
+    "awakening/messages (k)/ガイア_リズ.txt\u0000MID_支援_ガイア_リズ_Ｃ": {
+      "path": "Awakening/Messages (K)/ガイア_リズ.txt",
+      "entryKey": "MID_支援_ガイア_リズ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-07T06:05:31.481Z"
     },
     "awakening/messages (k)/グレゴ_リヒト.txt\u0000MID_支援_グレゴ_リヒト_Ａ": {
       "path": "Awakening/Messages (K)/グレゴ_リヒト.txt",
