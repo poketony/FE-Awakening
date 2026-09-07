@@ -4,11 +4,13 @@ import {
 } from "./review-progress-core.js";
 import { isReviewProgressEntry, normalizePath } from "./format.js";
 import {
-  HANDLE_KEY, LOCAL_SHARED_KEY, MAIN_PREFIX, DLC_PREFIX,
-  canonicalPath, mirrorSharedToLegacyLocalStorage, readProgressHandle,
-  readProgressFromHandle, writeSyncSetting,
+  LOCAL_SHARED_KEY, TOKEN_KEY, MAIN_PREFIX, DLC_PREFIX, REVIEW_STATE_BRANCH, REVIEW_PROGRESS_PATH,
+  canonicalPath, mirrorSharedToLegacyLocalStorage,
 } from "./review-sync-preload.js";
 
+const OWNER = "poketony";
+const REPO = "FE-Awakening";
+const API = "https://api.github.com";
 const $ = (selector) => document.querySelector(selector);
 const els = {
   toolbar: $(".toolbar"), profileMain: $("#profileMain"), profileDlc: $("#profileDlc"),
@@ -20,10 +22,11 @@ const els = {
 };
 
 let sharedProgress = parseProgress(localStorage.getItem(LOCAL_SHARED_KEY));
-let syncHandle = null;
 let syncBusy = false;
-let progressUiGuard = false;
+let pushTimer = 0;
 let inventoryTimer = 0;
+let progressUiGuard = false;
+let remoteSignature = "";
 
 function profile() {
   return els.profileDlc?.classList.contains("active") ? "dlc" : "main";
@@ -62,82 +65,197 @@ function showToast(message) {
   setTimeout(() => els.toast.classList.remove("show"), 2600);
 }
 
-function setStatus(message) {
-  if (els.statusText) els.statusText.textContent = message;
-}
-
 function persistShared() {
   localStorage.setItem(LOCAL_SHARED_KEY, serializeProgress(sharedProgress));
 }
 
-function legacyProgress() {
-  const imported = emptyProgress();
-  const oldAt = "2000-01-01T00:00:00.000Z";
-  for (const mode of ["main", "dlc"]) {
-    let map = {};
-    try { map = JSON.parse(localStorage.getItem(`fe13-live:reviewStatuses:${mode}`) || "{}"); } catch { map = {}; }
-    for (const [id, status] of Object.entries(map)) {
-      const split = id.indexOf("\u0000");
-      if (split < 0) continue;
-      const relativePath = id.slice(0, split);
-      const entryKey = id.slice(split + 1);
-      if (!relativePath || !entryKey || status === "unreviewed") continue;
-      setReviewStatus(imported, {
-        path: canonicalPath(mode, relativePath),
-        entryKey,
-        status,
-        at: oldAt,
-      });
-    }
+function token() {
+  return String(localStorage.getItem(TOKEN_KEY) || "").trim();
+}
+
+function utf8Base64(text) {
+  const bytes = new TextEncoder().encode(text);
+  let binary = "";
+  const chunk = 0x8000;
+  for (let offset = 0; offset < bytes.length; offset += chunk) {
+    binary += String.fromCharCode(...bytes.subarray(offset, offset + chunk));
   }
-  return imported;
+  return btoa(binary);
+}
+
+function decodeBase64Utf8(value) {
+  const binary = atob(String(value || "").replace(/\s/g, ""));
+  const bytes = new Uint8Array(binary.length);
+  for (let index = 0; index < binary.length; index += 1) bytes[index] = binary.charCodeAt(index);
+  return new TextDecoder("utf-8").decode(bytes);
+}
+
+async function apiRequest(path, options = {}, { allowConflict = false } = {}) {
+  const headers = new Headers(options.headers || {});
+  headers.set("Accept", "application/vnd.github+json");
+  headers.set("X-GitHub-Api-Version", "2022-11-28");
+  const pat = token();
+  if (pat) headers.set("Authorization", `Bearer ${pat}`);
+  if (options.body) headers.set("Content-Type", "application/json");
+  const response = await fetch(`${API}${path}`, { ...options, headers, cache: "no-store" });
+  if (allowConflict && [409, 422].includes(response.status)) return { conflict: true };
+  if (!response.ok) {
+    let detail = "";
+    try { detail = (await response.json())?.message || ""; } catch { detail = await response.text(); }
+    throw new Error(`GitHub API ${response.status}: ${detail || response.statusText}`);
+  }
+  return response.status === 204 ? null : response.json();
+}
+
+async function fetchRemoteProgress() {
+  const encodedPath = REVIEW_PROGRESS_PATH.split("/").map(encodeURIComponent).join("/");
+  const path = `/repos/${OWNER}/${REPO}/contents/${encodedPath}?ref=${encodeURIComponent(REVIEW_STATE_BRANCH)}&t=${Date.now()}`;
+  const data = await apiRequest(path);
+  const text = data?.content ? decodeBase64Utf8(data.content) : serializeProgress(emptyProgress());
+  return { progress: parseProgress(text), sha: data?.sha || null, text };
+}
+
+async function pushMergedProgress({ quiet = false } = {}) {
+  if (syncBusy || !token()) {
+    updateSyncUi();
+    return false;
+  }
+  syncBusy = true;
+  try {
+    for (let attempt = 0; attempt < 4; attempt += 1) {
+      const remote = await fetchRemoteProgress();
+      const merged = mergeProgress(remote.progress, sharedProgress);
+      const mergedText = serializeProgress(merged);
+      sharedProgress = merged;
+      persistShared();
+      mirrorSharedToLegacyLocalStorage(sharedProgress);
+      if (serializeProgress(remote.progress) === mergedText) {
+        remoteSignature = mergedText;
+        if (!quiet) showToast("공용 검수 기록이 최신입니다.");
+        updateSyncUi();
+        return false;
+      }
+
+      const encodedPath = REVIEW_PROGRESS_PATH.split("/").map(encodeURIComponent).join("/");
+      const path = `/repos/${OWNER}/${REPO}/contents/${encodedPath}`;
+      const result = await apiRequest(path, {
+        method: "PUT",
+        body: JSON.stringify({
+          message: `PC 검수 기록 동기화 ${new Date().toISOString().slice(0, 10)}`,
+          content: utf8Base64(mergedText),
+          sha: remote.sha,
+          branch: REVIEW_STATE_BRANCH,
+        }),
+      }, { allowConflict: true });
+      if (result?.conflict) continue;
+      remoteSignature = mergedText;
+      if (!quiet) showToast("공용 검수 기록을 GitHub에 동기화했습니다.");
+      updateSyncUi();
+      return true;
+    }
+    throw new Error("다른 기기에서 검수 기록을 계속 갱신 중입니다. 잠시 뒤 다시 시도하세요.");
+  } catch (error) {
+    if (!quiet) showToast(`검수 기록 동기화 실패: ${error.message}`);
+    updateSyncUi(true);
+    return false;
+  } finally {
+    syncBusy = false;
+  }
+}
+
+async function pullRemoteProgress({ userInitiated = false } = {}) {
+  if (syncBusy) return;
+  syncBusy = true;
+  try {
+    const before = serializeProgress(sharedProgress);
+    const remote = await fetchRemoteProgress();
+    remoteSignature = serializeProgress(remote.progress);
+    const mergedIncoming = mergeProgress(parseProgress(before), remote.progress);
+    const incomingChanged = serializeProgress(mergedIncoming) !== before;
+    sharedProgress = mergeProgress(remote.progress, sharedProgress);
+    persistShared();
+    mirrorSharedToLegacyLocalStorage(sharedProgress);
+    const after = serializeProgress(sharedProgress);
+    updateSyncUi();
+
+    if (incomingChanged) {
+      if (els.dirtyMark?.classList.contains("on")) {
+        showToast("외부 검수 기록 변경을 받았습니다. 번역 저장 후 새로고침하세요.");
+      } else {
+        showToast("공용 검수 기록을 갱신했습니다.");
+        setTimeout(() => location.reload(), 450);
+      }
+    } else if (userInitiated) {
+      showToast(after === remoteSignature ? "공용 검수 기록이 최신입니다." : "로컬 변경사항을 확인했습니다.");
+    }
+  } catch (error) {
+    if (userInitiated) showToast(`검수 기록 불러오기 실패: ${error.message}`);
+    updateSyncUi(true);
+  } finally {
+    syncBusy = false;
+  }
 }
 
 function installSyncUi() {
   if (!els.toolbar || $("#reviewSyncButton")) return;
+  const tokenInput = document.createElement("input");
+  tokenInput.id = "reviewSyncToken";
+  tokenInput.type = "password";
+  tokenInput.autocomplete = "off";
+  tokenInput.placeholder = "검수 PAT";
+  tokenInput.value = token();
+  tokenInput.title = "FE-Awakening Contents 읽기/쓰기 Fine-grained PAT · 이 브라우저에만 저장";
+
   const button = document.createElement("button");
   button.id = "reviewSyncButton";
   button.type = "button";
-  button.textContent = "검수 기록 연결";
-  button.title = "Awakening/review-progress.json 연결 및 새로고침";
+  button.textContent = "검수 기록 동기화";
+
   const state = document.createElement("span");
   state.id = "reviewSyncState";
   state.className = "review-sync-state";
-  state.textContent = "공용 기록 미연결";
-  els.toolbar.append(button, state);
-  button.addEventListener("click", handleSyncButton);
+
+  els.toolbar.append(tokenInput, button, state);
+  tokenInput.addEventListener("change", () => {
+    const value = tokenInput.value.trim();
+    if (value) localStorage.setItem(TOKEN_KEY, value);
+    else localStorage.removeItem(TOKEN_KEY);
+    updateSyncUi();
+  });
+  button.addEventListener("click", async () => {
+    const value = tokenInput.value.trim();
+    if (value) localStorage.setItem(TOKEN_KEY, value);
+    if (!token()) {
+      showToast("PC에서도 처음 한 번만 검수 PAT를 입력하세요.");
+      tokenInput.focus();
+      return;
+    }
+    await pullRemoteProgress({ userInitiated: true });
+    if (!syncBusy) await pushMergedProgress({ quiet: false });
+  });
+
   if (!$("#reviewSyncStyle")) {
     const style = document.createElement("style");
     style.id = "reviewSyncStyle";
-    style.textContent = `.review-sync-state{font-size:.72rem;color:var(--muted,#aaa);align-self:center;white-space:nowrap}`;
+    style.textContent = `
+      #reviewSyncToken{width:150px;min-width:110px;padding:.45rem .55rem}
+      .review-sync-state{font-size:.72rem;color:var(--muted,#aaa);align-self:center;white-space:nowrap}
+      @media(max-width:900px){#reviewSyncToken{width:120px}}
+    `;
     document.head.append(style);
   }
+  updateSyncUi();
 }
 
-function syncButton() { return $("#reviewSyncButton"); }
-function syncState() { return $("#reviewSyncState"); }
-
-async function updateSyncUi() {
-  installSyncUi();
-  const button = syncButton();
-  const state = syncState();
-  if (!button || !state) return;
-  syncHandle ||= await readProgressHandle();
-  if (!syncHandle) {
-    button.textContent = "검수 기록 연결";
-    state.textContent = "공용 기록 미연결";
-    return;
-  }
-  let permission = "prompt";
-  try { permission = await syncHandle.queryPermission({ mode: "readwrite" }); } catch { permission = "prompt"; }
-  button.textContent = permission === "granted" ? "검수 기록 새로고침" : "검수 기록 권한";
-  state.textContent = permission === "granted" ? `연결됨 · ${syncHandle.name}` : `${syncHandle.name} · 권한 필요`;
-}
-
-async function writeProgressToHandle(handle, progress) {
-  const writable = await handle.createWritable();
-  await writable.write(serializeProgress(progress));
-  await writable.close();
+function updateSyncUi(error = false) {
+  const state = $("#reviewSyncState");
+  const button = $("#reviewSyncButton");
+  if (!state || !button) return;
+  button.disabled = syncBusy;
+  if (syncBusy) state.textContent = "GitHub 동기화 중…";
+  else if (error) state.textContent = "동기화 오류 · 로컬 기록 보존됨";
+  else if (token()) state.textContent = "review-state · 자동 동기화";
+  else state.textContent = "로컬 기록 · PAT 입력 필요";
 }
 
 function registerCurrentInventory() {
@@ -153,10 +271,9 @@ function registerCurrentInventory() {
 
 function scheduleInventorySync() {
   clearTimeout(inventoryTimer);
-  inventoryTimer = setTimeout(async () => {
+  inventoryTimer = setTimeout(() => {
     if (!registerCurrentInventory()) return;
     persistShared();
-    await flushSharedToDisk({ quiet: true });
   }, 180);
 }
 
@@ -168,7 +285,12 @@ function legacyStatusFor(path, entryKey, mode = profile()) {
   return map[`${normalizePath(relative)}\u0000${entryKey}`] || "unreviewed";
 }
 
-async function captureStatus(path, entryKey, mode) {
+function schedulePush() {
+  clearTimeout(pushTimer);
+  pushTimer = setTimeout(() => { void pushMergedProgress({ quiet: true }); }, 900);
+}
+
+function captureStatus(path, entryKey, mode) {
   if (!path || !entryKey || !isReviewProgressEntry(entryKey)) return;
   const status = legacyStatusFor(path, entryKey, mode);
   const changed = setReviewStatus(sharedProgress, { path, entryKey, status });
@@ -176,108 +298,7 @@ async function captureStatus(path, entryKey, mode) {
   if (!changed && !inventoryChanged) return;
   persistShared();
   harmonizeProgressUi();
-  await flushSharedToDisk({ quiet: true });
-}
-
-async function flushSharedToDisk({ quiet = false } = {}) {
-  if (syncBusy) return;
-  syncHandle ||= await readProgressHandle();
-  if (!syncHandle) return;
-  let permission;
-  try { permission = await syncHandle.queryPermission({ mode: "readwrite" }); } catch { return; }
-  if (permission !== "granted") {
-    await updateSyncUi();
-    return;
-  }
-  syncBusy = true;
-  try {
-    const disk = await readProgressFromHandle(syncHandle);
-    const merged = mergeProgress(disk, sharedProgress);
-    const changed = serializeProgress(merged) !== serializeProgress(disk);
-    sharedProgress = merged;
-    persistShared();
-    if (changed) await writeProgressToHandle(syncHandle, sharedProgress);
-    if (!quiet && changed) showToast("공용 검수 기록을 저장했습니다.");
-    await updateSyncUi();
-  } catch (error) {
-    if (!quiet) showToast(`검수 기록 저장 실패: ${error.message}`);
-  } finally {
-    syncBusy = false;
-  }
-}
-
-async function connectProgressFile() {
-  if (!window.showOpenFilePicker) {
-    showToast("공용 검수 기록 연결은 최신 Edge/Chrome의 localhost 실행이 필요합니다.");
-    return;
-  }
-  if (els.dirtyMark?.classList.contains("on")) {
-    showToast("번역 파일을 먼저 저장한 뒤 검수 기록을 연결하세요.");
-    return;
-  }
-  try {
-    const [handle] = await window.showOpenFilePicker({
-      multiple: false,
-      types: [{ description: "FE 검수 진행 기록", accept: { "application/json": [".json"] } }],
-    });
-    if (handle.name !== "review-progress.json" && !window.confirm(`${handle.name} 파일을 공용 검수 기록으로 연결할까요?\n권장 파일명은 review-progress.json입니다.`)) return;
-    const permission = await handle.requestPermission({ mode: "readwrite" });
-    if (permission !== "granted") throw new Error("파일 쓰기 권한이 허용되지 않았습니다.");
-    await writeSyncSetting(HANDLE_KEY, handle);
-    syncHandle = handle;
-    const disk = await readProgressFromHandle(handle);
-    sharedProgress = mergeProgress(disk, mergeProgress(legacyProgress(), sharedProgress));
-    registerCurrentInventory();
-    await writeProgressToHandle(handle, sharedProgress);
-    persistShared();
-    mirrorSharedToLegacyLocalStorage(sharedProgress);
-    showToast("공용 검수 기록을 연결했습니다. 상태를 다시 불러옵니다.");
-    setTimeout(() => location.reload(), 600);
-  } catch (error) {
-    if (error.name !== "AbortError") showToast(`검수 기록을 연결하지 못했습니다: ${error.message}`);
-  }
-}
-
-async function refreshFromDisk({ userInitiated = false } = {}) {
-  syncHandle ||= await readProgressHandle();
-  if (!syncHandle) {
-    if (userInitiated) await connectProgressFile();
-    return;
-  }
-  let permission = await syncHandle.queryPermission({ mode: "readwrite" });
-  if (permission !== "granted" && userInitiated) permission = await syncHandle.requestPermission({ mode: "readwrite" });
-  if (permission !== "granted") {
-    await updateSyncUi();
-    return;
-  }
-  try {
-    const before = serializeProgress(sharedProgress);
-    const disk = await readProgressFromHandle(syncHandle);
-    sharedProgress = mergeProgress(sharedProgress, disk);
-    sharedProgress = mergeProgress(sharedProgress, legacyProgress());
-    registerCurrentInventory();
-    persistShared();
-    const after = serializeProgress(sharedProgress);
-    mirrorSharedToLegacyLocalStorage(sharedProgress);
-    await flushSharedToDisk({ quiet: true });
-    await updateSyncUi();
-    if (after !== before) {
-      if (els.dirtyMark?.classList.contains("on")) {
-        showToast("외부 검수 기록 변경을 감지했습니다. 번역 저장 후 새로고침하세요.");
-      } else {
-        showToast("공용 검수 기록을 갱신했습니다.");
-        setTimeout(() => location.reload(), 500);
-      }
-    } else if (userInitiated) showToast("공용 검수 기록이 최신입니다.");
-  } catch (error) {
-    if (userInitiated) showToast(`검수 기록 새로고침 실패: ${error.message}`);
-  }
-}
-
-async function handleSyncButton() {
-  syncHandle ||= await readProgressHandle();
-  if (!syncHandle) await connectProgressFile();
-  else await refreshFromDisk({ userInitiated: true });
+  if (changed) schedulePush();
 }
 
 function parseFraction(text) {
@@ -333,10 +354,7 @@ function harmonizeProgressUi() {
   }
 }
 
-sharedProgress = mergeProgress(legacyProgress(), sharedProgress);
-persistShared();
 installSyncUi();
-void updateSyncUi();
 harmonizeProgressUi();
 scheduleInventorySync();
 
@@ -370,4 +388,5 @@ const progressObserver = new MutationObserver(() => {
 });
 if (els.reviewProgress) progressObserver.observe(els.reviewProgress, { childList: true, characterData: true, subtree: true });
 
-window.addEventListener("focus", () => { void refreshFromDisk({ userInitiated: false }); });
+window.addEventListener("focus", () => { void pullRemoteProgress({ userInitiated: false }); });
+window.addEventListener("online", () => { void pullRemoteProgress({ userInitiated: false }); schedulePush(); });
