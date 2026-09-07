@@ -577,6 +577,17 @@
       ],
       "updatedAt": "2026-09-06T04:33:11.826Z"
     },
+    "awakening/messages (k)/リズ_リベラ.txt": {
+      "path": "Awakening/Messages (K)/リズ_リベラ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_リズ_リベラ_Ｃ",
+        "MID_支援_リズ_リベラ_Ｂ",
+        "MID_支援_リズ_リベラ_Ａ",
+        "MID_支援_リズ_リベラ_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T02:29:21.597Z"
+    },
     "awakening/messages (k)/ンン_ノノ_親子.txt": {
       "path": "Awakening/Messages (K)/ンン_ノノ_親子.txt",
       "mode": "main",
@@ -3927,6 +3938,12 @@
       "entryKey": "MID_支援_プレイヤー男_ロラン_Ｃ_PCM1",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/リズ_リベラ.txt\u0000MID_支援_リズ_リベラ_Ｃ": {
+      "path": "Awakening/Messages (K)/リズ_リベラ.txt",
+      "entryKey": "MID_支援_リズ_リベラ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-07T02:31:26.159Z"
     },
     "awakening/messages (k)/ヴェイク_ノノ.txt\u0000MID_支援_ヴェイク_ノノ_Ａ": {
       "path": "Awakening/Messages (K)/ヴェイク_ノノ.txt",
