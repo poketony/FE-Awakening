@@ -513,6 +513,17 @@
       ],
       "updatedAt": "2026-09-06T12:59:29.656Z"
     },
+    "awakening/messages (k)/シンシア_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/シンシア_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シンシア_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_シンシア_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_シンシア_プレイヤー男_Ａ_PCM1",
+        "MID_支援_シンシア_プレイヤー男_Ｓ_PCM1"
+      ],
+      "updatedAt": "2026-09-07T04:20:02.495Z"
+    },
     "awakening/messages (k)/ジェローム_ドニ_親子.txt": {
       "path": "Awakening/Messages (K)/ジェローム_ドニ_親子.txt",
       "mode": "main",
@@ -3829,6 +3840,12 @@
       "entryKey": "MID_支援_シャンブレー_ロンクー_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T13:02:24.748Z"
+    },
+    "awakening/messages (k)/シンシア_プレイヤー男.txt\u0000MID_支援_シンシア_プレイヤー男_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/シンシア_プレイヤー男.txt",
+      "entryKey": "MID_支援_シンシア_プレイヤー男_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-07T04:25:06.880Z"
     },
     "awakening/messages (k)/ジェローム_ドニ_親子.txt\u0000MID_支援_ジェローム_ドニ_親子_Ａ": {
       "path": "Awakening/Messages (K)/ジェローム_ドニ_親子.txt",
