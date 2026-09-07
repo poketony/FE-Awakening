@@ -587,6 +587,17 @@
       ],
       "updatedAt": "2026-09-06T03:13:49.921Z"
     },
+    "awakening/messages (k)/ヴェイク_リズ.txt": {
+      "path": "Awakening/Messages (K)/ヴェイク_リズ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴェイク_リズ_Ｃ",
+        "MID_支援_ヴェイク_リズ_Ｂ",
+        "MID_支援_ヴェイク_リズ_Ａ",
+        "MID_支援_ヴェイク_リズ_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T02:09:48.411Z"
+    },
     "awakening/messages (k)/ヴェイク_ロンクー.txt": {
       "path": "Awakening/Messages (K)/ヴェイク_ロンクー.txt",
       "mode": "main",
@@ -3964,6 +3975,12 @@
       "entryKey": "MID_支援_ヴェイク_マリアベル_Ｓ",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/ヴェイク_リズ.txt\u0000MID_支援_ヴェイク_リズ_Ｃ": {
+      "path": "Awakening/Messages (K)/ヴェイク_リズ.txt",
+      "entryKey": "MID_支援_ヴェイク_リズ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-07T02:12:20.200Z"
     },
     "awakening/messages (k)/初期設定.txt\u0000MID_MENU_いいえ": {
       "path": "Awakening/Messages (K)/初期設定.txt",
