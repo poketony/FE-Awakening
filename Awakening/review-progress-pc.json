@@ -472,6 +472,17 @@
       ],
       "updatedAt": "2026-09-06T07:15:10.166Z"
     },
+    "awakening/messages (k)/カラム_ノノ.txt": {
+      "path": "Awakening/Messages (K)/カラム_ノノ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_カラム_ノノ_Ｃ",
+        "MID_支援_カラム_ノノ_Ｂ",
+        "MID_支援_カラム_ノノ_Ａ",
+        "MID_支援_カラム_ノノ_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T05:11:19.391Z"
+    },
     "awakening/messages (k)/クロム_ルキナ.txt": {
       "path": "Awakening/Messages (K)/クロム_ルキナ.txt",
       "mode": "main",
@@ -696,6 +707,20 @@
         "MID_様子_アズール_後_恋人"
       ],
       "updatedAt": "2026-09-06T12:25:29.912Z"
+    },
+    "awakening/messages (k)/様子_インバース4.txt": {
+      "path": "Awakening/Messages (K)/様子_インバース4.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_インバース_前",
+        "MID_様子_インバース_後",
+        "MID_様子_インバース_後_無言",
+        "MID_様子_インバース_前_親子_子",
+        "MID_様子_インバース_後_親子_子",
+        "MID_様子_インバース_前_恋人",
+        "MID_様子_インバース_後_恋人"
+      ],
+      "updatedAt": "2026-09-07T05:11:04.416Z"
     },
     "awakening/messages (k)/様子_ウード1.txt": {
       "path": "Awakening/Messages (K)/様子_ウード1.txt",
@@ -3811,6 +3836,12 @@
       "entryKey": "MID_支援_カラム_ソール_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T07:22:48.363Z"
+    },
+    "awakening/messages (k)/カラム_ノノ.txt\u0000MID_支援_カラム_ノノ_Ｃ": {
+      "path": "Awakening/Messages (K)/カラム_ノノ.txt",
+      "entryKey": "MID_支援_カラム_ノノ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-07T05:14:29.309Z"
     },
     "awakening/messages (k)/グレゴ_リヒト.txt\u0000MID_支援_グレゴ_リヒト_Ａ": {
       "path": "Awakening/Messages (K)/グレゴ_リヒト.txt",
