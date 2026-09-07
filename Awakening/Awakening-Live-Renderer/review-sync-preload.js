@@ -1,74 +1,18 @@
-import { emptyProgress, parseProgress } from "./review-progress-core.js";
+import { emptyProgress, parseProgress, mergeProgress, setReviewStatus, serializeProgress } from "./review-progress-core.js";
 
 export const SYNC_DB = "fe13-review-sync";
 export const SYNC_STORE = "settings";
 export const HANDLE_KEY = "reviewProgressFile";
 export const LOCAL_SHARED_KEY = "fe13-live:sharedProgress:v2";
+export const TOKEN_KEY = "fe13-live:reviewSyncToken:v1";
 export const MAIN_PREFIX = "Awakening/Messages (K)/";
 export const DLC_PREFIX = "Awakening/DLC Message (K)/";
+export const REVIEW_STATE_BRANCH = "review-state";
+export const REVIEW_LEGACY_PATH = "Awakening/review-progress.json";
+export const REVIEW_PC_PATH = "Awakening/review-progress-pc.json";
+export const REVIEW_MOBILE_PATH = "Awakening/review-progress-mobile.json";
 
 let dbPromise;
-let progressWriteFilterInstalled = false;
-
-function entrySnapshot(value) {
-  const progress = parseProgress(value);
-  return JSON.stringify(Object.keys(progress.entries || {}).sort().map((key) => [key, progress.entries[key]]));
-}
-
-export function installProgressWriteFilter() {
-  if (progressWriteFilterInstalled) return;
-  const prototype = globalThis.FileSystemFileHandle?.prototype;
-  const original = prototype?.createWritable;
-  if (!prototype || typeof original !== "function") return;
-
-  const wrapped = async function filteredCreateWritable(...createArgs) {
-    if (this.name !== "review-progress.json") return original.apply(this, createArgs);
-    const handle = this;
-    const operations = [];
-    let aborted = false;
-    return {
-      async write(data) { if (!aborted) operations.push({ type: "write", data }); },
-      async seek(position) { if (!aborted) operations.push({ type: "seek", position }); },
-      async truncate(size) { if (!aborted) operations.push({ type: "truncate", size }); },
-      async abort() { aborted = true; operations.length = 0; },
-      async close() {
-        if (aborted || !operations.length) return;
-        const single = operations.length === 1 && operations[0].type === "write" && typeof operations[0].data === "string";
-        if (single) {
-          try {
-            const before = await (await handle.getFile()).text();
-            const after = operations[0].data;
-            // files/expected 같은 인벤토리 메타데이터만 달라졌다면 실제 파일은 건드리지 않는다.
-            // 실제 MID 검수 상태(entries)가 바뀐 경우에만 review-progress.json을 기록한다.
-            if (entrySnapshot(before) === entrySnapshot(after)) return;
-          } catch {
-            // 비교에 실패하면 데이터 손실 방지를 위해 원래 쓰기를 수행한다.
-          }
-        }
-        const writable = await original.apply(handle, createArgs);
-        for (const operation of operations) {
-          if (operation.type === "write") await writable.write(operation.data);
-          else if (operation.type === "seek") await writable.seek(operation.position);
-          else if (operation.type === "truncate") await writable.truncate(operation.size);
-        }
-        await writable.close();
-      },
-    };
-  };
-
-  try {
-    const descriptor = Object.getOwnPropertyDescriptor(prototype, "createWritable");
-    Object.defineProperty(prototype, "createWritable", { ...descriptor, value: wrapped });
-    progressWriteFilterInstalled = true;
-  } catch {
-    try {
-      prototype.createWritable = wrapped;
-      progressWriteFilterInstalled = true;
-    } catch {
-      // 브라우저 구현상 프로토타입 패치가 불가능하면 기존 동작을 유지한다.
-    }
-  }
-}
 
 export function openSyncDatabase() {
   if (!dbPromise) {
@@ -90,16 +34,6 @@ export async function readSyncSetting(key) {
     const request = db.transaction(SYNC_STORE, "readonly").objectStore(SYNC_STORE).get(key);
     request.onsuccess = () => resolve(request.result ?? null);
     request.onerror = () => reject(request.error);
-  });
-}
-
-export async function writeSyncSetting(key, value) {
-  const db = await openSyncDatabase();
-  return new Promise((resolve, reject) => {
-    const transaction = db.transaction(SYNC_STORE, "readwrite");
-    transaction.objectStore(SYNC_STORE).put(value, key);
-    transaction.oncomplete = () => resolve();
-    transaction.onerror = () => reject(transaction.error);
   });
 }
 
@@ -141,31 +75,76 @@ export function mirrorSharedToLegacyLocalStorage(progress) {
   }
 }
 
-export async function readProgressHandle() {
-  if (!window.indexedDB) return null;
-  try { return await readSyncSetting(HANDLE_KEY); } catch { return null; }
+function legacyProgress() {
+  const imported = emptyProgress();
+  const oldAt = "2000-01-01T00:00:00.000Z";
+  for (const profile of ["main", "dlc"]) {
+    let map = {};
+    try { map = JSON.parse(localStorage.getItem(`fe13-live:reviewStatuses:${profile}`) || "{}"); } catch { map = {}; }
+    for (const [id, status] of Object.entries(map)) {
+      const split = id.indexOf("\u0000");
+      if (split < 0 || status === "unreviewed") continue;
+      const relativePath = id.slice(0, split);
+      const entryKey = id.slice(split + 1);
+      if (!relativePath || !entryKey) continue;
+      setReviewStatus(imported, {
+        path: canonicalPath(profile, relativePath),
+        entryKey,
+        status,
+        at: oldAt,
+      });
+    }
+  }
+  return imported;
 }
 
-export async function readProgressFromHandle(handle) {
-  if (!handle) return emptyProgress();
-  const file = await handle.getFile();
-  return parseProgress(await file.text());
-}
-
-export async function preloadReviewSync() {
-  installProgressWriteFilter();
-  if (!window.indexedDB) return;
-  const handle = await readProgressHandle();
-  if (!handle) return;
+async function readOldTrackedFileOnce() {
+  if (!window.indexedDB) return emptyProgress();
   try {
-    const permission = await handle.queryPermission({ mode: "readwrite" });
-    if (permission !== "granted") return;
-    const progress = await readProgressFromHandle(handle);
-    mirrorSharedToLegacyLocalStorage(progress);
-    localStorage.setItem(LOCAL_SHARED_KEY, JSON.stringify(progress));
+    const handle = await readSyncSetting(HANDLE_KEY);
+    if (!handle) return emptyProgress();
+    let permission = "prompt";
+    try { permission = await handle.queryPermission({ mode: "read" }); } catch { permission = "prompt"; }
+    if (permission !== "granted") return emptyProgress();
+    const file = await handle.getFile();
+    return parseProgress(await file.text());
   } catch {
-    // 공용 기록이 없어도 라이브 렌더러 본체는 정상 실행되어야 한다.
+    return emptyProgress();
   }
 }
 
-installProgressWriteFilter();
+function rawUrl(path) {
+  return `https://raw.githubusercontent.com/poketony/FE-Awakening/${REVIEW_STATE_BRANCH}/${path}`;
+}
+
+async function readRemoteProgress(path) {
+  try {
+    const response = await fetch(`${rawUrl(path)}?v=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) return emptyProgress();
+    return parseProgress(await response.text());
+  } catch {
+    return emptyProgress();
+  }
+}
+
+async function readRemoteUnion() {
+  const [legacy, pc, mobile] = await Promise.all([
+    readRemoteProgress(REVIEW_LEGACY_PATH),
+    readRemoteProgress(REVIEW_PC_PATH),
+    readRemoteProgress(REVIEW_MOBILE_PATH),
+  ]);
+  return mergeProgress(mergeProgress(legacy, pc), mobile);
+}
+
+export async function preloadReviewSync() {
+  // main 워킹트리의 review-progress.json은 더 이상 쓰지 않는다.
+  // review-state 브랜치의 PC/모바일 전용 파일을 합쳐 읽고, 옛 단일 파일은
+  // 기존 검수 기록을 잃지 않기 위한 읽기 전용 마이그레이션 원본으로만 사용한다.
+  const localBefore = parseProgress(localStorage.getItem(LOCAL_SHARED_KEY));
+  const [remote, oldTracked] = await Promise.all([readRemoteUnion(), readOldTrackedFileOnce()]);
+  let merged = mergeProgress(remote, oldTracked);
+  merged = mergeProgress(merged, localBefore);
+  merged = mergeProgress(legacyProgress(), merged);
+  localStorage.setItem(LOCAL_SHARED_KEY, serializeProgress(merged));
+  mirrorSharedToLegacyLocalStorage(merged);
+}
