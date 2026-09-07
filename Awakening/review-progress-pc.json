@@ -697,6 +697,27 @@
       ],
       "updatedAt": "2026-09-06T12:25:29.912Z"
     },
+    "awakening/messages (k)/様子_ウード1.txt": {
+      "path": "Awakening/Messages (K)/様子_ウード1.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_ウード_前",
+        "MID_様子_ウード_前_無言",
+        "MID_様子_ウード_前_敬さん",
+        "MID_様子_ウード_後",
+        "MID_様子_ウード_後_敬さん",
+        "MID_様子_ウード_後_無言",
+        "MID_様子_ウード_前_親子_子",
+        "MID_様子_ウード_後_親子_子",
+        "MID_様子_ウード_前_親子_母",
+        "MID_様子_ウード_後_親子_母",
+        "MID_様子_ウード_前_親子_父",
+        "MID_様子_ウード_後_親子_父",
+        "MID_様子_ウード_前_恋人",
+        "MID_様子_ウード_後_恋人"
+      ],
+      "updatedAt": "2026-09-07T05:09:27.955Z"
+    },
     "awakening/messages (k)/様子_チキ1.txt": {
       "path": "Awakening/Messages (K)/様子_チキ1.txt",
       "mode": "main",
@@ -4756,6 +4777,18 @@
       "entryKey": "MID_様子_インバース_後_親子_子",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ウード1.txt\u0000MID_様子_ウード_前": {
+      "path": "Awakening/Messages (K)/様子_ウード1.txt",
+      "entryKey": "MID_様子_ウード_前",
+      "status": "approved",
+      "updatedAt": "2026-09-07T05:09:30.291Z"
+    },
+    "awakening/messages (k)/様子_ウード1.txt\u0000MID_様子_ウード_前_無言": {
+      "path": "Awakening/Messages (K)/様子_ウード1.txt",
+      "entryKey": "MID_様子_ウード_前_無言",
+      "status": "approved",
+      "updatedAt": "2026-09-07T05:09:32.192Z"
     },
     "awakening/messages (k)/様子_サイリ4.txt\u0000MID_様子_サイリ_前": {
       "path": "Awakening/Messages (K)/様子_サイリ4.txt",
