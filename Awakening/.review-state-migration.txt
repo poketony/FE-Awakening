@@ -1,1 +1,0 @@
-pc/mobile progress files are authoritative; legacy review-progress.json is frozen migration source.
