@@ -462,6 +462,17 @@
       ],
       "updatedAt": "2026-09-06T06:12:37.952Z"
     },
+    "awakening/messages (k)/カラム_ソワレ.txt": {
+      "path": "Awakening/Messages (K)/カラム_ソワレ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_カラム_ソワレ_Ｃ",
+        "MID_支援_カラム_ソワレ_Ｂ",
+        "MID_支援_カラム_ソワレ_Ａ",
+        "MID_支援_カラム_ソワレ_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T05:45:02.551Z"
+    },
     "awakening/messages (k)/カラム_ソール.txt": {
       "path": "Awakening/Messages (K)/カラム_ソール.txt",
       "mode": "main",
@@ -3988,6 +3999,12 @@
       "entryKey": "MID_支援_オリヴィエ_プレイヤー女_Ｃ_PCF1",
       "status": "approved",
       "updatedAt": "2026-09-06T06:16:03.982Z"
+    },
+    "awakening/messages (k)/カラム_ソワレ.txt\u0000MID_支援_カラム_ソワレ_Ｃ": {
+      "path": "Awakening/Messages (K)/カラム_ソワレ.txt",
+      "entryKey": "MID_支援_カラム_ソワレ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-07T05:47:44.486Z"
     },
     "awakening/messages (k)/カラム_ソール.txt\u0000MID_支援_カラム_ソール_Ａ": {
       "path": "Awakening/Messages (K)/カラム_ソール.txt",
