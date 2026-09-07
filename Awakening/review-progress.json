@@ -66,6 +66,31 @@
       ],
       "updatedAt": "2026-09-06T12:14:10.219Z"
     },
+    "awakening/messages (k)/005.txt": {
+      "path": "Awakening/Messages (K)/005.txt",
+      "mode": "main",
+      "expected": [
+        "MID_005_OP3",
+        "MID_005_OP3_02",
+        "MID_005_OP3_06",
+        "MID_005_OP3_07",
+        "MID_005_OP3_07_2",
+        "MID_005_OP3_08",
+        "MID_005_OP3_09",
+        "MID_005_OP3_10",
+        "MID_005_OP3_11",
+        "MID_005_OP3_12",
+        "MID_005_ED1",
+        "MID_005_ED1_2_PCM1",
+        "MID_005_ED1_2_PCF1",
+        "MID_005_ED1_3",
+        "MID_005_ED2",
+        "MID_005_ZOEN1",
+        "MID_005_BT1",
+        "MID_005_BOSS_DIE1"
+      ],
+      "updatedAt": "2026-09-06T13:48:15.480Z"
+    },
     "awakening/messages (k)/010.txt": {
       "path": "Awakening/Messages (K)/010.txt",
       "mode": "main",
@@ -190,6 +215,67 @@
         "MID_022_ED1"
       ],
       "updatedAt": "2026-09-06T10:09:16.285Z"
+    },
+    "awakening/messages (k)/p001.txt": {
+      "path": "Awakening/Messages (K)/P001.txt",
+      "mode": "main",
+      "expected": [
+        "MID_P001_OP1",
+        "MID_P001_MOVIE1",
+        "MID_P001_MOVIE2",
+        "MID_P001_TUT_システムメニュー",
+        "MID_P001_TUT_システムメニュー_2",
+        "MID_P001_TUT_システムメニュー_3",
+        "MID_P001_TUT_チュートリアルオフ",
+        "MID_P001_TUT_移動",
+        "MID_P001_TUT_行動の交代",
+        "MID_P001_TUT_戦闘",
+        "MID_P001_BT1",
+        "MID_P001_PICK_クロム",
+        "MID_P001_PICK_プレイヤー",
+        "MID_P001_DIE_クロム",
+        "MID_P001_DIE_プレイヤー"
+      ],
+      "updatedAt": "2026-09-06T16:02:45.462Z"
+    },
+    "awakening/messages (k)/p002.txt": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "mode": "main",
+      "expected": [
+        "MID_P002_OP1_PCM1",
+        "MID_P002_OP1_PCF1",
+        "MID_P002_OP1_02_PCM1",
+        "MID_P002_OP1_02_PCF1",
+        "MID_P002_OP1_03",
+        "MID_P002_OP1_04_PCM1",
+        "MID_P002_OP1_04_PCF1",
+        "MID_P002_OP2",
+        "MID_P002_OP2_02",
+        "MID_P002_OP3_PCM1",
+        "MID_P002_OP3_PCF1",
+        "MID_P002_ED1_PCM1",
+        "MID_P002_ED1_PCF1",
+        "MID_P002_ED2_0_PCM1",
+        "MID_P002_ED2_0_PCF1",
+        "MID_P002_ED2",
+        "MID_P002_ED2_2_PCM1",
+        "MID_P002_ED2_2_PCF1",
+        "MID_P002_ED2_3",
+        "MID_P002_BT1",
+        "MID_P002_BOSS_DIE1",
+        "MID_P002_MOVIE1",
+        "MID_P002_TUT_戦闘（魔法）_PCM1",
+        "MID_P002_TUT_戦闘（魔法）_PCF1",
+        "MID_P002_TUT_回復_PCM1",
+        "MID_P002_TUT_回復_PCF1",
+        "MID_P002_リズ",
+        "MID_P002_TUT_サポートユニット_PCM1",
+        "MID_P002_TUT_サポートユニット_PCF1",
+        "MID_P002_TUT_ユニットのロスト",
+        "MID_P002_TUT_タッチヘルプ_PCM1",
+        "MID_P002_TUT_タッチヘルプ_PCF1"
+      ],
+      "updatedAt": "2026-09-06T16:03:19.160Z"
     },
     "awakening/messages (k)/アズール_ウード.txt": {
       "path": "Awakening/Messages (K)/アズール_ウード.txt",
@@ -416,6 +502,27 @@
         "MID_支援_シャンブレー_ロンクー_親子_Ａ"
       ],
       "updatedAt": "2026-09-06T12:59:29.656Z"
+    },
+    "awakening/messages (k)/ジェローム_ドニ_親子.txt": {
+      "path": "Awakening/Messages (K)/ジェローム_ドニ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ジェローム_ドニ_親子_Ｃ",
+        "MID_支援_ジェローム_ドニ_親子_Ｂ",
+        "MID_支援_ジェローム_ドニ_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-06T16:34:57.368Z"
+    },
+    "awakening/messages (k)/ジェローム_ノワール.txt": {
+      "path": "Awakening/Messages (K)/ジェローム_ノワール.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ジェローム_ノワール_Ｃ",
+        "MID_支援_ジェローム_ノワール_Ｂ",
+        "MID_支援_ジェローム_ノワール_Ａ",
+        "MID_支援_ジェローム_ノワール_Ｓ"
+      ],
+      "updatedAt": "2026-09-06T16:43:25.018Z"
     },
     "awakening/messages (k)/セルジュ_ヘンリー.txt": {
       "path": "Awakening/Messages (K)/セルジュ_ヘンリー.txt",
@@ -2960,6 +3067,24 @@
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
     },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_BT1": {
+      "path": "Awakening/Messages (K)/P001.txt",
+      "entryKey": "MID_P001_BT1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:03:14.053Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_DIE_クロム": {
+      "path": "Awakening/Messages (K)/P001.txt",
+      "entryKey": "MID_P001_DIE_クロム",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:03:16.250Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_DIE_プレイヤー": {
+      "path": "Awakening/Messages (K)/P001.txt",
+      "entryKey": "MID_P001_DIE_プレイヤー",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:03:17.080Z"
+    },
     "awakening/messages (k)/p001.txt\u0000MID_P001_MOVIE1": {
       "path": "Awakening/Messages (K)/p001.txt",
       "entryKey": "MID_P001_MOVIE1",
@@ -2978,11 +3103,251 @@
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
     },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_PICK_クロム": {
+      "path": "Awakening/Messages (K)/P001.txt",
+      "entryKey": "MID_P001_PICK_クロム",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:03:14.739Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_PICK_プレイヤー": {
+      "path": "Awakening/Messages (K)/P001.txt",
+      "entryKey": "MID_P001_PICK_プレイヤー",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:03:15.326Z"
+    },
     "awakening/messages (k)/p001.txt\u0000MID_P001_TUT_システムメニュー": {
       "path": "Awakening/Messages (K)/p001.txt",
       "entryKey": "MID_P001_TUT_システムメニュー",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_TUT_システムメニュー_2": {
+      "path": "Awakening/Messages (K)/P001.txt",
+      "entryKey": "MID_P001_TUT_システムメニュー_2",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:02:51.509Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_TUT_システムメニュー_3": {
+      "path": "Awakening/Messages (K)/P001.txt",
+      "entryKey": "MID_P001_TUT_システムメニュー_3",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:02:54.615Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_TUT_チュートリアルオフ": {
+      "path": "Awakening/Messages (K)/P001.txt",
+      "entryKey": "MID_P001_TUT_チュートリアルオフ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:03:09.340Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_TUT_戦闘": {
+      "path": "Awakening/Messages (K)/P001.txt",
+      "entryKey": "MID_P001_TUT_戦闘",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:03:12.921Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_TUT_移動": {
+      "path": "Awakening/Messages (K)/P001.txt",
+      "entryKey": "MID_P001_TUT_移動",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:03:10.494Z"
+    },
+    "awakening/messages (k)/p001.txt\u0000MID_P001_TUT_行動の交代": {
+      "path": "Awakening/Messages (K)/P001.txt",
+      "entryKey": "MID_P001_TUT_行動の交代",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:03:11.716Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_BOSS_DIE1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_BOSS_DIE1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:27:58.727Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_BT1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_BT1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:27:56.011Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_ED1_PCF1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_ED1_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:23:32.060Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_ED1_PCM1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_ED1_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:22:43.913Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_ED2": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_ED2",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:27:19.750Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_ED2_0_PCF1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_ED2_0_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:24:41.380Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_ED2_0_PCM1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_ED2_0_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:24:29.166Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_ED2_2_PCF1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_ED2_2_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:27:49.174Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_ED2_2_PCM1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_ED2_2_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:27:40.193Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_ED2_3": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_ED2_3",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:27:52.552Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_MOVIE1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_MOVIE1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:28:01.002Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_OP1_02_PCF1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_OP1_02_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:09:32.445Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_OP1_02_PCM1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_OP1_02_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:08:20.299Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_OP1_03": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_OP1_03",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:10:28.235Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_OP1_04_PCF1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_OP1_04_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:10:38.364Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_OP1_04_PCM1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_OP1_04_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:10:35.427Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_OP1_PCF1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_OP1_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:05:59.470Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_OP1_PCM1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_OP1_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:05:26.942Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_OP2": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_OP2",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:11:32.501Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_OP2_02": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_OP2_02",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:11:41.919Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_OP3_PCF1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_OP3_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:12:02.228Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_OP3_PCM1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_OP3_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:11:52.055Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_TUT_サポートユニット_PCF1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_TUT_サポートユニット_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:32:25.326Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_TUT_サポートユニット_PCM1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_TUT_サポートユニット_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:31:08.889Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_TUT_タッチヘルプ_PCF1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_TUT_タッチヘルプ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:34:28.566Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_TUT_タッチヘルプ_PCM1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_TUT_タッチヘルプ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:33:41.591Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_TUT_ユニットのロスト": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_TUT_ユニットのロスト",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:32:56.389Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_TUT_回復_PCF1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_TUT_回復_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:29:24.068Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_TUT_回復_PCM1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_TUT_回復_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:29:20.692Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_TUT_戦闘（魔法）_PCF1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_TUT_戦闘（魔法）_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:29:16.074Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_TUT_戦闘（魔法）_PCM1": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_TUT_戦闘（魔法）_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:28:55.332Z"
+    },
+    "awakening/messages (k)/p002.txt\u0000MID_P002_リズ": {
+      "path": "Awakening/Messages (K)/P002.txt",
+      "entryKey": "MID_P002_リズ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:29:59.137Z"
     },
     "awakening/messages (k)/x015.txt\u0000MID_X015_BOSS_DIE1": {
       "path": "Awakening/Messages (K)/x015.txt",
@@ -3391,6 +3756,48 @@
       "entryKey": "MID_支援_シャンブレー_ロンクー_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T13:02:24.748Z"
+    },
+    "awakening/messages (k)/ジェローム_ドニ_親子.txt\u0000MID_支援_ジェローム_ドニ_親子_Ａ": {
+      "path": "Awakening/Messages (K)/ジェローム_ドニ_親子.txt",
+      "entryKey": "MID_支援_ジェローム_ドニ_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:43:18.433Z"
+    },
+    "awakening/messages (k)/ジェローム_ドニ_親子.txt\u0000MID_支援_ジェローム_ドニ_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/ジェローム_ドニ_親子.txt",
+      "entryKey": "MID_支援_ジェローム_ドニ_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:40:53.008Z"
+    },
+    "awakening/messages (k)/ジェローム_ドニ_親子.txt\u0000MID_支援_ジェローム_ドニ_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ジェローム_ドニ_親子.txt",
+      "entryKey": "MID_支援_ジェローム_ドニ_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T16:38:05.274Z"
+    },
+    "awakening/messages (k)/ジェローム_ノワール.txt\u0000MID_支援_ジェローム_ノワール_Ａ": {
+      "path": "Awakening/Messages (K)/ジェローム_ノワール.txt",
+      "entryKey": "MID_支援_ジェローム_ノワール_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T22:09:10.972Z"
+    },
+    "awakening/messages (k)/ジェローム_ノワール.txt\u0000MID_支援_ジェローム_ノワール_Ｂ": {
+      "path": "Awakening/Messages (K)/ジェローム_ノワール.txt",
+      "entryKey": "MID_支援_ジェローム_ノワール_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T22:06:41.228Z"
+    },
+    "awakening/messages (k)/ジェローム_ノワール.txt\u0000MID_支援_ジェローム_ノワール_Ｃ": {
+      "path": "Awakening/Messages (K)/ジェローム_ノワール.txt",
+      "entryKey": "MID_支援_ジェローム_ノワール_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T22:02:47.304Z"
+    },
+    "awakening/messages (k)/ジェローム_ノワール.txt\u0000MID_支援_ジェローム_ノワール_Ｓ": {
+      "path": "Awakening/Messages (K)/ジェローム_ノワール.txt",
+      "entryKey": "MID_支援_ジェローム_ノワール_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-09-06T22:11:20.942Z"
     },
     "awakening/messages (k)/ソワレ_リベラ.txt\u0000MID_支援_ソワレ_リベラ_Ａ": {
       "path": "Awakening/Messages (K)/ソワレ_リベラ.txt",

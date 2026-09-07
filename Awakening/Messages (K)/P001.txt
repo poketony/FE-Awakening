@@ -17,5 +17,5 @@ MID_P001_TUT_戦闘: $t0$Wmクロム|0$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT
 MID_P001_BT1: $t0$Wmファウダー|0$w0|$Wsファウダー|$Wa크크, 운명에는 거스를 수 없다…$k$p$E笑,|오너라, 어리석은 자들이여!$k
 MID_P001_PICK_クロム: $t0$Wmクロム|0$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_39|$E怒,|좋아, 내가 간다!$k
 MID_P001_PICK_プレイヤー: $t0$Wmクロム|0$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_53|$E怒,|부탁한다, $Nu!$k
-MID_P001_DIE_クロム: $t1$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|미안… $Nu…\n…너만이라도……도망, 쳐…$k\n$Wsクロム|$Wd$w0|$Wmファウダー|3$w0|$Wsファウダー|$Wa크크…\n이 결말이야말로, 운명…!$k
-MID_P001_DIE_プレイヤー: $t1$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|$Nu!? 어이, 정신 차려!\n눈을 떠! $Nu…!!$k\n$Wsクロム|$Wd$w0|$Wmファウダー|3$w0|$Wsファウダー|$Wa크크…\n으하하하하!$k
+MID_P001_DIE_クロム: $t1$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|미안… $Nu…\n…너만이라도…… 도망, 쳐…$k\n$Wsクロム|$Wd$w0|$Wmファウダー|3$w0|$Wsファウダー|$Wa크크…\n이 결말이야말로, 운명…!$k
+MID_P001_DIE_プレイヤー: $t1$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|$Nu!? 어이, 정신 차려!\n눈을 떠! $Nu…!!$k\n$Wsクロム|$Wd$w0|$Wmファウダー|3$w0|$Wsファウダー|$Wa크크…\n흐하하하하!$k
