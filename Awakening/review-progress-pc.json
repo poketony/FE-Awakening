@@ -556,6 +556,16 @@
       ],
       "updatedAt": "2026-09-06T06:02:37.374Z"
     },
+    "awakening/messages (k)/セレナ_ソール_親子.txt": {
+      "path": "Awakening/Messages (K)/セレナ_ソール_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_セレナ_ソール_親子_Ｃ",
+        "MID_支援_セレナ_ソール_親子_Ｂ",
+        "MID_支援_セレナ_ソール_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-07T04:45:14.573Z"
+    },
     "awakening/messages (k)/ソワレ_リベラ.txt": {
       "path": "Awakening/Messages (K)/ソワレ_リベラ.txt",
       "mode": "main",
@@ -3906,6 +3916,12 @@
       "entryKey": "MID_支援_ジェローム_ノワール_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-06T22:11:20.942Z"
+    },
+    "awakening/messages (k)/セレナ_ソール_親子.txt\u0000MID_支援_セレナ_ソール_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/セレナ_ソール_親子.txt",
+      "entryKey": "MID_支援_セレナ_ソール_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-07T04:49:23.334Z"
     },
     "awakening/messages (k)/ソワレ_リベラ.txt\u0000MID_支援_ソワレ_リベラ_Ａ": {
       "path": "Awakening/Messages (K)/ソワレ_リベラ.txt",
