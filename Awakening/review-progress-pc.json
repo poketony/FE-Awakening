@@ -472,6 +472,16 @@
       ],
       "updatedAt": "2026-09-06T07:15:10.166Z"
     },
+    "awakening/messages (k)/カラム_ドニ.txt": {
+      "path": "Awakening/Messages (K)/カラム_ドニ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_カラム_ドニ_Ｃ",
+        "MID_支援_カラム_ドニ_Ｂ",
+        "MID_支援_カラム_ドニ_Ａ"
+      ],
+      "updatedAt": "2026-09-07T05:24:06.422Z"
+    },
     "awakening/messages (k)/カラム_ノノ.txt": {
       "path": "Awakening/Messages (K)/カラム_ノノ.txt",
       "mode": "main",
@@ -493,6 +503,17 @@
       ],
       "updatedAt": "2026-09-06T04:33:32.153Z"
     },
+    "awakening/messages (k)/サーリャ_ドニ.txt": {
+      "path": "Awakening/Messages (K)/サーリャ_ドニ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_サーリャ_ドニ_Ｃ",
+        "MID_支援_サーリャ_ドニ_Ｂ",
+        "MID_支援_サーリャ_ドニ_Ａ",
+        "MID_支援_サーリャ_ドニ_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T05:33:55.381Z"
+    },
     "awakening/messages (k)/サーリャ_ロンクー.txt": {
       "path": "Awakening/Messages (K)/サーリャ_ロンクー.txt",
       "mode": "main",
@@ -503,6 +524,16 @@
         "MID_支援_サーリャ_ロンクー_Ｓ"
       ],
       "updatedAt": "2026-09-06T03:56:57.671Z"
+    },
+    "awakening/messages (k)/シャンブレー_ドニ_親子.txt": {
+      "path": "Awakening/Messages (K)/シャンブレー_ドニ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シャンブレー_ドニ_親子_Ｃ",
+        "MID_支援_シャンブレー_ドニ_親子_Ｂ",
+        "MID_支援_シャンブレー_ドニ_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-07T05:33:38.926Z"
     },
     "awakening/messages (k)/シャンブレー_ロラン.txt": {
       "path": "Awakening/Messages (K)/シャンブレー_ロラン.txt",
@@ -556,6 +587,17 @@
       ],
       "updatedAt": "2026-09-06T16:43:25.018Z"
     },
+    "awakening/messages (k)/セルジュ_ドニ.txt": {
+      "path": "Awakening/Messages (K)/セルジュ_ドニ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_セルジュ_ドニ_Ｃ",
+        "MID_支援_セルジュ_ドニ_Ｂ",
+        "MID_支援_セルジュ_ドニ_Ａ",
+        "MID_支援_セルジュ_ドニ_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T05:33:26.714Z"
+    },
     "awakening/messages (k)/セルジュ_ヘンリー.txt": {
       "path": "Awakening/Messages (K)/セルジュ_ヘンリー.txt",
       "mode": "main",
@@ -576,6 +618,27 @@
         "MID_支援_セレナ_ソール_親子_Ａ"
       ],
       "updatedAt": "2026-09-07T04:45:14.573Z"
+    },
+    "awakening/messages (k)/セレナ_ドニ_親子.txt": {
+      "path": "Awakening/Messages (K)/セレナ_ドニ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_セレナ_ドニ_親子_Ｃ",
+        "MID_支援_セレナ_ドニ_親子_Ｂ",
+        "MID_支援_セレナ_ドニ_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-07T05:33:18.498Z"
+    },
+    "awakening/messages (k)/ソワレ_ドニ.txt": {
+      "path": "Awakening/Messages (K)/ソワレ_ドニ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ソワレ_ドニ_Ｃ",
+        "MID_支援_ソワレ_ドニ_Ｂ",
+        "MID_支援_ソワレ_ドニ_Ａ",
+        "MID_支援_ソワレ_ドニ_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T05:32:43.763Z"
     },
     "awakening/messages (k)/ソワレ_リベラ.txt": {
       "path": "Awakening/Messages (K)/ソワレ_リベラ.txt",
@@ -599,6 +662,27 @@
       ],
       "updatedAt": "2026-09-06T12:39:27.642Z"
     },
+    "awakening/messages (k)/ソール_ドニ.txt": {
+      "path": "Awakening/Messages (K)/ソール_ドニ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ソール_ドニ_Ｃ",
+        "MID_支援_ソール_ドニ_Ｂ",
+        "MID_支援_ソール_ドニ_Ａ"
+      ],
+      "updatedAt": "2026-09-07T05:32:49.560Z"
+    },
+    "awakening/messages (k)/ティアモ_ドニ.txt": {
+      "path": "Awakening/Messages (K)/ティアモ_ドニ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ティアモ_ドニ_Ｃ",
+        "MID_支援_ティアモ_ドニ_Ｂ",
+        "MID_支援_ティアモ_ドニ_Ａ",
+        "MID_支援_ティアモ_ドニ_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T05:32:37.632Z"
+    },
     "awakening/messages (k)/ティアモ_リヒト.txt": {
       "path": "Awakening/Messages (K)/ティアモ_リヒト.txt",
       "mode": "main",
@@ -609,6 +693,92 @@
         "MID_支援_ティアモ_リヒト_Ｓ"
       ],
       "updatedAt": "2026-09-07T04:01:30.411Z"
+    },
+    "awakening/messages (k)/デジェル_ドニ_親子.txt": {
+      "path": "Awakening/Messages (K)/デジェル_ドニ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_デジェル_ドニ_親子_Ｃ",
+        "MID_支援_デジェル_ドニ_親子_Ｂ",
+        "MID_支援_デジェル_ドニ_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-07T05:32:31.361Z"
+    },
+    "awakening/messages (k)/ドニ_ノノ.txt": {
+      "path": "Awakening/Messages (K)/ドニ_ノノ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ドニ_ノノ_Ｃ",
+        "MID_支援_ドニ_ノノ_Ｂ",
+        "MID_支援_ドニ_ノノ_Ａ",
+        "MID_支援_ドニ_ノノ_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T05:31:32.366Z"
+    },
+    "awakening/messages (k)/ドニ_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/ドニ_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ドニ_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_ドニ_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_ドニ_プレイヤー女_Ａ_PCF1",
+        "MID_支援_ドニ_プレイヤー女_Ｓ_PCF1"
+      ],
+      "updatedAt": "2026-09-07T05:31:50.532Z"
+    },
+    "awakening/messages (k)/ドニ_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/ドニ_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ドニ_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_ドニ_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_ドニ_プレイヤー男_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-09-07T05:31:43.949Z"
+    },
+    "awakening/messages (k)/ドニ_ベルベット.txt": {
+      "path": "Awakening/Messages (K)/ドニ_ベルベット.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ドニ_ベルベット_Ｃ",
+        "MID_支援_ドニ_ベルベット_Ｂ",
+        "MID_支援_ドニ_ベルベット_Ａ",
+        "MID_支援_ドニ_ベルベット_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T05:32:07.896Z"
+    },
+    "awakening/messages (k)/ドニ_マリアベル.txt": {
+      "path": "Awakening/Messages (K)/ドニ_マリアベル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ドニ_マリアベル_Ｃ",
+        "MID_支援_ドニ_マリアベル_Ｂ",
+        "MID_支援_ドニ_マリアベル_Ａ",
+        "MID_支援_ドニ_マリアベル_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T05:32:11.011Z"
+    },
+    "awakening/messages (k)/ドニ_ミリエル.txt": {
+      "path": "Awakening/Messages (K)/ドニ_ミリエル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ドニ_ミリエル_Ｃ",
+        "MID_支援_ドニ_ミリエル_Ｂ",
+        "MID_支援_ドニ_ミリエル_Ａ",
+        "MID_支援_ドニ_ミリエル_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T05:32:13.645Z"
+    },
+    "awakening/messages (k)/ドニ_リズ.txt": {
+      "path": "Awakening/Messages (K)/ドニ_リズ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ドニ_リズ_Ｃ",
+        "MID_支援_ドニ_リズ_Ｂ",
+        "MID_支援_ドニ_リズ_Ａ",
+        "MID_支援_ドニ_リズ_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T05:32:22.441Z"
     },
     "awakening/messages (k)/マーク女_ルキナ_親子.txt": {
       "path": "Awakening/Messages (K)/マーク女_ルキナ_親子.txt",
@@ -3836,6 +4006,12 @@
       "entryKey": "MID_支援_カラム_ソール_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T07:22:48.363Z"
+    },
+    "awakening/messages (k)/カラム_ドニ.txt\u0000MID_支援_カラム_ドニ_Ｃ": {
+      "path": "Awakening/Messages (K)/カラム_ドニ.txt",
+      "entryKey": "MID_支援_カラム_ドニ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-07T05:36:19.322Z"
     },
     "awakening/messages (k)/カラム_ノノ.txt\u0000MID_支援_カラム_ノノ_Ａ": {
       "path": "Awakening/Messages (K)/カラム_ノノ.txt",
