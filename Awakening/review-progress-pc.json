@@ -216,6 +216,17 @@
       ],
       "updatedAt": "2026-09-06T10:09:16.285Z"
     },
+    "awakening/messages (k)/e003g.txt": {
+      "path": "Awakening/Messages (K)/E003G.txt",
+      "mode": "main",
+      "expected": [
+        "MIID_予約０１",
+        "MIID_H_予約０１",
+        "MRSID_予約０１",
+        "MRSID_H_予約０１"
+      ],
+      "updatedAt": "2026-09-07T06:20:43.564Z"
+    },
     "awakening/messages (k)/p001.txt": {
       "path": "Awakening/Messages (K)/P001.txt",
       "mode": "main",
@@ -2654,6 +2665,30 @@
       "entryKey": "MID_024_OP2",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/e003g.txt\u0000MIID_H_予約０１": {
+      "path": "Awakening/Messages (K)/E003G.txt",
+      "entryKey": "MIID_H_予約０１",
+      "status": "approved",
+      "updatedAt": "2026-09-07T06:20:51.803Z"
+    },
+    "awakening/messages (k)/e003g.txt\u0000MIID_予約０１": {
+      "path": "Awakening/Messages (K)/E003G.txt",
+      "entryKey": "MIID_予約０１",
+      "status": "approved",
+      "updatedAt": "2026-09-07T06:20:51.566Z"
+    },
+    "awakening/messages (k)/e003g.txt\u0000MRSID_H_予約０１": {
+      "path": "Awakening/Messages (K)/E003G.txt",
+      "entryKey": "MRSID_H_予約０１",
+      "status": "approved",
+      "updatedAt": "2026-09-07T06:20:49.789Z"
+    },
+    "awakening/messages (k)/e003g.txt\u0000MRSID_予約０１": {
+      "path": "Awakening/Messages (K)/E003G.txt",
+      "entryKey": "MRSID_予約０１",
+      "status": "approved",
+      "updatedAt": "2026-09-07T06:20:52.142Z"
     },
     "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_なし": {
       "path": "Awakening/Messages (K)/menu.txt",
