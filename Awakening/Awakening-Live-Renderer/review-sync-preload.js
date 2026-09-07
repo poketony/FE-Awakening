@@ -8,8 +8,9 @@ export const TOKEN_KEY = "fe13-live:reviewSyncToken:v1";
 export const MAIN_PREFIX = "Awakening/Messages (K)/";
 export const DLC_PREFIX = "Awakening/DLC Message (K)/";
 export const REVIEW_STATE_BRANCH = "review-state";
-export const REVIEW_PROGRESS_PATH = "Awakening/review-progress.json";
-export const REVIEW_PROGRESS_RAW = `https://raw.githubusercontent.com/poketony/FE-Awakening/${REVIEW_STATE_BRANCH}/${REVIEW_PROGRESS_PATH}`;
+export const REVIEW_LEGACY_PATH = "Awakening/review-progress.json";
+export const REVIEW_PC_PATH = "Awakening/review-progress-pc.json";
+export const REVIEW_MOBILE_PATH = "Awakening/review-progress-mobile.json";
 
 let dbPromise;
 
@@ -112,9 +113,13 @@ async function readOldTrackedFileOnce() {
   }
 }
 
-async function readRemoteProgress() {
+function rawUrl(path) {
+  return `https://raw.githubusercontent.com/poketony/FE-Awakening/${REVIEW_STATE_BRANCH}/${path}`;
+}
+
+async function readRemoteProgress(path) {
   try {
-    const response = await fetch(`${REVIEW_PROGRESS_RAW}?v=${Date.now()}`, { cache: "no-store" });
+    const response = await fetch(`${rawUrl(path)}?v=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) return emptyProgress();
     return parseProgress(await response.text());
   } catch {
@@ -122,12 +127,21 @@ async function readRemoteProgress() {
   }
 }
 
+async function readRemoteUnion() {
+  const [legacy, pc, mobile] = await Promise.all([
+    readRemoteProgress(REVIEW_LEGACY_PATH),
+    readRemoteProgress(REVIEW_PC_PATH),
+    readRemoteProgress(REVIEW_MOBILE_PATH),
+  ]);
+  return mergeProgress(mergeProgress(legacy, pc), mobile);
+}
+
 export async function preloadReviewSync() {
-  // 이제 Git 저장소의 main 워킹트리 review-progress.json은 쓰지 않는다.
-  // 기존 파일 핸들은 마이그레이션 복구용으로 읽기만 하고, 실제 동기화는
-  // localStorage + GitHub review-state 브랜치에서 처리한다.
+  // main 워킹트리의 review-progress.json은 더 이상 쓰지 않는다.
+  // review-state 브랜치의 PC/모바일 전용 파일을 합쳐 읽고, 옛 단일 파일은
+  // 기존 검수 기록을 잃지 않기 위한 읽기 전용 마이그레이션 원본으로만 사용한다.
   const localBefore = parseProgress(localStorage.getItem(LOCAL_SHARED_KEY));
-  const [remote, oldTracked] = await Promise.all([readRemoteProgress(), readOldTrackedFileOnce()]);
+  const [remote, oldTracked] = await Promise.all([readRemoteUnion(), readOldTrackedFileOnce()]);
   let merged = mergeProgress(remote, oldTracked);
   merged = mergeProgress(merged, localBefore);
   merged = mergeProgress(legacyProgress(), merged);
