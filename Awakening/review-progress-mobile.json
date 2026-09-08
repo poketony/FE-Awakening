@@ -681,6 +681,16 @@
       ],
       "updatedAt": "2026-09-07T09:39:30.094Z"
     },
+    "awakening/messages (k)/アズール_プレイヤー男_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_プレイヤー男_親子_Ｃ_PCM1",
+        "MID_支援_アズール_プレイヤー男_親子_Ｂ_PCM1",
+        "MID_支援_アズール_プレイヤー男_親子_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-09-07T23:59:32.282Z"
+    },
     "awakening/messages (k)/アズール_ルキナ.txt": {
       "path": "Awakening/Messages (K)/アズール_ルキナ.txt",
       "mode": "main",
@@ -4837,6 +4847,24 @@
       "entryKey": "MID_支援_アズール_プレイヤー女_Ｓ_PCF1",
       "status": "approved",
       "updatedAt": "2026-09-07T11:09:24.050Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男_親子.txt\u0000MID_支援_アズール_プレイヤー男_親子_Ａ_PCM1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男_親子.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー男_親子_Ａ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:24:49.366Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男_親子.txt\u0000MID_支援_アズール_プレイヤー男_親子_Ｂ_PCM1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男_親子.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー男_親子_Ｂ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:21:50.385Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男_親子.txt\u0000MID_支援_アズール_プレイヤー男_親子_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男_親子.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー男_親子_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:04:30.240Z"
     },
     "awakening/messages (k)/アズール_ヴィオール_親子.txt\u0000MID_支援_アズール_ヴィオール_親子_Ａ": {
       "path": "Awakening/Messages (K)/アズール_ヴィオール_親子.txt",
