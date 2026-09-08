@@ -146,6 +146,53 @@
       ],
       "updatedAt": "2026-09-07T06:45:02.823Z"
     },
+    "awakening/messages (k)/007.txt": {
+      "path": "Awakening/Messages (K)/007.txt",
+      "mode": "main",
+      "expected": [
+        "MID_007_OP1",
+        "MID_007_OP1_2_PCM1",
+        "MID_007_OP1_2_PCF1",
+        "MID_007_OP1_3",
+        "MID_007_OP1_4_PCM1",
+        "MID_007_OP1_4_PCF1",
+        "MID_007_OP1_5",
+        "MID_007_OP2",
+        "MID_007_OP2_02",
+        "MID_007_OP2_03",
+        "MID_007_EV1",
+        "MID_007_EV1_2_PCM1",
+        "MID_007_EV1_2_PCF1",
+        "MID_007_EV1_3",
+        "MID_007_BT1",
+        "MID_007_BOSS_DIE1",
+        "MID_007_DIE_ティアモ",
+        "MID_007_ED1",
+        "MID_007_ED1_01",
+        "MID_007_ED1_02",
+        "MID_007_ED1_03",
+        "MID_007_ED1_03_2",
+        "MID_007_ED1_04",
+        "MID_007_ED1_05",
+        "MID_007_ED2_01",
+        "MID_007_ED2_02",
+        "MID_007_ED2_03",
+        "MID_007_ED2_03_2_PCM1",
+        "MID_007_ED2_03_2_PCF1",
+        "MID_007_ED2_03_3",
+        "MID_007_ED2_04",
+        "MID_007_ED2_05_PCM1",
+        "MID_007_ED2_05_PCF1",
+        "MID_007_ED2_06",
+        "MID_007_ED2_07_PCM1",
+        "MID_007_ED2_07_PCF1",
+        "MID_007_ED2_08",
+        "MID_007_ED2_09_PCM1",
+        "MID_007_ED2_09_PCF1",
+        "MID_007_ED2_10"
+      ],
+      "updatedAt": "2026-09-07T06:57:17.006Z"
+    },
     "awakening/messages (k)/010.txt": {
       "path": "Awakening/Messages (K)/010.txt",
       "mode": "main",
@@ -536,6 +583,215 @@
       ],
       "updatedAt": "2026-09-06T16:03:19.160Z"
     },
+    "awakening/messages (k)/support_s.txt": {
+      "path": "Awakening/Messages (K)/Support_S.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援Ｓ_クロム_01",
+        "MID_支援Ｓ_クロム_02",
+        "MID_支援Ｓ_フレデリク_01",
+        "MID_支援Ｓ_フレデリク_02",
+        "MID_支援Ｓ_ソール_01",
+        "MID_支援Ｓ_ソール_02",
+        "MID_支援Ｓ_カラム_01",
+        "MID_支援Ｓ_カラム_02",
+        "MID_支援Ｓ_リヒト_01",
+        "MID_支援Ｓ_リヒト_02",
+        "MID_支援Ｓ_ヴェイク_01",
+        "MID_支援Ｓ_ヴェイク_02",
+        "MID_支援Ｓ_リベラ_01",
+        "MID_支援Ｓ_リベラ_02",
+        "MID_支援Ｓ_ロンクー_01",
+        "MID_支援Ｓ_ロンクー_02",
+        "MID_支援Ｓ_グレゴ_01",
+        "MID_支援Ｓ_グレゴ_02",
+        "MID_支援Ｓ_ガイア_01",
+        "MID_支援Ｓ_ガイア_02",
+        "MID_支援Ｓ_ヴィオール_01",
+        "MID_支援Ｓ_ヴィオール_02",
+        "MID_支援Ｓ_バジーリオ_01",
+        "MID_支援Ｓ_バジーリオ_02",
+        "MID_支援Ｓ_ヘンリー_01",
+        "MID_支援Ｓ_ヘンリー_02",
+        "MID_支援Ｓ_ドニ_01",
+        "MID_支援Ｓ_ドニ_02",
+        "MID_支援Ｓ_スミア_01",
+        "MID_支援Ｓ_スミア_02",
+        "MID_支援Ｓ_リズ_01",
+        "MID_支援Ｓ_リズ_02",
+        "MID_支援Ｓ_ソワレ_01",
+        "MID_支援Ｓ_ソワレ_02",
+        "MID_支援Ｓ_マリアベル_01",
+        "MID_支援Ｓ_マリアベル_02",
+        "MID_支援Ｓ_ティアモ_01",
+        "MID_支援Ｓ_ティアモ_02",
+        "MID_支援Ｓ_ベルベット_01",
+        "MID_支援Ｓ_ベルベット_02",
+        "MID_支援Ｓ_ノノ_01",
+        "MID_支援Ｓ_ノノ_02",
+        "MID_支援Ｓ_オリヴィエ_01",
+        "MID_支援Ｓ_オリヴィエ_02",
+        "MID_支援Ｓ_セルジュ_01",
+        "MID_支援Ｓ_セルジュ_02",
+        "MID_支援Ｓ_フラヴィア_01",
+        "MID_支援Ｓ_フラヴィア_02",
+        "MID_支援Ｓ_ミリエル_01",
+        "MID_支援Ｓ_ミリエル_02",
+        "MID_支援Ｓ_サーリャ_01",
+        "MID_支援Ｓ_サーリャ_02",
+        "MID_支援Ｓ_ジェローム_01",
+        "MID_支援Ｓ_ジェローム_02",
+        "MID_支援Ｓ_ウード_01",
+        "MID_支援Ｓ_ウード_02",
+        "MID_支援Ｓ_アズール_01",
+        "MID_支援Ｓ_アズール_02",
+        "MID_支援Ｓ_ブレディ_01",
+        "MID_支援Ｓ_ブレディ_02",
+        "MID_支援Ｓ_シャンブレー_01",
+        "MID_支援Ｓ_シャンブレー_02",
+        "MID_支援Ｓ_ロラン_01",
+        "MID_支援Ｓ_ロラン_02",
+        "MID_支援Ｓ_ルキナ_01",
+        "MID_支援Ｓ_ルキナ_02",
+        "MID_支援Ｓ_デジェル_01",
+        "MID_支援Ｓ_デジェル_02",
+        "MID_支援Ｓ_シンシア_01",
+        "MID_支援Ｓ_シンシア_02",
+        "MID_支援Ｓ_セレナ_01",
+        "MID_支援Ｓ_セレナ_02",
+        "MID_支援Ｓ_ノワール_01",
+        "MID_支援Ｓ_ノワール_02",
+        "MID_支援Ｓ_ンン_01",
+        "MID_支援Ｓ_ンン_02",
+        "MID_支援Ｓ_サイリ_01",
+        "MID_支援Ｓ_サイリ_02",
+        "MID_支援Ｓ_アンナ_01",
+        "MID_支援Ｓ_アンナ_02",
+        "MID_支援Ｓ_ギャンレル_01",
+        "MID_支援Ｓ_ギャンレル_02",
+        "MID_支援Ｓ_ヴァルハルト_01",
+        "MID_支援Ｓ_ヴァルハルト_02",
+        "MID_支援Ｓ_レンハ_01",
+        "MID_支援Ｓ_レンハ_02",
+        "MID_支援Ｓ_エメリナ_01",
+        "MID_支援Ｓ_エメリナ_02",
+        "MID_支援Ｓ_チキ_01",
+        "MID_支援Ｓ_チキ_02",
+        "MID_支援Ｓ_インバース_01",
+        "MID_支援Ｓ_インバース_02",
+        "MID_支援Ｓ_パリス_01",
+        "MID_支援Ｓ_パリス_02"
+      ],
+      "updatedAt": "2026-09-08T02:37:56.591Z"
+    },
+    "awakening/messages (k)/system.txt": {
+      "path": "Awakening/Messages (K)/System.txt",
+      "mode": "main",
+      "expected": [
+        "MID_SYS_EN_レベル",
+        "MID_SYS_EN_レベル２",
+        "MID_SYS_EN_経験値",
+        "MID_SYS_EN_経験値２",
+        "MID_SYS_ＨＰ",
+        "MID_SYS_EN_ＨＰ",
+        "MID_SYS_EN_ＭＨＰ",
+        "MID_SYS_クラス",
+        "MID_SYS_力",
+        "MID_SYS_魔力",
+        "MID_SYS_技",
+        "MID_SYS_速さ",
+        "MID_SYS_幸運",
+        "MID_SYS_守備",
+        "MID_SYS_魔防",
+        "MID_SYS_移動",
+        "MID_SYS_射程",
+        "MID_SYS_特効",
+        "MID_SYS_スキル",
+        "MID_SYS_EN_射程_魔力／２",
+        "MID_SYS_EN_射程_∞",
+        "MID_SYS_攻撃",
+        "MID_SYS_命中",
+        "MID_SYS_必殺",
+        "MID_SYS_回避",
+        "MID_SYS_威力",
+        "MID_SYS_武器",
+        "MID_SYS_名前",
+        "MID_SYS_剣",
+        "MID_SYS_槍",
+        "MID_SYS_斧",
+        "MID_SYS_弓",
+        "MID_SYS_魔道書",
+        "MID_SYS_杖",
+        "MID_SYS_竜石",
+        "MID_SYS_獣石",
+        "MID_SYS_魔物",
+        "MID_SYS_ボス",
+        "MID_SYS_道具",
+        "MID_SYS_支援",
+        "MID_SYS_レベルＳ",
+        "MID_SYS_レベルＡ",
+        "MID_SYS_レベルＢ",
+        "MID_SYS_レベルＣ",
+        "MID_SYS_レベルＤ",
+        "MID_SYS_レベルＥ",
+        "MID_SYS_レベルＮ",
+        "MID_SYS_EN_レベルＳ",
+        "MID_SYS_EN_レベルＡ",
+        "MID_SYS_EN_レベルＢ",
+        "MID_SYS_EN_レベルＣ",
+        "MID_SYS_EN_レベルＤ",
+        "MID_SYS_EN_レベルＥ",
+        "MID_SYS_EN_レベルＮ",
+        "MID_SYS_スキップ中",
+        "MID_SYS_お任せ中",
+        "MID_SYS_お任せ実行中",
+        "MID_SYS_お任せ解除中",
+        "MID_SYS_ターン数",
+        "MID_SYS_軍資金",
+        "MID_SYS_EN_軍資金単位",
+        "MID_SYS_勝利条件",
+        "MID_SYS_ミス",
+        "MID_SYS_ノーダメージ",
+        "MID_SYS_ガード",
+        "MID_SYS_なし",
+        "MID_MSG_アイテム入手",
+        "MID_MSG_ゴールド入手",
+        "MID_MSG_アイテム略奪",
+        "MID_MSG_ゴールド略奪",
+        "MID_MSG_アイテム破損",
+        "MID_MSG_アイテム破損２",
+        "MID_MSG_パラメータアップ",
+        "MID_MSG_パラメータダウン",
+        "MID_MSG_パラメータ結果１",
+        "MID_MSG_パラメータ結果２",
+        "MID_MSG_パラメータ結果３",
+        "MID_MSG_パラメータ結果４",
+        "MID_MSG_武器レベルアップ",
+        "MID_MSG_武器レベルアップ２",
+        "MID_MSG_武器使用可能",
+        "MID_MSG_武器使用可能２",
+        "MID_MSG_スキル習得",
+        "MID_MSG_スキル習得２",
+        "MID_MSG_支援レベル上昇",
+        "MID_MSG_効果無し",
+        "MID_MSG_能力強化",
+        "MID_MSG_経験値入手",
+        "MID_MSG_武器経験値入手",
+        "MID_MSG_支援強化",
+        "MID_MSG_戦闘予測_攻撃",
+        "MID_MSG_戦闘予測_２回",
+        "MID_MSG_戦闘予測_４回",
+        "MID_MSG_戦闘予測_先制",
+        "MID_MSG_戦闘予測_特効",
+        "MID_MSG_戦闘予測_反撃死",
+        "MID_MSG_戦闘予測_空振死",
+        "MID_MSG_戦闘予測_被必殺",
+        "MID_MSG_名声上昇",
+        "MID_デフォルト軍名",
+        "MID_ランダム軍名"
+      ],
+      "updatedAt": "2026-09-08T02:37:59.174Z"
+    },
     "awakening/messages (k)/アズール_ウード.txt": {
       "path": "Awakening/Messages (K)/アズール_ウード.txt",
       "mode": "main",
@@ -658,6 +914,69 @@
         "MID_支援_アズール_ドニ_親子_Ａ"
       ],
       "updatedAt": "2026-09-07T00:19:05.379Z"
+    },
+    "awakening/messages (k)/アズール_ノワール.txt": {
+      "path": "Awakening/Messages (K)/アズール_ノワール.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_ノワール_Ｃ",
+        "MID_支援_アズール_ノワール_Ｂ",
+        "MID_支援_アズール_ノワール_Ａ",
+        "MID_支援_アズール_ノワール_Ｓ"
+      ],
+      "updatedAt": "2026-09-07T09:03:35.049Z"
+    },
+    "awakening/messages (k)/アズール_ブレディ.txt": {
+      "path": "Awakening/Messages (K)/アズール_ブレディ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_ブレディ_Ｃ",
+        "MID_支援_アズール_ブレディ_Ｂ",
+        "MID_支援_アズール_ブレディ_Ａ"
+      ],
+      "updatedAt": "2026-09-08T00:45:04.000Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_アズール_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_アズール_プレイヤー女_Ａ_PCF1",
+        "MID_支援_アズール_プレイヤー女_Ｓ_PCF1"
+      ],
+      "updatedAt": "2026-09-07T09:39:30.094Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_アズール_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_アズール_プレイヤー男_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-09-08T00:26:13.166Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_プレイヤー男_親子_Ｃ_PCM1",
+        "MID_支援_アズール_プレイヤー男_親子_Ｂ_PCM1",
+        "MID_支援_アズール_プレイヤー男_親子_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-09-07T23:59:32.282Z"
+    },
+    "awakening/messages (k)/アズール_マルス.txt": {
+      "path": "Awakening/Messages (K)/アズール_マルス.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_マルス_Ｃ",
+        "MID_支援_アズール_マルス_Ｂ",
+        "MID_支援_アズール_マルス_Ａ",
+        "MID_支援_アズール_マルス_Ｓ"
+      ],
+      "updatedAt": "2026-09-08T02:38:42.044Z"
     },
     "awakening/messages (k)/アズール_ルキナ.txt": {
       "path": "Awakening/Messages (K)/アズール_ルキナ.txt",
@@ -1269,6 +1588,23 @@
         "MID_様子_ティアモ_後_恋人"
       ],
       "updatedAt": "2026-09-06T12:29:36.266Z"
+    },
+    "awakening/messages (k)/様子_ミリエル2.txt": {
+      "path": "Awakening/Messages (K)/様子_ミリエル2.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_ミリエル_前_敬さん",
+        "MID_様子_ミリエル_前",
+        "MID_様子_ミリエル_前_敬様",
+        "MID_様子_ミリエル_後_敬さん",
+        "MID_様子_ミリエル_後_敬様",
+        "MID_様子_ミリエル_後_無言",
+        "MID_様子_ミリエル_前_親子_子",
+        "MID_様子_ミリエル_後_親子_子",
+        "MID_様子_ミリエル_前_恋人",
+        "MID_様子_ミリエル_後_恋人"
+      ],
+      "updatedAt": "2026-09-08T02:37:50.530Z"
     },
     "awakening/messages (k)/様子_ヴァルハルト4.txt": {
       "path": "Awakening/Messages (K)/様子_ヴァルハルト4.txt",
@@ -3124,6 +3460,12 @@
       "status": "approved",
       "updatedAt": "2026-09-07T06:49:58.653Z"
     },
+    "awakening/messages (k)/006.txt\u0000MID_006_TUT_ユニットのロスト": {
+      "path": "Awakening/Messages (K)/006.txt",
+      "entryKey": "MID_006_TUT_ユニットのロスト",
+      "status": "approved",
+      "updatedAt": "2026-09-07T06:57:11.830Z"
+    },
     "awakening/messages (k)/012.txt\u0000MID_012_OP6_01": {
       "path": "Awakening/Messages (K)/012.txt",
       "entryKey": "MID_012_OP6_01",
@@ -4767,6 +5109,114 @@
       "entryKey": "MID_支援_アズール_ドニ_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-07T01:57:22.546Z"
+    },
+    "awakening/messages (k)/アズール_ノワール.txt\u0000MID_支援_アズール_ノワール_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_ノワール.txt",
+      "entryKey": "MID_支援_アズール_ノワール_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-07T09:20:26.374Z"
+    },
+    "awakening/messages (k)/アズール_ノワール.txt\u0000MID_支援_アズール_ノワール_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_ノワール.txt",
+      "entryKey": "MID_支援_アズール_ノワール_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-07T09:12:18.993Z"
+    },
+    "awakening/messages (k)/アズール_ノワール.txt\u0000MID_支援_アズール_ノワール_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_ノワール.txt",
+      "entryKey": "MID_支援_アズール_ノワール_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-07T09:07:39.835Z"
+    },
+    "awakening/messages (k)/アズール_ノワール.txt\u0000MID_支援_アズール_ノワール_Ｓ": {
+      "path": "Awakening/Messages (K)/アズール_ノワール.txt",
+      "entryKey": "MID_支援_アズール_ノワール_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-09-07T09:36:01.030Z"
+    },
+    "awakening/messages (k)/アズール_ブレディ.txt\u0000MID_支援_アズール_ブレディ_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_ブレディ.txt",
+      "entryKey": "MID_支援_アズール_ブレディ_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-08T01:37:06.193Z"
+    },
+    "awakening/messages (k)/アズール_ブレディ.txt\u0000MID_支援_アズール_ブレディ_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_ブレディ.txt",
+      "entryKey": "MID_支援_アズール_ブレディ_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:58:39.446Z"
+    },
+    "awakening/messages (k)/アズール_ブレディ.txt\u0000MID_支援_アズール_ブレディ_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_ブレディ.txt",
+      "entryKey": "MID_支援_アズール_ブレディ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:51:00.051Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー女.txt\u0000MID_支援_アズール_プレイヤー女_Ａ_PCF1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー女.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー女_Ａ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-07T10:50:04.841Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー女.txt\u0000MID_支援_アズール_プレイヤー女_Ｂ_PCF1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー女.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー女_Ｂ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-07T10:36:03.576Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー女.txt\u0000MID_支援_アズール_プレイヤー女_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー女.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー女_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-07T09:45:03.219Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー女.txt\u0000MID_支援_アズール_プレイヤー女_Ｓ_PCF1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー女.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー女_Ｓ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-07T11:09:24.050Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男.txt\u0000MID_支援_アズール_プレイヤー男_Ａ_PCM1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー男_Ａ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:44:58.262Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男.txt\u0000MID_支援_アズール_プレイヤー男_Ｂ_PCM1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー男_Ｂ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:35:27.518Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男.txt\u0000MID_支援_アズール_プレイヤー男_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー男_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:29:05.286Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男_親子.txt\u0000MID_支援_アズール_プレイヤー男_親子_Ａ_PCM1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男_親子.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー男_親子_Ａ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:24:49.366Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男_親子.txt\u0000MID_支援_アズール_プレイヤー男_親子_Ｂ_PCM1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男_親子.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー男_親子_Ｂ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:21:50.385Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男_親子.txt\u0000MID_支援_アズール_プレイヤー男_親子_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男_親子.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー男_親子_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:04:30.240Z"
+    },
+    "awakening/messages (k)/アズール_マルス.txt\u0000MID_支援_アズール_マルス_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_マルス.txt",
+      "entryKey": "MID_支援_アズール_マルス_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-08T02:41:31.855Z"
     },
     "awakening/messages (k)/アズール_ヴィオール_親子.txt\u0000MID_支援_アズール_ヴィオール_親子_Ａ": {
       "path": "Awakening/Messages (K)/アズール_ヴィオール_親子.txt",
