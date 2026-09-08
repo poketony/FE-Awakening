@@ -670,6 +670,16 @@
       ],
       "updatedAt": "2026-09-07T09:03:35.049Z"
     },
+    "awakening/messages (k)/アズール_ブレディ.txt": {
+      "path": "Awakening/Messages (K)/アズール_ブレディ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_ブレディ_Ｃ",
+        "MID_支援_アズール_ブレディ_Ｂ",
+        "MID_支援_アズール_ブレディ_Ａ"
+      ],
+      "updatedAt": "2026-09-08T00:45:04.000Z"
+    },
     "awakening/messages (k)/アズール_プレイヤー女.txt": {
       "path": "Awakening/Messages (K)/アズール_プレイヤー女.txt",
       "mode": "main",
@@ -680,6 +690,16 @@
         "MID_支援_アズール_プレイヤー女_Ｓ_PCF1"
       ],
       "updatedAt": "2026-09-07T09:39:30.094Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_アズール_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_アズール_プレイヤー男_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-09-08T00:26:13.166Z"
     },
     "awakening/messages (k)/アズール_プレイヤー男_親子.txt": {
       "path": "Awakening/Messages (K)/アズール_プレイヤー男_親子.txt",
@@ -4824,6 +4844,24 @@
       "status": "approved",
       "updatedAt": "2026-09-07T09:36:01.030Z"
     },
+    "awakening/messages (k)/アズール_ブレディ.txt\u0000MID_支援_アズール_ブレディ_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_ブレディ.txt",
+      "entryKey": "MID_支援_アズール_ブレディ_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-08T01:37:06.193Z"
+    },
+    "awakening/messages (k)/アズール_ブレディ.txt\u0000MID_支援_アズール_ブレディ_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_ブレディ.txt",
+      "entryKey": "MID_支援_アズール_ブレディ_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:58:39.446Z"
+    },
+    "awakening/messages (k)/アズール_ブレディ.txt\u0000MID_支援_アズール_ブレディ_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_ブレディ.txt",
+      "entryKey": "MID_支援_アズール_ブレディ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:51:00.051Z"
+    },
     "awakening/messages (k)/アズール_プレイヤー女.txt\u0000MID_支援_アズール_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/アズール_プレイヤー女.txt",
       "entryKey": "MID_支援_アズール_プレイヤー女_Ａ_PCF1",
@@ -4847,6 +4885,24 @@
       "entryKey": "MID_支援_アズール_プレイヤー女_Ｓ_PCF1",
       "status": "approved",
       "updatedAt": "2026-09-07T11:09:24.050Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男.txt\u0000MID_支援_アズール_プレイヤー男_Ａ_PCM1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー男_Ａ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:44:58.262Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男.txt\u0000MID_支援_アズール_プレイヤー男_Ｂ_PCM1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー男_Ｂ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:35:27.518Z"
+    },
+    "awakening/messages (k)/アズール_プレイヤー男.txt\u0000MID_支援_アズール_プレイヤー男_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/アズール_プレイヤー男.txt",
+      "entryKey": "MID_支援_アズール_プレイヤー男_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-08T00:29:05.286Z"
     },
     "awakening/messages (k)/アズール_プレイヤー男_親子.txt\u0000MID_支援_アズール_プレイヤー男_親子_Ａ_PCM1": {
       "path": "Awakening/Messages (K)/アズール_プレイヤー男_親子.txt",
