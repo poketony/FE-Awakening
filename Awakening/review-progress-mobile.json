@@ -1535,6 +1535,17 @@
       ],
       "updatedAt": "2026-09-10T23:23:18.774Z"
     },
+    "awakening/messages (k)/ヴェイク_マリアベル.txt": {
+      "path": "Awakening/Messages (K)/ヴェイク_マリアベル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴェイク_マリアベル_Ｃ",
+        "MID_支援_ヴェイク_マリアベル_Ｂ",
+        "MID_支援_ヴェイク_マリアベル_Ａ",
+        "MID_支援_ヴェイク_マリアベル_Ｓ"
+      ],
+      "updatedAt": "2026-09-10T23:25:47.416Z"
+    },
     "awakening/messages (k)/ヴェイク_リズ.txt": {
       "path": "Awakening/Messages (K)/ヴェイク_リズ.txt",
       "mode": "main",
@@ -5984,6 +5995,12 @@
       "entryKey": "MID_支援_オリヴィエ_プレイヤー女_Ｃ_PCF1",
       "status": "approved",
       "updatedAt": "2026-09-06T06:16:03.982Z"
+    },
+    "awakening/messages (k)/オリヴィエ_ヘンリー.txt\u0000MID_支援_オリヴィエ_ヘンリー_Ｂ": {
+      "path": "Awakening/Messages (K)/オリヴィエ_ヘンリー.txt",
+      "entryKey": "MID_支援_オリヴィエ_ヘンリー_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-10T23:55:08.358Z"
     },
     "awakening/messages (k)/オリヴィエ_ヘンリー.txt\u0000MID_支援_オリヴィエ_ヘンリー_Ｃ": {
       "path": "Awakening/Messages (K)/オリヴィエ_ヘンリー.txt",
