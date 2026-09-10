@@ -978,6 +978,16 @@
       ],
       "updatedAt": "2026-09-08T02:38:42.044Z"
     },
+    "awakening/messages (k)/アズール_リヒト_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_リヒト_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_リヒト_親子_Ｃ",
+        "MID_支援_アズール_リヒト_親子_Ｂ",
+        "MID_支援_アズール_リヒト_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-09T23:50:41.323Z"
+    },
     "awakening/messages (k)/アズール_ルキナ.txt": {
       "path": "Awakening/Messages (K)/アズール_ルキナ.txt",
       "mode": "main",
@@ -1478,6 +1488,22 @@
       ],
       "updatedAt": "2026-09-06T12:25:29.912Z"
     },
+    "awakening/messages (k)/様子_アンナ3.txt": {
+      "path": "Awakening/Messages (K)/様子_アンナ3.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_アンナ_前",
+        "MID_様子_アンナ_前_通さん",
+        "MID_様子_アンナ_後",
+        "MID_様子_アンナ_後_通さん",
+        "MID_様子_アンナ_後_無言",
+        "MID_様子_アンナ_前_親子_子",
+        "MID_様子_アンナ_後_親子_子",
+        "MID_様子_アンナ_前_恋人",
+        "MID_様子_アンナ_後_恋人"
+      ],
+      "updatedAt": "2026-09-10T04:01:24.225Z"
+    },
     "awakening/messages (k)/様子_インバース4.txt": {
       "path": "Awakening/Messages (K)/様子_インバース4.txt",
       "mode": "main",
@@ -1512,6 +1538,27 @@
         "MID_様子_ウード_後_恋人"
       ],
       "updatedAt": "2026-09-07T05:09:27.955Z"
+    },
+    "awakening/messages (k)/様子_ウード4.txt": {
+      "path": "Awakening/Messages (K)/様子_ウード4.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_ウード_前",
+        "MID_様子_ウード_前_無言",
+        "MID_様子_ウード_前_敬さん",
+        "MID_様子_ウード_後",
+        "MID_様子_ウード_後_敬さん",
+        "MID_様子_ウード_後_無言",
+        "MID_様子_ウード_前_親子_子",
+        "MID_様子_ウード_後_親子_子",
+        "MID_様子_ウード_前_親子_母",
+        "MID_様子_ウード_後_親子_母",
+        "MID_様子_ウード_前_親子_父",
+        "MID_様子_ウード_後_親子_父",
+        "MID_様子_ウード_前_恋人",
+        "MID_様子_ウード_後_恋人"
+      ],
+      "updatedAt": "2026-09-10T02:57:38.329Z"
     },
     "awakening/messages (k)/様子_チキ1.txt": {
       "path": "Awakening/Messages (K)/様子_チキ1.txt",
@@ -3466,6 +3513,12 @@
       "status": "approved",
       "updatedAt": "2026-09-07T06:57:11.830Z"
     },
+    "awakening/messages (k)/007.txt\u0000MID_007_OP1": {
+      "path": "Awakening/Messages (K)/007.txt",
+      "entryKey": "MID_007_OP1",
+      "status": "approved",
+      "updatedAt": "2026-09-10T04:02:53.631Z"
+    },
     "awakening/messages (k)/012.txt\u0000MID_012_OP6_01": {
       "path": "Awakening/Messages (K)/012.txt",
       "entryKey": "MID_012_OP6_01",
@@ -5229,6 +5282,12 @@
       "entryKey": "MID_支援_アズール_マルス_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-08T02:41:31.855Z"
+    },
+    "awakening/messages (k)/アズール_マルス.txt\u0000MID_支援_アズール_マルス_Ｓ": {
+      "path": "Awakening/Messages (K)/アズール_マルス.txt",
+      "entryKey": "MID_支援_アズール_マルス_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-09-09T23:50:16.296Z"
     },
     "awakening/messages (k)/アズール_ヴィオール_親子.txt\u0000MID_支援_アズール_ヴィオール_親子_Ａ": {
       "path": "Awakening/Messages (K)/アズール_ヴィオール_親子.txt",
