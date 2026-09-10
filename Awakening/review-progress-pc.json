@@ -193,6 +193,35 @@
       ],
       "updatedAt": "2026-09-07T06:57:17.006Z"
     },
+    "awakening/messages (k)/008.txt": {
+      "path": "Awakening/Messages (K)/008.txt",
+      "mode": "main",
+      "expected": [
+        "MID_008_OP1",
+        "MID_008_OP2",
+        "MID_008_OP3_01",
+        "MID_008_OP3_02",
+        "MID_008_OP3_02_02",
+        "MID_008_OP3_03",
+        "MID_008_EV1_PCM1",
+        "MID_008_EV1_PCF1",
+        "MID_008_BTノノ",
+        "MID_008_BT1",
+        "MID_008_BOSS_DIE1",
+        "MID_008_DIE_ノノ",
+        "MID_008_VIL1",
+        "MID_008_VIL2",
+        "MID_008_VIL3",
+        "MID_008_ED1",
+        "MID_008_ED1グレゴ死亡",
+        "MID_008_ED1ノノ死亡",
+        "MID_008_ED1グレゴノノ死亡",
+        "MID_008_ED2_PCM1",
+        "MID_008_ED2_PCF1",
+        "MID_008_TUT_村"
+      ],
+      "updatedAt": "2026-09-10T05:27:50.799Z"
+    },
     "awakening/messages (k)/010.txt": {
       "path": "Awakening/Messages (K)/010.txt",
       "mode": "main",
@@ -3662,6 +3691,12 @@
       "entryKey": "MID_007_ED2_09_PCM1",
       "status": "approved",
       "updatedAt": "2026-09-10T05:26:17.081Z"
+    },
+    "awakening/messages (k)/007.txt\u0000MID_007_ED2_10": {
+      "path": "Awakening/Messages (K)/007.txt",
+      "entryKey": "MID_007_ED2_10",
+      "status": "approved",
+      "updatedAt": "2026-09-10T05:27:49.359Z"
     },
     "awakening/messages (k)/007.txt\u0000MID_007_EV1": {
       "path": "Awakening/Messages (K)/007.txt",
