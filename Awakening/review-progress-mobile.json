@@ -1524,6 +1524,17 @@
       ],
       "updatedAt": "2026-09-06T03:13:49.921Z"
     },
+    "awakening/messages (k)/ヴェイク_ノノ.txt": {
+      "path": "Awakening/Messages (K)/ヴェイク_ノノ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴェイク_ノノ_Ｃ",
+        "MID_支援_ヴェイク_ノノ_Ｂ",
+        "MID_支援_ヴェイク_ノノ_Ａ",
+        "MID_支援_ヴェイク_ノノ_Ｓ"
+      ],
+      "updatedAt": "2026-09-10T23:23:18.774Z"
+    },
     "awakening/messages (k)/ヴェイク_リズ.txt": {
       "path": "Awakening/Messages (K)/ヴェイク_リズ.txt",
       "mode": "main",
