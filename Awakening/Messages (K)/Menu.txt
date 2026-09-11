@@ -427,7 +427,7 @@ MID_SORTIE_スキル着脱: 스킬 장비
 MID_H_SORTIE_スキル着脱: 유닛의 스킬을 장비할 수 있습니다
 MID_H_SORTIE_一括整理: 유닛의 소지품을 일괄 정리할 수 있습니다
 MID_SORTIE_武器屋: 무기점
-MID_H_SORTIE_武器屋: 무기점에서 유닛의 소지품을 사고 팔 수 있습니다
+MID_H_SORTIE_武器屋: 무기점에서 유닛의 소지품을 사고팔 수 있습니다
 MID_SORTIE_支援会話: 지원 회화
 MID_H_SORTIE_支援会話: 유닛끼리의 인연이 깊어지는 대화를 할 수 있습니다
 MID_SORTIE_マイルーム: 모두의 방
@@ -538,9 +538,9 @@ MID_MYROOM_５０音順: 가나다순
 MID_MYROOM_イベント発生: 새로운 이벤트가 발생했습니다!
 MID_MYROOM_誕生日発生: 생일 이벤트가 발생했습니다!
 MID_MYROOM_誕生日終了: 생일이 끝나\n쓸쓸하게 떠나갔습니다.
-MID_SHOP_購入: 산다
+MID_SHOP_購入: 구입
 MID_SHOP_購入確認: $a$a0G로 사겠습니까?
-MID_SHOP_売却: 판다
+MID_SHOP_売却: 판매
 MID_SHOP_売却確認: $a$a0G로 팔겠습니까?
 MID_SHOP_売却不可: 불가
 MID_SHOP_錬成: 연성하기
@@ -555,70 +555,70 @@ MID_H_SHOP_錬成_命中: 명중
 MID_H_SHOP_錬成_必殺: 필살
 MID_SHOP_終了確認: 종료하겠습니까?
 MID_SHOP_アイテム名: 아이템
-MID_SHOP_回数: 회수
+MID_SHOP_回数: 횟수
 MID_SHOP_装備: 장비
 MID_SHOP_在庫数: 재고
 MID_SHOP_売却数: 수량
 MID_SHOP_価格: 가격
 MID_SHOP_売却価格: 매각 가격
 MID_SHOP_錬成可否: 연성
-MID_SHOP_確認_買う: 산다
-MID_SHOP_確認_売る: 판다
-MID_SHOP_確認_やめる: 그만둔다
+MID_SHOP_確認_買う: 구입
+MID_SHOP_確認_売る: 판매
+MID_SHOP_確認_やめる: 취소
 MID_SHOP_記号_装備中: 장비 중
 MID_SHOP_記号_装備可: ○
 MID_SHOP_記号_装備不可: ×
 MID_SHOP_名前_武器屋: 무기점
 MID_SHOP_名前_行商人: 행상인
-MID_SHOP_名前_持ち物を買う: 소지품을 산다
+MID_SHOP_名前_持ち物を買う: 소지품을 사기
 MID_SHOP_錬成強化残り回数: 나머지
 MID_SHOP_費用: 비용
 MID_SHOP_交渉終了確認: 종료하겠습니까?
-MID_SHOP_MESS_入店: 어서 오시게. 무엇을 찾는가?
+MID_SHOP_MESS_入店: 어서 와. 찾는 게 뭐야?
 MID_SHOP_MESS_入店_行商人: 어서 와. 뭘 할 거야?\n지금만 파는 상품도 있어.
-MID_SHOP_MESS_錬成数最大です: 연성 무기가 잔뜩 있네.\n팔거나 다 쓰면 또 와주게.
-MID_SHOP_MESS_錬成数最大です_行商人: 연성 무기가 잔뜩 있네.\n팔거나 다 쓰면 또 와주게.
-MID_SHOP_MESS_誰が買う: 누가 구입할 건가?
+MID_SHOP_MESS_錬成数最大です: 연성 무기가 잔뜩 있네.\n팔거나 다 쓰면 또 와 줘.
+MID_SHOP_MESS_錬成数最大です_行商人: 연성 무기가 잔뜩 있네.\n팔거나 다 쓰면 또 와 줘.
+MID_SHOP_MESS_誰が買う: 누가 구입할 거지?
 MID_SHOP_MESS_誰が買う_行商人: 누가 구입할 거야?
-MID_SHOP_MESS_誰が売る: 누가 팔 건가?
+MID_SHOP_MESS_誰が売る: 누가 팔 거지?
 MID_SHOP_MESS_誰が売る_行商人: 누가 팔 거야?
-MID_SHOP_MESS_誰のを錬成: 누구의 물건을 연성할 건가?
+MID_SHOP_MESS_誰のを錬成: 누구의 물건을 연성할 거지?
 MID_SHOP_MESS_誰のを錬成_行商人: 누구의 물건을 연성할 거야?
 MID_SHOP_MESS_何を買う: 물건을 살펴봐 달라고.
-MID_SHOP_MESS_何を買う_行商人: 물건을 살펴봐봐.
+MID_SHOP_MESS_何を買う_行商人: 물건을 살펴봐 봐.
 MID_SHOP_MESS_何を買う_交渉: 물건을 살펴봐 주세요.
-MID_SHOP_MESS_何を売る: 무엇을 팔 건가?
+MID_SHOP_MESS_何を売る: 무엇을 팔 거지?
 MID_SHOP_MESS_何を売る_行商人: 무엇을 팔 거야?
-MID_SHOP_MESS_何を鍛える: 어느 것을 연성할 건가?
+MID_SHOP_MESS_何を鍛える: 어느 것을 연성할 거지?
 MID_SHOP_MESS_何を鍛える_行商人: 어느 것을 연성할 거야?
-MID_SHOP_MESS_いくつ売る: 몇 개 팔 건가?
+MID_SHOP_MESS_いくつ売る: 몇 개 팔 거지?
 MID_SHOP_MESS_いくつ売る_行商人: 몇 개 팔 거야?
-MID_SHOP_MESS_購入確認: $a$a0G다. 이걸로 좋은가?
+MID_SHOP_MESS_購入確認: $a$a0G다. 이걸로 괜찮겠나?
 MID_SHOP_MESS_購入確認_行商人: $a$a0G야. 이걸로 괜찮지?
-MID_SHOP_MESS_購入確認_交渉: $a$a0G다. 이걸로 좋은가?
-MID_SHOP_MESS_売却確認: $a이거라면 $a0G로 매입하겠어.
-MID_SHOP_MESS_売却確認_行商人: $a이거라면 $a0G로 매입할게.
+MID_SHOP_MESS_購入確認_交渉: $a$a0G입니다. 이걸로 괜찮나요?
+MID_SHOP_MESS_売却確認: $a이거라면 $a0G에 사겠어.
+MID_SHOP_MESS_売却確認_行商人: $a이거라면 $a0G에 살게.
 MID_SHOP_MESS_錬成確認: $a$a0G다. 연성할 건가?
 MID_SHOP_MESS_錬成確認_行商人: $a$a0G야. 연성할래?
 MID_SHOP_MESS_資金不足: 돈이 모자라군.
 MID_SHOP_MESS_資金不足_行商人: 돈이 모자라네.
-MID_SHOP_MESS_資金不足_交渉: 돈이 모자라.
-MID_SHOP_MESS_錬成数最大で買えない_交渉: 가진 연성 무기가 가득합니다.
-MID_SHOP_MESS_武器名刻む: 무기의 이름을 바꿔주지.
-MID_SHOP_MESS_武器名刻む_行商人: 무기의 이름을 바꿔줄게.
-MID_SHOP_MESS_ほかには？: 그 외에 용무는 있는가?
-MID_SHOP_MESS_ほかには？_行商人: 그 외에 용무가 있어?
+MID_SHOP_MESS_資金不足_交渉: 돈이 모자랍니다.
+MID_SHOP_MESS_錬成数最大で買えない_交渉: 가지고 있는 연성 무기가 가득합니다.
+MID_SHOP_MESS_武器名刻む: 무기에 이름을 새겨 주지.
+MID_SHOP_MESS_武器名刻む_行商人: 무기에 이름을 새겨 줄게.
+MID_SHOP_MESS_ほかには？: 그 외에 볼일이 있나?
+MID_SHOP_MESS_ほかには？_行商人: 그 외에 볼일이 있어?
 MID_SHOP_MESS_購入後: 그 외에 살 게 있나?
 MID_SHOP_MESS_購入後_行商人: 그 외에 살 게 있어?
-MID_SHOP_MESS_購入後_交渉: 그 외에 살 게 있나?
-MID_SHOP_MESS_売却後: 다른 팔 물건은 있는가?
+MID_SHOP_MESS_購入後_交渉: 그 외에 살 게 있습니까?
+MID_SHOP_MESS_売却後: 다른 팔 물건은 있나?
 MID_SHOP_MESS_売却後_行商人: 다른 팔 물건은 있어?
-MID_SHOP_MESS_錬成内容確認: 무기의 능력을 어떻게 할 건가?
+MID_SHOP_MESS_錬成内容確認: 무기의 능력을 어떻게 할 거지?
 MID_SHOP_MESS_錬成内容確認_行商人: 무기의 능력을 어떻게 할 거야?
 MID_SHOP_MESS_輸送隊に送る: 고맙다. 수송대로 보냈어.
 MID_SHOP_MESS_輸送隊に送る_行商人: 고마워. 수송대로 보낼게.
-MID_SHOP_MESS_また来い: 또 와줘.
-MID_SHOP_MESS_また来い_行商人: 또 와줘.
+MID_SHOP_MESS_また来い: 다음에 또 와 달라고.
+MID_SHOP_MESS_また来い_行商人: 다음에 또 와 줘.
 MID_INPUT_ひらがな: 히라가나
 MID_INPUT_カタカナ: 가타가나
 MID_INPUT_漢字: 한자
@@ -712,7 +712,7 @@ MID_DUAL_最短記録: 최단 기록
 MID_DUAL_回: 회
 MID_DUAL_ターン: 턴
 MID_DUAL_ターン記録なし: ----
-MID_DUAL_敵お宝: 소지 보물
+MID_DUAL_敵お宝: 소지한 보물
 MID_DUAL_など: 등
 MID_DUAL_敵決定待ち: 적군이 결정될 때까지 기다려 주십시오.
 MID_DUAL_敵決定報告: 적군이 결정되었습니다
