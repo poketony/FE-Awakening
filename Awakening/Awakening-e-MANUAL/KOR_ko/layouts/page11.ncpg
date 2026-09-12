@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nc_page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.2.1" xmlns="http://www.nintendo.co.jp/sdd/2010/page">
+  <head>
+    <create user="" host="" date="2026-09-12T18:06:45.9002786+09:00" source="" />
+    <title />
+    <comment />
+    <generator name="NW4C ManualEditor Core" version="1.2.0.1" />
+  </head>
+  <body>
+    <ncpg>
+      <header>유닛을 움직이기</header>
+      <category />
+      <paneSet>
+        <pane kind="HorizontalCombinedGroup" name="HorizonG_01">
+          <basePositionType x="Left" y="Top" />
+          <translate x="10" y="289" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="304" y="37" />
+          <horizontalCombinedGroup>
+            <margin t="3" b="8" />
+          </horizontalCombinedGroup>
+        </pane>
+        <pane kind="HorizontalCombinedGroup" name="HorizonG_02">
+          <basePositionType x="Left" y="Top" />
+          <translate x="2" y="3" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="296" y="26" />
+          <horizontalCombinedGroup>
+            <margin t="0" b="0" />
+          </horizontalCombinedGroup>
+        </pane>
+        <pane kind="Null" name="Group_03">
+          <basePositionType x="Left" y="Top" />
+          <translate x="10" y="30" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="304" y="249" />
+          <group>
+            <layoutPosition>None</layoutPosition>
+          </group>
+        </pane>
+        <pane kind="Null" name="Group_02">
+          <basePositionType x="Left" y="Top" />
+          <translate x="0" y="30" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="304" y="219" />
+          <group>
+            <layoutPosition>None</layoutPosition>
+          </group>
+        </pane>
+        <pane kind="HorizontalCombinedGroup" name="HorizonG_06">
+          <basePositionType x="Left" y="Top" />
+          <translate x="0" y="0" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="304" y="37" />
+          <horizontalCombinedGroup>
+            <margin t="3" b="8" />
+          </horizontalCombinedGroup>
+        </pane>
+        <pane kind="HorizontalCombinedGroup" name="HorizonG_00">
+          <basePositionType x="Left" y="Top" />
+          <translate x="2" y="3" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="296" y="26" />
+          <horizontalCombinedGroup>
+            <margin t="0" b="0" />
+          </horizontalCombinedGroup>
+        </pane>
+        <pane kind="Picture" name="Picture_03">
+          <basePositionType x="Left" y="Top" />
+          <translate x="0" y="0" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="320" y="72" />
+          <picture>
+            <vtxColLT r="255" g="255" b="255" a="255" />
+            <vtxColRT r="255" g="255" b="255" a="255" />
+            <vtxColLB r="255" g="255" b="255" a="255" />
+            <vtxColRB r="255" g="255" b="255" a="255" />
+            <textureFlip>None</textureFlip>
+            <material name="Picture_03">
+              <texMap imageName="14I_BG" imageNameLeft="" imageNameRight="" stereoEnabled="false" />
+            </material>
+          </picture>
+        </pane>
+        <pane kind="Window" name="Frame_02">
+          <basePositionType x="Left" y="Top" />
+          <translate x="0" y="0" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="304" y="37" />
+          <window>
+            <frameEnabled>false</frameEnabled>
+            <content>
+              <vtxColLT r="0" g="6" b="20" a="255" />
+              <vtxColRT r="0" g="6" b="20" a="255" />
+              <vtxColLB r="0" g="6" b="20" a="255" />
+              <vtxColRB r="0" g="6" b="20" a="255" />
+              <material name="Frame_02C " />
+            </content>
+            <frame frameType="CornerLT">
+              <textureFlip>None</textureFlip>
+              <material name="Frame_02LT">
+                <texMap imageName="14I_N_flame01" />
+              </material>
+            </frame>
+            <frame frameType="CornerRT">
+              <textureFlip>None</textureFlip>
+              <material name="Frame_02RT">
+                <texMap imageName="14I_N_flame02" />
+              </material>
+            </frame>
+            <frame frameType="CornerLB">
+              <textureFlip>None</textureFlip>
+              <material name="Frame_02LB">
+                <texMap imageName="14I_N_flame04" />
+              </material>
+            </frame>
+            <frame frameType="CornerRB">
+              <textureFlip>None</textureFlip>
+              <material name="Frame_02RB">
+                <texMap imageName="14I_N_flame03" />
+              </material>
+            </frame>
+            <contentInflation l="0" r="0" t="0" b="0" />
+          </window>
+        </pane>
+        <pane kind="Picture" name="Picture_01">
+          <basePositionType x="Left" y="Top" />
+          <translate x="0" y="0" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="20" y="26" />
+          <picture>
+            <vtxColLT r="255" g="255" b="255" a="255" />
+            <vtxColRT r="255" g="255" b="255" a="255" />
+            <vtxColLB r="255" g="255" b="255" a="255" />
+            <vtxColRB r="255" g="255" b="255" a="255" />
+            <textureFlip>None</textureFlip>
+            <material name="Picture_01">
+              <texMap imageName="14I_N_kazari" imageNameLeft="" imageNameRight="" stereoEnabled="false" />
+            </material>
+          </picture>
+        </pane>
+        <pane kind="Picture" name="Picture_02">
+          <basePositionType x="Left" y="Top" />
+          <translate x="276" y="0" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="20" y="26" />
+          <picture>
+            <vtxColLT r="255" g="255" b="255" a="255" />
+            <vtxColRT r="255" g="255" b="255" a="255" />
+            <vtxColLB r="255" g="255" b="255" a="255" />
+            <vtxColRB r="255" g="255" b="255" a="255" />
+            <textureFlip>FlipH</textureFlip>
+            <material name="Picture_02">
+              <texMap imageName="14I_N_kazari" imageNameLeft="" imageNameRight="" stereoEnabled="false" />
+            </material>
+          </picture>
+        </pane>
+        <pane kind="Window" name="Frame_00">
+          <basePositionType x="Left" y="Top" />
+          <translate x="0" y="0" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="304" y="37" />
+          <window>
+            <frameEnabled>false</frameEnabled>
+            <content>
+              <vtxColLT r="0" g="6" b="20" a="255" />
+              <vtxColRT r="0" g="6" b="20" a="255" />
+              <vtxColLB r="0" g="6" b="20" a="255" />
+              <vtxColRB r="0" g="6" b="20" a="255" />
+              <material name="Frame_00C " />
+            </content>
+            <frame frameType="CornerLT">
+              <textureFlip>None</textureFlip>
+              <material name="Frame_00LT">
+                <texMap imageName="14I_N_flame01" />
+              </material>
+            </frame>
+            <frame frameType="CornerRT">
+              <textureFlip>None</textureFlip>
+              <material name="Frame_00RT">
+                <texMap imageName="14I_N_flame02" />
+              </material>
+            </frame>
+            <frame frameType="CornerLB">
+              <textureFlip>None</textureFlip>
+              <material name="Frame_00LB">
+                <texMap imageName="14I_N_flame04" />
+              </material>
+            </frame>
+            <frame frameType="CornerRB">
+              <textureFlip>None</textureFlip>
+              <material name="Frame_00RB">
+                <texMap imageName="14I_N_flame03" />
+              </material>
+            </frame>
+            <contentInflation l="0" r="0" t="0" b="0" />
+          </window>
+        </pane>
+        <pane kind="Picture" name="Picture_00">
+          <basePositionType x="Left" y="Top" />
+          <translate x="0" y="0" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="20" y="26" />
+          <picture>
+            <vtxColLT r="255" g="255" b="255" a="255" />
+            <vtxColRT r="255" g="255" b="255" a="255" />
+            <vtxColLB r="255" g="255" b="255" a="255" />
+            <vtxColRB r="255" g="255" b="255" a="255" />
+            <textureFlip>None</textureFlip>
+            <material name="Picture_00">
+              <texMap imageName="14I_N_kazari" imageNameLeft="" imageNameRight="" stereoEnabled="false" />
+            </material>
+          </picture>
+        </pane>
+        <pane kind="Picture" name="Picture_05">
+          <basePositionType x="Left" y="Top" />
+          <translate x="276" y="0" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="20" y="26" />
+          <picture>
+            <vtxColLT r="255" g="255" b="255" a="255" />
+            <vtxColRT r="255" g="255" b="255" a="255" />
+            <vtxColLB r="255" g="255" b="255" a="255" />
+            <vtxColRB r="255" g="255" b="255" a="255" />
+            <textureFlip>FlipH</textureFlip>
+            <material name="Picture_05">
+              <texMap imageName="14I_N_kazari" imageNameLeft="" imageNameRight="" stereoEnabled="false" />
+            </material>
+          </picture>
+        </pane>
+        <pane kind="Picture" name="Picture_10">
+          <basePositionType x="Left" y="Top" />
+          <translate x="0" y="510" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="320" y="68" />
+          <picture>
+            <vtxColLT r="255" g="255" b="255" a="255" />
+            <vtxColRT r="255" g="255" b="255" a="255" />
+            <vtxColLB r="255" g="255" b="255" a="255" />
+            <vtxColRB r="255" g="255" b="255" a="255" />
+            <textureFlip>None</textureFlip>
+            <material name="Picture_10">
+              <texMap imageName="14I_BG_sita" imageNameLeft="" imageNameRight="" stereoEnabled="false" />
+            </material>
+          </picture>
+        </pane>
+        <pane kind="TextBox" name="TextBox_00">
+          <basePositionType x="Left" y="Top" />
+          <translate x="0" y="0" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="300" y="20" />
+          <textBox font="cbf_ko-Hang-KR" autoWidthAdjust="true">
+            <fontSize x="16.6666679" y="20" />
+            <text>유닛은 1턴에 1번씩 행동합니다.</text>
+            <topColor r="60" g="60" b="60" a="255" />
+            <bottomColor r="60" g="60" b="60" a="255" />
+            <positionType x="Left" y="Top" />
+            <material name="TextBox_00" />
+            <texEnabled>false</texEnabled>
+            <texLayoutPosition>LeftTop</texLayoutPosition>
+            <texOffsetLeft>0</texOffsetLeft>
+            <texOffsetRight>0</texOffsetRight>
+            <texOffsetTop>0</texOffsetTop>
+            <texOffsetBottom>0</texOffsetBottom>
+          </textBox>
+        </pane>
+        <pane kind="TextBox" name="TextBox_01">
+          <basePositionType x="Left" y="Top" />
+          <translate x="23" y="1" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="249" y="24" />
+          <textBox font="cbf_ko-Hang-KR" autoWidthAdjust="true">
+            <fontSize x="20" y="24" />
+            <text>이동하기</text>
+            <topColor r="255" g="255" b="255" a="255" />
+            <bottomColor r="255" g="255" b="255" a="255" />
+            <positionType x="Center" y="Top" />
+            <material name="TextBox_01" />
+            <texEnabled>false</texEnabled>
+            <texLayoutPosition>LeftTop</texLayoutPosition>
+            <texOffsetLeft>0</texOffsetLeft>
+            <texOffsetRight>0</texOffsetRight>
+            <texOffsetTop>0</texOffsetTop>
+            <texOffsetBottom>0</texOffsetBottom>
+          </textBox>
+        </pane>
+        <pane kind="TextBox" name="TextBox_02">
+          <basePositionType x="Left" y="Top" />
+          <translate x="0" y="0" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="300" y="180" />
+          <textBox font="cbf_ko-Hang-KR" autoWidthAdjust="true">
+            <fontSize x="16.6666679" y="20" />
+            <text>유닛을 선택하고, 이어서 이동할 곳을 선택합니다.
+이때 이동할 수 있는 범위는 &lt;color rgb=0C3DBB&gt;파랑&lt;/color&gt;, 공격할 수 있는 범위는 &lt;color rgb=C60D0D&gt;빨강&lt;/color&gt;으로 표시됩니다.
+지팡이를 장비하고 있는 유닛의 경우, 지팡이를 사용할 수 있는 범위가 &lt;color rgb=5ACD0D&gt;초록&lt;/color&gt;으로 표시됩니다.</text>
+            <topColor r="60" g="60" b="60" a="255" />
+            <bottomColor r="60" g="60" b="60" a="255" />
+            <positionType x="Left" y="Top" />
+            <material name="TextBox_02">
+              <texMap imageName="11_01_u" imageNameLeft="" imageNameRight="" stereoEnabled="false" />
+            </material>
+            <texEnabled>true</texEnabled>
+            <texLayoutPosition>RightTop</texLayoutPosition>
+            <texOffsetLeft>10</texOffsetLeft>
+            <texOffsetRight>4</texOffsetRight>
+            <texOffsetTop>7</texOffsetTop>
+            <texOffsetBottom>10</texOffsetBottom>
+          </textBox>
+        </pane>
+        <pane kind="TextBox" name="TextBox_03">
+          <basePositionType x="Left" y="Top" />
+          <translate x="23" y="1" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="249" y="24" />
+          <textBox font="cbf_ko-Hang-KR" autoWidthAdjust="true">
+            <fontSize x="20" y="24" />
+            <text>행동을 결정하기</text>
+            <topColor r="255" g="255" b="255" a="255" />
+            <bottomColor r="255" g="255" b="255" a="255" />
+            <positionType x="Center" y="Top" />
+            <material name="TextBox_03" />
+            <texEnabled>false</texEnabled>
+            <texLayoutPosition>LeftTop</texLayoutPosition>
+            <texOffsetLeft>0</texOffsetLeft>
+            <texOffsetRight>0</texOffsetRight>
+            <texOffsetTop>0</texOffsetTop>
+            <texOffsetBottom>0</texOffsetBottom>
+          </textBox>
+        </pane>
+        <pane kind="TextBox" name="TextBox_04">
+          <basePositionType x="Left" y="Top" />
+          <translate x="0" y="0" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="300" y="140" />
+          <textBox font="cbf_ko-Hang-KR" autoWidthAdjust="true">
+            <fontSize x="16.6666679" y="20" />
+            <text>이동을 마치면, 이어서 행동을 선택합니다. 선택할 수 있는 행동은 유닛이나 상황에 따라 변합니다.
+행동을 마치면 그 유닛은 회색으로 변하며, 다음 턴까지 움직일 수 없게 됩니다.</text>
+            <topColor r="60" g="60" b="60" a="255" />
+            <bottomColor r="60" g="60" b="60" a="255" />
+            <positionType x="Left" y="Top" />
+            <material name="TextBox_04">
+              <texMap imageName="11_02_u" imageNameLeft="" imageNameRight="" stereoEnabled="false" />
+            </material>
+            <texEnabled>true</texEnabled>
+            <texLayoutPosition>RightTop</texLayoutPosition>
+            <texOffsetLeft>10</texOffsetLeft>
+            <texOffsetRight>4</texOffsetRight>
+            <texOffsetTop>7</texOffsetTop>
+            <texOffsetBottom>10</texOffsetBottom>
+          </textBox>
+        </pane>
+        <pane kind="TextBox" name="TextBox_05">
+          <basePositionType x="Left" y="Top" />
+          <translate x="10" y="468" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="300" y="60" />
+          <textBox font="cbf_ko-Hang-KR" autoWidthAdjust="true" indentEnabled="true" indentText="※">
+            <fontSize x="16.6666679" y="20" />
+            <text>&lt;indent/&gt;이동한 곳에서 아군 유닛이나 적 유닛을 선택하면, 그대로 더블이나 공격 등의 행동으로 이어집니다.</text>
+            <topColor r="60" g="60" b="60" a="255" />
+            <bottomColor r="60" g="60" b="60" a="255" />
+            <positionType x="Left" y="Top" />
+            <material name="TextBox_05" />
+            <texEnabled>false</texEnabled>
+            <texLayoutPosition>LeftTop</texLayoutPosition>
+            <texOffsetLeft>0</texOffsetLeft>
+            <texOffsetRight>0</texOffsetRight>
+            <texOffsetTop>0</texOffsetTop>
+            <texOffsetBottom>0</texOffsetBottom>
+          </textBox>
+        </pane>
+      
+<pane kind="Null" name="Group_00"><basePositionType x="Left" y="Top" />
+          <translate x="0" y="39" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="300" y="180" />
+          <group><layoutPosition>None</layoutPosition></group></pane>
+<pane kind="Window" name="Frame_01"><basePositionType x="Left" y="Top" /><translate x="164" y="3" z="0" /><rotate x="0" y="0" z="0" /><scale x="1" y="1" /><size x="136" y="85" /><window><frameEnabled>false</frameEnabled><content><vtxColLT r="153" g="102" b="51" a="255" /><vtxColRT r="153" g="102" b="51" a="255" /><vtxColLB r="153" g="102" b="51" a="255" /><vtxColRB r="153" g="102" b="51" a="255" /><material name="Frame_01C" /></content><frame frameType="CornerLT"><textureFlip>None</textureFlip><material name="Frame_01F0"><texMap imageName="14I_PH_flame" imageNameLeft="" imageNameRight="" stereoEnabled="false" /></material></frame><contentInflation l="0" r="0" t="0" b="0" /></window></pane>
+<pane kind="Window" name="Frame_03"><basePositionType x="Left" y="Top" /><translate x="170" y="9" z="0" /><rotate x="0" y="0" z="0" /><scale x="1" y="1" /><size x="128" y="77" /><window><frameEnabled>false</frameEnabled><content><vtxColLT r="0" g="0" b="0" a="255" /><vtxColRT r="0" g="0" b="0" a="255" /><vtxColLB r="0" g="0" b="0" a="255" /><vtxColRB r="0" g="0" b="0" a="255" /><material name="Frame_03C" /></content><frame frameType="CornerLT"><textureFlip>None</textureFlip><material name="Frame_03F0"><texMap imageName="14I_PH_bokasi" imageNameLeft="" imageNameRight="" stereoEnabled="false" /></material></frame><contentInflation l="0" r="0" t="0" b="0" /></window></pane>
+<pane kind="Null" name="Group_01"><basePositionType x="Left" y="Top" />
+          <translate x="10" y="328" z="0" />
+          <rotate x="0" y="0" z="0" />
+          <scale x="1" y="1" />
+          <size x="300" y="140" />
+          <group><layoutPosition>None</layoutPosition></group></pane>
+<pane kind="Window" name="Frame_04"><basePositionType x="Left" y="Top" /><translate x="164" y="3" z="0" /><rotate x="0" y="0" z="0" /><scale x="1" y="1" /><size x="136" y="85" /><window><frameEnabled>false</frameEnabled><content><vtxColLT r="153" g="102" b="51" a="255" /><vtxColRT r="153" g="102" b="51" a="255" /><vtxColLB r="153" g="102" b="51" a="255" /><vtxColRB r="153" g="102" b="51" a="255" /><material name="Frame_04C" /></content><frame frameType="CornerLT"><textureFlip>None</textureFlip><material name="Frame_04F0"><texMap imageName="14I_PH_flame" imageNameLeft="" imageNameRight="" stereoEnabled="false" /></material></frame><contentInflation l="0" r="0" t="0" b="0" /></window></pane>
+<pane kind="Window" name="Frame_05"><basePositionType x="Left" y="Top" /><translate x="170" y="9" z="0" /><rotate x="0" y="0" z="0" /><scale x="1" y="1" /><size x="128" y="77" /><window><frameEnabled>false</frameEnabled><content><vtxColLT r="0" g="0" b="0" a="255" /><vtxColRT r="0" g="0" b="0" a="255" /><vtxColLB r="0" g="0" b="0" a="255" /><vtxColRB r="0" g="0" b="0" a="255" /><material name="Frame_05C" /></content><frame frameType="CornerLT"><textureFlip>None</textureFlip><material name="Frame_05F0"><texMap imageName="14I_PH_bokasi" imageNameLeft="" imageNameRight="" stereoEnabled="false" /></material></frame><contentInflation l="0" r="0" t="0" b="0" /></window></pane>
+</paneSet>
+      <paneHierarchy>
+        <paneTree name="RootPane">
+          <paneTree name="Picture_03" />
+          <paneTree name="HorizonG_01">
+            <paneTree name="Frame_02" />
+            <paneTree name="HorizonG_02">
+              <paneTree name="Picture_01" />
+              <paneTree name="Picture_02" />
+              <paneTree name="TextBox_03" />
+            </paneTree>
+          </paneTree>
+          <paneTree name="Group_01"><paneTree name="Frame_04" /><paneTree name="Frame_05" /><paneTree name="TextBox_04" /></paneTree>
+          <paneTree name="Group_03">
+            <paneTree name="TextBox_00" />
+            <paneTree name="Group_02">
+              <paneTree name="HorizonG_06">
+                <paneTree name="Frame_00" />
+                <paneTree name="HorizonG_00">
+                  <paneTree name="Picture_00" />
+                  <paneTree name="Picture_05" />
+                  <paneTree name="TextBox_01" />
+                </paneTree>
+              </paneTree>
+              <paneTree name="Group_00"><paneTree name="Frame_01" /><paneTree name="Frame_03" /><paneTree name="TextBox_02" /></paneTree>
+            </paneTree>
+          </paneTree>
+          <paneTree name="Picture_10" />
+          <paneTree name="TextBox_05" />
+        </paneTree>
+      </paneHierarchy>
+      <screenSetting origin="Normal">
+        <layoutSize x="320" y="578" />
+        <screenBottomMargin>0</screenBottomMargin>
+        <backGround>
+          <color r="240" g="233" b="213" a="255" />
+        </backGround>
+        <stereo parallaxRatio="0.6" />
+        <grid thickLineInterval="32" thinDivisionNum="4" visible="false" moveMethod="Grid">
+          <color r="128" g="128" b="64" a="128" />
+        </grid>
+        <guide visible="false" snapEnalbed="false">
+          <position x="0" y="0" />
+          <size x="8" y="8" />
+          <color r="0" g="128" b="0" a="64" />
+        </guide>
+        <maxEqualCharSpace>2</maxEqualCharSpace>
+        <textBoxCounter>6</textBoxCounter>
+      </screenSetting>
+      <textureFile imagePath="../textures/11_01_u.tga" />
+      <textureFile imagePath="../textures/11_02_u.tga" />
+      <textureFile imagePath="../textures/14I_BG.tga" />
+      <textureFile imagePath="../textures/14I_BG_sita.tga" />
+      <textureFile imagePath="../textures/14I_N_flame01.tga" />
+      <textureFile imagePath="../textures/14I_N_flame02.tga" />
+      <textureFile imagePath="../textures/14I_N_flame03.tga" />
+      <textureFile imagePath="../textures/14I_N_flame04.tga" />
+      <textureFile imagePath="../textures/14I_N_kazari.tga" />
+      <fontFile path="cbf_ko-Hang-KR.bcfnt" />
+    <textureFile imagePath="../textures/14I_PH_bokasi.tga" />
+<textureFile imagePath="../textures/14I_PH_flame.tga" />
+</ncpg>
+  </body>
+</nc_page>

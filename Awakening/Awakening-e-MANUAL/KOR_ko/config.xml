@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nc_config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0.0" xmlns="http://www.nintendo.co.jp/sdd/2010/page">
+  <body>
+    <languageName>한국어</languageName>
+    <printTitle printTitle_1="파이어 엠블렘 각성" printTitle_2="파이어 엠블렘 각성" />
+  </body>
+</nc_config>
