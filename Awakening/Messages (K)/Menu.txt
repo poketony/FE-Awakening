@@ -712,8 +712,8 @@ MID_DUAL_最短記録: 최단 기록
 MID_DUAL_回: 회
 MID_DUAL_ターン: 턴
 MID_DUAL_ターン記録なし: ----
-MID_DUAL_敵お宝: 소지한 보물
-MID_DUAL_など: 등
+MID_DUAL_敵お宝: 소지한 보물:
+MID_DUAL_など:  등
 MID_DUAL_敵決定待ち: 적군이 결정될 때까지 기다려 주십시오.
 MID_DUAL_敵決定報告: 적군이 결정되었습니다
 MID_DUAL_戦闘開始: 전투 개시
