@@ -1018,6 +1018,16 @@
       ],
       "updatedAt": "2026-09-07T09:03:35.049Z"
     },
+    "awakening/messages (k)/アズール_フレデリク_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_フレデリク_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_フレデリク_親子_Ｃ",
+        "MID_支援_アズール_フレデリク_親子_Ｂ",
+        "MID_支援_アズール_フレデリク_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-14T22:50:55.958Z"
+    },
     "awakening/messages (k)/アズール_ブレディ.txt": {
       "path": "Awakening/Messages (K)/アズール_ブレディ.txt",
       "mode": "main",
@@ -1059,6 +1069,16 @@
       ],
       "updatedAt": "2026-09-07T23:59:32.282Z"
     },
+    "awakening/messages (k)/アズール_ヘンリー_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_ヘンリー_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_ヘンリー_親子_Ｃ",
+        "MID_支援_アズール_ヘンリー_親子_Ｂ",
+        "MID_支援_アズール_ヘンリー_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-14T23:04:06.031Z"
+    },
     "awakening/messages (k)/アズール_マルス.txt": {
       "path": "Awakening/Messages (K)/アズール_マルス.txt",
       "mode": "main",
@@ -1069,6 +1089,17 @@
         "MID_支援_アズール_マルス_Ｓ"
       ],
       "updatedAt": "2026-09-08T02:38:42.044Z"
+    },
+    "awakening/messages (k)/アズール_マーク女.txt": {
+      "path": "Awakening/Messages (K)/アズール_マーク女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_マーク女_Ｃ",
+        "MID_支援_アズール_マーク女_Ｂ",
+        "MID_支援_アズール_マーク女_Ａ",
+        "MID_支援_アズール_マーク女_Ｓ"
+      ],
+      "updatedAt": "2026-09-14T23:18:47.617Z"
     },
     "awakening/messages (k)/アズール_リヒト_親子.txt": {
       "path": "Awakening/Messages (K)/アズール_リヒト_親子.txt",
@@ -5822,6 +5853,24 @@
       "status": "approved",
       "updatedAt": "2026-09-07T09:36:01.030Z"
     },
+    "awakening/messages (k)/アズール_フレデリク_親子.txt\u0000MID_支援_アズール_フレデリク_親子_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_フレデリク_親子.txt",
+      "entryKey": "MID_支援_アズール_フレデリク_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-14T23:04:01.072Z"
+    },
+    "awakening/messages (k)/アズール_フレデリク_親子.txt\u0000MID_支援_アズール_フレデリク_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_フレデリク_親子.txt",
+      "entryKey": "MID_支援_アズール_フレデリク_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-14T22:57:22.284Z"
+    },
+    "awakening/messages (k)/アズール_フレデリク_親子.txt\u0000MID_支援_アズール_フレデリク_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_フレデリク_親子.txt",
+      "entryKey": "MID_支援_アズール_フレデリク_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-14T22:53:30.580Z"
+    },
     "awakening/messages (k)/アズール_ブレディ.txt\u0000MID_支援_アズール_ブレディ_Ａ": {
       "path": "Awakening/Messages (K)/アズール_ブレディ.txt",
       "entryKey": "MID_支援_アズール_ブレディ_Ａ",
@@ -5900,6 +5949,24 @@
       "status": "approved",
       "updatedAt": "2026-09-08T00:04:30.240Z"
     },
+    "awakening/messages (k)/アズール_ヘンリー_親子.txt\u0000MID_支援_アズール_ヘンリー_親子_Ａ": {
+      "path": "Awakening/Messages (K)/アズール_ヘンリー_親子.txt",
+      "entryKey": "MID_支援_アズール_ヘンリー_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-09-14T23:26:01.579Z"
+    },
+    "awakening/messages (k)/アズール_ヘンリー_親子.txt\u0000MID_支援_アズール_ヘンリー_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/アズール_ヘンリー_親子.txt",
+      "entryKey": "MID_支援_アズール_ヘンリー_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-09-14T23:22:33.096Z"
+    },
+    "awakening/messages (k)/アズール_ヘンリー_親子.txt\u0000MID_支援_アズール_ヘンリー_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_ヘンリー_親子.txt",
+      "entryKey": "MID_支援_アズール_ヘンリー_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-14T23:13:09.424Z"
+    },
     "awakening/messages (k)/アズール_マルス.txt\u0000MID_支援_アズール_マルス_Ａ": {
       "path": "Awakening/Messages (K)/アズール_マルス.txt",
       "entryKey": "MID_支援_アズール_マルス_Ａ",
@@ -5923,6 +5990,12 @@
       "entryKey": "MID_支援_アズール_マルス_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-09T23:50:16.296Z"
+    },
+    "awakening/messages (k)/アズール_マーク女.txt\u0000MID_支援_アズール_マーク女_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_マーク女.txt",
+      "entryKey": "MID_支援_アズール_マーク女_Ｃ",
+      "status": "unreviewed",
+      "updatedAt": "2026-09-14T23:18:54.680Z"
     },
     "awakening/messages (k)/アズール_ヴィオール_親子.txt\u0000MID_支援_アズール_ヴィオール_親子_Ａ": {
       "path": "Awakening/Messages (K)/アズール_ヴィオール_親子.txt",
