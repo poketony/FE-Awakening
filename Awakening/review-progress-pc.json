@@ -4890,6 +4890,29 @@
       ],
       "updatedAt": "2026-09-06T12:25:29.912Z"
     },
+    "awakening/messages (k)/様子_アズール3.txt": {
+      "path": "Awakening/Messages (K)/様子_アズール3.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_アズール_前",
+        "MID_様子_アズール_前_無言",
+        "MID_様子_アズール_前_敬さん",
+        "MID_様子_アズール_前_特殊",
+        "MID_様子_アズール_後",
+        "MID_様子_アズール_後_敬さん",
+        "MID_様子_アズール_後_特殊",
+        "MID_様子_アズール_後_無言",
+        "MID_様子_アズール_前_親子_子",
+        "MID_様子_アズール_後_親子_子",
+        "MID_様子_アズール_前_親子_母",
+        "MID_様子_アズール_後_親子_母",
+        "MID_様子_アズール_前_親子_父",
+        "MID_様子_アズール_後_親子_父",
+        "MID_様子_アズール_前_恋人",
+        "MID_様子_アズール_後_恋人"
+      ],
+      "updatedAt": "2026-09-21T05:16:12.234Z"
+    },
     "awakening/messages (k)/様子_アンナ3.txt": {
       "path": "Awakening/Messages (K)/様子_アンナ3.txt",
       "mode": "main",
@@ -11231,6 +11254,18 @@
       "entryKey": "MID_様子_アズール_後_親子_父",
       "status": "approved",
       "updatedAt": "2026-09-06T12:26:14.406Z"
+    },
+    "awakening/messages (k)/様子_アズール3.txt\u0000MID_様子_アズール_前": {
+      "path": "Awakening/Messages (K)/様子_アズール3.txt",
+      "entryKey": "MID_様子_アズール_前",
+      "status": "approved",
+      "updatedAt": "2026-09-21T05:17:01.809Z"
+    },
+    "awakening/messages (k)/様子_アズール3.txt\u0000MID_様子_アズール_前_無言": {
+      "path": "Awakening/Messages (K)/様子_アズール3.txt",
+      "entryKey": "MID_様子_アズール_前_無言",
+      "status": "approved",
+      "updatedAt": "2026-09-21T05:17:03.818Z"
     },
     "awakening/messages (k)/様子_インバース3.txt\u0000MID_様子_インバース_前": {
       "path": "Awakening/Messages (K)/様子_インバース3.txt",
