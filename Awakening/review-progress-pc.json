@@ -5000,6 +5000,20 @@
       ],
       "updatedAt": "2026-09-21T06:16:22.539Z"
     },
+    "awakening/messages (k)/様子_インバース1.txt": {
+      "path": "Awakening/Messages (K)/様子_インバース1.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_インバース_前",
+        "MID_様子_インバース_後",
+        "MID_様子_インバース_後_無言",
+        "MID_様子_インバース_前_親子_子",
+        "MID_様子_インバース_後_親子_子",
+        "MID_様子_インバース_前_恋人",
+        "MID_様子_インバース_後_恋人"
+      ],
+      "updatedAt": "2026-09-21T06:23:59.536Z"
+    },
     "awakening/messages (k)/様子_インバース4.txt": {
       "path": "Awakening/Messages (K)/様子_インバース4.txt",
       "mode": "main",
@@ -11733,6 +11747,12 @@
       "entryKey": "MID_様子_アンナ_後_通さん",
       "status": "approved",
       "updatedAt": "2026-09-21T06:20:21.467Z"
+    },
+    "awakening/messages (k)/様子_インバース1.txt\u0000MID_様子_インバース_前": {
+      "path": "Awakening/Messages (K)/様子_インバース1.txt",
+      "entryKey": "MID_様子_インバース_前",
+      "status": "approved",
+      "updatedAt": "2026-09-21T06:24:54.022Z"
     },
     "awakening/messages (k)/様子_インバース3.txt\u0000MID_様子_インバース_前": {
       "path": "Awakening/Messages (K)/様子_インバース3.txt",
