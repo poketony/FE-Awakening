@@ -11754,11 +11754,29 @@
       "status": "approved",
       "updatedAt": "2026-09-06T09:54:00.184Z"
     },
+    "awakening/messages (k)/様子_武器経験.txt\u0000MID_様子_単独_プレイヤー女_PCF1": {
+      "path": "Awakening/Messages (K)/様子_武器経験.txt",
+      "entryKey": "MID_様子_単独_プレイヤー女_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-09-21T04:35:58.944Z"
+    },
+    "awakening/messages (k)/様子_武器経験.txt\u0000MID_様子_単独_プレイヤー援軍": {
+      "path": "Awakening/Messages (K)/様子_武器経験.txt",
+      "entryKey": "MID_様子_単独_プレイヤー援軍",
+      "status": "approved",
+      "updatedAt": "2026-09-21T04:35:59.880Z"
+    },
     "awakening/messages (k)/様子_武器経験.txt\u0000MID_様子_単独_プレイヤー男_PCM1": {
       "path": "Awakening/Messages (K)/様子_武器経験.txt",
       "entryKey": "MID_様子_単独_プレイヤー男_PCM1",
       "status": "approved",
       "updatedAt": "2026-09-21T04:35:52.180Z"
+    },
+    "awakening/messages (k)/様子_武器経験.txt\u0000MID_様子_単独_旧マルス": {
+      "path": "Awakening/Messages (K)/様子_武器経験.txt",
+      "entryKey": "MID_様子_単独_旧マルス",
+      "status": "approved",
+      "updatedAt": "2026-09-21T04:36:00.443Z"
     },
     "awakening/messages (k)/様子_経験.txt\u0000MID_様子_単独_アズール": {
       "path": "Awakening/Messages (K)/様子_経験.txt",
