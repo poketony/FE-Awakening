@@ -5529,6 +5529,23 @@
       ],
       "updatedAt": "2026-09-29T08:14:06.545Z"
     },
+    "awakening/messages (k)/様子_プレイヤー男2.txt": {
+      "path": "Awakening/Messages (K)/様子_プレイヤー男2.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_プレイヤー男_前_PCM1",
+        "MID_様子_プレイヤー男_前_敬さん_PCM1",
+        "MID_様子_プレイヤー男_前_敬様_PCM1",
+        "MID_様子_プレイヤー男_後_PCM1",
+        "MID_様子_プレイヤー男_後_敬さん_PCM1",
+        "MID_様子_プレイヤー男_後_敬様_PCM1",
+        "MID_様子_プレイヤー男_前_親子_子_PCM1",
+        "MID_様子_プレイヤー男_後_親子_子_PCM1",
+        "MID_様子_プレイヤー男_前_恋人_PCM1",
+        "MID_様子_プレイヤー男_後_恋人_PCM1"
+      ],
+      "updatedAt": "2026-09-29T10:38:10.777Z"
+    },
     "awakening/messages (k)/様子_ミリエル2.txt": {
       "path": "Awakening/Messages (K)/様子_ミリエル2.txt",
       "mode": "main",
@@ -12886,6 +12903,12 @@
       "entryKey": "MID_様子_プレイヤー男_後_親子_子_PCM1",
       "status": "approved",
       "updatedAt": "2026-09-29T08:15:49.438Z"
+    },
+    "awakening/messages (k)/様子_プレイヤー男2.txt\u0000MID_様子_プレイヤー男_前_PCM1": {
+      "path": "Awakening/Messages (K)/様子_プレイヤー男2.txt",
+      "entryKey": "MID_様子_プレイヤー男_前_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-09-29T10:38:33.594Z"
     },
     "awakening/messages (k)/様子_ヴァルハルト1.txt\u0000MID_様子_ヴァルハルト_前": {
       "path": "Awakening/Messages (K)/様子_ヴァルハルト1.txt",
