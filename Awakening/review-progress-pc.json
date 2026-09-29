@@ -3639,6 +3639,50 @@
       ],
       "updatedAt": "2026-09-06T13:40:51.522Z"
     },
+    "awakening/messages (k)/017.txt": {
+      "path": "Awakening/Messages (K)/017.txt",
+      "mode": "main",
+      "expected": [
+        "MID_017_OP2",
+        "MID_017_OP2_2",
+        "MID_017_EV1",
+        "MID_017_EV2",
+        "MID_017_EV3",
+        "MID_017_EV3_01",
+        "MID_017_EV3_02",
+        "MID_017_EV3_03",
+        "MID_017_EV3_04",
+        "MID_017_EV3_05",
+        "MID_017_EV3B",
+        "MID_017_BT1",
+        "MID_017_BT2",
+        "MID_017_BOSS_DIE1",
+        "MID_017_ZOEN1",
+        "MID_017_ED1",
+        "MID_017_ED1_02",
+        "MID_017_ED1_02_2_PCM1",
+        "MID_017_ED1_02_2_PCF1",
+        "MID_017_ED1_02_3",
+        "MID_017_ED1_02_4_PCM1",
+        "MID_017_ED1_02_4_PCF1",
+        "MID_017_ED1_02_5",
+        "MID_017_ED1_03_PCM1",
+        "MID_017_ED1_03_PCF1",
+        "MID_017_ED1_03_2",
+        "MID_017_ED1_03_3_PCM1",
+        "MID_017_ED1_03_3_PCF1",
+        "MID_017_ED1_03_4",
+        "MID_017_ED1_03_5_PCM1",
+        "MID_017_ED1_03_5_PCF1",
+        "MID_017_ED2",
+        "MID_018_OP1",
+        "MID_018_OP1_02",
+        "MID_018_OP2",
+        "MID_018_OP2_02",
+        "MID_018_OP2_03"
+      ],
+      "updatedAt": "2026-09-29T07:50:59.100Z"
+    },
     "awakening/messages (k)/020.txt": {
       "path": "Awakening/Messages (K)/020.txt",
       "mode": "main",
@@ -8437,6 +8481,18 @@
       "entryKey": "MID_012_OP6_01",
       "status": "approved",
       "updatedAt": "2026-09-06T13:41:01.646Z"
+    },
+    "awakening/messages (k)/017.txt\u0000MID_017_OP2": {
+      "path": "Awakening/Messages (K)/017.txt",
+      "entryKey": "MID_017_OP2",
+      "status": "approved",
+      "updatedAt": "2026-09-29T07:51:11.803Z"
+    },
+    "awakening/messages (k)/017.txt\u0000MID_017_OP2_2": {
+      "path": "Awakening/Messages (K)/017.txt",
+      "entryKey": "MID_017_OP2_2",
+      "status": "approved",
+      "updatedAt": "2026-09-29T07:51:12.279Z"
     },
     "awakening/messages (k)/020.txt\u0000MID_020_BOSS_DIE1": {
       "path": "Awakening/Messages (K)/020.txt",
