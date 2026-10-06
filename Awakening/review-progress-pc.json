@@ -9661,11 +9661,29 @@
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:39.156Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_Guidance": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Guidance",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:50:25.857Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_Guidance_Header": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_Guidance_Header",
       "status": "approved",
       "updatedAt": "2026-10-06T06:50:23.985Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_InPreparation": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_InPreparation",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:50:28.319Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_InPreparation_Header": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_InPreparation_Header",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:50:26.702Z"
     },
     "awakening/messages (k)/ec.txt\u0000MEC_InitSession": {
       "path": "Awakening/Messages (K)/ec.txt",
