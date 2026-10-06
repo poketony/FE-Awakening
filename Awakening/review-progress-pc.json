@@ -5422,6 +5422,17 @@
       ],
       "updatedAt": "2026-09-07T02:29:21.597Z"
     },
+    "awakening/messages (k)/リズ_ロンクー.txt": {
+      "path": "Awakening/Messages (K)/リズ_ロンクー.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_リズ_ロンクー_Ｃ",
+        "MID_支援_リズ_ロンクー_Ｂ",
+        "MID_支援_リズ_ロンクー_Ａ",
+        "MID_支援_リズ_ロンクー_Ｓ"
+      ],
+      "updatedAt": "2026-10-06T14:38:57.685Z"
+    },
     "awakening/messages (k)/ンン_ノノ_親子.txt": {
       "path": "Awakening/Messages (K)/ンン_ノノ_親子.txt",
       "mode": "main",
@@ -12213,6 +12224,12 @@
       "entryKey": "MID_支援_リズ_リベラ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-07T02:38:18.516Z"
+    },
+    "awakening/messages (k)/リズ_ロンクー.txt\u0000MID_支援_リズ_ロンクー_Ｃ": {
+      "path": "Awakening/Messages (K)/リズ_ロンクー.txt",
+      "entryKey": "MID_支援_リズ_ロンクー_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-06T14:47:23.840Z"
     },
     "awakening/messages (k)/ンン_ノノ_親子.txt\u0000MID_支援_ンン_ノノ_親子_Ａ": {
       "path": "Awakening/Messages (K)/ンン_ノノ_親子.txt",
