@@ -9631,6 +9631,12 @@
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:14.709Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_InputSearchWord": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_InputSearchWord",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:49:04.632Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_No": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_No",
@@ -9702,6 +9708,12 @@
       "entryKey": "MEC_SelectItem",
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:52.484Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_UseECard": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_UseECard",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:49:06.136Z"
     },
     "awakening/messages (k)/ec.txt\u0000MEC_Yes": {
       "path": "Awakening/Messages (K)/ec.txt",
