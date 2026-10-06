@@ -5108,6 +5108,16 @@
       ],
       "updatedAt": "2026-09-29T15:35:56.800Z"
     },
+    "awakening/messages (k)/マルス_マリアベル_親子.txt": {
+      "path": "Awakening/Messages (K)/マルス_マリアベル_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マルス_マリアベル_親子_Ｃ",
+        "MID_支援_マルス_マリアベル_親子_Ｂ",
+        "MID_支援_マルス_マリアベル_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-06T06:38:47.241Z"
+    },
     "awakening/messages (k)/マーク女_ルキナ_親子.txt": {
       "path": "Awakening/Messages (K)/マーク女_ルキナ_親子.txt",
       "mode": "main",
@@ -11344,6 +11354,12 @@
       "entryKey": "MID_支援_マルス_クロム_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-30T06:21:55.745Z"
+    },
+    "awakening/messages (k)/マルス_マリアベル_親子.txt\u0000MID_支援_マルス_マリアベル_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/マルス_マリアベル_親子.txt",
+      "entryKey": "MID_支援_マルス_マリアベル_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:45:10.858Z"
     },
     "awakening/messages (k)/マーク男_マルス.txt\u0000MID_支援_マーク男_マルス_Ｃ": {
       "path": "Awakening/Messages (K)/マーク男_マルス.txt",
