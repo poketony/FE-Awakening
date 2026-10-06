@@ -5098,6 +5098,16 @@
       ],
       "updatedAt": "2026-09-07T05:32:22.441Z"
     },
+    "awakening/messages (k)/マルス_クロム_親子.txt": {
+      "path": "Awakening/Messages (K)/マルス_クロム_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マルス_クロム_親子_Ｃ",
+        "MID_支援_マルス_クロム_親子_Ｂ",
+        "MID_支援_マルス_クロム_親子_Ａ"
+      ],
+      "updatedAt": "2026-09-29T15:35:56.800Z"
+    },
     "awakening/messages (k)/マーク女_ルキナ_親子.txt": {
       "path": "Awakening/Messages (K)/マーク女_ルキナ_親子.txt",
       "mode": "main",
@@ -5107,6 +5117,17 @@
         "MID_支援_マーク女_ルキナ_親子_Ａ"
       ],
       "updatedAt": "2026-09-06T04:33:11.826Z"
+    },
+    "awakening/messages (k)/マーク男_マルス.txt": {
+      "path": "Awakening/Messages (K)/マーク男_マルス.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マーク男_マルス_Ｃ",
+        "MID_支援_マーク男_マルス_Ｂ",
+        "MID_支援_マーク男_マルス_Ａ",
+        "MID_支援_マーク男_マルス_Ｓ"
+      ],
+      "updatedAt": "2026-10-06T06:14:11.863Z"
     },
     "awakening/messages (k)/リズ_リベラ.txt": {
       "path": "Awakening/Messages (K)/リズ_リベラ.txt",
@@ -11257,6 +11278,18 @@
       "entryKey": "MID_支援_プレイヤー男_ロラン_Ｃ_PCM1",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/マルス_クロム_親子.txt\u0000MID_支援_マルス_クロム_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/マルス_クロム_親子.txt",
+      "entryKey": "MID_支援_マルス_クロム_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-09-30T06:21:55.745Z"
+    },
+    "awakening/messages (k)/マーク男_マルス.txt\u0000MID_支援_マーク男_マルス_Ｃ": {
+      "path": "Awakening/Messages (K)/マーク男_マルス.txt",
+      "entryKey": "MID_支援_マーク男_マルス_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:29:54.042Z"
     },
     "awakening/messages (k)/リズ_リベラ.txt\u0000MID_支援_リズ_リベラ_Ａ": {
       "path": "Awakening/Messages (K)/リズ_リベラ.txt",
