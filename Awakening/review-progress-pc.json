@@ -9535,6 +9535,12 @@
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:25.750Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_DeletingContent": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_DeletingContent",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:27.673Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_Err": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_Err",
@@ -9558,6 +9564,12 @@
       "entryKey": "MEC_Err_NoSD",
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:21.294Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_InitSession": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_InitSession",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:28.814Z"
     },
     "awakening/messages (k)/ec.txt\u0000MEC_InputPINCode": {
       "path": "Awakening/Messages (K)/ec.txt",
