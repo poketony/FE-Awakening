@@ -9529,6 +9529,12 @@
       "status": "approved",
       "updatedAt": "2026-09-07T06:20:52.142Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_CantFindItem": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_CantFindItem",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:50.424Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_Conn2AP": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_Conn2AP",
@@ -9583,6 +9589,12 @@
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:34.997Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_GettingCategoryList": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_GettingCategoryList",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:54.678Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_GettingContent": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_GettingContent",
@@ -9600,6 +9612,12 @@
       "entryKey": "MEC_InitSession",
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:28.814Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_Input": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Input",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:53.303Z"
     },
     "awakening/messages (k)/ec.txt\u0000MEC_InputPINCode": {
       "path": "Awakening/Messages (K)/ec.txt",
@@ -9660,6 +9678,12 @@
       "entryKey": "MEC_SDEjected",
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:43.147Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_SelectItem": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_SelectItem",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:52.484Z"
     },
     "awakening/messages (k)/ec.txt\u0000MEC_Yes": {
       "path": "Awakening/Messages (K)/ec.txt",
