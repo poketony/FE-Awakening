@@ -9529,6 +9529,12 @@
       "status": "approved",
       "updatedAt": "2026-09-07T06:20:52.142Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_Conn2AP": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Conn2AP",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:25.750Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_Err": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_Err",
@@ -9540,6 +9546,12 @@
       "entryKey": "MEC_Err_Connect",
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:19.509Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_Err_NeedSD": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Err_NeedSD",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:22.836Z"
     },
     "awakening/messages (k)/ec.txt\u0000MEC_Err_NoSD": {
       "path": "Awakening/Messages (K)/ec.txt",
@@ -9564,6 +9576,12 @@
       "entryKey": "MEC_OK",
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:12.009Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_Result": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Result",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:24.729Z"
     },
     "awakening/messages (k)/ec.txt\u0000MEC_Retry": {
       "path": "Awakening/Messages (K)/ec.txt",
