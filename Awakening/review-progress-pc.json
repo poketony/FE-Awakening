@@ -9733,6 +9733,24 @@
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:52.484Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_SelectItem_Block_Header": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_SelectItem_Block_Header",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:49:19.187Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_SelectItem_Block_Info": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_SelectItem_Block_Info",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:49:21.175Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_SelectItem_Block_Set_Header": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_SelectItem_Block_Set_Header",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:49:19.980Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_SelectItem_Price_Header": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_SelectItem_Price_Header",
@@ -9744,6 +9762,18 @@
       "entryKey": "MEC_SelectItem_Price_Info",
       "status": "approved",
       "updatedAt": "2026-10-06T06:49:16.572Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_SelectItem_Price_Info_None": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_SelectItem_Price_Info_None",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:49:17.561Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_SelectItem_Release_Header": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_SelectItem_Release_Header",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:49:22.069Z"
     },
     "awakening/messages (k)/ec.txt\u0000MEC_SetECard": {
       "path": "Awakening/Messages (K)/ec.txt",
