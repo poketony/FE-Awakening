@@ -9571,6 +9571,18 @@
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:47.010Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_Delete_Complete": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Delete_Complete",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:50:22.978Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_Delete_Complete_Header": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Delete_Complete_Header",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:50:21.709Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_Delete_Confirm": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_Delete_Confirm",
@@ -9582,6 +9594,12 @@
       "entryKey": "MEC_Delete_Confirm_Header",
       "status": "approved",
       "updatedAt": "2026-10-06T06:50:13.385Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_Delete_Exec": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Delete_Exec",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:50:20.891Z"
     },
     "awakening/messages (k)/ec.txt\u0000MEC_DeletingContent": {
       "path": "Awakening/Messages (K)/ec.txt",
@@ -9642,6 +9660,12 @@
       "entryKey": "MEC_GettingItemList",
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:39.156Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_Guidance_Header": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Guidance_Header",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:50:23.985Z"
     },
     "awakening/messages (k)/ec.txt\u0000MEC_InitSession": {
       "path": "Awakening/Messages (K)/ec.txt",
