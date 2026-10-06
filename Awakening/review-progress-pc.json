@@ -9565,6 +9565,18 @@
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:21.294Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_GettingBalance": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_GettingBalance",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:34.997Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_GettingContent": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_GettingContent",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:36.082Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_InitSession": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_InitSession",
