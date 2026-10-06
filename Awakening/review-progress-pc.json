@@ -9637,6 +9637,12 @@
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:45.616Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_Free": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Free",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:50:32.715Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_GettingBalance": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_GettingBalance",
@@ -9721,6 +9727,12 @@
       "status": "approved",
       "updatedAt": "2026-10-06T06:49:14.400Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_NewItem": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_NewItem",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:50:30.113Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_No": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_No",
@@ -9762,6 +9774,12 @@
       "entryKey": "MEC_Purchase",
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:43.970Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_PurchaseEnd": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_PurchaseEnd",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:50:29.167Z"
     },
     "awakening/messages (k)/ec.txt\u0000MEC_Quit": {
       "path": "Awakening/Messages (K)/ec.txt",
