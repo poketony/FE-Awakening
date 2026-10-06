@@ -4188,6 +4188,89 @@
       ],
       "updatedAt": "2026-09-07T06:20:43.564Z"
     },
+    "awakening/messages (k)/e009g.txt": {
+      "path": "Awakening/Messages (K)/E009G.txt",
+      "mode": "main",
+      "expected": [
+        "MIID_予約０２",
+        "MIID_H_予約０２",
+        "MRSID_予約０２",
+        "MRSID_H_予約０２"
+      ],
+      "updatedAt": "2026-10-06T06:47:58.966Z"
+    },
+    "awakening/messages (k)/ec.txt": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "mode": "main",
+      "expected": [
+        "MEC_OK",
+        "MEC_Yes",
+        "MEC_No",
+        "MEC_InputPINCode",
+        "MEC_Retry",
+        "MEC_Err",
+        "MEC_Err_Connect",
+        "MEC_Err_NoSD",
+        "MEC_Err_NeedSD",
+        "MEC_Result",
+        "MEC_Conn2AP",
+        "MEC_DeletingContent",
+        "MEC_InitSession",
+        "MEC_GettingBalance",
+        "MEC_GettingContent",
+        "MEC_GettingItemList",
+        "MEC_SDEjected",
+        "MEC_Purchase",
+        "MEC_Redeem",
+        "MEC_Filter",
+        "MEC_Quit",
+        "MEC_Delete",
+        "MEC_ReDL",
+        "MEC_CantFindItem",
+        "MEC_SelectItem",
+        "MEC_Input",
+        "MEC_GettingCategoryList",
+        "MEC_CatNotFound",
+        "MEC_SelectCategory",
+        "MEC_NotSelected",
+        "MEC_InputSearchWord",
+        "MEC_UseECard",
+        "MEC_SetECard",
+        "MEC_AddBalance",
+        "MEC_Pages",
+        "MEC_ListContents",
+        "MEC_ManageContents",
+        "MEC_SelectItem_Price_Header",
+        "MEC_SelectItem_Price_Info",
+        "MEC_SelectItem_Price_Info_None",
+        "MEC_SelectItem_Block_Header",
+        "MEC_SelectItem_Block_Set_Header",
+        "MEC_SelectItem_Block_Info",
+        "MEC_SelectItem_Release_Header",
+        "MEC_SelectItem_Release_Info",
+        "MEC_SelectItem_Purchased",
+        "MEC_SelectItem_Purchased_ContentSet",
+        "MEC_SelectItem_Downloaded",
+        "MEC_SelectItem_Balance",
+        "MEC_ParentalControl_Header",
+        "MEC_ParentalControl",
+        "MEC_ContentSet_Header",
+        "MEC_ContentSet",
+        "MEC_Delete_Confirm_Header",
+        "MEC_Delete_Confirm",
+        "MEC_Delete_Exec",
+        "MEC_Delete_Complete_Header",
+        "MEC_Delete_Complete",
+        "MEC_Guidance_Header",
+        "MEC_Guidance",
+        "MEC_InPreparation_Header",
+        "MEC_InPreparation",
+        "MEC_PurchaseEnd",
+        "MEC_NewItem",
+        "MEC_Free"
+      ],
+      "updatedAt": "2026-10-06T06:48:10.429Z"
+    },
     "awakening/messages (k)/p001.txt": {
       "path": "Awakening/Messages (K)/P001.txt",
       "mode": "main",
@@ -5466,6 +5549,23 @@
         "MID_様子_ウード_後_恋人"
       ],
       "updatedAt": "2026-09-10T02:57:38.329Z"
+    },
+    "awakening/messages (k)/様子_オリヴィエ4.txt": {
+      "path": "Awakening/Messages (K)/様子_オリヴィエ4.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_オリヴィエ_前_敬さん",
+        "MID_様子_オリヴィエ_前",
+        "MID_様子_オリヴィエ_前_敬様",
+        "MID_様子_オリヴィエ_後_敬さん",
+        "MID_様子_オリヴィエ_後_敬様",
+        "MID_様子_オリヴィエ_後_無言",
+        "MID_様子_オリヴィエ_前_親子_子",
+        "MID_様子_オリヴィエ_後_親子_子",
+        "MID_様子_オリヴィエ_前_恋人",
+        "MID_様子_オリヴィエ_後_恋人"
+      ],
+      "updatedAt": "2026-10-06T06:47:36.717Z"
     },
     "awakening/messages (k)/様子_チキ1.txt": {
       "path": "Awakening/Messages (K)/様子_チキ1.txt",
@@ -9428,6 +9528,36 @@
       "entryKey": "MRSID_予約０１",
       "status": "approved",
       "updatedAt": "2026-09-07T06:20:52.142Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_InputPINCode": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_InputPINCode",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:14.709Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_No": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_No",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:13.349Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_OK": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_OK",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:12.009Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_Retry": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Retry",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:15.611Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_Yes": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Yes",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:12.680Z"
     },
     "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_なし": {
       "path": "Awakening/Messages (K)/menu.txt",
