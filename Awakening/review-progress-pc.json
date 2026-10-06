@@ -5177,6 +5177,17 @@
       ],
       "updatedAt": "2026-09-06T06:02:37.374Z"
     },
+    "awakening/messages (k)/セルジュ_ロンクー.txt": {
+      "path": "Awakening/Messages (K)/セルジュ_ロンクー.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_セルジュ_ロンクー_Ｃ",
+        "MID_支援_セルジュ_ロンクー_Ｂ",
+        "MID_支援_セルジュ_ロンクー_Ａ",
+        "MID_支援_セルジュ_ロンクー_Ｓ"
+      ],
+      "updatedAt": "2026-10-06T13:09:40.904Z"
+    },
     "awakening/messages (k)/セレナ_ソール_親子.txt": {
       "path": "Awakening/Messages (K)/セレナ_ソール_親子.txt",
       "mode": "main",
@@ -11969,6 +11980,12 @@
       "entryKey": "MID_支援_ジェローム_ノワール_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-06T22:11:20.942Z"
+    },
+    "awakening/messages (k)/セルジュ_ロンクー.txt\u0000MID_支援_セルジュ_ロンクー_Ｃ": {
+      "path": "Awakening/Messages (K)/セルジュ_ロンクー.txt",
+      "entryKey": "MID_支援_セルジュ_ロンクー_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-06T13:14:36.330Z"
     },
     "awakening/messages (k)/セレナ_ソール_親子.txt\u0000MID_支援_セレナ_ソール_親子_Ａ": {
       "path": "Awakening/Messages (K)/セレナ_ソール_親子.txt",
