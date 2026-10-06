@@ -9529,6 +9529,24 @@
       "status": "approved",
       "updatedAt": "2026-09-07T06:20:52.142Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_Err": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Err",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:16.981Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_Err_Connect": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Err_Connect",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:19.509Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_Err_NoSD": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Err_NoSD",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:48:21.294Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_InputPINCode": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_InputPINCode",
