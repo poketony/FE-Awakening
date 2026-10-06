@@ -9571,6 +9571,12 @@
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:47.010Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_Delete_Confirm": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_Delete_Confirm",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:50:17.716Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_Delete_Confirm_Header": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_Delete_Confirm_Header",
