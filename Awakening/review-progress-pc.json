@@ -5101,6 +5101,17 @@
       ],
       "updatedAt": "2026-09-06T12:59:29.656Z"
     },
+    "awakening/messages (k)/シンシア_ブレディ.txt": {
+      "path": "Awakening/Messages (K)/シンシア_ブレディ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シンシア_ブレディ_Ｃ",
+        "MID_支援_シンシア_ブレディ_Ｂ",
+        "MID_支援_シンシア_ブレディ_Ａ",
+        "MID_支援_シンシア_ブレディ_Ｓ"
+      ],
+      "updatedAt": "2026-10-06T10:15:38.059Z"
+    },
     "awakening/messages (k)/シンシア_プレイヤー男.txt": {
       "path": "Awakening/Messages (K)/シンシア_プレイヤー男.txt",
       "mode": "main",
@@ -11844,6 +11855,12 @@
       "entryKey": "MID_支援_シャンブレー_ロンクー_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T13:02:24.748Z"
+    },
+    "awakening/messages (k)/シンシア_ブレディ.txt\u0000MID_支援_シンシア_ブレディ_Ｃ": {
+      "path": "Awakening/Messages (K)/シンシア_ブレディ.txt",
+      "entryKey": "MID_支援_シンシア_ブレディ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-06T10:21:55.912Z"
     },
     "awakening/messages (k)/シンシア_プレイヤー男.txt\u0000MID_支援_シンシア_プレイヤー男_Ａ_PCM1": {
       "path": "Awakening/Messages (K)/シンシア_プレイヤー男.txt",
