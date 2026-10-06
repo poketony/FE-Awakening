@@ -9529,6 +9529,12 @@
       "status": "approved",
       "updatedAt": "2026-09-07T06:20:52.142Z"
     },
+    "awakening/messages (k)/ec.txt\u0000MEC_AddBalance": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_AddBalance",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:49:07.948Z"
+    },
     "awakening/messages (k)/ec.txt\u0000MEC_CantFindItem": {
       "path": "Awakening/Messages (K)/ec.txt",
       "entryKey": "MEC_CantFindItem",
@@ -9708,6 +9714,12 @@
       "entryKey": "MEC_SelectItem",
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:52.484Z"
+    },
+    "awakening/messages (k)/ec.txt\u0000MEC_SetECard": {
+      "path": "Awakening/Messages (K)/ec.txt",
+      "entryKey": "MEC_SetECard",
+      "status": "approved",
+      "updatedAt": "2026-10-06T06:49:06.960Z"
     },
     "awakening/messages (k)/ec.txt\u0000MEC_UseECard": {
       "path": "Awakening/Messages (K)/ec.txt",
