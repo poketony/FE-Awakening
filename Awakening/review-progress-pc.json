@@ -5451,6 +5451,16 @@
       ],
       "updatedAt": "2026-10-07T17:33:29.446Z"
     },
+    "awakening/messages (k)/プレイヤー男_リヒト.txt": {
+      "path": "Awakening/Messages (K)/プレイヤー男_リヒト.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_プレイヤー男_リヒト_Ｃ_PCM1",
+        "MID_支援_プレイヤー男_リヒト_Ｂ_PCM1",
+        "MID_支援_プレイヤー男_リヒト_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-10-07T17:42:43.860Z"
+    },
     "awakening/messages (k)/プレイヤー男_ロンクー.txt": {
       "path": "Awakening/Messages (K)/プレイヤー男_ロンクー.txt",
       "mode": "main",
@@ -12531,6 +12541,12 @@
       "entryKey": "MID_支援_プレイヤー男_ロラン_Ｃ_PCM1",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/プレイヤー男_ロンクー.txt\u0000MID_支援_プレイヤー男_ロンクー_Ａ_PCM1": {
+      "path": "Awakening/Messages (K)/プレイヤー男_ロンクー.txt",
+      "entryKey": "MID_支援_プレイヤー男_ロンクー_Ａ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-07T17:42:41.887Z"
     },
     "awakening/messages (k)/プレイヤー男_ロンクー.txt\u0000MID_支援_プレイヤー男_ロンクー_Ｂ_PCM1": {
       "path": "Awakening/Messages (K)/プレイヤー男_ロンクー.txt",
