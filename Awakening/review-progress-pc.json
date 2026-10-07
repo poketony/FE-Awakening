@@ -5400,6 +5400,16 @@
       ],
       "updatedAt": "2026-09-07T05:32:22.441Z"
     },
+    "awakening/messages (k)/フラヴィア_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/フラヴィア_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_フラヴィア_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_フラヴィア_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_フラヴィア_プレイヤー女_Ａ_PCF1"
+      ],
+      "updatedAt": "2026-10-07T14:54:10.435Z"
+    },
     "awakening/messages (k)/フレデリク_リズ.txt": {
       "path": "Awakening/Messages (K)/フレデリク_リズ.txt",
       "mode": "main",
@@ -6000,6 +6010,23 @@
         "MID_様子_ミリエル_後_恋人"
       ],
       "updatedAt": "2026-09-08T02:37:50.530Z"
+    },
+    "awakening/messages (k)/様子_レンハ4.txt": {
+      "path": "Awakening/Messages (K)/様子_レンハ4.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_レンハ_前_通殿",
+        "MID_様子_レンハ_前",
+        "MID_様子_レンハ_前_特殊",
+        "MID_様子_レンハ_後_通殿",
+        "MID_様子_レンハ_後_特殊",
+        "MID_様子_レンハ_後_無言",
+        "MID_様子_レンハ_前_親子_子",
+        "MID_様子_レンハ_後_親子_子",
+        "MID_様子_レンハ_前_恋人",
+        "MID_様子_レンハ_後_恋人"
+      ],
+      "updatedAt": "2026-10-07T15:56:16.469Z"
     },
     "awakening/messages (k)/様子_ヴァルハルト4.txt": {
       "path": "Awakening/Messages (K)/様子_ヴァルハルト4.txt",
@@ -14325,6 +14352,12 @@
       "entryKey": "MID_様子_プレイヤー男_後_親子_子_PCM1",
       "status": "approved",
       "updatedAt": "2026-09-29T10:47:56.097Z"
+    },
+    "awakening/messages (k)/様子_レンハ4.txt\u0000MID_様子_レンハ_前_通殿": {
+      "path": "Awakening/Messages (K)/様子_レンハ4.txt",
+      "entryKey": "MID_様子_レンハ_前_通殿",
+      "status": "approved",
+      "updatedAt": "2026-10-07T15:56:22.600Z"
     },
     "awakening/messages (k)/様子_ヴァルハルト1.txt\u0000MID_様子_ヴァルハルト_前": {
       "path": "Awakening/Messages (K)/様子_ヴァルハルト1.txt",
