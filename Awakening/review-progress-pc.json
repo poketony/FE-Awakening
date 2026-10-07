@@ -5133,6 +5133,16 @@
       ],
       "updatedAt": "2026-10-06T10:15:38.059Z"
     },
+    "awakening/messages (k)/シンシア_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/シンシア_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シンシア_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_シンシア_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_シンシア_プレイヤー女_Ａ_PCF1"
+      ],
+      "updatedAt": "2026-10-07T14:45:46.072Z"
+    },
     "awakening/messages (k)/シンシア_プレイヤー男.txt": {
       "path": "Awakening/Messages (K)/シンシア_プレイヤー男.txt",
       "mode": "main",
@@ -12017,6 +12027,12 @@
       "entryKey": "MID_支援_シンシア_ブレディ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-06T12:03:31.840Z"
+    },
+    "awakening/messages (k)/シンシア_プレイヤー女.txt\u0000MID_支援_シンシア_プレイヤー女_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/シンシア_プレイヤー女.txt",
+      "entryKey": "MID_支援_シンシア_プレイヤー女_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-07T14:50:48.338Z"
     },
     "awakening/messages (k)/シンシア_プレイヤー男.txt\u0000MID_支援_シンシア_プレイヤー男_Ａ_PCM1": {
       "path": "Awakening/Messages (K)/シンシア_プレイヤー男.txt",
