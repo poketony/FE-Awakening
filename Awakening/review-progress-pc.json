@@ -5517,6 +5517,16 @@
       ],
       "updatedAt": "2026-09-10T23:23:18.774Z"
     },
+    "awakening/messages (k)/ヴェイク_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/ヴェイク_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴェイク_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_ヴェイク_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_ヴェイク_プレイヤー男_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-10-07T14:28:33.338Z"
+    },
     "awakening/messages (k)/ヴェイク_マリアベル.txt": {
       "path": "Awakening/Messages (K)/ヴェイク_マリアベル.txt",
       "mode": "main",
@@ -12487,6 +12497,12 @@
       "entryKey": "MID_支援_ヴェイク_ノノ_Ｓ",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/ヴェイク_プレイヤー男.txt\u0000MID_支援_ヴェイク_プレイヤー男_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/ヴェイク_プレイヤー男.txt",
+      "entryKey": "MID_支援_ヴェイク_プレイヤー男_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-07T14:29:37.811Z"
     },
     "awakening/messages (k)/ヴェイク_マリアベル.txt\u0000MID_支援_ヴェイク_マリアベル_Ａ": {
       "path": "Awakening/Messages (K)/ヴェイク_マリアベル.txt",
