@@ -5431,6 +5431,16 @@
       ],
       "updatedAt": "2026-10-07T05:25:34.773Z"
     },
+    "awakening/messages (k)/プレイヤー女_ベルベット.txt": {
+      "path": "Awakening/Messages (K)/プレイヤー女_ベルベット.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_プレイヤー女_ベルベット_Ｃ_PCF1",
+        "MID_支援_プレイヤー女_ベルベット_Ｂ_PCF1",
+        "MID_支援_プレイヤー女_ベルベット_Ａ_PCF1"
+      ],
+      "updatedAt": "2026-10-07T17:30:31.951Z"
+    },
     "awakening/messages (k)/マルス_クロム_親子.txt": {
       "path": "Awakening/Messages (K)/マルス_クロム_親子.txt",
       "mode": "main",
@@ -12429,6 +12439,12 @@
       "entryKey": "MID_支援_フレデリク_リズ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-07T12:25:02.652Z"
+    },
+    "awakening/messages (k)/プレイヤー女_ベルベット.txt\u0000MID_支援_プレイヤー女_ベルベット_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/プレイヤー女_ベルベット.txt",
+      "entryKey": "MID_支援_プレイヤー女_ベルベット_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-07T17:31:34.004Z"
     },
     "awakening/messages (k)/プレイヤー男_ヘンリー.txt\u0000MID_支援_プレイヤー男_ヘンリー_Ａ_PCM1": {
       "path": "Awakening/Messages (K)/プレイヤー男_ヘンリー.txt",
