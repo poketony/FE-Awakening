@@ -5177,6 +5177,16 @@
       ],
       "updatedAt": "2026-09-07T05:33:26.714Z"
     },
+    "awakening/messages (k)/セルジュ_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/セルジュ_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_セルジュ_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_セルジュ_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_セルジュ_プレイヤー女_Ａ_PCF1"
+      ],
+      "updatedAt": "2026-10-07T13:10:07.776Z"
+    },
     "awakening/messages (k)/セルジュ_ヘンリー.txt": {
       "path": "Awakening/Messages (K)/セルジュ_ヘンリー.txt",
       "mode": "main",
@@ -12197,6 +12207,12 @@
       "entryKey": "MID_支援_ドニ_リズ_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-07T12:58:07.081Z"
+    },
+    "awakening/messages (k)/ドニ_リズ.txt\u0000MID_支援_ドニ_リズ_Ｓ": {
+      "path": "Awakening/Messages (K)/ドニ_リズ.txt",
+      "entryKey": "MID_支援_ドニ_リズ_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-10-07T13:10:05.098Z"
     },
     "awakening/messages (k)/フレデリク_リズ.txt\u0000MID_支援_フレデリク_リズ_Ａ": {
       "path": "Awakening/Messages (K)/フレデリク_リズ.txt",
