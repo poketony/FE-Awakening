@@ -5484,6 +5484,17 @@
       ],
       "updatedAt": "2026-10-06T14:38:57.685Z"
     },
+    "awakening/messages (k)/ロラン_ンン.txt": {
+      "path": "Awakening/Messages (K)/ロラン_ンン.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ロラン_ンン_Ｃ",
+        "MID_支援_ロラン_ンン_Ｂ",
+        "MID_支援_ロラン_ンン_Ａ",
+        "MID_支援_ロラン_ンン_Ｓ"
+      ],
+      "updatedAt": "2026-10-07T15:57:22.579Z"
+    },
     "awakening/messages (k)/ンン_ノノ_親子.txt": {
       "path": "Awakening/Messages (K)/ンン_ノノ_親子.txt",
       "mode": "main",
@@ -6010,6 +6021,27 @@
         "MID_様子_ミリエル_後_恋人"
       ],
       "updatedAt": "2026-09-08T02:37:50.530Z"
+    },
+    "awakening/messages (k)/様子_リズ2.txt": {
+      "path": "Awakening/Messages (K)/様子_リズ2.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_リズ_前",
+        "MID_様子_リズ_前_無言",
+        "MID_様子_リズ_前_通さん",
+        "MID_様子_リズ_前_特殊",
+        "MID_様子_リズ_前_特殊E",
+        "MID_様子_リズ_後",
+        "MID_様子_リズ_後_通さん",
+        "MID_様子_リズ_後_特殊",
+        "MID_様子_リズ_後_特殊E",
+        "MID_様子_リズ_後_無言",
+        "MID_様子_リズ_前_親子_子",
+        "MID_様子_リズ_後_親子_子",
+        "MID_様子_リズ_前_恋人",
+        "MID_様子_リズ_後_恋人"
+      ],
+      "updatedAt": "2026-10-07T15:57:15.905Z"
     },
     "awakening/messages (k)/様子_レンハ4.txt": {
       "path": "Awakening/Messages (K)/様子_レンハ4.txt",
@@ -12450,6 +12482,12 @@
       "entryKey": "MID_支援_リズ_ロンクー_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-06T14:59:59.574Z"
+    },
+    "awakening/messages (k)/ロラン_ンン.txt\u0000MID_支援_ロラン_ンン_Ｃ": {
+      "path": "Awakening/Messages (K)/ロラン_ンン.txt",
+      "entryKey": "MID_支援_ロラン_ンン_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-07T16:25:52.714Z"
     },
     "awakening/messages (k)/ンン_ノノ_親子.txt\u0000MID_支援_ンン_ノノ_親子_Ａ": {
       "path": "Awakening/Messages (K)/ンン_ノノ_親子.txt",
