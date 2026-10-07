@@ -56,7 +56,7 @@ MEC_SelectItem_Balance: 잔액: %ls%s%ls
 MEC_ParentalControl_Header: 보호자에 의한 사용 제한
 MEC_ParentalControl: 보호자에 의한 사용 제한 때문에\n「상품이나 서비스의 구입」이\n제한되어 있습니다.\n\n해제를 원하시는 경우에는, 비밀번호를\n입력해 주십시오.
 MEC_ContentSet_Header: 이미 구입한 것을 포함한 콘텐츠의 구입
-MEC_ContentSet: 구입하고자 하는 콘텐츠의\n일부에는, 이미 구입하신 것이 포함되어 있습니다.\n\n구입 절차를 계속 진행하겠습니까?
+MEC_ContentSet: 구입하고자 하는 콘텐츠의 일부에는,\n이미 구입하신 것이 포함되어 있습니다.\n\n구입 절차를 계속 진행하겠습니까?
 MEC_Delete_Confirm_Header: 삭제 확인
 MEC_Delete_Confirm: 이 콘텐츠를 삭제하겠습니까?\n콘텐츠는 삭제해도\n후에 다시 다운로드할 수 있습니다.
 MEC_Delete_Exec: 전원을 끄거나,\nSD 카드를 뽑지 말아 주십시오.
