@@ -5370,6 +5370,17 @@
       ],
       "updatedAt": "2026-09-07T05:32:22.441Z"
     },
+    "awakening/messages (k)/フレデリク_リズ.txt": {
+      "path": "Awakening/Messages (K)/フレデリク_リズ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_フレデリク_リズ_Ｃ",
+        "MID_支援_フレデリク_リズ_Ｂ",
+        "MID_支援_フレデリク_リズ_Ａ",
+        "MID_支援_フレデリク_リズ_Ｓ"
+      ],
+      "updatedAt": "2026-10-07T05:25:34.773Z"
+    },
     "awakening/messages (k)/マルス_クロム_親子.txt": {
       "path": "Awakening/Messages (K)/マルス_クロム_親子.txt",
       "mode": "main",
@@ -12157,6 +12168,12 @@
       "entryKey": "MID_支援_デジェル_ソワレ_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/フレデリク_リズ.txt\u0000MID_支援_フレデリク_リズ_Ｃ": {
+      "path": "Awakening/Messages (K)/フレデリク_リズ.txt",
+      "entryKey": "MID_支援_フレデリク_リズ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-07T11:23:48.581Z"
     },
     "awakening/messages (k)/プレイヤー男_ヘンリー.txt\u0000MID_支援_プレイヤー男_ヘンリー_Ａ_PCM1": {
       "path": "Awakening/Messages (K)/プレイヤー男_ヘンリー.txt",
