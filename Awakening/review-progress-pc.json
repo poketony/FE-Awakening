@@ -5998,6 +5998,24 @@
       ],
       "updatedAt": "2026-10-06T06:47:36.717Z"
     },
+    "awakening/messages (k)/様子_ソール1.txt": {
+      "path": "Awakening/Messages (K)/様子_ソール1.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_ソール_前",
+        "MID_様子_ソール_前_敬さん",
+        "MID_様子_ソール_前_敬様",
+        "MID_様子_ソール_後",
+        "MID_様子_ソール_後_敬さん",
+        "MID_様子_ソール_後_敬様",
+        "MID_様子_ソール_後_無言",
+        "MID_様子_ソール_前_親子_子",
+        "MID_様子_ソール_後_親子_子",
+        "MID_様子_ソール_前_恋人",
+        "MID_様子_ソール_後_恋人"
+      ],
+      "updatedAt": "2026-10-08T06:41:02.902Z"
+    },
     "awakening/messages (k)/様子_チキ1.txt": {
       "path": "Awakening/Messages (K)/様子_チキ1.txt",
       "mode": "main",
@@ -14388,6 +14406,12 @@
       "entryKey": "MID_様子_サイリ_後_通殿",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_ソール1.txt\u0000MID_様子_ソール_前": {
+      "path": "Awakening/Messages (K)/様子_ソール1.txt",
+      "entryKey": "MID_様子_ソール_前",
+      "status": "approved",
+      "updatedAt": "2026-10-08T06:41:09.454Z"
     },
     "awakening/messages (k)/様子_チキ1.txt\u0000MID_様子_チキ_前": {
       "path": "Awakening/Messages (K)/様子_チキ1.txt",
