@@ -4934,6 +4934,27 @@
       ],
       "updatedAt": "2026-09-06T04:32:15.586Z"
     },
+    "awakening/messages (k)/ウード_カラム_親子.txt": {
+      "path": "Awakening/Messages (K)/ウード_カラム_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_カラム_親子_Ｃ",
+        "MID_支援_ウード_カラム_親子_Ｂ",
+        "MID_支援_ウード_カラム_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-08T06:59:42.615Z"
+    },
+    "awakening/messages (k)/ウード_シンシア.txt": {
+      "path": "Awakening/Messages (K)/ウード_シンシア.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_シンシア_Ｃ",
+        "MID_支援_ウード_シンシア_Ｂ",
+        "MID_支援_ウード_シンシア_Ａ",
+        "MID_支援_ウード_シンシア_Ｓ"
+      ],
+      "updatedAt": "2026-10-08T06:59:20.534Z"
+    },
     "awakening/messages (k)/ウード_ブレディ.txt": {
       "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
       "mode": "main",
@@ -12030,6 +12051,12 @@
       "entryKey": "MID_支援_アズール_ヴェイク_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T08:10:44.231Z"
+    },
+    "awakening/messages (k)/ウード_カラム_親子.txt\u0000MID_支援_ウード_カラム_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ウード_カラム_親子.txt",
+      "entryKey": "MID_支援_ウード_カラム_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-08T07:05:07.601Z"
     },
     "awakening/messages (k)/ウード_ブレディ.txt\u0000MID_支援_ウード_ブレディ_Ａ": {
       "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
