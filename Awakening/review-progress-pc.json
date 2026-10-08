@@ -6156,6 +6156,27 @@
       ],
       "updatedAt": "2026-10-08T05:45:57.447Z"
     },
+    "awakening/messages (k)/様子_マルス1.txt": {
+      "path": "Awakening/Messages (K)/様子_マルス1.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_マルス_前",
+        "MID_様子_マルス_前_無言",
+        "MID_様子_マルス_前_敬さん",
+        "MID_様子_マルス_後",
+        "MID_様子_マルス_後_敬さん",
+        "MID_様子_マルス_後_無言",
+        "MID_様子_マルス_前_親子_子",
+        "MID_様子_マルス_後_親子_子",
+        "MID_様子_マルス_前_親子_母",
+        "MID_様子_マルス_後_親子_母",
+        "MID_様子_マルス_前_親子_父",
+        "MID_様子_マルス_後_親子_父",
+        "MID_様子_マルス_前_恋人",
+        "MID_様子_マルス_後_恋人"
+      ],
+      "updatedAt": "2026-10-08T06:07:39.493Z"
+    },
     "awakening/messages (k)/様子_ミリエル2.txt": {
       "path": "Awakening/Messages (K)/様子_ミリエル2.txt",
       "mode": "main",
@@ -14823,6 +14844,12 @@
       "entryKey": "MID_様子_プレイヤー男_後_親子_子_PCM1",
       "status": "approved",
       "updatedAt": "2026-09-29T10:47:56.097Z"
+    },
+    "awakening/messages (k)/様子_マルス1.txt\u0000MID_様子_マルス_前": {
+      "path": "Awakening/Messages (K)/様子_マルス1.txt",
+      "entryKey": "MID_様子_マルス_前",
+      "status": "approved",
+      "updatedAt": "2026-10-08T06:07:44.035Z"
     },
     "awakening/messages (k)/様子_レンハ4.txt\u0000MID_様子_レンハ_前": {
       "path": "Awakening/Messages (K)/様子_レンハ4.txt",
