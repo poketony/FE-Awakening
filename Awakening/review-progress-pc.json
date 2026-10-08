@@ -6412,6 +6412,27 @@
       ],
       "updatedAt": "2026-10-08T21:15:02.511Z"
     },
+    "awakening/messages (k)/様子_ロラン2.txt": {
+      "path": "Awakening/Messages (K)/様子_ロラン2.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_ロラン_前",
+        "MID_様子_ロラン_前_無言",
+        "MID_様子_ロラン_前_敬さん",
+        "MID_様子_ロラン_後",
+        "MID_様子_ロラン_後_敬さん",
+        "MID_様子_ロラン_後_無言",
+        "MID_様子_ロラン_前_親子_子",
+        "MID_様子_ロラン_後_親子_子",
+        "MID_様子_ロラン_前_親子_母",
+        "MID_様子_ロラン_後_親子_母",
+        "MID_様子_ロラン_前_親子_父",
+        "MID_様子_ロラン_後_親子_父",
+        "MID_様子_ロラン_前_恋人",
+        "MID_様子_ロラン_後_恋人"
+      ],
+      "updatedAt": "2026-10-08T21:17:05.706Z"
+    },
     "awakening/messages (k)/様子_ロラン3.txt": {
       "path": "Awakening/Messages (K)/様子_ロラン3.txt",
       "mode": "main",
@@ -15744,6 +15765,12 @@
       "entryKey": "MID_様子_ロラン_後_親子_父",
       "status": "approved",
       "updatedAt": "2026-10-08T21:16:18.408Z"
+    },
+    "awakening/messages (k)/様子_ロラン2.txt\u0000MID_様子_ロラン_前": {
+      "path": "Awakening/Messages (K)/様子_ロラン2.txt",
+      "entryKey": "MID_様子_ロラン_前",
+      "status": "approved",
+      "updatedAt": "2026-10-08T21:17:50.533Z"
     },
     "awakening/messages (k)/様子_ロラン3.txt\u0000MID_様子_ロラン_前": {
       "path": "Awakening/Messages (K)/様子_ロラン3.txt",
