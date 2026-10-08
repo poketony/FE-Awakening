@@ -6142,6 +6142,20 @@
       ],
       "updatedAt": "2026-09-29T10:45:30.526Z"
     },
+    "awakening/messages (k)/様子_ベルベット2.txt": {
+      "path": "Awakening/Messages (K)/様子_ベルベット2.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_ベルベット_前",
+        "MID_様子_ベルベット_後",
+        "MID_様子_ベルベット_後_無言",
+        "MID_様子_ベルベット_前_親子_子",
+        "MID_様子_ベルベット_後_親子_子",
+        "MID_様子_ベルベット_前_恋人",
+        "MID_様子_ベルベット_後_恋人"
+      ],
+      "updatedAt": "2026-10-08T05:45:57.447Z"
+    },
     "awakening/messages (k)/様子_ミリエル2.txt": {
       "path": "Awakening/Messages (K)/様子_ミリエル2.txt",
       "mode": "main",
@@ -12991,6 +13005,12 @@
       "entryKey": "MID_支援_ヴェイク_ベルベット_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-08T04:55:08.903Z"
+    },
+    "awakening/messages (k)/ヴェイク_ベルベット.txt\u0000MID_支援_ヴェイク_ベルベット_Ｓ": {
+      "path": "Awakening/Messages (K)/ヴェイク_ベルベット.txt",
+      "entryKey": "MID_支援_ヴェイク_ベルベット_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-10-08T05:53:36.100Z"
     },
     "awakening/messages (k)/ヴェイク_マリアベル.txt\u0000MID_支援_ヴェイク_マリアベル_Ａ": {
       "path": "Awakening/Messages (K)/ヴェイク_マリアベル.txt",
