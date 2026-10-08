@@ -5630,6 +5630,17 @@
       ],
       "updatedAt": "2026-09-22T04:14:37.080Z"
     },
+    "awakening/messages (k)/ヴェイク_ティアモ.txt": {
+      "path": "Awakening/Messages (K)/ヴェイク_ティアモ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴェイク_ティアモ_Ｃ",
+        "MID_支援_ヴェイク_ティアモ_Ｂ",
+        "MID_支援_ヴェイク_ティアモ_Ａ",
+        "MID_支援_ヴェイク_ティアモ_Ｓ"
+      ],
+      "updatedAt": "2026-10-08T03:54:34.847Z"
+    },
     "awakening/messages (k)/ヴェイク_ノノ.txt": {
       "path": "Awakening/Messages (K)/ヴェイク_ノノ.txt",
       "mode": "main",
@@ -12862,6 +12873,24 @@
       "entryKey": "MID_支援_ヴィオール_リベラ_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-29T06:59:42.207Z"
+    },
+    "awakening/messages (k)/ヴェイク_ティアモ.txt\u0000MID_支援_ヴェイク_ティアモ_Ａ": {
+      "path": "Awakening/Messages (K)/ヴェイク_ティアモ.txt",
+      "entryKey": "MID_支援_ヴェイク_ティアモ_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-08T04:16:56.154Z"
+    },
+    "awakening/messages (k)/ヴェイク_ティアモ.txt\u0000MID_支援_ヴェイク_ティアモ_Ｂ": {
+      "path": "Awakening/Messages (K)/ヴェイク_ティアモ.txt",
+      "entryKey": "MID_支援_ヴェイク_ティアモ_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-08T04:04:26.956Z"
+    },
+    "awakening/messages (k)/ヴェイク_ティアモ.txt\u0000MID_支援_ヴェイク_ティアモ_Ｃ": {
+      "path": "Awakening/Messages (K)/ヴェイク_ティアモ.txt",
+      "entryKey": "MID_支援_ヴェイク_ティアモ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-08T03:58:03.240Z"
     },
     "awakening/messages (k)/ヴェイク_ノノ.txt\u0000MID_支援_ヴェイク_ノノ_Ａ": {
       "path": "Awakening/Messages (K)/ヴェイク_ノノ.txt",
