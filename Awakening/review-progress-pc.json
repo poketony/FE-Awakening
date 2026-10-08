@@ -5082,6 +5082,17 @@
       ],
       "updatedAt": "2026-09-07T05:33:55.381Z"
     },
+    "awakening/messages (k)/サーリャ_フレデリク.txt": {
+      "path": "Awakening/Messages (K)/サーリャ_フレデリク.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_サーリャ_フレデリク_Ｃ",
+        "MID_支援_サーリャ_フレデリク_Ｂ",
+        "MID_支援_サーリャ_フレデリク_Ａ",
+        "MID_支援_サーリャ_フレデリク_Ｓ"
+      ],
+      "updatedAt": "2026-10-07T22:09:17.536Z"
+    },
     "awakening/messages (k)/サーリャ_プレイヤー女.txt": {
       "path": "Awakening/Messages (K)/サーリャ_プレイヤー女.txt",
       "mode": "main",
@@ -5650,6 +5661,17 @@
         "MID_支援_ヴェイク_マリアベル_Ｓ"
       ],
       "updatedAt": "2026-09-10T23:25:47.416Z"
+    },
+    "awakening/messages (k)/ヴェイク_ミリエル.txt": {
+      "path": "Awakening/Messages (K)/ヴェイク_ミリエル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴェイク_ミリエル_Ｃ",
+        "MID_支援_ヴェイク_ミリエル_Ｂ",
+        "MID_支援_ヴェイク_ミリエル_Ａ",
+        "MID_支援_ヴェイク_ミリエル_Ｓ"
+      ],
+      "updatedAt": "2026-10-07T23:54:52.053Z"
     },
     "awakening/messages (k)/ヴェイク_リズ.txt": {
       "path": "Awakening/Messages (K)/ヴェイク_リズ.txt",
@@ -12108,6 +12130,12 @@
       "entryKey": "MID_支援_サーリャ_ソール_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-07T22:09:11.108Z"
+    },
+    "awakening/messages (k)/サーリャ_フレデリク.txt\u0000MID_支援_サーリャ_フレデリク_Ｃ": {
+      "path": "Awakening/Messages (K)/サーリャ_フレデリク.txt",
+      "entryKey": "MID_支援_サーリャ_フレデリク_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-08T00:00:24.288Z"
     },
     "awakening/messages (k)/サーリャ_プレイヤー女.txt\u0000MID_支援_サーリャ_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/サーリャ_プレイヤー女.txt",
