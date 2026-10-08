@@ -6199,6 +6199,20 @@
       ],
       "updatedAt": "2026-09-06T12:29:36.266Z"
     },
+    "awakening/messages (k)/様子_パリス1.txt": {
+      "path": "Awakening/Messages (K)/様子_パリス1.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_パリス_前",
+        "MID_様子_パリス_後",
+        "MID_様子_パリス_後_無言",
+        "MID_様子_パリス_前_親子_子",
+        "MID_様子_パリス_後_親子_子",
+        "MID_様子_パリス_前_恋人",
+        "MID_様子_パリス_後_恋人"
+      ],
+      "updatedAt": "2026-10-08T21:20:10.029Z"
+    },
     "awakening/messages (k)/様子_プレイヤー男1.txt": {
       "path": "Awakening/Messages (K)/様子_プレイヤー男1.txt",
       "mode": "main",
@@ -15123,6 +15137,12 @@
       "entryKey": "MID_様子_チキ_後_親子_子",
       "status": "approved",
       "updatedAt": "2026-09-06T12:29:00.678Z"
+    },
+    "awakening/messages (k)/様子_パリス1.txt\u0000MID_様子_パリス_前": {
+      "path": "Awakening/Messages (K)/様子_パリス1.txt",
+      "entryKey": "MID_様子_パリス_前",
+      "status": "approved",
+      "updatedAt": "2026-10-08T21:20:25.118Z"
     },
     "awakening/messages (k)/様子_フラヴィア3.txt\u0000MID_様子_フラヴィア_前": {
       "path": "Awakening/Messages (K)/様子_フラヴィア3.txt",
