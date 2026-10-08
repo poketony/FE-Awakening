@@ -6340,6 +6340,23 @@
       ],
       "updatedAt": "2026-10-07T15:57:15.905Z"
     },
+    "awakening/messages (k)/様子_リベラ1.txt": {
+      "path": "Awakening/Messages (K)/様子_リベラ1.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_リベラ_前_敬さん",
+        "MID_様子_リベラ_前",
+        "MID_様子_リベラ_前_敬様",
+        "MID_様子_リベラ_後_敬さん",
+        "MID_様子_リベラ_後_敬様",
+        "MID_様子_リベラ_後_無言",
+        "MID_様子_リベラ_前_親子_子",
+        "MID_様子_リベラ_後_親子_子",
+        "MID_様子_リベラ_前_恋人",
+        "MID_様子_リベラ_後_恋人"
+      ],
+      "updatedAt": "2026-10-08T08:35:13.546Z"
+    },
     "awakening/messages (k)/様子_レンハ4.txt": {
       "path": "Awakening/Messages (K)/様子_レンハ4.txt",
       "mode": "main",
@@ -15383,6 +15400,12 @@
       "entryKey": "MID_様子_マルス_後_親子_父",
       "status": "approved",
       "updatedAt": "2026-10-08T06:15:20.818Z"
+    },
+    "awakening/messages (k)/様子_リベラ1.txt\u0000MID_様子_リベラ_前_敬さん": {
+      "path": "Awakening/Messages (K)/様子_リベラ1.txt",
+      "entryKey": "MID_様子_リベラ_前_敬さん",
+      "status": "approved",
+      "updatedAt": "2026-10-08T08:35:26.367Z"
     },
     "awakening/messages (k)/様子_レンハ4.txt\u0000MID_様子_レンハ_前": {
       "path": "Awakening/Messages (K)/様子_レンハ4.txt",
