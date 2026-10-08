@@ -4903,6 +4903,17 @@
       ],
       "updatedAt": "2026-09-06T04:02:31.536Z"
     },
+    "awakening/messages (k)/アズール_ンン.txt": {
+      "path": "Awakening/Messages (K)/アズール_ンン.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_ンン_Ｃ",
+        "MID_支援_アズール_ンン_Ｂ",
+        "MID_支援_アズール_ンン_Ａ",
+        "MID_支援_アズール_ンン_Ｓ"
+      ],
+      "updatedAt": "2026-10-08T05:17:34.958Z"
+    },
     "awakening/messages (k)/アズール_ヴィオール_親子.txt": {
       "path": "Awakening/Messages (K)/アズール_ヴィオール_親子.txt",
       "mode": "main",
@@ -11852,6 +11863,12 @@
       "entryKey": "MID_支援_アズール_マーク女_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-15T01:44:16.103Z"
+    },
+    "awakening/messages (k)/アズール_ンン.txt\u0000MID_支援_アズール_ンン_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_ンン.txt",
+      "entryKey": "MID_支援_アズール_ンン_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-08T05:22:58.579Z"
     },
     "awakening/messages (k)/アズール_ヴィオール_親子.txt\u0000MID_支援_アズール_ヴィオール_親子_Ａ": {
       "path": "Awakening/Messages (K)/アズール_ヴィオール_親子.txt",
