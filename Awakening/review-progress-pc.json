@@ -5060,6 +5060,17 @@
       ],
       "updatedAt": "2026-09-07T05:11:19.391Z"
     },
+    "awakening/messages (k)/ガイア_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/ガイア_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ガイア_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_ガイア_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_ガイア_プレイヤー女_Ａ_PCF1",
+        "MID_支援_ガイア_プレイヤー女_Ｓ_PCF1"
+      ],
+      "updatedAt": "2026-10-08T07:21:42.053Z"
+    },
     "awakening/messages (k)/ガイア_リズ.txt": {
       "path": "Awakening/Messages (K)/ガイア_リズ.txt",
       "mode": "main",
@@ -5504,6 +5515,17 @@
         "MID_支援_プレイヤー女_ミリエル_Ａ_PCF1"
       ],
       "updatedAt": "2026-10-07T17:33:29.446Z"
+    },
+    "awakening/messages (k)/プレイヤー男_リズ.txt": {
+      "path": "Awakening/Messages (K)/プレイヤー男_リズ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_プレイヤー男_リズ_Ｃ_PCM1",
+        "MID_支援_プレイヤー男_リズ_Ｂ_PCM1",
+        "MID_支援_プレイヤー男_リズ_Ａ_PCM1",
+        "MID_支援_プレイヤー男_リズ_Ｓ_PCM1"
+      ],
+      "updatedAt": "2026-10-08T07:21:15.799Z"
     },
     "awakening/messages (k)/プレイヤー男_リヒト.txt": {
       "path": "Awakening/Messages (K)/プレイヤー男_リヒト.txt",
@@ -12243,6 +12265,12 @@
       "entryKey": "MID_支援_カラム_ノノ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-07T05:24:02.175Z"
+    },
+    "awakening/messages (k)/ガイア_プレイヤー女.txt\u0000MID_支援_ガイア_プレイヤー女_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/ガイア_プレイヤー女.txt",
+      "entryKey": "MID_支援_ガイア_プレイヤー女_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-08T07:26:05.418Z"
     },
     "awakening/messages (k)/ガイア_リズ.txt\u0000MID_支援_ガイア_リズ_Ａ": {
       "path": "Awakening/Messages (K)/ガイア_リズ.txt",
