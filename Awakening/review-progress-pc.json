@@ -4975,6 +4975,16 @@
       ],
       "updatedAt": "2026-10-06T07:42:26.905Z"
     },
+    "awakening/messages (k)/ウード_リヒト_親子.txt": {
+      "path": "Awakening/Messages (K)/ウード_リヒト_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_リヒト_親子_Ｃ",
+        "MID_支援_ウード_リヒト_親子_Ｂ",
+        "MID_支援_ウード_リヒト_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-08T21:27:19.877Z"
+    },
     "awakening/messages (k)/ウード_ルキナ.txt": {
       "path": "Awakening/Messages (K)/ウード_ルキナ.txt",
       "mode": "main",
@@ -12297,6 +12307,12 @@
       "entryKey": "MID_支援_ウード_リズ_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-06T08:06:36.314Z"
+    },
+    "awakening/messages (k)/ウード_リヒト_親子.txt\u0000MID_支援_ウード_リヒト_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ウード_リヒト_親子.txt",
+      "entryKey": "MID_支援_ウード_リヒト_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-08T21:27:48.155Z"
     },
     "awakening/messages (k)/オリヴィエ_カラム.txt\u0000MID_支援_オリヴィエ_カラム_Ａ": {
       "path": "Awakening/Messages (K)/オリヴィエ_カラム.txt",
