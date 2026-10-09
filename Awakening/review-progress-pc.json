@@ -5304,6 +5304,16 @@
       ],
       "updatedAt": "2026-10-06T13:09:40.904Z"
     },
+    "awakening/messages (k)/セレナ_カラム_親子.txt": {
+      "path": "Awakening/Messages (K)/セレナ_カラム_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_セレナ_カラム_親子_Ｃ",
+        "MID_支援_セレナ_カラム_親子_Ｂ",
+        "MID_支援_セレナ_カラム_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-09T02:43:16.367Z"
+    },
     "awakening/messages (k)/セレナ_ソール_親子.txt": {
       "path": "Awakening/Messages (K)/セレナ_ソール_親子.txt",
       "mode": "main",
@@ -5484,6 +5494,16 @@
         "MID_支援_ドニ_リズ_Ｓ"
       ],
       "updatedAt": "2026-09-07T05:32:22.441Z"
+    },
+    "awakening/messages (k)/ノワール_サーリャ_親子.txt": {
+      "path": "Awakening/Messages (K)/ノワール_サーリャ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ノワール_サーリャ_親子_Ｃ",
+        "MID_支援_ノワール_サーリャ_親子_Ｂ",
+        "MID_支援_ノワール_サーリャ_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-09T04:43:28.158Z"
     },
     "awakening/messages (k)/バジーリオ_フラヴィア.txt": {
       "path": "Awakening/Messages (K)/バジーリオ_フラヴィア.txt",
@@ -12973,6 +12993,12 @@
       "entryKey": "MID_支援_ドニ_リズ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-07T13:10:05.098Z"
+    },
+    "awakening/messages (k)/ノワール_サーリャ_親子.txt\u0000MID_支援_ノワール_サーリャ_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ノワール_サーリャ_親子.txt",
+      "entryKey": "MID_支援_ノワール_サーリャ_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-09T04:44:12.853Z"
     },
     "awakening/messages (k)/バジーリオ_フラヴィア.txt\u0000MID_支援_バジーリオ_フラヴィア_Ａ": {
       "path": "Awakening/Messages (K)/バジーリオ_フラヴィア.txt",
