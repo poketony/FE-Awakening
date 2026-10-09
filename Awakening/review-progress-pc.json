@@ -5607,6 +5607,16 @@
       ],
       "updatedAt": "2026-10-06T06:38:47.241Z"
     },
+    "awakening/messages (k)/マーク女_ウード_兄弟.txt": {
+      "path": "Awakening/Messages (K)/マーク女_ウード_兄弟.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マーク女_ウード_兄弟_Ｃ",
+        "MID_支援_マーク女_ウード_兄弟_Ｂ",
+        "MID_支援_マーク女_ウード_兄弟_Ａ"
+      ],
+      "updatedAt": "2026-10-09T08:00:12.305Z"
+    },
     "awakening/messages (k)/マーク女_ルキナ_親子.txt": {
       "path": "Awakening/Messages (K)/マーク女_ルキナ_親子.txt",
       "mode": "main",
@@ -13185,6 +13195,12 @@
       "entryKey": "MID_支援_マルス_マリアベル_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-06T06:45:10.858Z"
+    },
+    "awakening/messages (k)/マーク女_ウード_兄弟.txt\u0000MID_支援_マーク女_ウード_兄弟_Ｃ": {
+      "path": "Awakening/Messages (K)/マーク女_ウード_兄弟.txt",
+      "entryKey": "MID_支援_マーク女_ウード_兄弟_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-09T08:06:21.433Z"
     },
     "awakening/messages (k)/マーク男_マルス.txt\u0000MID_支援_マーク男_マルス_Ｃ": {
       "path": "Awakening/Messages (K)/マーク男_マルス.txt",
