@@ -6487,6 +6487,16 @@
       ],
       "updatedAt": "2026-10-07T17:36:30.026Z"
     },
+    "awakening/messages (k)/マルス_アズール_兄弟.txt": {
+      "path": "Awakening/Messages (K)/マルス_アズール_兄弟.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マルス_アズール_兄弟_Ｃ",
+        "MID_支援_マルス_アズール_兄弟_Ｂ",
+        "MID_支援_マルス_アズール_兄弟_Ａ"
+      ],
+      "updatedAt": "2026-10-09T10:36:53.057Z"
+    },
     "awakening/messages (k)/マルス_クロム_親子.txt": {
       "path": "Awakening/Messages (K)/マルス_クロム_親子.txt",
       "mode": "main",
@@ -14105,6 +14115,12 @@
       "entryKey": "MID_支援_プレイヤー男_ロンクー_Ｃ_PCM1",
       "status": "approved",
       "updatedAt": "2026-10-07T17:38:30.268Z"
+    },
+    "awakening/messages (k)/マルス_アズール_兄弟.txt\u0000MID_支援_マルス_アズール_兄弟_Ｃ": {
+      "path": "Awakening/Messages (K)/マルス_アズール_兄弟.txt",
+      "entryKey": "MID_支援_マルス_アズール_兄弟_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-09T10:47:35.150Z"
     },
     "awakening/messages (k)/マルス_クロム_親子.txt\u0000MID_支援_マルス_クロム_親子_Ｃ": {
       "path": "Awakening/Messages (K)/マルス_クロム_親子.txt",
