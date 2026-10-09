@@ -5556,6 +5556,16 @@
       ],
       "updatedAt": "2026-10-07T17:33:29.446Z"
     },
+    "awakening/messages (k)/プレイヤー女_ンン.txt": {
+      "path": "Awakening/Messages (K)/プレイヤー女_ンン.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_プレイヤー女_ンン_Ｃ_PCF1",
+        "MID_支援_プレイヤー女_ンン_Ｂ_PCF1",
+        "MID_支援_プレイヤー女_ンン_Ａ_PCF1"
+      ],
+      "updatedAt": "2026-10-09T08:40:43.712Z"
+    },
     "awakening/messages (k)/プレイヤー男_リズ.txt": {
       "path": "Awakening/Messages (K)/プレイヤー男_リズ.txt",
       "mode": "main",
@@ -13111,6 +13121,12 @@
       "entryKey": "MID_支援_プレイヤー女_ミリエル_Ｃ_PCF1",
       "status": "approved",
       "updatedAt": "2026-10-07T17:34:37.017Z"
+    },
+    "awakening/messages (k)/プレイヤー女_ンン.txt\u0000MID_支援_プレイヤー女_ンン_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/プレイヤー女_ンン.txt",
+      "entryKey": "MID_支援_プレイヤー女_ンン_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-09T08:52:57.715Z"
     },
     "awakening/messages (k)/プレイヤー男_ヘンリー.txt\u0000MID_支援_プレイヤー男_ヘンリー_Ａ_PCM1": {
       "path": "Awakening/Messages (K)/プレイヤー男_ヘンリー.txt",
