@@ -6459,6 +6459,16 @@
       ],
       "updatedAt": "2026-10-07T17:30:31.951Z"
     },
+    "awakening/messages (k)/プレイヤー女_マーク男.txt": {
+      "path": "Awakening/Messages (K)/プレイヤー女_マーク男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_プレイヤー女_マーク男_Ｃ_PCF1",
+        "MID_支援_プレイヤー女_マーク男_Ｂ_PCF1",
+        "MID_支援_プレイヤー女_マーク男_Ａ_PCF1"
+      ],
+      "updatedAt": "2026-10-11T11:08:29.301Z"
+    },
     "awakening/messages (k)/プレイヤー女_ミリエル.txt": {
       "path": "Awakening/Messages (K)/プレイヤー女_ミリエル.txt",
       "mode": "main",
@@ -14102,6 +14112,12 @@
       "entryKey": "MID_支援_プレイヤー女_ベルベット_Ｃ_PCF1",
       "status": "approved",
       "updatedAt": "2026-10-07T17:31:34.004Z"
+    },
+    "awakening/messages (k)/プレイヤー女_マーク男.txt\u0000MID_支援_プレイヤー女_マーク男_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/プレイヤー女_マーク男.txt",
+      "entryKey": "MID_支援_プレイヤー女_マーク男_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-11T11:09:14.921Z"
     },
     "awakening/messages (k)/プレイヤー女_ミリエル.txt\u0000MID_支援_プレイヤー女_ミリエル_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/プレイヤー女_ミリエル.txt",
