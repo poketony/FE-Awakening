@@ -5960,6 +5960,17 @@
       ],
       "updatedAt": "2026-09-07T05:11:19.391Z"
     },
+    "awakening/messages (k)/ガイア_スミア.txt": {
+      "path": "Awakening/Messages (K)/ガイア_スミア.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ガイア_スミア_Ｃ",
+        "MID_支援_ガイア_スミア_Ｂ",
+        "MID_支援_ガイア_スミア_Ａ",
+        "MID_支援_ガイア_スミア_Ｓ"
+      ],
+      "updatedAt": "2026-10-11T15:33:07.755Z"
+    },
     "awakening/messages (k)/ガイア_セルジュ.txt": {
       "path": "Awakening/Messages (K)/ガイア_セルジュ.txt",
       "mode": "main",
@@ -13532,6 +13543,12 @@
       "entryKey": "MID_支援_カラム_ノノ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-07T05:24:02.175Z"
+    },
+    "awakening/messages (k)/ガイア_スミア.txt\u0000MID_支援_ガイア_スミア_Ｃ": {
+      "path": "Awakening/Messages (K)/ガイア_スミア.txt",
+      "entryKey": "MID_支援_ガイア_スミア_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-11T15:35:08.097Z"
     },
     "awakening/messages (k)/ガイア_セルジュ.txt\u0000MID_支援_ガイア_セルジュ_Ａ": {
       "path": "Awakening/Messages (K)/ガイア_セルジュ.txt",
