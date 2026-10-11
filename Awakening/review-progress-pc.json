@@ -5864,6 +5864,17 @@
       ],
       "updatedAt": "2026-10-11T16:15:21.638Z"
     },
+    "awakening/messages (k)/インバース_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/インバース_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_インバース_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_インバース_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_インバース_プレイヤー男_Ａ_PCM1",
+        "MID_支援_インバース_プレイヤー男_Ｓ_PCM1"
+      ],
+      "updatedAt": "2026-10-11T16:24:25.782Z"
+    },
     "awakening/messages (k)/ウード_カラム_親子.txt": {
       "path": "Awakening/Messages (K)/ウード_カラム_親子.txt",
       "mode": "main",
@@ -13505,6 +13516,12 @@
       "entryKey": "MID_支援_アンナ_プレイヤー男_Ｓ_PCM1",
       "status": "approved",
       "updatedAt": "2026-10-11T16:22:11.043Z"
+    },
+    "awakening/messages (k)/インバース_プレイヤー男.txt\u0000MID_支援_インバース_プレイヤー男_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/インバース_プレイヤー男.txt",
+      "entryKey": "MID_支援_インバース_プレイヤー男_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-11T16:25:26.717Z"
     },
     "awakening/messages (k)/ウード_カラム_親子.txt\u0000MID_支援_ウード_カラム_親子_Ａ": {
       "path": "Awakening/Messages (K)/ウード_カラム_親子.txt",
