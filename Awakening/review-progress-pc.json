@@ -5792,6 +5792,16 @@
       ],
       "updatedAt": "2026-09-06T04:02:31.536Z"
     },
+    "awakening/messages (k)/アズール_ロンクー_親子.txt": {
+      "path": "Awakening/Messages (K)/アズール_ロンクー_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アズール_ロンクー_親子_Ｃ",
+        "MID_支援_アズール_ロンクー_親子_Ｂ",
+        "MID_支援_アズール_ロンクー_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-11T16:04:02.653Z"
+    },
     "awakening/messages (k)/アズール_ンン.txt": {
       "path": "Awakening/Messages (K)/アズール_ンン.txt",
       "mode": "main",
@@ -13326,6 +13336,12 @@
       "entryKey": "MID_支援_アズール_リベラ_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-11T16:03:30.201Z"
+    },
+    "awakening/messages (k)/アズール_ロンクー_親子.txt\u0000MID_支援_アズール_ロンクー_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/アズール_ロンクー_親子.txt",
+      "entryKey": "MID_支援_アズール_ロンクー_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-11T16:04:20.120Z"
     },
     "awakening/messages (k)/アズール_ンン.txt\u0000MID_支援_アズール_ンン_Ａ": {
       "path": "Awakening/Messages (K)/アズール_ンン.txt",
