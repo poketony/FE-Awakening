@@ -6418,6 +6418,16 @@
       ],
       "updatedAt": "2026-10-09T04:43:28.158Z"
     },
+    "awakening/messages (k)/ノワール_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/ノワール_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ノワール_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_ノワール_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_ノワール_プレイヤー女_Ａ_PCF1"
+      ],
+      "updatedAt": "2026-10-11T13:06:01.454Z"
+    },
     "awakening/messages (k)/バジーリオ_フラヴィア.txt": {
       "path": "Awakening/Messages (K)/バジーリオ_フラヴィア.txt",
       "mode": "main",
@@ -6738,6 +6748,17 @@
         "MID_支援_ヴェイク_ノノ_Ｓ"
       ],
       "updatedAt": "2026-09-10T23:23:18.774Z"
+    },
+    "awakening/messages (k)/ヴェイク_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/ヴェイク_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴェイク_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_ヴェイク_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_ヴェイク_プレイヤー女_Ａ_PCF1",
+        "MID_支援_ヴェイク_プレイヤー女_Ｓ_PCF1"
+      ],
+      "updatedAt": "2026-10-11T12:50:31.618Z"
     },
     "awakening/messages (k)/ヴェイク_プレイヤー男.txt": {
       "path": "Awakening/Messages (K)/ヴェイク_プレイヤー男.txt",
@@ -14034,6 +14055,12 @@
       "entryKey": "MID_支援_ノワール_サーリャ_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-09T04:44:12.853Z"
+    },
+    "awakening/messages (k)/ノワール_プレイヤー女.txt\u0000MID_支援_ノワール_プレイヤー女_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/ノワール_プレイヤー女.txt",
+      "entryKey": "MID_支援_ノワール_プレイヤー女_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-11T13:06:18.298Z"
     },
     "awakening/messages (k)/バジーリオ_フラヴィア.txt\u0000MID_支援_バジーリオ_フラヴィア_Ａ": {
       "path": "Awakening/Messages (K)/バジーリオ_フラヴィア.txt",
