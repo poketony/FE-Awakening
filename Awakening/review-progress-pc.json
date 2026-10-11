@@ -5926,6 +5926,17 @@
       ],
       "updatedAt": "2026-10-08T06:59:20.534Z"
     },
+    "awakening/messages (k)/ウード_セレナ.txt": {
+      "path": "Awakening/Messages (K)/ウード_セレナ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_セレナ_Ｃ",
+        "MID_支援_ウード_セレナ_Ｂ",
+        "MID_支援_ウード_セレナ_Ａ",
+        "MID_支援_ウード_セレナ_Ｓ"
+      ],
+      "updatedAt": "2026-10-11T16:50:50.264Z"
+    },
     "awakening/messages (k)/ウード_ブレディ.txt": {
       "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
       "mode": "main",
@@ -13680,6 +13691,12 @@
       "entryKey": "MID_支援_ウード_シンシア_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-11T16:46:44.139Z"
+    },
+    "awakening/messages (k)/ウード_シンシア.txt\u0000MID_支援_ウード_シンシア_Ｓ": {
+      "path": "Awakening/Messages (K)/ウード_シンシア.txt",
+      "entryKey": "MID_支援_ウード_シンシア_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-10-11T16:50:48.501Z"
     },
     "awakening/messages (k)/ウード_ブレディ.txt\u0000MID_支援_ウード_ブレディ_Ａ": {
       "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
