@@ -5886,6 +5886,17 @@
       ],
       "updatedAt": "2026-10-06T08:20:15.184Z"
     },
+    "awakening/messages (k)/オリヴィエ_ドニ.txt": {
+      "path": "Awakening/Messages (K)/オリヴィエ_ドニ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_オリヴィエ_ドニ_Ｃ",
+        "MID_支援_オリヴィエ_ドニ_Ｂ",
+        "MID_支援_オリヴィエ_ドニ_Ａ",
+        "MID_支援_オリヴィエ_ドニ_Ｓ"
+      ],
+      "updatedAt": "2026-10-11T14:15:13.204Z"
+    },
     "awakening/messages (k)/オリヴィエ_プレイヤー女.txt": {
       "path": "Awakening/Messages (K)/オリヴィエ_プレイヤー女.txt",
       "mode": "main",
@@ -13383,6 +13394,12 @@
       "entryKey": "MID_支援_オリヴィエ_カラム_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-06T08:39:08.393Z"
+    },
+    "awakening/messages (k)/オリヴィエ_ドニ.txt\u0000MID_支援_オリヴィエ_ドニ_Ｃ": {
+      "path": "Awakening/Messages (K)/オリヴィエ_ドニ.txt",
+      "entryKey": "MID_支援_オリヴィエ_ドニ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-11T14:15:52.898Z"
     },
     "awakening/messages (k)/オリヴィエ_プレイヤー女.txt\u0000MID_支援_オリヴィエ_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/オリヴィエ_プレイヤー女.txt",
