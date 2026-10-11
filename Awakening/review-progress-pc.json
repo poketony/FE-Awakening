@@ -6423,6 +6423,17 @@
       ],
       "updatedAt": "2026-09-07T05:33:18.498Z"
     },
+    "awakening/messages (k)/セレナ_ロラン.txt": {
+      "path": "Awakening/Messages (K)/セレナ_ロラン.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_セレナ_ロラン_Ｃ",
+        "MID_支援_セレナ_ロラン_Ｂ",
+        "MID_支援_セレナ_ロラン_Ａ",
+        "MID_支援_セレナ_ロラン_Ｓ"
+      ],
+      "updatedAt": "2026-10-11T18:07:22.755Z"
+    },
     "awakening/messages (k)/ソワレ_ドニ.txt": {
       "path": "Awakening/Messages (K)/ソワレ_ドニ.txt",
       "mode": "main",
@@ -14477,6 +14488,12 @@
       "entryKey": "MID_支援_セレナ_ソール_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-07T04:49:23.334Z"
+    },
+    "awakening/messages (k)/セレナ_ロラン.txt\u0000MID_支援_セレナ_ロラン_Ｃ": {
+      "path": "Awakening/Messages (K)/セレナ_ロラン.txt",
+      "entryKey": "MID_支援_セレナ_ロラン_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-11T18:10:25.764Z"
     },
     "awakening/messages (k)/ソワレ_リベラ.txt\u0000MID_支援_ソワレ_リベラ_Ａ": {
       "path": "Awakening/Messages (K)/ソワレ_リベラ.txt",
