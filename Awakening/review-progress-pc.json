@@ -5833,6 +5833,16 @@
       ],
       "updatedAt": "2026-09-06T04:32:15.586Z"
     },
+    "awakening/messages (k)/アンナ_チキ.txt": {
+      "path": "Awakening/Messages (K)/アンナ_チキ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_アンナ_チキ_Ｃ",
+        "MID_支援_アンナ_チキ_Ｂ",
+        "MID_支援_アンナ_チキ_Ａ"
+      ],
+      "updatedAt": "2026-10-11T16:04:39.602Z"
+    },
     "awakening/messages (k)/ウード_カラム_親子.txt": {
       "path": "Awakening/Messages (K)/ウード_カラム_親子.txt",
       "mode": "main",
@@ -13414,6 +13424,12 @@
       "entryKey": "MID_支援_アズール_ヴェイク_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T08:10:44.231Z"
+    },
+    "awakening/messages (k)/アンナ_チキ.txt\u0000MID_支援_アンナ_チキ_Ｃ": {
+      "path": "Awakening/Messages (K)/アンナ_チキ.txt",
+      "entryKey": "MID_支援_アンナ_チキ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-11T16:07:52.422Z"
     },
     "awakening/messages (k)/ウード_カラム_親子.txt\u0000MID_支援_ウード_カラム_親子_Ａ": {
       "path": "Awakening/Messages (K)/ウード_カラム_親子.txt",
