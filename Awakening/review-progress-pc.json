@@ -5982,6 +5982,18 @@
       ],
       "updatedAt": "2026-09-07T06:00:57.480Z"
     },
+    "awakening/messages (k)/クロム_スミア.txt": {
+      "path": "Awakening/Messages (K)/クロム_スミア.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_クロム_スミア_Ｃ_00",
+        "MID_支援_クロム_スミア_Ｃ",
+        "MID_支援_クロム_スミア_Ｂ",
+        "MID_支援_クロム_スミア_Ａ",
+        "MID_支援_クロム_スミア_Ｓ"
+      ],
+      "updatedAt": "2026-10-11T05:55:54.818Z"
+    },
     "awakening/messages (k)/クロム_ルキナ.txt": {
       "path": "Awakening/Messages (K)/クロム_ルキナ.txt",
       "mode": "main",
@@ -6546,6 +6558,36 @@
         "MID_支援_マーク女_ルキナ_親子_Ａ"
       ],
       "updatedAt": "2026-09-06T04:33:11.826Z"
+    },
+    "awakening/messages (k)/マーク男_カラム_親子.txt": {
+      "path": "Awakening/Messages (K)/マーク男_カラム_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マーク男_カラム_親子_Ｃ",
+        "MID_支援_マーク男_カラム_親子_Ｂ",
+        "MID_支援_マーク男_カラム_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-11T05:54:06.557Z"
+    },
+    "awakening/messages (k)/マーク男_クロム_親子.txt": {
+      "path": "Awakening/Messages (K)/マーク男_クロム_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マーク男_クロム_親子_Ｃ",
+        "MID_支援_マーク男_クロム_親子_Ｂ",
+        "MID_支援_マーク男_クロム_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-11T05:55:53.556Z"
+    },
+    "awakening/messages (k)/マーク男_フレデリク_親子.txt": {
+      "path": "Awakening/Messages (K)/マーク男_フレデリク_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マーク男_フレデリク_親子_Ｃ",
+        "MID_支援_マーク男_フレデリク_親子_Ｂ",
+        "MID_支援_マーク男_フレデリク_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-11T05:54:10.039Z"
     },
     "awakening/messages (k)/マーク男_マルス.txt": {
       "path": "Awakening/Messages (K)/マーク男_マルス.txt",
@@ -13575,6 +13617,12 @@
       "entryKey": "MID_支援_サーリャ_プレイヤー女_Ｃ_PCF1",
       "status": "approved",
       "updatedAt": "2026-10-07T14:17:31.755Z"
+    },
+    "awakening/messages (k)/サーリャ_ロンクー.txt\u0000MID_支援_サーリャ_ロンクー_Ｂ": {
+      "path": "Awakening/Messages (K)/サーリャ_ロンクー.txt",
+      "entryKey": "MID_支援_サーリャ_ロンクー_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-11T06:16:31.259Z"
     },
     "awakening/messages (k)/サーリャ_ロンクー.txt\u0000MID_支援_サーリャ_ロンクー_Ｃ": {
       "path": "Awakening/Messages (K)/サーリャ_ロンクー.txt",
