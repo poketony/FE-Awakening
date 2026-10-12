@@ -5937,6 +5937,27 @@
       ],
       "updatedAt": "2026-10-11T16:50:50.264Z"
     },
+    "awakening/messages (k)/ウード_ソール_親子.txt": {
+      "path": "Awakening/Messages (K)/ウード_ソール_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_ソール_親子_Ｃ",
+        "MID_支援_ウード_ソール_親子_Ｂ",
+        "MID_支援_ウード_ソール_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-12T00:23:53.439Z"
+    },
+    "awakening/messages (k)/ウード_デジェル.txt": {
+      "path": "Awakening/Messages (K)/ウード_デジェル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_デジェル_Ｃ",
+        "MID_支援_ウード_デジェル_Ｂ",
+        "MID_支援_ウード_デジェル_Ａ",
+        "MID_支援_ウード_デジェル_Ｓ"
+      ],
+      "updatedAt": "2026-10-12T00:24:52.242Z"
+    },
     "awakening/messages (k)/ウード_ブレディ.txt": {
       "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
       "mode": "main",
@@ -6432,6 +6453,16 @@
         "MID_支援_セレナ_リヒト_親子_Ａ"
       ],
       "updatedAt": "2026-10-11T18:17:46.804Z"
+    },
+    "awakening/messages (k)/セレナ_リベラ_親子.txt": {
+      "path": "Awakening/Messages (K)/セレナ_リベラ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_セレナ_リベラ_親子_Ｃ",
+        "MID_支援_セレナ_リベラ_親子_Ｂ",
+        "MID_支援_セレナ_リベラ_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-11T18:20:00.443Z"
     },
     "awakening/messages (k)/セレナ_ロラン.txt": {
       "path": "Awakening/Messages (K)/セレナ_ロラン.txt",
@@ -13718,6 +13749,54 @@
       "entryKey": "MID_支援_ウード_シンシア_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-11T16:50:48.501Z"
+    },
+    "awakening/messages (k)/ウード_セレナ.txt\u0000MID_支援_ウード_セレナ_Ａ": {
+      "path": "Awakening/Messages (K)/ウード_セレナ.txt",
+      "entryKey": "MID_支援_ウード_セレナ_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T00:20:15.980Z"
+    },
+    "awakening/messages (k)/ウード_セレナ.txt\u0000MID_支援_ウード_セレナ_Ｂ": {
+      "path": "Awakening/Messages (K)/ウード_セレナ.txt",
+      "entryKey": "MID_支援_ウード_セレナ_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T00:17:46.755Z"
+    },
+    "awakening/messages (k)/ウード_セレナ.txt\u0000MID_支援_ウード_セレナ_Ｃ": {
+      "path": "Awakening/Messages (K)/ウード_セレナ.txt",
+      "entryKey": "MID_支援_ウード_セレナ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T00:14:46.426Z"
+    },
+    "awakening/messages (k)/ウード_セレナ.txt\u0000MID_支援_ウード_セレナ_Ｓ": {
+      "path": "Awakening/Messages (K)/ウード_セレナ.txt",
+      "entryKey": "MID_支援_ウード_セレナ_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T00:23:50.611Z"
+    },
+    "awakening/messages (k)/ウード_ソール_親子.txt\u0000MID_支援_ウード_ソール_親子_Ａ": {
+      "path": "Awakening/Messages (K)/ウード_ソール_親子.txt",
+      "entryKey": "MID_支援_ウード_ソール_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T00:24:26.375Z"
+    },
+    "awakening/messages (k)/ウード_ソール_親子.txt\u0000MID_支援_ウード_ソール_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/ウード_ソール_親子.txt",
+      "entryKey": "MID_支援_ウード_ソール_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T00:24:10.212Z"
+    },
+    "awakening/messages (k)/ウード_ソール_親子.txt\u0000MID_支援_ウード_ソール_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ウード_ソール_親子.txt",
+      "entryKey": "MID_支援_ウード_ソール_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T00:24:02.660Z"
+    },
+    "awakening/messages (k)/ウード_デジェル.txt\u0000MID_支援_ウード_デジェル_Ｃ": {
+      "path": "Awakening/Messages (K)/ウード_デジェル.txt",
+      "entryKey": "MID_支援_ウード_デジェル_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T00:28:29.880Z"
     },
     "awakening/messages (k)/ウード_ブレディ.txt\u0000MID_支援_ウード_ブレディ_Ａ": {
       "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
