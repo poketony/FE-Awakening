@@ -227,7 +227,7 @@ MID_026_ED1A_結婚_リベラ: $t1$Wmusername|7$Wmリベラ|3$w0|$Wsリベラ|$W
 MID_026_ED1A_結婚_サーリャ: $t1$Wmusername|7$Wmサーリャ|3$w0|$Wsサーリャ|$Wa$SvpSE_VOICE_SALLYA_EVT_19|확실히 말할게. 나는 세계 같은 거보다\n당신이 더 소중해.$k$p$E笑,|그러니까 $Nu.\n당신을 놓지 않을 거야.$k\n$Wsusername|$Wa$w0|$E笑,|……$k
 MID_026_ED1A_結婚_オリヴィエ: $t1$Wmusername|7$Wmオリヴィエ|3$w0|$Wsオリヴィエ|$Wa$SvpSE_VOICE_OLIVIE_EVT_13|$E笑,|$Nu씨…\n저, 또 다른 꿈이 생겼어요.$k$p당신과 계속 함께 있고 싶어요…\n그것이 저의 가장 큰 꿈이에요.$k\n$Wsusername|$Wa$w0|$E笑,|……$k
 MID_026_ED1A_結婚_セルジュ: $t1$Wmusername|7$Wmセルジュ|3$w0|$Wsセルジュ|$Wa$SvpSE_VOICE_SERGE_EVT_18|$E笑,|당신이 없으면\n나도 미네르바도 슬플 거야.$k$p우리를 함께 행복하게 만들 수 있는 사람은\n$Nu… 당신밖에 없다구?$k\n$Wsusername|$Wa$w0|$E笑,|……$k
-MID_026_ED1A_結婚_ヘンリー: $t1$Wmusername|7$Wmヘンリー|3$w0|$Wsヘンリー|$Wa$SvpSE_VOICE_HENRI_EVT_19|$Nu, 네가 죽으면\n나도 같이 죽을 거야~.$k$p$E笑,|아하하. 그게 싫다면\n나와 함께 있어 줬으면 좋겠어~.$k\n$Wsusername|$Wa$w0|$E笑,|……$k
+MID_026_ED1A_結婚_ヘンリー: $t1$Wmusername|7$Wmヘンリー|3$w0|$Wsヘンリー|$Wa$SvpSE_VOICE_HENRI_EVT_19|$Nu, 네가 죽으면\n나도 같이 죽을 거야~$k$p$E笑,|아하하. 그게 싫다면\n나와 함께 있어 줬으면 좋겠어~$k\n$Wsusername|$Wa$w0|$E笑,|……$k
 MID_026_ED1A_結婚_マルス: $t1$Wmusername|7$Wmルキナ|3$w0|$Wsルキナ|$Wa$SvpSE_VOICE_MARTH_EVT_17|잊지 말아 주세요. 당신은\n우리의 미래를 구해 줬어요.$k$p$E笑,|아무것도 희생하지 않고, 사룡을 멸할 방법…\n둘이서라면 분명 찾을 수 있을 거예요.$k\n$Wsusername|$Wa$w0|$E笑,|……$k
 MID_026_ED1A_結婚_サイリ: $t1$Wmusername|7$Wmサイリ|3$w0|$Wsサイリ|$Wa$SvpSE_VOICE_SAYRI_EVT_2|내 고향의 꽃을 보러 가자,\n$Nu…$k$p$E笑,|부족한 부인으로서\n남편의 슬픔을 위로하고 싶다…$k\n$Wsusername|$Wa$w0|$E笑,|……$k
 MID_026_ED1A_結婚_バジーリオ: $t1$Wmusername|7$Wmバジーリオ|3$w0|$Wsバジーリオ|$Wa$SvpSE_VOICE_BASILIO_EVT_1|$Nu 넌\n혼자서 너무 많은 짐을 든다구.$k$p$E笑,|걱정하지 마. 사람은 살아 있는 한\n어떻게든 방법을 찾아내는 존재니까.$k\n$Wsusername|$Wa$w0|$E笑,|……$k
