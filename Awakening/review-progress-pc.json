@@ -6040,6 +6040,16 @@
       ],
       "updatedAt": "2026-10-12T01:53:14.872Z"
     },
+    "awakening/messages (k)/ウード_マーク男.txt": {
+      "path": "Awakening/Messages (K)/ウード_マーク男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_マーク男_Ｃ",
+        "MID_支援_ウード_マーク男_Ｂ",
+        "MID_支援_ウード_マーク男_Ａ"
+      ],
+      "updatedAt": "2026-10-12T01:54:41.578Z"
+    },
     "awakening/messages (k)/ウード_リズ_親子.txt": {
       "path": "Awakening/Messages (K)/ウード_リズ_親子.txt",
       "mode": "main",
@@ -14043,6 +14053,12 @@
       "entryKey": "MID_支援_ウード_ヘンリー_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-12T01:53:25.113Z"
+    },
+    "awakening/messages (k)/ウード_マーク男.txt\u0000MID_支援_ウード_マーク男_Ｃ": {
+      "path": "Awakening/Messages (K)/ウード_マーク男.txt",
+      "entryKey": "MID_支援_ウード_マーク男_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T01:57:34.394Z"
     },
     "awakening/messages (k)/ウード_リズ_親子.txt\u0000MID_支援_ウード_リズ_親子_Ａ": {
       "path": "Awakening/Messages (K)/ウード_リズ_親子.txt",
