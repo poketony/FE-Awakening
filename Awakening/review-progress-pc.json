@@ -5989,6 +5989,16 @@
       ],
       "updatedAt": "2026-09-06T11:03:12.260Z"
     },
+    "awakening/messages (k)/ウード_プレイヤー男_親子.txt": {
+      "path": "Awakening/Messages (K)/ウード_プレイヤー男_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_プレイヤー男_親子_Ｃ_PCM1",
+        "MID_支援_ウード_プレイヤー男_親子_Ｂ_PCM1",
+        "MID_支援_ウード_プレイヤー男_親子_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-10-12T00:54:12.593Z"
+    },
     "awakening/messages (k)/ウード_リズ_親子.txt": {
       "path": "Awakening/Messages (K)/ウード_リズ_親子.txt",
       "mode": "main",
@@ -13872,6 +13882,12 @@
       "entryKey": "MID_支援_ウード_ノワール_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-12T00:41:20.215Z"
+    },
+    "awakening/messages (k)/ウード_ノワール.txt\u0000MID_支援_ウード_ノワール_Ｓ": {
+      "path": "Awakening/Messages (K)/ウード_ノワール.txt",
+      "entryKey": "MID_支援_ウード_ノワール_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T00:54:09.755Z"
     },
     "awakening/messages (k)/ウード_ブレディ.txt\u0000MID_支援_ウード_ブレディ_Ａ": {
       "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
