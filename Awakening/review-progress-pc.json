@@ -5979,6 +5979,16 @@
       ],
       "updatedAt": "2026-10-12T00:39:01.338Z"
     },
+    "awakening/messages (k)/ウード_フレデリク_親子.txt": {
+      "path": "Awakening/Messages (K)/ウード_フレデリク_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_フレデリク_親子_Ｃ",
+        "MID_支援_ウード_フレデリク_親子_Ｂ",
+        "MID_支援_ウード_フレデリク_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-12T01:49:35.936Z"
+    },
     "awakening/messages (k)/ウード_ブレディ.txt": {
       "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
       "mode": "main",
@@ -13909,6 +13919,12 @@
       "entryKey": "MID_支援_ウード_ノワール_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-12T00:54:09.755Z"
+    },
+    "awakening/messages (k)/ウード_フレデリク_親子.txt\u0000MID_支援_ウード_フレデリク_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ウード_フレデリク_親子.txt",
+      "entryKey": "MID_支援_ウード_フレデリク_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T01:50:08.871Z"
     },
     "awakening/messages (k)/ウード_ブレディ.txt\u0000MID_支援_ウード_ブレディ_Ａ": {
       "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
