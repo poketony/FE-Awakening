@@ -6092,6 +6092,16 @@
       ],
       "updatedAt": "2026-10-08T21:27:19.877Z"
     },
+    "awakening/messages (k)/ウード_リベラ_親子.txt": {
+      "path": "Awakening/Messages (K)/ウード_リベラ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_リベラ_親子_Ｃ",
+        "MID_支援_ウード_リベラ_親子_Ｂ",
+        "MID_支援_ウード_リベラ_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-12T02:33:39.239Z"
+    },
     "awakening/messages (k)/ウード_ルキナ.txt": {
       "path": "Awakening/Messages (K)/ウード_ルキナ.txt",
       "mode": "main",
@@ -14177,6 +14187,12 @@
       "entryKey": "MID_支援_ウード_リヒト_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-08T21:27:48.155Z"
+    },
+    "awakening/messages (k)/ウード_リベラ_親子.txt\u0000MID_支援_ウード_リベラ_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ウード_リベラ_親子.txt",
+      "entryKey": "MID_支援_ウード_リベラ_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T02:33:53.752Z"
     },
     "awakening/messages (k)/ウード_ヴィオール_親子.txt\u0000MID_支援_ウード_ヴィオール_親子_Ａ": {
       "path": "Awakening/Messages (K)/ウード_ヴィオール_親子.txt",
