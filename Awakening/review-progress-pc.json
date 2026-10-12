@@ -6123,6 +6123,17 @@
       ],
       "updatedAt": "2026-10-12T02:41:55.061Z"
     },
+    "awakening/messages (k)/ウード_ンン.txt": {
+      "path": "Awakening/Messages (K)/ウード_ンン.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_ンン_Ｃ",
+        "MID_支援_ウード_ンン_Ｂ",
+        "MID_支援_ウード_ンン_Ａ",
+        "MID_支援_ウード_ンン_Ｓ"
+      ],
+      "updatedAt": "2026-10-12T02:43:45.890Z"
+    },
     "awakening/messages (k)/ウード_ヴィオール_親子.txt": {
       "path": "Awakening/Messages (K)/ウード_ヴィオール_親子.txt",
       "mode": "main",
@@ -14215,6 +14226,12 @@
       "entryKey": "MID_支援_ウード_リベラ_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-12T02:33:53.752Z"
+    },
+    "awakening/messages (k)/ウード_ロンクー_親子.txt\u0000MID_支援_ウード_ロンクー_親子_Ａ": {
+      "path": "Awakening/Messages (K)/ウード_ロンクー_親子.txt",
+      "entryKey": "MID_支援_ウード_ロンクー_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T02:43:44.550Z"
     },
     "awakening/messages (k)/ウード_ロンクー_親子.txt\u0000MID_支援_ウード_ロンクー_親子_Ｂ": {
       "path": "Awakening/Messages (K)/ウード_ロンクー_親子.txt",
