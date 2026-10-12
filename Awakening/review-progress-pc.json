@@ -7069,6 +7069,17 @@
       ],
       "updatedAt": "2026-10-06T15:25:05.279Z"
     },
+    "awakening/messages (k)/ヴィオール_サーリャ.txt": {
+      "path": "Awakening/Messages (K)/ヴィオール_サーリャ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴィオール_サーリャ_Ｃ",
+        "MID_支援_ヴィオール_サーリャ_Ｂ",
+        "MID_支援_ヴィオール_サーリャ_Ａ",
+        "MID_支援_ヴィオール_サーリャ_Ｓ"
+      ],
+      "updatedAt": "2026-10-12T04:06:51.256Z"
+    },
     "awakening/messages (k)/ヴィオール_プレイヤー男.txt": {
       "path": "Awakening/Messages (K)/ヴィオール_プレイヤー男.txt",
       "mode": "main",
@@ -15568,6 +15579,12 @@
       "entryKey": "MID_支援_ヴィオール_オリヴィエ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-07T04:38:12.436Z"
+    },
+    "awakening/messages (k)/ヴィオール_サーリャ.txt\u0000MID_支援_ヴィオール_サーリャ_Ｃ": {
+      "path": "Awakening/Messages (K)/ヴィオール_サーリャ.txt",
+      "entryKey": "MID_支援_ヴィオール_サーリャ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T04:08:31.895Z"
     },
     "awakening/messages (k)/ヴィオール_プレイヤー男.txt\u0000MID_支援_ヴィオール_プレイヤー男_Ａ_PCM1": {
       "path": "Awakening/Messages (K)/ヴィオール_プレイヤー男.txt",
