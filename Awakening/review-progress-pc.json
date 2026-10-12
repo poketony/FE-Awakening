@@ -6955,6 +6955,17 @@
       ],
       "updatedAt": "2026-10-09T09:04:01.400Z"
     },
+    "awakening/messages (k)/マルス_ロラン.txt": {
+      "path": "Awakening/Messages (K)/マルス_ロラン.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マルス_ロラン_Ｃ",
+        "MID_支援_マルス_ロラン_Ｂ",
+        "MID_支援_マルス_ロラン_Ａ",
+        "MID_支援_マルス_ロラン_Ｓ"
+      ],
+      "updatedAt": "2026-10-12T07:38:09.749Z"
+    },
     "awakening/messages (k)/マーク女_ウード_兄弟.txt": {
       "path": "Awakening/Messages (K)/マーク女_ウード_兄弟.txt",
       "mode": "main",
@@ -15701,6 +15712,12 @@
       "entryKey": "MID_支援_ヴィオール_サーリャ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-12T04:18:45.255Z"
+    },
+    "awakening/messages (k)/ヴィオール_セルジュ.txt\u0000MID_支援_ヴィオール_セルジュ_Ｃ": {
+      "path": "Awakening/Messages (K)/ヴィオール_セルジュ.txt",
+      "entryKey": "MID_支援_ヴィオール_セルジュ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T08:16:00.907Z"
     },
     "awakening/messages (k)/ヴィオール_プレイヤー男.txt\u0000MID_支援_ヴィオール_プレイヤー男_Ａ_PCM1": {
       "path": "Awakening/Messages (K)/ヴィオール_プレイヤー男.txt",
