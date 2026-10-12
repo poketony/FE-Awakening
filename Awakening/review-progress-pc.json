@@ -7016,6 +7016,17 @@
       ],
       "updatedAt": "2026-10-06T06:14:11.863Z"
     },
+    "awakening/messages (k)/マーク男_ンン.txt": {
+      "path": "Awakening/Messages (K)/マーク男_ンン.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マーク男_ンン_Ｃ",
+        "MID_支援_マーク男_ンン_Ｂ",
+        "MID_支援_マーク男_ンン_Ａ",
+        "MID_支援_マーク男_ンン_Ｓ"
+      ],
+      "updatedAt": "2026-10-12T06:45:46.453Z"
+    },
     "awakening/messages (k)/リズ_リベラ.txt": {
       "path": "Awakening/Messages (K)/リズ_リベラ.txt",
       "mode": "main",
@@ -15486,6 +15497,12 @@
       "entryKey": "MID_支援_マーク男_マルス_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-06T06:29:54.042Z"
+    },
+    "awakening/messages (k)/マーク男_ンン.txt\u0000MID_支援_マーク男_ンン_Ｃ": {
+      "path": "Awakening/Messages (K)/マーク男_ンン.txt",
+      "entryKey": "MID_支援_マーク男_ンン_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T06:53:02.080Z"
     },
     "awakening/messages (k)/リズ_リベラ.txt\u0000MID_支援_リズ_リベラ_Ａ": {
       "path": "Awakening/Messages (K)/リズ_リベラ.txt",
