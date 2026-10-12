@@ -5989,6 +5989,17 @@
       ],
       "updatedAt": "2026-09-06T11:03:12.260Z"
     },
+    "awakening/messages (k)/ウード_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/ウード_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_ウード_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_ウード_プレイヤー女_Ａ_PCF1",
+        "MID_支援_ウード_プレイヤー女_Ｓ_PCF1"
+      ],
+      "updatedAt": "2026-10-12T01:03:04.744Z"
+    },
     "awakening/messages (k)/ウード_プレイヤー男.txt": {
       "path": "Awakening/Messages (K)/ウード_プレイヤー男.txt",
       "mode": "main",
@@ -13916,6 +13927,12 @@
       "entryKey": "MID_支援_ウード_ブレディ_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T11:06:05.428Z"
+    },
+    "awakening/messages (k)/ウード_プレイヤー男.txt\u0000MID_支援_ウード_プレイヤー男_Ａ_PCM1": {
+      "path": "Awakening/Messages (K)/ウード_プレイヤー男.txt",
+      "entryKey": "MID_支援_ウード_プレイヤー男_Ａ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-12T01:03:02.769Z"
     },
     "awakening/messages (k)/ウード_プレイヤー男.txt\u0000MID_支援_ウード_プレイヤー男_Ｂ_PCM1": {
       "path": "Awakening/Messages (K)/ウード_プレイヤー男.txt",
