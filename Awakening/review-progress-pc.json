@@ -5958,6 +5958,16 @@
       ],
       "updatedAt": "2026-10-12T00:24:52.242Z"
     },
+    "awakening/messages (k)/ウード_ドニ_親子.txt": {
+      "path": "Awakening/Messages (K)/ウード_ドニ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ウード_ドニ_親子_Ｃ",
+        "MID_支援_ウード_ドニ_親子_Ｂ",
+        "MID_支援_ウード_ドニ_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-12T00:34:06.378Z"
+    },
     "awakening/messages (k)/ウード_ブレディ.txt": {
       "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
       "mode": "main",
@@ -13809,6 +13819,12 @@
       "entryKey": "MID_支援_ウード_デジェル_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-12T00:28:29.880Z"
+    },
+    "awakening/messages (k)/ウード_デジェル.txt\u0000MID_支援_ウード_デジェル_Ｓ": {
+      "path": "Awakening/Messages (K)/ウード_デジェル.txt",
+      "entryKey": "MID_支援_ウード_デジェル_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-10-12T00:34:04.843Z"
     },
     "awakening/messages (k)/ウード_ブレディ.txt\u0000MID_支援_ウード_ブレディ_Ａ": {
       "path": "Awakening/Messages (K)/ウード_ブレディ.txt",
