@@ -7048,6 +7048,16 @@
       ],
       "updatedAt": "2026-10-07T17:18:41.637Z"
     },
+    "awakening/messages (k)/ヴァルハルト_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/ヴァルハルト_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴァルハルト_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_ヴァルハルト_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_ヴァルハルト_プレイヤー男_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-10-12T02:52:19.501Z"
+    },
     "awakening/messages (k)/ヴィオール_オリヴィエ.txt": {
       "path": "Awakening/Messages (K)/ヴィオール_オリヴィエ.txt",
       "mode": "main",
@@ -15498,6 +15508,12 @@
       "entryKey": "MID_支援_ンン_ノノ_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-07T05:01:24.275Z"
+    },
+    "awakening/messages (k)/ヴァルハルト_プレイヤー男.txt\u0000MID_支援_ヴァルハルト_プレイヤー男_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/ヴァルハルト_プレイヤー男.txt",
+      "entryKey": "MID_支援_ヴァルハルト_プレイヤー男_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-12T02:55:14.695Z"
     },
     "awakening/messages (k)/ヴィオール_オリヴィエ.txt\u0000MID_支援_ヴィオール_オリヴィエ_Ａ": {
       "path": "Awakening/Messages (K)/ヴィオール_オリヴィエ.txt",
