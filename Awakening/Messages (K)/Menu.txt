@@ -225,7 +225,7 @@ MID_CONFIG_ゲームスピード_手動: 수동
 MID_H_CONFIG_ゲームスピード_普通: 이동 등의 게임 진행 속도를 보통으로 합니다
 MID_H_CONFIG_ゲームスピード_速い: 이동 등의 게임 진행 속도를 빠르게 합니다
 MID_H_CONFIG_ゲームスピード_手動: A를 누르는 동안 이동 등의 게임 진행 속도가 빨라집니다
-MID_CONFIG_メッセージスピード: 메세지 속도
+MID_CONFIG_メッセージスピード: 메시지 속도
 MID_CONFIG_メッセージスピード_遅い: 느림
 MID_CONFIG_メッセージスピード_普通: 보통
 MID_CONFIG_メッセージスピード_速い: 빠름
@@ -531,7 +531,7 @@ MID_MYROOM_紹介: 잘 부탁드립니다.
 MID_MYROOM_挨拶: 안녕하세요.
 MID_MYROOM_戦闘: 승부해요!
 MID_MYROOM_仲間: 같이 힘냅시다.
-MID_MYROOM_スラッシュ: $a$a0/$a1 $a2
+MID_MYROOM_スラッシュ: / 
 MID_MYROOM_並び替え: 변경
 MID_MYROOM_番号順: 번호순
 MID_MYROOM_５０音順: 가나다순
@@ -756,7 +756,7 @@ MID_DUAL_★１２: 소르 기병단
 MID_DUAL_★１３: 베이크 광전사단
 MID_DUAL_★１４: 바질리오 용병군
 MID_DUAL_★１５: 리히트 신군단
-MID_DUAL_★１６: 헨리 마법족단
+MID_DUAL_★１６: 헨리 마법 여단
 MID_DUAL_★１７: 가이아 정찰대
 MID_DUAL_★１８: 사랴 마법군단
 MID_DUAL_★１９: 그레고 용병군단
