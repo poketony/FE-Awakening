@@ -4068,6 +4068,20 @@
       ],
       "updatedAt": "2026-09-29T08:03:06.472Z"
     },
+    "awakening/messages (k)/backup.txt": {
+      "path": "Awakening/Messages (K)/Backup.txt",
+      "mode": "main",
+      "expected": [
+        "MID_BACKUP_NOT_FOUND",
+        "MID_BACKUP_NOT_FORMATTED",
+        "MID_BACKUP_VERIFICATION_FAILED",
+        "MID_BACKUP_NOT_ENOUGH_SPACE",
+        "MID_BACKUP_FORMAT",
+        "MID_BACKUP_VERIFICATION_FAILED_FILE",
+        "MID_BACKUP_FORMAT_COMPLETE"
+      ],
+      "updatedAt": "2026-10-13T17:14:39.936Z"
+    },
     "awakening/messages (k)/e003.txt": {
       "path": "Awakening/Messages (K)/E003.txt",
       "mode": "main",
@@ -12555,6 +12569,12 @@
       "status": "approved",
       "updatedAt": "2026-10-13T17:14:21.871Z"
     },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_SORTIE": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_SORTIE",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:26.045Z"
+    },
     "awakening/messages (k)/gmap.txt\u0000MID_GMAP_VIEW": {
       "path": "Awakening/Messages (K)/GMAP.txt",
       "entryKey": "MID_GMAP_VIEW",
@@ -12573,11 +12593,23 @@
       "status": "approved",
       "updatedAt": "2026-10-13T17:14:17.197Z"
     },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_移動中": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_移動中",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:28.929Z"
+    },
     "awakening/messages (k)/gmap.txt\u0000MID_GMAP_章確認": {
       "path": "Awakening/Messages (K)/GMAP.txt",
       "entryKey": "MID_GMAP_章確認",
       "status": "approved",
       "updatedAt": "2026-10-13T17:14:10.040Z"
+    },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_自動移動": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_自動移動",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:26.840Z"
     },
     "awakening/messages (k)/gmap.txt\u0000MID_GMAP_課金確認": {
       "path": "Awakening/Messages (K)/GMAP.txt",
