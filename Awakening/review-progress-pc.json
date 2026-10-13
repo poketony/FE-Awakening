@@ -6976,6 +6976,16 @@
       ],
       "updatedAt": "2026-10-09T08:00:12.305Z"
     },
+    "awakening/messages (k)/マーク女_デジェル_兄弟.txt": {
+      "path": "Awakening/Messages (K)/マーク女_デジェル_兄弟.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マーク女_デジェル_兄弟_Ｃ",
+        "MID_支援_マーク女_デジェル_兄弟_Ｂ",
+        "MID_支援_マーク女_デジェル_兄弟_Ａ"
+      ],
+      "updatedAt": "2026-10-13T11:03:42.145Z"
+    },
     "awakening/messages (k)/マーク女_ノノ_親子.txt": {
       "path": "Awakening/Messages (K)/マーク女_ノノ_親子.txt",
       "mode": "main",
@@ -15609,6 +15619,12 @@
       "entryKey": "MID_支援_マーク女_ウード_兄弟_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-09T08:06:21.433Z"
+    },
+    "awakening/messages (k)/マーク女_デジェル_兄弟.txt\u0000MID_支援_マーク女_デジェル_兄弟_Ｃ": {
+      "path": "Awakening/Messages (K)/マーク女_デジェル_兄弟.txt",
+      "entryKey": "MID_支援_マーク女_デジェル_兄弟_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-13T11:06:09.443Z"
     },
     "awakening/messages (k)/マーク女_ノノ_親子.txt\u0000MID_支援_マーク女_ノノ_親子_Ａ": {
       "path": "Awakening/Messages (K)/マーク女_ノノ_親子.txt",
