@@ -12053,6 +12053,24 @@
       "status": "approved",
       "updatedAt": "2026-09-29T08:04:34.432Z"
     },
+    "awakening/messages (k)/backup.txt\u0000MID_BACKUP_FORMAT": {
+      "path": "Awakening/Messages (K)/Backup.txt",
+      "entryKey": "MID_BACKUP_FORMAT",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:50.615Z"
+    },
+    "awakening/messages (k)/backup.txt\u0000MID_BACKUP_FORMAT_COMPLETE": {
+      "path": "Awakening/Messages (K)/Backup.txt",
+      "entryKey": "MID_BACKUP_FORMAT_COMPLETE",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:52.201Z"
+    },
+    "awakening/messages (k)/backup.txt\u0000MID_BACKUP_NOT_ENOUGH_SPACE": {
+      "path": "Awakening/Messages (K)/Backup.txt",
+      "entryKey": "MID_BACKUP_NOT_ENOUGH_SPACE",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:49.385Z"
+    },
     "awakening/messages (k)/backup.txt\u0000MID_BACKUP_NOT_FORMATTED": {
       "path": "Awakening/Messages (K)/Backup.txt",
       "entryKey": "MID_BACKUP_NOT_FORMATTED",
@@ -12064,6 +12082,18 @@
       "entryKey": "MID_BACKUP_NOT_FOUND",
       "status": "approved",
       "updatedAt": "2026-10-13T17:14:44.840Z"
+    },
+    "awakening/messages (k)/backup.txt\u0000MID_BACKUP_VERIFICATION_FAILED": {
+      "path": "Awakening/Messages (K)/Backup.txt",
+      "entryKey": "MID_BACKUP_VERIFICATION_FAILED",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:48.486Z"
+    },
+    "awakening/messages (k)/backup.txt\u0000MID_BACKUP_VERIFICATION_FAILED_FILE": {
+      "path": "Awakening/Messages (K)/Backup.txt",
+      "entryKey": "MID_BACKUP_VERIFICATION_FAILED_FILE",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:51.381Z"
     },
     "awakening/messages (k)/e003.txt\u0000MCID_E000": {
       "path": "Awakening/Messages (K)/E003.txt",
