@@ -7662,6 +7662,22 @@
       ],
       "updatedAt": "2026-10-06T06:47:36.717Z"
     },
+    "awakening/messages (k)/様子_クロム1.txt": {
+      "path": "Awakening/Messages (K)/様子_クロム1.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_クロム_前",
+        "MID_様子_クロム_前_特殊",
+        "MID_様子_クロム_後",
+        "MID_様子_クロム_後_特殊",
+        "MID_様子_クロム_後_無言",
+        "MID_様子_クロム_前_親子_子",
+        "MID_様子_クロム_後_親子_子",
+        "MID_様子_クロム_前_恋人",
+        "MID_様子_クロム_後_恋人"
+      ],
+      "updatedAt": "2026-10-13T13:12:08.219Z"
+    },
     "awakening/messages (k)/様子_ソール1.txt": {
       "path": "Awakening/Messages (K)/様子_ソール1.txt",
       "mode": "main",
@@ -17582,6 +17598,18 @@
       "entryKey": "MID_様子_ウード_後_親子_父",
       "status": "approved",
       "updatedAt": "2026-09-07T05:10:30.348Z"
+    },
+    "awakening/messages (k)/様子_クロム1.txt\u0000MID_様子_クロム_前": {
+      "path": "Awakening/Messages (K)/様子_クロム1.txt",
+      "entryKey": "MID_様子_クロム_前",
+      "status": "approved",
+      "updatedAt": "2026-10-13T13:12:13.081Z"
+    },
+    "awakening/messages (k)/様子_クロム1.txt\u0000MID_様子_クロム_前_特殊": {
+      "path": "Awakening/Messages (K)/様子_クロム1.txt",
+      "entryKey": "MID_様子_クロム_前_特殊",
+      "status": "approved",
+      "updatedAt": "2026-10-13T13:12:15.111Z"
     },
     "awakening/messages (k)/様子_サイリ4.txt\u0000MID_様子_サイリ_前": {
       "path": "Awakening/Messages (K)/様子_サイリ4.txt",
