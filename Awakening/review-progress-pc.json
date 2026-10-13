@@ -7242,6 +7242,17 @@
       ],
       "updatedAt": "2026-09-22T04:14:37.080Z"
     },
+    "awakening/messages (k)/ヴェイク_オリヴィエ.txt": {
+      "path": "Awakening/Messages (K)/ヴェイク_オリヴィエ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴェイク_オリヴィエ_Ｃ",
+        "MID_支援_ヴェイク_オリヴィエ_Ｂ",
+        "MID_支援_ヴェイク_オリヴィエ_Ａ",
+        "MID_支援_ヴェイク_オリヴィエ_Ｓ"
+      ],
+      "updatedAt": "2026-10-13T08:07:59.197Z"
+    },
     "awakening/messages (k)/ヴェイク_ティアモ.txt": {
       "path": "Awakening/Messages (K)/ヴェイク_ティアモ.txt",
       "mode": "main",
@@ -16016,6 +16027,12 @@
       "entryKey": "MID_支援_ヴィオール_リズ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-07T12:57:30.747Z"
+    },
+    "awakening/messages (k)/ヴィオール_リベラ.txt\u0000MID_支援_ヴィオール_リベラ_Ａ": {
+      "path": "Awakening/Messages (K)/ヴィオール_リベラ.txt",
+      "entryKey": "MID_支援_ヴィオール_リベラ_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-13T08:07:57.638Z"
     },
     "awakening/messages (k)/ヴィオール_リベラ.txt\u0000MID_支援_ヴィオール_リベラ_Ｂ": {
       "path": "Awakening/Messages (K)/ヴィオール_リベラ.txt",
