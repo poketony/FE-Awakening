@@ -12525,6 +12525,12 @@
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:12.680Z"
     },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_店確認": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_店確認",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:17.197Z"
+    },
     "awakening/messages (k)/gmap.txt\u0000MID_GMAP_章確認": {
       "path": "Awakening/Messages (K)/GMAP.txt",
       "entryKey": "MID_GMAP_章確認",
@@ -12536,6 +12542,12 @@
       "entryKey": "MID_GMAP_遭遇戦確認",
       "status": "approved",
       "updatedAt": "2026-10-13T17:14:10.897Z"
+    },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_遭遇戦確認2": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_遭遇戦確認2",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:15.506Z"
     },
     "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_なし": {
       "path": "Awakening/Messages (K)/menu.txt",
