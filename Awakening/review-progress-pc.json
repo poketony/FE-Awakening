@@ -7283,6 +7283,17 @@
       ],
       "updatedAt": "2026-10-13T08:34:28.866Z"
     },
+    "awakening/messages (k)/ヴェイク_サーリャ.txt": {
+      "path": "Awakening/Messages (K)/ヴェイク_サーリャ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴェイク_サーリャ_Ｃ",
+        "MID_支援_ヴェイク_サーリャ_Ｂ",
+        "MID_支援_ヴェイク_サーリャ_Ａ",
+        "MID_支援_ヴェイク_サーリャ_Ｓ"
+      ],
+      "updatedAt": "2026-10-13T11:13:19.862Z"
+    },
     "awakening/messages (k)/ヴェイク_ティアモ.txt": {
       "path": "Awakening/Messages (K)/ヴェイク_ティアモ.txt",
       "mode": "main",
@@ -16173,6 +16184,12 @@
       "entryKey": "MID_支援_ヴェイク_クロム_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-13T08:38:09.704Z"
+    },
+    "awakening/messages (k)/ヴェイク_サーリャ.txt\u0000MID_支援_ヴェイク_サーリャ_Ｃ": {
+      "path": "Awakening/Messages (K)/ヴェイク_サーリャ.txt",
+      "entryKey": "MID_支援_ヴェイク_サーリャ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-13T11:15:46.605Z"
     },
     "awakening/messages (k)/ヴェイク_ティアモ.txt\u0000MID_支援_ヴェイク_ティアモ_Ａ": {
       "path": "Awakening/Messages (K)/ヴェイク_ティアモ.txt",
