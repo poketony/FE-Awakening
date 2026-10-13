@@ -12053,6 +12053,18 @@
       "status": "approved",
       "updatedAt": "2026-09-29T08:04:34.432Z"
     },
+    "awakening/messages (k)/backup.txt\u0000MID_BACKUP_NOT_FORMATTED": {
+      "path": "Awakening/Messages (K)/Backup.txt",
+      "entryKey": "MID_BACKUP_NOT_FORMATTED",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:46.461Z"
+    },
+    "awakening/messages (k)/backup.txt\u0000MID_BACKUP_NOT_FOUND": {
+      "path": "Awakening/Messages (K)/Backup.txt",
+      "entryKey": "MID_BACKUP_NOT_FOUND",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:44.840Z"
+    },
     "awakening/messages (k)/e003.txt\u0000MCID_E000": {
       "path": "Awakening/Messages (K)/E003.txt",
       "entryKey": "MCID_E000",
