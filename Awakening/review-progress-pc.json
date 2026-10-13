@@ -7696,6 +7696,27 @@
       ],
       "updatedAt": "2026-10-13T13:12:08.219Z"
     },
+    "awakening/messages (k)/様子_シャンブレー3.txt": {
+      "path": "Awakening/Messages (K)/様子_シャンブレー3.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_シャンブレー_前",
+        "MID_様子_シャンブレー_前_無言",
+        "MID_様子_シャンブレー_前_敬さん",
+        "MID_様子_シャンブレー_後",
+        "MID_様子_シャンブレー_後_敬さん",
+        "MID_様子_シャンブレー_後_無言",
+        "MID_様子_シャンブレー_前_親子_子",
+        "MID_様子_シャンブレー_後_親子_子",
+        "MID_様子_シャンブレー_前_親子_母",
+        "MID_様子_シャンブレー_後_親子_母",
+        "MID_様子_シャンブレー_前_親子_父",
+        "MID_様子_シャンブレー_後_親子_父",
+        "MID_様子_シャンブレー_前_恋人",
+        "MID_様子_シャンブレー_後_恋人"
+      ],
+      "updatedAt": "2026-10-13T16:39:19.831Z"
+    },
     "awakening/messages (k)/様子_ソール1.txt": {
       "path": "Awakening/Messages (K)/様子_ソール1.txt",
       "mode": "main",
@@ -17653,6 +17674,12 @@
       "status": "approved",
       "updatedAt": "2026-10-13T16:38:11.256Z"
     },
+    "awakening/messages (k)/様子_カラム3.txt\u0000MID_様子_カラム_後_恋人": {
+      "path": "Awakening/Messages (K)/様子_カラム3.txt",
+      "entryKey": "MID_様子_カラム_後_恋人",
+      "status": "approved",
+      "updatedAt": "2026-10-13T16:38:38.228Z"
+    },
     "awakening/messages (k)/様子_カラム3.txt\u0000MID_様子_カラム_後_敬さん": {
       "path": "Awakening/Messages (K)/様子_カラム3.txt",
       "entryKey": "MID_様子_カラム_後_敬さん",
@@ -17790,6 +17817,12 @@
       "entryKey": "MID_様子_サイリ_後_通殿",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/様子_シャンブレー3.txt\u0000MID_様子_シャンブレー_前": {
+      "path": "Awakening/Messages (K)/様子_シャンブレー3.txt",
+      "entryKey": "MID_様子_シャンブレー_前",
+      "status": "approved",
+      "updatedAt": "2026-10-13T16:39:43.502Z"
     },
     "awakening/messages (k)/様子_ソール1.txt\u0000MID_様子_ソール_前": {
       "path": "Awakening/Messages (K)/様子_ソール1.txt",
