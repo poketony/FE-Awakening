@@ -12525,6 +12525,48 @@
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:12.680Z"
     },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_ACCOUNT": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_ACCOUNT",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:23.497Z"
+    },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_CONTACT": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_CONTACT",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:22.825Z"
+    },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_ENCOUNT": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_ENCOUNT",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:21.211Z"
+    },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_SCENARIO": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_SCENARIO",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:20.304Z"
+    },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_SHOP": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_SHOP",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:21.871Z"
+    },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_VIEW": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_VIEW",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:24.819Z"
+    },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_交渉確認": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_交渉確認",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:18.268Z"
+    },
     "awakening/messages (k)/gmap.txt\u0000MID_GMAP_店確認": {
       "path": "Awakening/Messages (K)/GMAP.txt",
       "entryKey": "MID_GMAP_店確認",
@@ -12536,6 +12578,12 @@
       "entryKey": "MID_GMAP_章確認",
       "status": "approved",
       "updatedAt": "2026-10-13T17:14:10.040Z"
+    },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_課金確認": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_課金確認",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:19.046Z"
     },
     "awakening/messages (k)/gmap.txt\u0000MID_GMAP_遭遇戦確認": {
       "path": "Awakening/Messages (K)/GMAP.txt",
