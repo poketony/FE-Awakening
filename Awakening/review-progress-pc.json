@@ -7253,6 +7253,16 @@
       ],
       "updatedAt": "2026-10-13T08:07:59.197Z"
     },
+    "awakening/messages (k)/ヴェイク_クロム.txt": {
+      "path": "Awakening/Messages (K)/ヴェイク_クロム.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴェイク_クロム_Ｃ",
+        "MID_支援_ヴェイク_クロム_Ｂ",
+        "MID_支援_ヴェイク_クロム_Ａ"
+      ],
+      "updatedAt": "2026-10-13T08:34:28.866Z"
+    },
     "awakening/messages (k)/ヴェイク_ティアモ.txt": {
       "path": "Awakening/Messages (K)/ヴェイク_ティアモ.txt",
       "mode": "main",
@@ -16063,6 +16073,12 @@
       "entryKey": "MID_支援_ヴェイク_オリヴィエ_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-13T08:22:37.738Z"
+    },
+    "awakening/messages (k)/ヴェイク_オリヴィエ.txt\u0000MID_支援_ヴェイク_オリヴィエ_Ｓ": {
+      "path": "Awakening/Messages (K)/ヴェイク_オリヴィエ.txt",
+      "entryKey": "MID_支援_ヴェイク_オリヴィエ_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-10-13T08:34:27.649Z"
     },
     "awakening/messages (k)/ヴェイク_ティアモ.txt\u0000MID_支援_ヴェイク_ティアモ_Ａ": {
       "path": "Awakening/Messages (K)/ヴェイク_ティアモ.txt",
