@@ -4271,6 +4271,28 @@
       ],
       "updatedAt": "2026-10-06T06:48:10.429Z"
     },
+    "awakening/messages (k)/gmap.txt": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "mode": "main",
+      "expected": [
+        "MID_GMAP_章確認",
+        "MID_GMAP_遭遇戦確認",
+        "MID_GMAP_遭遇戦確認2",
+        "MID_GMAP_店確認",
+        "MID_GMAP_交渉確認",
+        "MID_GMAP_課金確認",
+        "MID_GMAP_SCENARIO",
+        "MID_GMAP_ENCOUNT",
+        "MID_GMAP_SHOP",
+        "MID_GMAP_CONTACT",
+        "MID_GMAP_ACCOUNT",
+        "MID_GMAP_VIEW",
+        "MID_GMAP_SORTIE",
+        "MID_GMAP_自動移動",
+        "MID_GMAP_移動中"
+      ],
+      "updatedAt": "2026-10-13T17:14:07.639Z"
+    },
     "awakening/messages (k)/menu.txt": {
       "path": "Awakening/Messages (K)/Menu.txt",
       "mode": "main",
@@ -12502,6 +12524,18 @@
       "entryKey": "MEC_Yes",
       "status": "approved",
       "updatedAt": "2026-10-06T06:48:12.680Z"
+    },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_章確認": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_章確認",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:10.040Z"
+    },
+    "awakening/messages (k)/gmap.txt\u0000MID_GMAP_遭遇戦確認": {
+      "path": "Awakening/Messages (K)/GMAP.txt",
+      "entryKey": "MID_GMAP_遭遇戦確認",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:14:10.897Z"
     },
     "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_なし": {
       "path": "Awakening/Messages (K)/menu.txt",
