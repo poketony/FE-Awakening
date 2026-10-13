@@ -7157,6 +7157,17 @@
       ],
       "updatedAt": "2026-10-13T00:40:29.185Z"
     },
+    "awakening/messages (k)/ヴィオール_ノノ.txt": {
+      "path": "Awakening/Messages (K)/ヴィオール_ノノ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴィオール_ノノ_Ｃ",
+        "MID_支援_ヴィオール_ノノ_Ｂ",
+        "MID_支援_ヴィオール_ノノ_Ａ",
+        "MID_支援_ヴィオール_ノノ_Ｓ"
+      ],
+      "updatedAt": "2026-10-13T00:57:41.073Z"
+    },
     "awakening/messages (k)/ヴィオール_プレイヤー男.txt": {
       "path": "Awakening/Messages (K)/ヴィオール_プレイヤー男.txt",
       "mode": "main",
@@ -15806,6 +15817,12 @@
       "entryKey": "MID_支援_ヴィオール_ティアモ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-13T00:56:24.853Z"
+    },
+    "awakening/messages (k)/ヴィオール_ノノ.txt\u0000MID_支援_ヴィオール_ノノ_Ｃ": {
+      "path": "Awakening/Messages (K)/ヴィオール_ノノ.txt",
+      "entryKey": "MID_支援_ヴィオール_ノノ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-13T02:29:57.249Z"
     },
     "awakening/messages (k)/ヴィオール_プレイヤー男.txt\u0000MID_支援_ヴィオール_プレイヤー男_Ａ_PCM1": {
       "path": "Awakening/Messages (K)/ヴィオール_プレイヤー男.txt",
