@@ -7865,6 +7865,26 @@
       ],
       "updatedAt": "2026-09-06T12:29:36.266Z"
     },
+    "awakening/messages (k)/様子_ティアモ3.txt": {
+      "path": "Awakening/Messages (K)/様子_ティアモ3.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_ティアモ_前",
+        "MID_様子_ティアモ_前_敬さん",
+        "MID_様子_ティアモ_前_敬様",
+        "MID_様子_ティアモ_前_特殊",
+        "MID_様子_ティアモ_後",
+        "MID_様子_ティアモ_後_敬さん",
+        "MID_様子_ティアモ_後_敬様",
+        "MID_様子_ティアモ_後_特殊",
+        "MID_様子_ティアモ_後_無言",
+        "MID_様子_ティアモ_前_親子_子",
+        "MID_様子_ティアモ_後_親子_子",
+        "MID_様子_ティアモ_前_恋人",
+        "MID_様子_ティアモ_後_恋人"
+      ],
+      "updatedAt": "2026-10-13T16:46:13.928Z"
+    },
     "awakening/messages (k)/様子_パリス1.txt": {
       "path": "Awakening/Messages (K)/様子_パリス1.txt",
       "mode": "main",
@@ -18333,6 +18353,18 @@
       "entryKey": "MID_様子_チキ_後_親子_子",
       "status": "approved",
       "updatedAt": "2026-09-06T12:29:00.678Z"
+    },
+    "awakening/messages (k)/様子_ティアモ3.txt\u0000MID_様子_ティアモ_前": {
+      "path": "Awakening/Messages (K)/様子_ティアモ3.txt",
+      "entryKey": "MID_様子_ティアモ_前",
+      "status": "approved",
+      "updatedAt": "2026-10-13T16:46:16.519Z"
+    },
+    "awakening/messages (k)/様子_ティアモ3.txt\u0000MID_様子_ティアモ_前_敬さん": {
+      "path": "Awakening/Messages (K)/様子_ティアモ3.txt",
+      "entryKey": "MID_様子_ティアモ_前_敬さん",
+      "status": "approved",
+      "updatedAt": "2026-10-13T16:46:18.772Z"
     },
     "awakening/messages (k)/様子_パリス1.txt\u0000MID_様子_パリス_前": {
       "path": "Awakening/Messages (K)/様子_パリス1.txt",
