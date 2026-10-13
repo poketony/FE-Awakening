@@ -8016,6 +8016,26 @@
       ],
       "updatedAt": "2026-10-08T08:36:18.651Z"
     },
+    "awakening/messages (k)/様子_ルキナ1.txt": {
+      "path": "Awakening/Messages (K)/様子_ルキナ1.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_マルス_前",
+        "MID_様子_マルス_前_敬さん",
+        "MID_様子_マルス_後",
+        "MID_様子_マルス_後_敬さん",
+        "MID_様子_マルス_後_無言",
+        "MID_様子_マルス_前_親子_子",
+        "MID_様子_マルス_後_親子_子",
+        "MID_様子_マルス_前_親子_母",
+        "MID_様子_マルス_後_親子_母",
+        "MID_様子_マルス_前_親子_父",
+        "MID_様子_マルス_後_親子_父",
+        "MID_様子_マルス_前_恋人",
+        "MID_様子_マルス_後_恋人"
+      ],
+      "updatedAt": "2026-10-13T11:11:30.431Z"
+    },
     "awakening/messages (k)/様子_レンハ4.txt": {
       "path": "Awakening/Messages (K)/様子_レンハ4.txt",
       "mode": "main",
@@ -16135,6 +16155,12 @@
       "entryKey": "MID_支援_ヴェイク_オリヴィエ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-13T08:34:27.649Z"
+    },
+    "awakening/messages (k)/ヴェイク_クロム.txt\u0000MID_支援_ヴェイク_クロム_Ｂ": {
+      "path": "Awakening/Messages (K)/ヴェイク_クロム.txt",
+      "entryKey": "MID_支援_ヴェイク_クロム_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-13T11:12:53.988Z"
     },
     "awakening/messages (k)/ヴェイク_クロム.txt\u0000MID_支援_ヴェイク_クロム_Ｃ": {
       "path": "Awakening/Messages (K)/ヴェイク_クロム.txt",
