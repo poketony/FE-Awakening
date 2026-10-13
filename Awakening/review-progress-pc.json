@@ -7717,6 +7717,27 @@
       ],
       "updatedAt": "2026-10-13T16:39:19.831Z"
     },
+    "awakening/messages (k)/様子_シンシア3.txt": {
+      "path": "Awakening/Messages (K)/様子_シンシア3.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_シンシア_前",
+        "MID_様子_シンシア_前_無言",
+        "MID_様子_シンシア_前_通さん",
+        "MID_様子_シンシア_後",
+        "MID_様子_シンシア_後_通さん",
+        "MID_様子_シンシア_後_無言",
+        "MID_様子_シンシア_前_親子_子",
+        "MID_様子_シンシア_後_親子_子",
+        "MID_様子_シンシア_前_親子_母",
+        "MID_様子_シンシア_後_親子_母",
+        "MID_様子_シンシア_前_親子_父",
+        "MID_様子_シンシア_後_親子_父",
+        "MID_様子_シンシア_前_恋人",
+        "MID_様子_シンシア_後_恋人"
+      ],
+      "updatedAt": "2026-10-13T17:11:32.966Z"
+    },
     "awakening/messages (k)/様子_ソール1.txt": {
       "path": "Awakening/Messages (K)/様子_ソール1.txt",
       "mode": "main",
@@ -7978,6 +7999,22 @@
         "MID_様子_フラヴィア_後_恋人"
       ],
       "updatedAt": "2026-10-13T16:51:04.912Z"
+    },
+    "awakening/messages (k)/様子_フラヴィア4.txt": {
+      "path": "Awakening/Messages (K)/様子_フラヴィア4.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_フラヴィア_前",
+        "MID_様子_フラヴィア_前_特殊",
+        "MID_様子_フラヴィア_後",
+        "MID_様子_フラヴィア_後_特殊",
+        "MID_様子_フラヴィア_後_無言",
+        "MID_様子_フラヴィア_前_親子_子",
+        "MID_様子_フラヴィア_後_親子_子",
+        "MID_様子_フラヴィア_前_恋人",
+        "MID_様子_フラヴィア_後_恋人"
+      ],
+      "updatedAt": "2026-10-13T16:55:29.224Z"
     },
     "awakening/messages (k)/様子_プレイヤー男1.txt": {
       "path": "Awakening/Messages (K)/様子_プレイヤー男1.txt",
@@ -17973,6 +18010,18 @@
       "entryKey": "MID_様子_シャンブレー_後_親子_父",
       "status": "approved",
       "updatedAt": "2026-10-13T16:44:25.794Z"
+    },
+    "awakening/messages (k)/様子_シンシア3.txt\u0000MID_様子_シンシア_前": {
+      "path": "Awakening/Messages (K)/様子_シンシア3.txt",
+      "entryKey": "MID_様子_シンシア_前",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:11:36.041Z"
+    },
+    "awakening/messages (k)/様子_シンシア3.txt\u0000MID_様子_シンシア_前_無言": {
+      "path": "Awakening/Messages (K)/様子_シンシア3.txt",
+      "entryKey": "MID_様子_シンシア_前_無言",
+      "status": "approved",
+      "updatedAt": "2026-10-13T17:11:36.857Z"
     },
     "awakening/messages (k)/様子_ソール1.txt\u0000MID_様子_ソール_前": {
       "path": "Awakening/Messages (K)/様子_ソール1.txt",
