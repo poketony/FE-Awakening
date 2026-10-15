@@ -5735,6 +5735,31 @@
       ],
       "updatedAt": "2026-09-08T02:37:59.174Z"
     },
+    "awakening/messages (k)/x012.txt": {
+      "path": "Awakening/Messages (K)/X012.txt",
+      "mode": "main",
+      "expected": [
+        "MID_X012_OP1_Female",
+        "MID_X012_OP1_Male",
+        "MID_X012_OP2_PCM1",
+        "MID_X012_OP2_PCF1",
+        "MID_X012_TK1_Female",
+        "MID_X012_TK1_Female_02_PCM1",
+        "MID_X012_TK1_Male",
+        "MID_X012_TK1_Male_02",
+        "MID_X012_TK1_Male_03_PCF1",
+        "MID_X012_ED1",
+        "MID_X012_ED2_Female_PCM1",
+        "MID_X012_ED2_Male_PCF1",
+        "MID_X012_ZOEN1_Male",
+        "MID_X012_ZOEN1_Female",
+        "MID_X012_BT1",
+        "MID_X012_BOSS_DIE1",
+        "MID_X012_DIE_マーク男",
+        "MID_X012_DIE_マーク女"
+      ],
+      "updatedAt": "2026-10-15T02:33:12.951Z"
+    },
     "awakening/messages (k)/x019.txt": {
       "path": "Awakening/Messages (K)/X019.txt",
       "mode": "main",
@@ -14285,6 +14310,18 @@
       "entryKey": "MID_P002_リズ",
       "status": "approved",
       "updatedAt": "2026-09-06T16:29:59.137Z"
+    },
+    "awakening/messages (k)/x012.txt\u0000MID_X012_OP1_Female": {
+      "path": "Awakening/Messages (K)/X012.txt",
+      "entryKey": "MID_X012_OP1_Female",
+      "status": "approved",
+      "updatedAt": "2026-10-15T02:33:19.114Z"
+    },
+    "awakening/messages (k)/x012.txt\u0000MID_X012_OP1_Male": {
+      "path": "Awakening/Messages (K)/X012.txt",
+      "entryKey": "MID_X012_OP1_Male",
+      "status": "approved",
+      "updatedAt": "2026-10-15T02:33:21.245Z"
     },
     "awakening/messages (k)/x015.txt\u0000MID_X015_BOSS_DIE1": {
       "path": "Awakening/Messages (K)/x015.txt",
