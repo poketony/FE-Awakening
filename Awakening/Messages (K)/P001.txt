@@ -4,7 +4,7 @@ MESS_ARCHIVE_P001
 Message Name: Message
 
 
-MID_P001_OP1: $t1$Wmクロム|3$w0|$Wmusername|7$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_29|$E怒,|우리들의 최후의 싸움이다!$k$p$E笑,|괜찮아, $Nu.\n이 인연은… 운명보다 더 강해.$k$p네가 함께 있어 주는 한…\n지지 않아.$k$p$E怒,|가자, $Nu!\n여기서 반드시 녀석을 쓰러뜨린다!$k
+MID_P001_OP1: $t1$Wmクロム|3$w0|$Wmusername|7$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_29|$E怒,|우리들의 최후의 싸움이다!$k$p$E笑,|괜찮아, $Nu.\n이 인연은… 운명 따위보다 훨씬 강해.$k$p네가 함께 있어 주는 한…\n지지 않아.$k$p$E怒,|가자, $Nu!\n여기서 반드시 녀석을 쓰러뜨린다!$k
 MID_P001_MOVIE1: $t1$Wm？？？|3$w0|$Ws？？？|$Wa【무비 미래편 크롬】$k
 MID_P001_MOVIE2: $t1$Wm？？？|3$w0|$Ws？？？|$Wa【무비 미래편 크롬 살해】$k
 MID_P001_TUT_システムメニュー: 아래 화면의『튜토리얼 카드』를 확인해 주십시오.
@@ -14,7 +14,7 @@ MID_P001_TUT_チュートリアルオフ: 게임 진행 시에 가끔, 위 화�
 MID_P001_TUT_移動: $t0$Wmクロム|0$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_28|$Nu, 녀석에게 접근하자.\n이동한다!$k
 MID_P001_TUT_行動の交代: $t0$Wmファウダー|8$w0|$Wsファウダー|$Wa$SvpSE_VOICE_FAUDER_EVT_1|$E笑,|크크… 쓸데없는 발버둥이다.$k
 MID_P001_TUT_戦闘: $t0$Wmクロム|0$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_42|$E怒,|놈과의 거리를 좁혔다.\n한 번에 공격하자!$k
-MID_P001_BT1: $t0$Wmファウダー|0$w0|$Wsファウダー|$Wa크크, 운명에는 거스를 수 없다…$k$p$E笑,|오너라, 어리석은 자들이여!$k
+MID_P001_BT1: $t0$Wmファウダー|0$w0|$Wsファウダー|$Wa크크, 운명을 거스를 수는 없다…$k$p$E笑,|오너라, 어리석은 자들이여!$k
 MID_P001_PICK_クロム: $t0$Wmクロム|0$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_39|$E怒,|좋아, 내가 간다!$k
 MID_P001_PICK_プレイヤー: $t0$Wmクロム|0$w0|$Wsクロム|$Wa$SvpSE_VOICE_CHROM_EVT_53|$E怒,|부탁한다, $Nu!$k
 MID_P001_DIE_クロム: $t1$Wmクロム|3$w0|$Wsクロム|$Wa$E苦,汗|미안… $Nu…\n…너만이라도…… 도망, 쳐…$k\n$Wsクロム|$Wd$w0|$Wmファウダー|3$w0|$Wsファウダー|$Wa크크…\n이 결말이야말로, 운명…!$k
