@@ -6425,6 +6425,16 @@
       ],
       "updatedAt": "2026-10-11T16:42:31.355Z"
     },
+    "awakening/messages (k)/エメリナ_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/エメリナ_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_エメリナ_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_エメリナ_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_エメリナ_プレイヤー女_Ａ_PCF1"
+      ],
+      "updatedAt": "2026-10-15T07:20:00.240Z"
+    },
     "awakening/messages (k)/エメリナ_プレイヤー男.txt": {
       "path": "Awakening/Messages (K)/エメリナ_プレイヤー男.txt",
       "mode": "main",
@@ -16187,6 +16197,12 @@
       "entryKey": "MID_支援_ウード_ヴェイク_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-11T16:42:35.762Z"
+    },
+    "awakening/messages (k)/エメリナ_プレイヤー女.txt\u0000MID_支援_エメリナ_プレイヤー女_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/エメリナ_プレイヤー女.txt",
+      "entryKey": "MID_支援_エメリナ_プレイヤー女_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-15T07:24:07.815Z"
     },
     "awakening/messages (k)/エメリナ_プレイヤー男.txt\u0000MID_支援_エメリナ_プレイヤー男_Ａ_PCM1": {
       "path": "Awakening/Messages (K)/エメリナ_プレイヤー男.txt",
