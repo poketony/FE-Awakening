@@ -8735,6 +8735,21 @@
       ],
       "updatedAt": "2026-10-08T06:07:39.493Z"
     },
+    "awakening/messages (k)/様子_マーク男4.txt": {
+      "path": "Awakening/Messages (K)/様子_マーク男4.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_マーク男_前_敬さん",
+        "MID_様子_マーク男_後_敬さん",
+        "MID_様子_マーク男_前_親子_母",
+        "MID_様子_マーク男_後_親子_母",
+        "MID_様子_マーク男_前_親子_父",
+        "MID_様子_マーク男_後_親子_父",
+        "MID_様子_マーク男_前_恋人",
+        "MID_様子_マーク男_後_恋人"
+      ],
+      "updatedAt": "2026-10-15T04:52:42.231Z"
+    },
     "awakening/messages (k)/様子_ミリエル2.txt": {
       "path": "Awakening/Messages (K)/様子_ミリエル2.txt",
       "mode": "main",
@@ -17247,6 +17262,12 @@
       "status": "approved",
       "updatedAt": "2026-10-15T04:48:39.959Z"
     },
+    "awakening/messages (k)/レベルアップ.txt\u0000MID_レベルアップ3_マーク男": {
+      "path": "Awakening/Messages (K)/レベルアップ.txt",
+      "entryKey": "MID_レベルアップ3_マーク男",
+      "status": "approved",
+      "updatedAt": "2026-10-15T04:48:41.229Z"
+    },
     "awakening/messages (k)/ロラン_ンン.txt\u0000MID_支援_ロラン_ンン_Ａ": {
       "path": "Awakening/Messages (K)/ロラン_ンン.txt",
       "entryKey": "MID_支援_ロラン_ンン_Ａ",
@@ -20612,6 +20633,12 @@
       "entryKey": "MID_様子_マルス_後_親子_父",
       "status": "approved",
       "updatedAt": "2026-10-08T06:15:20.818Z"
+    },
+    "awakening/messages (k)/様子_マーク男4.txt\u0000MID_様子_マーク男_前_敬さん": {
+      "path": "Awakening/Messages (K)/様子_マーク男4.txt",
+      "entryKey": "MID_様子_マーク男_前_敬さん",
+      "status": "approved",
+      "updatedAt": "2026-10-15T04:52:47.989Z"
     },
     "awakening/messages (k)/様子_リベラ1.txt\u0000MID_様子_リベラ_前": {
       "path": "Awakening/Messages (K)/様子_リベラ1.txt",
