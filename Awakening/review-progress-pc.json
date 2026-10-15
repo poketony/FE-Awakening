@@ -14341,6 +14341,18 @@
       "status": "approved",
       "updatedAt": "2026-10-15T02:33:26.416Z"
     },
+    "awakening/messages (k)/x012.txt\u0000MID_X012_TK1_Female_02_PCM1": {
+      "path": "Awakening/Messages (K)/X012.txt",
+      "entryKey": "MID_X012_TK1_Female_02_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-15T02:33:30.833Z"
+    },
+    "awakening/messages (k)/x012.txt\u0000MID_X012_TK1_Male": {
+      "path": "Awakening/Messages (K)/X012.txt",
+      "entryKey": "MID_X012_TK1_Male",
+      "status": "approved",
+      "updatedAt": "2026-10-15T02:33:32.587Z"
+    },
     "awakening/messages (k)/x015.txt\u0000MID_X015_BOSS_DIE1": {
       "path": "Awakening/Messages (K)/x015.txt",
       "entryKey": "MID_X015_BOSS_DIE1",
