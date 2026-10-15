@@ -7024,6 +7024,16 @@
       ],
       "updatedAt": "2026-09-06T16:43:25.018Z"
     },
+    "awakening/messages (k)/スミア_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/スミア_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_スミア_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_スミア_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_スミア_プレイヤー女_Ａ_PCF1"
+      ],
+      "updatedAt": "2026-10-15T12:17:20.815Z"
+    },
     "awakening/messages (k)/セルジュ_ドニ.txt": {
       "path": "Awakening/Messages (K)/セルジュ_ドニ.txt",
       "mode": "main",
@@ -17188,6 +17198,12 @@
       "entryKey": "MID_支援_ジェローム_ノワール_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-06T22:11:20.942Z"
+    },
+    "awakening/messages (k)/スミア_プレイヤー女.txt\u0000MID_支援_スミア_プレイヤー女_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/スミア_プレイヤー女.txt",
+      "entryKey": "MID_支援_スミア_プレイヤー女_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-15T12:19:33.899Z"
     },
     "awakening/messages (k)/セルジュ_プレイヤー女.txt\u0000MID_支援_セルジュ_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/セルジュ_プレイヤー女.txt",
