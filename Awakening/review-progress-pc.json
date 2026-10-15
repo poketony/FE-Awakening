@@ -7889,6 +7889,17 @@
       ],
       "updatedAt": "2026-10-13T07:35:24.379Z"
     },
+    "awakening/messages (k)/ヴィオール_ミリエル.txt": {
+      "path": "Awakening/Messages (K)/ヴィオール_ミリエル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ヴィオール_ミリエル_Ｃ",
+        "MID_支援_ヴィオール_ミリエル_Ｂ",
+        "MID_支援_ヴィオール_ミリエル_Ａ",
+        "MID_支援_ヴィオール_ミリエル_Ｓ"
+      ],
+      "updatedAt": "2026-10-15T06:02:14.513Z"
+    },
     "awakening/messages (k)/ヴィオール_リズ.txt": {
       "path": "Awakening/Messages (K)/ヴィオール_リズ.txt",
       "mode": "main",
@@ -17847,6 +17858,12 @@
       "entryKey": "MID_支援_ヴィオール_マリアベル_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-13T07:58:25.454Z"
+    },
+    "awakening/messages (k)/ヴィオール_ミリエル.txt\u0000MID_支援_ヴィオール_ミリエル_Ｃ": {
+      "path": "Awakening/Messages (K)/ヴィオール_ミリエル.txt",
+      "entryKey": "MID_支援_ヴィオール_ミリエル_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-15T06:02:43.729Z"
     },
     "awakening/messages (k)/ヴィオール_リズ.txt\u0000MID_支援_ヴィオール_リズ_Ａ": {
       "path": "Awakening/Messages (K)/ヴィオール_リズ.txt",
