@@ -6554,6 +6554,17 @@
       ],
       "updatedAt": "2026-10-08T07:21:42.053Z"
     },
+    "awakening/messages (k)/ガイア_ミリエル.txt": {
+      "path": "Awakening/Messages (K)/ガイア_ミリエル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ガイア_ミリエル_Ｃ",
+        "MID_支援_ガイア_ミリエル_Ｂ",
+        "MID_支援_ガイア_ミリエル_Ａ",
+        "MID_支援_ガイア_ミリエル_Ｓ"
+      ],
+      "updatedAt": "2026-10-15T05:26:06.003Z"
+    },
     "awakening/messages (k)/ガイア_リズ.txt": {
       "path": "Awakening/Messages (K)/ガイア_リズ.txt",
       "mode": "main",
@@ -16323,6 +16334,12 @@
       "status": "approved",
       "updatedAt": "2026-10-08T07:45:41.583Z"
     },
+    "awakening/messages (k)/ガイア_ミリエル.txt\u0000MID_支援_ガイア_ミリエル_Ｃ": {
+      "path": "Awakening/Messages (K)/ガイア_ミリエル.txt",
+      "entryKey": "MID_支援_ガイア_ミリエル_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-15T05:27:06.449Z"
+    },
     "awakening/messages (k)/ガイア_リズ.txt\u0000MID_支援_ガイア_リズ_Ａ": {
       "path": "Awakening/Messages (K)/ガイア_リズ.txt",
       "entryKey": "MID_支援_ガイア_リズ_Ａ",
@@ -17318,6 +17335,12 @@
       "entryKey": "MID_支援_リズ_ロンクー_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-06T14:59:59.574Z"
+    },
+    "awakening/messages (k)/レベルアップ.txt\u0000MID_カンスト_マーク女": {
+      "path": "Awakening/Messages (K)/レベルアップ.txt",
+      "entryKey": "MID_カンスト_マーク女",
+      "status": "approved",
+      "updatedAt": "2026-10-15T05:09:11.914Z"
     },
     "awakening/messages (k)/レベルアップ.txt\u0000MID_カンスト_マーク男": {
       "path": "Awakening/Messages (K)/レベルアップ.txt",
