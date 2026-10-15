@@ -7297,6 +7297,16 @@
       ],
       "updatedAt": "2026-09-06T04:33:11.826Z"
     },
+    "awakening/messages (k)/マーク女_ンン.txt": {
+      "path": "Awakening/Messages (K)/マーク女_ンン.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マーク女_ンン_Ｃ",
+        "MID_支援_マーク女_ンン_Ｂ",
+        "MID_支援_マーク女_ンン_Ａ"
+      ],
+      "updatedAt": "2026-10-15T04:55:18.603Z"
+    },
     "awakening/messages (k)/マーク男_カラム_親子.txt": {
       "path": "Awakening/Messages (K)/マーク男_カラム_親子.txt",
       "mode": "main",
@@ -7337,6 +7347,17 @@
         "MID_支援_マーク男_マルス_Ｓ"
       ],
       "updatedAt": "2026-10-06T06:14:11.863Z"
+    },
+    "awakening/messages (k)/マーク男_ルキナ.txt": {
+      "path": "Awakening/Messages (K)/マーク男_ルキナ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マーク男_マルス_Ｃ",
+        "MID_支援_マーク男_マルス_Ｂ",
+        "MID_支援_マーク男_マルス_Ａ",
+        "MID_支援_マーク男_マルス_Ｓ"
+      ],
+      "updatedAt": "2026-10-15T04:55:04.144Z"
     },
     "awakening/messages (k)/マーク男_ンン.txt": {
       "path": "Awakening/Messages (K)/マーク男_ンン.txt",
@@ -8734,6 +8755,21 @@
         "MID_様子_マルス_後_恋人"
       ],
       "updatedAt": "2026-10-08T06:07:39.493Z"
+    },
+    "awakening/messages (k)/様子_マーク女4.txt": {
+      "path": "Awakening/Messages (K)/様子_マーク女4.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_マーク女_前_敬さん",
+        "MID_様子_マーク女_後_敬さん",
+        "MID_様子_マーク女_前_親子_母",
+        "MID_様子_マーク女_後_親子_母",
+        "MID_様子_マーク女_前_親子_父",
+        "MID_様子_マーク女_後_親子_父",
+        "MID_様子_マーク女_前_恋人",
+        "MID_様子_マーク女_後_恋人"
+      ],
+      "updatedAt": "2026-10-15T04:55:00.074Z"
     },
     "awakening/messages (k)/様子_マーク男2.txt": {
       "path": "Awakening/Messages (K)/様子_マーク男2.txt",
@@ -17187,6 +17223,12 @@
       "status": "approved",
       "updatedAt": "2026-10-13T11:01:55.092Z"
     },
+    "awakening/messages (k)/マーク女_ンン.txt\u0000MID_支援_マーク女_ンン_Ｃ": {
+      "path": "Awakening/Messages (K)/マーク女_ンン.txt",
+      "entryKey": "MID_支援_マーク女_ンン_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-15T05:00:39.338Z"
+    },
     "awakening/messages (k)/マーク男_マルス.txt\u0000MID_支援_マーク男_マルス_Ｃ": {
       "path": "Awakening/Messages (K)/マーク男_マルス.txt",
       "entryKey": "MID_支援_マーク男_マルス_Ｃ",
@@ -20672,6 +20714,12 @@
       "entryKey": "MID_様子_マーク男_前_親子_父",
       "status": "approved",
       "updatedAt": "2026-10-15T04:54:39.726Z"
+    },
+    "awakening/messages (k)/様子_マーク男2.txt\u0000MID_様子_マーク男_後_恋人": {
+      "path": "Awakening/Messages (K)/様子_マーク男2.txt",
+      "entryKey": "MID_様子_マーク男_後_恋人",
+      "status": "approved",
+      "updatedAt": "2026-10-15T04:54:55.520Z"
     },
     "awakening/messages (k)/様子_マーク男2.txt\u0000MID_様子_マーク男_後_敬さん": {
       "path": "Awakening/Messages (K)/様子_マーク男2.txt",
