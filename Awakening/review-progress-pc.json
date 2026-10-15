@@ -6929,6 +6929,17 @@
       ],
       "updatedAt": "2026-09-07T05:33:38.926Z"
     },
+    "awakening/messages (k)/シャンブレー_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/シャンブレー_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シャンブレー_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_シャンブレー_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_シャンブレー_プレイヤー女_Ａ_PCF1",
+        "MID_支援_シャンブレー_プレイヤー女_Ｓ_PCF1"
+      ],
+      "updatedAt": "2026-10-15T12:02:27.871Z"
+    },
     "awakening/messages (k)/シャンブレー_ロラン.txt": {
       "path": "Awakening/Messages (K)/シャンブレー_ロラン.txt",
       "mode": "main",
@@ -16985,6 +16996,12 @@
       "entryKey": "MID_支援_サーリャ_ロンクー_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-11T06:23:06.043Z"
+    },
+    "awakening/messages (k)/シャンブレー_プレイヤー女.txt\u0000MID_支援_シャンブレー_プレイヤー女_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/シャンブレー_プレイヤー女.txt",
+      "entryKey": "MID_支援_シャンブレー_プレイヤー女_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-15T12:06:16.104Z"
     },
     "awakening/messages (k)/シャンブレー_ロラン.txt\u0000MID_支援_シャンブレー_ロラン_Ａ": {
       "path": "Awakening/Messages (K)/シャンブレー_ロラン.txt",
