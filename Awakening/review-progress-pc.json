@@ -8017,6 +8017,17 @@
       ],
       "updatedAt": "2026-09-06T06:12:37.952Z"
     },
+    "awakening/messages (k)/オリヴィエ_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/オリヴィエ_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_オリヴィエ_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_オリヴィエ_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_オリヴィエ_プレイヤー男_Ａ_PCM1",
+        "MID_支援_オリヴィエ_プレイヤー男_Ｓ_PCM1"
+      ],
+      "updatedAt": "2026-10-17T13:26:30.012Z"
+    },
     "awakening/messages (k)/オリヴィエ_ヘンリー.txt": {
       "path": "Awakening/Messages (K)/オリヴィエ_ヘンリー.txt",
       "mode": "main",
@@ -18024,6 +18035,12 @@
       "entryKey": "MID_支援_オリヴィエ_プレイヤー女_Ｃ_PCF1",
       "status": "approved",
       "updatedAt": "2026-09-06T06:16:03.982Z"
+    },
+    "awakening/messages (k)/オリヴィエ_プレイヤー男.txt\u0000MID_支援_オリヴィエ_プレイヤー男_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/オリヴィエ_プレイヤー男.txt",
+      "entryKey": "MID_支援_オリヴィエ_プレイヤー男_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-17T13:26:52.296Z"
     },
     "awakening/messages (k)/オリヴィエ_ヘンリー.txt\u0000MID_支援_オリヴィエ_ヘンリー_Ｂ": {
       "path": "Awakening/Messages (K)/オリヴィエ_ヘンリー.txt",
