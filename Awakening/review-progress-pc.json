@@ -8728,6 +8728,17 @@
       ],
       "updatedAt": "2026-10-08T07:49:08.776Z"
     },
+    "awakening/messages (k)/パリス_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/パリス_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_パリス_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_パリス_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_パリス_プレイヤー女_Ａ_PCF1",
+        "MID_支援_パリス_プレイヤー女_Ｓ_PCF1"
+      ],
+      "updatedAt": "2026-10-17T13:34:51.538Z"
+    },
     "awakening/messages (k)/フラヴィア_プレイヤー女.txt": {
       "path": "Awakening/Messages (K)/フラヴィア_プレイヤー女.txt",
       "mode": "main",
@@ -19043,6 +19054,12 @@
       "entryKey": "MID_支援_バジーリオ_フラヴィア_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-08T08:19:34.351Z"
+    },
+    "awakening/messages (k)/パリス_プレイヤー女.txt\u0000MID_支援_パリス_プレイヤー女_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/パリス_プレイヤー女.txt",
+      "entryKey": "MID_支援_パリス_プレイヤー女_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-17T13:37:13.534Z"
     },
     "awakening/messages (k)/フラヴィア_プレイヤー女.txt\u0000MID_支援_フラヴィア_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/フラヴィア_プレイヤー女.txt",
