@@ -25793,6 +25793,102 @@
       "status": "approved",
       "updatedAt": "2026-10-17T12:47:32.180Z"
     },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好好_兄弟": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好好_兄弟",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:55.678Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好好_夫婦": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好好_夫婦",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:55.473Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好好_女女": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好好_女女",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:51.144Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好好_男女A": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好好_男女A",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:51.391Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好好_男女B": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好好_男女B",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:53.857Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好好_男女C": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好好_男女C",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:53.982Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好好_男男": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好好_男男",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:51.308Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好好_親子": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好好_親子",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:55.542Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好嫌_兄弟": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好嫌_兄弟",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:57.678Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好嫌_夫婦": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好嫌_夫婦",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:56.200Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好嫌_女女": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好嫌_女女",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:55.749Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好嫌_男女A": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好嫌_男女A",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:55.949Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好嫌_男女B": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好嫌_男女B",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:56.051Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好嫌_男女C": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好嫌_男女C",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:56.107Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好嫌_男男": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好嫌_男男",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:55.864Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_好嫌_親子": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_好嫌_親子",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:57.544Z"
+    },
     "awakening/messages (k)/相性占い.txt\u0000MID_占_嫌_01": {
       "path": "Awakening/Messages (K)/相性占い.txt",
       "entryKey": "MID_占_嫌_01",
@@ -25972,6 +26068,48 @@
       "entryKey": "MID_占_嫌_30",
       "status": "approved",
       "updatedAt": "2026-10-17T12:47:42.490Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_嫌嫌_夫婦": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_嫌嫌_夫婦",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:59.980Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_嫌嫌_女女": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_嫌嫌_女女",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:57.769Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_嫌嫌_男女A": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_嫌嫌_男女A",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:59.792Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_嫌嫌_男女B": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_嫌嫌_男女B",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:59.859Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_嫌嫌_男女C": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_嫌嫌_男女C",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:59.938Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_嫌嫌_男男": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_嫌嫌_男男",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:57.860Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_嫌嫌_親子": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_嫌嫌_親子",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:48:00.024Z"
     },
     "awakening/messages (k)/相性占い.txt\u0000MID_占_愛_01": {
       "path": "Awakening/Messages (K)/相性占い.txt",
@@ -26201,6 +26339,12 @@
       "status": "approved",
       "updatedAt": "2026-10-17T12:47:46.824Z"
     },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_愛嫌_兄弟": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_愛嫌_兄弟",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:51.054Z"
+    },
     "awakening/messages (k)/相性占い.txt\u0000MID_占_愛嫌_夫婦": {
       "path": "Awakening/Messages (K)/相性占い.txt",
       "entryKey": "MID_占_愛嫌_夫婦",
@@ -26236,6 +26380,12 @@
       "entryKey": "MID_占_愛嫌_男男",
       "status": "approved",
       "updatedAt": "2026-10-17T12:47:48.889Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_愛嫌_親子": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_愛嫌_親子",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:47:50.903Z"
     },
     "awakening/messages (k)/相性占い.txt\u0000MID_占_愛愛_兄弟": {
       "path": "Awakening/Messages (K)/相性占い.txt",
