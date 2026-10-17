@@ -7985,6 +7985,17 @@
       ],
       "updatedAt": "2026-10-15T08:03:58.208Z"
     },
+    "awakening/messages (k)/オリヴィエ_ソール.txt": {
+      "path": "Awakening/Messages (K)/オリヴィエ_ソール.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_オリヴィエ_ソール_Ｃ",
+        "MID_支援_オリヴィエ_ソール_Ｂ",
+        "MID_支援_オリヴィエ_ソール_Ａ",
+        "MID_支援_オリヴィエ_ソール_Ｓ"
+      ],
+      "updatedAt": "2026-10-17T08:18:24.811Z"
+    },
     "awakening/messages (k)/オリヴィエ_ドニ.txt": {
       "path": "Awakening/Messages (K)/オリヴィエ_ドニ.txt",
       "mode": "main",
@@ -17865,6 +17876,12 @@
       "entryKey": "MID_支援_オリヴィエ_クロム_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-17T08:10:40.013Z"
+    },
+    "awakening/messages (k)/オリヴィエ_クロム.txt\u0000MID_支援_オリヴィエ_クロム_Ｓ": {
+      "path": "Awakening/Messages (K)/オリヴィエ_クロム.txt",
+      "entryKey": "MID_支援_オリヴィエ_クロム_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-10-17T08:18:22.841Z"
     },
     "awakening/messages (k)/オリヴィエ_グレゴ.txt\u0000MID_支援_オリヴィエ_グレゴ_Ａ": {
       "path": "Awakening/Messages (K)/オリヴィエ_グレゴ.txt",
