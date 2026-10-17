@@ -8675,6 +8675,17 @@
       ],
       "updatedAt": "2026-10-11T13:06:01.454Z"
     },
+    "awakening/messages (k)/ノワール_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/ノワール_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ノワール_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_ノワール_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_ノワール_プレイヤー男_Ａ_PCM1",
+        "MID_支援_ノワール_プレイヤー男_Ｓ_PCM1"
+      ],
+      "updatedAt": "2026-10-17T09:51:36.794Z"
+    },
     "awakening/messages (k)/バジーリオ_フラヴィア.txt": {
       "path": "Awakening/Messages (K)/バジーリオ_フラヴィア.txt",
       "mode": "main",
@@ -18854,6 +18865,12 @@
       "entryKey": "MID_支援_ノワール_プレイヤー女_Ｃ_PCF1",
       "status": "approved",
       "updatedAt": "2026-10-11T13:06:18.298Z"
+    },
+    "awakening/messages (k)/ノワール_プレイヤー男.txt\u0000MID_支援_ノワール_プレイヤー男_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/ノワール_プレイヤー男.txt",
+      "entryKey": "MID_支援_ノワール_プレイヤー男_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-17T09:53:07.748Z"
     },
     "awakening/messages (k)/バジーリオ_フラヴィア.txt\u0000MID_支援_バジーリオ_フラヴィア_Ａ": {
       "path": "Awakening/Messages (K)/バジーリオ_フラヴィア.txt",
