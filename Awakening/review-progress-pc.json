@@ -8114,6 +8114,17 @@
       ],
       "updatedAt": "2026-10-09T09:05:44.552Z"
     },
+    "awakening/messages (k)/ガイア_ティアモ.txt": {
+      "path": "Awakening/Messages (K)/ガイア_ティアモ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ガイア_ティアモ_Ｃ",
+        "MID_支援_ガイア_ティアモ_Ｂ",
+        "MID_支援_ガイア_ティアモ_Ａ",
+        "MID_支援_ガイア_ティアモ_Ｓ"
+      ],
+      "updatedAt": "2026-10-17T13:50:22.235Z"
+    },
     "awakening/messages (k)/ガイア_プレイヤー女.txt": {
       "path": "Awakening/Messages (K)/ガイア_プレイヤー女.txt",
       "mode": "main",
@@ -18249,6 +18260,12 @@
       "status": "approved",
       "updatedAt": "2026-10-11T15:33:03.145Z"
     },
+    "awakening/messages (k)/ガイア_ティアモ.txt\u0000MID_支援_ガイア_ティアモ_Ｃ": {
+      "path": "Awakening/Messages (K)/ガイア_ティアモ.txt",
+      "entryKey": "MID_支援_ガイア_ティアモ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-17T13:50:42.588Z"
+    },
     "awakening/messages (k)/ガイア_プレイヤー女.txt\u0000MID_支援_ガイア_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/ガイア_プレイヤー女.txt",
       "entryKey": "MID_支援_ガイア_プレイヤー女_Ａ_PCF1",
@@ -18320,6 +18337,12 @@
       "entryKey": "MID_支援_ガイア_リズ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-07T06:15:55.980Z"
+    },
+    "awakening/messages (k)/ガイア_リベラ.txt\u0000MID_支援_ガイア_リベラ_Ａ": {
+      "path": "Awakening/Messages (K)/ガイア_リベラ.txt",
+      "entryKey": "MID_支援_ガイア_リベラ_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-17T13:50:11.753Z"
     },
     "awakening/messages (k)/ガイア_リベラ.txt\u0000MID_支援_ガイア_リベラ_Ｂ": {
       "path": "Awakening/Messages (K)/ガイア_リベラ.txt",
