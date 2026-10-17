@@ -8369,6 +8369,16 @@
       ],
       "updatedAt": "2026-09-06T16:43:25.018Z"
     },
+    "awakening/messages (k)/ジェローム_ヴェイク_親子.txt": {
+      "path": "Awakening/Messages (K)/ジェローム_ヴェイク_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ジェローム_ヴェイク_親子_Ｃ",
+        "MID_支援_ジェローム_ヴェイク_親子_Ｂ",
+        "MID_支援_ジェローム_ヴェイク_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-17T12:49:51.675Z"
+    },
     "awakening/messages (k)/スミア_プレイヤー女.txt": {
       "path": "Awakening/Messages (K)/スミア_プレイヤー女.txt",
       "mode": "main",
@@ -18617,6 +18627,12 @@
       "status": "approved",
       "updatedAt": "2026-09-06T22:11:20.942Z"
     },
+    "awakening/messages (k)/ジェローム_ヴェイク_親子.txt\u0000MID_支援_ジェローム_ヴェイク_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ジェローム_ヴェイク_親子.txt",
+      "entryKey": "MID_支援_ジェローム_ヴェイク_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:50:14.204Z"
+    },
     "awakening/messages (k)/スミア_プレイヤー女.txt\u0000MID_支援_スミア_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/スミア_プレイヤー女.txt",
       "entryKey": "MID_支援_スミア_プレイヤー女_Ａ_PCF1",
@@ -26068,6 +26084,12 @@
       "entryKey": "MID_占_嫌_30",
       "status": "approved",
       "updatedAt": "2026-10-17T12:47:42.490Z"
+    },
+    "awakening/messages (k)/相性占い.txt\u0000MID_占_嫌嫌_兄弟": {
+      "path": "Awakening/Messages (K)/相性占い.txt",
+      "entryKey": "MID_占_嫌嫌_兄弟",
+      "status": "approved",
+      "updatedAt": "2026-10-17T12:48:02.124Z"
     },
     "awakening/messages (k)/相性占い.txt\u0000MID_占_嫌嫌_夫婦": {
       "path": "Awakening/Messages (K)/相性占い.txt",
