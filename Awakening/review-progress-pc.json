@@ -8952,6 +8952,16 @@
       ],
       "updatedAt": "2026-10-15T04:55:18.603Z"
     },
+    "awakening/messages (k)/マーク男_アズール_親子.txt": {
+      "path": "Awakening/Messages (K)/マーク男_アズール_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マーク男_アズール_親子_Ｃ",
+        "MID_支援_マーク男_アズール_親子_Ｂ",
+        "MID_支援_マーク男_アズール_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-17T12:55:01.882Z"
+    },
     "awakening/messages (k)/マーク男_カラム_親子.txt": {
       "path": "Awakening/Messages (K)/マーク男_カラム_親子.txt",
       "mode": "main",
@@ -17948,6 +17958,12 @@
       "entryKey": "MID_支援_オリヴィエ_グレゴ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-15T10:28:28.968Z"
+    },
+    "awakening/messages (k)/オリヴィエ_ソール.txt\u0000MID_支援_オリヴィエ_ソール_Ｂ": {
+      "path": "Awakening/Messages (K)/オリヴィエ_ソール.txt",
+      "entryKey": "MID_支援_オリヴィエ_ソール_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-17T13:23:00.427Z"
     },
     "awakening/messages (k)/オリヴィエ_ソール.txt\u0000MID_支援_オリヴィエ_ソール_Ｃ": {
       "path": "Awakening/Messages (K)/オリヴィエ_ソール.txt",
