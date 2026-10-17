@@ -8347,6 +8347,16 @@
       ],
       "updatedAt": "2026-09-06T12:59:29.656Z"
     },
+    "awakening/messages (k)/シンシア_スミア_親子.txt": {
+      "path": "Awakening/Messages (K)/シンシア_スミア_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シンシア_スミア_親子_Ｃ",
+        "MID_支援_シンシア_スミア_親子_Ｂ",
+        "MID_支援_シンシア_スミア_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-17T14:33:02.156Z"
+    },
     "awakening/messages (k)/シンシア_セレナ.txt": {
       "path": "Awakening/Messages (K)/シンシア_セレナ.txt",
       "mode": "main",
@@ -18679,6 +18689,12 @@
       "entryKey": "MID_支援_シャンブレー_ロンクー_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T13:02:24.748Z"
+    },
+    "awakening/messages (k)/シンシア_セレナ.txt\u0000MID_支援_シンシア_セレナ_Ａ": {
+      "path": "Awakening/Messages (K)/シンシア_セレナ.txt",
+      "entryKey": "MID_支援_シンシア_セレナ_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-17T14:33:00.795Z"
     },
     "awakening/messages (k)/シンシア_セレナ.txt\u0000MID_支援_シンシア_セレナ_Ｂ": {
       "path": "Awakening/Messages (K)/シンシア_セレナ.txt",
