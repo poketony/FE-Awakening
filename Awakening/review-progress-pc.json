@@ -8655,6 +8655,17 @@
       ],
       "updatedAt": "2026-09-07T05:32:22.441Z"
     },
+    "awakening/messages (k)/ノノ_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/ノノ_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ノノ_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_ノノ_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_ノノ_プレイヤー男_Ａ_PCM1",
+        "MID_支援_ノノ_プレイヤー男_Ｓ_PCM1"
+      ],
+      "updatedAt": "2026-10-17T10:07:24.488Z"
+    },
     "awakening/messages (k)/ノワール_サーリャ_親子.txt": {
       "path": "Awakening/Messages (K)/ノワール_サーリャ_親子.txt",
       "mode": "main",
@@ -18835,6 +18846,12 @@
       "entryKey": "MID_支援_ドニ_リズ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-07T13:10:05.098Z"
+    },
+    "awakening/messages (k)/ノノ_プレイヤー男.txt\u0000MID_支援_ノノ_プレイヤー男_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/ノノ_プレイヤー男.txt",
+      "entryKey": "MID_支援_ノノ_プレイヤー男_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-17T10:14:02.256Z"
     },
     "awakening/messages (k)/ノワール_サーリャ_親子.txt\u0000MID_支援_ノワール_サーリャ_親子_Ｂ": {
       "path": "Awakening/Messages (K)/ノワール_サーリャ_親子.txt",
