@@ -10220,6 +10220,24 @@
       ],
       "updatedAt": "2026-10-06T06:47:36.717Z"
     },
+    "awakening/messages (k)/様子_カラム1.txt": {
+      "path": "Awakening/Messages (K)/様子_カラム1.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_カラム_前",
+        "MID_様子_カラム_前_敬さん",
+        "MID_様子_カラム_前_敬様",
+        "MID_様子_カラム_後",
+        "MID_様子_カラム_後_敬さん",
+        "MID_様子_カラム_後_敬様",
+        "MID_様子_カラム_後_無言",
+        "MID_様子_カラム_前_親子_子",
+        "MID_様子_カラム_後_親子_子",
+        "MID_様子_カラム_前_恋人",
+        "MID_様子_カラム_後_恋人"
+      ],
+      "updatedAt": "2026-10-18T03:47:57.904Z"
+    },
     "awakening/messages (k)/様子_カラム3.txt": {
       "path": "Awakening/Messages (K)/様子_カラム3.txt",
       "mode": "main",
@@ -22115,6 +22133,18 @@
       "entryKey": "MID_様子_ウード_後_親子_父",
       "status": "approved",
       "updatedAt": "2026-09-07T05:10:30.348Z"
+    },
+    "awakening/messages (k)/様子_カラム1.txt\u0000MID_様子_カラム_前": {
+      "path": "Awakening/Messages (K)/様子_カラム1.txt",
+      "entryKey": "MID_様子_カラム_前",
+      "status": "approved",
+      "updatedAt": "2026-10-18T03:48:01.389Z"
+    },
+    "awakening/messages (k)/様子_カラム1.txt\u0000MID_様子_カラム_前_敬さん": {
+      "path": "Awakening/Messages (K)/様子_カラム1.txt",
+      "entryKey": "MID_様子_カラム_前_敬さん",
+      "status": "approved",
+      "updatedAt": "2026-10-18T03:48:03.119Z"
     },
     "awakening/messages (k)/様子_カラム3.txt\u0000MID_様子_カラム_前": {
       "path": "Awakening/Messages (K)/様子_カラム3.txt",
