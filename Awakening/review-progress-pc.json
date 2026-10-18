@@ -8559,6 +8559,17 @@
       ],
       "updatedAt": "2026-09-06T16:43:25.018Z"
     },
+    "awakening/messages (k)/ジェローム_マーク女.txt": {
+      "path": "Awakening/Messages (K)/ジェローム_マーク女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ジェローム_マーク女_Ｃ",
+        "MID_支援_ジェローム_マーク女_Ｂ",
+        "MID_支援_ジェローム_マーク女_Ａ",
+        "MID_支援_ジェローム_マーク女_Ｓ"
+      ],
+      "updatedAt": "2026-10-18T03:41:43.780Z"
+    },
     "awakening/messages (k)/ジェローム_ヴェイク_親子.txt": {
       "path": "Awakening/Messages (K)/ジェローム_ヴェイク_親子.txt",
       "mode": "main",
@@ -19328,6 +19339,12 @@
       "entryKey": "MID_支援_ジェローム_ノワール_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-06T22:11:20.942Z"
+    },
+    "awakening/messages (k)/ジェローム_マーク女.txt\u0000MID_支援_ジェローム_マーク女_Ｃ": {
+      "path": "Awakening/Messages (K)/ジェローム_マーク女.txt",
+      "entryKey": "MID_支援_ジェローム_マーク女_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-18T03:42:22.301Z"
     },
     "awakening/messages (k)/ジェローム_ヴェイク_親子.txt\u0000MID_支援_ジェローム_ヴェイク_親子_Ａ": {
       "path": "Awakening/Messages (K)/ジェローム_ヴェイク_親子.txt",
