@@ -8104,6 +8104,17 @@
       ],
       "updatedAt": "2026-10-18T02:53:09.317Z"
     },
+    "awakening/messages (k)/オリヴィエ_ロンクー.txt": {
+      "path": "Awakening/Messages (K)/オリヴィエ_ロンクー.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_オリヴィエ_ロンクー_Ｃ",
+        "MID_支援_オリヴィエ_ロンクー_Ｂ",
+        "MID_支援_オリヴィエ_ロンクー_Ａ",
+        "MID_支援_オリヴィエ_ロンクー_Ｓ"
+      ],
+      "updatedAt": "2026-10-18T02:55:53.709Z"
+    },
     "awakening/messages (k)/カラム_ソワレ.txt": {
       "path": "Awakening/Messages (K)/カラム_ソワレ.txt",
       "mode": "main",
@@ -18534,6 +18545,12 @@
       "entryKey": "MID_支援_オリヴィエ_リベラ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-18T02:55:51.736Z"
+    },
+    "awakening/messages (k)/オリヴィエ_ロンクー.txt\u0000MID_支援_オリヴィエ_ロンクー_Ｃ": {
+      "path": "Awakening/Messages (K)/オリヴィエ_ロンクー.txt",
+      "entryKey": "MID_支援_オリヴィエ_ロンクー_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:56:36.714Z"
     },
     "awakening/messages (k)/カラム_ソワレ.txt\u0000MID_支援_カラム_ソワレ_Ａ": {
       "path": "Awakening/Messages (K)/カラム_ソワレ.txt",
