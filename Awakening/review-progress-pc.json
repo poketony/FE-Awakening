@@ -14972,11 +14972,23 @@
       "status": "approved",
       "updatedAt": "2026-09-29T08:04:34.432Z"
     },
+    "awakening/messages (k)/026.txt\u0000MID_026_OP1_PCF1": {
+      "path": "Awakening/Messages (K)/026.txt",
+      "entryKey": "MID_026_OP1_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:31:58.002Z"
+    },
     "awakening/messages (k)/026.txt\u0000MID_026_OP1_PCM1": {
       "path": "Awakening/Messages (K)/026.txt",
       "entryKey": "MID_026_OP1_PCM1",
       "status": "approved",
       "updatedAt": "2026-10-18T02:31:55.134Z"
+    },
+    "awakening/messages (k)/026.txt\u0000MID_026_OP2": {
+      "path": "Awakening/Messages (K)/026.txt",
+      "entryKey": "MID_026_OP2",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:32:04.484Z"
     },
     "awakening/messages (k)/backup.txt\u0000MID_BACKUP_FORMAT": {
       "path": "Awakening/Messages (K)/Backup.txt",
