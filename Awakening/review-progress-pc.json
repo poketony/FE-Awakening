@@ -8255,6 +8255,16 @@
       ],
       "updatedAt": "2026-10-08T07:21:42.053Z"
     },
+    "awakening/messages (k)/ガイア_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/ガイア_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ガイア_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_ガイア_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_ガイア_プレイヤー男_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-10-18T04:09:37.508Z"
+    },
     "awakening/messages (k)/ガイア_ミリエル.txt": {
       "path": "Awakening/Messages (K)/ガイア_ミリエル.txt",
       "mode": "main",
@@ -8457,6 +8467,16 @@
       ],
       "updatedAt": "2026-10-15T12:02:27.871Z"
     },
+    "awakening/messages (k)/シャンブレー_プレイヤー男_親子.txt": {
+      "path": "Awakening/Messages (K)/シャンブレー_プレイヤー男_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シャンブレー_プレイヤー男_親子_Ｃ_PCM1",
+        "MID_支援_シャンブレー_プレイヤー男_親子_Ｂ_PCM1",
+        "MID_支援_シャンブレー_プレイヤー男_親子_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-10-18T04:11:42.312Z"
+    },
     "awakening/messages (k)/シャンブレー_ロラン.txt": {
       "path": "Awakening/Messages (K)/シャンブレー_ロラン.txt",
       "mode": "main",
@@ -8476,6 +8496,16 @@
         "MID_支援_シャンブレー_ロンクー_親子_Ａ"
       ],
       "updatedAt": "2026-09-06T12:59:29.656Z"
+    },
+    "awakening/messages (k)/シャンブレー_ヴェイク_親子.txt": {
+      "path": "Awakening/Messages (K)/シャンブレー_ヴェイク_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シャンブレー_ヴェイク_親子_Ｃ",
+        "MID_支援_シャンブレー_ヴェイク_親子_Ｂ",
+        "MID_支援_シャンブレー_ヴェイク_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-18T04:11:10.179Z"
     },
     "awakening/messages (k)/シンシア_クロム_親子.txt": {
       "path": "Awakening/Messages (K)/シンシア_クロム_親子.txt",
@@ -19239,6 +19269,12 @@
       "entryKey": "MID_支援_シャンブレー_プレイヤー女_Ｓ_PCF1",
       "status": "approved",
       "updatedAt": "2026-10-15T12:16:57.413Z"
+    },
+    "awakening/messages (k)/シャンブレー_プレイヤー男_親子.txt\u0000MID_支援_シャンブレー_プレイヤー男_親子_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/シャンブレー_プレイヤー男_親子.txt",
+      "entryKey": "MID_支援_シャンブレー_プレイヤー男_親子_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-18T04:12:41.207Z"
     },
     "awakening/messages (k)/シャンブレー_ロラン.txt\u0000MID_支援_シャンブレー_ロラン_Ａ": {
       "path": "Awakening/Messages (K)/シャンブレー_ロラン.txt",
