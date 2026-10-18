@@ -9084,6 +9084,17 @@
       ],
       "updatedAt": "2026-10-07T14:54:10.435Z"
     },
+    "awakening/messages (k)/フラヴィア_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/フラヴィア_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_フラヴィア_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_フラヴィア_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_フラヴィア_プレイヤー男_Ａ_PCM1",
+        "MID_支援_フラヴィア_プレイヤー男_Ｓ_PCM1"
+      ],
+      "updatedAt": "2026-10-18T13:29:13.229Z"
+    },
     "awakening/messages (k)/フレデリク_リズ.txt": {
       "path": "Awakening/Messages (K)/フレデリク_リズ.txt",
       "mode": "main",
@@ -20112,6 +20123,12 @@
       "entryKey": "MID_支援_フラヴィア_プレイヤー女_Ｃ_PCF1",
       "status": "approved",
       "updatedAt": "2026-10-07T17:53:58.141Z"
+    },
+    "awakening/messages (k)/フラヴィア_プレイヤー男.txt\u0000MID_支援_フラヴィア_プレイヤー男_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/フラヴィア_プレイヤー男.txt",
+      "entryKey": "MID_支援_フラヴィア_プレイヤー男_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-18T13:38:05.104Z"
     },
     "awakening/messages (k)/フレデリク_リズ.txt\u0000MID_支援_フレデリク_リズ_Ａ": {
       "path": "Awakening/Messages (K)/フレデリク_リズ.txt",
