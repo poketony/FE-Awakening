@@ -8477,6 +8477,16 @@
       ],
       "updatedAt": "2026-10-18T04:11:42.312Z"
     },
+    "awakening/messages (k)/シャンブレー_リヒト_親子.txt": {
+      "path": "Awakening/Messages (K)/シャンブレー_リヒト_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シャンブレー_リヒト_親子_Ｃ",
+        "MID_支援_シャンブレー_リヒト_親子_Ｂ",
+        "MID_支援_シャンブレー_リヒト_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-18T04:13:36.012Z"
+    },
     "awakening/messages (k)/シャンブレー_ロラン.txt": {
       "path": "Awakening/Messages (K)/シャンブレー_ロラン.txt",
       "mode": "main",
@@ -19317,6 +19327,12 @@
       "entryKey": "MID_支援_シャンブレー_ロンクー_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T13:02:24.748Z"
+    },
+    "awakening/messages (k)/シャンブレー_ヴェイク_親子.txt\u0000MID_支援_シャンブレー_ヴェイク_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/シャンブレー_ヴェイク_親子.txt",
+      "entryKey": "MID_支援_シャンブレー_ヴェイク_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-18T04:44:32.935Z"
     },
     "awakening/messages (k)/シンシア_スミア_親子.txt\u0000MID_支援_シンシア_スミア_親子_Ａ": {
       "path": "Awakening/Messages (K)/シンシア_スミア_親子.txt",
