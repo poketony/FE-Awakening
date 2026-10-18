@@ -9095,6 +9095,17 @@
       ],
       "updatedAt": "2026-10-07T05:25:34.773Z"
     },
+    "awakening/messages (k)/プレイヤー女_フレデリク.txt": {
+      "path": "Awakening/Messages (K)/プレイヤー女_フレデリク.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_プレイヤー女_フレデリク_Ｃ_PCF1",
+        "MID_支援_プレイヤー女_フレデリク_Ｂ_PCF1",
+        "MID_支援_プレイヤー女_フレデリク_Ａ_PCF1",
+        "MID_支援_プレイヤー女_フレデリク_Ｓ_PCF1"
+      ],
+      "updatedAt": "2026-10-18T12:04:36.686Z"
+    },
     "awakening/messages (k)/プレイヤー女_ベルベット.txt": {
       "path": "Awakening/Messages (K)/プレイヤー女_ベルベット.txt",
       "mode": "main",
@@ -20125,6 +20136,12 @@
       "entryKey": "MID_支援_フレデリク_リズ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-07T12:25:02.652Z"
+    },
+    "awakening/messages (k)/プレイヤー女_フレデリク.txt\u0000MID_支援_プレイヤー女_フレデリク_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/プレイヤー女_フレデリク.txt",
+      "entryKey": "MID_支援_プレイヤー女_フレデリク_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-18T13:19:32.774Z"
     },
     "awakening/messages (k)/プレイヤー女_ベルベット.txt\u0000MID_支援_プレイヤー女_ベルベット_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/プレイヤー女_ベルベット.txt",
