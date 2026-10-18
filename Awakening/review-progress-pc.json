@@ -8233,6 +8233,17 @@
       ],
       "updatedAt": "2026-10-17T13:50:22.235Z"
     },
+    "awakening/messages (k)/ガイア_ノノ.txt": {
+      "path": "Awakening/Messages (K)/ガイア_ノノ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ガイア_ノノ_Ｃ",
+        "MID_支援_ガイア_ノノ_Ｂ",
+        "MID_支援_ガイア_ノノ_Ａ",
+        "MID_支援_ガイア_ノノ_Ｓ"
+      ],
+      "updatedAt": "2026-10-18T04:02:54.351Z"
+    },
     "awakening/messages (k)/ガイア_プレイヤー女.txt": {
       "path": "Awakening/Messages (K)/ガイア_プレイヤー女.txt",
       "mode": "main",
@@ -18886,6 +18897,12 @@
       "entryKey": "MID_支援_ガイア_ティアモ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-17T13:52:33.090Z"
+    },
+    "awakening/messages (k)/ガイア_ノノ.txt\u0000MID_支援_ガイア_ノノ_Ｃ": {
+      "path": "Awakening/Messages (K)/ガイア_ノノ.txt",
+      "entryKey": "MID_支援_ガイア_ノノ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-18T04:05:39.559Z"
     },
     "awakening/messages (k)/ガイア_プレイヤー女.txt\u0000MID_支援_ガイア_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/ガイア_プレイヤー女.txt",
