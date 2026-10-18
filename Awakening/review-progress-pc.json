@@ -8241,6 +8241,17 @@
       ],
       "updatedAt": "2026-10-11T15:54:25.997Z"
     },
+    "awakening/messages (k)/サイリ_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/サイリ_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_サイリ_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_サイリ_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_サイリ_プレイヤー男_Ａ_PCM1",
+        "MID_支援_サイリ_プレイヤー男_Ｓ_PCM1"
+      ],
+      "updatedAt": "2026-10-18T02:30:17.783Z"
+    },
     "awakening/messages (k)/サーリャ_ソール.txt": {
       "path": "Awakening/Messages (K)/サーリャ_ソール.txt",
       "mode": "main",
@@ -8757,6 +8768,17 @@
         "MID_支援_ノノ_プレイヤー男_Ｓ_PCM1"
       ],
       "updatedAt": "2026-10-17T10:07:24.488Z"
+    },
+    "awakening/messages (k)/ノノ_ヘンリー.txt": {
+      "path": "Awakening/Messages (K)/ノノ_ヘンリー.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ノノ_ヘンリー_Ｃ",
+        "MID_支援_ノノ_ヘンリー_Ｂ",
+        "MID_支援_ノノ_ヘンリー_Ａ",
+        "MID_支援_ノノ_ヘンリー_Ｓ"
+      ],
+      "updatedAt": "2026-10-17T18:22:31.749Z"
     },
     "awakening/messages (k)/ノワール_サーリャ_親子.txt": {
       "path": "Awakening/Messages (K)/ノワール_サーリャ_親子.txt",
@@ -14949,6 +14971,12 @@
       "entryKey": "MID_025_OP1_PCM1",
       "status": "approved",
       "updatedAt": "2026-09-29T08:04:34.432Z"
+    },
+    "awakening/messages (k)/026.txt\u0000MID_026_OP1_PCM1": {
+      "path": "Awakening/Messages (K)/026.txt",
+      "entryKey": "MID_026_OP1_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:31:55.134Z"
     },
     "awakening/messages (k)/backup.txt\u0000MID_BACKUP_FORMAT": {
       "path": "Awakening/Messages (K)/Backup.txt",
