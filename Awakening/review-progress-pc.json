@@ -10196,6 +10196,24 @@
       ],
       "updatedAt": "2026-10-18T02:33:14.170Z"
     },
+    "awakening/messages (k)/様子_ソワレ1.txt": {
+      "path": "Awakening/Messages (K)/様子_ソワレ1.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_ソワレ_前",
+        "MID_様子_ソワレ_前_敬殿",
+        "MID_様子_ソワレ_前_敬様",
+        "MID_様子_ソワレ_後",
+        "MID_様子_ソワレ_後_敬殿",
+        "MID_様子_ソワレ_後_敬様",
+        "MID_様子_ソワレ_後_無言",
+        "MID_様子_ソワレ_前_親子_子",
+        "MID_様子_ソワレ_後_親子_子",
+        "MID_様子_ソワレ_前_恋人",
+        "MID_様子_ソワレ_後_恋人"
+      ],
+      "updatedAt": "2026-10-18T02:33:36.727Z"
+    },
     "awakening/messages (k)/様子_ソール1.txt": {
       "path": "Awakening/Messages (K)/様子_ソール1.txt",
       "mode": "main",
@@ -22135,6 +22153,24 @@
       "entryKey": "MID_様子_セルジュ_後_通ちゃん",
       "status": "approved",
       "updatedAt": "2026-10-18T02:33:21.805Z"
+    },
+    "awakening/messages (k)/様子_ソワレ1.txt\u0000MID_様子_ソワレ_前": {
+      "path": "Awakening/Messages (K)/様子_ソワレ1.txt",
+      "entryKey": "MID_様子_ソワレ_前",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:33:41.190Z"
+    },
+    "awakening/messages (k)/様子_ソワレ1.txt\u0000MID_様子_ソワレ_前_敬様": {
+      "path": "Awakening/Messages (K)/様子_ソワレ1.txt",
+      "entryKey": "MID_様子_ソワレ_前_敬様",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:33:42.685Z"
+    },
+    "awakening/messages (k)/様子_ソワレ1.txt\u0000MID_様子_ソワレ_前_敬殿": {
+      "path": "Awakening/Messages (K)/様子_ソワレ1.txt",
+      "entryKey": "MID_様子_ソワレ_前_敬殿",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:33:42.052Z"
     },
     "awakening/messages (k)/様子_ソール1.txt\u0000MID_様子_ソール_前": {
       "path": "Awakening/Messages (K)/様子_ソール1.txt",
