@@ -8072,6 +8072,16 @@
       ],
       "updatedAt": "2026-10-18T02:40:49.930Z"
     },
+    "awakening/messages (k)/オリヴィエ_マリアベル.txt": {
+      "path": "Awakening/Messages (K)/オリヴィエ_マリアベル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_オリヴィエ_マリアベル_Ｃ",
+        "MID_支援_オリヴィエ_マリアベル_Ｂ",
+        "MID_支援_オリヴィエ_マリアベル_Ａ"
+      ],
+      "updatedAt": "2026-10-18T02:46:07.437Z"
+    },
     "awakening/messages (k)/カラム_ソワレ.txt": {
       "path": "Awakening/Messages (K)/カラム_ソワレ.txt",
       "mode": "main",
@@ -18436,6 +18446,12 @@
       "entryKey": "MID_支援_オリヴィエ_ベルベット_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-18T02:42:04.591Z"
+    },
+    "awakening/messages (k)/オリヴィエ_マリアベル.txt\u0000MID_支援_オリヴィエ_マリアベル_Ｃ": {
+      "path": "Awakening/Messages (K)/オリヴィエ_マリアベル.txt",
+      "entryKey": "MID_支援_オリヴィエ_マリアベル_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:46:48.882Z"
     },
     "awakening/messages (k)/カラム_ソワレ.txt\u0000MID_支援_カラム_ソワレ_Ａ": {
       "path": "Awakening/Messages (K)/カラム_ソワレ.txt",
