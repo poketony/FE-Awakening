@@ -8168,6 +8168,17 @@
       ],
       "updatedAt": "2026-10-11T15:50:14.825Z"
     },
+    "awakening/messages (k)/カラム_リズ.txt": {
+      "path": "Awakening/Messages (K)/カラム_リズ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_カラム_リズ_Ｃ",
+        "MID_支援_カラム_リズ_Ｂ",
+        "MID_支援_カラム_リズ_Ａ",
+        "MID_支援_カラム_リズ_Ｓ"
+      ],
+      "updatedAt": "2026-10-18T17:43:35.138Z"
+    },
     "awakening/messages (k)/ガイア_クロム.txt": {
       "path": "Awakening/Messages (K)/ガイア_クロム.txt",
       "mode": "main",
