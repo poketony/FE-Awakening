@@ -8211,6 +8211,17 @@
       ],
       "updatedAt": "2026-10-09T09:05:44.552Z"
     },
+    "awakening/messages (k)/ガイア_ソワレ.txt": {
+      "path": "Awakening/Messages (K)/ガイア_ソワレ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ガイア_ソワレ_Ｃ",
+        "MID_支援_ガイア_ソワレ_Ｂ",
+        "MID_支援_ガイア_ソワレ_Ａ",
+        "MID_支援_ガイア_ソワレ_Ｓ"
+      ],
+      "updatedAt": "2026-10-18T03:58:41.556Z"
+    },
     "awakening/messages (k)/ガイア_ティアモ.txt": {
       "path": "Awakening/Messages (K)/ガイア_ティアモ.txt",
       "mode": "main",
@@ -18827,6 +18838,12 @@
       "entryKey": "MID_支援_ガイア_セルジュ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-11T15:33:03.145Z"
+    },
+    "awakening/messages (k)/ガイア_ソワレ.txt\u0000MID_支援_ガイア_ソワレ_Ｃ": {
+      "path": "Awakening/Messages (K)/ガイア_ソワレ.txt",
+      "entryKey": "MID_支援_ガイア_ソワレ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-18T04:00:33.703Z"
     },
     "awakening/messages (k)/ガイア_ティアモ.txt\u0000MID_支援_ガイア_ティアモ_Ａ": {
       "path": "Awakening/Messages (K)/ガイア_ティアモ.txt",
