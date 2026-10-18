@@ -15002,6 +15002,18 @@
       "status": "approved",
       "updatedAt": "2026-10-18T16:17:18.047Z"
     },
+    "awakening/messages (k)/017.txt\u0000MID_017_ED1_03_5_PCF1": {
+      "path": "Awakening/Messages (K)/017.txt",
+      "entryKey": "MID_017_ED1_03_5_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-18T16:17:20.960Z"
+    },
+    "awakening/messages (k)/017.txt\u0000MID_017_ED1_03_5_PCM1": {
+      "path": "Awakening/Messages (K)/017.txt",
+      "entryKey": "MID_017_ED1_03_5_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-18T16:17:19.966Z"
+    },
     "awakening/messages (k)/017.txt\u0000MID_017_ED1_03_PCF1": {
       "path": "Awakening/Messages (K)/017.txt",
       "entryKey": "MID_017_ED1_03_PCF1",
@@ -15013,6 +15025,12 @@
       "entryKey": "MID_017_ED1_03_PCM1",
       "status": "approved",
       "updatedAt": "2026-10-18T16:15:59.091Z"
+    },
+    "awakening/messages (k)/017.txt\u0000MID_017_ED2": {
+      "path": "Awakening/Messages (K)/017.txt",
+      "entryKey": "MID_017_ED2",
+      "status": "approved",
+      "updatedAt": "2026-10-18T16:18:43.945Z"
     },
     "awakening/messages (k)/017.txt\u0000MID_017_EV1": {
       "path": "Awakening/Messages (K)/017.txt",
