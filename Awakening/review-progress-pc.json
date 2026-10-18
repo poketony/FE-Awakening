@@ -8393,6 +8393,16 @@
       ],
       "updatedAt": "2026-09-07T05:33:55.381Z"
     },
+    "awakening/messages (k)/サーリャ_ノノ.txt": {
+      "path": "Awakening/Messages (K)/サーリャ_ノノ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_サーリャ_ノノ_Ｃ",
+        "MID_支援_サーリャ_ノノ_Ｂ",
+        "MID_支援_サーリャ_ノノ_Ａ"
+      ],
+      "updatedAt": "2026-10-18T08:33:52.361Z"
+    },
     "awakening/messages (k)/サーリャ_フレデリク.txt": {
       "path": "Awakening/Messages (K)/サーリャ_フレデリク.txt",
       "mode": "main",
@@ -19213,6 +19223,12 @@
       "entryKey": "MID_支援_サーリャ_ソール_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-07T22:09:11.108Z"
+    },
+    "awakening/messages (k)/サーリャ_ノノ.txt\u0000MID_支援_サーリャ_ノノ_Ｃ": {
+      "path": "Awakening/Messages (K)/サーリャ_ノノ.txt",
+      "entryKey": "MID_支援_サーリャ_ノノ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-18T08:34:01.715Z"
     },
     "awakening/messages (k)/サーリャ_フレデリク.txt\u0000MID_支援_サーリャ_フレデリク_Ａ": {
       "path": "Awakening/Messages (K)/サーリャ_フレデリク.txt",
