@@ -15008,6 +15008,18 @@
       "status": "approved",
       "updatedAt": "2026-10-18T02:32:22.891Z"
     },
+    "awakening/messages (k)/026.txt\u0000MID_026_OP3_PCF1": {
+      "path": "Awakening/Messages (K)/026.txt",
+      "entryKey": "MID_026_OP3_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:32:29.464Z"
+    },
+    "awakening/messages (k)/026.txt\u0000MID_026_OP3_PCM1": {
+      "path": "Awakening/Messages (K)/026.txt",
+      "entryKey": "MID_026_OP3_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:32:27.703Z"
+    },
     "awakening/messages (k)/backup.txt\u0000MID_BACKUP_FORMAT": {
       "path": "Awakening/Messages (K)/Backup.txt",
       "entryKey": "MID_BACKUP_FORMAT",
