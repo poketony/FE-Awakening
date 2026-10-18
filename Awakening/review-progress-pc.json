@@ -8265,6 +8265,17 @@
       ],
       "updatedAt": "2026-10-18T04:09:37.508Z"
     },
+    "awakening/messages (k)/ガイア_ベルベット.txt": {
+      "path": "Awakening/Messages (K)/ガイア_ベルベット.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ガイア_ベルベット_Ｃ",
+        "MID_支援_ガイア_ベルベット_Ｂ",
+        "MID_支援_ガイア_ベルベット_Ａ",
+        "MID_支援_ガイア_ベルベット_Ｓ"
+      ],
+      "updatedAt": "2026-10-18T17:33:07.603Z"
+    },
     "awakening/messages (k)/ガイア_ミリエル.txt": {
       "path": "Awakening/Messages (K)/ガイア_ミリエル.txt",
       "mode": "main",
@@ -19497,6 +19508,12 @@
       "entryKey": "MID_支援_サーリャ_ソール_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-07T22:09:11.108Z"
+    },
+    "awakening/messages (k)/サーリャ_ドニ.txt\u0000MID_支援_サーリャ_ドニ_Ｃ": {
+      "path": "Awakening/Messages (K)/サーリャ_ドニ.txt",
+      "entryKey": "MID_支援_サーリャ_ドニ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-18T17:40:58.391Z"
     },
     "awakening/messages (k)/サーリャ_ノノ.txt\u0000MID_支援_サーリャ_ノノ_Ａ": {
       "path": "Awakening/Messages (K)/サーリャ_ノノ.txt",
