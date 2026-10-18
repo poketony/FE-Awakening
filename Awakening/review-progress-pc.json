@@ -9158,6 +9158,16 @@
       ],
       "updatedAt": "2026-10-07T17:30:31.951Z"
     },
+    "awakening/messages (k)/プレイヤー女_マリアベル.txt": {
+      "path": "Awakening/Messages (K)/プレイヤー女_マリアベル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_プレイヤー女_マリアベル_Ｃ_PCF1",
+        "MID_支援_プレイヤー女_マリアベル_Ｂ_PCF1",
+        "MID_支援_プレイヤー女_マリアベル_Ａ_PCF1"
+      ],
+      "updatedAt": "2026-10-18T16:43:36.562Z"
+    },
     "awakening/messages (k)/プレイヤー女_マーク男.txt": {
       "path": "Awakening/Messages (K)/プレイヤー女_マーク男.txt",
       "mode": "main",
@@ -19277,6 +19287,12 @@
       "entryKey": "MID_支援_ガイア_プレイヤー女_Ｓ_PCF1",
       "status": "approved",
       "updatedAt": "2026-10-08T07:45:41.583Z"
+    },
+    "awakening/messages (k)/ガイア_プレイヤー男.txt\u0000MID_支援_ガイア_プレイヤー男_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/ガイア_プレイヤー男.txt",
+      "entryKey": "MID_支援_ガイア_プレイヤー男_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-18T17:29:29.073Z"
     },
     "awakening/messages (k)/ガイア_ミリエル.txt\u0000MID_支援_ガイア_ミリエル_Ａ": {
       "path": "Awakening/Messages (K)/ガイア_ミリエル.txt",
