@@ -8019,6 +8019,17 @@
       ],
       "updatedAt": "2026-10-11T14:15:13.204Z"
     },
+    "awakening/messages (k)/オリヴィエ_フレデリク.txt": {
+      "path": "Awakening/Messages (K)/オリヴィエ_フレデリク.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_オリヴィエ_フレデリク_Ｃ",
+        "MID_支援_オリヴィエ_フレデリク_Ｂ",
+        "MID_支援_オリヴィエ_フレデリク_Ａ",
+        "MID_支援_オリヴィエ_フレデリク_Ｓ"
+      ],
+      "updatedAt": "2026-10-18T02:38:36.476Z"
+    },
     "awakening/messages (k)/オリヴィエ_プレイヤー女.txt": {
       "path": "Awakening/Messages (K)/オリヴィエ_プレイヤー女.txt",
       "mode": "main",
@@ -18307,6 +18318,12 @@
       "entryKey": "MID_支援_オリヴィエ_ドニ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-11T15:25:41.972Z"
+    },
+    "awakening/messages (k)/オリヴィエ_フレデリク.txt\u0000MID_支援_オリヴィエ_フレデリク_Ｃ": {
+      "path": "Awakening/Messages (K)/オリヴィエ_フレデリク.txt",
+      "entryKey": "MID_支援_オリヴィエ_フレデリク_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:39:24.513Z"
     },
     "awakening/messages (k)/オリヴィエ_プレイヤー女.txt\u0000MID_支援_オリヴィエ_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/オリヴィエ_プレイヤー女.txt",
