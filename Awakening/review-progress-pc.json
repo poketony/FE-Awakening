@@ -8297,6 +8297,16 @@
       ],
       "updatedAt": "2026-10-17T13:46:04.760Z"
     },
+    "awakening/messages (k)/ギャンレル_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/ギャンレル_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ギャンレル_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_ギャンレル_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_ギャンレル_プレイヤー男_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-10-18T13:51:22.128Z"
+    },
     "awakening/messages (k)/クロム_スミア.txt": {
       "path": "Awakening/Messages (K)/クロム_スミア.txt",
       "mode": "main",
@@ -19155,6 +19165,12 @@
       "entryKey": "MID_支援_ガイア_リベラ_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-17T13:48:06.903Z"
+    },
+    "awakening/messages (k)/ギャンレル_プレイヤー男.txt\u0000MID_支援_ギャンレル_プレイヤー男_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/ギャンレル_プレイヤー男.txt",
+      "entryKey": "MID_支援_ギャンレル_プレイヤー男_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-18T13:51:53.301Z"
     },
     "awakening/messages (k)/クロム_リズ.txt\u0000MID_支援_クロム_リズ_Ａ": {
       "path": "Awakening/Messages (K)/クロム_リズ.txt",
