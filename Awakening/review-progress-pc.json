@@ -10178,6 +10178,24 @@
       ],
       "updatedAt": "2026-10-13T17:11:32.966Z"
     },
+    "awakening/messages (k)/様子_セルジュ2.txt": {
+      "path": "Awakening/Messages (K)/様子_セルジュ2.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_セルジュ_前",
+        "MID_様子_セルジュ_前_通ちゃん",
+        "MID_様子_セルジュ_前_敬さん",
+        "MID_様子_セルジュ_後",
+        "MID_様子_セルジュ_後_通ちゃん",
+        "MID_様子_セルジュ_後_敬さん",
+        "MID_様子_セルジュ_後_無言",
+        "MID_様子_セルジュ_前_親子_子",
+        "MID_様子_セルジュ_後_親子_子",
+        "MID_様子_セルジュ_前_恋人",
+        "MID_様子_セルジュ_後_恋人"
+      ],
+      "updatedAt": "2026-10-18T02:33:14.170Z"
+    },
     "awakening/messages (k)/様子_ソール1.txt": {
       "path": "Awakening/Messages (K)/様子_ソール1.txt",
       "mode": "main",
@@ -22051,6 +22069,18 @@
       "entryKey": "MID_様子_シンシア_後_通さん",
       "status": "approved",
       "updatedAt": "2026-10-13T17:12:34.873Z"
+    },
+    "awakening/messages (k)/様子_セルジュ2.txt\u0000MID_様子_セルジュ_前": {
+      "path": "Awakening/Messages (K)/様子_セルジュ2.txt",
+      "entryKey": "MID_様子_セルジュ_前",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:33:17.321Z"
+    },
+    "awakening/messages (k)/様子_セルジュ2.txt\u0000MID_様子_セルジュ_前_通ちゃん": {
+      "path": "Awakening/Messages (K)/様子_セルジュ2.txt",
+      "entryKey": "MID_様子_セルジュ_前_通ちゃん",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:33:18.480Z"
     },
     "awakening/messages (k)/様子_ソール1.txt\u0000MID_様子_ソール_前": {
       "path": "Awakening/Messages (K)/様子_ソール1.txt",
