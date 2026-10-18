@@ -7138,6 +7138,18 @@
       ],
       "updatedAt": "2026-10-06T06:50:49.114Z"
     },
+    "awakening/messages (k)/x023.txt": {
+      "path": "Awakening/Messages (K)/X023.txt",
+      "mode": "main",
+      "expected": [
+        "MID_X023_OP1_PCM1",
+        "MID_X023_OP1_PCF1",
+        "MID_X023_ED1",
+        "MID_X023_BT1",
+        "MID_X023_BOSS_DIE1"
+      ],
+      "updatedAt": "2026-10-18T02:37:37.261Z"
+    },
     "awakening/messages (k)/お店.txt": {
       "path": "Awakening/Messages (K)/お店.txt",
       "mode": "main",
@@ -16897,6 +16909,12 @@
       "entryKey": "MID_X019_TK1",
       "status": "approved",
       "updatedAt": "2026-10-18T02:36:56.759Z"
+    },
+    "awakening/messages (k)/x023.txt\u0000MID_X023_OP1_PCM1": {
+      "path": "Awakening/Messages (K)/X023.txt",
+      "entryKey": "MID_X023_OP1_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:37:58.281Z"
     },
     "awakening/messages (k)/アズール_ウード.txt\u0000MID_支援_アズール_ウード_Ａ": {
       "path": "Awakening/Messages (K)/アズール_ウード.txt",
