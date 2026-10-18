@@ -8062,6 +8062,16 @@
       ],
       "updatedAt": "2026-09-10T20:11:27.537Z"
     },
+    "awakening/messages (k)/オリヴィエ_ベルベット.txt": {
+      "path": "Awakening/Messages (K)/オリヴィエ_ベルベット.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_オリヴィエ_ベルベット_Ｃ",
+        "MID_支援_オリヴィエ_ベルベット_Ｂ",
+        "MID_支援_オリヴィエ_ベルベット_Ａ"
+      ],
+      "updatedAt": "2026-10-18T02:40:49.930Z"
+    },
     "awakening/messages (k)/カラム_ソワレ.txt": {
       "path": "Awakening/Messages (K)/カラム_ソワレ.txt",
       "mode": "main",
@@ -18396,6 +18406,12 @@
       "entryKey": "MID_支援_オリヴィエ_ヘンリー_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-10T20:17:53.573Z"
+    },
+    "awakening/messages (k)/オリヴィエ_ベルベット.txt\u0000MID_支援_オリヴィエ_ベルベット_Ｃ": {
+      "path": "Awakening/Messages (K)/オリヴィエ_ベルベット.txt",
+      "entryKey": "MID_支援_オリヴィエ_ベルベット_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-18T02:42:04.591Z"
     },
     "awakening/messages (k)/カラム_ソワレ.txt\u0000MID_支援_カラム_ソワレ_Ａ": {
       "path": "Awakening/Messages (K)/カラム_ソワレ.txt",
