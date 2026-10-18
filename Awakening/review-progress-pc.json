@@ -8178,6 +8178,17 @@
       ],
       "updatedAt": "2026-10-17T13:52:35.139Z"
     },
+    "awakening/messages (k)/ガイア_サーリャ.txt": {
+      "path": "Awakening/Messages (K)/ガイア_サーリャ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ガイア_サーリャ_Ｃ",
+        "MID_支援_ガイア_サーリャ_Ｂ",
+        "MID_支援_ガイア_サーリャ_Ａ",
+        "MID_支援_ガイア_サーリャ_Ｓ"
+      ],
+      "updatedAt": "2026-10-18T03:00:38.922Z"
+    },
     "awakening/messages (k)/ガイア_スミア.txt": {
       "path": "Awakening/Messages (K)/ガイア_スミア.txt",
       "mode": "main",
@@ -8392,6 +8403,16 @@
         "MID_支援_サーリャ_ロンクー_Ｓ"
       ],
       "updatedAt": "2026-09-06T03:56:57.671Z"
+    },
+    "awakening/messages (k)/シャンブレー_グレゴ_親子.txt": {
+      "path": "Awakening/Messages (K)/シャンブレー_グレゴ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シャンブレー_グレゴ_親子_Ｃ",
+        "MID_支援_シャンブレー_グレゴ_親子_Ｂ",
+        "MID_支援_シャンブレー_グレゴ_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-18T03:40:19.743Z"
     },
     "awakening/messages (k)/シャンブレー_ドニ_親子.txt": {
       "path": "Awakening/Messages (K)/シャンブレー_ドニ_親子.txt",
@@ -19055,6 +19076,12 @@
       "entryKey": "MID_支援_サーリャ_ロンクー_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-11T06:23:06.043Z"
+    },
+    "awakening/messages (k)/シャンブレー_グレゴ_親子.txt\u0000MID_支援_シャンブレー_グレゴ_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/シャンブレー_グレゴ_親子.txt",
+      "entryKey": "MID_支援_シャンブレー_グレゴ_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-18T03:40:30.125Z"
     },
     "awakening/messages (k)/シャンブレー_プレイヤー女.txt\u0000MID_支援_シャンブレー_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/シャンブレー_プレイヤー女.txt",
