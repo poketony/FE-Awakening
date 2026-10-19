@@ -9003,6 +9003,17 @@
       ],
       "updatedAt": "2026-09-06T04:33:32.153Z"
     },
+    "awakening/messages (k)/グレゴ_サーリャ.txt": {
+      "path": "Awakening/Messages (K)/グレゴ_サーリャ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_グレゴ_サーリャ_Ｃ",
+        "MID_支援_グレゴ_サーリャ_Ｂ",
+        "MID_支援_グレゴ_サーリャ_Ａ",
+        "MID_支援_グレゴ_サーリャ_Ｓ"
+      ],
+      "updatedAt": "2026-10-19T03:46:59.900Z"
+    },
     "awakening/messages (k)/グレゴ_セルジュ.txt": {
       "path": "Awakening/Messages (K)/グレゴ_セルジュ.txt",
       "mode": "main",
@@ -20289,6 +20300,12 @@
       "entryKey": "MID_支援_クロム_リズ_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-11T15:42:29.802Z"
+    },
+    "awakening/messages (k)/グレゴ_サーリャ.txt\u0000MID_支援_グレゴ_サーリャ_Ｃ": {
+      "path": "Awakening/Messages (K)/グレゴ_サーリャ.txt",
+      "entryKey": "MID_支援_グレゴ_サーリャ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-19T03:48:30.271Z"
     },
     "awakening/messages (k)/グレゴ_セルジュ.txt\u0000MID_支援_グレゴ_セルジュ_Ａ": {
       "path": "Awakening/Messages (K)/グレゴ_セルジュ.txt",
