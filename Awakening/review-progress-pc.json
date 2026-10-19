@@ -9411,6 +9411,17 @@
       ],
       "updatedAt": "2026-10-17T08:06:56.555Z"
     },
+    "awakening/messages (k)/セルジュ_ソール.txt": {
+      "path": "Awakening/Messages (K)/セルジュ_ソール.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_セルジュ_ソール_Ｃ",
+        "MID_支援_セルジュ_ソール_Ｂ",
+        "MID_支援_セルジュ_ソール_Ａ",
+        "MID_支援_セルジュ_ソール_Ｓ"
+      ],
+      "updatedAt": "2026-10-19T15:09:18.588Z"
+    },
     "awakening/messages (k)/セルジュ_ドニ.txt": {
       "path": "Awakening/Messages (K)/セルジュ_ドニ.txt",
       "mode": "main",
@@ -21325,6 +21336,12 @@
       "entryKey": "MID_支援_スミア_プレイヤー女_Ｃ_PCF1",
       "status": "approved",
       "updatedAt": "2026-10-15T12:19:33.899Z"
+    },
+    "awakening/messages (k)/セルジュ_ソール.txt\u0000MID_支援_セルジュ_ソール_Ｃ": {
+      "path": "Awakening/Messages (K)/セルジュ_ソール.txt",
+      "entryKey": "MID_支援_セルジュ_ソール_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-19T15:14:39.096Z"
     },
     "awakening/messages (k)/セルジュ_プレイヤー女.txt\u0000MID_支援_セルジュ_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/セルジュ_プレイヤー女.txt",
