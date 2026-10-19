@@ -17114,6 +17114,12 @@
       "status": "approved",
       "updatedAt": "2026-10-19T05:16:40.554Z"
     },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MYROOM_恋愛事情": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_H_MYROOM_恋愛事情",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:17:28.294Z"
+    },
     "awakening/messages (k)/menu.txt\u0000MID_H_MYROOM_様子を見る": {
       "path": "Awakening/Messages (K)/Menu.txt",
       "entryKey": "MID_H_MYROOM_様子を見る",
@@ -17468,6 +17474,12 @@
       "status": "approved",
       "updatedAt": "2026-10-19T05:16:43.762Z"
     },
+    "awakening/messages (k)/menu.txt\u0000MID_MYROOM_カード編集": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_MYROOM_カード編集",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:17:29.223Z"
+    },
     "awakening/messages (k)/menu.txt\u0000MID_MYROOM_キャラ名鑑": {
       "path": "Awakening/Messages (K)/Menu.txt",
       "entryKey": "MID_MYROOM_キャラ名鑑",
@@ -17515,6 +17527,12 @@
       "entryKey": "MID_MYROOM_模様替え選択",
       "status": "approved",
       "updatedAt": "2026-10-19T05:16:58.234Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MYROOM_見渡す": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_MYROOM_見渡す",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:17:30.572Z"
     },
     "awakening/messages (k)/menu.txt\u0000MID_RELIANCE_会話相手選択": {
       "path": "Awakening/Messages (K)/Menu.txt",
