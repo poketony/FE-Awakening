@@ -620,7 +620,7 @@ MID_SHOP_MESS_輸送隊に送る_行商人: 고마워. 수송대로 보낼게.
 MID_SHOP_MESS_また来い: 다음에 또 와 달라고.
 MID_SHOP_MESS_また来い_行商人: 다음에 또 와 줘.
 MID_INPUT_ひらがな: 히라가나
-MID_INPUT_カタカナ: 가타가나
+MID_INPUT_カタカナ: 가타카나
 MID_INPUT_漢字: 한자
 MID_INPUT_英数字: ABC
 MID_INPUT_一字削除: X: 삭제
