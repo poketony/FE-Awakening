@@ -9547,6 +9547,16 @@
       ],
       "updatedAt": "2026-09-07T05:32:43.763Z"
     },
+    "awakening/messages (k)/ソワレ_ミリエル.txt": {
+      "path": "Awakening/Messages (K)/ソワレ_ミリエル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ソワレ_ミリエル_Ｃ",
+        "MID_支援_ソワレ_ミリエル_Ｂ",
+        "MID_支援_ソワレ_ミリエル_Ａ"
+      ],
+      "updatedAt": "2026-10-19T14:48:24.907Z"
+    },
     "awakening/messages (k)/ソワレ_リベラ.txt": {
       "path": "Awakening/Messages (K)/ソワレ_リベラ.txt",
       "mode": "main",
@@ -21441,6 +21451,12 @@
       "entryKey": "MID_支援_セレナ_ロラン_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-11T18:17:33.441Z"
+    },
+    "awakening/messages (k)/ソワレ_ミリエル.txt\u0000MID_支援_ソワレ_ミリエル_Ｃ": {
+      "path": "Awakening/Messages (K)/ソワレ_ミリエル.txt",
+      "entryKey": "MID_支援_ソワレ_ミリエル_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-19T14:48:56.218Z"
     },
     "awakening/messages (k)/ソワレ_リベラ.txt\u0000MID_支援_ソワレ_リベラ_Ａ": {
       "path": "Awakening/Messages (K)/ソワレ_リベラ.txt",
