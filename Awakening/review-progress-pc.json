@@ -17096,6 +17096,12 @@
       "status": "approved",
       "updatedAt": "2026-10-19T05:16:42.679Z"
     },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MYROOM_マイユニ名鑑": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_H_MYROOM_マイユニ名鑑",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:17:22.769Z"
+    },
     "awakening/messages (k)/menu.txt\u0000MID_H_MYROOM_占い": {
       "path": "Awakening/Messages (K)/Menu.txt",
       "entryKey": "MID_H_MYROOM_占い",
@@ -17474,11 +17480,23 @@
       "status": "approved",
       "updatedAt": "2026-10-19T05:16:41.732Z"
     },
+    "awakening/messages (k)/menu.txt\u0000MID_MYROOM_マイユニ名鑑": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_MYROOM_マイユニ名鑑",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:17:16.976Z"
+    },
     "awakening/messages (k)/menu.txt\u0000MID_MYROOM_占い": {
       "path": "Awakening/Messages (K)/Menu.txt",
       "entryKey": "MID_MYROOM_占い",
       "status": "approved",
       "updatedAt": "2026-10-19T05:16:26.987Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MYROOM_恋愛事情": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_MYROOM_恋愛事情",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:17:24.151Z"
     },
     "awakening/messages (k)/menu.txt\u0000MID_MYROOM_様子を見る": {
       "path": "Awakening/Messages (K)/Menu.txt",
