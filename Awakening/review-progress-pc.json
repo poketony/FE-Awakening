@@ -17072,6 +17072,12 @@
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
     },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MYROOM_占い": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_H_MYROOM_占い",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:27.802Z"
+    },
     "awakening/messages (k)/menu.txt\u0000MID_H_無し": {
       "path": "Awakening/Messages (K)/menu.txt",
       "entryKey": "MID_H_無し",
@@ -17408,11 +17414,23 @@
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
     },
+    "awakening/messages (k)/menu.txt\u0000MID_MYROOM_占い": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_MYROOM_占い",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:26.987Z"
+    },
     "awakening/messages (k)/menu.txt\u0000MID_RELIANCE_会話相手選択": {
       "path": "Awakening/Messages (K)/Menu.txt",
       "entryKey": "MID_RELIANCE_会話相手選択",
       "status": "approved",
       "updatedAt": "2026-10-19T05:16:22.770Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_RELIANCE_名前不明": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_RELIANCE_名前不明",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:25.929Z"
     },
     "awakening/messages (k)/menu.txt\u0000MID_エクストラ": {
       "path": "Awakening/Messages (K)/menu.txt",
