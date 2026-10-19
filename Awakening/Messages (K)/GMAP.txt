@@ -4,12 +4,12 @@ MESS_ARCHIVE_GMAP
 Message Name: Message
 
 
-MID_GMAP_章確認: 이 장에 들어갑니까?
-MID_GMAP_遭遇戦確認: 이 적과 전투를 합니까?
-MID_GMAP_遭遇戦確認2: 이 적과 전투를 합니까?
-MID_GMAP_店確認: 여기서 상점에 들어갑니까?
-MID_GMAP_交渉確認: 이 부대와 교섭합니까?
-MID_GMAP_課金確認: 이계의 문에 들어갑니까?
+MID_GMAP_章確認: 이 장에 들어가겠습니까?
+MID_GMAP_遭遇戦確認: 이 적과 전투를 하겠습니까?
+MID_GMAP_遭遇戦確認2: 이 적과 전투를 하겠습니까?
+MID_GMAP_店確認: 여기서 상점에 들어가겠습니까?
+MID_GMAP_交渉確認: 이 부대와 교섭하겠습니까?
+MID_GMAP_課金確認: 이계의 문에 들어가겠습니까?
 MID_GMAP_SCENARIO: 돌입
 MID_GMAP_ENCOUNT: 전투
 MID_GMAP_SHOP: 상점
