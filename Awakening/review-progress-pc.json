@@ -17072,11 +17072,29 @@
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
     },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MYROOM_データ": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_H_MYROOM_データ",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:42.679Z"
+    },
     "awakening/messages (k)/menu.txt\u0000MID_H_MYROOM_占い": {
       "path": "Awakening/Messages (K)/Menu.txt",
       "entryKey": "MID_H_MYROOM_占い",
       "status": "approved",
       "updatedAt": "2026-10-19T05:16:27.802Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MYROOM_占いトップ": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_H_MYROOM_占いトップ",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:40.554Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_H_MYROOM_模様替え": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_H_MYROOM_模様替え",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:45.740Z"
     },
     "awakening/messages (k)/menu.txt\u0000MID_H_無し": {
       "path": "Awakening/Messages (K)/menu.txt",
@@ -17414,11 +17432,29 @@
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
     },
+    "awakening/messages (k)/menu.txt\u0000MID_MYROOM_いろいろデータ": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_MYROOM_いろいろデータ",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:43.762Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MYROOM_データ": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_MYROOM_データ",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:41.732Z"
+    },
     "awakening/messages (k)/menu.txt\u0000MID_MYROOM_占い": {
       "path": "Awakening/Messages (K)/Menu.txt",
       "entryKey": "MID_MYROOM_占い",
       "status": "approved",
       "updatedAt": "2026-10-19T05:16:26.987Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_MYROOM_模様替え": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_MYROOM_模様替え",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:44.674Z"
     },
     "awakening/messages (k)/menu.txt\u0000MID_RELIANCE_会話相手選択": {
       "path": "Awakening/Messages (K)/Menu.txt",
