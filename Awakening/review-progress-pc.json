@@ -9589,6 +9589,27 @@
       ],
       "updatedAt": "2026-10-07T17:25:45.625Z"
     },
+    "awakening/messages (k)/チキ_プレイヤー男.txt": {
+      "path": "Awakening/Messages (K)/チキ_プレイヤー男.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_チキ_プレイヤー男_Ｃ_PCM1",
+        "MID_支援_チキ_プレイヤー男_Ｂ_PCM1",
+        "MID_支援_チキ_プレイヤー男_Ａ_PCM1",
+        "MID_支援_チキ_プレイヤー男_Ｓ_PCM1"
+      ],
+      "updatedAt": "2026-10-19T04:35:17.377Z"
+    },
+    "awakening/messages (k)/チキ_ルキナ.txt": {
+      "path": "Awakening/Messages (K)/チキ_ルキナ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_チキ_マルス_Ｃ",
+        "MID_支援_チキ_マルス_Ｂ",
+        "MID_支援_チキ_マルス_Ａ"
+      ],
+      "updatedAt": "2026-10-19T04:36:20.061Z"
+    },
     "awakening/messages (k)/ティアモ_ドニ.txt": {
       "path": "Awakening/Messages (K)/ティアモ_ドニ.txt",
       "mode": "main",
@@ -9630,6 +9651,17 @@
         "MID_支援_デジェル_プレイヤー男_親子_Ａ_PCM1"
       ],
       "updatedAt": "2026-10-18T08:35:07.931Z"
+    },
+    "awakening/messages (k)/デジェル_ロラン.txt": {
+      "path": "Awakening/Messages (K)/デジェル_ロラン.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_デジェル_ロラン_Ｃ",
+        "MID_支援_デジェル_ロラン_Ｂ",
+        "MID_支援_デジェル_ロラン_Ａ",
+        "MID_支援_デジェル_ロラン_Ｓ"
+      ],
+      "updatedAt": "2026-10-19T04:38:31.209Z"
     },
     "awakening/messages (k)/ドニ_ノノ.txt": {
       "path": "Awakening/Messages (K)/ドニ_ノノ.txt",
@@ -9759,6 +9791,17 @@
         "MID_支援_ノワール_プレイヤー男_Ｓ_PCM1"
       ],
       "updatedAt": "2026-10-17T09:51:36.794Z"
+    },
+    "awakening/messages (k)/ノワール_ロラン.txt": {
+      "path": "Awakening/Messages (K)/ノワール_ロラン.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ノワール_ロラン_Ｃ",
+        "MID_支援_ノワール_ロラン_Ｂ",
+        "MID_支援_ノワール_ロラン_Ａ",
+        "MID_支援_ノワール_ロラン_Ｓ"
+      ],
+      "updatedAt": "2026-10-19T04:39:21.851Z"
     },
     "awakening/messages (k)/バジーリオ_フラヴィア.txt": {
       "path": "Awakening/Messages (K)/バジーリオ_フラヴィア.txt",
@@ -9989,6 +10032,17 @@
         "MID_支援_ベルベット_リヒト_Ｓ"
       ],
       "updatedAt": "2026-10-12T05:37:03.373Z"
+    },
+    "awakening/messages (k)/ベルベット_リベラ.txt": {
+      "path": "Awakening/Messages (K)/ベルベット_リベラ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ベルベット_リベラ_Ｃ",
+        "MID_支援_ベルベット_リベラ_Ｂ",
+        "MID_支援_ベルベット_リベラ_Ａ",
+        "MID_支援_ベルベット_リベラ_Ｓ"
+      ],
+      "updatedAt": "2026-10-19T04:41:38.541Z"
     },
     "awakening/messages (k)/マルス_アズール_兄弟.txt": {
       "path": "Awakening/Messages (K)/マルス_アズール_兄弟.txt",
@@ -16916,6 +16970,24 @@
       "status": "approved",
       "updatedAt": "2026-10-13T17:14:15.506Z"
     },
+    "awakening/messages (k)/menu.txt\u0000MID_B_SORTIE_おまかせ": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_B_SORTIE_おまかせ",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:21.305Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_B_SORTIE_一覧": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_B_SORTIE_一覧",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:20.423Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_B_SORTIE_切り替え": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_B_SORTIE_切り替え",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:21.938Z"
+    },
     "awakening/messages (k)/menu.txt\u0000MID_H_MENU_お任せAI_なし": {
       "path": "Awakening/Messages (K)/menu.txt",
       "entryKey": "MID_H_MENU_お任せAI_なし",
@@ -17335,6 +17407,12 @@
       "entryKey": "MID_MENU_部隊表",
       "status": "approved",
       "updatedAt": "2000-01-01T00:00:00.000Z"
+    },
+    "awakening/messages (k)/menu.txt\u0000MID_RELIANCE_会話相手選択": {
+      "path": "Awakening/Messages (K)/Menu.txt",
+      "entryKey": "MID_RELIANCE_会話相手選択",
+      "status": "approved",
+      "updatedAt": "2026-10-19T05:16:22.770Z"
     },
     "awakening/messages (k)/menu.txt\u0000MID_エクストラ": {
       "path": "Awakening/Messages (K)/menu.txt",
