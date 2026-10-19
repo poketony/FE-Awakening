@@ -8777,6 +8777,17 @@
       ],
       "updatedAt": "2026-10-19T02:44:18.788Z"
     },
+    "awakening/messages (k)/カラム_マリアベル.txt": {
+      "path": "Awakening/Messages (K)/カラム_マリアベル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_カラム_マリアベル_Ｃ",
+        "MID_支援_カラム_マリアベル_Ｂ",
+        "MID_支援_カラム_マリアベル_Ａ",
+        "MID_支援_カラム_マリアベル_Ｓ"
+      ],
+      "updatedAt": "2026-10-19T02:55:08.255Z"
+    },
     "awakening/messages (k)/カラム_ミリエル.txt": {
       "path": "Awakening/Messages (K)/カラム_ミリエル.txt",
       "mode": "main",
@@ -19864,6 +19875,12 @@
       "entryKey": "MID_支援_カラム_ベルベット_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-19T02:46:30.216Z"
+    },
+    "awakening/messages (k)/カラム_マリアベル.txt\u0000MID_支援_カラム_マリアベル_Ｃ": {
+      "path": "Awakening/Messages (K)/カラム_マリアベル.txt",
+      "entryKey": "MID_支援_カラム_マリアベル_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-19T02:56:01.122Z"
     },
     "awakening/messages (k)/カラム_ミリエル.txt\u0000MID_支援_カラム_ミリエル_Ａ": {
       "path": "Awakening/Messages (K)/カラム_ミリエル.txt",
