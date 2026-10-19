@@ -8994,6 +8994,17 @@
       ],
       "updatedAt": "2026-10-11T05:55:54.818Z"
     },
+    "awakening/messages (k)/クロム_マリアベル.txt": {
+      "path": "Awakening/Messages (K)/クロム_マリアベル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_クロム_マリアベル_Ｃ",
+        "MID_支援_クロム_マリアベル_Ｂ",
+        "MID_支援_クロム_マリアベル_Ａ",
+        "MID_支援_クロム_マリアベル_Ｓ"
+      ],
+      "updatedAt": "2026-10-19T15:35:07.439Z"
+    },
     "awakening/messages (k)/クロム_リズ.txt": {
       "path": "Awakening/Messages (K)/クロム_リズ.txt",
       "mode": "main",
@@ -21354,6 +21365,12 @@
       "entryKey": "MID_支援_セルジュ_ソール_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-19T15:14:39.096Z"
+    },
+    "awakening/messages (k)/セルジュ_ソール.txt\u0000MID_支援_セルジュ_ソール_Ｓ": {
+      "path": "Awakening/Messages (K)/セルジュ_ソール.txt",
+      "entryKey": "MID_支援_セルジュ_ソール_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-10-19T15:35:06.150Z"
     },
     "awakening/messages (k)/セルジュ_プレイヤー女.txt\u0000MID_支援_セルジュ_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/セルジュ_プレイヤー女.txt",
