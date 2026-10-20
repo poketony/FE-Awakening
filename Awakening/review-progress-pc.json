@@ -10212,6 +10212,17 @@
       ],
       "updatedAt": "2026-10-18T12:04:36.686Z"
     },
+    "awakening/messages (k)/プレイヤー女_ブレディ.txt": {
+      "path": "Awakening/Messages (K)/プレイヤー女_ブレディ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_プレイヤー女_ブレディ_Ｃ_PCF1",
+        "MID_支援_プレイヤー女_ブレディ_Ｂ_PCF1",
+        "MID_支援_プレイヤー女_ブレディ_Ａ_PCF1",
+        "MID_支援_プレイヤー女_ブレディ_Ｓ_PCF1"
+      ],
+      "updatedAt": "2026-10-20T08:10:20.669Z"
+    },
     "awakening/messages (k)/プレイヤー女_ヘンリー.txt": {
       "path": "Awakening/Messages (K)/プレイヤー女_ヘンリー.txt",
       "mode": "main",
@@ -24007,6 +24018,12 @@
       "entryKey": "MID_支援_ンン_ガイア_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-20T04:40:33.391Z"
+    },
+    "awakening/messages (k)/ンン_ソール_親子.txt\u0000MID_支援_ンン_ソール_親子_Ａ": {
+      "path": "Awakening/Messages (K)/ンン_ソール_親子.txt",
+      "entryKey": "MID_支援_ンン_ソール_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T08:10:19.090Z"
     },
     "awakening/messages (k)/ンン_ソール_親子.txt\u0000MID_支援_ンン_ソール_親子_Ｂ": {
       "path": "Awakening/Messages (K)/ンン_ソール_親子.txt",
