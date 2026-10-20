@@ -9412,6 +9412,17 @@
       ],
       "updatedAt": "2026-10-17T12:49:51.675Z"
     },
+    "awakening/messages (k)/スミア_フレデリク.txt": {
+      "path": "Awakening/Messages (K)/スミア_フレデリク.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_スミア_フレデリク_Ｃ",
+        "MID_支援_スミア_フレデリク_Ｂ",
+        "MID_支援_スミア_フレデリク_Ａ",
+        "MID_支援_スミア_フレデリク_Ｓ"
+      ],
+      "updatedAt": "2026-10-20T01:52:56.673Z"
+    },
     "awakening/messages (k)/スミア_プレイヤー女.txt": {
       "path": "Awakening/Messages (K)/スミア_プレイヤー女.txt",
       "mode": "main",
@@ -21422,6 +21433,12 @@
       "entryKey": "MID_支援_ジェローム_ヴェイク_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-17T12:50:14.204Z"
+    },
+    "awakening/messages (k)/スミア_フレデリク.txt\u0000MID_支援_スミア_フレデリク_Ｃ": {
+      "path": "Awakening/Messages (K)/スミア_フレデリク.txt",
+      "entryKey": "MID_支援_スミア_フレデリク_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T01:54:13.129Z"
     },
     "awakening/messages (k)/スミア_プレイヤー女.txt\u0000MID_支援_スミア_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/スミア_プレイヤー女.txt",
