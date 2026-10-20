@@ -10928,6 +10928,16 @@
       ],
       "updatedAt": "2026-09-06T03:13:49.921Z"
     },
+    "awakening/messages (k)/ンン_フレデリク_親子.txt": {
+      "path": "Awakening/Messages (K)/ンン_フレデリク_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ンン_フレデリク_親子_Ｃ",
+        "MID_支援_ンン_フレデリク_親子_Ｂ",
+        "MID_支援_ンン_フレデリク_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-20T06:27:33.264Z"
+    },
     "awakening/messages (k)/ンン_ロンクー_親子.txt": {
       "path": "Awakening/Messages (K)/ンン_ロンクー_親子.txt",
       "mode": "main",
@@ -10937,6 +10947,16 @@
         "MID_支援_ンン_ロンクー_親子_Ａ"
       ],
       "updatedAt": "2026-10-19T01:42:36.916Z"
+    },
+    "awakening/messages (k)/ンン_ヴィオール_親子.txt": {
+      "path": "Awakening/Messages (K)/ンン_ヴィオール_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ンン_ヴィオール_親子_Ｃ",
+        "MID_支援_ンン_ヴィオール_親子_Ｂ",
+        "MID_支援_ンン_ヴィオール_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-20T06:38:41.224Z"
     },
     "awakening/messages (k)/ンン_ヴェイク_親子.txt": {
       "path": "Awakening/Messages (K)/ンン_ヴェイク_親子.txt",
@@ -23306,6 +23326,12 @@
       "entryKey": "MID_支援_ンン_ノノ_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-07T05:01:24.275Z"
+    },
+    "awakening/messages (k)/ンン_ヴィオール_親子.txt\u0000MID_支援_ンン_ヴィオール_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ンン_ヴィオール_親子.txt",
+      "entryKey": "MID_支援_ンン_ヴィオール_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T06:39:14.529Z"
     },
     "awakening/messages (k)/ンン_ヴェイク_親子.txt\u0000MID_支援_ンン_ヴェイク_親子_Ｃ": {
       "path": "Awakening/Messages (K)/ンン_ヴェイク_親子.txt",
