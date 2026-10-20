@@ -9123,6 +9123,17 @@
       ],
       "updatedAt": "2026-10-20T07:07:29.059Z"
     },
+    "awakening/messages (k)/グレゴ_ノノ.txt": {
+      "path": "Awakening/Messages (K)/グレゴ_ノノ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_グレゴ_ノノ_Ｃ",
+        "MID_支援_グレゴ_ノノ_Ｂ",
+        "MID_支援_グレゴ_ノノ_Ａ",
+        "MID_支援_グレゴ_ノノ_Ｓ"
+      ],
+      "updatedAt": "2026-10-20T07:24:18.140Z"
+    },
     "awakening/messages (k)/グレゴ_ミリエル.txt": {
       "path": "Awakening/Messages (K)/グレゴ_ミリエル.txt",
       "mode": "main",
@@ -21824,6 +21835,12 @@
       "entryKey": "MID_支援_グレゴ_ティアモ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-20T07:15:58.831Z"
+    },
+    "awakening/messages (k)/グレゴ_ノノ.txt\u0000MID_支援_グレゴ_ノノ_Ｃ": {
+      "path": "Awakening/Messages (K)/グレゴ_ノノ.txt",
+      "entryKey": "MID_支援_グレゴ_ノノ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T07:26:40.637Z"
     },
     "awakening/messages (k)/グレゴ_ミリエル.txt\u0000MID_支援_グレゴ_ミリエル_Ａ": {
       "path": "Awakening/Messages (K)/グレゴ_ミリエル.txt",
