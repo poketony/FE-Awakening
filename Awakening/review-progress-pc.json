@@ -9897,6 +9897,16 @@
       ],
       "updatedAt": "2026-10-20T02:47:30.562Z"
     },
+    "awakening/messages (k)/ノワール_フレデリク_親子.txt": {
+      "path": "Awakening/Messages (K)/ノワール_フレデリク_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ノワール_フレデリク_親子_Ｃ",
+        "MID_支援_ノワール_フレデリク_親子_Ｂ",
+        "MID_支援_ノワール_フレデリク_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-20T04:27:04.461Z"
+    },
     "awakening/messages (k)/ノワール_プレイヤー女.txt": {
       "path": "Awakening/Messages (K)/ノワール_プレイヤー女.txt",
       "mode": "main",
@@ -21993,6 +22003,12 @@
       "entryKey": "MID_支援_ノワール_カラム_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-20T02:48:54.463Z"
+    },
+    "awakening/messages (k)/ノワール_ガイア_親子.txt\u0000MID_支援_ノワール_ガイア_親子_Ａ": {
+      "path": "Awakening/Messages (K)/ノワール_ガイア_親子.txt",
+      "entryKey": "MID_支援_ノワール_ガイア_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T04:27:02.915Z"
     },
     "awakening/messages (k)/ノワール_ガイア_親子.txt\u0000MID_支援_ノワール_ガイア_親子_Ｂ": {
       "path": "Awakening/Messages (K)/ノワール_ガイア_親子.txt",
