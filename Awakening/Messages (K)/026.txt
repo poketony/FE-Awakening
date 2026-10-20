@@ -244,7 +244,7 @@ MID_026_ED1A_結婚_ジェローム: $t1$Wmusername|7$Wmジェローム|3$w0|$Ws
 MID_026_ED1A_結婚_マーク男: 
 MID_026_ED1A_結婚_マーク女: 
 MID_026_ED1A_結婚_シャンブレー: $t1$Wmusername|7$Wmシャンブレー|3$w0|$Wsシャンブレー|$Wa$SvpSE_VOICE_CHAMBRAY_EVT_8|고민이 있다면,\n나한테 뭐든지 말해 줘.$k$p$E笑,|나, $Nu 널 위해서라면\n얼마든지 싸우고, 강해질 테니까!$k\n$Wsusername|$Wa$E笑,|……$k
-MID_026_ED1A_結婚_ロラン: $t1$Wmusername|7$Wmロラン|3$w0|$Wsロラン|$Wa$SvpSE_VOICE_LAURENT_EVT_6|당신이 살고, 사룡이 부활하지 않는…\n그런 방법이 없다고 단정지을 순 없습니다.$k$p$E笑,|찾죠, $Nu. 둘이서라면\n찾아낼 수 있을 것 같은 기분이 듭니다.$k\n$Wsusername|$Wa$E笑,|……$k
+MID_026_ED1A_結婚_ロラン: $t1$Wmusername|7$Wmロラン|3$w0|$Wsロラン|$Wa$SvpSE_VOICE_LAURENT_EVT_6|당신이 살고, 사룡이 부활하지 않는…\n그런 방법이 없다고 단정 지을 순 없습니다.$k$p$E笑,|찾죠, $Nu. 둘이서라면\n찾아낼 수 있을 것 같은 기분이 듭니다.$k\n$Wsusername|$Wa$E笑,|……$k
 MID_026_ED1A_結婚_ノワール: $t1$Wmusername|7$Wmノワール|3$w0|$Wsノワール|$Wa$SvpSE_VOICE_NOIR_EVT_2|$E苦,|네가 없어진다니…\n상상하는 것만으로도… 무, 무서워…$k$p$E通常,|부탁이야… 계속 나와 함께 있어 줘…\n이제 두 번 다신… 없어지지 마…$k\n$Wsusername|$Wa$w0|$E笑,|……$k
 MID_026_ED1A_結婚_ンン: $t1$Wmusername|7$Wmンン|3$w0|$Wsンン|$Wa$SvpSE_VOICE_NN_EVT_20|$E笑,|$Nu, 당신이 원한다면…\n잠깐은 어딘가에 가도 좋습니다.$k$p$Eキメ,|저의 일생은 깁니다. 그러니,\n계속 당신이 돌아오는 걸 기다릴 겁니다.$k\n$Wsusername|$Wa$w0|$E笑,|……$k
 MID_026_ED1A_結婚_チキ: $t1$Wmusername|7$Wmチキ|3$w0|$Wsチキ|$Wa$SvpSE_VOICE_TIKI_EVT_10|$Nu, 당신과 둘이라면\n반드시 찾아낼 수 있을 거 같아.$k$p$E笑,|정말 좋아하는 당신과, 세계…\n둘 다 구할 수 있는 방법을…$k\n$Wsusername|$Wa$E笑,|……$k
