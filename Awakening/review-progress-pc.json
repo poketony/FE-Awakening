@@ -9047,6 +9047,17 @@
       ],
       "updatedAt": "2026-10-06T14:13:05.774Z"
     },
+    "awakening/messages (k)/グレゴ_ソワレ.txt": {
+      "path": "Awakening/Messages (K)/グレゴ_ソワレ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_グレゴ_ソワレ_Ｃ",
+        "MID_支援_グレゴ_ソワレ_Ｂ",
+        "MID_支援_グレゴ_ソワレ_Ａ",
+        "MID_支援_グレゴ_ソワレ_Ｓ"
+      ],
+      "updatedAt": "2026-10-20T01:27:17.812Z"
+    },
     "awakening/messages (k)/グレゴ_ミリエル.txt": {
       "path": "Awakening/Messages (K)/グレゴ_ミリエル.txt",
       "mode": "main",
@@ -11422,6 +11433,29 @@
         "MID_様子_セルジュ_後_恋人"
       ],
       "updatedAt": "2026-10-18T02:33:14.170Z"
+    },
+    "awakening/messages (k)/様子_セレナ4.txt": {
+      "path": "Awakening/Messages (K)/様子_セレナ4.txt",
+      "mode": "main",
+      "expected": [
+        "MID_様子_セレナ_前",
+        "MID_様子_セレナ_前_無言",
+        "MID_様子_セレナ_前_通さん",
+        "MID_様子_セレナ_前_特殊",
+        "MID_様子_セレナ_後",
+        "MID_様子_セレナ_後_通さん",
+        "MID_様子_セレナ_後_特殊",
+        "MID_様子_セレナ_後_無言",
+        "MID_様子_セレナ_前_親子_子",
+        "MID_様子_セレナ_後_親子_子",
+        "MID_様子_セレナ_前_親子_母",
+        "MID_様子_セレナ_後_親子_母",
+        "MID_様子_セレナ_前_親子_父",
+        "MID_様子_セレナ_後_親子_父",
+        "MID_様子_セレナ_前_恋人",
+        "MID_様子_セレナ_後_恋人"
+      ],
+      "updatedAt": "2026-10-20T01:27:33.194Z"
     },
     "awakening/messages (k)/様子_ソワレ1.txt": {
       "path": "Awakening/Messages (K)/様子_ソワレ1.txt",
@@ -25054,6 +25088,12 @@
       "entryKey": "MID_様子_セルジュ_後_通ちゃん",
       "status": "approved",
       "updatedAt": "2026-10-18T02:33:21.805Z"
+    },
+    "awakening/messages (k)/様子_セレナ4.txt\u0000MID_様子_セレナ_前": {
+      "path": "Awakening/Messages (K)/様子_セレナ4.txt",
+      "entryKey": "MID_様子_セレナ_前",
+      "status": "approved",
+      "updatedAt": "2026-10-20T01:27:46.710Z"
     },
     "awakening/messages (k)/様子_ソワレ1.txt\u0000MID_様子_ソワレ_前": {
       "path": "Awakening/Messages (K)/様子_ソワレ1.txt",
