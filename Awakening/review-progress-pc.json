@@ -9836,6 +9836,16 @@
       ],
       "updatedAt": "2026-10-17T18:22:31.749Z"
     },
+    "awakening/messages (k)/ノワール_カラム_親子.txt": {
+      "path": "Awakening/Messages (K)/ノワール_カラム_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ノワール_カラム_親子_Ｃ",
+        "MID_支援_ノワール_カラム_親子_Ｂ",
+        "MID_支援_ノワール_カラム_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-20T02:48:47.926Z"
+    },
     "awakening/messages (k)/ノワール_グレゴ_親子.txt": {
       "path": "Awakening/Messages (K)/ノワール_グレゴ_親子.txt",
       "mode": "main",
@@ -21902,6 +21912,12 @@
       "entryKey": "MID_支援_ノノ_プレイヤー男_Ｓ_PCM1",
       "status": "approved",
       "updatedAt": "2026-10-17T12:30:15.546Z"
+    },
+    "awakening/messages (k)/ノワール_グレゴ_親子.txt\u0000MID_支援_ノワール_グレゴ_親子_Ａ": {
+      "path": "Awakening/Messages (K)/ノワール_グレゴ_親子.txt",
+      "entryKey": "MID_支援_ノワール_グレゴ_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T02:48:46.742Z"
     },
     "awakening/messages (k)/ノワール_グレゴ_親子.txt\u0000MID_支援_ノワール_グレゴ_親子_Ｂ": {
       "path": "Awakening/Messages (K)/ノワール_グレゴ_親子.txt",
