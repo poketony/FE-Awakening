@@ -10223,6 +10223,17 @@
       ],
       "updatedAt": "2026-10-07T05:25:34.773Z"
     },
+    "awakening/messages (k)/ブレディ_マルス.txt": {
+      "path": "Awakening/Messages (K)/ブレディ_マルス.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ブレディ_マルス_Ｃ",
+        "MID_支援_ブレディ_マルス_Ｂ",
+        "MID_支援_ブレディ_マルス_Ａ",
+        "MID_支援_ブレディ_マルス_Ｓ"
+      ],
+      "updatedAt": "2026-10-20T16:27:44.178Z"
+    },
     "awakening/messages (k)/プレイヤー女_フレデリク.txt": {
       "path": "Awakening/Messages (K)/プレイヤー女_フレデリク.txt",
       "mode": "main",
@@ -23468,6 +23479,12 @@
       "entryKey": "MID_支援_フレデリク_リズ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-07T12:25:02.652Z"
+    },
+    "awakening/messages (k)/ブレディ_マルス.txt\u0000MID_支援_ブレディ_マルス_Ｃ": {
+      "path": "Awakening/Messages (K)/ブレディ_マルス.txt",
+      "entryKey": "MID_支援_ブレディ_マルス_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T16:31:52.706Z"
     },
     "awakening/messages (k)/プレイヤー女_フレデリク.txt\u0000MID_支援_プレイヤー女_フレデリク_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/プレイヤー女_フレデリク.txt",
