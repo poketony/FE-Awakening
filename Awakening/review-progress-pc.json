@@ -9016,6 +9016,16 @@
       ],
       "updatedAt": "2026-10-20T05:19:26.993Z"
     },
+    "awakening/messages (k)/クロム_フレデリク.txt": {
+      "path": "Awakening/Messages (K)/クロム_フレデリク.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_クロム_フレデリク_Ｃ",
+        "MID_支援_クロム_フレデリク_Ｂ",
+        "MID_支援_クロム_フレデリク_Ａ"
+      ],
+      "updatedAt": "2026-10-20T05:32:27.280Z"
+    },
     "awakening/messages (k)/クロム_マリアベル.txt": {
       "path": "Awakening/Messages (K)/クロム_マリアベル.txt",
       "mode": "main",
@@ -21016,6 +21026,12 @@
       "entryKey": "MID_支援_クロム_ソワレ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-20T05:32:24.844Z"
+    },
+    "awakening/messages (k)/クロム_フレデリク.txt\u0000MID_支援_クロム_フレデリク_Ｃ": {
+      "path": "Awakening/Messages (K)/クロム_フレデリク.txt",
+      "entryKey": "MID_支援_クロム_フレデリク_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T05:34:27.696Z"
     },
     "awakening/messages (k)/クロム_マリアベル.txt\u0000MID_支援_クロム_マリアベル_Ａ": {
       "path": "Awakening/Messages (K)/クロム_マリアベル.txt",
