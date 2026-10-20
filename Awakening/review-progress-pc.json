@@ -9918,6 +9918,16 @@
       ],
       "updatedAt": "2026-10-20T02:44:10.928Z"
     },
+    "awakening/messages (k)/ノワール_リヒト_親子.txt": {
+      "path": "Awakening/Messages (K)/ノワール_リヒト_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ノワール_リヒト_親子_Ｃ",
+        "MID_支援_ノワール_リヒト_親子_Ｂ",
+        "MID_支援_ノワール_リヒト_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-20T04:15:36.633Z"
+    },
     "awakening/messages (k)/ノワール_ロラン.txt": {
       "path": "Awakening/Messages (K)/ノワール_ロラン.txt",
       "mode": "main",
@@ -22081,6 +22091,12 @@
       "entryKey": "MID_支援_ノワール_ヘンリー_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-20T02:46:46.754Z"
+    },
+    "awakening/messages (k)/ノワール_リヒト_親子.txt\u0000MID_支援_ノワール_リヒト_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ノワール_リヒト_親子.txt",
+      "entryKey": "MID_支援_ノワール_リヒト_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T04:15:48.423Z"
     },
     "awakening/messages (k)/バジーリオ_フラヴィア.txt\u0000MID_支援_バジーリオ_フラヴィア_Ａ": {
       "path": "Awakening/Messages (K)/バジーリオ_フラヴィア.txt",
