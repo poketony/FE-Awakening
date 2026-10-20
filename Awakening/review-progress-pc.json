@@ -9645,6 +9645,17 @@
       ],
       "updatedAt": "2026-09-07T05:32:43.763Z"
     },
+    "awakening/messages (k)/ソワレ_フレデリク.txt": {
+      "path": "Awakening/Messages (K)/ソワレ_フレデリク.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ソワレ_フレデリク_Ｃ",
+        "MID_支援_ソワレ_フレデリク_Ｂ",
+        "MID_支援_ソワレ_フレデリク_Ａ",
+        "MID_支援_ソワレ_フレデリク_Ｓ"
+      ],
+      "updatedAt": "2026-10-20T06:17:02.202Z"
+    },
     "awakening/messages (k)/ソワレ_ミリエル.txt": {
       "path": "Awakening/Messages (K)/ソワレ_ミリエル.txt",
       "mode": "main",
@@ -22013,6 +22024,12 @@
       "entryKey": "MID_支援_セレナ_ロラン_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-11T18:17:33.441Z"
+    },
+    "awakening/messages (k)/ソワレ_フレデリク.txt\u0000MID_支援_ソワレ_フレデリク_Ｃ": {
+      "path": "Awakening/Messages (K)/ソワレ_フレデリク.txt",
+      "entryKey": "MID_支援_ソワレ_フレデリク_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T06:19:16.908Z"
     },
     "awakening/messages (k)/ソワレ_ミリエル.txt\u0000MID_支援_ソワレ_ミリエル_Ａ": {
       "path": "Awakening/Messages (K)/ソワレ_ミリエル.txt",
