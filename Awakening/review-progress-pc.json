@@ -11495,6 +11495,16 @@
       ],
       "updatedAt": "2026-10-20T02:57:16.051Z"
     },
+    "awakening/messages (k)/ンン_ドニ_親子.txt": {
+      "path": "Awakening/Messages (K)/ンン_ドニ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ンン_ドニ_親子_Ｃ",
+        "MID_支援_ンン_ドニ_親子_Ｂ",
+        "MID_支援_ンン_ドニ_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-20T08:01:29.505Z"
+    },
     "awakening/messages (k)/ンン_ノノ_親子.txt": {
       "path": "Awakening/Messages (K)/ンン_ノノ_親子.txt",
       "mode": "main",
@@ -24005,6 +24015,12 @@
       "entryKey": "MID_支援_ンン_ノノ_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-07T05:01:24.275Z"
+    },
+    "awakening/messages (k)/ンン_プレイヤー男_親子.txt\u0000MID_支援_ンン_プレイヤー男_親子_Ａ_PCM1": {
+      "path": "Awakening/Messages (K)/ンン_プレイヤー男_親子.txt",
+      "entryKey": "MID_支援_ンン_プレイヤー男_親子_Ａ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-20T08:01:27.925Z"
     },
     "awakening/messages (k)/ンン_プレイヤー男_親子.txt\u0000MID_支援_ンン_プレイヤー男_親子_Ｂ_PCM1": {
       "path": "Awakening/Messages (K)/ンン_プレイヤー男_親子.txt",
