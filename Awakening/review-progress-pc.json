@@ -9665,6 +9665,16 @@
       ],
       "updatedAt": "2026-10-19T04:35:17.377Z"
     },
+    "awakening/messages (k)/チキ_マルス.txt": {
+      "path": "Awakening/Messages (K)/チキ_マルス.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_チキ_マルス_Ｃ",
+        "MID_支援_チキ_マルス_Ｂ",
+        "MID_支援_チキ_マルス_Ａ"
+      ],
+      "updatedAt": "2026-10-20T02:43:31.113Z"
+    },
     "awakening/messages (k)/チキ_ルキナ.txt": {
       "path": "Awakening/Messages (K)/チキ_ルキナ.txt",
       "mode": "main",
@@ -20776,6 +20786,12 @@
       "entryKey": "MID_支援_クロム_スミア_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-20T02:21:26.139Z"
+    },
+    "awakening/messages (k)/クロム_スミア.txt\u0000MID_支援_クロム_スミア_Ｃ_00": {
+      "path": "Awakening/Messages (K)/クロム_スミア.txt",
+      "entryKey": "MID_支援_クロム_スミア_Ｃ_00",
+      "status": "approved",
+      "updatedAt": "2026-10-20T02:43:38.781Z"
     },
     "awakening/messages (k)/クロム_スミア.txt\u0000MID_支援_クロム_スミア_Ｓ": {
       "path": "Awakening/Messages (K)/クロム_スミア.txt",
