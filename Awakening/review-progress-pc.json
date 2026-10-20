@@ -9897,6 +9897,16 @@
       ],
       "updatedAt": "2026-10-20T02:47:30.562Z"
     },
+    "awakening/messages (k)/ノワール_ドニ_親子.txt": {
+      "path": "Awakening/Messages (K)/ノワール_ドニ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ノワール_ドニ_親子_Ｃ",
+        "MID_支援_ノワール_ドニ_親子_Ｂ",
+        "MID_支援_ノワール_ドニ_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-20T05:10:59.706Z"
+    },
     "awakening/messages (k)/ノワール_フレデリク_親子.txt": {
       "path": "Awakening/Messages (K)/ノワール_フレデリク_親子.txt",
       "mode": "main",
@@ -21947,6 +21957,12 @@
       "entryKey": "MID_支援_ソール_プレイヤー男_Ｃ_PCM1",
       "status": "approved",
       "updatedAt": "2026-10-07T17:26:48.775Z"
+    },
+    "awakening/messages (k)/チキ_マルス.txt\u0000MID_支援_チキ_マルス_Ａ": {
+      "path": "Awakening/Messages (K)/チキ_マルス.txt",
+      "entryKey": "MID_支援_チキ_マルス_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T05:10:57.720Z"
     },
     "awakening/messages (k)/チキ_マルス.txt\u0000MID_支援_チキ_マルス_Ｂ": {
       "path": "Awakening/Messages (K)/チキ_マルス.txt",
