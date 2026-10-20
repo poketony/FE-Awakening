@@ -9979,6 +9979,16 @@
       ],
       "updatedAt": "2026-10-19T04:39:21.851Z"
     },
+    "awakening/messages (k)/ノワール_ロンクー_親子.txt": {
+      "path": "Awakening/Messages (K)/ノワール_ロンクー_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ノワール_ロンクー_親子_Ｃ",
+        "MID_支援_ノワール_ロンクー_親子_Ｂ",
+        "MID_支援_ノワール_ロンクー_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-20T04:50:02.263Z"
+    },
     "awakening/messages (k)/バジーリオ_フラヴィア.txt": {
       "path": "Awakening/Messages (K)/バジーリオ_フラヴィア.txt",
       "mode": "main",
@@ -21937,6 +21947,12 @@
       "entryKey": "MID_支援_ソール_プレイヤー男_Ｃ_PCM1",
       "status": "approved",
       "updatedAt": "2026-10-07T17:26:48.775Z"
+    },
+    "awakening/messages (k)/チキ_マルス.txt\u0000MID_支援_チキ_マルス_Ｃ": {
+      "path": "Awakening/Messages (K)/チキ_マルス.txt",
+      "entryKey": "MID_支援_チキ_マルス_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T04:55:53.118Z"
     },
     "awakening/messages (k)/ティアモ_リヒト.txt\u0000MID_支援_ティアモ_リヒト_Ａ": {
       "path": "Awakening/Messages (K)/ティアモ_リヒト.txt",
