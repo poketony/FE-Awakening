@@ -10733,6 +10733,16 @@
       ],
       "updatedAt": "2026-10-07T15:57:22.579Z"
     },
+    "awakening/messages (k)/ンン_ソール_親子.txt": {
+      "path": "Awakening/Messages (K)/ンン_ソール_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ンン_ソール_親子_Ｃ",
+        "MID_支援_ンン_ソール_親子_Ｂ",
+        "MID_支援_ンン_ソール_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-20T02:57:16.051Z"
+    },
     "awakening/messages (k)/ンン_ノノ_親子.txt": {
       "path": "Awakening/Messages (K)/ンン_ノノ_親子.txt",
       "mode": "main",
@@ -10752,6 +10762,16 @@
         "MID_支援_ンン_ロンクー_親子_Ａ"
       ],
       "updatedAt": "2026-10-19T01:42:36.916Z"
+    },
+    "awakening/messages (k)/ンン_ヴェイク_親子.txt": {
+      "path": "Awakening/Messages (K)/ンン_ヴェイク_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ンン_ヴェイク_親子_Ｃ",
+        "MID_支援_ンン_ヴェイク_親子_Ｂ",
+        "MID_支援_ンン_ヴェイク_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-20T04:10:35.148Z"
     },
     "awakening/messages (k)/ヴァルハルト_プレイヤー女.txt": {
       "path": "Awakening/Messages (K)/ヴァルハルト_プレイヤー女.txt",
@@ -22757,6 +22777,12 @@
       "entryKey": "MID_支援_ンン_ノノ_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-07T05:01:24.275Z"
+    },
+    "awakening/messages (k)/ンン_ヴェイク_親子.txt\u0000MID_支援_ンン_ヴェイク_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ンン_ヴェイク_親子.txt",
+      "entryKey": "MID_支援_ンン_ヴェイク_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T04:10:48.428Z"
     },
     "awakening/messages (k)/ヴァルハルト_プレイヤー女.txt\u0000MID_支援_ヴァルハルト_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/ヴァルハルト_プレイヤー女.txt",
