@@ -9530,6 +9530,17 @@
       ],
       "updatedAt": "2026-09-06T06:02:37.374Z"
     },
+    "awakening/messages (k)/セルジュ_リベラ.txt": {
+      "path": "Awakening/Messages (K)/セルジュ_リベラ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_セルジュ_リベラ_Ｃ",
+        "MID_支援_セルジュ_リベラ_Ｂ",
+        "MID_支援_セルジュ_リベラ_Ａ",
+        "MID_支援_セルジュ_リベラ_Ｓ"
+      ],
+      "updatedAt": "2026-10-20T05:44:00.393Z"
+    },
     "awakening/messages (k)/セルジュ_ロンクー.txt": {
       "path": "Awakening/Messages (K)/セルジュ_ロンクー.txt",
       "mode": "main",
@@ -21835,6 +21846,12 @@
       "entryKey": "MID_支援_セルジュ_フレデリク_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-20T05:39:52.220Z"
+    },
+    "awakening/messages (k)/セルジュ_フレデリク.txt\u0000MID_支援_セルジュ_フレデリク_Ｓ": {
+      "path": "Awakening/Messages (K)/セルジュ_フレデリク.txt",
+      "entryKey": "MID_支援_セルジュ_フレデリク_Ｓ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T05:43:58.759Z"
     },
     "awakening/messages (k)/セルジュ_プレイヤー女.txt\u0000MID_支援_セルジュ_プレイヤー女_Ａ_PCF1": {
       "path": "Awakening/Messages (K)/セルジュ_プレイヤー女.txt",
