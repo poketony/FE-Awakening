@@ -9999,6 +9999,16 @@
       ],
       "updatedAt": "2026-10-20T04:50:02.263Z"
     },
+    "awakening/messages (k)/ノワール_ヴィオール_親子.txt": {
+      "path": "Awakening/Messages (K)/ノワール_ヴィオール_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ノワール_ヴィオール_親子_Ｃ",
+        "MID_支援_ノワール_ヴィオール_親子_Ｂ",
+        "MID_支援_ノワール_ヴィオール_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-20T05:14:23.066Z"
+    },
     "awakening/messages (k)/バジーリオ_フラヴィア.txt": {
       "path": "Awakening/Messages (K)/バジーリオ_フラヴィア.txt",
       "mode": "main",
@@ -22287,6 +22297,12 @@
       "entryKey": "MID_支援_ノワール_リベラ_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-20T04:45:43.344Z"
+    },
+    "awakening/messages (k)/ノワール_ロンクー_親子.txt\u0000MID_支援_ノワール_ロンクー_親子_Ａ": {
+      "path": "Awakening/Messages (K)/ノワール_ロンクー_親子.txt",
+      "entryKey": "MID_支援_ノワール_ロンクー_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T05:14:21.733Z"
     },
     "awakening/messages (k)/ノワール_ロンクー_親子.txt\u0000MID_支援_ノワール_ロンクー_親子_Ｂ": {
       "path": "Awakening/Messages (K)/ノワール_ロンクー_親子.txt",
