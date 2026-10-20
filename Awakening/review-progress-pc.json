@@ -9611,6 +9611,17 @@
       ],
       "updatedAt": "2026-09-07T05:32:49.560Z"
     },
+    "awakening/messages (k)/ソール_ノノ.txt": {
+      "path": "Awakening/Messages (K)/ソール_ノノ.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ソール_ノノ_Ｃ",
+        "MID_支援_ソール_ノノ_Ｂ",
+        "MID_支援_ソール_ノノ_Ａ",
+        "MID_支援_ソール_ノノ_Ｓ"
+      ],
+      "updatedAt": "2026-10-19T21:56:27.636Z"
+    },
     "awakening/messages (k)/ソール_プレイヤー男.txt": {
       "path": "Awakening/Messages (K)/ソール_プレイヤー男.txt",
       "mode": "main",
@@ -21587,6 +21598,12 @@
       "entryKey": "MID_支援_ソワレ_ロンクー_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-06T12:51:05.752Z"
+    },
+    "awakening/messages (k)/ソール_ノノ.txt\u0000MID_支援_ソール_ノノ_Ｃ": {
+      "path": "Awakening/Messages (K)/ソール_ノノ.txt",
+      "entryKey": "MID_支援_ソール_ノノ_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-20T00:08:28.292Z"
     },
     "awakening/messages (k)/ソール_プレイヤー男.txt\u0000MID_支援_ソール_プレイヤー男_Ａ_PCM1": {
       "path": "Awakening/Messages (K)/ソール_プレイヤー男.txt",
