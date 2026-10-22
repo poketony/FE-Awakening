@@ -9304,6 +9304,16 @@
       ],
       "updatedAt": "2026-10-22T01:44:23.873Z"
     },
+    "awakening/messages (k)/シャンブレー_ガイア_親子.txt": {
+      "path": "Awakening/Messages (K)/シャンブレー_ガイア_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シャンブレー_ガイア_親子_Ｃ",
+        "MID_支援_シャンブレー_ガイア_親子_Ｂ",
+        "MID_支援_シャンブレー_ガイア_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-22T01:44:46.889Z"
+    },
     "awakening/messages (k)/シャンブレー_グレゴ_親子.txt": {
       "path": "Awakening/Messages (K)/シャンブレー_グレゴ_親子.txt",
       "mode": "main",
@@ -22310,6 +22320,12 @@
       "entryKey": "MID_支援_シャンブレー_カラム_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-22T01:44:29.590Z"
+    },
+    "awakening/messages (k)/シャンブレー_ガイア_親子.txt\u0000MID_支援_シャンブレー_ガイア_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/シャンブレー_ガイア_親子.txt",
+      "entryKey": "MID_支援_シャンブレー_ガイア_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T01:44:52.294Z"
     },
     "awakening/messages (k)/シャンブレー_グレゴ_親子.txt\u0000MID_支援_シャンブレー_グレゴ_親子_Ｃ": {
       "path": "Awakening/Messages (K)/シャンブレー_グレゴ_親子.txt",
