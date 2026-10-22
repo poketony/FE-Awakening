@@ -9527,6 +9527,16 @@
       ],
       "updatedAt": "2026-10-22T02:22:06.765Z"
     },
+    "awakening/messages (k)/シンシア_ヘンリー_親子.txt": {
+      "path": "Awakening/Messages (K)/シンシア_ヘンリー_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シンシア_ヘンリー_親子_Ｃ",
+        "MID_支援_シンシア_ヘンリー_親子_Ｂ",
+        "MID_支援_シンシア_ヘンリー_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-22T02:22:51.971Z"
+    },
     "awakening/messages (k)/ジェローム_シンシア.txt": {
       "path": "Awakening/Messages (K)/ジェローム_シンシア.txt",
       "mode": "main",
@@ -22748,6 +22758,12 @@
       "entryKey": "MID_支援_シンシア_プレイヤー男_Ｓ_PCM1",
       "status": "approved",
       "updatedAt": "2026-09-07T04:45:11.272Z"
+    },
+    "awakening/messages (k)/シンシア_プレイヤー男_親子.txt\u0000MID_支援_シンシア_プレイヤー男_親子_Ａ_PCM1": {
+      "path": "Awakening/Messages (K)/シンシア_プレイヤー男_親子.txt",
+      "entryKey": "MID_支援_シンシア_プレイヤー男_親子_Ａ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-22T02:22:50.269Z"
     },
     "awakening/messages (k)/シンシア_プレイヤー男_親子.txt\u0000MID_支援_シンシア_プレイヤー男_親子_Ｂ_PCM1": {
       "path": "Awakening/Messages (K)/シンシア_プレイヤー男_親子.txt",
