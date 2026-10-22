@@ -9517,6 +9517,16 @@
       ],
       "updatedAt": "2026-09-07T04:20:02.495Z"
     },
+    "awakening/messages (k)/シンシア_プレイヤー男_親子.txt": {
+      "path": "Awakening/Messages (K)/シンシア_プレイヤー男_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シンシア_プレイヤー男_親子_Ｃ_PCM1",
+        "MID_支援_シンシア_プレイヤー男_親子_Ｂ_PCM1",
+        "MID_支援_シンシア_プレイヤー男_親子_Ａ_PCM1"
+      ],
+      "updatedAt": "2026-10-22T02:22:06.765Z"
+    },
     "awakening/messages (k)/ジェローム_シンシア.txt": {
       "path": "Awakening/Messages (K)/ジェローム_シンシア.txt",
       "mode": "main",
@@ -22415,6 +22425,24 @@
       "status": "approved",
       "updatedAt": "2026-10-22T01:45:15.529Z"
     },
+    "awakening/messages (k)/シャンブレー_ドニ_親子.txt\u0000MID_支援_シャンブレー_ドニ_親子_Ａ": {
+      "path": "Awakening/Messages (K)/シャンブレー_ドニ_親子.txt",
+      "entryKey": "MID_支援_シャンブレー_ドニ_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T01:52:39.727Z"
+    },
+    "awakening/messages (k)/シャンブレー_ドニ_親子.txt\u0000MID_支援_シャンブレー_ドニ_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/シャンブレー_ドニ_親子.txt",
+      "entryKey": "MID_支援_シャンブレー_ドニ_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T01:52:39.256Z"
+    },
+    "awakening/messages (k)/シャンブレー_ドニ_親子.txt\u0000MID_支援_シャンブレー_ドニ_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/シャンブレー_ドニ_親子.txt",
+      "entryKey": "MID_支援_シャンブレー_ドニ_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T01:52:38.988Z"
+    },
     "awakening/messages (k)/シャンブレー_フレデリク_親子.txt\u0000MID_支援_シャンブレー_フレデリク_親子_Ａ": {
       "path": "Awakening/Messages (K)/シャンブレー_フレデリク_親子.txt",
       "entryKey": "MID_支援_シャンブレー_フレデリク_親子_Ａ",
@@ -22720,6 +22748,12 @@
       "entryKey": "MID_支援_シンシア_プレイヤー男_Ｓ_PCM1",
       "status": "approved",
       "updatedAt": "2026-09-07T04:45:11.272Z"
+    },
+    "awakening/messages (k)/シンシア_プレイヤー男_親子.txt\u0000MID_支援_シンシア_プレイヤー男_親子_Ｃ_PCM1": {
+      "path": "Awakening/Messages (K)/シンシア_プレイヤー男_親子.txt",
+      "entryKey": "MID_支援_シンシア_プレイヤー男_親子_Ｃ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-22T02:22:13.294Z"
     },
     "awakening/messages (k)/ジェローム_シンシア.txt\u0000MID_支援_ジェローム_シンシア_Ａ": {
       "path": "Awakening/Messages (K)/ジェローム_シンシア.txt",
