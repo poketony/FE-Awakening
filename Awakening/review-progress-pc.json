@@ -22457,6 +22457,12 @@
       "status": "approved",
       "updatedAt": "2026-10-15T12:16:57.413Z"
     },
+    "awakening/messages (k)/シャンブレー_プレイヤー男_親子.txt\u0000MID_支援_シャンブレー_プレイヤー男_親子_Ａ_PCM1": {
+      "path": "Awakening/Messages (K)/シャンブレー_プレイヤー男_親子.txt",
+      "entryKey": "MID_支援_シャンブレー_プレイヤー男_親子_Ａ_PCM1",
+      "status": "approved",
+      "updatedAt": "2026-10-22T01:52:36.453Z"
+    },
     "awakening/messages (k)/シャンブレー_プレイヤー男_親子.txt\u0000MID_支援_シャンブレー_プレイヤー男_親子_Ｂ_PCM1": {
       "path": "Awakening/Messages (K)/シャンブレー_プレイヤー男_親子.txt",
       "entryKey": "MID_支援_シャンブレー_プレイヤー男_親子_Ｂ_PCM1",
@@ -22486,6 +22492,24 @@
       "entryKey": "MID_支援_シャンブレー_ヘンリー_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-22T01:51:55.074Z"
+    },
+    "awakening/messages (k)/シャンブレー_リヒト_親子.txt\u0000MID_支援_シャンブレー_リヒト_親子_Ａ": {
+      "path": "Awakening/Messages (K)/シャンブレー_リヒト_親子.txt",
+      "entryKey": "MID_支援_シャンブレー_リヒト_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T01:51:59.179Z"
+    },
+    "awakening/messages (k)/シャンブレー_リヒト_親子.txt\u0000MID_支援_シャンブレー_リヒト_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/シャンブレー_リヒト_親子.txt",
+      "entryKey": "MID_支援_シャンブレー_リヒト_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T01:51:58.917Z"
+    },
+    "awakening/messages (k)/シャンブレー_リヒト_親子.txt\u0000MID_支援_シャンブレー_リヒト_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/シャンブレー_リヒト_親子.txt",
+      "entryKey": "MID_支援_シャンブレー_リヒト_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T01:51:58.475Z"
     },
     "awakening/messages (k)/シャンブレー_リベラ_親子.txt\u0000MID_支援_シャンブレー_リベラ_親子_Ａ": {
       "path": "Awakening/Messages (K)/シャンブレー_リベラ_親子.txt",
