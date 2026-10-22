@@ -9415,6 +9415,16 @@
       ],
       "updatedAt": "2026-09-06T12:59:29.656Z"
     },
+    "awakening/messages (k)/シャンブレー_ヴィオール_親子.txt": {
+      "path": "Awakening/Messages (K)/シャンブレー_ヴィオール_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シャンブレー_ヴィオール_親子_Ｃ",
+        "MID_支援_シャンブレー_ヴィオール_親子_Ｂ",
+        "MID_支援_シャンブレー_ヴィオール_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-22T01:50:56.596Z"
+    },
     "awakening/messages (k)/シャンブレー_ヴェイク_親子.txt": {
       "path": "Awakening/Messages (K)/シャンブレー_ヴェイク_親子.txt",
       "mode": "main",
@@ -22484,6 +22494,12 @@
       "entryKey": "MID_支援_シャンブレー_ロンクー_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-06T13:02:24.748Z"
+    },
+    "awakening/messages (k)/シャンブレー_ヴィオール_親子.txt\u0000MID_支援_シャンブレー_ヴィオール_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/シャンブレー_ヴィオール_親子.txt",
+      "entryKey": "MID_支援_シャンブレー_ヴィオール_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T01:51:04.118Z"
     },
     "awakening/messages (k)/シャンブレー_ヴェイク_親子.txt\u0000MID_支援_シャンブレー_ヴェイク_親子_Ａ": {
       "path": "Awakening/Messages (K)/シャンブレー_ヴェイク_親子.txt",
