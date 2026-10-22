@@ -9600,6 +9600,16 @@
       ],
       "updatedAt": "2026-10-18T03:41:43.780Z"
     },
+    "awakening/messages (k)/ジェローム_リベラ_親子.txt": {
+      "path": "Awakening/Messages (K)/ジェローム_リベラ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ジェローム_リベラ_親子_Ｃ",
+        "MID_支援_ジェローム_リベラ_親子_Ｂ",
+        "MID_支援_ジェローム_リベラ_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-22T06:12:51.129Z"
+    },
     "awakening/messages (k)/ジェローム_ヴェイク_親子.txt": {
       "path": "Awakening/Messages (K)/ジェローム_ヴェイク_親子.txt",
       "mode": "main",
@@ -9885,6 +9895,17 @@
         "MID_支援_ソール_ノノ_Ｓ"
       ],
       "updatedAt": "2026-10-19T21:56:27.636Z"
+    },
+    "awakening/messages (k)/ソール_プレイヤー女.txt": {
+      "path": "Awakening/Messages (K)/ソール_プレイヤー女.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ソール_プレイヤー女_Ｃ_PCF1",
+        "MID_支援_ソール_プレイヤー女_Ｂ_PCF1",
+        "MID_支援_ソール_プレイヤー女_Ａ_PCF1",
+        "MID_支援_ソール_プレイヤー女_Ｓ_PCF1"
+      ],
+      "updatedAt": "2026-10-22T02:57:07.978Z"
     },
     "awakening/messages (k)/ソール_プレイヤー男.txt": {
       "path": "Awakening/Messages (K)/ソール_プレイヤー男.txt",
@@ -22948,6 +22969,12 @@
       "entryKey": "MID_支援_ジェローム_マーク女_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-18T03:45:53.641Z"
+    },
+    "awakening/messages (k)/ジェローム_リベラ_親子.txt\u0000MID_支援_ジェローム_リベラ_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ジェローム_リベラ_親子.txt",
+      "entryKey": "MID_支援_ジェローム_リベラ_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T06:13:21.579Z"
     },
     "awakening/messages (k)/ジェローム_ヴェイク_親子.txt\u0000MID_支援_ジェローム_ヴェイク_親子_Ａ": {
       "path": "Awakening/Messages (K)/ジェローム_ヴェイク_親子.txt",
