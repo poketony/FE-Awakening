@@ -10519,6 +10519,17 @@
       ],
       "updatedAt": "2026-10-07T17:33:29.446Z"
     },
+    "awakening/messages (k)/プレイヤー女_ロンクー.txt": {
+      "path": "Awakening/Messages (K)/プレイヤー女_ロンクー.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_プレイヤー女_ロンクー_Ｃ_PCF1",
+        "MID_支援_プレイヤー女_ロンクー_Ｂ_PCF1",
+        "MID_支援_プレイヤー女_ロンクー_Ａ_PCF1",
+        "MID_支援_プレイヤー女_ロンクー_Ｓ_PCF1"
+      ],
+      "updatedAt": "2026-10-22T07:03:46.434Z"
+    },
     "awakening/messages (k)/プレイヤー女_ンン.txt": {
       "path": "Awakening/Messages (K)/プレイヤー女_ンン.txt",
       "mode": "main",
