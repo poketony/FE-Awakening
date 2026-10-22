@@ -9547,6 +9547,16 @@
       ],
       "updatedAt": "2026-10-22T02:22:51.971Z"
     },
+    "awakening/messages (k)/ジェローム_カラム_親子.txt": {
+      "path": "Awakening/Messages (K)/ジェローム_カラム_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ジェローム_カラム_親子_Ｃ",
+        "MID_支援_ジェローム_カラム_親子_Ｂ",
+        "MID_支援_ジェローム_カラム_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-22T06:23:31.236Z"
+    },
     "awakening/messages (k)/ジェローム_ガイア_親子.txt": {
       "path": "Awakening/Messages (K)/ジェローム_ガイア_親子.txt",
       "mode": "main",
@@ -22941,6 +22951,24 @@
       "entryKey": "MID_支援_シンシア_ヘンリー_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-22T02:22:57.968Z"
+    },
+    "awakening/messages (k)/ジェローム_ガイア_親子.txt\u0000MID_支援_ジェローム_ガイア_親子_Ａ": {
+      "path": "Awakening/Messages (K)/ジェローム_ガイア_親子.txt",
+      "entryKey": "MID_支援_ジェローム_ガイア_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T06:23:30.068Z"
+    },
+    "awakening/messages (k)/ジェローム_ガイア_親子.txt\u0000MID_支援_ジェローム_ガイア_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/ジェローム_ガイア_親子.txt",
+      "entryKey": "MID_支援_ジェローム_ガイア_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T06:23:29.790Z"
+    },
+    "awakening/messages (k)/ジェローム_ガイア_親子.txt\u0000MID_支援_ジェローム_ガイア_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ジェローム_ガイア_親子.txt",
+      "entryKey": "MID_支援_ジェローム_ガイア_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T06:23:29.491Z"
     },
     "awakening/messages (k)/ジェローム_グレゴ_親子.txt\u0000MID_支援_ジェローム_グレゴ_親子_Ａ": {
       "path": "Awakening/Messages (K)/ジェローム_グレゴ_親子.txt",
