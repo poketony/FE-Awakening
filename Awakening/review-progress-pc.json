@@ -9579,6 +9579,16 @@
       ],
       "updatedAt": "2026-09-06T16:43:25.018Z"
     },
+    "awakening/messages (k)/ジェローム_フレデリク_親子.txt": {
+      "path": "Awakening/Messages (K)/ジェローム_フレデリク_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_ジェローム_フレデリク_親子_Ｃ",
+        "MID_支援_ジェローム_フレデリク_親子_Ｂ",
+        "MID_支援_ジェローム_フレデリク_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-22T06:22:55.145Z"
+    },
     "awakening/messages (k)/ジェローム_プレイヤー男_親子.txt": {
       "path": "Awakening/Messages (K)/ジェローム_プレイヤー男_親子.txt",
       "mode": "main",
@@ -22967,6 +22977,24 @@
       "entryKey": "MID_支援_ジェローム_ノワール_Ｓ",
       "status": "approved",
       "updatedAt": "2026-09-06T22:11:20.942Z"
+    },
+    "awakening/messages (k)/ジェローム_フレデリク_親子.txt\u0000MID_支援_ジェローム_フレデリク_親子_Ａ": {
+      "path": "Awakening/Messages (K)/ジェローム_フレデリク_親子.txt",
+      "entryKey": "MID_支援_ジェローム_フレデリク_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T06:23:01.338Z"
+    },
+    "awakening/messages (k)/ジェローム_フレデリク_親子.txt\u0000MID_支援_ジェローム_フレデリク_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/ジェローム_フレデリク_親子.txt",
+      "entryKey": "MID_支援_ジェローム_フレデリク_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T06:23:01.264Z"
+    },
+    "awakening/messages (k)/ジェローム_フレデリク_親子.txt\u0000MID_支援_ジェローム_フレデリク_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/ジェローム_フレデリク_親子.txt",
+      "entryKey": "MID_支援_ジェローム_フレデリク_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-22T06:23:01.177Z"
     },
     "awakening/messages (k)/ジェローム_プレイヤー男_親子.txt\u0000MID_支援_ジェローム_プレイヤー男_親子_Ａ_PCM1": {
       "path": "Awakening/Messages (K)/ジェローム_プレイヤー男_親子.txt",
