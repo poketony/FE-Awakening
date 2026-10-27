@@ -11189,6 +11189,16 @@
       ],
       "updatedAt": "2026-10-09T10:36:53.057Z"
     },
+    "awakening/messages (k)/マルス_オリヴィエ_親子.txt": {
+      "path": "Awakening/Messages (K)/マルス_オリヴィエ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マルス_オリヴィエ_親子_Ｃ",
+        "MID_支援_マルス_オリヴィエ_親子_Ｂ",
+        "MID_支援_マルス_オリヴィエ_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-23T02:16:21.955Z"
+    },
     "awakening/messages (k)/マルス_クロム_親子.txt": {
       "path": "Awakening/Messages (K)/マルス_クロム_親子.txt",
       "mode": "main",
@@ -11199,6 +11209,26 @@
       ],
       "updatedAt": "2026-09-29T15:35:56.800Z"
     },
+    "awakening/messages (k)/マルス_スミア_親子.txt": {
+      "path": "Awakening/Messages (K)/マルス_スミア_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マルス_スミア_親子_Ｃ",
+        "MID_支援_マルス_スミア_親子_Ｂ",
+        "MID_支援_マルス_スミア_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-23T02:15:36.304Z"
+    },
+    "awakening/messages (k)/マルス_ソワレ_親子.txt": {
+      "path": "Awakening/Messages (K)/マルス_ソワレ_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マルス_ソワレ_親子_Ｃ",
+        "MID_支援_マルス_ソワレ_親子_Ｂ",
+        "MID_支援_マルス_ソワレ_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-23T02:15:32.016Z"
+    },
     "awakening/messages (k)/マルス_ブレディ_兄弟.txt": {
       "path": "Awakening/Messages (K)/マルス_ブレディ_兄弟.txt",
       "mode": "main",
@@ -11208,6 +11238,16 @@
         "MID_支援_マルス_ブレディ_兄弟_Ａ"
       ],
       "updatedAt": "2026-10-15T02:50:01.320Z"
+    },
+    "awakening/messages (k)/マルス_プレイヤー女_親子.txt": {
+      "path": "Awakening/Messages (K)/マルス_プレイヤー女_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_マルス_プレイヤー女_親子_Ｃ_PCF1",
+        "MID_支援_マルス_プレイヤー女_親子_Ｂ_PCF1",
+        "MID_支援_マルス_プレイヤー女_親子_Ａ_PCF1"
+      ],
+      "updatedAt": "2026-10-23T02:13:37.858Z"
     },
     "awakening/messages (k)/マルス_マリアベル_親子.txt": {
       "path": "Awakening/Messages (K)/マルス_マリアベル_親子.txt",
@@ -24475,11 +24515,95 @@
       "status": "approved",
       "updatedAt": "2026-10-09T10:47:35.150Z"
     },
+    "awakening/messages (k)/マルス_オリヴィエ_親子.txt\u0000MID_支援_マルス_オリヴィエ_親子_Ａ": {
+      "path": "Awakening/Messages (K)/マルス_オリヴィエ_親子.txt",
+      "entryKey": "MID_支援_マルス_オリヴィエ_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:16:22.943Z"
+    },
+    "awakening/messages (k)/マルス_オリヴィエ_親子.txt\u0000MID_支援_マルス_オリヴィエ_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/マルス_オリヴィエ_親子.txt",
+      "entryKey": "MID_支援_マルス_オリヴィエ_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:16:22.892Z"
+    },
+    "awakening/messages (k)/マルス_オリヴィエ_親子.txt\u0000MID_支援_マルス_オリヴィエ_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/マルス_オリヴィエ_親子.txt",
+      "entryKey": "MID_支援_マルス_オリヴィエ_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:16:22.380Z"
+    },
     "awakening/messages (k)/マルス_クロム_親子.txt\u0000MID_支援_マルス_クロム_親子_Ｃ": {
       "path": "Awakening/Messages (K)/マルス_クロム_親子.txt",
       "entryKey": "MID_支援_マルス_クロム_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-09-30T06:21:55.745Z"
+    },
+    "awakening/messages (k)/マルス_スミア_親子.txt\u0000MID_支援_マルス_スミア_親子_Ａ": {
+      "path": "Awakening/Messages (K)/マルス_スミア_親子.txt",
+      "entryKey": "MID_支援_マルス_スミア_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:16:18.018Z"
+    },
+    "awakening/messages (k)/マルス_スミア_親子.txt\u0000MID_支援_マルス_スミア_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/マルス_スミア_親子.txt",
+      "entryKey": "MID_支援_マルス_スミア_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:16:04.241Z"
+    },
+    "awakening/messages (k)/マルス_スミア_親子.txt\u0000MID_支援_マルス_スミア_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/マルス_スミア_親子.txt",
+      "entryKey": "MID_支援_マルス_スミア_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:15:50.595Z"
+    },
+    "awakening/messages (k)/マルス_ソワレ_親子.txt\u0000MID_支援_マルス_ソワレ_親子_Ａ": {
+      "path": "Awakening/Messages (K)/マルス_ソワレ_親子.txt",
+      "entryKey": "MID_支援_マルス_ソワレ_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:16:20.726Z"
+    },
+    "awakening/messages (k)/マルス_ソワレ_親子.txt\u0000MID_支援_マルス_ソワレ_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/マルス_ソワレ_親子.txt",
+      "entryKey": "MID_支援_マルス_ソワレ_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:16:20.646Z"
+    },
+    "awakening/messages (k)/マルス_ソワレ_親子.txt\u0000MID_支援_マルス_ソワレ_親子_Ｃ": {
+      "path": "Awakening/Messages (K)/マルス_ソワレ_親子.txt",
+      "entryKey": "MID_支援_マルス_ソワレ_親子_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:16:20.118Z"
+    },
+    "awakening/messages (k)/マルス_プレイヤー女_親子.txt\u0000MID_支援_マルス_プレイヤー女_親子_Ａ_PCF1": {
+      "path": "Awakening/Messages (K)/マルス_プレイヤー女_親子.txt",
+      "entryKey": "MID_支援_マルス_プレイヤー女_親子_Ａ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:15:30.469Z"
+    },
+    "awakening/messages (k)/マルス_プレイヤー女_親子.txt\u0000MID_支援_マルス_プレイヤー女_親子_Ｂ_PCF1": {
+      "path": "Awakening/Messages (K)/マルス_プレイヤー女_親子.txt",
+      "entryKey": "MID_支援_マルス_プレイヤー女_親子_Ｂ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:14:38.248Z"
+    },
+    "awakening/messages (k)/マルス_プレイヤー女_親子.txt\u0000MID_支援_マルス_プレイヤー女_親子_Ｃ_PCF1": {
+      "path": "Awakening/Messages (K)/マルス_プレイヤー女_親子.txt",
+      "entryKey": "MID_支援_マルス_プレイヤー女_親子_Ｃ_PCF1",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:14:02.036Z"
+    },
+    "awakening/messages (k)/マルス_マリアベル_親子.txt\u0000MID_支援_マルス_マリアベル_親子_Ａ": {
+      "path": "Awakening/Messages (K)/マルス_マリアベル_親子.txt",
+      "entryKey": "MID_支援_マルス_マリアベル_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:16:26.188Z"
+    },
+    "awakening/messages (k)/マルス_マリアベル_親子.txt\u0000MID_支援_マルス_マリアベル_親子_Ｂ": {
+      "path": "Awakening/Messages (K)/マルス_マリアベル_親子.txt",
+      "entryKey": "MID_支援_マルス_マリアベル_親子_Ｂ",
+      "status": "approved",
+      "updatedAt": "2026-10-23T02:16:24.906Z"
     },
     "awakening/messages (k)/マルス_マリアベル_親子.txt\u0000MID_支援_マルス_マリアベル_親子_Ｃ": {
       "path": "Awakening/Messages (K)/マルス_マリアベル_親子.txt",
