@@ -9272,6 +9272,17 @@
       ],
       "updatedAt": "2026-10-18T04:52:42.214Z"
     },
+    "awakening/messages (k)/サーリャ_ヘンリー.txt": {
+      "path": "Awakening/Messages (K)/サーリャ_ヘンリー.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_サーリャ_ヘンリー_Ｃ",
+        "MID_支援_サーリャ_ヘンリー_Ｂ",
+        "MID_支援_サーリャ_ヘンリー_Ａ",
+        "MID_支援_サーリャ_ヘンリー_Ｓ"
+      ],
+      "updatedAt": "2026-10-27T08:15:46.424Z"
+    },
     "awakening/messages (k)/サーリャ_リヒト.txt": {
       "path": "Awakening/Messages (K)/サーリャ_リヒト.txt",
       "mode": "main",
@@ -10518,6 +10529,17 @@
         "MID_支援_プレイヤー女_ミリエル_Ａ_PCF1"
       ],
       "updatedAt": "2026-10-07T17:33:29.446Z"
+    },
+    "awakening/messages (k)/プレイヤー女_リヒト.txt": {
+      "path": "Awakening/Messages (K)/プレイヤー女_リヒト.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_プレイヤー女_リヒト_Ｃ_PCF1",
+        "MID_支援_プレイヤー女_リヒト_Ｂ_PCF1",
+        "MID_支援_プレイヤー女_リヒト_Ａ_PCF1",
+        "MID_支援_プレイヤー女_リヒト_Ｓ_PCF1"
+      ],
+      "updatedAt": "2026-10-27T08:15:33.056Z"
     },
     "awakening/messages (k)/プレイヤー女_ロンクー.txt": {
       "path": "Awakening/Messages (K)/プレイヤー女_ロンクー.txt",
@@ -22498,6 +22520,12 @@
       "entryKey": "MID_支援_サーリャ_プレイヤー男_Ｓ_PCM1",
       "status": "approved",
       "updatedAt": "2026-10-18T04:59:14.098Z"
+    },
+    "awakening/messages (k)/サーリャ_ヘンリー.txt\u0000MID_支援_サーリャ_ヘンリー_Ｃ": {
+      "path": "Awakening/Messages (K)/サーリャ_ヘンリー.txt",
+      "entryKey": "MID_支援_サーリャ_ヘンリー_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-28T02:13:04.856Z"
     },
     "awakening/messages (k)/サーリャ_リヒト.txt\u0000MID_支援_サーリャ_リヒト_Ｂ": {
       "path": "Awakening/Messages (K)/サーリャ_リヒト.txt",
