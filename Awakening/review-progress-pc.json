@@ -9569,6 +9569,16 @@
       ],
       "updatedAt": "2026-10-22T02:22:51.971Z"
     },
+    "awakening/messages (k)/シンシア_ンン.txt": {
+      "path": "Awakening/Messages (K)/シンシア_ンン.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シンシア_ンン_Ｃ",
+        "MID_支援_シンシア_ンン_Ｂ",
+        "MID_支援_シンシア_ンン_Ａ"
+      ],
+      "updatedAt": "2026-10-29T02:20:52.100Z"
+    },
     "awakening/messages (k)/ジェローム_カラム_親子.txt": {
       "path": "Awakening/Messages (K)/ジェローム_カラム_親子.txt",
       "mode": "main",
@@ -23181,6 +23191,12 @@
       "entryKey": "MID_支援_ジェローム_シンシア_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-06T07:34:52.965Z"
+    },
+    "awakening/messages (k)/ジェローム_セルジュ_親子.txt\u0000MID_支援_ジェローム_セルジュ_親子_Ａ": {
+      "path": "Awakening/Messages (K)/ジェローム_セルジュ_親子.txt",
+      "entryKey": "MID_支援_ジェローム_セルジュ_親子_Ａ",
+      "status": "approved",
+      "updatedAt": "2026-10-29T02:20:50.756Z"
     },
     "awakening/messages (k)/ジェローム_セルジュ_親子.txt\u0000MID_支援_ジェローム_セルジュ_親子_Ｂ": {
       "path": "Awakening/Messages (K)/ジェローム_セルジュ_親子.txt",
