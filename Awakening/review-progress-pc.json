@@ -9345,6 +9345,17 @@
       ],
       "updatedAt": "2026-10-22T01:45:14.072Z"
     },
+    "awakening/messages (k)/シャンブレー_デジェル.txt": {
+      "path": "Awakening/Messages (K)/シャンブレー_デジェル.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_シャンブレー_デジェル_Ｃ",
+        "MID_支援_シャンブレー_デジェル_Ｂ",
+        "MID_支援_シャンブレー_デジェル_Ａ",
+        "MID_支援_シャンブレー_デジェル_Ｓ"
+      ],
+      "updatedAt": "2026-10-29T01:49:23.039Z"
+    },
     "awakening/messages (k)/シャンブレー_ドニ_親子.txt": {
       "path": "Awakening/Messages (K)/シャンブレー_ドニ_親子.txt",
       "mode": "main",
@@ -9849,6 +9860,16 @@
         "MID_支援_セレナ_カラム_親子_Ａ"
       ],
       "updatedAt": "2026-10-09T02:43:16.367Z"
+    },
+    "awakening/messages (k)/セレナ_ガイア_親子.txt": {
+      "path": "Awakening/Messages (K)/セレナ_ガイア_親子.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_セレナ_ガイア_親子_Ｃ",
+        "MID_支援_セレナ_ガイア_親子_Ｂ",
+        "MID_支援_セレナ_ガイア_親子_Ａ"
+      ],
+      "updatedAt": "2026-10-28T02:23:08.836Z"
     },
     "awakening/messages (k)/セレナ_ソール_親子.txt": {
       "path": "Awakening/Messages (K)/セレナ_ソール_親子.txt",
@@ -22652,6 +22673,12 @@
       "entryKey": "MID_支援_シャンブレー_ソール_親子_Ｃ",
       "status": "approved",
       "updatedAt": "2026-10-22T01:45:15.529Z"
+    },
+    "awakening/messages (k)/シャンブレー_デジェル.txt\u0000MID_支援_シャンブレー_デジェル_Ｃ": {
+      "path": "Awakening/Messages (K)/シャンブレー_デジェル.txt",
+      "entryKey": "MID_支援_シャンブレー_デジェル_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-10-29T01:50:59.826Z"
     },
     "awakening/messages (k)/シャンブレー_ドニ_親子.txt\u0000MID_支援_シャンブレー_ドニ_親子_Ａ": {
       "path": "Awakening/Messages (K)/シャンブレー_ドニ_親子.txt",
