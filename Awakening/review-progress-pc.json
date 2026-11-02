@@ -11487,6 +11487,17 @@
       ],
       "updatedAt": "2026-10-20T06:10:02.108Z"
     },
+    "awakening/messages (k)/リズ_リヒト.txt": {
+      "path": "Awakening/Messages (K)/リズ_リヒト.txt",
+      "mode": "main",
+      "expected": [
+        "MID_支援_リズ_リヒト_Ｃ",
+        "MID_支援_リズ_リヒト_Ｂ",
+        "MID_支援_リズ_リヒト_Ａ",
+        "MID_支援_リズ_リヒト_Ｓ"
+      ],
+      "updatedAt": "2026-11-02T07:46:37.489Z"
+    },
     "awakening/messages (k)/リズ_リベラ.txt": {
       "path": "Awakening/Messages (K)/リズ_リベラ.txt",
       "mode": "main",
@@ -24895,6 +24906,12 @@
       "entryKey": "MID_支援_ミリエル_リベラ_Ｓ",
       "status": "approved",
       "updatedAt": "2026-10-20T06:15:26.624Z"
+    },
+    "awakening/messages (k)/リズ_リヒト.txt\u0000MID_支援_リズ_リヒト_Ｃ": {
+      "path": "Awakening/Messages (K)/リズ_リヒト.txt",
+      "entryKey": "MID_支援_リズ_リヒト_Ｃ",
+      "status": "approved",
+      "updatedAt": "2026-11-02T07:47:32.099Z"
     },
     "awakening/messages (k)/リズ_リベラ.txt\u0000MID_支援_リズ_リベラ_Ａ": {
       "path": "Awakening/Messages (K)/リズ_リベラ.txt",
